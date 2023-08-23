@@ -1,5 +1,5 @@
 # Paint.NET Plugin API Documentation
-This is the github repository for Paint.NET's Plugin API documentation: https://getpaint.net/doc/api/
+This is the github repository for Paint.NET's Plugin API documentation: https://paintdotnet.github.io/apidocs/
 
 **This file is not part of the plugin API documentation.** It is documentation for working on the documentation itself.
 
