@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BitmapLayer
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BitmapLayer
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.BitmapLayer">
+
+
+
+  <h1 id="PaintDotNet_BitmapLayer" data-uid="PaintDotNet.BitmapLayer" class="text-break">
+    Class BitmapLayer
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class BitmapLayer : Layer, IIsDisposed, IDisposable, ICloneable, IDeserializationCallback</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.Layer.html">Layer</a></div>
+      <div><span class="xref">BitmapLayer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback">IDeserializationCallback</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.LoadProperties.html#PaintDotNet_Layer_LoadProperties_System_Object_">Layer.LoadProperties(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.PushSuppressPropertyChanged.html#PaintDotNet_Layer_PushSuppressPropertyChanged">Layer.PushSuppressPropertyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.PopSuppressPropertyChanged.html#PaintDotNet_Layer_PopSuppressPropertyChanged">Layer.PopSuppressPropertyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.PerformPropertyChanged.html#PaintDotNet_Layer_PerformPropertyChanged">Layer.PerformPropertyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateThumbnailRenderer.html#PaintDotNet_Layer_CreateThumbnailRenderer_System_Int32_">Layer.CreateThumbnailRenderer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Invalidate.html#PaintDotNet_Layer_Invalidate">Layer.Invalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Invalidate.html#PaintDotNet_Layer_Invalidate_System_Drawing_Rectangle_">Layer.Invalidate(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Invalidate.html#PaintDotNet_Layer_Invalidate_PaintDotNet_Rendering_RectInt32_">Layer.Invalidate(RectInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Dispose.html#PaintDotNet_Layer_Dispose">Layer.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_PaintDotNet_Rendering_SizeInt32_">Layer.CreateBackgroundLayer(SizeInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_System_Int32_System_Int32_">Layer.CreateBackgroundLayer(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_PaintDotNet_Rendering_SizeInt32_System_String_">Layer.CreateBackgroundLayer(SizeInt32, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_System_Int32_System_Int32_System_String_">Layer.CreateBackgroundLayer(int, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_PaintDotNet_Surface_">Layer.CreateBackgroundLayer(Surface)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_PaintDotNet_Surface_System_Boolean_">Layer.CreateBackgroundLayer(Surface, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.CreateBackgroundLayer.html#PaintDotNet_Layer_CreateBackgroundLayer_PaintDotNet_Surface_System_Boolean_System_String_">Layer.CreateBackgroundLayer(Surface, bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.IsDisposed.html#PaintDotNet_Layer_IsDisposed">Layer.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.IsBackground.html#PaintDotNet_Layer_IsBackground">Layer.IsBackground</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Opacity.html#PaintDotNet_Layer_Opacity">Layer.Opacity</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.BlendMode.html#PaintDotNet_Layer_BlendMode">Layer.BlendMode</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Width.html#PaintDotNet_Layer_Width">Layer.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Height.html#PaintDotNet_Layer_Height">Layer.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Size.html#PaintDotNet_Layer_Size">Layer.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Bounds.html#PaintDotNet_Layer_Bounds">Layer.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Name.html#PaintDotNet_Layer_Name">Layer.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Metadata.html#PaintDotNet_Layer_Metadata">Layer.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Layer.Visible.html#PaintDotNet_Layer_Visible">Layer.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_PaintDotNet_Rendering_SizeInt32_">BitmapLayer(SizeInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_PaintDotNet_Rendering_SizeInt32_PaintDotNet_ColorBgra_">BitmapLayer(SizeInt32, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_PaintDotNet_Surface_">BitmapLayer(Surface)</a></dt>
+    <dd><p>Creates a new BitmapLayer of the same size as the given Surface, and copies the
+pixels from the given Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_PaintDotNet_Surface_System_Boolean_">BitmapLayer(Surface, bool)</a></dt>
+    <dd><p>Creates a new BitmapLayer of the same size as the given Surface, and either
+copies the pixels of the given Surface or takes ownership of it.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_System_Drawing_Size_">BitmapLayer(Size)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_System_Drawing_Size_PaintDotNet_ColorBgra_">BitmapLayer(Size, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_System_Int32_System_Int32_">BitmapLayer(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.-ctor.html#PaintDotNet_BitmapLayer__ctor_System_Int32_System_Int32_PaintDotNet_ColorBgra_">BitmapLayer(int, int, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.Surface.html#PaintDotNet_BitmapLayer_Surface">Surface</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.Clone.html#PaintDotNet_BitmapLayer_Clone">Clone()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.CreateRenderer.html#PaintDotNet_BitmapLayer_CreateRenderer">CreateRenderer()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.Dispose.html#PaintDotNet_BitmapLayer_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.LoadProperties.html#PaintDotNet_BitmapLayer_LoadProperties_System_Object_System_Boolean_">LoadProperties(object, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.OnPropertyChanged.html#PaintDotNet_BitmapLayer_OnPropertyChanged_System_String_">OnPropertyChanged(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.BitmapLayer.SaveProperties.html#PaintDotNet_BitmapLayer_SaveProperties">SaveProperties()</a></dt>
+    <dd><p>Allows you to save the mutable properties of the layer so you can restore them later
+(esp. important for undo!). Mutable properties include the layer's name, whether it's
+visible, and the metadata. This list might expand later.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

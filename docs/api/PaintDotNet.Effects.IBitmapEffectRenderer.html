@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IBitmapEffectRenderer
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IBitmapEffectRenderer
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.IBitmapEffectRenderer">
+
+
+
+  <h1 id="PaintDotNet_Effects_IBitmapEffectRenderer" data-uid="PaintDotNet.Effects.IBitmapEffectRenderer" class="text-break">
+    Interface IBitmapEffectRenderer
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBitmapEffectRenderer : IEffectRenderer, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectRenderer.CancelRendering.html#PaintDotNet_Effects_IEffectRenderer_CancelRendering">IEffectRenderer.CancelRendering()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectRenderer.Effect.html#PaintDotNet_Effects_IEffectRenderer_Effect">IEffectRenderer.Effect</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectRenderer.IsCancelRequested.html#PaintDotNet_Effects_IEffectRenderer_IsCancelRequested">IEffectRenderer.IsCancelRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectRenderer.CancellationToken.html#PaintDotNet_Effects_IEffectRenderer_CancellationToken">IEffectRenderer.CancellationToken</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.BitmapEffectRendererExtensions.Render.html#PaintDotNet_Effects_BitmapEffectRendererExtensions_Render_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_Imaging_IBitmapLock_PaintDotNet_Rendering_Point2Int32_">BitmapEffectRendererExtensions.Render(IBitmapEffectRenderer, IBitmapLock, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.BitmapEffectRendererExtensions.Render.html#PaintDotNet_Effects_BitmapEffectRendererExtensions_Render__1_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_Imaging_IBitmapLock___0__PaintDotNet_Rendering_Point2Int32_">BitmapEffectRendererExtensions.Render&lt;TPixel&gt;(IBitmapEffectRenderer, IBitmapLock&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.BitmapEffectRendererExtensions.Render.html#PaintDotNet_Effects_BitmapEffectRendererExtensions_Render__1_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">BitmapEffectRendererExtensions.Render&lt;TPixel&gt;(IBitmapEffectRenderer, RegionPtr&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.RenderInfo.html#PaintDotNet_Effects_IBitmapEffectRenderer_RenderInfo">RenderInfo</a></dt>
+    <dd><p>Gets the effect's rendering information. This property may only be accessed after
+<a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a> has been called.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a></dt>
+    <dd><p>This must be called before <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.SetToken.html#PaintDotNet_Effects_IBitmapEffectRenderer_SetToken_PaintDotNet_Effects_EffectConfigToken_">SetToken(EffectConfigToken?)</a> is called for the first time.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Render.html#PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32_">Render(void*, int, nint, in PixelFormat, RectInt32)</a></dt>
+    <dd><p>Renders the requested area and stores the result in the given buffer. The entire buffer is
+written to, including areas that are outside of the selection. The caller must perform any
+masking or blending.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.SetToken.html#PaintDotNet_Effects_IBitmapEffectRenderer_SetToken_PaintDotNet_Effects_EffectConfigToken_">SetToken(EffectConfigToken?)</a></dt>
+    <dd><p>This should be called when the token changes, such as when the user makes changes in the effect's
+configuration dialog. This must be called once before rendering may begin. This should only be
+called when there are no threads busy with calls to <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Render.html#PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32_">Render(void*, int, nint, in PixelFormat, RectInt32)</a>.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

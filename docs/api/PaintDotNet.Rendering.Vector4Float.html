@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Vector4Float
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Vector4Float
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Rendering.Vector4Float">
+
+
+
+  <h1 id="PaintDotNet_Rendering_Vector4Float" data-uid="PaintDotNet.Rendering.Vector4Float" class="text-break">
+    Struct Vector4Float
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Rendering.html">Rendering</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Primitives.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Vector4Float&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;Vector4Float&gt;))]
+public struct Vector4Float : IEquatable&lt;Vector4Float&gt;, IFormattable, IParsable&lt;Vector4Float&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_Vector2Float_">Vector4Float(Vector2Float, Vector2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_PaintDotNet_Rendering_Vector2Float_System_Single_System_Single_">Vector4Float(Vector2Float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_PaintDotNet_Rendering_Vector3Float_System_Single_">Vector4Float(Vector3Float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_System_Single_">Vector4Float(float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_System_Single_PaintDotNet_Rendering_Vector3Float_">Vector4Float(float, Vector3Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_System_Single_System_Single_PaintDotNet_Rendering_Vector2Float_">Vector4Float(float, float, Vector2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.-ctor.html#PaintDotNet_Rendering_Vector4Float__ctor_System_Single_System_Single_System_Single_System_Single_">Vector4Float(float, float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.BoxedZero.html#PaintDotNet_Rendering_Vector4Float_BoxedZero">BoxedZero</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.IsFinite.html#PaintDotNet_Rendering_Vector4Float_IsFinite">IsFinite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.IsInteger.html#PaintDotNet_Rendering_Vector4Float_IsInteger">IsInteger</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.IsZero.html#PaintDotNet_Rendering_Vector4Float_IsZero">IsZero</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Length.html#PaintDotNet_Rendering_Vector4Float_Length">Length</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.LengthSquared.html#PaintDotNet_Rendering_Vector4Float_LengthSquared">LengthSquared</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.One.html#PaintDotNet_Rendering_Vector4Float_One">One</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.W.html#PaintDotNet_Rendering_Vector4Float_W">W</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.X.html#PaintDotNet_Rendering_Vector4Float_X">X</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XW.html#PaintDotNet_Rendering_Vector4Float_XW">XW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XY.html#PaintDotNet_Rendering_Vector4Float_XY">XY</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XYW.html#PaintDotNet_Rendering_Vector4Float_XYW">XYW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XYZ.html#PaintDotNet_Rendering_Vector4Float_XYZ">XYZ</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XZ.html#PaintDotNet_Rendering_Vector4Float_XZ">XZ</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.XZW.html#PaintDotNet_Rendering_Vector4Float_XZW">XZW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Y.html#PaintDotNet_Rendering_Vector4Float_Y">Y</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.YW.html#PaintDotNet_Rendering_Vector4Float_YW">YW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.YZ.html#PaintDotNet_Rendering_Vector4Float_YZ">YZ</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.YZW.html#PaintDotNet_Rendering_Vector4Float_YZW">YZW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Z.html#PaintDotNet_Rendering_Vector4Float_Z">Z</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.ZW.html#PaintDotNet_Rendering_Vector4Float_ZW">ZW</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Zero.html#PaintDotNet_Rendering_Vector4Float_Zero">Zero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Abs.html#PaintDotNet_Rendering_Vector4Float_Abs_PaintDotNet_Rendering_Vector4Float_">Abs(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Dot.html#PaintDotNet_Rendering_Vector4Float_Dot_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">Dot(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Equals.html#PaintDotNet_Rendering_Vector4Float_Equals_PaintDotNet_Rendering_Vector4Float_">Equals(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Equals.html#PaintDotNet_Rendering_Vector4Float_Equals_System_Object_">Equals(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.GetHashCode.html#PaintDotNet_Rendering_Vector4Float_GetHashCode">GetHashCode()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Negate.html#PaintDotNet_Rendering_Vector4Float_Negate_PaintDotNet_Rendering_Vector4Float_">Negate(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Normalize.html#PaintDotNet_Rendering_Vector4Float_Normalize_PaintDotNet_Rendering_Vector4Float_">Normalize(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Parse.html#PaintDotNet_Rendering_Vector4Float_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.ToString.html#PaintDotNet_Rendering_Vector4Float_ToString">ToString()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.ToString.html#PaintDotNet_Rendering_Vector4Float_ToString_System_IFormatProvider_">ToString(IFormatProvider?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.ToString.html#PaintDotNet_Rendering_Vector4Float_ToString_System_String_System_IFormatProvider_">ToString(string?, IFormatProvider?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.TryParse.html#PaintDotNet_Rendering_Vector4Float_TryParse_System_String_PaintDotNet_Rendering_Vector4Float__">TryParse(string?, out Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Addition.html#PaintDotNet_Rendering_Vector4Float_op_Addition_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">operator +(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Division.html#PaintDotNet_Rendering_Vector4Float_op_Division_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">operator /(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Division.html#PaintDotNet_Rendering_Vector4Float_op_Division_PaintDotNet_Rendering_Vector4Float_System_Single_">operator /(Vector4Float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Equality.html#PaintDotNet_Rendering_Vector4Float_op_Equality_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">operator ==(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Explicit.html#PaintDotNet_Rendering_Vector4Float_op_Explicit_PaintDotNet_Rendering_Vector4Double___PaintDotNet_Rendering_Vector4Float">explicit operator Vector4Float(in Vector4Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Implicit.html#PaintDotNet_Rendering_Vector4Float_op_Implicit_PaintDotNet_Rendering_Vector4Float__System_Numerics_Vector4">implicit operator Vector4(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Implicit.html#PaintDotNet_Rendering_Vector4Float_op_Implicit_PaintDotNet_Rendering_Vector4Float__System_Runtime_Intrinsics_Vector128_System_Single_">implicit operator Vector128&lt;float&gt;(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Implicit.html#PaintDotNet_Rendering_Vector4Float_op_Implicit_PaintDotNet_Rendering_Vector4Int32__PaintDotNet_Rendering_Vector4Float">implicit operator Vector4Float(Vector4Int32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Implicit.html#PaintDotNet_Rendering_Vector4Float_op_Implicit_System_Numerics_Vector4__PaintDotNet_Rendering_Vector4Float">implicit operator Vector4Float(Vector4)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Implicit.html#PaintDotNet_Rendering_Vector4Float_op_Implicit_System_Runtime_Intrinsics_Vector128_System_Single___PaintDotNet_Rendering_Vector4Float">implicit operator Vector4Float(Vector128&lt;float&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Inequality.html#PaintDotNet_Rendering_Vector4Float_op_Inequality_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">operator !=(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Multiply.html#PaintDotNet_Rendering_Vector4Float_op_Multiply_PaintDotNet_Rendering_Vector4Float_System_Single_">operator *(Vector4Float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Multiply.html#PaintDotNet_Rendering_Vector4Float_op_Multiply_System_Single_PaintDotNet_Rendering_Vector4Float_">operator *(float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_Subtraction.html#PaintDotNet_Rendering_Vector4Float_op_Subtraction_PaintDotNet_Rendering_Vector4Float_PaintDotNet_Rendering_Vector4Float_">operator -(Vector4Float, Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.op_UnaryNegation.html#PaintDotNet_Rendering_Vector4Float_op_UnaryNegation_PaintDotNet_Rendering_Vector4Float_">operator -(Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.Parse.html#PaintDotNet_Rendering_Vector4Float_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Vector4Float.TryParse.html#PaintDotNet_Rendering_Vector4Float_TryParse_System_String_System_IFormatProvider_PaintDotNet_Rendering_Vector4Float__">TryParse(string?, IFormatProvider?, out Vector4Float)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

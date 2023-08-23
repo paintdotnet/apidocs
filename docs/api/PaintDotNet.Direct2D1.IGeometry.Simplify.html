@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method Simplify
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method Simplify
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IGeometry.Simplify*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IGeometry_Simplify_" data-uid="PaintDotNet.Direct2D1.IGeometry.Simplify*" class="text-break">
+  Method Simplify
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IGeometry_Simplify_" data-uid="PaintDotNet.Direct2D1.IGeometry.Simplify*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IGeometry_Simplify_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_PaintDotNet_Direct2D1_GeometrySimplificationOption_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__" data-uid="PaintDotNet.Direct2D1.IGeometry.Simplify(PaintDotNet.Direct2D1.ISimplifiedGeometrySink,PaintDotNet.Direct2D1.GeometrySimplificationOption,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@,System.Nullable{System.Single})">
+  Simplify(ISimplifiedGeometrySink, GeometrySimplificationOption, in Matrix3x2Float?, float?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ISimplifiedGeometrySink.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void Simplify(ISimplifiedGeometrySink geometrySink, GeometrySimplificationOption simplificationOption = GeometrySimplificationOption.Lines, in Matrix3x2Float? worldTransform = null, float? flatteningTolerance = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>geometrySink</code> <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.html">ISimplifiedGeometrySink</a></dt>
+  <dd><p>The ISimplifiedGeometrySink to which the simplified geometry is appended.</p>
+</dd>
+  <dt><code>simplificationOption</code> <a class="xref" href="PaintDotNet.Direct2D1.GeometrySimplificationOption.html">GeometrySimplificationOption</a></dt>
+  <dd><p>A value that specifies whether the simplified geometry should contain curves.</p>
+</dd>
+  <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
+  <dd><p>The transform to apply to the simplified geometry, or null for no transform.</p>
+</dd>
+  <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+  <dd><p>The maximum error allowed when constructing a polygonal approximation of the geometry, or null to use FlatteningTolerance.Default.
+No point in the polygonal representation will diverge from the original geometry by more than the flattening tolerance. Smaller
+values produce more accurate results but cause slower execution.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IGeometry_Simplify_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_PaintDotNet_Direct2D1_GeometrySimplificationOption_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Other graphics frameworks may call this &quot;flattening&quot; (e.g. Windows Presentation Foundation).</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method DrawText
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method DrawText
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText*" class="text-break">
+  Method DrawText
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText(System.String,PaintDotNet.DirectWrite.ITextFormat,PaintDotNet.Rendering.RectFloat,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.DrawTextOptions,PaintDotNet.DirectWrite.TextMeasuringMode)">
+  DrawText(string, ITextFormat, RectFloat, IDeviceBrush, DrawTextOptions, TextMeasuringMode)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Draws the specified text using the format information provided by an <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a> object.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void DrawText(string text, ITextFormat textFormat, RectFloat layoutRect, IDeviceBrush defaultFillBrush, DrawTextOptions options = DrawTextOptions.EnableColorFont, TextMeasuringMode measuringMode = TextMeasuringMode.Natural)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dd><p>The text to draw.</p>
+</dd>
+  <dt><code>textFormat</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a></dt>
+  <dd><p>An object that describes formatting details of the text to draw, such as the font, the font size, and flow direction.</p>
+</dd>
+  <dt><code>layoutRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
+  <dd><p>The size and position of the area in which the text is drawn.</p>
+</dd>
+  <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd><p>The brush used to paint the text.</p>
+</dd>
+  <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.DrawTextOptions.html">DrawTextOptions</a></dt>
+  <dd><p>A value that indicates whether the text should be snapped to pixel boundaries, whether the text should be clipped to the layout rectangle, and whether colored glyphs are enabled.</p>
+</dd>
+  <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
+  <dd><p>A value that indicates how glyph metrics are used to measure text when it is formatted.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>To create an <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a> object, retrieve an <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.html">IDirectWriteFactory</a> object and call its <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.CreateTextFormat.html#PaintDotNet_DirectWrite_IDirectWriteFactory_CreateTextFormat_System_String_PaintDotNet_DirectWrite_IFontCollection_PaintDotNet_DirectWrite_FontWeight_PaintDotNet_DirectWrite_FontStyle_PaintDotNet_DirectWrite_FontStretch_System_Single_System_String_">CreateTextFormat(string, IFontCollection?, FontWeight, FontStyle, FontStretch, float, string?)</a> method.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText(System.String,PaintDotNet.DirectWrite.ITextFormat,PaintDotNet.Rendering.RectFloat,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.ISvgGlyphStyle,System.Int32,PaintDotNet.Direct2D1.DrawTextOptions,PaintDotNet.DirectWrite.TextMeasuringMode)">
+  DrawText(string, ITextFormat, RectFloat, IDeviceBrush?, ISvgGlyphStyle?, int, DrawTextOptions, TextMeasuringMode)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Draws the text within the given layout rectangle.<br>
+By default, this method performs baseline snapping and renders color versions of glyphs in color fonts.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void DrawText(string text, ITextFormat textFormat, RectFloat layoutRect, IDeviceBrush? defaultFillBrush, ISvgGlyphStyle? svgGlyphStyle, int colorPaletteIndex = 0, DrawTextOptions options = DrawTextOptions.EnableColorFont, TextMeasuringMode measuringMode = TextMeasuringMode.Natural)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dd><p>The text to draw.</p>
+</dd>
+  <dt><code>textFormat</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a></dt>
+  <dd><p>An object that describes formatting details of the text to draw, such as the font, the font size, and flow direction.</p>
+</dd>
+  <dt><code>layoutRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
+  <dd><p>The size and position of the area in which the text is drawn.</p>
+</dd>
+  <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd><p>The brush used to paint the text.</p>
+</dd>
+  <dt><code>svgGlyphStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgGlyphStyle.html">ISvgGlyphStyle</a></dt>
+  <dd><p>Values for context-fill, context-stroke, and context-value that are used when rendering SVG glyphs.</p>
+</dd>
+  <dt><code>colorPaletteIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>The index used to select a color palette within a color font.</p>
+</dd>
+  <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.DrawTextOptions.html">DrawTextOptions</a></dt>
+  <dd><p>A value that indicates whether the text should be snapped to pixel boundaries, whether the text should be clipped to the layout rectangle, and whether colored glyphs are enabled.</p>
+</dd>
+  <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
+  <dd><p>A value that indicates how glyph metrics are used to measure text when it is formatted.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

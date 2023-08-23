@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method GetTarget
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method GetTarget
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetTarget*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_GetTarget_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetTarget*" class="text-break">
+  Method GetTarget
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_GetTarget_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetTarget*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_GetTarget" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetTarget">
+  GetTarget()
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Gets the target currently associated with the device context.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IDeviceImage? GetTarget()</code></pre>
+</div>
+
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
+  <dd><p>The target currently associated with the device context.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_GetTarget_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If a target is not associated with the device context, this method will return null.<br>
+If the currently selected target is a bitmap rather than a command list, the application can gain access to the initial bitmaps
+created by using one of the following methods: <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateHwndDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateHwndDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__PaintDotNet_Direct2D1_HwndDeviceContextProperties__">CreateHwndDeviceContext(in DeviceContextProperties, in HwndDeviceContextProperties)</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateDCDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateDCDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateDCDeviceContext(in DeviceContextProperties)</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a>.<br>
+It is not possible for an application to destroy these bitmaps. All of these bitmaps are bindable as bitmap targets. However not all
+of these bitmaps can be used as bitmap sources for <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> methods.<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> will always create bitmaps that are usable as a bitmap source.<br>
+When using <a class="xref" href="PaintDotNet.Direct2D1.IDCDeviceContext.html">IDCDeviceContext</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.BeginDraw.html#PaintDotNet_Direct2D1_IDeviceContext_BeginDraw">BeginDraw()</a> will copy from the HDC to the original bitmap associated with it.
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> will copy from the original bitmap to the HDC.<br>
+<a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be locked in the following circumstances:<br></p>
+<ul><li>BeginDraw has been called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is set as the target of a device context after BeginDraw has been called and before EndDraw has been called.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or detination.</li></ul>
+<a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be unlocked in the following circumstances:<br>
+<ul><li>EndDraw is called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is removed as the target of a device context between the calls to BeginDraw and EndDraw.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or destination.</li></ul>
+Direct2D will only lock bitmaps that are not currently locked.<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.Resize.html#PaintDotNet_Direct2D1_IHwndDeviceContext_Resize_PaintDotNet_Rendering_SizeInt32_">Resize(SizeInt32)</a> will throw <a class="xref" href="PaintDotNet.Direct2D1.InvalidCallException.html">InvalidCallException</a> if there are any outstanding references to
+the original bitmap associated with the device context.<br>
+Although the target can be a command list, it cannot be any other type of image. It cannot be an effect.
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

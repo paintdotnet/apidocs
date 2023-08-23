@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateSharedBitmap
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateSharedBitmap
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap*" class="text-break">
+  Method CreateSharedBitmap
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Imaging_IBitmapLock_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap(PaintDotNet.Imaging.IBitmapLock,System.Nullable{PaintDotNet.Direct2D1.SharedBitmapProperties}@)">
+  CreateSharedBitmap(IBitmapLock, in SharedBitmapProperties?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> whose data is shared (not copied) with an <a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IDeviceBitmap CreateSharedBitmap(IBitmapLock bitmapLock, in SharedBitmapProperties? bitmapProperties = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>bitmapLock</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a></dt>
+  <dd><p>The <a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a> that contains the data to share with the new device bitmap.</p>
+</dd>
+  <dt><code>bitmapProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.SharedBitmapProperties.html">SharedBitmapProperties</a>?</dt>
+  <dd><p>The pixel format and DPI of the bitmap to create. The <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html">DxgiFormat</a> portion of the pixel format must match the DxgiFormat
+of the data or the method will fail, but the alpha modes don't have to match. To prevent a mismatch, you can pass null. The DPI
+settings do not have to match those of data. If both dpiX and dpiY are 0.0f, the DPI of the device context is used.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
+  <dd><p>The new shared bitmap.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Imaging_IBitmapLock_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The CreateSharedBitmap method is useful for efficiently reusing bitmap data when using a software device context.<br>
+An <a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a> stores the content of a bitmap and shields it from simultaneous accesses. By passing an IBitmapLock
+to the CreateSharedBitmap method, you can create an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> that points to the bitmap data already stored in
+the IBitmapLock.<br>
+To use an IBitmapLock with the CreateSharedBitmap method, the device context must be using software rendering. To check whether
+a device context uses software rendering, use the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties__">IsSupported(in DeviceContextProperties)</a> method or the IsSoftwareContext extension method.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap(PaintDotNet.Direct2D1.IDeviceBitmap,System.Nullable{PaintDotNet.Direct2D1.SharedBitmapProperties}@)">
+  CreateSharedBitmap(IDeviceBitmap, in SharedBitmapProperties?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> whose data is shared (not copied) with another <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IDeviceBitmap CreateSharedBitmap(IDeviceBitmap bitmap, in SharedBitmapProperties? bitmapProperties = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
+  <dd><p>The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> that contains the data to share with the new device bitmap.</p>
+</dd>
+  <dt><code>bitmapProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.SharedBitmapProperties.html">SharedBitmapProperties</a>?</dt>
+  <dd><p>The pixel format and DPI of the bitmap to create. The <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html">DxgiFormat</a> portion of the pixel format must match the DxgiFormat
+of the data or the method will fail, but the alpha modes don't have to match. To prevent a mismatch, you can pass null. The DPI
+settings do not have to match those of data. If both dpiX and dpiY are 0.0f, the DPI of the device context is used.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
+  <dd><p>The new shared bitmap.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>By passing an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> created by a device context that is resource-compatible, you can share a bitmap with
+that render target; both the original <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> and the new <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> created by this method
+will point to the same bitmap data (it is not copied). For more information about when device context resources can be shared,
+see the Sharing Render Target Resources section of the <a href="https://docs.microsoft.com/en-us/windows/win32/Direct2D/resources-and-resource-domains">Resources Overview</a>.<br>
+You may also use this method to reinterpret the data of an existing bitmap and specify a new DPI or alpha mode. For example, in
+the case of a bitmap atlas, an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> may contain multiple sub-images, each of which should be rendered
+with a different <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html">AlphaMode</a> (either <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Premultiplied">Premultiplied</a> or <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Ignore">Ignore</a>). You
+could use the CreateSharedBitmap method to reinterpret the bitmap using the desired alpha mode without having to load a separate
+copy of the bitmap into memory.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

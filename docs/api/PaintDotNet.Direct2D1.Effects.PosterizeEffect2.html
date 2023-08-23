@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PosterizeEffect2
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PosterizeEffect2
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.Effects.PosterizeEffect2">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_Effects_PosterizeEffect2" data-uid="PaintDotNet.Direct2D1.Effects.PosterizeEffect2" class="text-break">
+    Class PosterizeEffect2
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect.html">PosterizeEffect</a>, but permits up to 256 value counts instead of 16, supports posterizing
+the alpha channel, and can work on both straight and premultiplied inputs.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PosterizeEffect2 : CustomEffect&lt;PosterizeEffect2.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.html">DeviceEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect-1.html">DeviceEffect</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.html">PosterizeEffect2</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.Props.html">Props</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.CustomEffect-1.html">CustomEffect</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.html">PosterizeEffect2</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.Props.html">Props</a>&gt;</div>
+      <div><span class="xref">PosterizeEffect2</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect-1.Properties.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_1_Properties">DeviceEffect&lt;PosterizeEffect2.Props&gt;.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.IsInputSet.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_IsInputSet_System_Int32_">DeviceEffect.IsInputSet(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetInput.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetInput_System_Int32_">DeviceEffect.GetInput(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.SetInput.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_SetInput_System_Int32_PaintDotNet_Direct2D1_IDeviceImage_System_Boolean_">DeviceEffect.SetInput(int, IDeviceImage, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetPropertyType.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetPropertyType_System_Int32_">DeviceEffect.GetPropertyType(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetValue.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetValue_System_Int32_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_Span_System_Byte__">DeviceEffect.GetValue(int, DeviceEffectPropertyType, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetValueByName.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetValueByName_System_String_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_Span_System_Byte__">DeviceEffect.GetValueByName(string, DeviceEffectPropertyType, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetValueRef.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetValueRef_System_Int32_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_Type_">DeviceEffect.GetValueRef(int, DeviceEffectPropertyType, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetValueRefByName.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetValueRefByName_System_String_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_Type_">DeviceEffect.GetValueRefByName(string, DeviceEffectPropertyType, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.GetValueSize.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_GetValueSize_System_Int32_">DeviceEffect.GetValueSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.SetValue.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_SetValue_System_Int32_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_ReadOnlySpan_System_Byte__">DeviceEffect.SetValue(int, DeviceEffectPropertyType, ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.SetValueByName.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_SetValueByName_System_String_PaintDotNet_Direct2D1_DeviceEffectPropertyType_System_ReadOnlySpan_System_Byte__">DeviceEffect.SetValueByName(string, DeviceEffectPropertyType, ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.SetValueRef.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_SetValueRef_System_Int32_PaintDotNet_Direct2D1_DeviceEffectPropertyType_PaintDotNet_ComponentModel_IObjectRef_">DeviceEffect.SetValueRef(int, DeviceEffectPropertyType, IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.SetValueRefByName.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_SetValueRefByName_System_String_PaintDotNet_Direct2D1_DeviceEffectPropertyType_PaintDotNet_ComponentModel_IObjectRef_">DeviceEffect.SetValueRefByName(string, DeviceEffectPropertyType, IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.TryGetPropertyIndex.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_TryGetPropertyIndex_System_String_">DeviceEffect.TryGetPropertyIndex(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.TryGetPropertyName.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_TryGetPropertyName_System_Int32_">DeviceEffect.TryGetPropertyName(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.TryGetSubProperties.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_TryGetSubProperties_System_Int32_">DeviceEffect.TryGetSubProperties(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.InputCount.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_InputCount">DeviceEffect.InputCount</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.Factory.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_Factory">DeviceEffect.Factory</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.PropertyCount.html#PaintDotNet_Direct2D1_Effects_DeviceEffect_PropertyCount">DeviceEffect.PropertyCount</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.Dispose.html#PaintDotNet_ComponentModel_RefTrackedObject_Dispose">RefTrackedObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">RefTrackedObject.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.IsDisposed.html#PaintDotNet_ComponentModel_RefTrackedObject_IsDisposed">RefTrackedObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.-ctor.html#PaintDotNet_Direct2D1_Effects_PosterizeEffect2__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_">PosterizeEffect2(IDeviceEffectFactory)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

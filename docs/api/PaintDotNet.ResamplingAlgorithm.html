@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum ResamplingAlgorithm
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum ResamplingAlgorithm
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.ResamplingAlgorithm">
+
+
+
+
+  <h1 id="PaintDotNet_ResamplingAlgorithm" data-uid="PaintDotNet.ResamplingAlgorithm" class="text-break">
+    Enum ResamplingAlgorithm
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum ResamplingAlgorithm</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_ResamplingAlgorithm_NearestNeighbor"><code>NearestNeighbor = 0</code></dt>
+    <dd><p>A nearest neighbor interpolation algorithm. Also known as nearest pixel or point interpolation.<br>
+The output pixel is assigned the value of the pixel that the point falls within. No other pixels
+are considered.<br></p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_LinearLowQuality"><code>LinearLowQuality = 1</code></dt>
+    <dd><p>A bilinear interpolation algorithm. The output pixel values are computed as a weighted average
+of the nearest four pixels in a 2x2 grid. This is the algorithm often used in real-time computer
+graphics for (bi)linear filtering.</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_Cubic"><code>Cubic = 2</code></dt>
+    <dd><p>A bicubic interpolation algorithm. Specifically this is the Catmull-Rom cubic interpolation kernel,
+which is equivalent to the HighQualityCubic algorithm offered by WIC and Direct2D. In the
+<a href="https://imagemagick.org/Usage/filter/#cubics">family of cubic filters,</a> this uses
+(b=0, c=0.5).</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_SuperSampling"><code>SuperSampling = 3</code></dt>
+    <dd><p><b>Deprecated.</b> It is highly recommend that you not use this.<br>
+This is equivalent to Fant for down-sizing, and CubicSmooth for upsizing.<br>
+Note that the name of this was poorly chosen and should not actually be referred to as &quot;super sampling.&quot;</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_Fant"><code>Fant = 4</code></dt>
+    <dd><p>For downsizing, destination pixel values are computed as a weighted average of the all the pixels
+that map to the new pixel.<br>
+For upsizing, this is equivalent to <a class="xref" href="PaintDotNet.ResamplingAlgorithm.html#PaintDotNet_ResamplingAlgorithm_Linear">Linear</a>.<br>
+This implements Karl M. Fant's interpolation algorithm as described in the paper, &quot;A Nonaliasing,
+Real-Time Spatial Transform Technique.&quot; It is equivalent to WIC/WPF's Fant algorithm, but without
+the bugs (e.g. the half-pixel offset when upsizing).</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_Linear"><code>Linear = 5</code></dt>
+    <dd><p>Implements <a href="http://www.imagemagick.org/Usage/filter/#triangle">Linear</a> (Triangle/Tent)
+interpolation. This is much higher quality than <a class="xref" href="PaintDotNet.ResamplingAlgorithm.html#PaintDotNet_ResamplingAlgorithm_LinearLowQuality">LinearLowQuality</a> for downsizing,
+but produces the same result for upsizing.</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_AdaptiveFast"><code>AdaptiveFast = 6</code></dt>
+    <dd><p>A high-quality mode that uses lower-quality downscaling to the nearest power of 2 to the target
+size. A high-quality scaler is then used to reach the final size. This uses
+<a href="https://github.com/saucecontrol/PhotoSauce">MagicScaler's</a> HybridScaleMode.Turbo.</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_Lanczos3"><code>Lanczos3 = 7</code></dt>
+    <dd><p>Uses the <a href="https://imagemagick.org/Usage/filter/#lanczos">Lanczos filter</a> with 3 lobes.</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_CubicSmooth"><code>CubicSmooth = 8</code></dt>
+    <dd><p>A bicubic interpolation algorithm. In the <a href="https://imagemagick.org/Usage/filter/#cubics">family of cubic filters,</a>
+this uses (b=1, c=0). No sharpening is employed, and the resulting image will not have any ringing
+artifacts.</p>
+</dd>
+    <dt id="PaintDotNet_ResamplingAlgorithm_AdaptiveHighQuality"><code>AdaptiveHighQuality = 9</code></dt>
+    <dd><p>A high-quality mode that chooses an appropriate high-quality interpolator based on the ratio between
+the source and target sizes. This is a very good choice for resizing photos and produces a sharper
+result than the other resamplers.<br>
+This uses <a href="https://github.com/saucecontrol/PhotoSauce">MagicScaler's</a> default interpolation
+settings with HybridScaleMode.Off.<br></p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

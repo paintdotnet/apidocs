@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace PaintDotNet.IndirectUI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace PaintDotNet.IndirectUI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.IndirectUI">
+
+  <h1 id="PaintDotNet_IndirectUI" data-uid="PaintDotNet.IndirectUI" class="text-break">Namespace PaintDotNet.IndirectUI
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.ControlInfo.html">ControlInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.ControlInfoStateProperty-1.html">ControlInfoStateProperty&lt;TState&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.DynamicMethodNames.html">DynamicMethodNames</a></dt>
+      <dd><p>This static class lists names and provides information about dynamic methods that IndirectUI objects (e.g. an Effect) may implement.
+A dynamic method is one that is available in one of 3 ways:</p>
+<ol>
+<li>If the object implements PaintDotNet.Dynamic.IDynamicInvoke, then that will be used to dispatch the method call. This is a good way to find out which dynamic methods are being invoked, when they're called, etc.</li>
+<li>If the object implements a private method, object OnInvokeDynamicMethod(string name, object[] args), then that will be used to dispatch the method call.</li>
+<li>The Effect may also implement the dynamic method directly as a private method, in which case reflection will be used to call it.</li>
+</ol>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.PanelControlInfo.html">PanelControlInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.PropertyControlInfo.html">PropertyControlInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.StatefulControlInfo-2.html">StatefulControlInfo&lt;TState, TStateProperty&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.TabContainerControlInfo.html">TabContainerControlInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.TabContainerStateProperty.html">TabContainerStateProperty</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.TabPageControlInfo.html">TabPageControlInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.TabContainerState.html">TabContainerState</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.IControlInfoStateProperty.html">IControlInfoStateProperty</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.IControlInfoStateProperty-1.html">IControlInfoStateProperty&lt;TState&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.ControlInfoPropertyNames.html">ControlInfoPropertyNames</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.PropertyControlType.html">PropertyControlType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.SliderControlStyle.html">SliderControlStyle</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.IndirectUI.WindowHelpContentType.html">WindowHelpContentType</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct LineSpacing
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct LineSpacing
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.DirectWrite.LineSpacing">
+
+
+
+  <h1 id="PaintDotNet_DirectWrite_LineSpacing" data-uid="PaintDotNet.DirectWrite.LineSpacing" class="text-break">
+    Struct LineSpacing
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.DirectWrite.html">DirectWrite</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Sets the vertical spacing between lines of text.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct LineSpacing : IEquatable&lt;LineSpacing&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.html">LineSpacing</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.-ctor.html#PaintDotNet_DirectWrite_LineSpacing__ctor_PaintDotNet_DirectWrite_LineSpacingMethod_System_Single_System_Single_System_Single_PaintDotNet_DirectWrite_FontLineGapUsage_">LineSpacing(LineSpacingMethod, float, float, float, FontLineGapUsage)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Baseline.html#PaintDotNet_DirectWrite_LineSpacing_Baseline">Baseline</a></dt>
+    <dd><p>Distance from top of line to baseline. The interpretation of this parameter depends upon the line spacing method, as follows:</p>
+<ul>
+<li>Default line spacing: ignored</li>
+<li>Uniform line spacing: explicit distance in DIPs from the top of the line to the baseline</li>
+<li>Proportional line spacing: a scaling factor applied to the computed baseline; for each line, the baseline distance is computed as for default line spacing, and the scaling factor is applied to that value.</li>
+</ul>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.FontLineGapUsage.html#PaintDotNet_DirectWrite_LineSpacing_FontLineGapUsage">FontLineGapUsage</a></dt>
+    <dd><p>Specifies whether the font metrics' line gap value should be part of the line metrics.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Height.html#PaintDotNet_DirectWrite_LineSpacing_Height">Height</a></dt>
+    <dd><p>Spacing between lines. The interpretation of this parameter depends upon the line spacing method, as follows:</p>
+<ul>
+<li>Default line spacing: ignored</li>
+<li>Uniform line spacing: explicit distance in DIPs between lines</li>
+<li>Proportional line spacing: a scaling factor to be applied to the computed line height; for each line, the height of the line is computed as for default line spacing, and the scaling factor is applied to that value.</li>
+</ul>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.LeadingBefore.html#PaintDotNet_DirectWrite_LineSpacing_LeadingBefore">LeadingBefore</a></dt>
+    <dd><p>Proportion of the entire leading distributed before the line. The allowed value is between 0 and 1.0. The remaining leading is distributed after the line. It is ignored for the default and uniform line spacing methods. The leading that is available to distribute before or after the line depends on the values of the height and baseline parameters.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Method.html#PaintDotNet_DirectWrite_LineSpacing_Method">Method</a></dt>
+    <dd><p>Method used to determine line spacing.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Equals.html#PaintDotNet_DirectWrite_LineSpacing_Equals_PaintDotNet_DirectWrite_LineSpacing_">Equals(LineSpacing)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Equals.html#PaintDotNet_DirectWrite_LineSpacing_Equals_PaintDotNet_DirectWrite_LineSpacing__">Equals(in LineSpacing)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.Equals.html#PaintDotNet_DirectWrite_LineSpacing_Equals_System_Object_">Equals(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.GetHashCode.html#PaintDotNet_DirectWrite_LineSpacing_GetHashCode">GetHashCode()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.op_Equality.html#PaintDotNet_DirectWrite_LineSpacing_op_Equality_PaintDotNet_DirectWrite_LineSpacing__PaintDotNet_DirectWrite_LineSpacing__">operator ==(in LineSpacing, in LineSpacing)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacing.op_Inequality.html#PaintDotNet_DirectWrite_LineSpacing_op_Inequality_PaintDotNet_DirectWrite_LineSpacing__PaintDotNet_DirectWrite_LineSpacing__">operator !=(in LineSpacing, in LineSpacing)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

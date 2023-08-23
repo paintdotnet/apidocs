@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DeviceContextExtensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DeviceContextExtensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_DeviceContextExtensions" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions" class="text-break">
+    Class DeviceContextExtensions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DeviceContextExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DeviceContextExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Direct2D1_BitmapProperties__">CreateBitmap(IDeviceContext, SizeInt32, in BitmapProperties)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Direct2D1_DevicePixelFormat_System_Single_System_Single_PaintDotNet_Direct2D1_BitmapOptions_PaintDotNet_Direct2D1_IDeviceColorContext_">CreateBitmap(IDeviceContext, SizeInt32, DevicePixelFormat, float, float, BitmapOptions, IDeviceColorContext?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Dxgi_DxgiFormat_PaintDotNet_Direct2D1_AlphaMode_System_Single_System_Single_PaintDotNet_Direct2D1_BitmapOptions_PaintDotNet_Direct2D1_IDeviceColorContext_">CreateBitmap(IDeviceContext, SizeInt32, DxgiFormat, AlphaMode, float, float, BitmapOptions, IDeviceColorContext?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_System_Void__System_Int32_PaintDotNet_Direct2D1_DevicePixelFormat_System_Single_System_Single_PaintDotNet_Direct2D1_BitmapOptions_PaintDotNet_Direct2D1_IDeviceColorContext_">CreateBitmap(IDeviceContext, SizeInt32, void*, int, DevicePixelFormat, float, float, BitmapOptions, IDeviceColorContext?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_System_Void__System_Int32_PaintDotNet_Dxgi_DxgiFormat_PaintDotNet_Direct2D1_AlphaMode_System_Single_System_Single_PaintDotNet_Direct2D1_BitmapOptions_PaintDotNet_Direct2D1_IDeviceColorContext_">CreateBitmap(IDeviceContext, SizeInt32, void*, int, DxgiFormat, AlphaMode, float, float, BitmapOptions, IDeviceColorContext?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmapBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateCompatibleDeviceContext_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Dxgi_DxgiFormat_PaintDotNet_Direct2D1_AlphaMode_PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(IDeviceContext, SizeFloat, SizeInt32, DxgiFormat, AlphaMode, CompatibleDeviceContextOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateLinearGradientBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateLinearGradientBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IGradientStopCollection_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateLinearGradientBrush(IDeviceContext, Point2Float, Point2Float, IGradientStopCollection, float, in Matrix3x2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateRadialGradientBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateRadialGradientBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IGradientStopCollection_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateRadialGradientBrush(IDeviceContext, Point2Float, Point2Float, float, float, IGradientStopCollection, float, in Matrix3x2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateSharedBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateSharedBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Rendering_RectInt32_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___">CreateSharedBitmap(IDeviceContext, IBitmap, RectInt32, in SharedBitmapProperties?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateSharedBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateSharedBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmap_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___">CreateSharedBitmap(IDeviceContext, IBitmap, in SharedBitmapProperties?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateSolidColorBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateSolidColorBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_ColorRgba128Float_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateSolidColorBrush(IDeviceContext, ColorRgba128Float, float, in Matrix3x2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawEllipse_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(IDeviceContext, Point2Float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawEllipse_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(IDeviceContext, Point2Float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawEllipse_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(IDeviceContext, RectFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawEllipse_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(IDeviceContext, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawEllipse_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(IDeviceContext, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawImage.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceContext, IDeviceImage, RectFloat, in RectFloat?, InterpolationMode, CompositeMode)</a></dt>
+    <dd><p>Draws the image, fitting the given imageRect from the image to the given targetRect on the
+device context. If null is passed for imageRect then the whole image is used, and it is
+also required that the image has a finite extent (which is calculated by calling
+IDeviceContext.GetImageLocalBounds()). If the image has an infinite extent, the results
+are undefined and may or may not cause an exception to be thrown.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawLine.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawLine_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(IDeviceContext, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(IDeviceContext, Point2Float, SizeFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(IDeviceContext, Point2Float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(IDeviceContext, float, float, SizeFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(IDeviceContext, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, Point2Float, SizeFloat, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, Point2Float, SizeFloat, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, Point2Float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, Point2Float, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, RectFloat, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, RectFloat, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, float, float, SizeFloat, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, float, float, SizeFloat, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, float, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(IDeviceContext, float, float, float, float, float, float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawText.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawText_PaintDotNet_Direct2D1_IDeviceContext_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(IDeviceContext, string, ITextFormat, Point2Float, SizeFloat, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawText.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawText_PaintDotNet_Direct2D1_IDeviceContext_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(IDeviceContext, string, ITextFormat, Point2Float, float, float, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawText.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawText_PaintDotNet_Direct2D1_IDeviceContext_System_String_PaintDotNet_DirectWrite_ITextFormat_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(IDeviceContext, string, ITextFormat, float, float, SizeFloat, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawText.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawText_PaintDotNet_Direct2D1_IDeviceContext_System_String_PaintDotNet_DirectWrite_ITextFormat_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(IDeviceContext, string, ITextFormat, float, float, float, float, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawTextLayout.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawTextLayout_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_DirectWrite_ITextLayout_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_">DrawTextLayout(IDeviceContext, float, float, ITextLayout, IDeviceBrush, DrawTextOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillEllipse_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillEllipse(IDeviceContext, Point2Float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillEllipse_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillEllipse(IDeviceContext, Point2Float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillEllipse_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillEllipse(IDeviceContext, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillEllipse.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillEllipse_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillEllipse(IDeviceContext, float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(IDeviceContext, Point2Float, SizeFloat, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(IDeviceContext, Point2Float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(IDeviceContext, float, float, SizeFloat, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(IDeviceContext, float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, Point2Float, SizeFloat, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, Point2Float, SizeFloat, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, Point2Float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, Point2Float, float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, RectFloat, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, RectFloat, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, float, float, SizeFloat, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_SizeFloat_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, float, float, SizeFloat, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, float, float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.FillRoundedRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_FillRoundedRectangle_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(IDeviceContext, float, float, float, float, float, float, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.IsSoftwareContext.html#PaintDotNet_Direct2D1_DeviceContextExtensions_IsSoftwareContext_PaintDotNet_Direct2D1_IDeviceContext_">IsSoftwareContext(IDeviceContext)</a></dt>
+    <dd><p>Returns a flag indicating whether the device context is using software rendering. This also indicates
+that <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Imaging_IBitmapLock_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___">CreateSharedBitmap(IBitmapLock, in SharedBitmapProperties?)</a> may be used
+to create a device bitmap that shares memory with a CPU bitmap (without copying).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.IsSupported.html#PaintDotNet_Direct2D1_DeviceContextExtensions_IsSupported_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_DeviceContextType_System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__System_Nullable_PaintDotNet_Direct2D1_DeviceContextUsage__">IsSupported(IDeviceContext, DeviceContextType, DevicePixelFormat?, DeviceContextUsage?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.PushLayer.html#PaintDotNet_Direct2D1_DeviceContextExtensions_PushLayer_PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_AntialiasMode_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Single_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_LayerOptions_PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(IDeviceContext, in RectFloat?, IGeometry?, AntialiasMode, in Matrix3x2Float?, float, IDeviceBrush?, LayerOptions, IDeviceLayer?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.SaveDrawingState.html#PaintDotNet_Direct2D1_DeviceContextExtensions_SaveDrawingState_PaintDotNet_Direct2D1_IDeviceContext_">SaveDrawingState(IDeviceContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseAntialiasMode.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseAntialiasMode_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_AntialiasMode_">UseAntialiasMode(IDeviceContext, AntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseAxisAlignedClip.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseAxisAlignedClip_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_AntialiasMode_">UseAxisAlignedClip(IDeviceContext, RectFloat, AntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseBeginDraw.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseBeginDraw_PaintDotNet_Direct2D1_IDeviceContext_">UseBeginDraw(IDeviceContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseEffectBufferPrecision.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseEffectBufferPrecision_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_BufferPrecision_">UseEffectBufferPrecision(IDeviceContext, BufferPrecision)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseLayer.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseLayer_PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_AntialiasMode_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Single_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_LayerOptions_PaintDotNet_Direct2D1_IDeviceLayer_">UseLayer(IDeviceContext, in RectFloat?, IGeometry?, AntialiasMode, in Matrix3x2Float?, float, IDeviceBrush?, LayerOptions, IDeviceLayer?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UsePrimitiveBlend.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UsePrimitiveBlend_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_PrimitiveBlend_">UsePrimitiveBlend(IDeviceContext, PrimitiveBlend)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseRotateAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseRotateAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseRotateAtTransform(IDeviceContext, float, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseRotateAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseRotateAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseRotateAtTransform(IDeviceContext, float, float, float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseRotateTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseRotateTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseRotateTransform(IDeviceContext, float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, Vector2Float, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, float, float, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, float, float, float, float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleTransform(IDeviceContext, Vector2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleTransform(IDeviceContext, float, float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTarget.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTarget_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_">UseTarget(IDeviceContext, IDeviceImage?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTextAntialiasMode.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTextAntialiasMode_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_TextAntialiasMode_">UseTextAntialiasMode(IDeviceContext, TextAntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTextRenderingMode.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTextRenderingMode_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_DirectWrite_TextRenderingMode_">UseTextRenderingMode(IDeviceContext, TextRenderingMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTextRenderingParameters.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTextRenderingParameters_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_DirectWrite_ITextRenderingParameters_">UseTextRenderingParameters(IDeviceContext, ITextRenderingParameters?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Matrix3x2Float__PaintDotNet_Rendering_MatrixMultiplyOrder_">UseTransform(IDeviceContext, in Matrix3x2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTranslateTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTranslateTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseTranslateTransform(IDeviceContext, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTranslateTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTranslateTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseTranslateTransform(IDeviceContext, Vector2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseTranslateTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseTranslateTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseTranslateTransform(IDeviceContext, float, float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

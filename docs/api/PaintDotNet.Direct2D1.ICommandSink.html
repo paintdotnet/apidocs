@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ICommandSink
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ICommandSink
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.ICommandSink">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_ICommandSink" data-uid="PaintDotNet.Direct2D1.ICommandSink" class="text-break">
+    Interface ICommandSink
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The command sink is implemented by you for an application when you want to receive a playback of the commands
+recorded in a command list. A typical usage will be for transforming the command list into another format such
+as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br>
+<br>
+The command sink interface doesn't have any resource creation methods on it. The resources are still logically
+bound to the Direct2D device on which the command list was created and will be passed in to the command sink
+implementation.<br>
+<br>
+This interface corresponds to the following Direct2D interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICommandSink : IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="PaintDotNet_Direct2D1_ICommandSink_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>To implement this yourself, such as to process the commands stored in an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a> by calling
+<a class="xref" href="PaintDotNet.Direct2D1.ICommandList.Stream.html#PaintDotNet_Direct2D1_ICommandList_Stream_PaintDotNet_Direct2D1_ICommandSink_">Stream(ICommandSink)</a>, create a class that derives from <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a> and that also
+derives from this interface.</p>
+</div>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.BeginDraw.html#PaintDotNet_Direct2D1_ICommandSink_BeginDraw">BeginDraw()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.BlendImage.html#PaintDotNet_Direct2D1_ICommandSink_BlendImage_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_BlendMode_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_">BlendImage(IDeviceImage, BlendMode, Point2Float?, in RectFloat?, InterpolationMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.Clear.html#PaintDotNet_Direct2D1_ICommandSink_Clear_System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___">Clear(in ColorRgba128Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawBitmap.html#PaintDotNet_Direct2D1_ICommandSink_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float___">DrawBitmap(IDeviceBitmap, in RectFloat?, float, InterpolationMode, in RectFloat?, in Matrix4x4Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGdiMetafile.html#PaintDotNet_Direct2D1_ICommandSink_DrawGdiMetafile_PaintDotNet_Direct2D1_IGdiMetafile_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectFloat___">DrawGdiMetafile(IGdiMetafile, RectFloat, in RectFloat?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGdiMetafile.html#PaintDotNet_Direct2D1_ICommandSink_DrawGdiMetafile_PaintDotNet_Direct2D1_IGdiMetafile_System_Nullable_PaintDotNet_Rendering_Point2Float__">DrawGdiMetafile(IGdiMetafile, Point2Float?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGeometry.html#PaintDotNet_Direct2D1_ICommandSink_DrawGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawGeometry(IGeometry, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGlyphRun.html#PaintDotNet_Direct2D1_ICommandSink_DrawGlyphRun_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_DirectWrite_GlyphRunDescription__PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawGlyphRun(Point2Float, in GlyphRun, in GlyphRunDescription, IDeviceBrush, TextMeasuringMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGradientMesh.html#PaintDotNet_Direct2D1_ICommandSink_DrawGradientMesh_PaintDotNet_Direct2D1_IGradientMesh_">DrawGradientMesh(IGradientMesh)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawImage.html#PaintDotNet_Direct2D1_ICommandSink_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawInk.html#PaintDotNet_Direct2D1_ICommandSink_DrawInk_PaintDotNet_Direct2D1_IDeviceInk_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceInkStyle_">DrawInk(IDeviceInk, IDeviceBrush, IDeviceInkStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawLine.html#PaintDotNet_Direct2D1_ICommandSink_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawRectangle.html#PaintDotNet_Direct2D1_ICommandSink_DrawRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(RectFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawSpriteBatch.html#PaintDotNet_Direct2D1_ICommandSink_DrawSpriteBatch_PaintDotNet_Direct2D1_ISpriteBatch_System_Int32_System_Int32_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_SpriteOptions_">DrawSpriteBatch(ISpriteBatch, int, int, IDeviceBitmap, InterpolationMode, SpriteOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.EndDraw.html#PaintDotNet_Direct2D1_ICommandSink_EndDraw">EndDraw()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillMesh.html#PaintDotNet_Direct2D1_ICommandSink_FillMesh_PaintDotNet_Direct2D1_IDeviceMesh_PaintDotNet_Direct2D1_IDeviceBrush_">FillMesh(IDeviceMesh, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillOpacityMask.html#PaintDotNet_Direct2D1_ICommandSink_FillOpacityMask_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_IDeviceBrush_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_RectFloat___">FillOpacityMask(IDeviceBitmap, IDeviceBrush, in RectFloat?, in RectFloat?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillRectangle.html#PaintDotNet_Direct2D1_ICommandSink_FillRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(RectFloat, IDeviceBrush)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PopAxisAlignedClip.html#PaintDotNet_Direct2D1_ICommandSink_PopAxisAlignedClip">PopAxisAlignedClip()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PopLayer.html#PaintDotNet_Direct2D1_ICommandSink_PopLayer">PopLayer()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PushAxisAlignedClip.html#PaintDotNet_Direct2D1_ICommandSink_PushAxisAlignedClip_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_AntialiasMode_">PushAxisAlignedClip(RectFloat, AntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PushLayer.html#PaintDotNet_Direct2D1_ICommandSink_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(in LayerParameters, IDeviceLayer?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetAntialiasMode.html#PaintDotNet_Direct2D1_ICommandSink_SetAntialiasMode_PaintDotNet_Direct2D1_AntialiasMode_">SetAntialiasMode(AntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetPrimitiveBlend.html#PaintDotNet_Direct2D1_ICommandSink_SetPrimitiveBlend_PaintDotNet_Direct2D1_PrimitiveBlend_">SetPrimitiveBlend(PrimitiveBlend)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetTags.html#PaintDotNet_Direct2D1_ICommandSink_SetTags_System_UInt64_System_UInt64_">SetTags(ulong, ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetTextAntialiasMode.html#PaintDotNet_Direct2D1_ICommandSink_SetTextAntialiasMode_PaintDotNet_Direct2D1_TextAntialiasMode_">SetTextAntialiasMode(TextAntialiasMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetTextRenderingParameters.html#PaintDotNet_Direct2D1_ICommandSink_SetTextRenderingParameters_PaintDotNet_DirectWrite_ITextRenderingParameters_">SetTextRenderingParameters(ITextRenderingParameters)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetTransform.html#PaintDotNet_Direct2D1_ICommandSink_SetTransform_PaintDotNet_Rendering_Matrix3x2Float__">SetTransform(in Matrix3x2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.SetUnitMode.html#PaintDotNet_Direct2D1_ICommandSink_SetUnitMode_PaintDotNet_Direct2D1_UnitMode_">SetUnitMode(UnitMode)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

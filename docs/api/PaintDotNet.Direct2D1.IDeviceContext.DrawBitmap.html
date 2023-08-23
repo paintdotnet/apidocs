@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method DrawBitmap
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method DrawBitmap
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap*" class="text-break">
+  Method DrawBitmap
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float___" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap(PaintDotNet.Direct2D1.IDeviceBitmap,System.Nullable{PaintDotNet.Rendering.RectFloat}@,System.Single,PaintDotNet.Direct2D1.InterpolationMode,System.Nullable{PaintDotNet.Rendering.RectFloat}@,System.Nullable{PaintDotNet.Rendering.Matrix4x4Float}@)">
+  DrawBitmap(IDeviceBitmap, in RectFloat?, float, InterpolationMode, in RectFloat?, in Matrix4x4Float?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Draws a bitmap to the render target.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void DrawBitmap(IDeviceBitmap bitmap, in RectFloat? dstRect = null, float opacity = 1, InterpolationMode interpolationMode = InterpolationMode.Linear, in RectFloat? srcRect = null, in Matrix4x4Float? perspectiveTransform = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
+  <dd><p>The bitmap to draw.</p>
+</dd>
+  <dt><code>dstRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
+  <dd><p>The destination rectangle. The default is the size of the bitmap and the location is the upper left corner of the render target.</p>
+</dd>
+  <dt><code>opacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>The opacity of the bitmap.</p>
+</dd>
+  <dt><code>interpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html">InterpolationMode</a></dt>
+  <dd><p>The interpolation mode to use if the bitmap is scaled or rotated by the drawing operation.</p>
+</dd>
+  <dt><code>srcRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
+  <dd><p>An optional source rectangle.</p>
+</dd>
+  <dt><code>perspectiveTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix4x4Float.html">Matrix4x4Float</a>?</dt>
+  <dd><p>An optional perspective transform.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The destinationRectangle parameter defines the rectangle in the target where the bitmap will appear (in device-independent pixels (DIPs)).
+This is affected by the currently set transform and the perspective transform, if set. If null is specified, then the destination rectangle
+is (left=0, top=0, right = width(sourceRectangle), bottom = height(sourceRectangle)).<br>
+The srcRect parameter defines the sub-rectangle of the source bitmap (in DIPs). DrawBitmap will clip this rectangle to the size of
+the source bitmap, thus making it impossible to sample outside of the bitmap. If null is specified, then the source rectangle is taken to
+be the size of the source bitmap.<br>
+If you specify perspectiveTransform it is applied to the rect in addition to the transform set on the render target.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

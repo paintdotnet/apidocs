@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method Render
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method Render
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.IBitmapEffectRenderer.Render*">
+
+
+
+
+
+<h1 id="PaintDotNet_Effects_IBitmapEffectRenderer_Render_" data-uid="PaintDotNet.Effects.IBitmapEffectRenderer.Render*" class="text-break">
+  Method Render
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Effects_IBitmapEffectRenderer_Render_" data-uid="PaintDotNet.Effects.IBitmapEffectRenderer.Render*"></a>
+
+<h3 id="PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Effects.IBitmapEffectRenderer.Render(System.Void*,System.Int32,System.IntPtr,PaintDotNet.Imaging.PixelFormat@,PaintDotNet.Rendering.RectInt32)">
+  Render(void*, int, nint, in PixelFormat, RectInt32)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Renders the requested area and stores the result in the given buffer. The entire buffer is
+written to, including areas that are outside of the selection. The caller must perform any
+masking or blending.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void Render(void* pBuffer, int bufferStride, nint bufferSize, in PixelFormat bufferPixelFormat, RectInt32 renderRect)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>pBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+  <dd></dd>
+  <dt><code>bufferStride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+  <dd></dd>
+  <dt><code>bufferPixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
+  <dd></dd>
+  <dt><code>renderRect</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Any pixel format can be used for the buffer. If it matches the pixel format that the effect is
+using for its output buffer, no conversion will be necessary and performance will be optimal.<br>
+<br>
+This method will handle clearing / zero-filling the buffer if necessary based on whether the
+effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
+necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+  <dd><p><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a> must be called first.</p>
+</dd>
+</dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

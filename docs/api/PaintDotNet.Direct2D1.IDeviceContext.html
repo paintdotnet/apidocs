@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IDeviceContext
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IDeviceContext
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_IDeviceContext" data-uid="PaintDotNet.Direct2D1.IDeviceContext" class="text-break">
+    Interface IDeviceContext
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a set of state and command buffers that are used to render to a target.<br>
+The device context can render to a target bitmap or a command list.<br>
+This interface corresponds to the follow Direct2D interfaces:
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget">ID2D1RenderTarget</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext">ID2D1DeviceContext</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1devicecontext1">ID2D1DeviceContext1</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1devicecontext2">ID2D1DeviceContext2</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1devicecontext3">ID2D1DeviceContext3</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1devicecontext4">ID2D1DeviceContext4</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1devicecontext5">ID2D1DeviceContext5</a>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1devicecontext6">ID2D1DeviceContext6</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeviceContext : IDirect2DResource, IFactoryProperty, IDeviceEffectFactory, IDeviceColorContextFactory, ILookupTable3DFactory, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectFactory.CreateEffect.html#PaintDotNet_Direct2D1_IDeviceEffectFactory_CreateEffect_PaintDotNet_Direct2D1_DeviceEffectID__">IDeviceEffectFactory.CreateEffect(in DeviceEffectID)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_ColorSpace_">IDeviceColorContextFactory.CreateColorContext(ColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_System_ReadOnlySpan_System_Byte__">IDeviceColorContextFactory.CreateColorContext(ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Imaging_IColorContext_">IDeviceColorContextFactory.CreateColorContext(IColorContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Dxgi_DxgiColorSpace_">IDeviceColorContextFactory.CreateColorContext(DxgiColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_SimpleColorProfile_">IDeviceColorContextFactory.CreateColorContext(SimpleColorProfile)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ILookupTable3DFactory.CreateLookupTable3D.html#PaintDotNet_Direct2D1_ILookupTable3DFactory_CreateLookupTable3D_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_PaintDotNet_ExtentPtr_System_Byte__System_UInt32_System_UInt32_">ILookupTable3DFactory.CreateLookupTable3D(BufferPrecision, int, int, int, ExtentPtr&lt;byte&gt;, uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_System_Collections_Generic_IReadOnlyList_System_Byte__">DeviceColorContextFactoryExtensions.CreateColorContext(IDeviceColorContextFactory, IReadOnlyList&lt;byte&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_System_Collections_Generic_IReadOnlyList_System_Byte__System_Int32_System_Int32_">DeviceColorContextFactoryExtensions.CreateColorContext(IDeviceColorContextFactory, IReadOnlyList&lt;byte&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawGlyphRun(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Rendering.Point2Float,PaintDotNet.DirectWrite.GlyphRun@,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.DirectWrite.TextMeasuringMode).html">DeviceContextExtensions.DrawGlyphRun(IDeviceContext, Point2Float, in GlyphRun, IDeviceBrush, TextMeasuringMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceEffect,System.Nullable{PaintDotNet.Rendering.RectFloat}@,PaintDotNet.Direct2D1.EffectInputDescription@).html">DeviceContextExtensions.GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, in EffectInputDescription)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceEffect,System.Nullable{PaintDotNet.Rendering.RectFloat}@,PaintDotNet.Direct2D1.IDeviceEffect,System.Int32,PaintDotNet.Rendering.RectFloat).html">DeviceContextExtensions.GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, IDeviceEffect, int, RectFloat)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.LookupTable3DFactoryExtensions.CreateLookupTable3D.html#PaintDotNet_Direct2D1_LookupTable3DFactoryExtensions_CreateLookupTable3D__1_PaintDotNet_Direct2D1_ILookupTable3DFactory_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_System_ReadOnlySpan___0__">LookupTable3DFactoryExtensions.CreateLookupTable3D&lt;T&gt;(ILookupTable3DFactory, BufferPrecision, int, int, int, ReadOnlySpan&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.LookupTable3DFactoryExtensions.CreateLookupTable3D.html#PaintDotNet_Direct2D1_LookupTable3DFactoryExtensions_CreateLookupTable3D__1_PaintDotNet_Direct2D1_ILookupTable3DFactory_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32___0___">LookupTable3DFactoryExtensions.CreateLookupTable3D&lt;T&gt;(ILookupTable3DFactory, BufferPrecision, int, int, int, T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="PaintDotNet_Direct2D1_IDeviceContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Any resource created from a device context can be shared with any other resource created from a device context when both
+contexts are created on the same <a class="xref" href="PaintDotNet.Direct2D1.IDevice.html">IDevice</a>.</p>
+</div>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.AntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_AntialiasMode">AntialiasMode</a></dt>
+    <dd><p>Gets or sets the current antialiasing mode for drawing operations, excluding text and glyph drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Device.html#PaintDotNet_Direct2D1_IDeviceContext_Device">Device</a></dt>
+    <dd><p>Gets the device associated with a device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Dpi.html#PaintDotNet_Direct2D1_IDeviceContext_Dpi">Dpi</a></dt>
+    <dd><p>Gets or sets the device context's dots-per-inch (DPI).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EffectBufferPrecision.html#PaintDotNet_Direct2D1_IDeviceContext_EffectBufferPrecision">EffectBufferPrecision</a></dt>
+    <dd><p>The buffer precision used by default if the buffer precision is not otherwise specified by the effect or by the transform.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EffectTileSize.html#PaintDotNet_Direct2D1_IDeviceContext_EffectTileSize">EffectTileSize</a></dt>
+    <dd><p>Gets or sets the tile allocation size to be used by the imaging effect renderer.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.MaximumBitmapSize.html#PaintDotNet_Direct2D1_IDeviceContext_MaximumBitmapSize">MaximumBitmapSize</a></dt>
+    <dd><p>Gets the maximum pixel size of any one bitmap dimension supported by the render target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelFormat.html#PaintDotNet_Direct2D1_IDeviceContext_PixelFormat">PixelFormat</a></dt>
+    <dd><p>Retrieves the pixel format and alpha mode of the current target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelSize.html#PaintDotNet_Direct2D1_IDeviceContext_PixelSize">PixelSize</a></dt>
+    <dd><p>Returns the size of the current target in device pixels.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PrimitiveBlend.html#PaintDotNet_Direct2D1_IDeviceContext_PrimitiveBlend">PrimitiveBlend</a></dt>
+    <dd><p>Gets or sets the primitive blend used by the device context. The default is <a class="xref" href="PaintDotNet.Direct2D1.PrimitiveBlend.html#PaintDotNet_Direct2D1_PrimitiveBlend_SourceOver">SourceOver</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Size.html#PaintDotNet_Direct2D1_IDeviceContext_Size">Size</a></dt>
+    <dd><p>Returns the size of the current target in device-independent pixels.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.TextAntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_TextAntialiasMode">TextAntialiasMode</a></dt>
+    <dd><p>Gets or sets the current antialiasing mode for text and glyph drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Transform.html#PaintDotNet_Direct2D1_IDeviceContext_Transform">Transform</a></dt>
+    <dd><p>Gets or sets the current transform of the device context. All subsequent drawing operations occur in the transformed space.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.UnitMode.html#PaintDotNet_Direct2D1_IDeviceContext_UnitMode">UnitMode</a></dt>
+    <dd><p>Gets or sets the mode that is being used to interpret values by the device context.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.BeginDraw.html#PaintDotNet_Direct2D1_IDeviceContext_BeginDraw">BeginDraw()</a></dt>
+    <dd><p>Initiates drawing on this render target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.BlendImage.html#PaintDotNet_Direct2D1_IDeviceContext_BlendImage_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_BlendMode_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_">BlendImage(IDeviceImage, BlendMode, Point2Float?, in RectFloat?, InterpolationMode)</a></dt>
+    <dd><p>Draws an image to the device context using the specified blend mode. Results are equivalent to using Direct2D's built-in Blend effect.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Clear.html#PaintDotNet_Direct2D1_IDeviceContext_Clear_System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___">Clear(in ColorRgba128Float?)</a></dt>
+    <dd><p>Clears the drawing area to the specified color.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_CreateBitmap_PaintDotNet_Imaging_IBitmapSource_System_Nullable_PaintDotNet_Direct2D1_BitmapProperties___">CreateBitmap(IBitmapSource, in BitmapProperties?)</a></dt>
+    <dd><p>Creates a Direct2D bitmap by copying an <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_CreateBitmap_PaintDotNet_Rendering_SizeInt32_System_Void__System_Int32_PaintDotNet_Direct2D1_BitmapProperties__">CreateBitmap(SizeInt32, void*, int, in BitmapProperties)</a></dt>
+    <dd><p>Creates a bitmap that can be used as a target surface, for reading back to the CPU, or as a source for the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float___">DrawBitmap(IDeviceBitmap, in RectFloat?, float, InterpolationMode, in RectFloat?, in Matrix4x4Float?)</a>
+and <a class="xref" href="PaintDotNet.Direct2D1.IBitmapBrush.html">IBitmapBrush</a> APIs. In addition, color context information can be passed to the bitmap.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateBitmapBrush_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Direct2D1_BitmapBrushProperties___System_Nullable_PaintDotNet_Direct2D1_BrushProperties___">CreateBitmapBrush(IDeviceBitmap, in BitmapBrushProperties?, in BrushProperties?)</a></dt>
+    <dd><p>Creates a bitmap brush, the input image is a Direct2D bitmap object.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCommandList.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCommandList">CreateCommandList()</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a> object.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a></dt>
+    <dd><p>Creates a bitmap device context for use during intermediate offscreen drawing that is compatible with the current render target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateFilledGeometryRealization.html#PaintDotNet_Direct2D1_IDeviceContext_CreateFilledGeometryRealization_PaintDotNet_Direct2D1_IGeometry_System_Nullable_System_Single__">CreateFilledGeometryRealization(IGeometry, float?)</a></dt>
+    <dd><p>Creates a device-dependent representation of the fill of the geometry that can be subsequently rendered.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientMesh.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientMesh_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientMeshPatch__">CreateGradientMesh(ReadOnlySpan&lt;GradientMeshPatch&gt;)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.IGradientMesh.html">IGradientMesh</a> instance using the given array of patches.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode_">CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, ColorSpace, ColorSpace, BufferPrecision, ExtendMode, ColorInterpolationMode)</a></dt>
+    <dd><p>Creates a gradient stop collection, enabling the gradient to contain color channels with values outside of [0,1]
+and also enabling rendering to a high-color render target with interpolation in sRGB space.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_GradientStopGamma_PaintDotNet_Direct2D1_ExtendMode_">CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, GradientStopGamma, ExtendMode)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a> from the specified array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_ImageBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties___">CreateImageBrush(IDeviceImage, in ImageBrushProperties, in BrushProperties?)</a></dt>
+    <dd><p>Creates an image brush. The input image can be any type of image, including a bitmap, effect, or a command list.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateInk.html#PaintDotNet_Direct2D1_IDeviceContext_CreateInk_PaintDotNet_Direct2D1_InkPoint_">CreateInk(InkPoint)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.IDeviceInk.html">IDeviceInk</a> object that starts at the given point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle.html#PaintDotNet_Direct2D1_IDeviceContext_CreateInkStyle_PaintDotNet_Direct2D1_InkStyleProperties__">CreateInkStyle(in InkStyleProperties)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.IDeviceInkStyle.html">IDeviceInkStyle</a> object, for use with ink rendering methods such as <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateLayer.html#PaintDotNet_Direct2D1_IDeviceContext_CreateLayer_System_Nullable_PaintDotNet_Rendering_SizeFloat__">CreateLayer(SizeFloat?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateLinearGradientBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateLinearGradientBrush_PaintDotNet_Direct2D1_LinearGradientBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties___PaintDotNet_Direct2D1_IGradientStopCollection_">CreateLinearGradientBrush(in LinearGradientBrushProperties, in BrushProperties?, IGradientStopCollection)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.ILinearGradientBrush.html">ILinearGradientBrush</a> object for painting areas with a linear gradient.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateMesh.html#PaintDotNet_Direct2D1_IDeviceContext_CreateMesh">CreateMesh()</a></dt>
+    <dd><p>Create a mesh that uses triangles to describe a shape.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateRadialGradientBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateRadialGradientBrush_PaintDotNet_Direct2D1_RadialGradientBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties___PaintDotNet_Direct2D1_IGradientStopCollection_">CreateRadialGradientBrush(in RadialGradientBrushProperties, in BrushProperties?, IGradientStopCollection)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IRadialGradientBrush.html">IRadialGradientBrush</a> object that can be used to paint areas with a radial gradient.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___">CreateSharedBitmap(IDeviceBitmap, in SharedBitmapProperties?)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> whose data is shared (not copied) with another <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSharedBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSharedBitmap_PaintDotNet_Imaging_IBitmapLock_System_Nullable_PaintDotNet_Direct2D1_SharedBitmapProperties___">CreateSharedBitmap(IBitmapLock, in SharedBitmapProperties?)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> whose data is shared (not copied) with an <a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSolidColorBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSolidColorBrush_PaintDotNet_Imaging_ColorRgba128Float_System_Nullable_PaintDotNet_Direct2D1_BrushProperties___">CreateSolidColorBrush(ColorRgba128Float, in BrushProperties?)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.ISolidColorBrush.html">ISolidColorBrush</a> that can be used to paint areas with a solid color.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSpriteBatch.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSpriteBatch">CreateSpriteBatch()</a></dt>
+    <dd><p>Creates a new, empty sprite batch. After creating a sprite batch, use <a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.AddSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_AddSprites_System_Int32_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">AddSprites(int, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a>
+to add sprites to it, then use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawSpriteBatch.html#PaintDotNet_Direct2D1_IDeviceContext_DrawSpriteBatch_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_SpriteOptions_">DrawSpriteBatch(ISpriteBatch, IDeviceBitmap, InterpolationMode, SpriteOptions)</a> to draw it.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateStrokedGeometryRealization.html#PaintDotNet_Direct2D1_IDeviceContext_CreateStrokedGeometryRealization_PaintDotNet_Direct2D1_IGeometry_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_System_Nullable_System_Single__">CreateStrokedGeometryRealization(IGeometry, float, IStrokeStyle?, float?)</a></dt>
+    <dd><p>Creates a device-dependent representation of the stroke of a geometry that can be subsequently rendered.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSvgDocument.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSvgDocument_System_IO_Stream_PaintDotNet_Rendering_SizeFloat_">CreateSvgDocument(Stream?, SizeFloat)</a></dt>
+    <dd><p>Creates an SVG document from a stream.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateSvgGlyphStyle.html#PaintDotNet_Direct2D1_IDeviceContext_CreateSvgGlyphStyle">CreateSvgGlyphStyle()</a></dt>
+    <dd><p>Creates an SVG glyph style object.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float___">DrawBitmap(IDeviceBitmap, in RectFloat?, float, InterpolationMode, in RectFloat?, in Matrix4x4Float?)</a></dt>
+    <dd><p>Draws a bitmap to the render target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawColorBitmapGlyphRun.html#PaintDotNet_Direct2D1_IDeviceContext_DrawColorBitmapGlyphRun_PaintDotNet_DirectWrite_GlyphImageFormats_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_DirectWrite_TextMeasuringMode_PaintDotNet_Direct2D1_ColorBitmapGlyphSnapOption_">DrawColorBitmapGlyphRun(GlyphImageFormats, Point2Float, in GlyphRun, TextMeasuringMode, ColorBitmapGlyphSnapOption)</a></dt>
+    <dd><p>Draws a color bitmap glyph run using one of the bitmap formats.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawEllipse.html#PaintDotNet_Direct2D1_IDeviceContext_DrawEllipse_PaintDotNet_Direct2D1_Ellipse_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawEllipse(Ellipse, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd><p>Draws the outline of the specified ellipse using the specified stroke style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGdiMetafile.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGdiMetafile_PaintDotNet_Direct2D1_IGdiMetafile_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectFloat___">DrawGdiMetafile(IGdiMetafile, RectFloat, in RectFloat?)</a></dt>
+    <dd><p>Draws a metafile to the device context using the given source and destination rectangles.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGdiMetafile.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGdiMetafile_PaintDotNet_Direct2D1_IGdiMetafile_System_Nullable_PaintDotNet_Rendering_Point2Float__">DrawGdiMetafile(IGdiMetafile, Point2Float?)</a></dt>
+    <dd><p>Draw a metafile to the device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawGeometry(IGeometry, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd><p>Draws the outline of the specified geometry using the specified stroke style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGeometryRealization.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGeometryRealization_PaintDotNet_Direct2D1_IGeometryRealization_PaintDotNet_Direct2D1_IDeviceBrush_">DrawGeometryRealization(IGeometryRealization, IDeviceBrush)</a></dt>
+    <dd><p>Renders a given geometry realization to the target with the specified brush.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGlyphRun.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGlyphRun_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_DirectWrite_GlyphRunDescription__PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawGlyphRun(Point2Float, in GlyphRun, in GlyphRunDescription, IDeviceBrush, TextMeasuringMode)</a></dt>
+    <dd><p>Draws a series of glyphs to the device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGradientMesh.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGradientMesh_PaintDotNet_Direct2D1_IGradientMesh_">DrawGradientMesh(IGradientMesh)</a></dt>
+    <dd><p>Renders a given gradient mesh to the target.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a></dt>
+    <dd><p>Draws an image to the device context. The image can be any type of <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>, including an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>, or <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawInk.html#PaintDotNet_Direct2D1_IDeviceContext_DrawInk_PaintDotNet_Direct2D1_IDeviceInk_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceInkStyle_">DrawInk(IDeviceInk, IDeviceBrush, IDeviceInkStyle?)</a></dt>
+    <dd><p>Renders the given ink object using the given brush and ink style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawLine.html#PaintDotNet_Direct2D1_IDeviceContext_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd><p>Draws a line between the specified points using the specified stroke style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_DrawRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(RectFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd><p>Draws the outline of a rectangle that has the specified dimensions and stroke style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawRoundedRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_DrawRoundedRectangle_PaintDotNet_Direct2D1_RoundedRect__PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRoundedRectangle(in RoundedRect, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dd><p>Draws the outline of the specified rounded rectangle using the specified stroke style.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawSpriteBatch.html#PaintDotNet_Direct2D1_IDeviceContext_DrawSpriteBatch_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_SpriteOptions_">DrawSpriteBatch(ISpriteBatch, IDeviceBitmap, InterpolationMode, SpriteOptions)</a></dt>
+    <dd><p>Renders all sprites in the given sprite batch to the device context using the specified drawing options.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawSvgDocument.html#PaintDotNet_Direct2D1_IDeviceContext_DrawSvgDocument_PaintDotNet_Direct2D1_ISvgDocument_">DrawSvgDocument(ISvgDocument)</a></dt>
+    <dd><p>Draws an SVG document.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawSvgGlyphRun.html#PaintDotNet_Direct2D1_IDeviceContext_DrawSvgGlyphRun_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawSvgGlyphRun(Point2Float, in GlyphRun, IDeviceBrush?, ISvgGlyphStyle?, int, TextMeasuringMode)</a></dt>
+    <dd><p>Draws a color glyph run that has the format of <a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html#PaintDotNet_DirectWrite_GlyphImageFormats_Svg">Svg</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawText.html#PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(string, ITextFormat, RectFloat, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd><p>Draws the specified text using the format information provided by an <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a> object.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawText.html#PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(string, ITextFormat, RectFloat, IDeviceBrush?, ISvgGlyphStyle?, int, DrawTextOptions, TextMeasuringMode)</a></dt>
+    <dd><p>Draws the text within the given layout rectangle.<br>
+By default, this method performs baseline snapping and renders color versions of glyphs in color fonts.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawTextLayout.html#PaintDotNet_Direct2D1_IDeviceContext_DrawTextLayout_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_ITextLayout_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_">DrawTextLayout(Point2Float, ITextLayout, IDeviceBrush, DrawTextOptions)</a></dt>
+    <dd><p>Draws a text layout object. If the layout is not subsequently changed, this can be more efficient than
+DrawText when drawing the same layout repeatedly.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawTextLayout.html#PaintDotNet_Direct2D1_IDeviceContext_DrawTextLayout_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_ITextLayout_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Direct2D1_DrawTextOptions_">DrawTextLayout(Point2Float, ITextLayout, IDeviceBrush?, ISvgGlyphStyle?, int, DrawTextOptions)</a></dt>
+    <dd><p>Draws a text layout object. If the layout is not subsequently changed, this can be more efficient than
+DrawText when drawing the same layout repeatedly.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a></dt>
+    <dd><p>Ends drawing operations on the render target and indicates the current error state.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillEllipse.html#PaintDotNet_Direct2D1_IDeviceContext_FillEllipse_PaintDotNet_Direct2D1_Ellipse_PaintDotNet_Direct2D1_IDeviceBrush_">FillEllipse(Ellipse, IDeviceBrush)</a></dt>
+    <dd><p>Paints the interior of the specified ellipse.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a></dt>
+    <dd><p>Paints the interior of the specified geometry.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillMesh.html#PaintDotNet_Direct2D1_IDeviceContext_FillMesh_PaintDotNet_Direct2D1_IDeviceMesh_PaintDotNet_Direct2D1_IDeviceBrush_">FillMesh(IDeviceMesh, IDeviceBrush)</a></dt>
+    <dd><p>Paints the interior of the specified mesh.<br>
+<b>Note:</b> The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.AntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_AntialiasMode">AntialiasMode</a> must be see to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillOpacityMask.html#PaintDotNet_Direct2D1_IDeviceContext_FillOpacityMask_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_IDeviceBrush_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_RectFloat___">FillOpacityMask(IDeviceBitmap, IDeviceBrush, in RectFloat?, in RectFloat?)</a></dt>
+    <dd><p>Fill using the alpha channel of the supplied opacity mask bitmap. The brush opacity will be modulated by the mask.<br>
+<b>The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</b></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_FillRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_">FillRectangle(RectFloat, IDeviceBrush)</a></dt>
+    <dd><p>Paints the interior of the specified rectangle.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillRoundedRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_FillRoundedRectangle_PaintDotNet_Direct2D1_RoundedRect__PaintDotNet_Direct2D1_IDeviceBrush_">FillRoundedRectangle(in RoundedRect, IDeviceBrush)</a></dt>
+    <dd><p>Paints the interior of the specified rounded rectangle.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Flush.html#PaintDotNet_Direct2D1_IDeviceContext_Flush">Flush()</a></dt>
+    <dd><p>Executes all pending drawing commands.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetColorBitmapGlyphImage.html#PaintDotNet_Direct2D1_IDeviceContext_GetColorBitmapGlyphImage_PaintDotNet_DirectWrite_GlyphImageFormats_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_IFontFace_System_Single_System_UInt16_System_Boolean_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_Matrix3x2Float__">GetColorBitmapGlyphImage(GlyphImageFormats, Point2Float, IFontFace, float, ushort, bool, in Matrix3x2Float?, Vector2Float, out Matrix3x2Float)</a></dt>
+    <dd><p>Retrieves an image of the color bitmap glyph from the color glyph cache. If the cache does not already contain the
+requested resource, it will be created. This method may be used to extend the lifetime of a glyph image even after
+it is evicted from the color glyph cache.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a></dt>
+    <dd><p>Gets the invalid rectangles that have accumulated since the last time the effect was drawn and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> was then called on the device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectRequiredInputRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectRequiredInputRectangles_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___System_ReadOnlySpan_PaintDotNet_Direct2D1_EffectInputDescription__">GetEffectRequiredInputRectangles(IDeviceEffect, in RectFloat?, ReadOnlySpan&lt;EffectInputDescription&gt;)</a></dt>
+    <dd><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetGlyphRunWorldBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetGlyphRunWorldBounds_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_DirectWrite_TextMeasuringMode_">GetGlyphRunWorldBounds(Point2Float, in GlyphRun, TextMeasuringMode)</a></dt>
+    <dd><p>Gets the world-space bounds in DIPs of the glyph run using the device context DPI.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetGradientMeshWorldBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetGradientMeshWorldBounds_PaintDotNet_Direct2D1_IGradientMesh_">GetGradientMeshWorldBounds(IGradientMesh)</a></dt>
+    <dd><p>Returns the world bounds of a given gradient mesh.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetImageLocalBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetImageLocalBounds_PaintDotNet_Direct2D1_IDeviceImage_">GetImageLocalBounds(IDeviceImage)</a></dt>
+    <dd><p>Gets the bounds of an image without the world transform of the context applied.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetImageWorldBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetImageWorldBounds_PaintDotNet_Direct2D1_IDeviceImage_">GetImageWorldBounds(IDeviceImage)</a></dt>
+    <dd><p>Gets the bounds of an image with the world transform of the context applied.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage.html#PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_IFontFace_System_Single_System_UInt16_System_Boolean_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Rendering_Matrix3x2Float__">GetSvgGlyphImage(Point2Float, IFontFace, float, ushort, bool, in Matrix3x2Float?, IDeviceBrush?, ISvgGlyphStyle?, int, out Matrix3x2Float)</a></dt>
+    <dd><p>Retrieves an image of the SVG glyph from the color glyph cache. If the cache does not already contain the requested
+resource, it will be created. This method may be used to extend the lifetime of a glyph image even after it is
+evicted from the color glyph cache.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_GetTarget">GetTarget()</a></dt>
+    <dd><p>Gets the target currently associated with the device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetTextRenderingParameters.html#PaintDotNet_Direct2D1_IDeviceContext_GetTextRenderingParameters">GetTextRenderingParameters()</a></dt>
+    <dd><p>Retrieves the device context's current text rendering options.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.InvalidateEffectInputRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_InvalidateEffectInputRectangle_PaintDotNet_Direct2D1_IDeviceEffect_System_Int32_PaintDotNet_Rendering_RectFloat_">InvalidateEffectInputRectangle(IDeviceEffect, int, RectFloat)</a></dt>
+    <dd><p>This indicates that a portion of an effect's input is invalid. This method can be called many times.<br>
+You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br>
+<b>Note:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
+You can also use this methods to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsBufferPrecisionSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsBufferPrecisionSupported_PaintDotNet_Direct2D1_BufferPrecision_">IsBufferPrecisionSupported(BufferPrecision)</a></dt>
+    <dd><p>Indicates whether the buffer precision is supported by the underlying Direct2D <a class="xref" href="PaintDotNet.Direct2D1.IDevice.html">IDevice</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsDxgiFormatSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsDxgiFormatSupported_PaintDotNet_Dxgi_DxgiFormat_">IsDxgiFormatSupported(DxgiFormat)</a></dt>
+    <dd><p>Indicates whether the format is supported by the device context. The formats supported are usually determined by the underlying hardware.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties__">IsSupported(in DeviceContextProperties)</a></dt>
+    <dd><p>Indicates whether the device context supports the specified properties.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PopAxisAlignedClip.html#PaintDotNet_Direct2D1_IDeviceContext_PopAxisAlignedClip">PopAxisAlignedClip()</a></dt>
+    <dd><p>Removes the last axis-aligned clip from the render target. After this method is called, the clip is no longer applied to subsequent drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PopLayer.html#PaintDotNet_Direct2D1_IDeviceContext_PopLayer">PopLayer()</a></dt>
+    <dd><p>Stops redirecting drawing operations to the layer that is specified by the last <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PushLayer.html#PaintDotNet_Direct2D1_IDeviceContext_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(in LayerParameters, IDeviceLayer?)</a> call.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/direct2d-layers-overview">Direct2D Layers Overview</a>
+for more information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PushAxisAlignedClip.html#PaintDotNet_Direct2D1_IDeviceContext_PushAxisAlignedClip_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_AntialiasMode_">PushAxisAlignedClip(RectFloat, AntialiasMode)</a></dt>
+    <dd><p>Specifies a rectangle to which all subsequent drawing operations are clipped.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PushLayer.html#PaintDotNet_Direct2D1_IDeviceContext_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(in LayerParameters, IDeviceLayer?)</a></dt>
+    <dd><p>Push a layer onto the clip and layer stack of the device context. The layer will receive all subequent drawing operations
+until <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PopLayer.html#PaintDotNet_Direct2D1_IDeviceContext_PopLayer">PopLayer()</a> is called.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/direct2d-layers-overview">Direct2D Layers Overview</a>
+for more information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.RestoreDrawingState.html#PaintDotNet_Direct2D1_IDeviceContext_RestoreDrawingState_PaintDotNet_Direct2D1_IDrawingStateBlock_">RestoreDrawingState(IDrawingStateBlock)</a></dt>
+    <dd><p>Sets the render target's drawing state to that of the specified <a class="xref" href="PaintDotNet.Direct2D1.IDrawingStateBlock.html">IDrawingStateBlock</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SaveDrawingState.html#PaintDotNet_Direct2D1_IDeviceContext_SaveDrawingState_PaintDotNet_Direct2D1_IDrawingStateBlock_">SaveDrawingState(IDrawingStateBlock)</a></dt>
+    <dd><p>Saves the current drawing state to the specified <a class="xref" href="PaintDotNet.Direct2D1.IDrawingStateBlock.html">IDrawingStateBlock</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_SetTarget_PaintDotNet_Direct2D1_IDeviceImage_">SetTarget(IDeviceImage?)</a></dt>
+    <dd><p>The bitmap or command list to which the Direct2D device context will now render.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTextRenderingParameters.html#PaintDotNet_Direct2D1_IDeviceContext_SetTextRenderingParameters_PaintDotNet_DirectWrite_ITextRenderingParameters_">SetTextRenderingParameters(ITextRenderingParameters?)</a></dt>
+    <dd><p>Specifies text rendering options to be applied to all subsequent text and glyph drawing operations.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IGeometrySink
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IGeometrySink
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IGeometrySink">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_IGeometrySink" data-uid="PaintDotNet.Direct2D1.IGeometrySink" class="text-break">
+    Interface IGeometrySink
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Describes a geometric path that can contain lines, arcs, cubic Bezier curves, and quadratic Bezier curves.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink">ID2D1GeometrySink</a>
+for more information.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGeometrySink : ISimplifiedGeometrySink, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.AddBeziers.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_AddBeziers_System_ReadOnlySpan_PaintDotNet_Direct2D1_BezierSegment__">ISimplifiedGeometrySink.AddBeziers(ReadOnlySpan&lt;BezierSegment&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.AddLines.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_AddLines_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__">ISimplifiedGeometrySink.AddLines(ReadOnlySpan&lt;Point2Float&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">ISimplifiedGeometrySink.BeginFigure(Point2Float, FigureBegin)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.Close.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_Close">ISimplifiedGeometrySink.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.EndFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_EndFigure_PaintDotNet_Direct2D1_FigureEnd_">ISimplifiedGeometrySink.EndFigure(FigureEnd)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.SetFillMode.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetFillMode_PaintDotNet_Direct2D1_FillMode_">ISimplifiedGeometrySink.SetFillMode(FillMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.SetSegmentOptions.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetSegmentOptions_PaintDotNet_Direct2D1_PathSegmentOptions_">ISimplifiedGeometrySink.SetSegmentOptions(PathSegmentOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="PaintDotNet_Direct2D1_IGeometrySink_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>An implementation of this interface is provided when using <a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.Open.html#PaintDotNet_Direct2D1_IPathGeometry_Open">Open()</a>.<br>
+<br>
+To implement this yourself, such as to capture the data provided from various methods on <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a>, create
+a class that derives from <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a> and that also derives from this interface.</p>
+</div>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddArc.html#PaintDotNet_Direct2D1_IGeometrySink_AddArc_PaintDotNet_Direct2D1_ArcSegment__">AddArc(in ArcSegment)</a></dt>
+    <dd><p>Adds a single arc to the path geometry.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddBezier.html#PaintDotNet_Direct2D1_IGeometrySink_AddBezier_PaintDotNet_Direct2D1_BezierSegment__">AddBezier(in BezierSegment)</a></dt>
+    <dd><p>Creates a cubic Bezier curve between the current point and the specified end point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddLine.html#PaintDotNet_Direct2D1_IGeometrySink_AddLine_PaintDotNet_Rendering_Point2Float_">AddLine(Point2Float)</a></dt>
+    <dd><p>Creates a line segment between the current point and the specified end point and adds it to the geometry sink.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddQuadraticBezier.html#PaintDotNet_Direct2D1_IGeometrySink_AddQuadraticBezier_PaintDotNet_Direct2D1_QuadraticBezierSegment_">AddQuadraticBezier(QuadraticBezierSegment)</a></dt>
+    <dd><p>Creates a quadratic Bezier curve between the current point and the specified end point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddQuadraticBeziers.html#PaintDotNet_Direct2D1_IGeometrySink_AddQuadraticBeziers_System_ReadOnlySpan_PaintDotNet_Direct2D1_QuadraticBezierSegment__">AddQuadraticBeziers(ReadOnlySpan&lt;QuadraticBezierSegment&gt;)</a></dt>
+    <dd><p>Adds a sequence of quadratic Bezier segments as an array in a single call.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

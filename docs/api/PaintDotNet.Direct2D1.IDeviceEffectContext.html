@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IDeviceEffectContext
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IDeviceEffectContext
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceEffectContext">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_IDeviceEffectContext" data-uid="PaintDotNet.Direct2D1.IDeviceEffectContext" class="text-break">
+    Interface IDeviceEffectContext
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides factory methods and other state management for effect and transform authors.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext">ID2D1EffectContext2</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeviceEffectContext : IDeviceEffectFactory, IDeviceColorContextFactory, ILookupTable3DFactory, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectFactory.CreateEffect.html#PaintDotNet_Direct2D1_IDeviceEffectFactory_CreateEffect_PaintDotNet_Direct2D1_DeviceEffectID__">IDeviceEffectFactory.CreateEffect(in DeviceEffectID)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_ColorSpace_">IDeviceColorContextFactory.CreateColorContext(ColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_System_ReadOnlySpan_System_Byte__">IDeviceColorContextFactory.CreateColorContext(ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Imaging_IColorContext_">IDeviceColorContextFactory.CreateColorContext(IColorContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Dxgi_DxgiColorSpace_">IDeviceColorContextFactory.CreateColorContext(DxgiColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_SimpleColorProfile_">IDeviceColorContextFactory.CreateColorContext(SimpleColorProfile)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.ILookupTable3DFactory.CreateLookupTable3D.html#PaintDotNet_Direct2D1_ILookupTable3DFactory_CreateLookupTable3D_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_PaintDotNet_ExtentPtr_System_Byte__System_UInt32_System_UInt32_">ILookupTable3DFactory.CreateLookupTable3D(BufferPrecision, int, int, int, ExtentPtr&lt;byte&gt;, uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_System_Collections_Generic_IReadOnlyList_System_Byte__">DeviceColorContextFactoryExtensions.CreateColorContext(IDeviceColorContextFactory, IReadOnlyList&lt;byte&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_System_Collections_Generic_IReadOnlyList_System_Byte__System_Int32_System_Int32_">DeviceColorContextFactoryExtensions.CreateColorContext(IDeviceColorContextFactory, IReadOnlyList&lt;byte&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CheckFeatureSupport.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CheckFeatureSupport__1_PaintDotNet_Direct2D1_IDeviceEffectContext___0__">DeviceEffectContextExtensions.CheckFeatureSupport&lt;TFeatureData&gt;(IDeviceEffectContext, in TFeatureData)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___PaintDotNet_Direct2D1_ResourceTextureProperties__">DeviceEffectContextExtensions.CreateResourceTexture(IDeviceEffectContext, in Guid?, in ResourceTextureProperties)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture1D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture1D_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_">DeviceEffectContextExtensions.CreateResourceTexture1D(IDeviceEffectContext, in Guid?, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture1D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture1D__1_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_ExtentPtr___0__">DeviceEffectContextExtensions.CreateResourceTexture1D&lt;T&gt;(IDeviceEffectContext, in Guid?, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtentPtr&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture2D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture2D_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_">DeviceEffectContextExtensions.CreateResourceTexture2D(IDeviceEffectContext, in Guid?, int, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtendMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture2D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture2D__1_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_ExtentPtr___0__System_UInt32_">DeviceEffectContextExtensions.CreateResourceTexture2D&lt;T&gt;(IDeviceEffectContext, in Guid?, int, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtendMode, ExtentPtr&lt;T&gt;, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture3D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture3D_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_System_Int32_System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_">DeviceEffectContextExtensions.CreateResourceTexture3D(IDeviceEffectContext, in Guid?, int, int, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtendMode, ExtendMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture3D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture3D__1_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_System_Int32_System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_ExtentPtr___0__System_UInt32_System_UInt32_">DeviceEffectContextExtensions.CreateResourceTexture3D&lt;T&gt;(IDeviceEffectContext, in Guid?, int, int, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtendMode, ExtendMode, ExtentPtr&lt;T&gt;, uint, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.LoadPixelShader.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_LoadPixelShader_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlyMemory_System_Byte__">DeviceEffectContextExtensions.LoadPixelShader(IDeviceEffectContext, in ShaderID, ReadOnlyMemory&lt;byte&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.LookupTable3DFactoryExtensions.CreateLookupTable3D.html#PaintDotNet_Direct2D1_LookupTable3DFactoryExtensions_CreateLookupTable3D__1_PaintDotNet_Direct2D1_ILookupTable3DFactory_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_System_ReadOnlySpan___0__">LookupTable3DFactoryExtensions.CreateLookupTable3D&lt;T&gt;(ILookupTable3DFactory, BufferPrecision, int, int, int, ReadOnlySpan&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.LookupTable3DFactoryExtensions.CreateLookupTable3D.html#PaintDotNet_Direct2D1_LookupTable3DFactoryExtensions_CreateLookupTable3D__1_PaintDotNet_Direct2D1_ILookupTable3DFactory_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32___0___">LookupTable3DFactoryExtensions.CreateLookupTable3D&lt;T&gt;(ILookupTable3DFactory, BufferPrecision, int, int, int, T[])</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="PaintDotNet_Direct2D1_IDeviceEffectContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface is passed to an effect implementation through the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a>. In order to
+prevent applications casually gaining access to this interface, and to separate reference counts between the public
+and private interfaces, it is not possible to call CreateRef() between the IDeviceContext and the IDeviceEffectContext.
+Each call to IDeviceEffectImpl.Initialize() will be provided a different IDeviceEffectContext interface. This interface
+tracks resource allocations for the effect. When the effect is released, the corresponding allocations will also be
+released.</p>
+</div>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.Dpi.html#PaintDotNet_Direct2D1_IDeviceEffectContext_Dpi">Dpi</a></dt>
+    <dd><p>Gets the unit mapping that an effect will use for properties that could be in either dots per inch (dpi) or pixels.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CheckFeatureSupport.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CheckFeatureSupport_PaintDotNet_Direct2D1_DeviceFeature_System_Span_System_Byte__">CheckFeatureSupport(DeviceFeature, Span&lt;byte&gt;)</a></dt>
+    <dd><p>Checks whether an optional capability is supported by the D3D device.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBlendTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBlendTransform_System_Int32_PaintDotNet_Direct2D1_BlendDescription__">CreateBlendTransform(int, in BlendDescription)</a></dt>
+    <dd><p>This creates a blend transform that can be inserted into a transform graph.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBorderTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBorderTransform_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_">CreateBorderTransform(ExtendMode, ExtendMode)</a></dt>
+    <dd><p>Creates a transform that extends its input infinitely in every direction based on the passed in extend mode.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBoundsAdjustmentTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBoundsAdjustmentTransform_PaintDotNet_Rendering_RectInt32_">CreateBoundsAdjustmentTransform(RectInt32)</a></dt>
+    <dd><p>Creates and returns a bounds adjustment transform.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateOffsetTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateOffsetTransform_PaintDotNet_Rendering_Point2Int32_">CreateOffsetTransform(Point2Int32)</a></dt>
+    <dd><p>Creates and returns an offset transform.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateResourceTexture_System_Nullable_System_Guid___PaintDotNet_Direct2D1_ResourceTextureProperties__PaintDotNet_ExtentPtr_System_Byte__System_Nullable_PaintDotNet_Direct2D1_ResourceTextureStrides__">CreateResourceTexture(in Guid?, in ResourceTextureProperties, ExtentPtr&lt;byte&gt;, ResourceTextureStrides?)</a></dt>
+    <dd><p>Creates or finds the given resource texture, depending on whether a resource ID is specified. It also optionally
+initializes the texture with the specified data.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateTransformNodeFromEffect.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateTransformNodeFromEffect_PaintDotNet_Direct2D1_IDeviceEffect_">CreateTransformNodeFromEffect(IDeviceEffect)</a></dt>
+    <dd><p>Wraps an effect graph into a single transform node and then inserted into a transform graph. This allows an effect to
+aggregate other effects. This will typically be done in order to allow the effect properties to be re-expressed with a
+different contract, or to allow different components to integrate each-other’s effects.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.FindResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_FindResourceTexture_System_Guid__">FindResourceTexture(in Guid)</a></dt>
+    <dd><p>Finds the given resource texture if it has already been created with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateResourceTexture_System_Nullable_System_Guid___PaintDotNet_Direct2D1_ResourceTextureProperties__PaintDotNet_ExtentPtr_System_Byte__System_Nullable_PaintDotNet_Direct2D1_ResourceTextureStrides__">CreateResourceTexture(in Guid?, in ResourceTextureProperties, ExtentPtr&lt;byte&gt;, ResourceTextureStrides?)</a> with
+the same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.GetMaximumSupportedFeatureLevel.html#PaintDotNet_Direct2D1_IDeviceEffectContext_GetMaximumSupportedFeatureLevel_System_ReadOnlySpan_PaintDotNet_Direct3D_D3DFeatureLevel__">GetMaximumSupportedFeatureLevel(ReadOnlySpan&lt;D3DFeatureLevel&gt;)</a></dt>
+    <dd><p>Gets the maximum feature level from the provided list which is supported by the device. If none of the provided levels
+are supported, then this method returns null.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.IsBufferPrecisionSupported.html#PaintDotNet_Direct2D1_IDeviceEffectContext_IsBufferPrecisionSupported_PaintDotNet_Direct2D1_BufferPrecision_">IsBufferPrecisionSupported(BufferPrecision)</a></dt>
+    <dd><p>Indicates whether the buffer precision is supported by the underlying Direct2D device.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.IsShaderLoaded.html#PaintDotNet_Direct2D1_IDeviceEffectContext_IsShaderLoaded_PaintDotNet_Direct2D1_ShaderID__">IsShaderLoaded(in ShaderID)</a></dt>
+    <dd><p>This tests to see if the given shader is loaded.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.LoadPixelShader.html#PaintDotNet_Direct2D1_IDeviceEffectContext_LoadPixelShader_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlySpan_System_Byte__">LoadPixelShader(in ShaderID, ReadOnlySpan&lt;byte&gt;)</a></dt>
+    <dd><p>Loads the given shader by its unique ID. Loading the shader multiple times is ignored. When the shader is loaded it is
+also handed to the driver to JIT, if it hasn’t been already.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

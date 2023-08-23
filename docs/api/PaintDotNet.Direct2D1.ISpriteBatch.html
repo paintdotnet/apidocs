@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ISpriteBatch
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ISpriteBatch
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.ISpriteBatch">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_ISpriteBatch" data-uid="PaintDotNet.Direct2D1.ISpriteBatch" class="text-break">
+    Interface ISpriteBatch
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a single group of sprites with their associated drawing properties.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1spritebatch">ID2D1SpriteBatch</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISpriteBatch : IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite.html#PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectInt32___System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">SpriteBatchExtensions.AddSprite(ISpriteBatch, RectFloat, in RectInt32?, in ColorRgba128Float?, in Matrix3x2Float?)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprites.html#PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprites_PaintDotNet_Direct2D1_ISpriteBatch_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">SpriteBatchExtensions.AddSprites(ISpriteBatch, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="PaintDotNet_Direct2D1_ISpriteBatch_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Sprites are a way for apps to draw a large number of images very efficiently. They are commonly used to render
+characters and backgrounds in 2D games, or to render particle systems such as smoke and flames. If your app has
+performance demands and needs to draw hundreds or thousands of images every frame, then consider taking
+advantage of sprite batches and the fine-grained control they offer, instead of the general-purpose DrawImage
+method.</p>
+</div>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.SpriteCount.html#PaintDotNet_Direct2D1_ISpriteBatch_SpriteCount">SpriteCount</a></dt>
+    <dd><p>Gets the number of sprites in this sprite batch.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.AddSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_AddSprites_System_Int32_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">AddSprites(int, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a></dt>
+    <dd><p>Adds the given sprites to the end of this sprite batch. You may use a 1-length span for any of the properties
+to use the same value for each sprite. You may use a 0-length span (using the C# <code>default</code> keyword, or
+ReadOnlySpan&lt;T&gt;.Empty) for sourceRectangles, colors, or transforms in order to use the default policy
+associated with that property. This can reduce memory usage and increase performance.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.Clear.html#PaintDotNet_Direct2D1_ISpriteBatch_Clear">Clear()</a></dt>
+    <dd><p>Removes all sprites from this sprite batch.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.GetSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_GetSprites_System_Int32_System_Span_PaintDotNet_Rendering_RectFloat__System_Span_PaintDotNet_Rendering_RectInt32__System_Span_PaintDotNet_Imaging_ColorRgba128Float__System_Span_PaintDotNet_Rendering_Matrix3x2Float__">GetSprites(int, Span&lt;RectFloat&gt;, Span&lt;RectInt32&gt;, Span&lt;ColorRgba128Float&gt;, Span&lt;Matrix3x2Float&gt;)</a></dt>
+    <dd><p>Retrieves the specified subset of sprites from this sprite batch. For the best performance, use an empty Span
+(using the C# default keyword, or Span&lt;T&gt;.Empty) for properties that you do not need to retrieve.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.SetSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_SetSprites_System_Int32_System_Int32_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">SetSprites(int, int, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a></dt>
+    <dd><p>Updates the properties of the specified sprites in the sprite batch. Providing an empty span
+for any property will leave that property unmodified for the sprites. Providing a 1-length
+span for any property will use the same value for all of the sprites.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

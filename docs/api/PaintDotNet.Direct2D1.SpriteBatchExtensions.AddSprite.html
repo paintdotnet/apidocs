@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method AddSprite
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method AddSprite
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_" data-uid="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite*" class="text-break">
+  Method AddSprite
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_" data-uid="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectInt32___System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___" data-uid="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite(PaintDotNet.Direct2D1.ISpriteBatch,PaintDotNet.Rendering.RectFloat,System.Nullable{PaintDotNet.Rendering.RectInt32}@,System.Nullable{PaintDotNet.Imaging.ColorRgba128Float}@,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)">
+  AddSprite(ISpriteBatch, RectFloat, in RectInt32?, in ColorRgba128Float?, in Matrix3x2Float?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Adds a single sprite to the end of this sprite batch.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void AddSprite(this ISpriteBatch spriteBatch, RectFloat destinationRectangle, in RectInt32? sourceRectangle, in ColorRgba128Float? color, in Matrix3x2Float? transform)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>spriteBatch</code> <a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.html">ISpriteBatch</a></dt>
+  <dd><p>The sprite batch object.</p>
+</dd>
+  <dt><code>destinationRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
+  <dd><p>The destination rectangle specifying where to draw the sprite.</p>
+</dd>
+  <dt><code>sourceRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>?</dt>
+  <dd><p>The source rectangle specifying the region of the source bitmap to draw as a sprite. The entire source bitmap
+will be used if this parameter is null or RectInt32.LogicallyInfinite.</p>
+</dd>
+  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>?</dt>
+  <dd><p>The color to apply to the sprite. The output color is the result of component-wise multiplication of the source
+bitmap color and the provided color. The output color is not clamped. Direct2D will not change the color of
+the sprite if null is provided.</p>
+</dd>
+  <dt><code>transform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
+  <dd><p>The transform to apply to the sprite's destination rectangle. Direct2D will not transform the destination
+rectangle of any sprite that is assigned a null value.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectInt32___System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___System_Nullable_PaintDotNet_Rendering_Matrix3x2Float____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Always use a null value for properties you do not wish to use. This allows Direct2D to avoid storing values
+for those properties and to skip their handling entirely, which improves drawing speed. For example, suppose
+you have a batch of 500 sprites, and you do not wish to transform any of their destination rectangles. Rather
+than passing an array of identity matrices, simply omit the transforms parameter. This allows Direct2D to
+avoid storing any transforms and will yield the fastest drawing performance. On the other hand, if any sprite
+in the batch has any value set for a property, then internally Direct2D must allocate space for that property
+array and assign every sprite a value for that property (even if it’s just the default value).</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateGradientStopCollection
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateGradientStopCollection
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection*" class="text-break">
+  Method CreateGradientStopCollection
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_GradientStopGamma_PaintDotNet_Direct2D1_ExtendMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection(System.ReadOnlySpan{PaintDotNet.Direct2D1.GradientStop},PaintDotNet.Direct2D1.GradientStopGamma,PaintDotNet.Direct2D1.ExtendMode)">
+  CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, GradientStopGamma, ExtendMode)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a> from the specified array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IGradientStopCollection CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt; gradientStops, GradientStopGamma colorInterpolationGamma = GradientStopGamma.Srgb, ExtendMode extendMode = ExtendMode.Clamp)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>gradientStops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a>&gt;</dt>
+  <dd><p>The array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</dd>
+  <dt><code>colorInterpolationGamma</code> <a class="xref" href="PaintDotNet.Direct2D1.GradientStopGamma.html">GradientStopGamma</a></dt>
+  <dd><p>The space in which color interpolation between the gradient stops is performed.</p>
+</dd>
+  <dt><code>extendMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ExtendMode.html">ExtendMode</a></dt>
+  <dd><p>The behavior of the gradient outside the [0,1] normalized range.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a></dt>
+  <dd><p>The new gradient stop collection.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection(System.ReadOnlySpan{PaintDotNet.Direct2D1.GradientStop},PaintDotNet.Direct2D1.ColorSpace,PaintDotNet.Direct2D1.ColorSpace,PaintDotNet.Direct2D1.BufferPrecision,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ColorInterpolationMode)">
+  CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, ColorSpace, ColorSpace, BufferPrecision, ExtendMode, ColorInterpolationMode)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates a gradient stop collection, enabling the gradient to contain color channels with values outside of [0,1]
+and also enabling rendering to a high-color render target with interpolation in sRGB space.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IGradientStopCollection CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt; straightAlphaGradientStops, ColorSpace preInterpolationSpace, ColorSpace postInterpolationSpace, BufferPrecision bufferPrecision, ExtendMode extendMode = ExtendMode.Clamp, ColorInterpolationMode colorInterpolationMode = ColorInterpolationMode.Premultiplied)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>straightAlphaGradientStops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a>&gt;</dt>
+  <dd><p>An array of color values and offsets.</p>
+</dd>
+  <dt><code>preInterpolationSpace</code> <a class="xref" href="PaintDotNet.Direct2D1.ColorSpace.html">ColorSpace</a></dt>
+  <dd><p>Specifies both the input color space and the space in which the color interpolation occurs.</p>
+</dd>
+  <dt><code>postInterpolationSpace</code> <a class="xref" href="PaintDotNet.Direct2D1.ColorSpace.html">ColorSpace</a></dt>
+  <dd><p>The color space that colors will be converted to after interpolation occurs.</p>
+</dd>
+  <dt><code>bufferPrecision</code> <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html">BufferPrecision</a></dt>
+  <dd><p>The precision of the texture used to hold interpolated values.</p>
+</dd>
+  <dt><code>extendMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ExtendMode.html">ExtendMode</a></dt>
+  <dd><p>Defines how colors outside of the range defined by the stop collection are determined.</p>
+</dd>
+  <dt><code>colorInterpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html">ColorInterpolationMode</a></dt>
+  <dd><p>Defines how colors are interpolated. <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html#PaintDotNet_Direct2D1_ColorInterpolationMode_Premultiplied">Premultiplied</a> is the default, see Remarks for more info.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a></dt>
+  <dd><p>The new gradient stop collection.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method linearly interpolates between the color stops. An optional color space conversion is applied post-interpolation.
+Whether and how this gamma conversion is applied is determined by the pre- and post-interpolation. This method will fail if
+the device context does not support the requested buffer precision.<br>
+In order to get the desired result, you need to ensure that the inputs are specified in the correct color space.<br>
+You must always specify colors in straight alpha, regardless of interpolation mode being premultiplied or straight. The
+interpolation mode only affects the interpolated values. Likewise, the stops returned by <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.GradientStops.html#PaintDotNet_Direct2D1_IGradientStopCollection_GradientStops">GradientStops</a>
+will always have straight alpha.<br>
+If you specify <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html#PaintDotNet_Direct2D1_ColorInterpolationMode_Premultiplied">Premultiplied</a>, then all stops are premultiplied before interpolation,
+and then un-premultiplied before color conversion.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-creategradientstopcollection">ID2D1DeviceContext::CreateGradientStopCollection method</a>
+for a table showing the interpolation behavior with respect to the color space options.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

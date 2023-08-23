@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method FillGeometry
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method FillGeometry
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry*" class="text-break">
+  Method FillGeometry
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry(PaintDotNet.Direct2D1.IGeometry,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.IDeviceBrush)">
+  FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Paints the interior of the specified geometry.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void FillGeometry(IGeometry geometry, IDeviceBrush brush, IDeviceBrush? opacityBrush = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>geometry</code> <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a></dt>
+  <dd><p>The geometry to paint.</p>
+</dd>
+  <dt><code>brush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd><p>The brush used to paint the geometry's interior.</p>
+</dd>
+  <dt><code>opacityBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd><p>The opacity mask to apply to the geometry, or null for no opacity mask. If an opacity mask (the opacityBrush parameter) is specified, brush must be an <a class="xref" href="PaintDotNet.Direct2D1.IBitmapBrush.html">IBitmapBrush</a> that has its x- and y-extend modes set to <a class="xref" href="PaintDotNet.Direct2D1.ExtendMode.html#PaintDotNet_Direct2D1_ExtendMode_Clamp">Clamp</a>. For more information, see the Remarks section.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If the opacityBrush parameter is not null, the alpha value of each pixel of the mapped opacityBrush is used to determine the resulting
+opacity of each corresponding pixel of the geometry. Only the alpha value of each color in the brush is used for this processing; all
+other color information is ignored.<br>
+The alpha value specified by the brush is multiplied by the alpha value of the geometry after the geometry has been painted by brush.<br></p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

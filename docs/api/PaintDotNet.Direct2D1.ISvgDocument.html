@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ISvgDocument
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ISvgDocument
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.ISvgDocument">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_ISvgDocument" data-uid="PaintDotNet.Direct2D1.ISvgDocument" class="text-break">
+    Interface ISvgDocument
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents an SVG document.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgdocument">ID2D1SvgDocument</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISvgDocument : IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.ViewportSize.html#PaintDotNet_Direct2D1_ISvgDocument_ViewportSize">ViewportSize</a></dt>
+    <dd><p>Gets or sets the size of the initial viewport.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePaint.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePaint_PaintDotNet_Direct2D1_SvgPaintType_PaintDotNet_Imaging_ColorRgba128Float_System_String_">CreatePaint(SvgPaintType, ColorRgba128Float, string?)</a></dt>
+    <dd><p>Creates a paint object which can be used to set the 'fill' or 'stroke' properties.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePathData.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePathData_System_ReadOnlySpan_System_Single__System_ReadOnlySpan_PaintDotNet_Direct2D1_SvgPathCommand__">CreatePathData(ReadOnlySpan&lt;float&gt;, ReadOnlySpan&lt;SvgPathCommand&gt;)</a></dt>
+    <dd><p>Creates a path data object which can be used to set a 'd' attribute on a 'path' element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePointCollection.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePointCollection_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__">CreatePointCollection(ReadOnlySpan&lt;Point2Float&gt;)</a></dt>
+    <dd><p>Creates a points object which can be used to set a points attribute on a polygon or polyline element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreateStrokeDashArray.html#PaintDotNet_Direct2D1_ISvgDocument_CreateStrokeDashArray_System_ReadOnlySpan_PaintDotNet_Direct2D1_SvgLength__">CreateStrokeDashArray(ReadOnlySpan&lt;SvgLength&gt;)</a></dt>
+    <dd><p>Creates a dash array object which can be used to set the stroke-dasharray property.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.Deserialize.html#PaintDotNet_Direct2D1_ISvgDocument_Deserialize_System_IO_Stream_">Deserialize(Stream)</a></dt>
+    <dd><p>Deserializes a subtree from the stream. The stream must have only one root element, but that root element need not be an 'svg'
+element. The output element is not inserted into this document tree.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.FindElementByID.html#PaintDotNet_Direct2D1_ISvgDocument_FindElementByID_System_String_">FindElementByID(string)</a></dt>
+    <dd><p>Gets the SVG element with the specified ID.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.GetRoot.html#PaintDotNet_Direct2D1_ISvgDocument_GetRoot">GetRoot()</a></dt>
+    <dd><p>Gets the root element of the document, or null if the document is empty.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.Serialize.html#PaintDotNet_Direct2D1_ISvgDocument_Serialize_System_IO_Stream_PaintDotNet_Direct2D1_ISvgElement_">Serialize(Stream, ISvgElement?)</a></dt>
+    <dd><p>Serializes an element and its subtree to XML. The output XML is encoded as UTF-8.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.SetRoot.html#PaintDotNet_Direct2D1_ISvgDocument_SetRoot_PaintDotNet_Direct2D1_ISvgElement_">SetRoot(ISvgElement?)</a></dt>
+    <dd><p>Sets the root element of the document.The root element must be an svg element. If the element already exists within an svg
+tree, it is first removed.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

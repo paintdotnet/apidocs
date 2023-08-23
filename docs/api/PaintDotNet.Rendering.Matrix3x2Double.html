@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Matrix3x2Double
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Matrix3x2Double
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Rendering.Matrix3x2Double">
+
+
+
+  <h1 id="PaintDotNet_Rendering_Matrix3x2Double" data-uid="PaintDotNet.Rendering.Matrix3x2Double" class="text-break">
+    Struct Matrix3x2Double
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Rendering.html">Rendering</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Primitives.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Matrix3x2Double&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;Matrix3x2Double&gt;))]
+public struct Matrix3x2Double : IEquatable&lt;Matrix3x2Double&gt;, IFormattable, IParsable&lt;Matrix3x2Double&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.html">Matrix3x2Double</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.html">Matrix3x2Double</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.-ctor.html#PaintDotNet_Rendering_Matrix3x2Double__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_">Matrix3x2Double(double, double, double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.BoxedIdentity.html#PaintDotNet_Rendering_Matrix3x2Double_BoxedIdentity">BoxedIdentity</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Determinant.html#PaintDotNet_Rendering_Matrix3x2Double_Determinant">Determinant</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.HasInverse.html#PaintDotNet_Rendering_Matrix3x2Double_HasInverse">HasInverse</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Identity.html#PaintDotNet_Rendering_Matrix3x2Double_Identity">Identity</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Inverse.html#PaintDotNet_Rendering_Matrix3x2Double_Inverse">Inverse</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.IsFinite.html#PaintDotNet_Rendering_Matrix3x2Double_IsFinite">IsFinite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.IsIdentity.html#PaintDotNet_Rendering_Matrix3x2Double_IsIdentity">IsIdentity</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.IsIntegerTranslation.html#PaintDotNet_Rendering_Matrix3x2Double_IsIntegerTranslation">IsIntegerTranslation</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.IsRectilinear.html#PaintDotNet_Rendering_Matrix3x2Double_IsRectilinear">IsRectilinear</a></dt>
+    <dd><p>Gets a flag indicating whether this matrix consists of only translation and scaling.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.IsTranslation.html#PaintDotNet_Rendering_Matrix3x2Double_IsTranslation">IsTranslation</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.M11.html#PaintDotNet_Rendering_Matrix3x2Double_M11">M11</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.M12.html#PaintDotNet_Rendering_Matrix3x2Double_M12">M12</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.M21.html#PaintDotNet_Rendering_Matrix3x2Double_M21">M21</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.M22.html#PaintDotNet_Rendering_Matrix3x2Double_M22">M22</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.NaN.html#PaintDotNet_Rendering_Matrix3x2Double_NaN">NaN</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Offset.html#PaintDotNet_Rendering_Matrix3x2Double_Offset">Offset</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.OffsetX.html#PaintDotNet_Rendering_Matrix3x2Double_OffsetX">OffsetX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.OffsetY.html#PaintDotNet_Rendering_Matrix3x2Double_OffsetY">OffsetY</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Append.html#PaintDotNet_Rendering_Matrix3x2Double_Append_PaintDotNet_Rendering_Matrix3x2Double__">Append(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Equals.html#PaintDotNet_Rendering_Matrix3x2Double_Equals_PaintDotNet_Rendering_Matrix3x2Double_">Equals(Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Equals.html#PaintDotNet_Rendering_Matrix3x2Double_Equals_PaintDotNet_Rendering_Matrix3x2Double__">Equals(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Equals.html#PaintDotNet_Rendering_Matrix3x2Double_Equals_System_Object_">Equals(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.GetHashCode.html#PaintDotNet_Rendering_Matrix3x2Double_GetHashCode">GetHashCode()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Invert.html#PaintDotNet_Rendering_Matrix3x2Double_Invert">Invert()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Multiply.html#PaintDotNet_Rendering_Matrix3x2Double_Multiply_PaintDotNet_Rendering_Matrix3x2Double__PaintDotNet_Rendering_Matrix3x2Double__">Multiply(in Matrix3x2Double, in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Parse.html#PaintDotNet_Rendering_Matrix3x2Double_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Prepend.html#PaintDotNet_Rendering_Matrix3x2Double_Prepend_PaintDotNet_Rendering_Matrix3x2Double__">Prepend(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Rotate.html#PaintDotNet_Rendering_Matrix3x2Double_Rotate_System_Double_">Rotate(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAt.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAt_System_Double_PaintDotNet_Rendering_Point2Double_">RotateAt(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAt.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAt_System_Double_System_Double_System_Double_">RotateAt(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtByRadians_System_Double_PaintDotNet_Rendering_Point2Double_">RotateAtByRadians(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtByRadians_System_Double_System_Double_System_Double_">RotateAtByRadians(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtByRadiansPrepend_System_Double_PaintDotNet_Rendering_Point2Double_">RotateAtByRadiansPrepend(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtByRadiansPrepend_System_Double_System_Double_System_Double_">RotateAtByRadiansPrepend(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtPrepend_System_Double_PaintDotNet_Rendering_Point2Double_">RotateAtPrepend(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotateAtPrepend_System_Double_System_Double_System_Double_">RotateAtPrepend(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotateByRadians_System_Double_">RotateByRadians(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotateByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotateByRadiansPrepend_System_Double_">RotateByRadiansPrepend(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotatePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_RotatePrepend_System_Double_">RotatePrepend(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Rotation.html#PaintDotNet_Rendering_Matrix3x2Double_Rotation_System_Double_">Rotation(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotationAt.html#PaintDotNet_Rendering_Matrix3x2Double_RotationAt_System_Double_PaintDotNet_Rendering_Point2Double_">RotationAt(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotationAt.html#PaintDotNet_Rendering_Matrix3x2Double_RotationAt_System_Double_System_Double_System_Double_">RotationAt(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotationAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotationAtByRadians_System_Double_PaintDotNet_Rendering_Point2Double_">RotationAtByRadians(double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotationAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotationAtByRadians_System_Double_System_Double_System_Double_">RotationAtByRadians(double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.RotationByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_RotationByRadians_System_Double_">RotationByRadians(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Scale.html#PaintDotNet_Rendering_Matrix3x2Double_Scale_PaintDotNet_Rendering_Vector2Double_">Scale(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Scale.html#PaintDotNet_Rendering_Matrix3x2Double_Scale_System_Double_System_Double_">Scale(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAt_PaintDotNet_Rendering_Vector2Double_PaintDotNet_Rendering_Point2Double_">ScaleAt(Vector2Double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAt_PaintDotNet_Rendering_Vector2Double_System_Double_System_Double_">ScaleAt(Vector2Double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAt_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">ScaleAt(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAt_System_Double_System_Double_System_Double_System_Double_">ScaleAt(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAtPrepend_PaintDotNet_Rendering_Vector2Double_PaintDotNet_Rendering_Point2Double_">ScaleAtPrepend(Vector2Double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAtPrepend_PaintDotNet_Rendering_Vector2Double_System_Double_System_Double_">ScaleAtPrepend(Vector2Double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAtPrepend_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">ScaleAtPrepend(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScaleAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScaleAtPrepend_System_Double_System_Double_System_Double_System_Double_">ScaleAtPrepend(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScalePrepend_PaintDotNet_Rendering_Vector2Double_">ScalePrepend(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_ScalePrepend_System_Double_System_Double_">ScalePrepend(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Scaling.html#PaintDotNet_Rendering_Matrix3x2Double_Scaling_PaintDotNet_Rendering_Vector2Double_">Scaling(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Scaling.html#PaintDotNet_Rendering_Matrix3x2Double_Scaling_System_Double_System_Double_">Scaling(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalingAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScalingAt_PaintDotNet_Rendering_Vector2Double_PaintDotNet_Rendering_Point2Double_">ScalingAt(Vector2Double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalingAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScalingAt_PaintDotNet_Rendering_Vector2Double_System_Double_System_Double_">ScalingAt(Vector2Double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalingAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScalingAt_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">ScalingAt(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ScalingAt.html#PaintDotNet_Rendering_Matrix3x2Double_ScalingAt_System_Double_System_Double_System_Double_System_Double_">ScalingAt(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Skew.html#PaintDotNet_Rendering_Matrix3x2Double_Skew_System_Double_System_Double_">Skew(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAt.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAt_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewAt(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAt.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAt_System_Double_System_Double_System_Double_System_Double_">SkewAt(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtByRadians_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewAtByRadians(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtByRadians_System_Double_System_Double_System_Double_System_Double_">SkewAtByRadians(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtByRadiansPrepend_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewAtByRadiansPrepend(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtByRadiansPrepend_System_Double_System_Double_System_Double_System_Double_">SkewAtByRadiansPrepend(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtPrepend_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewAtPrepend(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewAtPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewAtPrepend_System_Double_System_Double_System_Double_System_Double_">SkewAtPrepend(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewByRadians_System_Double_System_Double_">SkewByRadians(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewByRadiansPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewByRadiansPrepend_System_Double_System_Double_">SkewByRadiansPrepend(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewPrepend.html#PaintDotNet_Rendering_Matrix3x2Double_SkewPrepend_System_Double_System_Double_">SkewPrepend(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Skewing.html#PaintDotNet_Rendering_Matrix3x2Double_Skewing_System_Double_System_Double_">Skewing(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewingAt.html#PaintDotNet_Rendering_Matrix3x2Double_SkewingAt_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewingAt(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewingAt.html#PaintDotNet_Rendering_Matrix3x2Double_SkewingAt_System_Double_System_Double_System_Double_System_Double_">SkewingAt(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewingAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewingAtByRadians_System_Double_System_Double_PaintDotNet_Rendering_Point2Double_">SkewingAtByRadians(double, double, Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewingAtByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewingAtByRadians_System_Double_System_Double_System_Double_System_Double_">SkewingAtByRadians(double, double, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.SkewingByRadians.html#PaintDotNet_Rendering_Matrix3x2Double_SkewingByRadians_System_Double_System_Double_">SkewingByRadians(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ToString.html#PaintDotNet_Rendering_Matrix3x2Double_ToString">ToString()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ToString.html#PaintDotNet_Rendering_Matrix3x2Double_ToString_System_IFormatProvider_">ToString(IFormatProvider)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.ToString.html#PaintDotNet_Rendering_Matrix3x2Double_ToString_System_String_System_IFormatProvider_">ToString(string?, IFormatProvider?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Transform.html#PaintDotNet_Rendering_Matrix3x2Double_Transform_PaintDotNet_Rendering_Point2Double_">Transform(Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Transform.html#PaintDotNet_Rendering_Matrix3x2Double_Transform_PaintDotNet_Rendering_RectDouble__">Transform(in RectDouble)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Transform.html#PaintDotNet_Rendering_Matrix3x2Double_Transform_PaintDotNet_Rendering_Vector2Double_">Transform(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Transform.html#PaintDotNet_Rendering_Matrix3x2Double_Transform_System_Double_System_Double_">Transform(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translate.html#PaintDotNet_Rendering_Matrix3x2Double_Translate_PaintDotNet_Rendering_Point2Double_">Translate(Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translate.html#PaintDotNet_Rendering_Matrix3x2Double_Translate_PaintDotNet_Rendering_Vector2Double_">Translate(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translate.html#PaintDotNet_Rendering_Matrix3x2Double_Translate_System_Double_System_Double_">Translate(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.TranslatePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_TranslatePrepend_PaintDotNet_Rendering_Point2Double_">TranslatePrepend(Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.TranslatePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_TranslatePrepend_PaintDotNet_Rendering_Vector2Double_">TranslatePrepend(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.TranslatePrepend.html#PaintDotNet_Rendering_Matrix3x2Double_TranslatePrepend_System_Double_System_Double_">TranslatePrepend(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translation.html#PaintDotNet_Rendering_Matrix3x2Double_Translation_PaintDotNet_Rendering_Point2Double_">Translation(Point2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translation.html#PaintDotNet_Rendering_Matrix3x2Double_Translation_PaintDotNet_Rendering_Vector2Double_">Translation(Vector2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Translation.html#PaintDotNet_Rendering_Matrix3x2Double_Translation_System_Double_System_Double_">Translation(double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.TryParse.html#PaintDotNet_Rendering_Matrix3x2Double_TryParse_System_String_PaintDotNet_Rendering_Matrix3x2Double__">TryParse(string?, out Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Equality.html#PaintDotNet_Rendering_Matrix3x2Double_op_Equality_PaintDotNet_Rendering_Matrix3x2Double__PaintDotNet_Rendering_Matrix3x2Double__">operator ==(in Matrix3x2Double, in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Explicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Explicit_PaintDotNet_Rendering_Matrix3x2Double___System_Drawing_Drawing2D_Matrix">explicit operator Matrix(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_PaintDotNet_Rendering_Matrix3x2Double___System_Numerics_Matrix3x2">implicit operator Matrix3x2(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_PaintDotNet_Rendering_Matrix3x2Double___System_Windows_Media_Matrix">implicit operator Matrix(in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_PaintDotNet_Rendering_Matrix3x2Float___PaintDotNet_Rendering_Matrix3x2Double">implicit operator Matrix3x2Double(in Matrix3x2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_System_Drawing_Drawing2D_Matrix__PaintDotNet_Rendering_Matrix3x2Double">implicit operator Matrix3x2Double(Matrix)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_System_Numerics_Matrix3x2___PaintDotNet_Rendering_Matrix3x2Double">implicit operator Matrix3x2Double(in Matrix3x2)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Implicit.html#PaintDotNet_Rendering_Matrix3x2Double_op_Implicit_System_Windows_Media_Matrix___PaintDotNet_Rendering_Matrix3x2Double">implicit operator Matrix3x2Double(in Matrix)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Inequality.html#PaintDotNet_Rendering_Matrix3x2Double_op_Inequality_PaintDotNet_Rendering_Matrix3x2Double__PaintDotNet_Rendering_Matrix3x2Double__">operator !=(in Matrix3x2Double, in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.op_Multiply.html#PaintDotNet_Rendering_Matrix3x2Double_op_Multiply_PaintDotNet_Rendering_Matrix3x2Double__PaintDotNet_Rendering_Matrix3x2Double__">operator *(in Matrix3x2Double, in Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.Parse.html#PaintDotNet_Rendering_Matrix3x2Double_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Rendering.Matrix3x2Double.TryParse.html#PaintDotNet_Rendering_Matrix3x2Double_TryParse_System_String_System_IFormatProvider_PaintDotNet_Rendering_Matrix3x2Double__">TryParse(string?, IFormatProvider?, out Matrix3x2Double)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

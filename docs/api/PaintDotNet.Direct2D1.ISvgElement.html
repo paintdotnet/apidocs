@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ISvgElement
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ISvgElement
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.ISvgElement">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_ISvgElement" data-uid="PaintDotNet.Direct2D1.ISvgElement" class="text-break">
+    Interface ISvgElement
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface for all SVG elements.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgelement">ID2D1SvgElement</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISvgElement : IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.EnumerateChildren.html#PaintDotNet_Direct2D1_SvgElementExtensions_EnumerateChildren_PaintDotNet_Direct2D1_ISvgElement_">SvgElementExtensions.EnumerateChildren(ISvgElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ExtendMode__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ExtendMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_FillMode__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out FillMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ISvgAttribute__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ISvgAttribute)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ISvgPaint__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ISvgPaint)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ISvgPathData__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ISvgPathData)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ISvgPointCollection__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ISvgPointCollection)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ISvgStrokeDashArray__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ISvgStrokeDashArray)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgDisplay__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgDisplay)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLength__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgLength)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLineCap__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgLineCap)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLineJoin__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgLineJoin)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgOverflow__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgOverflow)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgPreserveAspectRatio__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgPreserveAspectRatio)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgUnitType__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgUnitType)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgViewBox__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgViewBox)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgVisibility__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out SvgVisibility)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Imaging_ColorRgba128Float__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out ColorRgba128Float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Rendering_Matrix3x2Float__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out Matrix3x2Float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_System_Single__">SvgElementExtensions.GetAttributeValue(ISvgElement, string, out float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValueRef.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValueRef__1_PaintDotNet_Direct2D1_ISvgElement_System_String_">SvgElementExtensions.GetAttributeValueRef&lt;T&gt;(ISvgElement, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue__1_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgAttributePodType_">SvgElementExtensions.GetAttributeValue&lt;T&gt;(ISvgElement, string, SvgAttributePodType)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetAttributeValue__1_PaintDotNet_Direct2D1_ISvgElement_System_String___0__">SvgElementExtensions.GetAttributeValue&lt;T&gt;(ISvgElement, string, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.GetSpecifiedAttributeName.html#PaintDotNet_Direct2D1_SvgElementExtensions_GetSpecifiedAttributeName_PaintDotNet_Direct2D1_ISvgElement_System_Int32_">SvgElementExtensions.GetSpecifiedAttributeName(ISvgElement, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.IsAttributeSpecified.html#PaintDotNet_Direct2D1_SvgElementExtensions_IsAttributeSpecified_PaintDotNet_Direct2D1_ISvgElement_System_String_">SvgElementExtensions.IsAttributeSpecified(ISvgElement, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_ExtendMode_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, ExtendMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_FillMode_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, FillMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgDisplay_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgDisplay)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLength__">SvgElementExtensions.SetAttributeValue(ISvgElement, string, in SvgLength)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLineCap_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgLineCap)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgLineJoin_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgLineJoin)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgOverflow_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgOverflow)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgPreserveAspectRatio__">SvgElementExtensions.SetAttributeValue(ISvgElement, string, in SvgPreserveAspectRatio)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgUnitType_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgUnitType)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgViewBox_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgViewBox)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgVisibility_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, SvgVisibility)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Imaging_ColorRgba128Float_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, ColorRgba128Float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Rendering_Matrix3x2Float__">SvgElementExtensions.SetAttributeValue(ISvgElement, string, in Matrix3x2Float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue_PaintDotNet_Direct2D1_ISvgElement_System_String_System_Single_">SvgElementExtensions.SetAttributeValue(ISvgElement, string, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.SvgElementExtensions.SetAttributeValue.html#PaintDotNet_Direct2D1_SvgElementExtensions_SetAttributeValue__1_PaintDotNet_Direct2D1_ISvgElement_System_String_PaintDotNet_Direct2D1_SvgAttributePodType___0__">SvgElementExtensions.SetAttributeValue&lt;T&gt;(ISvgElement, string, SvgAttributePodType, in T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.HasChildren.html#PaintDotNet_Direct2D1_ISvgElement_HasChildren">HasChildren</a></dt>
+    <dd><p>Returns a boolean indicating whether this element has children.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.IsTextContent.html#PaintDotNet_Direct2D1_ISvgElement_IsTextContent">IsTextContent</a></dt>
+    <dd><p>Returns a boolean indicating whether this element represents text content, e.g. the content of a 'title' or 'desc' element.
+Text content does not have a tag name.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.SpecifiedAttributeCount.html#PaintDotNet_Direct2D1_ISvgElement_SpecifiedAttributeCount">SpecifiedAttributeCount</a></dt>
+    <dd><p>Returns the number of specified attributes on this element. Attributes are only considered specified if
+they are explicitly set on the element or present within an inline style. Properties that receive their
+value through CSS inheritance are not considered specified. An attribute can become specified if it is
+set through a method call. It can become unspecified if it is removed via RemoveAttribute.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.TagName.html#PaintDotNet_Direct2D1_ISvgElement_TagName">TagName</a></dt>
+    <dd><p>Gets the tag name.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.TextValue.html#PaintDotNet_Direct2D1_ISvgElement_TextValue">TextValue</a></dt>
+    <dd><p>Gets or sets the value of a text content element.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.AppendChild.html#PaintDotNet_Direct2D1_ISvgElement_AppendChild_PaintDotNet_Direct2D1_ISvgElement_">AppendChild(ISvgElement)</a></dt>
+    <dd><p>Appends an element to the list of children. If the element already has a parent, it is removed from this parent as part of the append operation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.CreateChild.html#PaintDotNet_Direct2D1_ISvgElement_CreateChild_System_String_">CreateChild(string)</a></dt>
+    <dd><p>Creates an element from a tag name. The element is appended to the list of children.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetAttributeValue.html#PaintDotNet_Direct2D1_ISvgElement_GetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributePodType_System_Span_System_Byte__">GetAttributeValue(string, SvgAttributePodType, Span&lt;byte&gt;)</a></dt>
+    <dd><p>Gets an attribute of this element as a POD (plain old data) type.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetAttributeValue.html#PaintDotNet_Direct2D1_ISvgElement_GetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributeStringType_">GetAttributeValue(string, SvgAttributeStringType)</a></dt>
+    <dd><p>Gets an attribute of this element as a string.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetAttributeValueRef.html#PaintDotNet_Direct2D1_ISvgElement_GetAttributeValueRef_System_String_System_Type_">GetAttributeValueRef(string, Type)</a></dt>
+    <dd><p>Gets an attribute of this element as an object reference.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetDocument.html#PaintDotNet_Direct2D1_ISvgElement_GetDocument">GetDocument()</a></dt>
+    <dd><p>Gets the document that contains this element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetFirstChild.html#PaintDotNet_Direct2D1_ISvgElement_GetFirstChild">GetFirstChild()</a></dt>
+    <dd><p>Gets the first child of this element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetLastChild.html#PaintDotNet_Direct2D1_ISvgElement_GetLastChild">GetLastChild()</a></dt>
+    <dd><p>Gets the last child of this element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetNextChild.html#PaintDotNet_Direct2D1_ISvgElement_GetNextChild_PaintDotNet_Direct2D1_ISvgElement_">GetNextChild(ISvgElement)</a></dt>
+    <dd><p>Gets the next sibling of the referenceChild element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetParent.html#PaintDotNet_Direct2D1_ISvgElement_GetParent">GetParent()</a></dt>
+    <dd><p>Gets the parent element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetPreviousChild.html#PaintDotNet_Direct2D1_ISvgElement_GetPreviousChild_PaintDotNet_Direct2D1_ISvgElement_">GetPreviousChild(ISvgElement)</a></dt>
+    <dd><p>Gets the previous sibling of the referenceChild element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.GetSpecifiedAttributeName.html#PaintDotNet_Direct2D1_ISvgElement_GetSpecifiedAttributeName_System_Int32_System_Boolean__">GetSpecifiedAttributeName(int, out bool)</a></dt>
+    <dd><p>Gets the name of the attribute at the given index.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.InsertChildBefore.html#PaintDotNet_Direct2D1_ISvgElement_InsertChildBefore_PaintDotNet_Direct2D1_ISvgElement_PaintDotNet_Direct2D1_ISvgElement_">InsertChildBefore(ISvgElement, ISvgElement?)</a></dt>
+    <dd><p>Inserts newChild as a child of this element, before the referenceChild element. If the newChild element already has a parent, it is removed
+from this parent as part of the insertion.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.IsAttributeSpecified.html#PaintDotNet_Direct2D1_ISvgElement_IsAttributeSpecified_System_String_System_Boolean__">IsAttributeSpecified(string, out bool)</a></dt>
+    <dd><p>Returns a boolean indicating if the attribute is explicitly set on the element.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.RemoveAttribute.html#PaintDotNet_Direct2D1_ISvgElement_RemoveAttribute_System_String_">RemoveAttribute(string)</a></dt>
+    <dd><p>Removes the attribute from this element. Also removes this attribute from within an inline style if present.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.RemoveChild.html#PaintDotNet_Direct2D1_ISvgElement_RemoveChild_PaintDotNet_Direct2D1_ISvgElement_">RemoveChild(ISvgElement)</a></dt>
+    <dd><p>Removes the oldChild from the tree. Children of oldChild remain children of oldChild.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.ReplaceChild.html#PaintDotNet_Direct2D1_ISvgElement_ReplaceChild_PaintDotNet_Direct2D1_ISvgElement_PaintDotNet_Direct2D1_ISvgElement_">ReplaceChild(ISvgElement, ISvgElement)</a></dt>
+    <dd><p>Replaces the oldChild element with the newChild. This operation removes the oldChild from the tree. If the newChild element already has a parent,
+it is removed from this parent as part of the replace operation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.SetAttributeValue.html#PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_ISvgAttribute_">SetAttributeValue(string, ISvgAttribute)</a></dt>
+    <dd><p>Sets an attribute of this element using an object reference. A given attribute object may only set on one element in
+one attribute location at a time.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.SetAttributeValue.html#PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributePodType_System_ReadOnlySpan_System_Byte__">SetAttributeValue(string, SvgAttributePodType, ReadOnlySpan&lt;byte&gt;)</a></dt>
+    <dd><p>Sets an attribute of this element using a POD (plain old date) type.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.SetAttributeValue.html#PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributeStringType_System_String_">SetAttributeValue(string, SvgAttributeStringType, string)</a></dt>
+    <dd><p>Sets an attribute of this element using a string.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

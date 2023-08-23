@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CloneWithNewSource
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CloneWithNewSource
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource*">
+
+
+
+
+
+<h1 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewSource_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource*" class="text-break">
+  Method CloneWithNewSource
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewSource_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource*"></a>
+
+<h3 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewSource_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_IBitmapSource_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource(PaintDotNet.Effects.IEffectEnvironment,PaintDotNet.Imaging.IBitmapSource)">
+  CloneWithNewSource(IEffectEnvironment, IBitmapSource)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates a copy of the environment while replacing the source bitmap's layer. Other data is
+unaffected, including the document's bitmap. This method can be used when chaining effects that are instantiated with
+<a class="xref" href="PaintDotNet.Effects.IEffectsService2.html">IEffectsService2</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IEffectEnvironment CloneWithNewSource(this IEffectEnvironment environment, IBitmapSource newSourceBitmap)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>environment</code> <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The environment.</p>
+</dd>
+  <dt><code>newSourceBitmap</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd><p>The new bitmap to use as the source layer bitmap.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The new environment.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

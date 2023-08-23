@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LayerListBase
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LayerListBase
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.LayerListBase">
+
+
+
+  <h1 id="PaintDotNet_LayerListBase" data-uid="PaintDotNet.LayerListBase" class="text-break">
+    Class LayerListBase
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class LayerListBase : ArrayList, IList, ICollection, IEnumerable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></div>
+      <div><span class="xref">LayerListBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="PaintDotNet.LayerList.html">LayerList</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter">ArrayList.Adapter(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">ArrayList.BinarySearch(int, int, object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)">ArrayList.BinarySearch(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)">ArrayList.BinarySearch(object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone">ArrayList.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">ArrayList.CopyTo(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)">ArrayList.CopyTo(Array, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)">ArrayList.CopyTo(int, Array, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)">ArrayList.FixedSize(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)">ArrayList.FixedSize(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator">ArrayList.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)">ArrayList.GetEnumerator(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">ArrayList.IndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)">ArrayList.IndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)">ArrayList.IndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)">ArrayList.LastIndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)">ArrayList.LastIndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)">ArrayList.LastIndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)">ArrayList.ReadOnly(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)">ArrayList.ReadOnly(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">ArrayList.Remove(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat">ArrayList.Repeat(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)">ArrayList.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange">ArrayList.SetRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange">ArrayList.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)">ArrayList.Sort(IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)">ArrayList.Sort(int, int, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)">ArrayList.Synchronized(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)">ArrayList.Synchronized(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray">ArrayList.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)">ArrayList.ToArray(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">ArrayList.TrimToSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">ArrayList.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">ArrayList.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">ArrayList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">ArrayList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">ArrayList.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">ArrayList.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.Item.html#PaintDotNet_LayerListBase_Item_System_Int32_">this[int]</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.Add.html#PaintDotNet_LayerListBase_Add_System_Object_">Add(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.AddRange.html#PaintDotNet_LayerListBase_AddRange_System_Collections_ICollection_">AddRange(ICollection)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.Clear.html#PaintDotNet_LayerListBase_Clear">Clear()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.Contains.html#PaintDotNet_LayerListBase_Contains_System_Object_">Contains(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.Insert.html#PaintDotNet_LayerListBase_Insert_System_Int32_System_Object_">Insert(int, object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.InsertRange.html#PaintDotNet_LayerListBase_InsertRange_System_Int32_System_Collections_ICollection_">InsertRange(int, ICollection)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.RemoveAt.html#PaintDotNet_LayerListBase_RemoveAt_System_Int32_">RemoveAt(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.LayerListBase.RemoveRange.html#PaintDotNet_LayerListBase_RemoveRange_System_Int32_System_Int32_">RemoveRange(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

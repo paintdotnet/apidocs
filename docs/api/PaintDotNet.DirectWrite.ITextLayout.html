@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ITextLayout
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ITextLayout
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.DirectWrite.ITextLayout">
+
+
+
+  <h1 id="PaintDotNet_DirectWrite_ITextLayout" data-uid="PaintDotNet.DirectWrite.ITextLayout" class="text-break">
+    Interface ITextLayout
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.DirectWrite.html">DirectWrite</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITextLayout : ITextFormat, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.GetTrimmingSign.html#PaintDotNet_DirectWrite_ITextFormat_GetTrimmingSign">ITextFormat.GetTrimmingSign()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.SetTrimmingSign.html#PaintDotNet_DirectWrite_ITextFormat_SetTrimmingSign_PaintDotNet_DirectWrite_IInlineObject_">ITextFormat.SetTrimmingSign(IInlineObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FlowDirection.html#PaintDotNet_DirectWrite_ITextFormat_FlowDirection">ITextFormat.FlowDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontCollection.html#PaintDotNet_DirectWrite_ITextFormat_FontCollection">ITextFormat.FontCollection</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontFamilyName.html#PaintDotNet_DirectWrite_ITextFormat_FontFamilyName">ITextFormat.FontFamilyName</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontSize.html#PaintDotNet_DirectWrite_ITextFormat_FontSize">ITextFormat.FontSize</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontStretch.html#PaintDotNet_DirectWrite_ITextFormat_FontStretch">ITextFormat.FontStretch</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontStyle.html#PaintDotNet_DirectWrite_ITextFormat_FontStyle">ITextFormat.FontStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontWeight.html#PaintDotNet_DirectWrite_ITextFormat_FontWeight">ITextFormat.FontWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.IncrementalTabStop.html#PaintDotNet_DirectWrite_ITextFormat_IncrementalTabStop">ITextFormat.IncrementalTabStop</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LineSpacing.html#PaintDotNet_DirectWrite_ITextFormat_LineSpacing">ITextFormat.LineSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LocaleName.html#PaintDotNet_DirectWrite_ITextFormat_LocaleName">ITextFormat.LocaleName</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.ParagraphAlignment.html#PaintDotNet_DirectWrite_ITextFormat_ParagraphAlignment">ITextFormat.ParagraphAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.ReadingDirection.html#PaintDotNet_DirectWrite_ITextFormat_ReadingDirection">ITextFormat.ReadingDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.TextAlignment.html#PaintDotNet_DirectWrite_ITextFormat_TextAlignment">ITextFormat.TextAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.Trimming.html#PaintDotNet_DirectWrite_ITextFormat_Trimming">ITextFormat.Trimming</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.WordWrapping.html#PaintDotNet_DirectWrite_ITextFormat_WordWrapping">ITextFormat.WordWrapping</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetDrawingEffect(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetDrawingEffect(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontCollection(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontCollection(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontFamilyName(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontFamilyName(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontSize(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontSize(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontStretch(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontStretch(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontStyle(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontStyle(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetFontWeight(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetFontWeight(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetInlineObject(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetInlineObject(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetLocaleName(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetLocaleName(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetStrikethrough(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetStrikethrough(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetTypography(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetTypography(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetUnderline(PaintDotNet.DirectWrite.ITextLayout,System.Int32).html">TextLayoutExtensions.GetUnderline(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.HitTestPoint(PaintDotNet.DirectWrite.ITextLayout,System.Single,System.Single).html">TextLayoutExtensions.HitTestPoint(ITextLayout, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.HitTestTextRange(PaintDotNet.DirectWrite.ITextLayout,PaintDotNet.DirectWrite.TextRange,System.Single,System.Single).html">TextLayoutExtensions.HitTestTextRange(ITextLayout, TextRange, float, float)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.MaxHeight.html#PaintDotNet_DirectWrite_ITextLayout_MaxHeight">MaxHeight</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.MaxWidth.html#PaintDotNet_DirectWrite_ITextLayout_MaxWidth">MaxWidth</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.Metrics.html#PaintDotNet_DirectWrite_ITextLayout_Metrics">Metrics</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.MinWidth.html#PaintDotNet_DirectWrite_ITextLayout_MinWidth">MinWidth</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.OverhangMetrics.html#PaintDotNet_DirectWrite_ITextLayout_OverhangMetrics">OverhangMetrics</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetClusterMetrics.html#PaintDotNet_DirectWrite_ITextLayout_GetClusterMetrics">GetClusterMetrics()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetDrawingEffect.html#PaintDotNet_DirectWrite_ITextLayout_GetDrawingEffect_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetDrawingEffect(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontCollection.html#PaintDotNet_DirectWrite_ITextLayout_GetFontCollection_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontCollection(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontFamilyName.html#PaintDotNet_DirectWrite_ITextLayout_GetFontFamilyName_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontFamilyName(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontSize.html#PaintDotNet_DirectWrite_ITextLayout_GetFontSize_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontSize(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontStretch.html#PaintDotNet_DirectWrite_ITextLayout_GetFontStretch_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontStretch(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontStyle.html#PaintDotNet_DirectWrite_ITextLayout_GetFontStyle_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontStyle(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetFontWeight.html#PaintDotNet_DirectWrite_ITextLayout_GetFontWeight_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetFontWeight(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetInlineObject.html#PaintDotNet_DirectWrite_ITextLayout_GetInlineObject_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetInlineObject(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetLineMetrics.html#PaintDotNet_DirectWrite_ITextLayout_GetLineMetrics">GetLineMetrics()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetLocaleName.html#PaintDotNet_DirectWrite_ITextLayout_GetLocaleName_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetLocaleName(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetStrikethrough.html#PaintDotNet_DirectWrite_ITextLayout_GetStrikethrough_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetStrikethrough(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetTypography.html#PaintDotNet_DirectWrite_ITextLayout_GetTypography_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetTypography(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetUnderline.html#PaintDotNet_DirectWrite_ITextLayout_GetUnderline_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetUnderline(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.HitTestPoint.html#PaintDotNet_DirectWrite_ITextLayout_HitTestPoint_PaintDotNet_Rendering_Point2Float_">HitTestPoint(Point2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.HitTestTextPosition.html#PaintDotNet_DirectWrite_ITextLayout_HitTestTextPosition_System_Int32_System_Boolean_">HitTestTextPosition(int, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.HitTestTextRange.html#PaintDotNet_DirectWrite_ITextLayout_HitTestTextRange_PaintDotNet_DirectWrite_TextRange_PaintDotNet_Rendering_Point2Float_">HitTestTextRange(TextRange, Point2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetDrawingEffect.html#PaintDotNet_DirectWrite_ITextLayout_SetDrawingEffect_PaintDotNet_DirectWrite_TextRange_PaintDotNet_ComponentModel_IObjectRef_">SetDrawingEffect(TextRange, IObjectRef?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontCollection.html#PaintDotNet_DirectWrite_ITextLayout_SetFontCollection_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_IFontCollection_">SetFontCollection(TextRange, IFontCollection)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontFamilyName.html#PaintDotNet_DirectWrite_ITextLayout_SetFontFamilyName_PaintDotNet_DirectWrite_TextRange_System_String_">SetFontFamilyName(TextRange, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontSize.html#PaintDotNet_DirectWrite_ITextLayout_SetFontSize_PaintDotNet_DirectWrite_TextRange_System_Single_">SetFontSize(TextRange, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontStretch.html#PaintDotNet_DirectWrite_ITextLayout_SetFontStretch_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_FontStretch_">SetFontStretch(TextRange, FontStretch)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontStyle.html#PaintDotNet_DirectWrite_ITextLayout_SetFontStyle_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_FontStyle_">SetFontStyle(TextRange, FontStyle)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetFontWeight.html#PaintDotNet_DirectWrite_ITextLayout_SetFontWeight_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_FontWeight_">SetFontWeight(TextRange, FontWeight)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetInlineObject.html#PaintDotNet_DirectWrite_ITextLayout_SetInlineObject_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_IInlineObject_">SetInlineObject(TextRange, IInlineObject?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetLocaleName.html#PaintDotNet_DirectWrite_ITextLayout_SetLocaleName_PaintDotNet_DirectWrite_TextRange_System_String_">SetLocaleName(TextRange, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetStrikethrough.html#PaintDotNet_DirectWrite_ITextLayout_SetStrikethrough_PaintDotNet_DirectWrite_TextRange_System_Boolean_">SetStrikethrough(TextRange, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetTypography.html#PaintDotNet_DirectWrite_ITextLayout_SetTypography_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_ITypography_">SetTypography(TextRange, ITypography?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetUnderline.html#PaintDotNet_DirectWrite_ITextLayout_SetUnderline_PaintDotNet_DirectWrite_TextRange_System_Boolean_">SetUnderline(TextRange, bool)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

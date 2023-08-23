@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Surface
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Surface
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Surface">
+
+
+
+  <h1 id="PaintDotNet_Surface" data-uid="PaintDotNet.Surface" class="text-break">
+    Class Surface
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implements a BGRA32 bitmap used by classic/legacy plugins.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Surface : RefTrackedObject, ISerializable, ISurfaceRef&lt;ColorBgra&gt;, IObjectRef, ISurface&lt;ColorBgra&gt;, IRenderer&lt;ColorBgra&gt;, IIsDisposed, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
+      <div><span class="xref">Surface</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Rendering.ISurfaceRef-1.html">ISurfaceRef</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
+      <div><a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.Rendering.IRenderer-1.html">IRenderer</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.Dispose.html#PaintDotNet_ComponentModel_RefTrackedObject_Dispose">RefTrackedObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">RefTrackedObject.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.IsDisposed.html#PaintDotNet_ComponentModel_RefTrackedObject_IsDisposed">RefTrackedObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Reinterpret.html#PaintDotNet_Rendering_RendererExtensions_Reinterpret__2_PaintDotNet_Rendering_IRenderer___0__">RendererExtensions.Reinterpret&lt;TPixelSrc, TPixelDst&gt;(IRenderer&lt;TPixelSrc&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_RegionPtr___0__">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, RegionPtr&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_ISurface___0__">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, ISurface&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.ToSurface.html#PaintDotNet_Rendering_RendererExtensions_ToSurface__1_PaintDotNet_Rendering_IRenderer___0__">RendererExtensions.ToSurface&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.ToSurface.html#PaintDotNet_Rendering_RendererExtensions_ToSurface__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_RectInt32_">RendererExtensions.ToSurface&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, RectInt32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions.CreateSharedBitmap.html#PaintDotNet_Rendering_SurfaceExtensions_CreateSharedBitmap__1_PaintDotNet_Rendering_ISurfaceRef___0__">SurfaceExtensions.CreateSharedBitmap&lt;TPixel&gt;(ISurfaceRef&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Drawing.SurfaceBgraExtensions.CreateAliasedGdipBitmap.html#PaintDotNet_Drawing_SurfaceBgraExtensions_CreateAliasedGdipBitmap_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SurfaceBgraExtensions.CreateAliasedGdipBitmap(ISurface&lt;ColorBgra&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Drawing.SurfaceBgraExtensions.CreateAliasedGdipBitmap.html#PaintDotNet_Drawing_SurfaceBgraExtensions_CreateAliasedGdipBitmap_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Drawing_BitmapAlphaMode_">SurfaceBgraExtensions.CreateAliasedGdipBitmap(ISurface&lt;ColorBgra&gt;, BitmapAlphaMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Drawing.SurfaceBgraExtensions.CreateAliasedGdipBitmap.html#PaintDotNet_Drawing_SurfaceBgraExtensions_CreateAliasedGdipBitmap_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32_PaintDotNet_Drawing_BitmapAlphaMode_">SurfaceBgraExtensions.CreateAliasedGdipBitmap(ISurface&lt;ColorBgra&gt;, RectInt32, BitmapAlphaMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Drawing.SurfaceBgraExtensions.ToGdipBitmap.html#PaintDotNet_Drawing_SurfaceBgraExtensions_ToGdipBitmap_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SurfaceBgraExtensions.ToGdipBitmap(ISurface&lt;ColorBgra&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Drawing.SurfaceBgraExtensions.ToGdipBitmap.html#PaintDotNet_Drawing_SurfaceBgraExtensions_ToGdipBitmap_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Imaging_PixelFormat_">SurfaceBgraExtensions.ToGdipBitmap(ISurface&lt;ColorBgra&gt;, PixelFormat)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.Clear.html#PaintDotNet_Rendering_SurfaceBgraExtensions_Clear_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SurfaceBgraExtensions.Clear(ISurface&lt;ColorBgra&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.ConvertFromPremultipliedAlpha.html#PaintDotNet_Rendering_SurfaceBgraExtensions_ConvertFromPremultipliedAlpha_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SurfaceBgraExtensions.ConvertFromPremultipliedAlpha(ISurface&lt;ColorBgra&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.ConvertToPremultipliedAlpha.html#PaintDotNet_Rendering_SurfaceBgraExtensions_ConvertToPremultipliedAlpha_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SurfaceBgraExtensions.ConvertToPremultipliedAlpha(ISurface&lt;ColorBgra&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.Fill.html#PaintDotNet_Rendering_SurfaceBgraExtensions_Fill_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_ColorBgra_">SurfaceBgraExtensions.Fill(ISurface&lt;ColorBgra&gt;, ColorBgra)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.GetBilinearSample.html#PaintDotNet_Rendering_SurfaceBgraExtensions_GetBilinearSample_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Single_System_Single_">SurfaceBgraExtensions.GetBilinearSample(ISurface&lt;ColorBgra&gt;, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.GetBilinearSampleClamped.html#PaintDotNet_Rendering_SurfaceBgraExtensions_GetBilinearSampleClamped_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Single_System_Single_">SurfaceBgraExtensions.GetBilinearSampleClamped(ISurface&lt;ColorBgra&gt;, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceBgraExtensions.GetBilinearSampleWrapped.html#PaintDotNet_Rendering_SurfaceBgraExtensions_GetBilinearSampleWrapped_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Single_System_Single_">SurfaceBgraExtensions.GetBilinearSampleWrapped(ISurface&lt;ColorBgra&gt;, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions.AsRegionPtr.html#PaintDotNet_Rendering_SurfaceExtensions_AsRegionPtr__1_PaintDotNet_Rendering_ISurface___0__">SurfaceExtensions.AsRegionPtr&lt;TPixel&gt;(ISurface&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions.Clear.html#PaintDotNet_Rendering_SurfaceExtensions_Clear__1_PaintDotNet_Rendering_ISurface___0__">SurfaceExtensions.Clear&lt;TPixel&gt;(ISurface&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions.Fill.html#PaintDotNet_Rendering_SurfaceExtensions_Fill__1_PaintDotNet_Rendering_ISurface___0____0_">SurfaceExtensions.Fill&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, TPixel)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointPointerUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointPointerUnchecked__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">SurfaceExtensions2.GetPointPointerUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointPointerUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointPointerUnchecked__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32_">SurfaceExtensions2.GetPointPointerUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointPointer.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointPointer__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">SurfaceExtensions2.GetPointPointer&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointPointer.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointPointer__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32_">SurfaceExtensions2.GetPointPointer&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointUnchecked__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">SurfaceExtensions2.GetPointUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPointUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPointUnchecked__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32_">SurfaceExtensions2.GetPointUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPoint.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPoint__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">SurfaceExtensions2.GetPoint&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetPoint.html#PaintDotNet_Rendering_SurfaceExtensions2_GetPoint__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32_">SurfaceExtensions2.GetPoint&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetRowPointerUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_GetRowPointerUnchecked__1_PaintDotNet_Rendering_ISurface___0__System_Int32_">SurfaceExtensions2.GetRowPointerUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.GetRowPointer.html#PaintDotNet_Rendering_SurfaceExtensions2_GetRowPointer__1_PaintDotNet_Rendering_ISurface___0__System_Int32_">SurfaceExtensions2.GetRowPointer&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.SetPointUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_SetPointUnchecked__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32___0_">SurfaceExtensions2.SetPointUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32, TPixel)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.SetPointUnchecked.html#PaintDotNet_Rendering_SurfaceExtensions2_SetPointUnchecked__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32___0_">SurfaceExtensions2.SetPointUnchecked&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int, TPixel)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.SetPoint.html#PaintDotNet_Rendering_SurfaceExtensions2_SetPoint__1_PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32___0_">SurfaceExtensions2.SetPoint&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, Point2Int32, TPixel)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.SurfaceExtensions2.SetPoint.html#PaintDotNet_Rendering_SurfaceExtensions2_SetPoint__1_PaintDotNet_Rendering_ISurface___0__System_Int32_System_Int32___0_">SurfaceExtensions2.SetPoint&lt;TPixel&gt;(ISurface&lt;TPixel&gt;, int, int, TPixel)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_PaintDotNet_Rendering_SizeInt32_">Surface(SizeInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_PaintDotNet_Rendering_SizeInt32_PaintDotNet_SurfaceCreationFlags_">Surface(SizeInt32, SurfaceCreationFlags)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_System_Drawing_Size_">Surface(Size)</a></dt>
+    <dd><p>Creates a new instance of the Surface class.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_System_Drawing_Size_PaintDotNet_SurfaceCreationFlags_">Surface(Size, SurfaceCreationFlags)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_System_Int32_System_Int32_">Surface(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.-ctor.html#PaintDotNet_Surface__ctor_System_Int32_System_Int32_PaintDotNet_SurfaceCreationFlags_">Surface(int, int, SurfaceCreationFlags)</a></dt>
+    <dd><p>Creates a new instance of the Surface class.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Bounds.html#PaintDotNet_Surface_Bounds">Bounds</a></dt>
+    <dd><p>Gets the bounds of this Surface, in pixels.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Height.html#PaintDotNet_Surface_Height">Height</a></dt>
+    <dd><p>Gets the height, in pixels, of this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Item.html#PaintDotNet_Surface_Item_System_Drawing_Point_">this[Point]</a></dt>
+    <dd><p>Gets or sets the pixel value at the requested offset.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Item.html#PaintDotNet_Surface_Item_System_Int32_System_Int32_">this[int, int]</a></dt>
+    <dd><p>Gets or sets the pixel value at the requested offset.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Scan0.html#PaintDotNet_Surface_Scan0">Scan0</a></dt>
+    <dd><p>Gets a MemoryBlock which is the buffer holding the pixels associated
+with this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Size.html#PaintDotNet_Surface_Size">Size</a></dt>
+    <dd><p>Gets the size, in pixels, of this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Stride.html#PaintDotNet_Surface_Stride">Stride</a></dt>
+    <dd><p>Gets the stride, in bytes, for this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Width.html#PaintDotNet_Surface_Width">Width</a></dt>
+    <dd><p>Gets the width, in pixels, of this Surface.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Clear.html#PaintDotNet_Surface_Clear">Clear()</a></dt>
+    <dd><p>Clears the surface to transparent black (BGRA = [0, 0, 0, 0]).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.ClearWithCheckerboardPattern.html#PaintDotNet_Surface_ClearWithCheckerboardPattern">ClearWithCheckerboardPattern()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.ClearWithCheckerboardPattern.html#PaintDotNet_Surface_ClearWithCheckerboardPattern_System_Int32_System_Int32_">ClearWithCheckerboardPattern(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Clone.html#PaintDotNet_Surface_Clone">Clone()</a></dt>
+    <dd><p>Creates a new surface with the same dimensions and pixel values as this one.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopyFromBitmap.html#PaintDotNet_Surface_CopyFromBitmap_System_Drawing_Bitmap_">CopyFromBitmap(Bitmap)</a></dt>
+    <dd><p>Calls CopyFromBitmap(bitmap, true).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopyFromBitmap.html#PaintDotNet_Surface_CopyFromBitmap_System_Drawing_Bitmap_System_Boolean_">CopyFromBitmap(Bitmap, bool)</a></dt>
+    <dd><p>Creates a new Surface and copies the pixels from a Bitmap to it.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopyFromGdipBitmap.html#PaintDotNet_Surface_CopyFromGdipBitmap_System_Drawing_Bitmap_System_Boolean_">CopyFromGdipBitmap(Bitmap, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopyFromGdipImage.html#PaintDotNet_Surface_CopyFromGdipImage_System_Drawing_Image_">CopyFromGdipImage(Image)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopyFromGdipImage.html#PaintDotNet_Surface_CopyFromGdipImage_System_Drawing_Image_System_Boolean_">CopyFromGdipImage(Image, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">CopySurface(ISurface&lt;ColorBgra&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_PdnRegion_">CopySurface(ISurface&lt;ColorBgra&gt;, PdnRegion)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_Point2Int32_">CopySurface(ISurface&lt;ColorBgra&gt;, Point2Int32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_Point2Int32_PaintDotNet_Rendering_RectInt32_">CopySurface(ISurface&lt;ColorBgra&gt;, Point2Int32, RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32_">CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32___">CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32___System_Int32_System_Int32_">CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32[], int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Point_">CopySurface(ISurface&lt;ColorBgra&gt;, Point)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Point_System_Drawing_Rectangle_">CopySurface(ISurface&lt;ColorBgra&gt;, Point, Rectangle)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle_">CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle)</a></dt>
+    <dd><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle___">CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle___System_Int32_System_Int32_">CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle[], int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_">CopySurface(Surface)</a></dt>
+    <dd><p>Copies the contents of the given surface to the upper left corner of this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_PdnRegion_">CopySurface(Surface, PdnRegion)</a></dt>
+    <dd><p>Copies a region of the given surface to this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_Point2Int32_">CopySurface(Surface, Point2Int32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_Point2Int32_PaintDotNet_Rendering_RectInt32_">CopySurface(Surface, Point2Int32, RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32_">CopySurface(Surface, RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32___">CopySurface(Surface, RectInt32[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32___System_Int32_System_Int32_">CopySurface(Surface, RectInt32[], int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_">CopySurface(Surface, Point)</a></dt>
+    <dd><p>Copies the contents of the given surface to a location within this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Rectangle_">CopySurface(Surface, Point, Rectangle)</a></dt>
+    <dd><p>Copies a rectangular region of the given surface to a specific location on this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle_">CopySurface(Surface, Rectangle)</a></dt>
+    <dd><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___">CopySurface(Surface, Rectangle[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CopySurface.html#PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___System_Int32_System_Int32_">CopySurface(Surface, Rectangle[], int, int)</a></dt>
+    <dd><p>Copies a region of the given surface to this surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateAliasedBitmap.html#PaintDotNet_Surface_CreateAliasedBitmap">CreateAliasedBitmap()</a></dt>
+    <dd><p>Helper function. Same as calling CreateAliasedBounds(Bounds).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateAliasedBitmap.html#PaintDotNet_Surface_CreateAliasedBitmap_PaintDotNet_Rendering_RectInt32_">CreateAliasedBitmap(RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateAliasedBitmap.html#PaintDotNet_Surface_CreateAliasedBitmap_System_Boolean_">CreateAliasedBitmap(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateAliasedBitmap.html#PaintDotNet_Surface_CreateAliasedBitmap_System_Drawing_Rectangle_">CreateAliasedBitmap(Rectangle)</a></dt>
+    <dd><p>Helper function. Same as calling CreateAliasedBounds(bounds, true).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateAliasedBitmap.html#PaintDotNet_Surface_CreateAliasedBitmap_System_Drawing_Rectangle_System_Boolean_">CreateAliasedBitmap(Rectangle, bool)</a></dt>
+    <dd><p>Creates a GDI+ Bitmap object that aliases the same memory that this Surface does.
+Then you can use GDI+ to draw on to this surface.
+Note: Since the Bitmap does not hold a reference to this Surface object, nor to
+the MemoryBlock that it contains, you must hold a reference to the Surface object
+for as long as you wish to use the aliased Bitmap. Otherwise the memory may be
+freed and the Bitmap will look corrupt or cause other errors. You may use the
+RenderArgs class to help manage this lifetime instead.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateSharedBitmap.html#PaintDotNet_Surface_CreateSharedBitmap">CreateSharedBitmap()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateWindow.html#PaintDotNet_Surface_CreateWindow_PaintDotNet_Rendering_RectInt32_">CreateWindow(RectInt32)</a></dt>
+    <dd><p>Creates a Surface that aliases a portion of this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateWindow.html#PaintDotNet_Surface_CreateWindow_System_Drawing_Rectangle_">CreateWindow(Rectangle)</a></dt>
+    <dd><p>Creates a Surface that aliases a portion of this Surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.CreateWindow.html#PaintDotNet_Surface_CreateWindow_System_Int32_System_Int32_System_Int32_System_Int32_">CreateWindow(int, int, int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.DetectAndFixDishonestAlpha.html#PaintDotNet_Surface_DetectAndFixDishonestAlpha">DetectAndFixDishonestAlpha()</a></dt>
+    <dd><p>Examines the pixels of this Surface and detects if its contents should be reprocessed.
+If all alpha values are 255, then no processing is performed.
+If all alpha values are greater than or equal to the color values, then the image is
+converted from premultiplied alpha.
+Otherwise, all alpha values are set to 255 and the color values are untouched.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Dispose.html#PaintDotNet_Surface_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_PaintDotNet_ColorBgra_">Fill(ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_PaintDotNet_PdnRegion_PaintDotNet_ColorBgra_">Fill(PdnRegion, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_PaintDotNet_Rendering_RectInt32_PaintDotNet_ColorBgra_">Fill(RectInt32, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_PaintDotNet_Rendering_RectInt32___PaintDotNet_ColorBgra_">Fill(RectInt32[], ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_PaintDotNet_Rendering_RectInt32___System_Int32_System_Int32_PaintDotNet_ColorBgra_">Fill(RectInt32[], int, int, ColorBgra)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Fill.html#PaintDotNet_Surface_Fill_System_Drawing_Rectangle_PaintDotNet_ColorBgra_">Fill(Rectangle, ColorBgra)</a></dt>
+    <dd><p>Fills the given rectangular region within the surface with the given color value.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.FitSurface.html#PaintDotNet_Surface_FitSurface_PaintDotNet_ResamplingAlgorithm_PaintDotNet_Surface_">FitSurface(ResamplingAlgorithm, Surface)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.FitSurface.html#PaintDotNet_Surface_FitSurface_PaintDotNet_ResamplingAlgorithm_PaintDotNet_Surface_PaintDotNet_FitSurfaceOptions_">FitSurface(ResamplingAlgorithm, Surface, FitSurfaceOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.FitSurface.html#PaintDotNet_Surface_FitSurface_PaintDotNet_ResamplingAlgorithm_PaintDotNet_Surface_System_Drawing_Rectangle_">FitSurface(ResamplingAlgorithm, Surface, Rectangle)</a></dt>
+    <dd><p>Fits the source surface to this surface using the given algorithm.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.FitSurface.html#PaintDotNet_Surface_FitSurface_PaintDotNet_ResamplingAlgorithm_PaintDotNet_Surface_System_Drawing_Rectangle_PaintDotNet_FitSurfaceOptions_">FitSurface(ResamplingAlgorithm, Surface, Rectangle, FitSurfaceOptions)</a></dt>
+    <dd><p>Fits the source surface to this surface using the given algorithm and options.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetBilinearSample.html#PaintDotNet_Surface_GetBilinearSample_System_Single_System_Single_">GetBilinearSample(float, float)</a></dt>
+    <dd><p>Gets a bilinear sample from the image.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetBilinearSampleClamped.html#PaintDotNet_Surface_GetBilinearSampleClamped_System_Single_System_Single_">GetBilinearSampleClamped(float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetBilinearSampleWrapped.html#PaintDotNet_Surface_GetBilinearSampleWrapped_System_Single_System_Single_">GetBilinearSampleWrapped(float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetColumnByteOffset.html#PaintDotNet_Surface_GetColumnByteOffset_System_Int32_">GetColumnByteOffset(int)</a></dt>
+    <dd><p>Gets the number of bytes from the beginning of a row to the requested column.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetColumnByteOffsetUnchecked.html#PaintDotNet_Surface_GetColumnByteOffsetUnchecked_System_Int32_">GetColumnByteOffsetUnchecked(int)</a></dt>
+    <dd><p>Gets the number of bytes from the beginning of a row to the requested column.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPoint.html#PaintDotNet_Surface_GetPoint_System_Int32_System_Int32_">GetPoint(int, int)</a></dt>
+    <dd><p>Gets the color at a specified point in the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointByteOffset.html#PaintDotNet_Surface_GetPointByteOffset_System_Int32_System_Int32_">GetPointByteOffset(int, int)</a></dt>
+    <dd><p>Gets the number of bytes from the beginning of the surface's buffer to
+the requested point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointByteOffsetUnchecked.html#PaintDotNet_Surface_GetPointByteOffsetUnchecked_System_Int32_System_Int32_">GetPointByteOffsetUnchecked(int, int)</a></dt>
+    <dd><p>Gets the number of bytes from the beginning of the surface's buffer to
+the requested point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointPointer.html#PaintDotNet_Surface_GetPointPointer_System_Int32_System_Int32_">GetPointPointer(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointPointerUnchecked.html#PaintDotNet_Surface_GetPointPointerUnchecked_System_Int32_System_Int32_">GetPointPointerUnchecked(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointReference.html#PaintDotNet_Surface_GetPointReference_System_Int32_System_Int32_">GetPointReference(int, int)</a></dt>
+    <dd><p>Gets the reference of the requested point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointReferenceUnchecked.html#PaintDotNet_Surface_GetPointReferenceUnchecked_System_Int32_System_Int32_">GetPointReferenceUnchecked(int, int)</a></dt>
+    <dd><p>Gets the reference of the requested point.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetPointUnchecked.html#PaintDotNet_Surface_GetPointUnchecked_System_Int32_System_Int32_">GetPointUnchecked(int, int)</a></dt>
+    <dd><p>Gets the color at a specified point in the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowByteOffset.html#PaintDotNet_Surface_GetRowByteOffset_System_Int32_">GetRowByteOffset(int)</a></dt>
+    <dd><p>Gets the offset, in bytes, of the requested row from the start of the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowByteOffsetUnchecked.html#PaintDotNet_Surface_GetRowByteOffsetUnchecked_System_Int32_">GetRowByteOffsetUnchecked(int)</a></dt>
+    <dd><p>Gets the offset, in bytes, of the requested row from the start of the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowPointer.html#PaintDotNet_Surface_GetRowPointer_System_Int32_">GetRowPointer(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowPointerUnchecked.html#PaintDotNet_Surface_GetRowPointerUnchecked_System_Int32_">GetRowPointerUnchecked(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowReference.html#PaintDotNet_Surface_GetRowReference_System_Int32_">GetRowReference(int)</a></dt>
+    <dd><p>Gets a reference to the beginning of the requested row in the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.GetRowReferenceUnchecked.html#PaintDotNet_Surface_GetRowReferenceUnchecked_System_Int32_">GetRowReferenceUnchecked(int)</a></dt>
+    <dd><p>Gets a reference to the beginning of the requested row in the surface.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.IsColumnVisible.html#PaintDotNet_Surface_IsColumnVisible_System_Int32_">IsColumnVisible(int)</a></dt>
+    <dd><p>Determines if the requested column offset is within bounds.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.IsRowVisible.html#PaintDotNet_Surface_IsRowVisible_System_Int32_">IsRowVisible(int)</a></dt>
+    <dd><p>Determines if the requested row offset is within bounds.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.IsVisible.html#PaintDotNet_Surface_IsVisible_System_Drawing_Point_">IsVisible(Point)</a></dt>
+    <dd><p>Determines if the requested pixel coordinate is within bounds.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.IsVisible.html#PaintDotNet_Surface_IsVisible_System_Int32_System_Int32_">IsVisible(int, int)</a></dt>
+    <dd><p>Determines if the requested pixel coordinate is within bounds.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Surface.Render.html#PaintDotNet_Surface_Render_PaintDotNet_RegionPtr_PaintDotNet_ColorBgra__PaintDotNet_Rendering_Point2Int32_">Render(RegionPtr&lt;ColorBgra&gt;, Point2Int32)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

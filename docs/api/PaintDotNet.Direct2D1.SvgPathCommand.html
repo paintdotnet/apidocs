@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum SvgPathCommand
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum SvgPathCommand
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.SvgPathCommand">
+
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_SvgPathCommand" data-uid="PaintDotNet.Direct2D1.SvgPathCommand" class="text-break">
+    Enum SvgPathCommand
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a path commmand. Each command may reference floats from the segment data.<br>
+Commands ending in Absolute interpret data as absolute coordinate.<br>
+Commands ending in Relative interpret data as being relative to the previous point.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/ne-d2d1svg-d2d1_svg_path_command">D2D1_SVG_PATH_COMMAND</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum SvgPathCommand</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ClosePath"><code>ClosePath = 0</code></dt>
+    <dd><p>Closes the current subpath. Uses no segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_MoveAbsolute"><code>MoveAbsolute = 1</code></dt>
+    <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_MoveRelative"><code>MoveRelative = 2</code></dt>
+    <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_LineAbsolute"><code>LineAbsolute = 3</code></dt>
+    <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_LineRelative"><code>LineRelative = 4</code></dt>
+    <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicAbsolute"><code>CubicAbsolute = 5</code></dt>
+    <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicRelative"><code>CubicRelative = 6</code></dt>
+    <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticAbsolute"><code>QuadraticAbsolute = 7</code></dt>
+    <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticRelative"><code>QuadraticRelative = 8</code></dt>
+    <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ArcAbsolute"><code>ArcAbsolute = 9</code></dt>
+    <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
+considered set if their values are non-zero. Uses 7 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ArcRelative"><code>ArcRelative = 10</code></dt>
+    <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
+considered set if their values are non-zero. Uses 7 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_HorizontalAbsolute"><code>HorizontalAbsolute = 11</code></dt>
+    <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_HorizontalRelative"><code>HorizontalRelative = 12</code></dt>
+    <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_VerticalAbsolute"><code>VerticalAbsolute = 13</code></dt>
+    <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_VerticalRelative"><code>VerticalRelative = 14</code></dt>
+    <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicSmoothAbsolute"><code>CubicSmoothAbsolute = 15</code></dt>
+    <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicSmoothRelative"><code>CubicSmoothRelative = 16</code></dt>
+    <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticSmoothAbsolute"><code>QuadraticSmoothAbsolute = 17</code></dt>
+    <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticSmoothRelative"><code>QuadraticSmoothRelative = 18</code></dt>
+    <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

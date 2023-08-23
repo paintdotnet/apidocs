@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExifConverter
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExifConverter
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Imaging.ExifConverter">
+
+
+
+  <h1 id="PaintDotNet_Imaging_ExifConverter" data-uid="PaintDotNet.Imaging.ExifConverter" class="text-break">
+    Class ExifConverter
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ExifConverter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExifConverter</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeAscii.html#PaintDotNet_Imaging_ExifConverter_DecodeAscii_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeAscii(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeByte.html#PaintDotNet_Imaging_ExifConverter_DecodeByte_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeByte(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeByteArray.html#PaintDotNet_Imaging_ExifConverter_DecodeByteArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeByteArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeDouble.html#PaintDotNet_Imaging_ExifConverter_DecodeDouble_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeDouble(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeDoubleArray.html#PaintDotNet_Imaging_ExifConverter_DecodeDoubleArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeDoubleArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeFloat.html#PaintDotNet_Imaging_ExifConverter_DecodeFloat_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeFloat(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeFloatArray.html#PaintDotNet_Imaging_ExifConverter_DecodeFloatArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeFloatArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeIfd.html#PaintDotNet_Imaging_ExifConverter_DecodeIfd_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeIfd(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeIfdArray.html#PaintDotNet_Imaging_ExifConverter_DecodeIfdArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeIfdArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeLong.html#PaintDotNet_Imaging_ExifConverter_DecodeLong_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeLong(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeLongArray.html#PaintDotNet_Imaging_ExifConverter_DecodeLongArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeLongArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeRational.html#PaintDotNet_Imaging_ExifConverter_DecodeRational_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeRational(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeRational.html#PaintDotNet_Imaging_ExifConverter_DecodeRational_System_Collections_Generic_IReadOnlyList_System_Byte__System_UInt32__System_UInt32__">DecodeRational(IReadOnlyList&lt;byte&gt;, out uint, out uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeRationalArray.html#PaintDotNet_Imaging_ExifConverter_DecodeRationalArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeRationalArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeRationalArray.html#PaintDotNet_Imaging_ExifConverter_DecodeRationalArray_System_Collections_Generic_IReadOnlyList_System_Byte__System_UInt32____System_UInt32____">DecodeRationalArray(IReadOnlyList&lt;byte&gt;, out uint[], out uint[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSByte.html#PaintDotNet_Imaging_ExifConverter_DecodeSByte_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSByte(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSByteArray.html#PaintDotNet_Imaging_ExifConverter_DecodeSByteArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSByteArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSLong.html#PaintDotNet_Imaging_ExifConverter_DecodeSLong_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSLong(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSLongArray.html#PaintDotNet_Imaging_ExifConverter_DecodeSLongArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSLongArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSRational.html#PaintDotNet_Imaging_ExifConverter_DecodeSRational_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSRational(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSRational.html#PaintDotNet_Imaging_ExifConverter_DecodeSRational_System_Collections_Generic_IReadOnlyList_System_Byte__System_Int32__System_Int32__">DecodeSRational(IReadOnlyList&lt;byte&gt;, out int, out int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSRationalArray.html#PaintDotNet_Imaging_ExifConverter_DecodeSRationalArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSRationalArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSRationalArray.html#PaintDotNet_Imaging_ExifConverter_DecodeSRationalArray_System_Collections_Generic_IReadOnlyList_System_Byte__System_Int32____System_Int32____">DecodeSRationalArray(IReadOnlyList&lt;byte&gt;, out int[], out int[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSShort.html#PaintDotNet_Imaging_ExifConverter_DecodeSShort_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSShort(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeSShortArray.html#PaintDotNet_Imaging_ExifConverter_DecodeSShortArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeSShortArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeShort.html#PaintDotNet_Imaging_ExifConverter_DecodeShort_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeShort(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeShortArray.html#PaintDotNet_Imaging_ExifConverter_DecodeShortArray_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeShortArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeToVariant.html#PaintDotNet_Imaging_ExifConverter_DecodeToVariant_PaintDotNet_Imaging_ExifValue_">DecodeToVariant(ExifValue)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeAscii.html#PaintDotNet_Imaging_ExifConverter_EncodeAscii_System_Char___">EncodeAscii(char[])</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeByte.html#PaintDotNet_Imaging_ExifConverter_EncodeByte_System_Byte_">EncodeByte(byte)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeByteArray.html#PaintDotNet_Imaging_ExifConverter_EncodeByteArray_System_Collections_Generic_IReadOnlyList_System_Byte__">EncodeByteArray(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeDouble.html#PaintDotNet_Imaging_ExifConverter_EncodeDouble_System_Double_">EncodeDouble(double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeDoubleArray.html#PaintDotNet_Imaging_ExifConverter_EncodeDoubleArray_System_Collections_Generic_IReadOnlyList_System_Double__">EncodeDoubleArray(IReadOnlyList&lt;double&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeFloat.html#PaintDotNet_Imaging_ExifConverter_EncodeFloat_System_Single_">EncodeFloat(float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeFloatArray.html#PaintDotNet_Imaging_ExifConverter_EncodeFloatArray_System_Collections_Generic_IReadOnlyList_System_Single__">EncodeFloatArray(IReadOnlyList&lt;float&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeIfd.html#PaintDotNet_Imaging_ExifConverter_EncodeIfd_System_UInt32_">EncodeIfd(uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeIfdArray.html#PaintDotNet_Imaging_ExifConverter_EncodeIfdArray_System_Collections_Generic_IReadOnlyList_System_UInt32__">EncodeIfdArray(IReadOnlyList&lt;uint&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeLong.html#PaintDotNet_Imaging_ExifConverter_EncodeLong_System_UInt32_">EncodeLong(uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeLongArray.html#PaintDotNet_Imaging_ExifConverter_EncodeLongArray_System_Collections_Generic_IReadOnlyList_System_UInt32__">EncodeLongArray(IReadOnlyList&lt;uint&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeRational.html#PaintDotNet_Imaging_ExifConverter_EncodeRational_System_UInt32_System_UInt32_">EncodeRational(uint, uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeRational.html#PaintDotNet_Imaging_ExifConverter_EncodeRational_System_UInt64_">EncodeRational(ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeRationalArray.html#PaintDotNet_Imaging_ExifConverter_EncodeRationalArray_System_Collections_Generic_IReadOnlyList_System_UInt32__System_Collections_Generic_IReadOnlyList_System_UInt32__">EncodeRationalArray(IReadOnlyList&lt;uint&gt;, IReadOnlyList&lt;uint&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeRationalArray.html#PaintDotNet_Imaging_ExifConverter_EncodeRationalArray_System_Collections_Generic_IReadOnlyList_System_UInt64__">EncodeRationalArray(IReadOnlyList&lt;ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSByte.html#PaintDotNet_Imaging_ExifConverter_EncodeSByte_System_SByte_">EncodeSByte(sbyte)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSByteArray.html#PaintDotNet_Imaging_ExifConverter_EncodeSByteArray_System_Collections_Generic_IReadOnlyList_System_SByte__">EncodeSByteArray(IReadOnlyList&lt;sbyte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSLong.html#PaintDotNet_Imaging_ExifConverter_EncodeSLong_System_Int32_">EncodeSLong(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSLongArray.html#PaintDotNet_Imaging_ExifConverter_EncodeSLongArray_System_Collections_Generic_IReadOnlyList_System_Int32__">EncodeSLongArray(IReadOnlyList&lt;int&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSRational.html#PaintDotNet_Imaging_ExifConverter_EncodeSRational_System_Int32_System_Int32_">EncodeSRational(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSRational.html#PaintDotNet_Imaging_ExifConverter_EncodeSRational_System_Int64_">EncodeSRational(long)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSRationalArray.html#PaintDotNet_Imaging_ExifConverter_EncodeSRationalArray_System_Collections_Generic_IReadOnlyList_System_Int32__System_Collections_Generic_IReadOnlyList_System_Int32__">EncodeSRationalArray(IReadOnlyList&lt;int&gt;, IReadOnlyList&lt;int&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSRationalArray.html#PaintDotNet_Imaging_ExifConverter_EncodeSRationalArray_System_Collections_Generic_IReadOnlyList_System_Int64__">EncodeSRationalArray(IReadOnlyList&lt;long&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSShort.html#PaintDotNet_Imaging_ExifConverter_EncodeSShort_System_Int16_">EncodeSShort(short)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeSShortArray.html#PaintDotNet_Imaging_ExifConverter_EncodeSShortArray_System_Collections_Generic_IReadOnlyList_System_Int16__">EncodeSShortArray(IReadOnlyList&lt;short&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeShort.html#PaintDotNet_Imaging_ExifConverter_EncodeShort_System_UInt16_">EncodeShort(ushort)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeShortArray.html#PaintDotNet_Imaging_ExifConverter_EncodeShortArray_System_Collections_Generic_IReadOnlyList_System_UInt16__">EncodeShortArray(IReadOnlyList&lt;ushort&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.TryDecodeToVariant.html#PaintDotNet_Imaging_ExifConverter_TryDecodeToVariant_PaintDotNet_Imaging_ExifValue_System_Object__">TryDecodeToVariant(ExifValue, out object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.TryEncodeVariant.html#PaintDotNet_Imaging_ExifConverter_TryEncodeVariant_System_Object_PaintDotNet_Imaging_ExifValue__">TryEncodeVariant(object, out ExifValue?)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

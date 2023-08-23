@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Property OutputPixelFormat
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Property OutputPixelFormat
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat*">
+
+
+
+
+
+<h1 id="PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat_" data-uid="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat*" class="text-break">
+  Property OutputPixelFormat
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat_" data-uid="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat*"></a>
+
+<h3 id="PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat" data-uid="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat">
+  OutputPixelFormat
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Sets the pixel format for the output buffer.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">PixelFormat OutputPixelFormat { get; set; }</code></pre>
+</div>
+
+
+
+
+
+<h4 class="section">Property Value</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+<h4 class="section" id="PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If the effect does not set this property, the output buffer will default to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.<br>
+<br>
+The effect must use the same pixel format when retrieving its output buffer with
+<a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a>.<br>
+<br>
+Setting this value does not guarantee that the effect's output will be stored in any particular pixel
+format, but it permits the effect infrastructure to know ahead-of-time the format and precision that
+is optimal for the effect.</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.UnsupportedPixelFormatException.html">UnsupportedPixelFormatException</a></dt>
+  <dd><p>The pixel format is not supported.</p>
+</dd>
+</dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum BitmapOptions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum BitmapOptions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.BitmapOptions">
+
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_BitmapOptions" data-uid="PaintDotNet.Direct2D1.BitmapOptions" class="text-break">
+    Enum BitmapOptions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specifies how a bitmap can be used.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_bitmap_options">D2D1_BITMAP_OPTIONS</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum BitmapOptions</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Direct2D1_BitmapOptions_None"><code>None = 0</code></dt>
+    <dd><p>The bitmap is created with default properties.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_BitmapOptions_Target"><code>Target = 1</code></dt>
+    <dd><p>The bitmap can be used as a device context target.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_BitmapOptions_CannotDraw"><code>CannotDraw = 2</code></dt>
+    <dd><p>The bitmap cannot be used as an input.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_BitmapOptions_CpuRead"><code>CpuRead = 4</code></dt>
+    <dd><p>The bitmap can be read from the CPU by using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.Map.html#PaintDotNet_Direct2D1_IDeviceBitmap_Map_PaintDotNet_Direct2D1_MapOptions_">Map(MapOptions)</a>.
+This flag requires <a class="xref" href="PaintDotNet.Direct2D1.BitmapOptions.html#PaintDotNet_Direct2D1_BitmapOptions_CannotDraw">CannotDraw</a> and cannot be combined with any
+other flags.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_BitmapOptions_GdiCompatible"><code>GdiCompatible = 8</code></dt>
+    <dd><p>The bitmap works with ID2D1GdiInteropRenderTarget::GetDC(). (unsupported)</p>
+</dd>
+  </dl>
+
+
+  <h2 id="PaintDotNet_Direct2D1_BitmapOptions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>BitmapOptions.None implies that none of the flags are set. This means that the bitmap can be used for drawing from,
+cannot be set as a target and cannot be read from by the CPU.<br>
+BitmapOptions.Target means that the bitmap can be specified as a target in <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_SetTarget_PaintDotNet_Direct2D1_IDeviceImage_">SetTarget(IDeviceImage?)</a>.
+If you also specify the BitmapOptions.CannotDraw flag the bitmap can be used a target but, it cannot be drawn from.
+Attempting to draw with a bitmap that has both flags set will result in the device context being put into an error
+state with D2DERR_BITMAP_CANNOT_DRAW.<br>
+BitmapOptions.CpuRead means that the bitmap can be mapped by using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.Map.html#PaintDotNet_Direct2D1_IDeviceBitmap_Map_PaintDotNet_Direct2D1_MapOptions_">Map(MapOptions)</a>. This flag
+requires BitmapOptions.CannotDraw and cannot be combined with any other flags. The bitmap must be updated with the
+CopyFromBitmap or CopyFromRenderTarget methods.<br>
+NOTE: You should only use BitmapOptions.CannotDraw when the purpose of the bitmap is to be a target only or when
+the bitmap will be mapped.<br>
+BitmapOptions.GdiCompatible means that it is possible to get a DC associated with this bitmap. This must be used in
+conjunction with BitmapOptions.Target. The DxgiFormat must be either <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html#PaintDotNet_Dxgi_DxgiFormat_B8G8R8A8_UNorm">B8G8R8A8_UNorm</a>or
+<a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html#PaintDotNet_Dxgi_DxgiFormat_B8G8R8A8_UNorm_Srgb">B8G8R8A8_UNorm_Srgb</a>.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

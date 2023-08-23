@@ -1,0 +1,712 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace PaintDotNet.Effects.Gpu
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace PaintDotNet.Effects.Gpu
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu">
+
+  <h1 id="PaintDotNet_Effects_Gpu" data-uid="PaintDotNet.Effects.Gpu" class="text-break">Namespace PaintDotNet.Effects.Gpu
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuDrawingEffect.html">GpuDrawingEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects that use drawing commands (e.g. DrawBitmap, FillRectangle).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuDrawingEffectOptions.html">GpuDrawingEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuDrawingEffectOptionsFactory.html">GpuDrawingEffectOptionsFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuDrawingEffect-1.html">GpuDrawingEffect&lt;TToken&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.html">GpuEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects. This class is for advanced scenarios.
+You should probably derive from GpuImageEffect/PropertyBasedGpuImageEffect or
+GpuDrawingEffect/PropertyBasedGpuDrawingEffect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect2.html">GpuEffect2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.html">GpuEffectColorContext</a></dt>
+      <dd><p>Secifies the color space that a <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.html">GpuEffect</a> performs its rendering in.
+Input images will be converted from their working space to this color space, and
+the output of the effect will then be converted back to the working space of the
+source image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectOptions.html">GpuEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectOptionsFactory.html">GpuEffectOptionsFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect-1.html">GpuEffect&lt;TToken&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuImageEffect.html">GpuImageEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects that are based on Direct2D's imaging/effects system.
+For effects that want to be based on drawing commands (e.g. DrawBitmap, FillRectangle),
+GpuDrawingEffect (or PropertyBasedGpuDrawingEffect) is probably the right choice instead of
+this class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuImageEffectOptions.html">GpuImageEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuImageEffectOptionsFactory.html">GpuImageEffectOptionsFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuImageEffect-1.html">GpuImageEffect&lt;TToken&gt;</a></dt>
+      <dd><p>The base class for Direct2D GPU effects. This class is for advanced scenarios.
+You should probably derive from GpuImageEffect/PropertyBasedGpuImageEffect or
+GpuDrawingEffect/PropertyBasedGpuDrawingEffect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.html">PdnAddNoiseEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's Add Noise effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.html">PdnAddNoiseEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBokehEffect.html">PdnBokehEffect</a></dt>
+      <dd><p>A Direct2D effect that implements Paint.NET's Bokeh blur.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBokehEffect.Props.html">PdnBokehEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastEffect.html">PdnBrightnessContrastEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Brightness &amp; Contrast adjustment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastEffect.Props.html">PdnBrightnessContrastEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBulgeEffect.html">PdnBulgeEffect</a></dt>
+      <dd><p>Provides Paint.NET's Bulge effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBulgeEffect.Props.html">PdnBulgeEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCloudsEffect.html">PdnCloudsEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's Clouds effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCloudsEffect.Props.html">PdnCloudsEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCrystalizeEffect.html">PdnCrystalizeEffect</a></dt>
+      <dd><p>Provides Paint.NET's Crystalize effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCrystalizeEffect.Props.html">PdnCrystalizeEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDentsEffect.html">PdnDentsEffect</a></dt>
+      <dd><p>Provides Paint.NET's Dents effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDentsEffect.Props.html">PdnDentsEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.html">PdnDistortionEffect</a></dt>
+      <dd><p>The base class for Paint.NET distortion effects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.Props.html">PdnDistortionEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.Props-1.html">PdnDistortionEffect.Props&lt;TDerived&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.html">PdnDropShadowEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Drop Shadow effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.html">PdnDropShadowEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnEmbossEffect.html">PdnEmbossEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's Emboss effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnEmbossEffect.Props.html">PdnEmbossEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnFragmentEffect.html">PdnFragmentEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Fragment effect.<br></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnFragmentEffect.Props.html">PdnFragmentEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnFrostedGlassEffect.html">PdnFrostedGlassEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnFrostedGlassEffect.Props.html">PdnFrostedGlassEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnGlowEffect.html">PdnGlowEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Glow effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnGlowEffect.Props.html">PdnGlowEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.html">PdnHueSaturationLightnessEffect</a></dt>
+      <dd><p>A Direct2D effect that adjusts hue, saturation, and lightness in the same manner as Paint.NET's built-in
+Hue &amp; Saturation adjustment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.html">PdnHueSaturationLightnessEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchEffect.html">PdnInkSketchEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchEffect.Props.html">PdnInkSketchEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnJuliaFractalEffect.html">PdnJuliaFractalEffect</a></dt>
+      <dd><p>A Direct2D effect that renders a Julia fractal.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnJuliaFractalEffect.Props.html">PdnJuliaFractalEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMandelbrotFractalEffect.html">PdnMandelbrotFractalEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMandelbrotFractalEffect.Props.html">PdnMandelbrotFractalEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEffect.html">PdnMotionBlurEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's Motion Blur effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEffect.Props.html">PdnMotionBlurEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPencilSketchEffect.html">PdnPencilSketchEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's Pencil Sketch effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPencilSketchEffect.Props.html">PdnPencilSketchEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPixelateEffect.html">PdnPixelateEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's Pixelate effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPixelateEffect.Props.html">PdnPixelateEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPolarInversionEffect.html">PdnPolarInversionEffect</a></dt>
+      <dd><p>Provides Paint.NET's Polar Inversion effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPolarInversionEffect.Props.html">PdnPolarInversionEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRadialBlurEffect.html">PdnRadialBlurEffect</a></dt>
+      <dd><p>Provides Paint.NET's Radial Blur effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRadialBlurEffect.Props.html">PdnRadialBlurEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefEffect.html">PdnReliefEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's Relief effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefEffect.Props.html">PdnReliefEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRotateZoomEffect.html">PdnRotateZoomEffect</a></dt>
+      <dd><p>Provides Paint.NET's Rotate/Zoom effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRotateZoomEffect.Props.html">PdnRotateZoomEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitEffect.html">PdnSoftenPortraitEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Soften Portrait effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitEffect.Props.html">PdnSoftenPortraitEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnTileReflectionEffect.html">PdnTileReflectionEffect</a></dt>
+      <dd><p>Provides Paint.NET's Tile Reflection effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnTileReflectionEffect.Props.html">PdnTileReflectionEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnTwistEffect.html">PdnTwistEffect</a></dt>
+      <dd><p>Provides Paint.NET's Twist effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnTwistEffect.Props.html">PdnTwistEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.html">PdnVignetteEffect</a></dt>
+      <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Vignette effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.html">PdnVignetteEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnZoomBlurEffect.html">PdnZoomBlurEffect</a></dt>
+      <dd><p>Provides Paint.NET's Zoom Blur effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that can be used
+for rendering with Direct2D.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnZoomBlurEffect.Props.html">PdnZoomBlurEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PropertyBasedGpuDrawingEffect.html">PropertyBasedGpuDrawingEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects that use drawing commands (e.g. DrawBitmap, FillRectangle)
+and that also use IndirectUI.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PropertyBasedGpuEffect.html">PropertyBasedGpuEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects that use IndirectUI. This class is for
+very advanced scenarios.
+You should probably derive from GpuImageEffect, PropertyBasedGpuImageEffect,
+GpuDrawingEffect, or PropertyBasedGpuDrawingEffect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PropertyBasedGpuImageEffect.html">PropertyBasedGpuImageEffect</a></dt>
+      <dd><p>The base class for Direct2D GPU effects that are based on Direct2D's imaging/effects system
+and that also use IndirectUI.
+For effects that want to be based on drawing commands (e.g. DrawBitmap, FillRectangle),
+GpuDrawingEffect or PropertyBasedGpuDrawingEffect is probably the right choice instead of
+this class.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRotateZoomEffect.RollPropertyAccessor.html">PdnRotateZoomEffect.RollPropertyAccessor</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuDrawingEffect.html">IGpuDrawingEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuDrawingEffectOptions.html">IGpuDrawingEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuDrawingEffectRenderInfo.html">IGpuDrawingEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffect.html">IGpuEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffect2.html">IGpuEffect2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo.html">IGpuEffectDocumentInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.html">IGpuEffectDocumentInfo2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment.html">IGpuEffectEnvironment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.html">IGpuEffectEnvironment2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectImage.html">IGpuEffectImage</a></dt>
+      <dd><p>This is the base interface for GPU images that are accessible within a GPU effect's
+<a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment.html">IGpuEffectEnvironment</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectLayerInfo.html">IGpuEffectLayerInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectLayerInfo2.html">IGpuEffectLayerInfo2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectOptions.html">IGpuEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.html">IGpuEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectSelectionInfo.html">IGpuEffectSelectionInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectSelectionInfo2.html">IGpuEffectSelectionInfo2</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuImageEffect.html">IGpuImageEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuImageEffectOptions.html">IGpuImageEffectOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuImageEffectRenderInfo.html">IGpuImageEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IReadOnlyGpuDrawingEffectRenderInfo.html">IReadOnlyGpuDrawingEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IReadOnlyGpuEffectRenderInfo.html">IReadOnlyGpuEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IReadOnlyGpuImageEffectRenderInfo.html">IReadOnlyGpuImageEffectRenderInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectAlphaMode.html">GpuEffectAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectRenderingFlags.html">GpuEffectRenderingFlags</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.InspectTokenAction.html">InspectTokenAction</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseAlphaMode.html">PdnAddNoiseAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBokehAlphaMode.html">PdnBokehAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBokehEdgeMode.html">PdnBokehEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastAlphaMode.html">PdnBrightnessContrastAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastInputGamma.html">PdnBrightnessContrastInputGamma</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCloudsAlphaMode.html">PdnCloudsAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionAlphaMode.html">PdnDistortionAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEdgeMode.html">PdnDistortionEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionSamplingMode.html">PdnDistortionSamplingMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowAlphaMode.html">PdnDropShadowAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowOptimization.html">PdnDropShadowOptimization</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnEmbossAlphaMode.html">PdnEmbossAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnFragmentAlphaMode.html">PdnFragmentAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnGlowAlphaMode.html">PdnGlowAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessAlphaMode.html">PdnHueSaturationLightnessAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchAlphaMode.html">PdnInkSketchAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnJuliaFractalAlphaMode.html">PdnJuliaFractalAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMandelbrotFractalAlphaMode.html">PdnMandelbrotFractalAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurAlphaMode.html">PdnMotionBlurAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEdgeMode.html">PdnMotionBlurEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPencilSketchAlphaMode.html">PdnPencilSketchAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPixelateAlphaMode.html">PdnPixelateAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPixelateInterpolationMode.html">PdnPixelateInterpolationMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnRadialBlurAlphaMode.html">PdnRadialBlurAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefAlphaMode.html">PdnReliefAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitAlphaMode.html">PdnSoftenPortraitAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteAlphaMode.html">PdnVignetteAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteInputGamma.html">PdnVignetteInputGamma</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnZoomBlurAlphaMode.html">PdnZoomBlurAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

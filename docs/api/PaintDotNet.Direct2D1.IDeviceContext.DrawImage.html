@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method DrawImage
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method DrawImage
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawImage*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_DrawImage_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawImage*" class="text-break">
+  Method DrawImage
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_DrawImage_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawImage*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawImage(PaintDotNet.Direct2D1.IDeviceImage,System.Nullable{PaintDotNet.Rendering.Point2Float},System.Nullable{PaintDotNet.Rendering.RectFloat}@,PaintDotNet.Direct2D1.InterpolationMode,PaintDotNet.Direct2D1.CompositeMode)">
+  DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Draws an image to the device context. The image can be any type of <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>, including an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>, or <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void DrawImage(IDeviceImage image, Point2Float? targetOffset = null, in RectFloat? imageRect = null, InterpolationMode interpolationMode = InterpolationMode.Linear, CompositeMode compositeMode = CompositeMode.SourceOver)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>image</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
+  <dd><p>The image to be drawn to the device context.</p>
+</dd>
+  <dt><code>targetOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a>?</dt>
+  <dd><p>The offset in the destination space that the image will be rendered to. The entire logical extent of the image will be rendered to the
+corresponding destination. If not specified, the destination origin will be (0, 0). The top-left corner of the image will be mapped to
+the target offset. This will not necessarily be the origin. This default value is null.</p>
+</dd>
+  <dt><code>imageRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
+  <dd><p>The corresponding rectangle in the image space will be mapped to the given origins when processing the image. This default value is null.</p>
+</dd>
+  <dt><code>interpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html">InterpolationMode</a></dt>
+  <dd><p>The interpolation mode that will be used to scale the image if necessary.</p>
+</dd>
+  <dt><code>compositeMode</code> <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html">CompositeMode</a></dt>
+  <dd><p>The composite mode that will be applied to the limits of the currently selected clip. The default value is <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html#PaintDotNet_Direct2D1_CompositeMode_SourceOver">SourceOver</a>.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If interpolationMode is <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html#PaintDotNet_Direct2D1_InterpolationMode_HighQualityCubic">HighQualityCubic</a>, different scalers will be used depending on the scale factor implied by the world transform.<br>
+Any invalid rectangles accumulated on any effect that is drawn by this call will be discarded regardless of which portion of the image rectangle is drawn.<br>
+If compositeMode is <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html#PaintDotNet_Direct2D1_CompositeMode_SourceOver">SourceOver</a>, DrawImage will use the currently selected primitive blend specified by <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PrimitiveBlend.html#PaintDotNet_Direct2D1_IDeviceContext_PrimitiveBlend">PrimitiveBlend</a>.<br>
+If compositeMode is not <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html#PaintDotNet_Direct2D1_CompositeMode_SourceOver">SourceOver</a>, the image will be extended to transparent up to the current axis-aligned clip.<br>
+If there is an image rectangle and a world transform, this is equivalent to inserting a clip effect to represent the image rectangle and a 2D affine transform to take into account the world transform.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

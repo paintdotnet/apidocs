@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct DrawingStateDescription
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct DrawingStateDescription
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.DrawingStateDescription">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_DrawingStateDescription" data-uid="PaintDotNet.Direct2D1.DrawingStateDescription" class="text-break">
+    Struct DrawingStateDescription
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Describes the drawing state of a device context.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/ns-d2d1_1-d2d1_drawing_state_description1">D2D1_DRAWING_STATE_DESCRIPTION1</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct DrawingStateDescription : IEquatable&lt;DrawingStateDescription&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.html">DrawingStateDescription</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.-ctor.html#PaintDotNet_Direct2D1_DrawingStateDescription__ctor_PaintDotNet_Direct2D1_AntialiasMode_PaintDotNet_Direct2D1_TextAntialiasMode_System_UInt64_System_UInt64_PaintDotNet_Rendering_Matrix3x2Float__PaintDotNet_Direct2D1_PrimitiveBlend_PaintDotNet_Direct2D1_UnitMode_">DrawingStateDescription(AntialiasMode, TextAntialiasMode, ulong, ulong, in Matrix3x2Float, PrimitiveBlend, UnitMode)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.AntialiasMode.html#PaintDotNet_Direct2D1_DrawingStateDescription_AntialiasMode">AntialiasMode</a></dt>
+    <dd><p>The antialiasing mode for subsequent nontext drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Default.html#PaintDotNet_Direct2D1_DrawingStateDescription_Default">Default</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.PrimitiveBlend.html#PaintDotNet_Direct2D1_DrawingStateDescription_PrimitiveBlend">PrimitiveBlend</a></dt>
+    <dd><p>The blend mode for the device context to apply to subsequent drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Tag1.html#PaintDotNet_Direct2D1_DrawingStateDescription_Tag1">Tag1</a></dt>
+    <dd><p>A label for subsequent drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Tag2.html#PaintDotNet_Direct2D1_DrawingStateDescription_Tag2">Tag2</a></dt>
+    <dd><p>A label for subsequent drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.TextAntialiasMode.html#PaintDotNet_Direct2D1_DrawingStateDescription_TextAntialiasMode">TextAntialiasMode</a></dt>
+    <dd><p>The antialiasing mode for subsequent text and glyph drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Transform.html#PaintDotNet_Direct2D1_DrawingStateDescription_Transform">Transform</a></dt>
+    <dd><p>The transformation to apply to subsequent drawing operations.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.UnitMode.html#PaintDotNet_Direct2D1_DrawingStateDescription_UnitMode">UnitMode</a></dt>
+    <dd><p>How units will be interpreted.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Equals.html#PaintDotNet_Direct2D1_DrawingStateDescription_Equals_PaintDotNet_Direct2D1_DrawingStateDescription_">Equals(DrawingStateDescription)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Equals.html#PaintDotNet_Direct2D1_DrawingStateDescription_Equals_PaintDotNet_Direct2D1_DrawingStateDescription__">Equals(in DrawingStateDescription)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.Equals.html#PaintDotNet_Direct2D1_DrawingStateDescription_Equals_System_Object_">Equals(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.GetHashCode.html#PaintDotNet_Direct2D1_DrawingStateDescription_GetHashCode">GetHashCode()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.op_Equality.html#PaintDotNet_Direct2D1_DrawingStateDescription_op_Equality_PaintDotNet_Direct2D1_DrawingStateDescription__PaintDotNet_Direct2D1_DrawingStateDescription__">operator ==(in DrawingStateDescription, in DrawingStateDescription)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DrawingStateDescription.op_Inequality.html#PaintDotNet_Direct2D1_DrawingStateDescription_op_Inequality_PaintDotNet_Direct2D1_DrawingStateDescription__PaintDotNet_Direct2D1_DrawingStateDescription__">operator !=(in DrawingStateDescription, in DrawingStateDescription)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

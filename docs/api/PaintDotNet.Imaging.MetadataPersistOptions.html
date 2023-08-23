@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum MetadataPersistOptions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum MetadataPersistOptions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Imaging.MetadataPersistOptions">
+
+
+
+
+  <h1 id="PaintDotNet_Imaging_MetadataPersistOptions" data-uid="PaintDotNet.Imaging.MetadataPersistOptions" class="text-break">
+    Enum MetadataPersistOptions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specifies options that are used when initializing a component with a stream.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicpersistoptions">WICPersistOptions</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum MetadataPersistOptions</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_Default"><code>Default = 0</code></dt>
+    <dd><p>The default persist options. The default is <a class="xref" href="PaintDotNet.Imaging.MetadataPersistOptions.html#PaintDotNet_Imaging_MetadataPersistOptions_LittleEndian">LittleEndian</a>.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_LittleEndian"><code>LittleEndian = 0</code></dt>
+    <dd><p>The data byte order is little endian.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_BigEndian"><code>BigEndian = 1</code></dt>
+    <dd><p>The data byte order is big endian.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_StrictFormat"><code>StrictFormat = 2</code></dt>
+    <dd><p>The data format must strictly conform to the specification.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_NoCacheStream"><code>NoCacheStream = 4</code></dt>
+    <dd><p>No cache for the metadata stream.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_MetadataPersistOptions_PreferUtf8"><code>PreferUtf8 = 8</code></dt>
+    <dd><p>Use UTF8 instead of the default UTF16.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

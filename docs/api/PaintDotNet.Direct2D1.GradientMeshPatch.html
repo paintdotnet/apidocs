@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct GradientMeshPatch
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct GradientMeshPatch
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.GradientMeshPatch">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_GradientMeshPatch" data-uid="PaintDotNet.Direct2D1.GradientMeshPatch" class="text-break">
+    Struct GradientMeshPatch
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a tensor patch with 16 control points, 4 corner colors, and boundary flags.
+An IGradientMesh is made up of 1 or more gradient mesh patches.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/ns-d2d1_3-d2d1_gradient_mesh_patch">D2D1_GRADIENT_MESH_PATCH</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct GradientMeshPatch : IEquatable&lt;GradientMeshPatch&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.html">GradientMeshPatch</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.-ctor.html#PaintDotNet_Direct2D1_GradientMeshPatch__ctor_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_">GradientMeshPatch(Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, ColorRgba128Float, ColorRgba128Float, ColorRgba128Float, ColorRgba128Float, PatchEdgeMode, PatchEdgeMode, PatchEdgeMode, PatchEdgeMode)</a></dt>
+    <dd><p>Creates a GradientMeshPatch structure that contains the given control points, colors, and boundary flags.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.BottomEdgeMode.html#PaintDotNet_Direct2D1_GradientMeshPatch_BottomEdgeMode">BottomEdgeMode</a></dt>
+    <dd><p>Specifies how to render the bottom edge of the mesh.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Color00.html#PaintDotNet_Direct2D1_GradientMeshPatch_Color00">Color00</a></dt>
+    <dd><p>The color associated with the control point in column 0 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Color03.html#PaintDotNet_Direct2D1_GradientMeshPatch_Color03">Color03</a></dt>
+    <dd><p>The color associated with the control point in column 0 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Color30.html#PaintDotNet_Direct2D1_GradientMeshPatch_Color30">Color30</a></dt>
+    <dd><p>The color associated with the control point in column 3 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Color33.html#PaintDotNet_Direct2D1_GradientMeshPatch_Color33">Color33</a></dt>
+    <dd><p>The color associated with the control point in column 3 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.LeftEdgeMode.html#PaintDotNet_Direct2D1_GradientMeshPatch_LeftEdgeMode">LeftEdgeMode</a></dt>
+    <dd><p>Specifies how to render the left edge of the mesh.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point00.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point00">Point00</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 0 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point01.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point01">Point01</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 0 and row 1 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point02.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point02">Point02</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 0 and row 2 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point03.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point03">Point03</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 0 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point10.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point10">Point10</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 1 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point11.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point11">Point11</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 1 and row 1 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point12.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point12">Point12</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 1 and row 2 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point13.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point13">Point13</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 1 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point20.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point20">Point20</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 2 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point21.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point21">Point21</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 2 and row 1 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point22.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point22">Point22</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 2 and row 2 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point23.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point23">Point23</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 2 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point30.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point30">Point30</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 3 and row 0 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point31.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point31">Point31</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 3 and row 1 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point32.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point32">Point32</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 3 and row 2 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Point33.html#PaintDotNet_Direct2D1_GradientMeshPatch_Point33">Point33</a></dt>
+    <dd><p>The coordinate-space location of the control point in column 3 and row 3 of the tensor grid.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.RightEdgeMode.html#PaintDotNet_Direct2D1_GradientMeshPatch_RightEdgeMode">RightEdgeMode</a></dt>
+    <dd><p>Specifies how to render the right edge of the mesh.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.TopEdgeMode.html#PaintDotNet_Direct2D1_GradientMeshPatch_TopEdgeMode">TopEdgeMode</a></dt>
+    <dd><p>Specifies how to render the top edge of the mesh.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Equals.html#PaintDotNet_Direct2D1_GradientMeshPatch_Equals_PaintDotNet_Direct2D1_GradientMeshPatch_">Equals(GradientMeshPatch)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Equals.html#PaintDotNet_Direct2D1_GradientMeshPatch_Equals_PaintDotNet_Direct2D1_GradientMeshPatch__">Equals(in GradientMeshPatch)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.Equals.html#PaintDotNet_Direct2D1_GradientMeshPatch_Equals_System_Object_">Equals(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.FromCoonsPatch.html#PaintDotNet_Direct2D1_GradientMeshPatch_FromCoonsPatch_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_PaintDotNet_Direct2D1_PatchEdgeMode_">FromCoonsPatch(Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, Point2Float, ColorRgba128Float, ColorRgba128Float, ColorRgba128Float, ColorRgba128Float, PatchEdgeMode, PatchEdgeMode, PatchEdgeMode, PatchEdgeMode)</a></dt>
+    <dd><p>Creates a GradientMeshPatch from a given Coons patch description.
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch">https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch</a></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.GetHashCode.html#PaintDotNet_Direct2D1_GradientMeshPatch_GetHashCode">GetHashCode()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.op_Equality.html#PaintDotNet_Direct2D1_GradientMeshPatch_op_Equality_PaintDotNet_Direct2D1_GradientMeshPatch__PaintDotNet_Direct2D1_GradientMeshPatch__">operator ==(in GradientMeshPatch, in GradientMeshPatch)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.GradientMeshPatch.op_Inequality.html#PaintDotNet_Direct2D1_GradientMeshPatch_op_Inequality_PaintDotNet_Direct2D1_GradientMeshPatch__PaintDotNet_Direct2D1_GradientMeshPatch__">operator !=(in GradientMeshPatch, in GradientMeshPatch)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

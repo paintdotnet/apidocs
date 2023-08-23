@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InternalPropertyBasedEffect
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InternalPropertyBasedEffect
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.InternalPropertyBasedEffect">
+
+
+
+  <h1 id="PaintDotNet_Effects_InternalPropertyBasedEffect" data-uid="PaintDotNet.Effects.InternalPropertyBasedEffect" class="text-break">
+    Class InternalPropertyBasedEffect
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class InternalPropertyBasedEffect : PropertyBasedEffect, ISerializable, IEffect&lt;PropertyBasedEffectConfigToken&gt;, IEffect, IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.html">ClassicEffectBase</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Effect.html">Effect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Effect-1.html">Effect</a>&lt;<a class="xref" href="PaintDotNet.Effects.PropertyBasedEffectConfigToken.html">PropertyBasedEffectConfigToken</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.html">PropertyBasedEffect</a></div>
+      <div><span class="xref">InternalPropertyBasedEffect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.IEffect-1.html">IEffect</a>&lt;<a class="xref" href="PaintDotNet.Effects.PropertyBasedEffectConfigToken.html">PropertyBasedEffectConfigToken</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.Effects.IEffect.html">IEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.CreatePropertyCollection.html#PaintDotNet_Effects_PropertyBasedEffect_CreatePropertyCollection">PropertyBasedEffect.CreatePropertyCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.OnCreatePropertyCollection.html#PaintDotNet_Effects_PropertyBasedEffect_OnCreatePropertyCollection">PropertyBasedEffect.OnCreatePropertyCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.CreateConfigDialog.html#PaintDotNet_Effects_PropertyBasedEffect_CreateConfigDialog">PropertyBasedEffect.CreateConfigDialog()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.CreateConfigUI.html#PaintDotNet_Effects_PropertyBasedEffect_CreateConfigUI_PaintDotNet_PropertySystem_PropertyCollection_">PropertyBasedEffect.CreateConfigUI(PropertyCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.OnCreateConfigUI.html#PaintDotNet_Effects_PropertyBasedEffect_OnCreateConfigUI_PaintDotNet_PropertySystem_PropertyCollection_">PropertyBasedEffect.OnCreateConfigUI(PropertyCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.CreateDefaultConfigUI.html#PaintDotNet_Effects_PropertyBasedEffect_CreateDefaultConfigUI_System_Collections_Generic_IEnumerable_PaintDotNet_PropertySystem_Property__">PropertyBasedEffect.CreateDefaultConfigUI(IEnumerable&lt;Property&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.OnRender.html#PaintDotNet_Effects_Effect_1_OnRender_System_Drawing_Rectangle___System_Int32_System_Int32_">Effect&lt;PropertyBasedEffectConfigToken&gt;.OnRender(Rectangle[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.Render.html#PaintDotNet_Effects_Effect_1_Render_System_Drawing_Rectangle___System_Int32_System_Int32_">Effect&lt;PropertyBasedEffectConfigToken&gt;.Render(Rectangle[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.Render.html#PaintDotNet_Effects_Effect_1_Render_PaintDotNet_Effects_EffectConfigToken_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_System_Drawing_Rectangle___System_Int32_System_Int32_">Effect&lt;PropertyBasedEffectConfigToken&gt;.Render(EffectConfigToken, RenderArgs, RenderArgs, Rectangle[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.OnSetRenderInfo.html#PaintDotNet_Effects_Effect_1_OnSetRenderInfo_PaintDotNet_Effects_EffectConfigToken_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_">Effect&lt;PropertyBasedEffectConfigToken&gt;.OnSetRenderInfo(EffectConfigToken, RenderArgs, RenderArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.OnSetRenderInfo.html#PaintDotNet_Effects_Effect_1_OnSetRenderInfo__0_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_">Effect&lt;PropertyBasedEffectConfigToken&gt;.OnSetRenderInfo(PropertyBasedEffectConfigToken, RenderArgs, RenderArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.Token.html#PaintDotNet_Effects_Effect_1_Token">Effect&lt;PropertyBasedEffectConfigToken&gt;.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.DstArgs.html#PaintDotNet_Effects_Effect_1_DstArgs">Effect&lt;PropertyBasedEffectConfigToken&gt;.DstArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect-1.SrcArgs.html#PaintDotNet_Effects_Effect_1_SrcArgs">Effect&lt;PropertyBasedEffectConfigToken&gt;.SrcArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.SignalCancelRequest.html#PaintDotNet_Effects_Effect_SignalCancelRequest">Effect.SignalCancelRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.SetRenderInfo.html#PaintDotNet_Effects_Effect_SetRenderInfo_PaintDotNet_Effects_EffectConfigToken_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_">Effect.SetRenderInfo(EffectConfigToken, RenderArgs, RenderArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.Render.html#PaintDotNet_Effects_Effect_Render_PaintDotNet_Effects_EffectConfigToken_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_System_Drawing_Rectangle___">Effect.Render(EffectConfigToken, RenderArgs, RenderArgs, Rectangle[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.Services.html#PaintDotNet_Effects_Effect_Services">Effect.Services</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.EnvironmentParameters.html#PaintDotNet_Effects_Effect_EnvironmentParameters">Effect.EnvironmentParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.Image.html#PaintDotNet_Effects_Effect_Image">Effect.Image</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.Effect.IsCancelRequested.html#PaintDotNet_Effects_Effect_IsCancelRequested">Effect.IsCancelRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.Dispose.html#PaintDotNet_Effects_ClassicEffectBase_Dispose_System_Boolean_">ClassicEffectBase.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.OnDispose.html#PaintDotNet_Effects_ClassicEffectBase_OnDispose_System_Boolean_">ClassicEffectBase.OnDispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.Category.html#PaintDotNet_Effects_ClassicEffectBase_Category">ClassicEffectBase.Category</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.Options.html#PaintDotNet_Effects_ClassicEffectBase_Options">ClassicEffectBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.SubMenuName.html#PaintDotNet_Effects_ClassicEffectBase_SubMenuName">ClassicEffectBase.SubMenuName</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.ClassicEffectBase.Name.html#PaintDotNet_Effects_ClassicEffectBase_Name">ClassicEffectBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.Dispose.html#PaintDotNet_ComponentModel_RefTrackedObject_Dispose">RefTrackedObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">RefTrackedObject.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.IsDisposed.html#PaintDotNet_ComponentModel_RefTrackedObject_IsDisposed">RefTrackedObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.InternalPropertyBasedEffect.OnCustomizeConfigUIWindowProperties.html#PaintDotNet_Effects_InternalPropertyBasedEffect_OnCustomizeConfigUIWindowProperties_PaintDotNet_PropertySystem_PropertyCollection_">OnCustomizeConfigUIWindowProperties(PropertyCollection)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

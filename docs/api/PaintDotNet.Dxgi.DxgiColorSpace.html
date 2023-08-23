@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum DxgiColorSpace
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum DxgiColorSpace
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Dxgi.DxgiColorSpace">
+
+
+
+
+  <h1 id="PaintDotNet_Dxgi_DxgiColorSpace" data-uid="PaintDotNet.Dxgi.DxgiColorSpace" class="text-break">
+    Enum DxgiColorSpace
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Dxgi.html">Dxgi</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum DxgiColorSpace</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbFullGamma22NoneP709"><code>RgbFullGamma22NoneP709 = 0</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is the standard definition for sRGB.</p>
+<p>Note that this is often implemented with a linear segment, but in that case the exponent is corrected to stay aligned with a gamma 2.2 curve.</p>
+<p>This is usually used with 8 or 10 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbFullGamma10NoneP709"><code>RgbFullGamma10NoneP709 = 1</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">1.0</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is the standard definition for scRGB, and is usually used with 16 bit integer, 16 bit floating point, or 32 bit floating point color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbStudioGamma22NoneP709"><code>RgbStudioGamma22NoneP709 = 2</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is the standard definition for ITU-R Recommendation BT.709. Note that due to the inclusion of a linear segment, the transfer curve looks similar to a pure exponential gamma of 1.9.</p>
+<p>This is usually used with 8 or 10 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbStudioGamma22NoneP2020"><code>RgbStudioGamma22NoneP2020 = 3</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_Reserved"><code>Reserved = 4</code></dt>
+    <dd><p>Reserved.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrFullGamma22NoneP709X601"><code>YCbCrFullGamma22NoneP709X601 = 5</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr><tr><td class="description">Transfer Matrix</td><td class="description">BT.601</td></tr></tbody></table>
+<p>This definition is commonly used for JPG, and is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma22LeftP601"><code>YCbCrStudioGamma22LeftP601 = 6</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.601</td></tr></tbody></table>
+<p>This definition is commonly used for MPEG2, and  is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrFullGamma22LeftP601"><code>YCbCrFullGamma22LeftP601 = 7</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.601</td></tr></tbody></table>
+<p>This is sometimes used for H.264 camera capture, and is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioG22LeftP709"><code>YCbCrStudioG22LeftP709 = 8</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This definition is commonly used for H.264 and HEVC, and is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrFullGamma22LeftP709"><code>YCbCrFullGamma22LeftP709 = 9</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is sometimes used for H.264 camera capture, and is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma22LeftP2020"><code>YCbCrStudioGamma22LeftP2020 = 10</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This definition may be used by HEVC, and is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrFullGamma22LeftP2020"><code>YCbCrFullGamma22LeftP2020 = 11</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbFullGama2084NoneP2020"><code>RgbFullGama2084NoneP2020 = 12</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2084</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma2084LeftP2020"><code>YCbCrStudioGamma2084LeftP2020 = 13</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2084</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbStudioGamma2084NoneP2020"><code>RgbStudioGamma2084NoneP2020 = 14</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2084</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma22TopLeftP2020"><code>YCbCrStudioGamma22TopLeftP2020 = 15</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma2084TopLeftP2020"><code>YCbCrStudioGamma2084TopLeftP2020 = 16</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCbCr</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2084</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbFullGamma22NoneP2020"><code>RgbFullGamma22NoneP2020 = 17</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">2.2</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGammaHlgTopLeftP2020"><code>YCbCrStudioGammaHlgTopLeftP2020 = 18</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCBCR</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">HLG</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrFullGammaHlgTopLeftP2020"><code>YCbCrFullGammaHlgTopLeftP2020 = 19</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCBCR</td></tr><tr><td class="description">Range</td><td class="description">0-255</td></tr><tr><td class="description">Gamma</td><td class="description">HLG</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbStudioGamma24NoneP709"><code>RgbStudioGamma24NoneP709 = 20</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.4</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_RgbStudioGamma24NoneP2020"><code>RgbStudioGamma24NoneP2020 = 21</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">RGB</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.4</td></tr><tr><td class="description">Siting</td><td class="description">Image</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma24LeftP709"><code>YCbCrStudioGamma24LeftP709 = 22</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCBCR</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.4</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.709</td></tr></tbody></table>
+<p>This is usually used with 8, 10, or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma24LeftP2020"><code>YCbCrStudioGamma24LeftP2020 = 23</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCBCR</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.4</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_YCbCrStudioGamma24TopLeft2020"><code>YCbCrStudioGamma24TopLeft2020 = 24</code></dt>
+    <dd><table><thead><tr><th class="description">
+      <b>Property</b>
+    </th><th class="description">
+      <b>Value</b>
+    </th></tr></thead><tbody><tr><td class="description">Colorspace</td><td class="description">YCBCR</td></tr><tr><td class="description">Range</td><td class="description">16-235</td></tr><tr><td class="description">Gamma</td><td class="description">2.4</td></tr><tr><td class="description">Siting</td><td class="description">Video</td></tr><tr><td class="description">Primaries</td><td class="description">BT.2020</td></tr></tbody></table>
+<p>This is usually used with 10 or 12 bit color channels.</p>
+</dd>
+    <dt id="PaintDotNet_Dxgi_DxgiColorSpace_Custom"><code>Custom = -1</code></dt>
+    <dd><p>A custom color definition is used.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

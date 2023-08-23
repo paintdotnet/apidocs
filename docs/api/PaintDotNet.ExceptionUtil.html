@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExceptionUtil
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExceptionUtil
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.ExceptionUtil">
+
+
+
+  <h1 id="PaintDotNet_ExceptionUtil" data-uid="PaintDotNet.ExceptionUtil" class="text-break">
+    Class ExceptionUtil
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The purposes of these methods is based on the fact that any method
+that throws an exception is not a candidate for inlining. Instead,
+you can call a method in this class which may then allow the calling
+method to be inlined.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ExceptionUtil</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExceptionUtil</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.InvalidEnumArgumentException.html#PaintDotNet_ExceptionUtil_InvalidEnumArgumentException__1___0_System_String_">InvalidEnumArgumentException&lt;T&gt;(T, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.SetLocalizedMessage.html#PaintDotNet_ExceptionUtil_SetLocalizedMessage_System_Exception_System_String_">SetLocalizedMessage(Exception, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.Throw.html#PaintDotNet_ExceptionUtil_Throw_System_Exception_">Throw(Exception)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentException.html#PaintDotNet_ExceptionUtil_ThrowArgumentException">ThrowArgumentException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentException.html#PaintDotNet_ExceptionUtil_ThrowArgumentException_System_String_">ThrowArgumentException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentException.html#PaintDotNet_ExceptionUtil_ThrowArgumentException_System_String_System_String_">ThrowArgumentException(string, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentNullException.html#PaintDotNet_ExceptionUtil_ThrowArgumentNullException">ThrowArgumentNullException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentNullException.html#PaintDotNet_ExceptionUtil_ThrowArgumentNullException_System_String_">ThrowArgumentNullException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentNullException.html#PaintDotNet_ExceptionUtil_ThrowArgumentNullException_System_String_System_String_">ThrowArgumentNullException(string, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowArgumentOutOfRangeException">ThrowArgumentOutOfRangeException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowArgumentOutOfRangeException_System_String_">ThrowArgumentOutOfRangeException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowArgumentOutOfRangeException_System_String_System_Object_System_String_">ThrowArgumentOutOfRangeException(string, object, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowArgumentOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowArgumentOutOfRangeException_System_String_System_String_">ThrowArgumentOutOfRangeException(string, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowIndexOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowIndexOutOfRangeException">ThrowIndexOutOfRangeException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowIndexOutOfRangeException.html#PaintDotNet_ExceptionUtil_ThrowIndexOutOfRangeException__1">ThrowIndexOutOfRangeException&lt;T&gt;()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInterfaceNotSupportedException.html#PaintDotNet_ExceptionUtil_ThrowInterfaceNotSupportedException_System_Type_">ThrowInterfaceNotSupportedException(Type)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInternalErrorException.html#PaintDotNet_ExceptionUtil_ThrowInternalErrorException">ThrowInternalErrorException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInternalErrorException.html#PaintDotNet_ExceptionUtil_ThrowInternalErrorException_System_Exception_">ThrowInternalErrorException(Exception)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInternalErrorException.html#PaintDotNet_ExceptionUtil_ThrowInternalErrorException_System_String_">ThrowInternalErrorException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInternalErrorException.html#PaintDotNet_ExceptionUtil_ThrowInternalErrorException_System_String_System_Exception_">ThrowInternalErrorException(string, Exception)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidCastException.html#PaintDotNet_ExceptionUtil_ThrowInvalidCastException">ThrowInvalidCastException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidCastException.html#PaintDotNet_ExceptionUtil_ThrowInvalidCastException_System_String_">ThrowInvalidCastException(string?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidEnumArgumentException.html#PaintDotNet_ExceptionUtil_ThrowInvalidEnumArgumentException_System_String_System_Int32_System_Type_">ThrowInvalidEnumArgumentException(string, int, Type)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidEnumArgumentException.html#PaintDotNet_ExceptionUtil_ThrowInvalidEnumArgumentException__1___0_System_String_">ThrowInvalidEnumArgumentException&lt;T&gt;(T, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidOperationException.html#PaintDotNet_ExceptionUtil_ThrowInvalidOperationException">ThrowInvalidOperationException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidOperationException.html#PaintDotNet_ExceptionUtil_ThrowInvalidOperationException_System_String_">ThrowInvalidOperationException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowInvalidOperationException.html#PaintDotNet_ExceptionUtil_ThrowInvalidOperationException_System_String_System_Exception_">ThrowInvalidOperationException(string, Exception)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowKeyNotFoundException.html#PaintDotNet_ExceptionUtil_ThrowKeyNotFoundException">ThrowKeyNotFoundException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowKeyNotFoundException.html#PaintDotNet_ExceptionUtil_ThrowKeyNotFoundException_System_String_">ThrowKeyNotFoundException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowLockRecursionException.html#PaintDotNet_ExceptionUtil_ThrowLockRecursionException">ThrowLockRecursionException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowLockRecursionException.html#PaintDotNet_ExceptionUtil_ThrowLockRecursionException_System_String_">ThrowLockRecursionException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowLockRecursionException.html#PaintDotNet_ExceptionUtil_ThrowLockRecursionException_System_String_System_Exception_">ThrowLockRecursionException(string, Exception)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowNotSupportedException.html#PaintDotNet_ExceptionUtil_ThrowNotSupportedException">ThrowNotSupportedException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowNotSupportedException.html#PaintDotNet_ExceptionUtil_ThrowNotSupportedException_System_String_">ThrowNotSupportedException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowObjectDisposedException.html#PaintDotNet_ExceptionUtil_ThrowObjectDisposedException_System_String_">ThrowObjectDisposedException(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowObjectDisposedException.html#PaintDotNet_ExceptionUtil_ThrowObjectDisposedException__1">ThrowObjectDisposedException&lt;T&gt;()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowOperationCanceledException.html#PaintDotNet_ExceptionUtil_ThrowOperationCanceledException">ThrowOperationCanceledException()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.ExceptionUtil.ThrowReadOnlyException.html#PaintDotNet_ExceptionUtil_ThrowReadOnlyException">ThrowReadOnlyException()</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

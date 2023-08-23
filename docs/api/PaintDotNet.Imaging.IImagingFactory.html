@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IImagingFactory
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IImagingFactory
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Imaging.IImagingFactory">
+
+
+
+  <h1 id="PaintDotNet_Imaging_IImagingFactory" data-uid="PaintDotNet.Imaging.IImagingFactory" class="text-break">
+    Interface IImagingFactory
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IImagingFactory : IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.ClonePalette.html#PaintDotNet_Imaging_IImagingFactory_ClonePalette_PaintDotNet_Imaging_IPalette_">ClonePalette(IPalette)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmap_System_Int32_System_Int32_PaintDotNet_Imaging_PixelFormat__">CreateBitmap(int, int, in PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmap_System_Int32_System_Int32_PaintDotNet_Imaging_PixelFormat__System_Void__System_Int32_System_UInt32_">CreateBitmap(int, int, in PixelFormat, void*, int, uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmapClipper.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmapClipper_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Rendering_RectInt32_">CreateBitmapClipper(IBitmapSource, RectInt32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmapFlipRotator.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmapFlipRotator_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapTransformOptions_">CreateBitmapFlipRotator(IBitmapSource, BitmapTransformOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmapFromHBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmapFromHBitmap_System_IntPtr_System_IntPtr_PaintDotNet_Imaging_BitmapAlphaChannelOption_">CreateBitmapFromHBitmap(nint, nint, BitmapAlphaChannelOption)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmapFromHIcon.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmapFromHIcon_System_IntPtr_">CreateBitmapFromHIcon(nint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateBitmapScaler.html#PaintDotNet_Imaging_IImagingFactory_CreateBitmapScaler_PaintDotNet_Imaging_IBitmapSource_System_Int32_System_Int32_PaintDotNet_Imaging_BitmapInterpolationMode_">CreateBitmapScaler(IBitmapSource, int, int, BitmapInterpolationMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateColorContext.html#PaintDotNet_Imaging_IImagingFactory_CreateColorContext_PaintDotNet_Imaging_ExifColorSpace_">CreateColorContext(ExifColorSpace)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateColorContext.html#PaintDotNet_Imaging_IImagingFactory_CreateColorContext_System_ReadOnlySpan_System_Byte__">CreateColorContext(ReadOnlySpan&lt;byte&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateColorTransformedBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreateColorTransformedBitmap_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformedBitmap(IBitmapSource, IColorContext, IColorContext, in PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateComponentEnumerator.html#PaintDotNet_Imaging_IImagingFactory_CreateComponentEnumerator_PaintDotNet_Imaging_ImagingComponentType_PaintDotNet_Imaging_ImagingComponentEnumerateOptions_">CreateComponentEnumerator(ImagingComponentType, ImagingComponentEnumerateOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateComponentInfo.html#PaintDotNet_Imaging_IImagingFactory_CreateComponentInfo_PaintDotNet_Imaging_ImagingComponentID__">CreateComponentInfo(in ImagingComponentID)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateCustomPalette.html#PaintDotNet_Imaging_IImagingFactory_CreateCustomPalette_System_ReadOnlySpan_PaintDotNet_Imaging_ColorBgra32__">CreateCustomPalette(ReadOnlySpan&lt;ColorBgra32&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateDecoderFromStream.html#PaintDotNet_Imaging_IImagingFactory_CreateDecoderFromStream_System_IO_Stream_PaintDotNet_Imaging_BitmapDecodeOptions_System_Nullable_PaintDotNet_Imaging_ContainerFormat___System_Nullable_PaintDotNet_Imaging_VendorID___">CreateDecoderFromStream(Stream, BitmapDecodeOptions, in ContainerFormat?, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateDecoderInfo.html#PaintDotNet_Imaging_IImagingFactory_CreateDecoderInfo_PaintDotNet_Imaging_ContainerFormat__System_Nullable_PaintDotNet_Imaging_VendorID___">CreateDecoderInfo(in ContainerFormat, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateEncoder.html#PaintDotNet_Imaging_IImagingFactory_CreateEncoder_System_IO_Stream_PaintDotNet_Imaging_ContainerFormat__System_Nullable_PaintDotNet_Imaging_VendorID___">CreateEncoder(Stream, in ContainerFormat, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateEncoderInfo.html#PaintDotNet_Imaging_IImagingFactory_CreateEncoderInfo_PaintDotNet_Imaging_ContainerFormat__System_Nullable_PaintDotNet_Imaging_VendorID___">CreateEncoderInfo(in ContainerFormat, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateFastMetadataEncoderFromDecoder.html#PaintDotNet_Imaging_IImagingFactory_CreateFastMetadataEncoderFromDecoder_PaintDotNet_Imaging_IBitmapDecoder_">CreateFastMetadataEncoderFromDecoder(IBitmapDecoder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateFastMetadataEncoderFromFrameDecode.html#PaintDotNet_Imaging_IImagingFactory_CreateFastMetadataEncoderFromFrameDecode_PaintDotNet_Imaging_IBitmapFrameDecode_">CreateFastMetadataEncoderFromFrameDecode(IBitmapFrameDecode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateFormatConvertedBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreateFormatConvertedBitmap_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConvertedBitmap(IBitmapSource, in PixelFormat, BitmapDitherType, IPalette?, double, BitmapPaletteType)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreatePaletteFromBitmap.html#PaintDotNet_Imaging_IImagingFactory_CreatePaletteFromBitmap_PaintDotNet_Imaging_IBitmapSource_System_Int32_System_Boolean_">CreatePaletteFromBitmap(IBitmapSource, int, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreatePredefinedPalette.html#PaintDotNet_Imaging_IImagingFactory_CreatePredefinedPalette_PaintDotNet_Imaging_BitmapPaletteType_System_Boolean_">CreatePredefinedPalette(BitmapPaletteType, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateQueryWriter.html#PaintDotNet_Imaging_IImagingFactory_CreateQueryWriter_PaintDotNet_Imaging_MetadataFormat__System_Nullable_PaintDotNet_Imaging_VendorID___">CreateQueryWriter(in MetadataFormat, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.CreateQueryWriterFromReader.html#PaintDotNet_Imaging_IImagingFactory_CreateQueryWriterFromReader_PaintDotNet_Imaging_IMetadataQueryReader_System_Nullable_PaintDotNet_Imaging_VendorID___">CreateQueryWriterFromReader(IMetadataQueryReader, in VendorID?)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

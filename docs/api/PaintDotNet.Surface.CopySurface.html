@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CopySurface
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CopySurface
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Surface.CopySurface*">
+
+
+
+
+
+<h1 id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*" class="text-break">
+  Method CopySurface
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface)">
+  CopySurface(Surface)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left corner of this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra})">
+  CopySurface(ISurface&lt;ColorBgra&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_Point2Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.Rendering.Point2Int32)">
+  CopySurface(Surface, Point2Int32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Point2Int32 dstOffset)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Int32.html">Point2Int32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_Point2Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.Rendering.Point2Int32)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Point2Int32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Point2Int32 dstOffset)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Int32.html">Point2Int32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,System.Drawing.Point)">
+  CopySurface(Surface, Point)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to a location within this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Point dstOffset)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+  <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+  <dd><p>The offset within this surface to start copying pixels to. This will map to (0,0) in the source.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Point_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},System.Drawing.Point)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Point)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Point dstOffset)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,System.Drawing.Rectangle)">
+  CopySurface(Surface, Rectangle)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Rectangle sourceRoi)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+  <dt><code>sourceRoi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+  <dd><p>The region of the source to copy from. The upper left of this rectangle
+will be mapped to (0,0) on this surface.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},System.Drawing.Rectangle)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Rectangle sourceRoi)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd><param name="source">The surface to copy pixels from.
+</dd>
+  <dt><code>sourceRoi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+  <dd><param name="sourceRoi">
+            The region of the source to copy from. The upper left of this rectangle
+            will be mapped to (0,0) on this surface.
+            The source surface does not need to have the same dimensions as this surface. Clipping
+            will be handled automatically. No resizing will be done.
+            
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.Rendering.RectInt32)">
+  CopySurface(Surface, RectInt32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, RectInt32 sourceRoi)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>sourceRoi</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.Rendering.RectInt32)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, RectInt32 sourceRoi)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>sourceRoi</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Rectangle_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,System.Drawing.Point,System.Drawing.Rectangle)">
+  CopySurface(Surface, Point, Rectangle)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies a rectangular region of the given surface to a specific location on this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Point dstOffset, Rectangle srcRect)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+  <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+  <dd><p>The location on this surface to start copying pixels to.</p>
+</dd>
+  <dt><code>srcRect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+  <dd><p>The region of the source surface to copy pixels from.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Rectangle__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>sourceRoi.Location will be mapped to dstOffset.Location.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Point_System_Drawing_Rectangle_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},System.Drawing.Point,System.Drawing.Rectangle)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Point, Rectangle)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Point dstOffset, Rectangle srcRect)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+  <dd></dd>
+  <dt><code>srcRect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_Point2Int32_PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.Rendering.Point2Int32,PaintDotNet.Rendering.RectInt32)">
+  CopySurface(Surface, Point2Int32, RectInt32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Point2Int32 dstOffset, RectInt32 srcRect)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Int32.html">Point2Int32</a></dt>
+  <dd></dd>
+  <dt><code>srcRect</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_Point2Int32_PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.Rendering.Point2Int32,PaintDotNet.Rendering.RectInt32)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Point2Int32, RectInt32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Point2Int32 dstOffset, RectInt32 srcRect)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>dstOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Int32.html">Point2Int32</a></dt>
+  <dd></dd>
+  <dt><code>srcRect</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_PdnRegion_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.PdnRegion)">
+  CopySurface(Surface, PdnRegion)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies a region of the given surface to this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, PdnRegion region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.PdnRegion.html">PdnRegion</a></dt>
+  <dd><p>The region to clip copying to.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_PdnRegion__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The upper left corner of the source surface will be mapped to the upper left of this
+surface, and only those pixels that are defined by the region will be copied.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_PdnRegion_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.PdnRegion)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, PdnRegion)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, PdnRegion region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.PdnRegion.html">PdnRegion</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,System.Drawing.Rectangle[])">
+  CopySurface(Surface, Rectangle[])
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Rectangle[] region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a>[]</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle___" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},System.Drawing.Rectangle[])">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle[])
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Rectangle[] region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a>[]</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___System_Int32_System_Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,System.Drawing.Rectangle[],System.Int32,System.Int32)">
+  CopySurface(Surface, Rectangle[], int, int)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Copies a region of the given surface to this surface.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, Rectangle[] region, int startIndex, int length)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
+  <dt><code>region</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a>[]</dt>
+  <dd><p>The region to clip copying to.</p>
+</dd>
+  <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>The starting index within <code class="paramref">region</code>.</p>
+</dd>
+  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>The number of elements to use from <code class="paramref">region</code>.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___System_Int32_System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The upper left corner of the source surface will be mapped to the upper left of this
+surface, and only those pixels that are defined by the region will be copied.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__System_Drawing_Rectangle___System_Int32_System_Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},System.Drawing.Rectangle[],System.Int32,System.Int32)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, Rectangle[], int, int)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, Rectangle[] region, int startIndex, int length)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a>[]</dt>
+  <dd></dd>
+  <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32___" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.Rendering.RectInt32[])">
+  CopySurface(Surface, RectInt32[])
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, RectInt32[] region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>[]</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32___" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.Rendering.RectInt32[])">
+  CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32[])
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, RectInt32[] region)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>[]</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_Rendering_RectInt32___System_Int32_System_Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Surface,PaintDotNet.Rendering.RectInt32[],System.Int32,System.Int32)">
+  CopySurface(Surface, RectInt32[], int, int)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(Surface source, RectInt32[] region, int startIndex, int length)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>[]</dt>
+  <dd></dd>
+  <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Surface_CopySurface_" data-uid="PaintDotNet.Surface.CopySurface*"></a>
+
+<h3 id="PaintDotNet_Surface_CopySurface_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__PaintDotNet_Rendering_RectInt32___System_Int32_System_Int32_" data-uid="PaintDotNet.Surface.CopySurface(PaintDotNet.Rendering.ISurface{PaintDotNet.ColorBgra},PaintDotNet.Rendering.RectInt32[],System.Int32,System.Int32)">
+  CopySurface(ISurface&lt;ColorBgra&gt;, RectInt32[], int, int)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopySurface(ISurface&lt;ColorBgra&gt; source, RectInt32[] region, int startIndex, int length)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>region</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>[]</dt>
+  <dd></dd>
+  <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

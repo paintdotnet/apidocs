@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method GetSvgGlyphImage
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method GetSvgGlyphImage
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage*" class="text-break">
+  Method GetSvgGlyphImage
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_IFontFace_System_Single_System_UInt16_System_Boolean_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Rendering_Matrix3x2Float__" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage(PaintDotNet.Rendering.Point2Float,PaintDotNet.DirectWrite.IFontFace,System.Single,System.UInt16,System.Boolean,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.ISvgGlyphStyle,System.Int32,PaintDotNet.Rendering.Matrix3x2Float@)">
+  GetSvgGlyphImage(Point2Float, IFontFace, float, ushort, bool, in Matrix3x2Float?, IDeviceBrush?, ISvgGlyphStyle?, int, out Matrix3x2Float)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Retrieves an image of the SVG glyph from the color glyph cache. If the cache does not already contain the requested
+resource, it will be created. This method may be used to extend the lifetime of a glyph image even after it is
+evicted from the color glyph cache.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">ICommandList GetSvgGlyphImage(Point2Float glyphOrigin, IFontFace fontFace, float fontEmSize, ushort glyphIndex, bool isSideways, in Matrix3x2Float? worldTransform, IDeviceBrush? defaultFillBrush, ISvgGlyphStyle? svgGlyphStyle, int colorPaletteIndex, out Matrix3x2Float glyphTransform)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>glyphOrigin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
+  <dd><p>Origin of the glyph.</p>
+</dd>
+  <dt><code>fontFace</code> <a class="xref" href="PaintDotNet.DirectWrite.IFontFace.html">IFontFace</a></dt>
+  <dd><p>Reference to a font face which contains font face type, appropriate file references, face identification data and
+various font data such as metrics, names and glyph outlines.</p>
+</dd>
+  <dt><code>fontEmSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>The specified font size affects the output glyphTransform, causing it to properly scale the glyph.</p>
+</dd>
+  <dt><code>glyphIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+  <dd><p>Index of the glyph to retrieve.</p>
+</dd>
+  <dt><code>isSideways</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><p>If true, specifies that glyphs are rotated 90 degrees to the left and vertical metrics are used. Vertical writing is
+achieved by specifying isSideways as true and rotating the entire run 90 degrees to the right via a rotate transform.</p>
+</dd>
+  <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
+  <dd><p>The transform to apply to the image. If null, the identity matrix will be used.</p>
+</dd>
+  <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd><p>Describes how the area is painted.</p>
+</dd>
+  <dt><code>svgGlyphStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgGlyphStyle.html">ISvgGlyphStyle</a></dt>
+  <dd><p>The values for context-fill, context-stroke, and context-value that are used when rendering SVG glyphs.</p>
+</dd>
+  <dt><code>colorPaletteIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>The index used to select a color palette within a color font. Note that this is not the same as the paletteIndex in
+the ColorGlyphRun struct, which is not relevant for SVG glyphs.</p>
+</dd>
+  <dt><code>glyphTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a></dt>
+  <dd><p>Output transform, which transforms from the glyph's space to the same output space as the worldTransform. This includes
+the input glyphOrigin, the glyph's offset from the glyphOrigin, and any other required transformations.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a></dt>
+  <dd><p>The retrieved glyph image.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.PooledEventArgs`8">
+
+
+
+  <h1 id="PaintDotNet_PooledEventArgs_8" data-uid="PaintDotNet.PooledEventArgs`8" class="text-break">
+    Class PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt; : PooledEventArgs&lt;TDerivedArgs&gt;, ICloneable, IDisposable where TDerivedArgs : PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt;, new()</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDerivedArgs</code></dt>
+    <dd></dd>
+    <dt><code>TValue1</code></dt>
+    <dd></dd>
+    <dt><code>TValue2</code></dt>
+    <dd></dd>
+    <dt><code>TValue3</code></dt>
+    <dd></dd>
+    <dt><code>TValue4</code></dt>
+    <dd></dd>
+    <dt><code>TValue5</code></dt>
+    <dd></dd>
+    <dt><code>TValue6</code></dt>
+    <dd></dd>
+    <dt><code>TValue7</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></div>
+      <div><a class="xref" href="PaintDotNet.PooledEventArgs-1.html">PooledEventArgs</a>&lt;TDerivedArgs&gt;</div>
+      <div><span class="xref">PooledEventArgs&lt;TDerivedArgs, TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.PooledEventArgs-1.VerifyIsValid.html#PaintDotNet_PooledEventArgs_1_VerifyIsValid">PooledEventArgs&lt;TDerivedArgs&gt;.VerifyIsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.PooledEventArgs-1.VerifyIsNotValid.html#PaintDotNet_PooledEventArgs_1_VerifyIsNotValid">PooledEventArgs&lt;TDerivedArgs&gt;.VerifyIsNotValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.PooledEventArgs-1.Validate.html#PaintDotNet_PooledEventArgs_1_Validate">PooledEventArgs&lt;TDerivedArgs&gt;.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.PooledEventArgs-1.Dispose.html#PaintDotNet_PooledEventArgs_1_Dispose">PooledEventArgs&lt;TDerivedArgs&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.PooledEventArgs-1.IsValid.html#PaintDotNet_PooledEventArgs_1_IsValid">PooledEventArgs&lt;TDerivedArgs&gt;.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs.empty">EventArgs.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.CloneableExtensions.CloneT.html#PaintDotNet_CloneableExtensions_CloneT__1___0_">CloneableExtensions.CloneT&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.-ctor.html#PaintDotNet_PooledEventArgs_8__ctor">PooledEventArgs()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value1.html#PaintDotNet_PooledEventArgs_8_Value1">Value1</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value1ByRef.html#PaintDotNet_PooledEventArgs_8_Value1ByRef">Value1ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value2.html#PaintDotNet_PooledEventArgs_8_Value2">Value2</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value2ByRef.html#PaintDotNet_PooledEventArgs_8_Value2ByRef">Value2ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value3.html#PaintDotNet_PooledEventArgs_8_Value3">Value3</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value3ByRef.html#PaintDotNet_PooledEventArgs_8_Value3ByRef">Value3ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value4.html#PaintDotNet_PooledEventArgs_8_Value4">Value4</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value4ByRef.html#PaintDotNet_PooledEventArgs_8_Value4ByRef">Value4ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value5.html#PaintDotNet_PooledEventArgs_8_Value5">Value5</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value5ByRef.html#PaintDotNet_PooledEventArgs_8_Value5ByRef">Value5ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value6.html#PaintDotNet_PooledEventArgs_8_Value6">Value6</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value6ByRef.html#PaintDotNet_PooledEventArgs_8_Value6ByRef">Value6ByRef</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value7.html#PaintDotNet_PooledEventArgs_8_Value7">Value7</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Value7ByRef.html#PaintDotNet_PooledEventArgs_8_Value7ByRef">Value7ByRef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.ClearValues.html#PaintDotNet_PooledEventArgs_8_ClearValues">ClearValues()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Clone.html#PaintDotNet_PooledEventArgs_8_Clone">Clone()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.PooledEventArgs-8.Get.html#PaintDotNet_PooledEventArgs_8_Get__1__2__3__4__5__6__7_">Get(TValue1, TValue2, TValue3, TValue4, TValue5, TValue6, TValue7)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

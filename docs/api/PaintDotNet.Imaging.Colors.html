@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Colors
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Colors
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Imaging.Colors">
+
+
+
+  <h1 id="PaintDotNet_Imaging_Colors" data-uid="PaintDotNet.Imaging.Colors" class="text-break">
+    Class Colors
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Primitives.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the SrgbColors class instead if you are rendering in sRGB (2.2) gamma space, or LinearColors if you are rendering in linear (1.0) gamma space. Most UI will use sRGB, as will most classic Effects (if you&#39;re using PaintDotNet.ColorBgra, that&#39;s sRGB). Newer effect plugins running on the GPU should prefer using colors from the LinearColors class unless they have specified non-linear rendering (e.g. sRGB) with a GpuEffectColorContext. Use the SrgbColor, SrgbColorA, LinearColor, and LinearColorA structs to cast to and from Color struct types, and for conversion between sRGB and linear gamma.&quot;, true)]
+public static class Colors</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Colors</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.AliceBlue.html#PaintDotNet_Imaging_Colors_AliceBlue">AliceBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.AntiqueWhite.html#PaintDotNet_Imaging_Colors_AntiqueWhite">AntiqueWhite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Aqua.html#PaintDotNet_Imaging_Colors_Aqua">Aqua</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Aquamarine.html#PaintDotNet_Imaging_Colors_Aquamarine">Aquamarine</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Azure.html#PaintDotNet_Imaging_Colors_Azure">Azure</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Beige.html#PaintDotNet_Imaging_Colors_Beige">Beige</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Bisque.html#PaintDotNet_Imaging_Colors_Bisque">Bisque</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Black.html#PaintDotNet_Imaging_Colors_Black">Black</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.BlanchedAlmond.html#PaintDotNet_Imaging_Colors_BlanchedAlmond">BlanchedAlmond</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Blue.html#PaintDotNet_Imaging_Colors_Blue">Blue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.BlueViolet.html#PaintDotNet_Imaging_Colors_BlueViolet">BlueViolet</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Brown.html#PaintDotNet_Imaging_Colors_Brown">Brown</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.BurlyWood.html#PaintDotNet_Imaging_Colors_BurlyWood">BurlyWood</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.CadetBlue.html#PaintDotNet_Imaging_Colors_CadetBlue">CadetBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Chartreuse.html#PaintDotNet_Imaging_Colors_Chartreuse">Chartreuse</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Chocolate.html#PaintDotNet_Imaging_Colors_Chocolate">Chocolate</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Coral.html#PaintDotNet_Imaging_Colors_Coral">Coral</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.CornflowerBlue.html#PaintDotNet_Imaging_Colors_CornflowerBlue">CornflowerBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Cornsilk.html#PaintDotNet_Imaging_Colors_Cornsilk">Cornsilk</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Crimson.html#PaintDotNet_Imaging_Colors_Crimson">Crimson</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Cyan.html#PaintDotNet_Imaging_Colors_Cyan">Cyan</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkBlue.html#PaintDotNet_Imaging_Colors_DarkBlue">DarkBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkCyan.html#PaintDotNet_Imaging_Colors_DarkCyan">DarkCyan</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkGoldenrod.html#PaintDotNet_Imaging_Colors_DarkGoldenrod">DarkGoldenrod</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkGray.html#PaintDotNet_Imaging_Colors_DarkGray">DarkGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkGreen.html#PaintDotNet_Imaging_Colors_DarkGreen">DarkGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkKhaki.html#PaintDotNet_Imaging_Colors_DarkKhaki">DarkKhaki</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkMagenta.html#PaintDotNet_Imaging_Colors_DarkMagenta">DarkMagenta</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkOliveGreen.html#PaintDotNet_Imaging_Colors_DarkOliveGreen">DarkOliveGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkOrange.html#PaintDotNet_Imaging_Colors_DarkOrange">DarkOrange</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkOrchid.html#PaintDotNet_Imaging_Colors_DarkOrchid">DarkOrchid</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkRed.html#PaintDotNet_Imaging_Colors_DarkRed">DarkRed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkSalmon.html#PaintDotNet_Imaging_Colors_DarkSalmon">DarkSalmon</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkSeaGreen.html#PaintDotNet_Imaging_Colors_DarkSeaGreen">DarkSeaGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkSlateBlue.html#PaintDotNet_Imaging_Colors_DarkSlateBlue">DarkSlateBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkSlateGray.html#PaintDotNet_Imaging_Colors_DarkSlateGray">DarkSlateGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkTurquoise.html#PaintDotNet_Imaging_Colors_DarkTurquoise">DarkTurquoise</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DarkViolet.html#PaintDotNet_Imaging_Colors_DarkViolet">DarkViolet</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DeepPink.html#PaintDotNet_Imaging_Colors_DeepPink">DeepPink</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DeepSkyBlue.html#PaintDotNet_Imaging_Colors_DeepSkyBlue">DeepSkyBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DimGray.html#PaintDotNet_Imaging_Colors_DimGray">DimGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.DodgerBlue.html#PaintDotNet_Imaging_Colors_DodgerBlue">DodgerBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Firebrick.html#PaintDotNet_Imaging_Colors_Firebrick">Firebrick</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.FloralWhite.html#PaintDotNet_Imaging_Colors_FloralWhite">FloralWhite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.ForestGreen.html#PaintDotNet_Imaging_Colors_ForestGreen">ForestGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Fuchsia.html#PaintDotNet_Imaging_Colors_Fuchsia">Fuchsia</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Gainsboro.html#PaintDotNet_Imaging_Colors_Gainsboro">Gainsboro</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.GhostWhite.html#PaintDotNet_Imaging_Colors_GhostWhite">GhostWhite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Gold.html#PaintDotNet_Imaging_Colors_Gold">Gold</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Goldenrod.html#PaintDotNet_Imaging_Colors_Goldenrod">Goldenrod</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Gray.html#PaintDotNet_Imaging_Colors_Gray">Gray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Green.html#PaintDotNet_Imaging_Colors_Green">Green</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.GreenYellow.html#PaintDotNet_Imaging_Colors_GreenYellow">GreenYellow</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Honeydew.html#PaintDotNet_Imaging_Colors_Honeydew">Honeydew</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.HotPink.html#PaintDotNet_Imaging_Colors_HotPink">HotPink</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.IndianRed.html#PaintDotNet_Imaging_Colors_IndianRed">IndianRed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Indigo.html#PaintDotNet_Imaging_Colors_Indigo">Indigo</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Ivory.html#PaintDotNet_Imaging_Colors_Ivory">Ivory</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Khaki.html#PaintDotNet_Imaging_Colors_Khaki">Khaki</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Lavender.html#PaintDotNet_Imaging_Colors_Lavender">Lavender</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LavenderBlush.html#PaintDotNet_Imaging_Colors_LavenderBlush">LavenderBlush</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LawnGreen.html#PaintDotNet_Imaging_Colors_LawnGreen">LawnGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LemonChiffon.html#PaintDotNet_Imaging_Colors_LemonChiffon">LemonChiffon</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightBlue.html#PaintDotNet_Imaging_Colors_LightBlue">LightBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightCoral.html#PaintDotNet_Imaging_Colors_LightCoral">LightCoral</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightCyan.html#PaintDotNet_Imaging_Colors_LightCyan">LightCyan</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightGoldenrodYellow.html#PaintDotNet_Imaging_Colors_LightGoldenrodYellow">LightGoldenrodYellow</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightGray.html#PaintDotNet_Imaging_Colors_LightGray">LightGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightGreen.html#PaintDotNet_Imaging_Colors_LightGreen">LightGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightPink.html#PaintDotNet_Imaging_Colors_LightPink">LightPink</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightSalmon.html#PaintDotNet_Imaging_Colors_LightSalmon">LightSalmon</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightSeaGreen.html#PaintDotNet_Imaging_Colors_LightSeaGreen">LightSeaGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightSkyBlue.html#PaintDotNet_Imaging_Colors_LightSkyBlue">LightSkyBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightSlateGray.html#PaintDotNet_Imaging_Colors_LightSlateGray">LightSlateGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightSteelBlue.html#PaintDotNet_Imaging_Colors_LightSteelBlue">LightSteelBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LightYellow.html#PaintDotNet_Imaging_Colors_LightYellow">LightYellow</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Lime.html#PaintDotNet_Imaging_Colors_Lime">Lime</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.LimeGreen.html#PaintDotNet_Imaging_Colors_LimeGreen">LimeGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Linen.html#PaintDotNet_Imaging_Colors_Linen">Linen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Magenta.html#PaintDotNet_Imaging_Colors_Magenta">Magenta</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Maroon.html#PaintDotNet_Imaging_Colors_Maroon">Maroon</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumAquamarine.html#PaintDotNet_Imaging_Colors_MediumAquamarine">MediumAquamarine</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumBlue.html#PaintDotNet_Imaging_Colors_MediumBlue">MediumBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumOrchid.html#PaintDotNet_Imaging_Colors_MediumOrchid">MediumOrchid</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumPurple.html#PaintDotNet_Imaging_Colors_MediumPurple">MediumPurple</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumSeaGreen.html#PaintDotNet_Imaging_Colors_MediumSeaGreen">MediumSeaGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumSlateBlue.html#PaintDotNet_Imaging_Colors_MediumSlateBlue">MediumSlateBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumSpringGreen.html#PaintDotNet_Imaging_Colors_MediumSpringGreen">MediumSpringGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumTurquoise.html#PaintDotNet_Imaging_Colors_MediumTurquoise">MediumTurquoise</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MediumVioletRed.html#PaintDotNet_Imaging_Colors_MediumVioletRed">MediumVioletRed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MidnightBlue.html#PaintDotNet_Imaging_Colors_MidnightBlue">MidnightBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MintCream.html#PaintDotNet_Imaging_Colors_MintCream">MintCream</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.MistyRose.html#PaintDotNet_Imaging_Colors_MistyRose">MistyRose</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Moccasin.html#PaintDotNet_Imaging_Colors_Moccasin">Moccasin</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.NavajoWhite.html#PaintDotNet_Imaging_Colors_NavajoWhite">NavajoWhite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Navy.html#PaintDotNet_Imaging_Colors_Navy">Navy</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.OldLace.html#PaintDotNet_Imaging_Colors_OldLace">OldLace</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Olive.html#PaintDotNet_Imaging_Colors_Olive">Olive</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.OliveDrab.html#PaintDotNet_Imaging_Colors_OliveDrab">OliveDrab</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Orange.html#PaintDotNet_Imaging_Colors_Orange">Orange</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.OrangeRed.html#PaintDotNet_Imaging_Colors_OrangeRed">OrangeRed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Orchid.html#PaintDotNet_Imaging_Colors_Orchid">Orchid</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PaleGoldenrod.html#PaintDotNet_Imaging_Colors_PaleGoldenrod">PaleGoldenrod</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PaleGreen.html#PaintDotNet_Imaging_Colors_PaleGreen">PaleGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PaleTurquoise.html#PaintDotNet_Imaging_Colors_PaleTurquoise">PaleTurquoise</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PaleVioletRed.html#PaintDotNet_Imaging_Colors_PaleVioletRed">PaleVioletRed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PapayaWhip.html#PaintDotNet_Imaging_Colors_PapayaWhip">PapayaWhip</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PeachPuff.html#PaintDotNet_Imaging_Colors_PeachPuff">PeachPuff</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Peru.html#PaintDotNet_Imaging_Colors_Peru">Peru</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Pink.html#PaintDotNet_Imaging_Colors_Pink">Pink</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Plum.html#PaintDotNet_Imaging_Colors_Plum">Plum</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.PowderBlue.html#PaintDotNet_Imaging_Colors_PowderBlue">PowderBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Purple.html#PaintDotNet_Imaging_Colors_Purple">Purple</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Red.html#PaintDotNet_Imaging_Colors_Red">Red</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.RosyBrown.html#PaintDotNet_Imaging_Colors_RosyBrown">RosyBrown</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.RoyalBlue.html#PaintDotNet_Imaging_Colors_RoyalBlue">RoyalBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SaddleBrown.html#PaintDotNet_Imaging_Colors_SaddleBrown">SaddleBrown</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Salmon.html#PaintDotNet_Imaging_Colors_Salmon">Salmon</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SandyBrown.html#PaintDotNet_Imaging_Colors_SandyBrown">SandyBrown</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SeaGreen.html#PaintDotNet_Imaging_Colors_SeaGreen">SeaGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SeaShell.html#PaintDotNet_Imaging_Colors_SeaShell">SeaShell</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Sienna.html#PaintDotNet_Imaging_Colors_Sienna">Sienna</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Silver.html#PaintDotNet_Imaging_Colors_Silver">Silver</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SkyBlue.html#PaintDotNet_Imaging_Colors_SkyBlue">SkyBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SlateBlue.html#PaintDotNet_Imaging_Colors_SlateBlue">SlateBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SlateGray.html#PaintDotNet_Imaging_Colors_SlateGray">SlateGray</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Snow.html#PaintDotNet_Imaging_Colors_Snow">Snow</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SpringGreen.html#PaintDotNet_Imaging_Colors_SpringGreen">SpringGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.SteelBlue.html#PaintDotNet_Imaging_Colors_SteelBlue">SteelBlue</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Tan.html#PaintDotNet_Imaging_Colors_Tan">Tan</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Teal.html#PaintDotNet_Imaging_Colors_Teal">Teal</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Thistle.html#PaintDotNet_Imaging_Colors_Thistle">Thistle</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Tomato.html#PaintDotNet_Imaging_Colors_Tomato">Tomato</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Transparent.html#PaintDotNet_Imaging_Colors_Transparent">Transparent</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.TransparentBlack.html#PaintDotNet_Imaging_Colors_TransparentBlack">TransparentBlack</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Turquoise.html#PaintDotNet_Imaging_Colors_Turquoise">Turquoise</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Violet.html#PaintDotNet_Imaging_Colors_Violet">Violet</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Wheat.html#PaintDotNet_Imaging_Colors_Wheat">Wheat</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.White.html#PaintDotNet_Imaging_Colors_White">White</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.WhiteSmoke.html#PaintDotNet_Imaging_Colors_WhiteSmoke">WhiteSmoke</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Yellow.html#PaintDotNet_Imaging_Colors_Yellow">Yellow</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.YellowGreen.html#PaintDotNet_Imaging_Colors_YellowGreen">YellowGreen</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.Colors.Zero.html#PaintDotNet_Imaging_Colors_Zero">Zero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

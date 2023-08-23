@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IDirect2DFactory
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IDirect2DFactory
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.IDirect2DFactory">
+
+
+
+  <h1 id="PaintDotNet_Direct2D1_IDirect2DFactory" data-uid="PaintDotNet.Direct2D1.IDirect2DFactory" class="text-break">
+    Interface IDirect2DFactory
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Creates Direct2D resources.<br>
+This interface corresponds to the following Direct2D interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1factory">ID2D1Factory</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1factory1">ID2D1Factory1</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1factory2">ID2D1Factory2</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory3">ID2D1Factory3</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory4">ID2D1Factory4</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory5">ID2D1Factory5</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory6">ID2D1Factory6</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory7">ID2D1Factory7</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDirect2DFactory : IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBitmapDeviceContext(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Imaging.IBitmap).html">Direct2DFactoryExtensions.CreateBitmapDeviceContext(IDirect2DFactory, IBitmap)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateGeometryGroup(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Direct2D1.FillMode,System.Collections.Generic.IReadOnlyList{PaintDotNet.Direct2D1.IGeometry}).html">Direct2DFactoryExtensions.CreateGeometryGroup(IDirect2DFactory, FillMode, IReadOnlyList&lt;IGeometry&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateGeometryGroup(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Direct2D1.FillMode,System.Collections.Generic.IReadOnlyList{PaintDotNet.Direct2D1.IGeometry},System.Int32,System.Int32).html">Direct2DFactoryExtensions.CreateGeometryGroup(IDirect2DFactory, FillMode, IReadOnlyList&lt;IGeometry&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateStrokeStyle(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.LineJoin,System.Single,PaintDotNet.Direct2D1.DashStyle,System.Single,PaintDotNet.Direct2D1.StrokeTransformType).html">Direct2DFactoryExtensions.CreateStrokeStyle(IDirect2DFactory, CapStyle, CapStyle, CapStyle, LineJoin, float, DashStyle, float, StrokeTransformType)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateStrokeStyle(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.CapStyle,PaintDotNet.Direct2D1.LineJoin,System.Single,PaintDotNet.Direct2D1.DashStyle,System.Single,System.ReadOnlySpan{System.Single},PaintDotNet.Direct2D1.StrokeTransformType).html">Direct2DFactoryExtensions.CreateStrokeStyle(IDirect2DFactory, CapStyle, CapStyle, CapStyle, LineJoin, float, DashStyle, float, ReadOnlySpan&lt;float&gt;, StrokeTransformType)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateStrokeStyle(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Direct2D1.StrokeStyleProperties@).html">Direct2DFactoryExtensions.CreateStrokeStyle(IDirect2DFactory, in StrokeStyleProperties)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a></dt>
+    <dd><p>Creates a device context that renders to a <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateDCDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateDCDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateDCDeviceContext(in DeviceContextProperties)</a></dt>
+    <dd><p>Creates a render target that draws to a Windows Graphics Device Interface (GDI) device context.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateDrawingStateBlock.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateDrawingStateBlock_System_Nullable_PaintDotNet_Direct2D1_DrawingStateDescription___PaintDotNet_DirectWrite_ITextRenderingParameters_">CreateDrawingStateBlock(in DrawingStateDescription?, ITextRenderingParameters?)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IDrawingStateBlock.html">IDrawingStateBlock</a> that can be used with the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SaveDrawingState.html#PaintDotNet_Direct2D1_IDeviceContext_SaveDrawingState_PaintDotNet_Direct2D1_IDrawingStateBlock_">SaveDrawingState(IDrawingStateBlock)</a>
+and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.RestoreDrawingState.html#PaintDotNet_Direct2D1_IDeviceContext_RestoreDrawingState_PaintDotNet_Direct2D1_IDrawingStateBlock_">RestoreDrawingState(IDrawingStateBlock)</a> methods.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateEllipseGeometry.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateEllipseGeometry_PaintDotNet_Direct2D1_Ellipse_">CreateEllipseGeometry(Ellipse)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IEllipseGeometry.html">IEllipseGeometry</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateGdiMetafile.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateGdiMetafile_System_IO_Stream_">CreateGdiMetafile(Stream)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.IGdiMetafile.html">IGdiMetafile</a> object that you can use to replay metafile content.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateGeometryGroup.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateGeometryGroup_PaintDotNet_Direct2D1_FillMode_System_ReadOnlySpan_PaintDotNet_Direct2D1_IGeometry__">CreateGeometryGroup(FillMode, ReadOnlySpan&lt;IGeometry&gt;)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IGeometryGroup.html">IGeometryGroup</a>, which is an object that holds other geometries.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateHwndDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateHwndDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__PaintDotNet_Direct2D1_HwndDeviceContextProperties__">CreateHwndDeviceContext(in DeviceContextProperties, in HwndDeviceContextProperties)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.html">IHwndDeviceContext</a>, a device context that renders to a window.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreatePathGeometry.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreatePathGeometry">CreatePathGeometry()</a></dt>
+    <dd><p>Creates an empty <a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.html">IPathGeometry</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateRectangleGeometry.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateRectangleGeometry_PaintDotNet_Rendering_RectFloat_">CreateRectangleGeometry(RectFloat)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IRectangleGeometry.html">IRectangleGeometry</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateRoundedRectangleGeometry.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateRoundedRectangleGeometry_PaintDotNet_Direct2D1_RoundedRect__">CreateRoundedRectangleGeometry(in RoundedRect)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IRoundedRectangleGeometry.html">IRoundedRectangleGeometry</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateStrokeStyle.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateStrokeStyle_PaintDotNet_Direct2D1_StrokeStyleProperties__System_ReadOnlySpan_System_Single__">CreateStrokeStyle(in StrokeStyleProperties, ReadOnlySpan&lt;float&gt;)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a> that describes start cap, dash pattern, and other features of a stroke.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateTransformedGeometry.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateTransformedGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Rendering_Matrix3x2Float__">CreateTransformedGeometry(IGeometry, in Matrix3x2Float)</a></dt>
+    <dd><p>Transforms the specified geometry and stores the result as an <a class="xref" href="PaintDotNet.Direct2D1.ITransformedGeometry.html">ITransformedGeometry</a> object.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.GetEffectProperties.html#PaintDotNet_Direct2D1_IDirect2DFactory_GetEffectProperties_PaintDotNet_Direct2D1_DeviceEffectID__">GetEffectProperties(in DeviceEffectID)</a></dt>
+    <dd><p>Retrieves the properties of an effect.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.GetRegisteredEffects.html#PaintDotNet_Direct2D1_IDirect2DFactory_GetRegisteredEffects">GetRegisteredEffects()</a></dt>
+    <dd><p>Returns the IDs of the currently registered effects and global effects on this factory.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

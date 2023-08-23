@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FileType&lt;TToken, TWidget&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FileType&lt;TToken, TWidget&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.FileType`2">
+
+
+
+  <h1 id="PaintDotNet_FileType_2" data-uid="PaintDotNet.FileType`2" class="text-break">
+    Class FileType&lt;TToken, TWidget&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A strongly typed version of FileType.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class FileType&lt;TToken, TWidget&gt; : FileType, IEquatable&lt;FileType&gt; where TToken : SaveConfigToken where TWidget : SaveConfigWidget</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+    <dt><code>TWidget</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.FileType.html">FileType</a></div>
+      <div><span class="xref">FileType&lt;TToken, TWidget&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.FileType.html">FileType</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="PaintDotNet.PropertyBasedFileType.html">PropertyBasedFileType</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Equals.html#PaintDotNet_FileType_Equals_System_Object_">FileType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Equals.html#PaintDotNet_FileType_Equals_PaintDotNet_FileType_">FileType.Equals(FileType)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.GetHashCode.html#PaintDotNet_FileType_GetHashCode">FileType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Quantize.html#PaintDotNet_FileType_Quantize_PaintDotNet_Surface_System_Int32_System_Int32_System_Boolean_PaintDotNet_ProgressEventHandler_">FileType.Quantize(Surface, int, int, bool, ProgressEventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Save.html#PaintDotNet_FileType_Save_PaintDotNet_Document_System_IO_Stream_PaintDotNet_SaveConfigToken_PaintDotNet_Surface_PaintDotNet_ProgressEventHandler_System_Boolean_">FileType.Save(Document, Stream, SaveConfigToken, Surface, ProgressEventHandler, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.GetLastSaveConfigToken.html#PaintDotNet_FileType_GetLastSaveConfigToken">FileType.GetLastSaveConfigToken()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Load.html#PaintDotNet_FileType_Load_System_IO_Stream_">FileType.Load(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.OnLoad.html#PaintDotNet_FileType_OnLoad_System_IO_Stream_">FileType.OnLoad(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.GetOpenDialogFilterText.html#PaintDotNet_FileType_GetOpenDialogFilterText">FileType.GetOpenDialogFilterText()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.GetSaveDialogFilterText.html#PaintDotNet_FileType_GetSaveDialogFilterText">FileType.GetSaveDialogFilterText()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Options.html#PaintDotNet_FileType_Options">FileType.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.Name.html#PaintDotNet_FileType_Name">FileType.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileType.SupportsConfiguration.html#PaintDotNet_FileType_SupportsConfiguration">FileType.SupportsConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypeExtensions.LoadAsBitmapBgra32.html#PaintDotNet_FileTypeExtensions_LoadAsBitmapBgra32_PaintDotNet_FileType_System_IO_Stream_">FileTypeExtensions.LoadAsBitmapBgra32(FileType, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypeExtensions.LoadAsSurface.html#PaintDotNet_FileTypeExtensions_LoadAsSurface_PaintDotNet_FileType_System_IO_Stream_">FileTypeExtensions.LoadAsSurface(FileType, Stream)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.-ctor.html#PaintDotNet_FileType_2__ctor_System_String_PaintDotNet_FileTypeOptions_">FileType(string, FileTypeOptions)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.CreateDefaultSaveConfigToken.html#PaintDotNet_FileType_2_CreateDefaultSaveConfigToken">CreateDefaultSaveConfigToken()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.CreateSaveConfigWidget.html#PaintDotNet_FileType_2_CreateSaveConfigWidget">CreateSaveConfigWidget()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.GetSaveConfigTokenFromSerializablePortion.html#PaintDotNet_FileType_2_GetSaveConfigTokenFromSerializablePortion_System_Object_">GetSaveConfigTokenFromSerializablePortion(object)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.GetSaveConfigTokenFromSerializablePortionT.html#PaintDotNet_FileType_2_GetSaveConfigTokenFromSerializablePortionT_System_Object_">GetSaveConfigTokenFromSerializablePortionT(object)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.GetSerializablePortionOfSaveConfigToken.html#PaintDotNet_FileType_2_GetSerializablePortionOfSaveConfigToken_PaintDotNet_SaveConfigToken_">GetSerializablePortionOfSaveConfigToken(SaveConfigToken)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.GetSerializablePortionOfSaveConfigToken.html#PaintDotNet_FileType_2_GetSerializablePortionOfSaveConfigToken__0_">GetSerializablePortionOfSaveConfigToken(TToken)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.OnCreateDefaultSaveConfigToken.html#PaintDotNet_FileType_2_OnCreateDefaultSaveConfigToken">OnCreateDefaultSaveConfigToken()</a></dt>
+    <dd><p>Creates a SaveConfigToken for this FileType with the default values.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.OnCreateDefaultSaveConfigTokenT.html#PaintDotNet_FileType_2_OnCreateDefaultSaveConfigTokenT">OnCreateDefaultSaveConfigTokenT()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.OnCreateSaveConfigWidgetT.html#PaintDotNet_FileType_2_OnCreateSaveConfigWidgetT">OnCreateSaveConfigWidgetT()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.OnSave.html#PaintDotNet_FileType_2_OnSave_PaintDotNet_Document_System_IO_Stream_PaintDotNet_SaveConfigToken_PaintDotNet_Surface_PaintDotNet_ProgressEventHandler_">OnSave(Document, Stream, SaveConfigToken, Surface, ProgressEventHandler)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.OnSaveT.html#PaintDotNet_FileType_2_OnSaveT_PaintDotNet_Document_System_IO_Stream__0_PaintDotNet_Surface_PaintDotNet_ProgressEventHandler_">OnSaveT(Document, Stream, TToken, Surface, ProgressEventHandler)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileType-2.Save.html#PaintDotNet_FileType_2_Save_PaintDotNet_Document_System_IO_Stream__0_PaintDotNet_Surface_PaintDotNet_ProgressEventHandler_System_Boolean_">Save(Document, Stream, TToken, Surface, ProgressEventHandler, bool)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
