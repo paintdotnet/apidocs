@@ -1,0 +1,7 @@
+apiRules:
+- exclude:
+    uidRegex: (.*)\.[^.]+ObjectRefExtensions
+    type: Class
+- exclude:
+    hasAttribute:
+      uid: System.ObsoleteAttribute

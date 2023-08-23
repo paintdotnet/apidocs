@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Remove="_site\**" />
+    <EmbeddedResource Remove="_site\**" />
+    <None Remove="api\*.yml" />
+    <None Remove="_site\**" />
+    <None Remove="api\.manifest" />
+  </ItemGroup>
+</Project>
