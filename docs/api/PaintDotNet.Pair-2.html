@@ -87,7 +87,8 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.PropertySystem.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A struct containing two elements.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -133,6 +134,13 @@
 
 
 
+  <h2 id="PaintDotNet_Pair_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>It is recommended that you use the family of .NET's built-in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple">ValueTuple</a> structs,
+along with C#'s tuple syntax, e.g. <code>(Name1 value1, Name2 value2)</code> instead of this struct.<br>
+<br>
+This struct is only used by the PropertySystem's <a class="xref" href="PaintDotNet.PropertySystem.DoubleVectorProperty.html">DoubleVectorProperty</a>, and even
+that is no longer necessary since it can now work directly with <a class="xref" href="PaintDotNet.Rendering.Vector2Double.html">Vector2Double</a>.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -186,11 +194,19 @@
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Pair-2.op_Implicit.html#PaintDotNet_Pair_2_op_Implicit_PaintDotNet_Pair__0__1___System_ValueTuple__0__1_">implicit operator (T1, T2)(Pair&lt;T1, T2&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Pair-2.op_Implicit.html#PaintDotNet_Pair_2_op_Implicit_PaintDotNet_TupleStruct__0__1___PaintDotNet_Pair__0__1_">implicit operator Pair&lt;T1, T2&gt;(TupleStruct&lt;T1, T2&gt;)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Pair-2.op_Implicit.html#PaintDotNet_Pair_2_op_Implicit_System_Tuple__0__1___PaintDotNet_Pair__0__1_">implicit operator Pair&lt;T1, T2&gt;(Tuple&lt;T1, T2&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Pair-2.op_Implicit.html#PaintDotNet_Pair_2_op_Implicit_System_ValueTuple__0__1___PaintDotNet_Pair__0__1_">implicit operator Pair&lt;T1, T2&gt;((T1, T2))</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

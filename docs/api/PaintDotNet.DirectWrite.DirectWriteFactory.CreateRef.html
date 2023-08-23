@@ -114,7 +114,8 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a reference to the global <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.html">IDirectWriteFactory</a> instance.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -134,6 +135,11 @@
 
 
 
+<h4 class="section" id="PaintDotNet_DirectWrite_DirectWriteFactory_CreateRef_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>You usually won't need to use this method. Instead, in your plugin, retrieve it as a service with
+<code>this.Services.GetService&lt;IDirectWriteFactory&gt;()</code>.<br>
+For effect plugins it is also available through <code>this.Environment.DirectWriteFactory</code>.</p>
+</div>
 
 
 

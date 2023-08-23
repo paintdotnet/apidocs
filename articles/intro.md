@@ -1,6 +1,6 @@
 No articles yet, but here are some useful links to start:
 - PdnV5SampleEffects
-  - This will show you the right way to set up a Visual Studio project (look at the .csproj!), and how to write either a `BitmapEffect` or a `GpuEffect`.
+  - This will show you the right way to set up a Visual Studio project (look at the .csproj!), and how to write either a [`BitmapEffect`](xref:PaintDotNet.Effects.BitmapEffect) or a [`GpuEffect`](xref:PaintDotNet.Effects.Gpu.GpuEffect).
   - GitHub source code: https://github.com/paintdotnet/PdnV5EffectSamples
 - CodeLab, by BoltBait
   - This is a good and (very!) popular way to write a classic/legacy effect that runs on the CPU and has a standard UI.
