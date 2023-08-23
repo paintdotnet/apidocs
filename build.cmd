@@ -1,4 +1,7 @@
-@rem NOTE: Updating this batch file will NOT affect how the ApiDocs are built by MakePackages!
-@rem       See ./MakePackage/ApiDocs/ApiDocsPackageBuilder.cs
+@echo off
+
+echo Deleting old files ...
 rmdir /s /q docs
+
+echo Building new files ...
 docfx docfx.json --disableGitFeatures %*
