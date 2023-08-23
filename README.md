@@ -15,3 +15,5 @@ You can edit Markdown files (*.md) in Visual Studio Code, which has live preview
 2. File -> Open Folder, point it to the ApiDocs folder
 3. Open up a .md file (like README.md or index.md or whatever) by double-clicking on it
 4. To open the preview tab, press Ctrl+Shift+V (or right click on the tab and then on Open Preview)
+
+Test edit
