@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RectangleGeometry
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RectangleGeometry
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.UI.Media.RectangleGeometry">
+
+
+
+  <h1 id="PaintDotNet_UI_Media_RectangleGeometry" data-uid="PaintDotNet.UI.Media.RectangleGeometry" class="text-break">
+    Class RectangleGeometry
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.UI.html">UI</a>.<a class="xref" href="PaintDotNet.UI.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class RectangleGeometry : Geometry, IParsable&lt;Geometry&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject">DispatcherObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable">Freezable</a></div>
+      <div><span class="xref">DependencyResource</span></div>
+      <div><a class="xref" href="PaintDotNet.UI.Media.Geometry.html">Geometry</a></div>
+      <div><span class="xref">RectangleGeometry</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.UI.Media.Geometry.html">Geometry</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.TransformProperty.html">Geometry.TransformProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Clone.html#PaintDotNet_UI_Media_Geometry_Clone">Geometry.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.CloneCurrentValue.html#PaintDotNet_UI_Media_Geometry_CloneCurrentValue">Geometry.CloneCurrentValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetTransformedGeometry.html#PaintDotNet_UI_Media_Geometry_GetTransformedGeometry_PaintDotNet_Rendering_Matrix3x2Double__">Geometry.GetTransformedGeometry(in Matrix3x2Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Combine.html#PaintDotNet_UI_Media_Geometry_Combine_PaintDotNet_UI_Media_Geometry_PaintDotNet_UI_Media_Geometry_PaintDotNet_Rendering_GeometryCombineMode_">Geometry.Combine(Geometry, Geometry, GeometryCombineMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Combine.html#PaintDotNet_UI_Media_Geometry_Combine_PaintDotNet_UI_Media_Geometry_PaintDotNet_UI_Media_Geometry_PaintDotNet_Rendering_GeometryCombineMode_System_Double_">Geometry.Combine(Geometry, Geometry, GeometryCombineMode, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContains.html#PaintDotNet_UI_Media_Geometry_FillContains_PaintDotNet_UI_Media_Geometry_">Geometry.FillContains(Geometry)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContains.html#PaintDotNet_UI_Media_Geometry_FillContains_PaintDotNet_UI_Media_Geometry_System_Double_">Geometry.FillContains(Geometry, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContains.html#PaintDotNet_UI_Media_Geometry_FillContains_PaintDotNet_Rendering_Point2Double_">Geometry.FillContains(Point2Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContains.html#PaintDotNet_UI_Media_Geometry_FillContains_PaintDotNet_Rendering_Point2Double_System_Double_">Geometry.FillContains(Point2Double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContainsWithDetail.html#PaintDotNet_UI_Media_Geometry_FillContainsWithDetail_PaintDotNet_UI_Media_Geometry_">Geometry.FillContainsWithDetail(Geometry)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.FillContainsWithDetail.html#PaintDotNet_UI_Media_Geometry_FillContainsWithDetail_PaintDotNet_UI_Media_Geometry_System_Double_">Geometry.FillContainsWithDetail(Geometry, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetArea.html#PaintDotNet_UI_Media_Geometry_GetArea">Geometry.GetArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetArea.html#PaintDotNet_UI_Media_Geometry_GetArea_System_Double_">Geometry.GetArea(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetFlattenedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetFlattenedPathGeometry">Geometry.GetFlattenedPathGeometry()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetFlattenedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetFlattenedPathGeometry_System_Double_">Geometry.GetFlattenedPathGeometry(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetLength.html#PaintDotNet_UI_Media_Geometry_GetLength">Geometry.GetLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetLength.html#PaintDotNet_UI_Media_Geometry_GetLength_System_Double_">Geometry.GetLength(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetOutlinedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetOutlinedPathGeometry">Geometry.GetOutlinedPathGeometry()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetOutlinedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetOutlinedPathGeometry_System_Double_">Geometry.GetOutlinedPathGeometry(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetPointAtLength.html#PaintDotNet_UI_Media_Geometry_GetPointAtLength_System_Double_">Geometry.GetPointAtLength(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetPointAtLength.html#PaintDotNet_UI_Media_Geometry_GetPointAtLength_System_Double_PaintDotNet_Rendering_Vector2Double__">Geometry.GetPointAtLength(double, out Vector2Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetPointAtLength.html#PaintDotNet_UI_Media_Geometry_GetPointAtLength_System_Double_System_Double_">Geometry.GetPointAtLength(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetPointAtLength.html#PaintDotNet_UI_Media_Geometry_GetPointAtLength_System_Double_System_Double_PaintDotNet_Rendering_Vector2Double__">Geometry.GetPointAtLength(double, double, out Vector2Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetRawBounds.html#PaintDotNet_UI_Media_Geometry_GetRawBounds">Geometry.GetRawBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetWidenedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetWidenedPathGeometry_System_Double_">Geometry.GetWidenedPathGeometry(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetWidenedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetWidenedPathGeometry_System_Double_PaintDotNet_UI_Media_StrokeStyle_">Geometry.GetWidenedPathGeometry(double, StrokeStyle)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.GetWidenedPathGeometry.html#PaintDotNet_UI_Media_Geometry_GetWidenedPathGeometry_System_Double_PaintDotNet_UI_Media_StrokeStyle_System_Double_">Geometry.GetWidenedPathGeometry(double, StrokeStyle, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Parse.html#PaintDotNet_UI_Media_Geometry_Parse_System_String_">Geometry.Parse(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.TryParse.html#PaintDotNet_UI_Media_Geometry_TryParse_System_String_PaintDotNet_UI_Media_Geometry__">Geometry.TryParse(string, out Geometry)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.StandardFlatteningTolerance.html#PaintDotNet_UI_Media_Geometry_StandardFlatteningTolerance">Geometry.StandardFlatteningTolerance</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Empty.html#PaintDotNet_UI_Media_Geometry_Empty">Geometry.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Infinite.html#PaintDotNet_UI_Media_Geometry_Infinite">Geometry.Infinite</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.UI.Media.Geometry.Transform.html#PaintDotNet_UI_Media_Geometry_Transform">Geometry.Transform</a>
+    </div>
+    <div>
+      <span class="xref">DependencyResource.NameProperty</span>
+    </div>
+    <div>
+      <span class="xref">DependencyResource.Name</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getasfrozen">Freezable.GetAsFrozen()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getcurrentvalueasfrozen">Freezable.GetCurrentValueAsFrozen()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.freeze#system-windows-freezable-freeze">Freezable.Freeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.canfreeze">Freezable.CanFreeze</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.isfrozen">Freezable.IsFrozen</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.changed">Freezable.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.equals">DependencyObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.gethashcode">DependencyObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.getvalue">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setvalue#system-windows-dependencyobject-setvalue(system-windows-dependencyproperty-system-object)">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setcurrentvalue">DependencyObject.SetCurrentValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setvalue#system-windows-dependencyobject-setvalue(system-windows-dependencypropertykey-system-object)">DependencyObject.SetValue(DependencyPropertyKey, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.clearvalue#system-windows-dependencyobject-clearvalue(system-windows-dependencyproperty)">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.clearvalue#system-windows-dependencyobject-clearvalue(system-windows-dependencypropertykey)">DependencyObject.ClearValue(DependencyPropertyKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.coercevalue">DependencyObject.CoerceValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.invalidateproperty">DependencyObject.InvalidateProperty(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.readlocalvalue">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.getlocalvalueenumerator">DependencyObject.GetLocalValueEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.dependencyobjecttype">DependencyObject.DependencyObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.issealed">DependencyObject.IsSealed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject.dispatcher">DispatcherObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.-ctor.html#PaintDotNet_UI_Media_RectangleGeometry__ctor">RectangleGeometry()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.-ctor.html#PaintDotNet_UI_Media_RectangleGeometry__ctor_PaintDotNet_Rendering_RectDouble_">RectangleGeometry(RectDouble)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.-ctor.html#PaintDotNet_UI_Media_RectangleGeometry__ctor_PaintDotNet_Rendering_RectDouble_System_Double_System_Double_">RectangleGeometry(RectDouble, double, double)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.-ctor.html#PaintDotNet_UI_Media_RectangleGeometry__ctor_PaintDotNet_Rendering_RectDouble_System_Double_System_Double_PaintDotNet_UI_Media_Transform_">RectangleGeometry(RectDouble, double, double, Transform)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.RadiusXProperty.html">RadiusXProperty</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.RadiusYProperty.html">RadiusYProperty</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.RectProperty.html">RectProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.Bounds.html#PaintDotNet_UI_Media_RectangleGeometry_Bounds">Bounds</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.IsEmpty.html#PaintDotNet_UI_Media_RectangleGeometry_IsEmpty">IsEmpty</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.IsInfinite.html#PaintDotNet_UI_Media_RectangleGeometry_IsInfinite">IsInfinite</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.RadiusX.html#PaintDotNet_UI_Media_RectangleGeometry_RadiusX">RadiusX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.RadiusY.html#PaintDotNet_UI_Media_RectangleGeometry_RadiusY">RadiusY</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.Rect.html#PaintDotNet_UI_Media_RectangleGeometry_Rect">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.CreateInstanceCore.html#PaintDotNet_UI_Media_RectangleGeometry_CreateInstanceCore">CreateInstanceCore()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.CreateUntransformedDirect2DGeometry.html#PaintDotNet_UI_Media_RectangleGeometry_CreateUntransformedDirect2DGeometry_System_IServiceProvider_">CreateUntransformedDirect2DGeometry(IServiceProvider)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.FillContains.html#PaintDotNet_UI_Media_RectangleGeometry_FillContains_PaintDotNet_Rendering_Point2Double_System_Nullable_System_Double__">FillContains(Point2Double, double?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.GetArea.html#PaintDotNet_UI_Media_RectangleGeometry_GetArea_System_Nullable_System_Double__">GetArea(double?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.IsRounded.html#PaintDotNet_UI_Media_RectangleGeometry_IsRounded">IsRounded()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.MayHaveCurves.html#PaintDotNet_UI_Media_RectangleGeometry_MayHaveCurves">MayHaveCurves()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.UI.Media.RectangleGeometry.MayHaveHollowSegments.html#PaintDotNet_UI_Media_RectangleGeometry_MayHaveHollowSegments">MayHaveHollowSegments()</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
