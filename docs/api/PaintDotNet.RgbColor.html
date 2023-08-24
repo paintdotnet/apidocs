@@ -87,16 +87,12 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Adapted from:
-&quot;A Primer on Building a Color Picker User Control with GDI+ in Visual Basic .NET or C#&quot;
-<a href="http://www.msdnaa.net/Resources/display.aspx?ResID=2460">http://www.msdnaa.net/Resources/display.aspx?ResID=2460</a></p>
-<p>This class is only used by the ColorsForm and ColorWheel. Nothing else in this program
-should be using it!</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct RgbColor</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use PaintDotNet.Imaging.ColorBgr24 instead&quot;, true)]
+public struct RgbColor</code></pre>
   </div>
 
 
@@ -125,22 +121,6 @@ should be using it!</p>
     </div>
   </dd></dl>
 
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="PaintDotNet.ComparerExtensions.IsGreaterThanOrEqualTo.html#PaintDotNet_ComparerExtensions_IsGreaterThanOrEqualTo__2___1___0___0_">ComparerExtensions.IsGreaterThanOrEqualTo&lt;T, TComparer&gt;(TComparer, T, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComparerExtensions.IsGreaterThan.html#PaintDotNet_ComparerExtensions_IsGreaterThan__2___1___0___0_">ComparerExtensions.IsGreaterThan&lt;T, TComparer&gt;(TComparer, T, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComparerExtensions.IsLessThanOrEqualTo.html#PaintDotNet_ComparerExtensions_IsLessThanOrEqualTo__2___1___0___0_">ComparerExtensions.IsLessThanOrEqualTo&lt;T, TComparer&gt;(TComparer, T, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComparerExtensions.IsLessThan.html#PaintDotNet_ComparerExtensions_IsLessThan__2___1___0___0_">ComparerExtensions.IsLessThan&lt;T, TComparer&gt;(TComparer, T, T)</a>
-  </div>
-  </dd></dl>
 
 
 
