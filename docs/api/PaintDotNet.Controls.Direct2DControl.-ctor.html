@@ -114,7 +114,9 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Controls.Direct2DControl.html">Direct2DControl</a> class. A new Direct2D factory
+is created, providing an isolated resource domain for this control instance.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,7 +142,8 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Controls.Direct2DControl.html">Direct2DControl</a>, using the given Direct2D factory.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -150,7 +153,8 @@
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>d2dFactory</code> <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.html">IDirect2DFactory</a></dt>
-  <dd></dd>
+  <dd><p>The factory to use.</p>
+</dd>
 </dl>
 
 
@@ -160,6 +164,17 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Controls_Direct2DControl__ctor_PaintDotNet_Direct2D1_IDirect2DFactory__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If you are implementing a GpuEffect with a custom EffectConfigForm that uses <a class="xref" href="PaintDotNet.Controls.Direct2DControl.html">Direct2DControl</a>(s),
+it is not a good idea to share the <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.html">IDirect2DFactory</a> between the GpuEffect and the control.
+This will cause performance issues because the factory is also a lock, and all calls into the factory or
+any objects created from it will enter that lock. So if the GpuEffect is rendering, it will stall the UI
+thread and make it not as responsive.<br>
+<br>
+However, if you have multiple <a class="xref" href="PaintDotNet.Controls.Direct2DControl.html">Direct2DControl</a>s then it is a good idea to share one factory
+between them all (just not the one that the GpuEffect is using!). This will save memory, and also permits
+sharing Direct2D objects amongst the controls.</p>
+</div>
 
 
 
