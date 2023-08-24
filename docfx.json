@@ -17,6 +17,7 @@
             "PaintDotNet.Primitives.dll",
             "PaintDotNet.PropertySystem.dll",
             "PaintDotNet.Runtime.dll",
+            "PaintDotNet.UI.dll",
             "PaintDotNet.Windows.dll",
             "PaintDotNet.Windows.Core.dll",
             "PaintDotNet.Windows.Framework.dll"
@@ -49,6 +50,13 @@
           "articles/**/toc.yml",
           "toc.yml",
           "*.md"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "namespaces/**.md"
         ]
       }
     ],
