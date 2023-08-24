@@ -71,16 +71,56 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Plugins.CustomShapes">
+        <article data-uid="CustomShapes">
 <h1 id="custom-shapes">Custom Shapes</h1>
 
-<p>Paint.NET supports Custom Shapes as a form of declarative plugin -- code is not involved! The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, and is compatible with XAML files created for WPF as long as you change the namespace and wrap the geometry object in a <code>&lt;SimpleGeometryShape&gt;</code> element.</p>
+<p>Paint.NET supports Custom Shapes as a form of declarative plugin - code is not involved! The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, with only a few caveats, and is compatible with XAML files created for WPF as long as you change the namespace and wrap the geometry object in a <code>&lt;SimpleGeometryShape&gt;</code> element.</p>
 <p>The object model for Custom Shapes is contained in the <a class="xref" href="api/PaintDotNet.Shapes.html">PaintDotNet.Shapes</a> and <a class="xref" href="api/PaintDotNet.UI.Media.html">PaintDotNet.UI.Media</a> namespaces.</p>
 <p>Links:</p>
 <ul>
 <li><a href="https://forums.getpaint.net/forum/48-shapes/">Plugins - Shapes section of the Paint.NET forum</a>. Download custom shapes plugins.</li>
 <li><a href="https://forums.getpaint.net/topic/32101-how-to-make-custom-shapes-for-paintnet-406/">How to make custom shapes</a> tutorial by BoltBait</li>
 <li><a href="https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/">ShapeMaker plugin by The Dwarf Horde</a></li>
+</ul>
+<h2 id="differences-from-wpf-geometry">Differences from WPF Geometry</h2>
+<p>While the Custom Shapes object model is essentially identical to WPF's Geometry object model, there are a few differences:</p>
+<p>Added:</p>
+<ul>
+<li><a class="xref" href="api/PaintDotNet.UI.Media.PolyCurveSegment.html">PolyCurveSegment</a>
+<ul>
+<li>This is a <a class="xref" href="api/PaintDotNet.UI.Media.PathSegment.html">PathSegment</a> that draws a curve going through each given point. Also known as a <a href="https://en.wikipedia.org/wiki/Spline_(mathematics)">spline</a>.</li>
+<li>These can be used within a <a class="xref" href="api/PaintDotNet.UI.Media.PathGeometry.html">PathGeometry</a>, similar to <a class="xref" href="api/PaintDotNet.UI.Media.PolyLineSegment.html">PolyLineSegment</a> or <a class="xref" href="api/PaintDotNet.UI.Media.PolyBezierSegment.html">PolyBezierSegment</a>.</li>
+</ul>
+</li>
+<li><a class="xref" href="api/PaintDotNet.UI.Media.FlattenedGeometry.html">FlattenedGeometry</a>
+<ul>
+<li>This is a declarative equivalent to the imperative <a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getflattenedpathgeometry">Geometry.GetFlattenedPathGeometry</a> (WPF) or <a class="xref" href="api/PaintDotNet.Direct2D1.IGeometry.Simplify.html">IGeometry.Simplify</a> (Direct2D) methods.</li>
+<li>It is primarily useful for increasing the tesellation resolution of curves that, for whatever reason, appear &quot;too pointy&quot;. This happens when Direct2D does not use enough line segments to approximate a curve.</li>
+<li>You could also use this to reduce tessellation resolution, forcing a curve to appear &quot;low-res&quot; or &quot;point.&quot; (use a value larger than 1 for the <a class="xref" href="api/PaintDotNet.UI.Media.FlattenedGeometry.FlatteningTolerance.html#PaintDotNet_UI_Media_FlattenedGeometry_FlatteningTolerance">FlatteningTolerance</a> property).</li>
+<li>This is used by the built-in Ellipse shape to improve its rendering quality (a very low flattening tolerance of 0.0001 is used).</li>
+</ul>
+</li>
+<li><a class="xref" href="api/PaintDotNet.UI.Media.OutlinedGeometry.html">OutlinedGeometry</a>
+<ul>
+<li>This is a declarative equivalent to the imperative <a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getoutlinedpathgeometry">Geometry.GetOutlinedPathGeometry</a> (WPF) or <a class="xref" href="api/PaintDotNet.Direct2D1.IGeometry.Outline.html">IGeometry.Outline</a> (Direct2D) methods.</li>
+</ul>
+</li>
+<li><a class="xref" href="api/PaintDotNet.UI.Media.WidenedGeometry.html">WidenedGeometry</a>
+<ul>
+<li>This is a declarative equivalent to the imperative <a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getwidenedpathgeometry">Geometry.GetWidenedPathGeometry</a> (WPF) or <a class="xref" href="api/PaintDotNet.Direct2D1.IGeometry.Widen.html">IGeometry.Widen</a> (Direct2D) methods.</li>
+<li>Widening is often referred to as &quot;stroking.&quot; You can use this to create the 2-dimensional stroked outline of a 1-dimensional line or curve.</li>
+</ul>
+</li>
+</ul>
+<p>Removed:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.streamgeometry">StreamGeometry</a> does not exist
+<ul>
+<li><code>StreamGeometry</code> is primarily used in code, not in XAML, and does not exist for Custom Shapes.</li>
+<li>You can, however, use <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a> to initialize any property of type <a class="xref" href="api/PaintDotNet.UI.Media.Geometry.html">Geometry</a>.</li>
+<li>For example: <code>&lt;SimpleGeometryShape Geometry=&quot;F1 M 21,142 L 160,22 L 300,142 L 300,318 L 21,318 Z&quot; /&gt;</code></li>
+</ul>
+</li>
 </ul>
 </article>
 
