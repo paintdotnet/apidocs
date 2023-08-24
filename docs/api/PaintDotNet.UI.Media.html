@@ -78,8 +78,8 @@
   <h1 id="PaintDotNet_UI_Media" data-uid="PaintDotNet.UI.Media" class="text-break">Namespace PaintDotNet.UI.Media
 </h1>
   <div class="markdown level0 summary">
-<p>This namespace contains classes used when creating Custom Shape plugins in XAML.</p>
-<p>They are not useful for other types of plugins, which should use either <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">Direct2D geometry</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>. You can convert between those two formats with the <a href="xref:PaintDotNet.Direct2D1.GeometryExtensions.ToWpfGeometry">IGeometry.ToWpfGeometry</a> and <a href="xref:PaintDotNet.Direct2D1.Direct2DFactoryExtensions.FromWpfGeometry">IDirect2DFactory.FromWpfGeometry</a> extension methods.</p>
+<p>This namespace contains classes used when creating <a class="xref" href="../Plugins.CustomShapes.html">Custom Shape plugins</a> in XAML. The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, and is compatible with XAML files created for WPF as long as you change the namespace.</p>
+<p>This members of this namespace are not usable by other types of plugins, which should use either <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">Direct2D geometry</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>

@@ -2,6 +2,6 @@
 uid: PaintDotNet.UI.Media
 summary: *content
 ---
-This namespace contains classes used when creating Custom Shape plugins in XAML. 
+This namespace contains classes used when creating [Custom Shape plugins](xref:Plugins.CustomShapes) in XAML. The object model is intentionally identical to [WPF geometry](xref:System.Windows.Media.Geometry), and is compatible with XAML files created for WPF as long as you change the namespace.
 
-They are not useful for other types of plugins, which should use either [Direct2D geometry](xref:PaintDotNet.Direct2D1.IGeometry) or [WPF geometry](xref:System.Windows.Media.Geometry). You can convert between those two formats with the [IGeometry.ToWpfGeometry](xref:PaintDotNet.Direct2D1.GeometryExtensions.ToWpfGeometry) and [IDirect2DFactory.FromWpfGeometry](xref:PaintDotNet.Direct2D1.Direct2DFactoryExtensions.FromWpfGeometry) extension methods.
+This members of this namespace are not usable by other types of plugins, which should use either [Direct2D geometry](xref:PaintDotNet.Direct2D1.IGeometry) or [WPF geometry](xref:System.Windows.Media.Geometry).
