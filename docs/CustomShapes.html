@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Effects </title>
+      <title>Custom Shapes </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Effects ">
+      <meta name="title" content="Custom Shapes ">
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -19,8 +19,8 @@
   </head>
 
   <script type="module">
-    import options from './../public/main.js'
-    import { init } from './../public/docfx.min.js'
+    import options from './public/main.js'
+    import { init } from './public/docfx.min.js'
     init(options)
   </script>
 
@@ -34,8 +34,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/logo.png" alt="">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,10 +71,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Plugins.Effects">
-<h1 id="effects">Effects</h1>
+        <article data-uid="Plugins.CustomShapes">
+<h1 id="custom-shapes">Custom Shapes</h1>
 
-<p>TODO</p>
+<p>Paint.NET supports Custom Shapes as a form of declarative plugin -- code is not involved! The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, and is compatible with XAML files created for WPF as long as you change the namespace and wrap the geometry object in a <code>&lt;SimpleGeometryShape&gt;</code> element.</p>
+<p>The object model for Custom Shapes is contained in the <a class="xref" href="api/PaintDotNet.Shapes.html">PaintDotNet.Shapes</a> and <a class="xref" href="api/PaintDotNet.UI.Media.html">PaintDotNet.UI.Media</a> namespaces.</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://forums.getpaint.net/forum/48-shapes/">Plugins - Shapes section of the Paint.NET forum</a>. Download custom shapes plugins.</li>
+<li><a href="https://forums.getpaint.net/topic/32101-how-to-make-custom-shapes-for-paintnet-406/">How to make custom shapes</a> tutorial by BoltBait</li>
+<li><a href="https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/">ShapeMaker plugin by The Dwarf Horde</a></li>
+</ul>
 </article>
 
         <div class="contribution d-print-none">

@@ -1,5 +1,5 @@
 ---
-uid: Plugins.Effects
+uid: Effects
 summary: *content
 ---
 # Effects

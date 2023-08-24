@@ -1,5 +1,5 @@
 ---
-uid: Plugins.FileTypes
+uid: FileTypes
 summary: *content
 ---
 # File Types

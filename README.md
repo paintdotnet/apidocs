@@ -20,7 +20,7 @@ You can edit Markdown files (*.md) in Visual Studio Code, which has live preview
 4. To open the preview tab, press Ctrl+Shift+V (or right click on the tab and then on Open Preview)
 
 ## Local Building
-You may need to edit `docfx.json` to point it at where you have the Paint.NET DLLs if they are not in `C:\Program Files\paint.net`. In that case, do not include `docfx.json` in your pull request (do not commit it).
+You will need to temporarily edit `docfx.json` to point it at where you have the Paint.NET DLLs. Right now it's configured for where I (Rick) have the latest build of the portable x64 ZIP.
 
 How to build the docs and get into a nice edit/build loop:
 1. Run `restore.cmd`. It will install `docfx`. **You only need to do this once.**
