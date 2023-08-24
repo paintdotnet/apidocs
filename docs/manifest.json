@@ -1668,6 +1668,16 @@
       "source_relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.-ctor.html"
         }
       },
@@ -1699,16 +1709,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.EndInvoke.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Clipboard.ClipboardNativeDataCallback.html"
         }
       },
       "version": ""
@@ -2468,36 +2468,6 @@
       "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.IndexOf.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.ForEach.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.ToArrayEx.html"
         }
       },
@@ -2529,6 +2499,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.FirstIndexWhere.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.IndexOf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.ForEach.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Collections.EnumerableExtensions.html"
         }
       },
       "version": ""
@@ -2638,7 +2638,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.A.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.Equals.html"
         }
       },
       "version": ""
@@ -2648,7 +2648,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.Bgra.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.GetHashCode.html"
         }
       },
       "version": ""
@@ -2658,7 +2658,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.BlueChannel.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.NewAlpha.html"
         }
       },
       "version": ""
@@ -2668,7 +2668,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.GreenChannel.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromBgra.html"
         }
       },
       "version": ""
@@ -2678,7 +2678,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.RedChannel.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromBgraClamped.html"
         }
       },
       "version": ""
@@ -2688,7 +2688,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.AlphaChannel.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.BgraToUInt32.html"
         }
       },
       "version": ""
@@ -2698,7 +2698,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.SizeOf.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromBgr.html"
         }
       },
       "version": ""
@@ -2708,7 +2708,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.BitsPerPixel.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromUInt32.html"
         }
       },
       "version": ""
@@ -2718,7 +2718,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ParseHexString.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromOpaqueInt32.html"
         }
       },
       "version": ""
@@ -2728,7 +2728,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ToHexString.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.ToOpaqueInt32.html"
         }
       },
       "version": ""
@@ -2738,7 +2738,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ConvertToPremultipliedAlpha.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.FromColor.html"
         }
       },
       "version": ""
@@ -2748,7 +2748,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ConvertFromPremultipliedAlpha.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.ToColor.html"
         }
       },
       "version": ""
@@ -2758,7 +2758,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.GetIntensity.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.Overwrite.html"
         }
       },
       "version": ""
@@ -2768,7 +2768,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.GetIntensityByte.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.Blend.html"
         }
       },
       "version": ""
@@ -2778,7 +2778,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.op_Equality.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.Lerp.html"
         }
       },
       "version": ""
@@ -2788,7 +2788,7 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.op_Inequality.html"
+          "relative_path": "api/PaintDotNet.ColorBgra.BlendColors4W16IP.html"
         }
       },
       "version": ""
@@ -4218,196 +4218,6 @@
       "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.B.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.G.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.R.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.Equals.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.GetHashCode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.NewAlpha.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromBgra.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromBgraClamped.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.BgraToUInt32.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromBgr.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromUInt32.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromOpaqueInt32.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ToOpaqueInt32.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.FromColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.ToColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.Overwrite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.Blend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.Lerp.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.ColorBgra.BlendColors4W16IP.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.ColorBgra.BlendColors4Fast.html"
         }
       },
@@ -4489,6 +4299,196 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.ColorBgra.TransparentBlack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.B.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.G.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.R.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.A.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.Bgra.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.BlueChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.GreenChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.RedChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.AlphaChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.SizeOf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.BitsPerPixel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.ParseHexString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.ToHexString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.ConvertToPremultipliedAlpha.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.ConvertFromPremultipliedAlpha.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.GetIntensity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.GetIntensityByte.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.op_Equality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.ColorBgra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.ColorBgra.op_Inequality.html"
         }
       },
       "version": ""
@@ -6118,6 +6118,26 @@
       "source_relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.InterpolationMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.-ctor.html"
         }
       },
@@ -6189,26 +6209,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.ExtendModeY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.InterpolationMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.BitmapBrushProperties.html"
         }
       },
       "version": ""
@@ -12318,36 +12318,6 @@
       "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.CreateImpl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.Color.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.Rect.html"
         }
       },
@@ -12379,6 +12349,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.CreateImpl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.Color.html"
         }
       },
       "version": ""
@@ -21688,26 +21688,6 @@
       "source_relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.FromCoonsPatch.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.Equals.html"
         }
       },
@@ -21989,6 +21969,26 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.GradientMeshPatch.FromCoonsPatch.html"
         }
       },
       "version": ""
@@ -31028,6 +31028,46 @@
       "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.Equals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.op_Equality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.op_Inequality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.GetHashCode.html"
         }
       },
@@ -31075,80 +31115,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.Equals.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.op_Equality.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgPreserveAspectRatio.op_Inequality.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/PaintDotNet.Direct2D1.SvgUnitType.yml",
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.SvgUnitType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.Equals.html"
         }
       },
       "version": ""
@@ -31249,6 +31219,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Direct2D1.SvgViewBox.Equals.html"
         }
       },
       "version": ""
@@ -34058,7 +34058,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetLocaleName.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontStretch.html"
         }
       },
       "version": ""
@@ -34068,7 +34068,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetStrikethrough.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontStretch.html"
         }
       },
       "version": ""
@@ -34078,7 +34078,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetStrikethrough.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontStyle.html"
         }
       },
       "version": ""
@@ -34088,7 +34088,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetTypography.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontStyle.html"
         }
       },
       "version": ""
@@ -34098,7 +34098,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetTypography.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontWeight.html"
         }
       },
       "version": ""
@@ -34108,7 +34108,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetUnderline.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontWeight.html"
         }
       },
       "version": ""
@@ -34118,7 +34118,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetUnderline.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetInlineObject.html"
         }
       },
       "version": ""
@@ -34128,7 +34128,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MinWidth.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetInlineObject.html"
         }
       },
       "version": ""
@@ -34138,47 +34138,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.Metrics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.OverhangMetrics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MaxHeight.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MaxWidth.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetLocaleName.html"
         }
       },
       "version": ""
@@ -34318,7 +34278,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontStretch.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetLocaleName.html"
         }
       },
       "version": ""
@@ -34328,7 +34288,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontStretch.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetStrikethrough.html"
         }
       },
       "version": ""
@@ -34338,7 +34298,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontStyle.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetStrikethrough.html"
         }
       },
       "version": ""
@@ -34348,7 +34308,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontStyle.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetTypography.html"
         }
       },
       "version": ""
@@ -34358,7 +34318,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetFontWeight.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetTypography.html"
         }
       },
       "version": ""
@@ -34368,7 +34328,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetFontWeight.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetUnderline.html"
         }
       },
       "version": ""
@@ -34378,7 +34338,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetInlineObject.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetUnderline.html"
         }
       },
       "version": ""
@@ -34388,7 +34348,7 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.SetInlineObject.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MinWidth.html"
         }
       },
       "version": ""
@@ -34398,7 +34358,47 @@
       "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.GetLocaleName.html"
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.Metrics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.OverhangMetrics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MaxHeight.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.MaxWidth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.DirectWrite.ITextLayout.html"
         }
       },
       "version": ""
@@ -37368,36 +37368,6 @@
       "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Effect.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Effect.SignalCancelRequest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Effect.SetRenderInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Effects.Effect.OnSetRenderInfo.html"
         }
       },
@@ -37469,6 +37439,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Effects.Effect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Effect.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Effect.SignalCancelRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Effect.SetRenderInfo.html"
         }
       },
       "version": ""
@@ -40398,36 +40398,6 @@
       "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.CreateImpl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Input.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Intensity.html"
         }
       },
@@ -40489,6 +40459,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.CreateImpl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Input.html"
         }
       },
       "version": ""
@@ -49688,6 +49688,26 @@
       "source_relative_path": "api/PaintDotNet.Imaging.ColorBgr24.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.IntensityFloat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorBgr24.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorBgr24.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.op_Implicit.html"
         }
       },
@@ -49869,26 +49889,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.Intensity.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorBgr24.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.IntensityFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorBgr24.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorBgr24.html"
         }
       },
       "version": ""
@@ -52818,46 +52818,6 @@
       "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.Rgba.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.Intensity.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.IntensityFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.op_Explicit.html"
         }
       },
@@ -53029,6 +52989,46 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.A.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.Rgba.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.Intensity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.IntensityFloat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ColorRgba64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ColorRgba64.html"
         }
       },
       "version": ""
@@ -55758,366 +55758,6 @@
       "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ProcessingSoftware.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.NewSubfileType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.SubfileType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageWidth.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageLength.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.BitsPerSample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Compression.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PhotometricInterpretation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Thresholding.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.CellWidth.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.CellLength.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.FillOrder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.DocumentName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageDescription.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Make.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.StripOffsets.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Orientation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.SamplesPerPixel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.RowsPerStrip.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.StripByteCounts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.XResolution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.YResolution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PlanarConfiguration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.GrayResponseUnit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.GrayResponseCurve.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.T4Options.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.T6Options.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ResolutionUnit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PageNumber.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.TransferFunction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Software.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.DateTime.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Artist.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.HostComputer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Predictor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.WhitePoint.html"
         }
       },
@@ -57865,6 +57505,366 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ProcessingSoftware.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.NewSubfileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.SubfileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageWidth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageLength.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.BitsPerSample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Compression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PhotometricInterpretation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Thresholding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.CellWidth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.CellLength.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.FillOrder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.DocumentName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ImageDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Make.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.StripOffsets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Orientation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.SamplesPerPixel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.RowsPerStrip.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.StripByteCounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.XResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.YResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PlanarConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.GrayResponseUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.GrayResponseCurve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.T4Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.T6Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.ResolutionUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.PageNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.TransferFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Software.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.DateTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Artist.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.HostComputer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Image.Predictor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyKeys.Interop.yml",
       "output": {
         ".html": {
@@ -58658,16 +58658,6 @@
       "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.Equals.html"
         }
       },
@@ -58739,6 +58729,16 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.ExifPropertyPath.-ctor.html"
         }
       },
       "version": ""
@@ -59228,6 +59228,16 @@
       "source_relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.SetColorContexts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.SetPalette.html"
         }
       },
@@ -59309,16 +59319,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.IBitmapEncoder.SetColorContexts.html"
         }
       },
       "version": ""
@@ -62058,6 +62058,96 @@
       "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkBlue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkCyan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGoldenrod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkKhaki.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkMagenta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkOliveGreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkOrange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkOrchid.html"
         }
       },
@@ -63169,96 +63259,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Imaging.LinearColors.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkBlue.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkCyan.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGoldenrod.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGray.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkGreen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkKhaki.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkMagenta.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkOliveGreen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Imaging.LinearColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Imaging.LinearColors.DarkOrange.html"
         }
       },
       "version": ""
@@ -68498,6 +68498,16 @@
       "source_relative_path": "api/PaintDotNet.Int64Util.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Int64Util.BigMul.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Int64Util.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Int64Util.ClampSafe.html"
         }
       },
@@ -68579,16 +68589,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Int64Util.HighestBit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Int64Util.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Int64Util.BigMul.html"
         }
       },
       "version": ""
@@ -71628,6 +71628,36 @@
       "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.PdnRegion.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.PdnRegion.Finalize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.PdnRegion.Dispose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.PdnRegion.IsEmpty.html"
         }
       },
@@ -71709,36 +71739,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.PdnRegion.FromRectangles.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.PdnRegion.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.PdnRegion.Finalize.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.PdnRegion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.PdnRegion.Dispose.html"
         }
       },
       "version": ""
@@ -74818,26 +74818,6 @@
       "source_relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.OnInitialized.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.Clone.html"
         }
       },
@@ -74849,6 +74829,26 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.PropertySystem.SoftMutuallyBoundMinMaxRule-2.OnInitialized.html"
         }
       },
       "version": ""
@@ -77668,36 +77668,6 @@
       "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.Static.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.Apply.html"
         }
       },
@@ -77729,6 +77699,36 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.CreateWithOpacity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.Static.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Normal.html"
         }
       },
       "version": ""
@@ -77948,16 +77948,6 @@
       "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.Apply.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.ApplyStatic.html"
         }
       },
@@ -78009,6 +77999,16 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.CompositionOps.Xor.Apply.html"
         }
       },
       "version": ""
@@ -80688,306 +80688,6 @@
       "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Equals.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Equality.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Inequality.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.GetHashCode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Explicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Multiply.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Append.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Multiply.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Prepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Perspective.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateX.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXByRadiansPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationX.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationXByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYByRadiansPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationYByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZ.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZByRadiansPrepend.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationZ.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationZByRadians.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Rotate.html"
         }
       },
@@ -81349,6 +81049,306 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Equals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Equality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Inequality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.GetHashCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Explicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.op_Multiply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Append.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Multiply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Prepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.Perspective.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateX.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXByRadians.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateXByRadiansPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationX.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationXByRadians.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYByRadians.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateYByRadiansPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationYByRadians.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZ.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZByRadians.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotateZByRadiansPrepend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationZ.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Matrix4x4Float.RotationZByRadians.html"
         }
       },
       "version": ""
@@ -84008,6 +84008,196 @@
       "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Explicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromCenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromCorners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromEdges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Inflate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Intersect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Offset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Scale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Union.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Contains.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetFiniteInt32Bound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetInt32Bound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetFiniteInt64Bound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetInt64Bound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.IntersectsWith.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Equals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Equality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.RectDouble.X.html"
         }
       },
@@ -84249,196 +84439,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.RectDouble.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Explicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromCenter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromCorners.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.FromEdges.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Inflate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Intersect.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Offset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Scale.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Union.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Contains.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetFiniteInt32Bound.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetInt32Bound.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetFiniteInt64Bound.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.GetInt64Bound.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.IntersectsWith.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.Equals.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.RectDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.RectDouble.op_Equality.html"
         }
       },
       "version": ""
@@ -86498,6 +86498,16 @@
       "source_relative_path": "api/PaintDotNet.Rendering.SizeInt32.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.SizeInt32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.SizeInt32.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.SizeInt32.op_Explicit.html"
         }
       },
@@ -86739,16 +86749,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.SizeInt32.IsZero.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.SizeInt32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.SizeInt32.html"
         }
       },
       "version": ""
@@ -87148,6 +87148,16 @@
       "source_relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.GetPoint.html"
         }
       },
@@ -87225,20 +87235,80 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.yml",
+      "source_relative_path": "api/PaintDotNet.Rendering.ThumbnailHelpers.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.SurfaceExtensions2.html"
+          "relative_path": "api/PaintDotNet.Rendering.ThumbnailHelpers.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.ThumbnailHelpers.yml",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.ThumbnailHelpers.html"
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Explicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Addition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Division.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Multiply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Subtraction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_UnaryNegation.html"
         }
       },
       "version": ""
@@ -87499,76 +87569,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.Vector2Double.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Explicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Addition.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Division.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Multiply.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_Subtraction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector2Double.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector2Double.op_UnaryNegation.html"
         }
       },
       "version": ""
@@ -90298,56 +90298,6 @@
       "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.op_Implicit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Ceiling.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Floor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Round.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Truncate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.op_Inequality.html"
         }
       },
@@ -90589,6 +90539,56 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.op_Implicit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Ceiling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Floor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Round.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.Rendering.Vector4Int32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.Rendering.Vector4Int32.Truncate.html"
         }
       },
       "version": ""
@@ -93508,6 +93508,26 @@
       "source_relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.yml",
       "output": {
         ".html": {
+          "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.Geometry1Property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.Geometry2Property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.GeometryCombineModeProperty.html"
         }
       },
@@ -93589,26 +93609,6 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.IsEmpty.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.Geometry1Property.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.UI.Media.CombinedGeometry.Geometry2Property.html"
         }
       },
       "version": ""
@@ -96588,26 +96588,6 @@
       "source_relative_path": "api/PaintDotNet.UI.Media.SkewTransform.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.CenterY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.UI.Media.SkewTransform.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PaintDotNet.UI.Media.SkewTransform.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.CenterXProperty.html"
         }
       },
@@ -96689,6 +96669,26 @@
       "output": {
         ".html": {
           "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.CenterX.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.UI.Media.SkewTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.CenterY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PaintDotNet.UI.Media.SkewTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PaintDotNet.UI.Media.SkewTransform.html"
         }
       },
       "version": ""

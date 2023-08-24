@@ -96,7 +96,7 @@
 <ul>
 <li>This is a declarative equivalent to the imperative <a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getflattenedpathgeometry">Geometry.GetFlattenedPathGeometry</a> (WPF) or <a class="xref" href="api/PaintDotNet.Direct2D1.IGeometry.Simplify.html">IGeometry.Simplify</a> (Direct2D) methods.</li>
 <li>It is primarily useful for increasing the tesellation resolution of curves that, for whatever reason, appear &quot;too pointy&quot;. This happens when Direct2D does not use enough line segments to approximate a curve.</li>
-<li>You could also use this to reduce tessellation resolution, forcing a curve to appear &quot;low-res&quot; or &quot;point.&quot; (use a value larger than 1 for the <a class="xref" href="api/PaintDotNet.UI.Media.FlattenedGeometry.FlatteningTolerance.html#PaintDotNet_UI_Media_FlattenedGeometry_FlatteningTolerance">FlatteningTolerance</a> property).</li>
+<li>You could also use this to reduce tessellation resolution, forcing a curve to appear &quot;low-res&quot; or &quot;pointy.&quot; (use a value larger than 1 for the <a class="xref" href="api/PaintDotNet.UI.Media.FlattenedGeometry.FlatteningTolerance.html#PaintDotNet_UI_Media_FlattenedGeometry_FlatteningTolerance">FlatteningTolerance</a> property).</li>
 <li>This is used by the built-in Ellipse shape to improve its rendering quality (a very low flattening tolerance of 0.0001 is used).</li>
 </ul>
 </li>

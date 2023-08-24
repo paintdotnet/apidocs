@@ -23,7 +23,7 @@ Added:
 - [FlattenedGeometry](xref:PaintDotNet.UI.Media.FlattenedGeometry)
   - This is a declarative equivalent to the imperative [Geometry.GetFlattenedPathGeometry](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getflattenedpathgeometry) (WPF) or [IGeometry.Simplify](xref:PaintDotNet.Direct2D1.IGeometry.Simplify*) (Direct2D) methods.
   - It is primarily useful for increasing the tesellation resolution of curves that, for whatever reason, appear "too pointy". This happens when Direct2D does not use enough line segments to approximate a curve.
-  - You could also use this to reduce tessellation resolution, forcing a curve to appear "low-res" or "point." (use a value larger than 1 for the [FlatteningTolerance](xref:PaintDotNet.UI.Media.FlattenedGeometry.FlatteningTolerance) property).
+  - You could also use this to reduce tessellation resolution, forcing a curve to appear "low-res" or "pointy." (use a value larger than 1 for the [FlatteningTolerance](xref:PaintDotNet.UI.Media.FlattenedGeometry.FlatteningTolerance) property).
   - This is used by the built-in Ellipse shape to improve its rendering quality (a very low flattening tolerance of 0.0001 is used).
 - [OutlinedGeometry](xref:PaintDotNet.UI.Media.OutlinedGeometry)
   - This is a declarative equivalent to the imperative [Geometry.GetOutlinedPathGeometry](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.geometry.getoutlinedpathgeometry) (WPF) or [IGeometry.Outline](xref:PaintDotNet.Direct2D1.IGeometry.Outline*) (Direct2D) methods.
