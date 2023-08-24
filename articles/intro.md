@@ -18,6 +18,8 @@ TODO:
 - Programming guide for FileType plugins
 - Programming guide for BitmapEffect/GpuEffect plugins
 - Programming guide for Custom Shape (XAML) plugins
+- How to use IndirectUI to create a standard UI for your Effect or FileType
+  - How to add tabs to your UI (new for 5.0)
 - How to package a plugin with .deps.json, how it should be installed by the end-user, etc.
 - How to use linking to avoid multi-DLL plugins (if using nuget packages), and avoid need for .deps.json in the first place
 - etc.
