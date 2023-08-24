@@ -1,0 +1,2 @@
+@call restore
+@call build %*
