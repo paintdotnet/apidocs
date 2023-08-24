@@ -40,14 +40,20 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
+          "toc.yml",
+          "*.md"
         ]
       },
       {
         "files": [
-          "toc.yml",
-          "*.md"
+          "plugins/**.yml",
+          "plugins/**.md"
+        ]
+      },      
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
         ]
       }
     ],
