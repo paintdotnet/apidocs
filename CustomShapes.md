@@ -39,7 +39,7 @@ Removed:
   - For example: `<SimpleGeometryShape Geometry="F1 M 21,142 L 160,22 L 300,142 L 300,318 L 21,318 Z" />`
 
 ## Examples
-There are two primary ways of expression a custom shape. The first is with [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax), and the other is with the Geometry object model.
+There are two primary ways of expressing a custom shape. The first is with [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax), and the other is with the Geometry object model.
 
 ### Path Markup syntax example
 This is an example of a coffee mug shape defined using [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax). This is part of [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
