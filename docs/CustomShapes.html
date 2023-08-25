@@ -74,10 +74,11 @@
         <article data-uid="CustomShapes">
 <h1 id="custom-shapes">Custom Shapes</h1>
 
-<p>Paint.NET supports Custom Shapes as a form of declarative plugin - code is not involved! The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, with only a few caveats, and is compatible with XAML files created for WPF as long as you change the namespace and wrap the geometry object in a <code>&lt;SimpleGeometryShape&gt;</code> element.</p>
+<p>Paint.NET's Shapes tool supports Custom Shapes as a form of declarative plugin - code is not involved! The object model is intentionally identical to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.geometry">WPF geometry</a>, with only a few caveats, and is compatible with XAML files created for WPF as long as you change the namespace and wrap the geometry object in a <code>SimpleGeometryShape</code> element.</p>
 <p>The object model for Custom Shapes is contained in the <a class="xref" href="api/PaintDotNet.Shapes.html">PaintDotNet.Shapes</a> and <a class="xref" href="api/PaintDotNet.UI.Media.html">PaintDotNet.UI.Media</a> namespaces.</p>
 <p>Links:</p>
 <ul>
+<li><a href="https://getpaint.net/doc/latest/InstallPlugins.html">Installing Additional Plugins</a> - Paint.NET Documentation</li>
 <li><a href="https://forums.getpaint.net/forum/48-shapes/">Plugins - Shapes section of the Paint.NET forum</a>. Download custom shapes plugins.</li>
 <li><a href="https://forums.getpaint.net/topic/32101-how-to-make-custom-shapes-for-paintnet-406/">How to make custom shapes</a> tutorial by BoltBait</li>
 <li><a href="https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/">ShapeMaker plugin by The Dwarf Horde</a></li>
@@ -122,6 +123,89 @@
 </ul>
 </li>
 </ul>
+<h2 id="examples">Examples</h2>
+<p>There are two primary ways of expression a custom shape. The first is with <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a>, and the other is with the Geometry object model.</p>
+<h3 id="path-markup-syntax-example">Path Markup syntax example</h3>
+<p>This is an example of a coffee mug shape defined using <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a>. This is part of <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
+<pre><code class="lang-xml">&lt;ps:SimpleGeometryShape xmlns=&quot;clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework&quot;
+                        xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;                 
+                        DisplayName=&quot;Mug&quot;
+                        Geometry=&quot;M 68,106 A 6.74,23.82,90,1,1,150.5,106 L 150.5,126 A 20.51,15.15,149.74,1,1,150.5,178.5 L 150.5,193.5 A 6.73,23.81,-90,1,1,68,193.5 L 68,106 M 73,106 A 4.03,20.96,89.29,1,1,145,105 A 6.8,24.52,-91.12,1,1,73,106 M 150.5,133.5 A 22.12,15.15,150.46,1,1,150.5,171 L 150.5,133.5 M 109,10.5 C 114.86,15.45,120,20.5,127,33,128.5,42.5,127.5,43,117.5,51,105.5,59.5,124.66,76.88,124,83.5,117,53.5,132,55.5,140.5,46,147.5,28,119.5,15,109,10.5 M 78,7 C 83.86,11.95,89,17,96,29.5,97.5,39,96.5,39.5,86.5,47.5,74.5,56,93.66,73.38,93,80,86,50,101,52,109.5,42.5,116.5,24.5,88.5,11.5,78,7
+&quot;/&gt;
+</code></pre>
+<p><img src="images/CustomShape.CoffeeMug.png" alt="Coffee Mug"></p>
+<h3 id="geometry-object-model-example">Geometry object model example</h3>
+<p>This is an example of a clock shape defined using the Geometry object model. This is part of <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
+<pre><code class="lang-xml">&lt;ps:SimpleGeometryShape xmlns=&quot;clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework&quot;
+		xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;
+		DisplayName=&quot;Clock&quot;&gt;
+	&lt;GeometryGroup FillRule=&quot;EvenOdd&quot;&gt;
+		&lt;PathGeometry&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;87,254&quot;&gt;
+					&lt;ArcSegment Size=&quot;160,160&quot; RotationAngle=&quot;0&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;CounterClockwise&quot; Point=&quot;408,254&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;87,254&quot;&gt;
+					&lt;ArcSegment Size=&quot;160,160&quot; RotationAngle=&quot;0&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;408,254&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;107,254&quot;&gt;
+					&lt;ArcSegment Size=&quot;88,89&quot; RotationAngle=&quot;87&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;387,254&quot; /&gt;
+					&lt;ArcSegment Size=&quot;75,80&quot; RotationAngle=&quot;-89&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;107,254&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;310,90&quot;&gt;
+					&lt;ArcSegment Size=&quot;34,33&quot; RotationAngle=&quot;130&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;400,170&quot; /&gt;
+					&lt;LineSegment Point=&quot;310,90&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;180,90&quot;&gt;
+					&lt;ArcSegment Size=&quot;34,34&quot; RotationAngle=&quot;48&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;CounterClockwise&quot; Point=&quot;89,170&quot; /&gt;
+					&lt;LineSegment Point=&quot;180,90&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;90,410&quot;&gt;
+					&lt;ArcSegment Size=&quot;29,29&quot; RotationAngle=&quot;147&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;CounterClockwise&quot; Point=&quot;100,420&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;410,410&quot;&gt;
+					&lt;ArcSegment Size=&quot;29,29&quot; RotationAngle=&quot;29&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;400,420&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;240,230&quot;&gt;
+					&lt;LineSegment Point=&quot;240,140&quot; /&gt;
+					&lt;LineSegment Point=&quot;230,140&quot; /&gt;
+					&lt;LineSegment Point=&quot;245,120&quot; /&gt;
+					&lt;LineSegment Point=&quot;260,140&quot; /&gt;
+					&lt;LineSegment Point=&quot;250,140&quot; /&gt;
+					&lt;LineSegment Point=&quot;250,230&quot; /&gt;
+					&lt;LineSegment Point=&quot;240,230&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;233,244&quot;&gt;
+					&lt;ArcSegment Size=&quot;10,12&quot; RotationAngle=&quot;0&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;CounterClockwise&quot; Point=&quot;258,244&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;233,244&quot;&gt;
+					&lt;ArcSegment Size=&quot;10,12&quot; RotationAngle=&quot;0&quot; IsLargeArc=&quot;True&quot; SweepDirection=&quot;Clockwise&quot; Point=&quot;258,244&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;260,250&quot;&gt;
+					&lt;LineSegment Point=&quot;308,293&quot; /&gt;
+					&lt;LineSegment Point=&quot;315,285&quot; /&gt;
+					&lt;LineSegment Point=&quot;320,310&quot; /&gt;
+					&lt;LineSegment Point=&quot;295,308&quot; /&gt;
+					&lt;LineSegment Point=&quot;301,300&quot; /&gt;
+					&lt;LineSegment Point=&quot;252,257&quot; /&gt;
+					&lt;LineSegment Point=&quot;260,250&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;110,345&quot;&gt;
+					&lt;LineSegment Point=&quot;135,375&quot; /&gt;
+					&lt;LineSegment Point=&quot;100,420&quot; /&gt;
+					&lt;LineSegment Point=&quot;90,410&quot; /&gt;
+					&lt;LineSegment Point=&quot;110,345&quot; /&gt;
+				&lt;/PathFigure&gt;
+				&lt;PathFigure IsClosed=&quot;True&quot; IsFilled=&quot;True&quot; StartPoint=&quot;356.25,377.5&quot;&gt;
+					&lt;LineSegment Point=&quot;381.25,350&quot; /&gt;
+					&lt;LineSegment Point=&quot;410,410&quot; /&gt;
+					&lt;LineSegment Point=&quot;400,420&quot; /&gt;
+					&lt;LineSegment Point=&quot;356.25,377.5&quot; /&gt;
+				&lt;/PathFigure&gt;
+		&lt;/PathGeometry&gt;
+	&lt;/GeometryGroup&gt;
+&lt;/ps:SimpleGeometryShape&gt;
+</code></pre>
+<p><img src="images/CustomShape.Clock.png" alt="Clock"></p>
 </article>
 
         <div class="contribution d-print-none">
