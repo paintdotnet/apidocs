@@ -63,66 +63,66 @@ This is an example of a clock shape defined using the Geometry object model. Thi
     DisplayName="Clock">
   <GeometryGroup FillRule="EvenOdd">
     <PathGeometry>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="87,254">
-          <ArcSegment Size="160,160" RotationAngle="0" IsLargeArc="True" SweepDirection="CounterClockwise" Point="408,254" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="87,254">
-          <ArcSegment Size="160,160" RotationAngle="0" IsLargeArc="True" SweepDirection="Clockwise" Point="408,254" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="107,254">
-          <ArcSegment Size="88,89" RotationAngle="87" IsLargeArc="True" SweepDirection="Clockwise" Point="387,254" />
-          <ArcSegment Size="75,80" RotationAngle="-89" IsLargeArc="True" SweepDirection="Clockwise" Point="107,254" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="310,90">
-          <ArcSegment Size="34,33" RotationAngle="130" IsLargeArc="True" SweepDirection="Clockwise" Point="400,170" />
-          <LineSegment Point="310,90" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="180,90">
-          <ArcSegment Size="34,34" RotationAngle="48" IsLargeArc="True" SweepDirection="CounterClockwise" Point="89,170" />
-          <LineSegment Point="180,90" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="90,410">
-          <ArcSegment Size="29,29" RotationAngle="147" IsLargeArc="True" SweepDirection="CounterClockwise" Point="100,420" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="410,410">
-          <ArcSegment Size="29,29" RotationAngle="29" IsLargeArc="True" SweepDirection="Clockwise" Point="400,420" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="240,230">
-          <LineSegment Point="240,140" />
-          <LineSegment Point="230,140" />
-          <LineSegment Point="245,120" />
-          <LineSegment Point="260,140" />
-          <LineSegment Point="250,140" />
-          <LineSegment Point="250,230" />
-          <LineSegment Point="240,230" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="233,244">
-          <ArcSegment Size="10,12" RotationAngle="0" IsLargeArc="True" SweepDirection="CounterClockwise" Point="258,244" />
-        </PathFigure>
-        <PathFigure IsClosed="False" IsFilled="True" StartPoint="233,244">
-          <ArcSegment Size="10,12" RotationAngle="0" IsLargeArc="True" SweepDirection="Clockwise" Point="258,244" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="260,250">
-          <LineSegment Point="308,293" />
-          <LineSegment Point="315,285" />
-          <LineSegment Point="320,310" />
-          <LineSegment Point="295,308" />
-          <LineSegment Point="301,300" />
-          <LineSegment Point="252,257" />
-          <LineSegment Point="260,250" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="110,345">
-          <LineSegment Point="135,375" />
-          <LineSegment Point="100,420" />
-          <LineSegment Point="90,410" />
-          <LineSegment Point="110,345" />
-        </PathFigure>
-        <PathFigure IsClosed="True" IsFilled="True" StartPoint="356.25,377.5">
-          <LineSegment Point="381.25,350" />
-          <LineSegment Point="410,410" />
-          <LineSegment Point="400,420" />
-          <LineSegment Point="356.25,377.5" />
-        </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="87,254">
+        <ArcSegment Size="160,160" RotationAngle="0" IsLargeArc="True" SweepDirection="CounterClockwise" Point="408,254" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="87,254">
+        <ArcSegment Size="160,160" RotationAngle="0" IsLargeArc="True" SweepDirection="Clockwise" Point="408,254" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="107,254">
+        <ArcSegment Size="88,89" RotationAngle="87" IsLargeArc="True" SweepDirection="Clockwise" Point="387,254" />
+        <ArcSegment Size="75,80" RotationAngle="-89" IsLargeArc="True" SweepDirection="Clockwise" Point="107,254" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="310,90">
+        <ArcSegment Size="34,33" RotationAngle="130" IsLargeArc="True" SweepDirection="Clockwise" Point="400,170" />
+        <LineSegment Point="310,90" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="180,90">
+        <ArcSegment Size="34,34" RotationAngle="48" IsLargeArc="True" SweepDirection="CounterClockwise" Point="89,170" />
+        <LineSegment Point="180,90" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="90,410">
+        <ArcSegment Size="29,29" RotationAngle="147" IsLargeArc="True" SweepDirection="CounterClockwise" Point="100,420" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="410,410">
+        <ArcSegment Size="29,29" RotationAngle="29" IsLargeArc="True" SweepDirection="Clockwise" Point="400,420" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="240,230">
+        <LineSegment Point="240,140" />
+        <LineSegment Point="230,140" />
+        <LineSegment Point="245,120" />
+        <LineSegment Point="260,140" />
+        <LineSegment Point="250,140" />
+        <LineSegment Point="250,230" />
+        <LineSegment Point="240,230" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="233,244">
+        <ArcSegment Size="10,12" RotationAngle="0" IsLargeArc="True" SweepDirection="CounterClockwise" Point="258,244" />
+      </PathFigure>
+      <PathFigure IsClosed="False" IsFilled="True" StartPoint="233,244">
+        <ArcSegment Size="10,12" RotationAngle="0" IsLargeArc="True" SweepDirection="Clockwise" Point="258,244" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="260,250">
+        <LineSegment Point="308,293" />
+        <LineSegment Point="315,285" />
+        <LineSegment Point="320,310" />
+        <LineSegment Point="295,308" />
+        <LineSegment Point="301,300" />
+        <LineSegment Point="252,257" />
+        <LineSegment Point="260,250" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="110,345">
+        <LineSegment Point="135,375" />
+        <LineSegment Point="100,420" />
+        <LineSegment Point="90,410" />
+        <LineSegment Point="110,345" />
+      </PathFigure>
+      <PathFigure IsClosed="True" IsFilled="True" StartPoint="356.25,377.5">
+        <LineSegment Point="381.25,350" />
+        <LineSegment Point="410,410" />
+        <LineSegment Point="400,420" />
+        <LineSegment Point="356.25,377.5" />
+      </PathFigure>
     </PathGeometry>
   </GeometryGroup>
 </ps:SimpleGeometryShape>
