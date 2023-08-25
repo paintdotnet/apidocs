@@ -84,7 +84,7 @@
 <li><a href="https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/">ShapeMaker plugin by The Dwarf Horde</a></li>
 </ul>
 <h2 id="differences-from-wpf-geometry">Differences from WPF Geometry</h2>
-<p>While the Custom Shapes object model is essentially identical to WPF's Geometry object model, there are a few differences:</p>
+<p>The Geometry object model used for Custom Shapes is identical to WPF's Geometry object model, except for a few differences:</p>
 <p>Added:</p>
 <ul>
 <li><a class="xref" href="api/PaintDotNet.UI.Media.PolyCurveSegment.html">PolyCurveSegment</a>
@@ -126,19 +126,21 @@
 <h2 id="examples">Examples</h2>
 <p>There are two primary ways of expressing a custom shape. The first is with <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a>, and the other is with the Geometry object model.</p>
 <h3 id="path-markup-syntax-example">Path Markup syntax example</h3>
-<p>This is an example of a coffee mug shape defined using <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a>. This is part of <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
-<pre><code class="lang-xml">&lt;ps:SimpleGeometryShape xmlns=&quot;clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework&quot;
-                        xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;                 
-                        DisplayName=&quot;Mug&quot;
-                        Geometry=&quot;M 68,106 A 6.74,23.82,90,1,1,150.5,106 L 150.5,126 A 20.51,15.15,149.74,1,1,150.5,178.5 L 150.5,193.5 A 6.73,23.81,-90,1,1,68,193.5 L 68,106 M 73,106 A 4.03,20.96,89.29,1,1,145,105 A 6.8,24.52,-91.12,1,1,73,106 M 150.5,133.5 A 22.12,15.15,150.46,1,1,150.5,171 L 150.5,133.5 M 109,10.5 C 114.86,15.45,120,20.5,127,33,128.5,42.5,127.5,43,117.5,51,105.5,59.5,124.66,76.88,124,83.5,117,53.5,132,55.5,140.5,46,147.5,28,119.5,15,109,10.5 M 78,7 C 83.86,11.95,89,17,96,29.5,97.5,39,96.5,39.5,86.5,47.5,74.5,56,93.66,73.38,93,80,86,50,101,52,109.5,42.5,116.5,24.5,88.5,11.5,78,7
-&quot;/&gt;
+<p>This is an example of a coffee mug shape defined using <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax">Path Markup syntax</a>, which is compatible with <a href="https://www.w3.org/TR/SVG2/paths.html">SVG path data syntax</a>.</p>
+<p>This example is from <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
+<pre><code class="lang-xml">&lt;ps:SimpleGeometryShape 
+  xmlns=&quot;clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework&quot;
+  xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;                 
+  DisplayName=&quot;Mug&quot;
+  Geometry=&quot;M 68,106 A 6.74,23.82,90,1,1,150.5,106 L 150.5,126 A 20.51,15.15,149.74,1,1,150.5,178.5 L 150.5,193.5 A 6.73,23.81,-90,1,1,68,193.5 L 68,106 M 73,106 A 4.03,20.96,89.29,1,1,145,105 A 6.8,24.52,-91.12,1,1,73,106 M 150.5,133.5 A 22.12,15.15,150.46,1,1,150.5,171 L 150.5,133.5 M 109,10.5 C 114.86,15.45,120,20.5,127,33,128.5,42.5,127.5,43,117.5,51,105.5,59.5,124.66,76.88,124,83.5,117,53.5,132,55.5,140.5,46,147.5,28,119.5,15,109,10.5 M 78,7 C 83.86,11.95,89,17,96,29.5,97.5,39,96.5,39.5,86.5,47.5,74.5,56,93.66,73.38,93,80,86,50,101,52,109.5,42.5,116.5,24.5,88.5,11.5,78,7&quot; /&gt;
 </code></pre>
 <p><img src="images/CustomShape.CoffeeMug.png" alt="Coffee Mug"></p>
 <h3 id="geometry-object-model-example">Geometry object model example</h3>
-<p>This is an example of a clock shape defined using the Geometry object model. This is part of <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
+<p>This is an example of a clock shape defined using the Geometry object model.</p>
+<p>This example is from <a href="https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/">TechnoRobbo's shapes pack</a>.</p>
 <pre><code class="lang-xml">&lt;ps:SimpleGeometryShape xmlns=&quot;clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework&quot;
-    xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;
-    DisplayName=&quot;Clock&quot;&gt;
+                        xmlns:ps=&quot;clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework&quot;
+                        DisplayName=&quot;Clock&quot;&gt;
   &lt;GeometryGroup FillRule=&quot;EvenOdd&quot;&gt;
     &lt;PathGeometry&gt;
       &lt;PathFigure IsClosed=&quot;False&quot; IsFilled=&quot;True&quot; StartPoint=&quot;87,254&quot;&gt;

@@ -15,7 +15,7 @@ Links:
 - [ShapeMaker plugin by The Dwarf Horde](https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/)
 
 ## Differences from WPF Geometry
-While the Custom Shapes object model is essentially identical to WPF's Geometry object model, there are a few differences:
+The Geometry object model used for Custom Shapes is identical to WPF's Geometry object model, except for a few differences:
 
 Added:
 - [PolyCurveSegment](xref:PaintDotNet.UI.Media.PolyCurveSegment)
@@ -42,25 +42,29 @@ Removed:
 There are two primary ways of expressing a custom shape. The first is with [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax), and the other is with the Geometry object model.
 
 ### Path Markup syntax example
-This is an example of a coffee mug shape defined using [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax). This is part of [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
+This is an example of a coffee mug shape defined using [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax), which is compatible with [SVG path data syntax](https://www.w3.org/TR/SVG2/paths.html). 
+
+This example is from [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
 
 ```xml
-<ps:SimpleGeometryShape xmlns="clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework"
-                        xmlns:ps="clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework"                 
-                        DisplayName="Mug"
-                        Geometry="M 68,106 A 6.74,23.82,90,1,1,150.5,106 L 150.5,126 A 20.51,15.15,149.74,1,1,150.5,178.5 L 150.5,193.5 A 6.73,23.81,-90,1,1,68,193.5 L 68,106 M 73,106 A 4.03,20.96,89.29,1,1,145,105 A 6.8,24.52,-91.12,1,1,73,106 M 150.5,133.5 A 22.12,15.15,150.46,1,1,150.5,171 L 150.5,133.5 M 109,10.5 C 114.86,15.45,120,20.5,127,33,128.5,42.5,127.5,43,117.5,51,105.5,59.5,124.66,76.88,124,83.5,117,53.5,132,55.5,140.5,46,147.5,28,119.5,15,109,10.5 M 78,7 C 83.86,11.95,89,17,96,29.5,97.5,39,96.5,39.5,86.5,47.5,74.5,56,93.66,73.38,93,80,86,50,101,52,109.5,42.5,116.5,24.5,88.5,11.5,78,7
-"/>
+<ps:SimpleGeometryShape 
+  xmlns="clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework"
+  xmlns:ps="clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework"                 
+  DisplayName="Mug"
+  Geometry="M 68,106 A 6.74,23.82,90,1,1,150.5,106 L 150.5,126 A 20.51,15.15,149.74,1,1,150.5,178.5 L 150.5,193.5 A 6.73,23.81,-90,1,1,68,193.5 L 68,106 M 73,106 A 4.03,20.96,89.29,1,1,145,105 A 6.8,24.52,-91.12,1,1,73,106 M 150.5,133.5 A 22.12,15.15,150.46,1,1,150.5,171 L 150.5,133.5 M 109,10.5 C 114.86,15.45,120,20.5,127,33,128.5,42.5,127.5,43,117.5,51,105.5,59.5,124.66,76.88,124,83.5,117,53.5,132,55.5,140.5,46,147.5,28,119.5,15,109,10.5 M 78,7 C 83.86,11.95,89,17,96,29.5,97.5,39,96.5,39.5,86.5,47.5,74.5,56,93.66,73.38,93,80,86,50,101,52,109.5,42.5,116.5,24.5,88.5,11.5,78,7" />
 ```
 
 ![Coffee Mug](images/CustomShape.CoffeeMug.png)
 
 ### Geometry object model example
-This is an example of a clock shape defined using the Geometry object model. This is part of [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
+This is an example of a clock shape defined using the Geometry object model. 
+
+This example is from [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
 
 ```xml
 <ps:SimpleGeometryShape xmlns="clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework"
-    xmlns:ps="clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework"
-    DisplayName="Clock">
+                        xmlns:ps="clr-namespace:PaintDotNet.Shapes;assembly=PaintDotNet.Framework"
+                        DisplayName="Clock">
   <GeometryGroup FillRule="EvenOdd">
     <PathGeometry>
       <PathFigure IsClosed="False" IsFilled="True" StartPoint="87,254">
