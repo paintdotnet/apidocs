@@ -93,7 +93,7 @@ for rendering with Direct2D.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PdnZoomBlurEffect : DynamicImage, ISerializable, IDeviceImage, IDirect2DResource, IFactoryProperty, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PdnZoomBlurEffect : DynamicEffect, ISerializable, IDeviceImage, IDirect2DResource, IFactoryProperty, IObjectRef, IIsDisposed, IDisposable</code></pre>
   </div>
 
 
@@ -105,6 +105,7 @@ for rendering with Direct2D.</p>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a></div>
       <div><span class="xref">PdnZoomBlurEffect</span></div>
     </dd>
   </dl>
@@ -197,6 +198,16 @@ for rendering with Direct2D.</p>
 
 
 
+  <h2 id="PaintDotNet_Effects_Gpu_PdnZoomBlurEffect_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The difference between a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> and a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a> is
+intention, not functionality. <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a>s are intended as public APIs
+that can be gathered using reflection and displayed in a UI (such as a node editor). If
+a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> is not a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a>, then it is essentially
+private infrastructure and should not be surfaced as a user editable object.<br><br>
+The effect properties are intended to be presented to the user and should not be relied
+upon to have any specific text or pattern. They may be changed at any time, and may be
+provided in the user's chosen language.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>

@@ -224,7 +224,9 @@ equally when deciding when to finally execute the inner Dispose() method.</p>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">TryCreateRef(Type, out IObjectRef?)</a></dt>
     <dd><p>Checks to see if the given interface is supported by this object, and if so creates that wrapper
-and returns it to you. This effectively adds 1 to the reference count of the underlying object.</p>
+and provides it to you. This adds 1 to the reference count of the underlying object. To decrement
+the reference count, dispose the wrapper provided by this method or permit it to be garbage
+collected. When the reference count reaches 0, the object will be disposed.</p>
 </dd>
   </dl>
 

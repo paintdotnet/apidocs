@@ -115,7 +115,9 @@
 </h3>
 
 <div class="markdown level1 summary"><p>Checks to see if the given interface is supported by this object, and if so creates that wrapper
-and returns it to you. This effectively adds 1 to the reference count of the underlying object.</p>
+and provides it to you. This adds 1 to the reference count of the underlying object. To decrement
+the reference count, dispose the wrapper provided by this method or permit it to be garbage
+collected. When the reference count reaches 0, the object will be disposed.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
@@ -126,7 +128,7 @@ and returns it to you. This effectively adds 1 to the reference count of the und
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>interfaceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd><p>The interface Type to query for. This must derive from IObjectRef, and not be IObjectRefProxy.</p>
+  <dd><p>The interface <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> to query for. This must derive from <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a>.</p>
 </dd>
   <dt><code>newObjectRef</code> <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></dt>
   <dd><p>On successful return, this holds the new object ref.</p>
@@ -136,11 +138,13 @@ and returns it to you. This effectively adds 1 to the reference count of the und
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-  <dd><p>true if the interface is supported, in which case newObjectRef will be the new ref. It will be
-castable to interfaceType, and should be disposed (by calling IDisposable.Dispose()) when the
-caller is finished using it. Not disposing it is also safe, as the GC will handle it.
-false if the interface is not supported, in which case newObjectRef will be null.
-null if the existing ref is disposed.
+  <dd><p><b>true</b> if the interface is supported, in which case <code class="paramref">newObjectRef</code> will be
+the new ref. It will be castable to <code class="paramref">interfaceType</code>, and should be disposed
+(by calling <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>) when the caller is finished using it. Not disposing
+it is also safe, as the GC will handle it, but performance may be impacted.<br>
+<b>false</b> if the interface is not supported, in which case <code class="paramref">newObjectRef</code> will
+be null.<br>
+<b>null</b> if the existing ref is disposed.<br>
 It is always safe to call this method.</p>
 </dd>
 </dl>
@@ -152,7 +156,7 @@ It is always safe to call this method.</p>
 
 
 <h4 class="section" id="PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The wrapper that is returned refers to the same underlying object (COM or managed. This method
+<div class="markdown level1 remarks"><p>The wrapper that is returned refers to the same underlying object (COM or managed). This method
 is provided so that you can scope or protect references. This method must always return a new
 object; reference counted managed implementations are not allowed.</p>
 </div>
