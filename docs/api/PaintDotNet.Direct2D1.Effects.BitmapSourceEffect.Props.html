@@ -181,13 +181,14 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd><p>The alpha mode of the output. The default value is BitmapSourceAlphaMode.Premultiplied.</p>
+    <dd><p>The alpha mode of the output.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.BitmapSourceAlphaMode.html#PaintDotNet_Direct2D1_BitmapSourceAlphaMode_Premultiplied">Premultiplied</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.BitmapSource.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_BitmapSource">BitmapSource</a></dt>
     <dd><p>The <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> containing the image data to be loaded.<br>
-The defalut value is null.</p>
+The defalut value is <code>null</code>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -204,23 +205,23 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.EnableDpiCorrection.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_EnableDpiCorrection">EnableDpiCorrection</a></dt>
     <dd><p>If you set this to true, the effect will scale the input image to convert the DPI reported by
-IWICBitmapSource to the DPI of the device context. The effect uses the interpolation mode you set with
-the InterpolationMode property. If you set this to false, the effect uses a DPI of 96.0 for the output
-image.<br>
-The default value is false.</p>
+<a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> to the DPI of the device context. The effect uses the interpolation mode
+you set with the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.InterpolationMode.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_InterpolationMode">InterpolationMode</a> property. If you set this to false, the effect uses
+a DPI of 96.0 for the output image.<br>
+The default value is <code>false</code>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.InterpolationMode.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_InterpolationMode">InterpolationMode</a></dt>
     <dd><p>The interpolation mode used to scale the image. If the mode disables the mipmap, then BitmapSourceEffect
 will cache the image at the resolution determined by the Scale and EnableDpiCorrection properties.<br>
-The default value is BitmapSourceInterpolationMode.Linear.</p>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.BitmapSourceInterpolationMode.html#PaintDotNet_Direct2D1_BitmapSourceInterpolationMode_Linear">Linear</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.Props.Orientation.html#PaintDotNet_Direct2D1_Effects_BitmapSourceEffect_Props_Orientation">Orientation</a></dt>
     <dd><p>A flip and/or rotation operation to be performed on the image.<br>
-The default value is BitmapSourceOrientation.Default.</p>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.BitmapSourceOrientation.html#PaintDotNet_Direct2D1_BitmapSourceOrientation_Default">Default</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -228,7 +229,7 @@ The default value is BitmapSourceOrientation.Default.</p>
     <dd><p>The scale amount in the X and Y direction. The effect multiplies the width by the X value and the height
 by the Y value. This property is a Vector2Float defined as: (X scale, Y scale). The scale amounts are
 float, unitless, and must be positive or 0.<br>
-The default value is { 1.0f, 1.0f }.</p>
+The default value is <code>{ 1.0f, 1.0f }</code>.</p>
 </dd>
   </dl>
 

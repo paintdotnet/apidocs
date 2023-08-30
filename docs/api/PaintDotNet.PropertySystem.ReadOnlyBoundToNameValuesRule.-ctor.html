@@ -109,8 +109,8 @@
 
 <a id="PaintDotNet_PropertySystem_ReadOnlyBoundToNameValuesRule__ctor_" data-uid="PaintDotNet.PropertySystem.ReadOnlyBoundToNameValuesRule.#ctor*"></a>
 
-<h3 id="PaintDotNet_PropertySystem_ReadOnlyBoundToNameValuesRule__ctor_System_Object_System_Boolean_PaintDotNet_TupleStruct_System_Object_System_Object____" data-uid="PaintDotNet.PropertySystem.ReadOnlyBoundToNameValuesRule.#ctor(System.Object,System.Boolean,PaintDotNet.TupleStruct{System.Object,System.Object}[])">
-  ReadOnlyBoundToNameValuesRule(object, bool, params TupleStruct&lt;object, object&gt;[])
+<h3 id="PaintDotNet_PropertySystem_ReadOnlyBoundToNameValuesRule__ctor_System_Object_System_Boolean_System_ValueTuple_System_Object_System_Object____" data-uid="PaintDotNet.PropertySystem.ReadOnlyBoundToNameValuesRule.#ctor(System.Object,System.Boolean,System.ValueTuple{System.Object,System.Object}[])">
+  ReadOnlyBoundToNameValuesRule(object, bool, params (object PropertyName, object? Value)[])
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ReadOnlyBoundToNameValuesRule(object targetPropertyName, bool inverse, params TupleStruct&lt;object, object&gt;[] sourcePropertyNameValuePairs)</code></pre>
+  <pre><code class="lang-csharp hljs">public ReadOnlyBoundToNameValuesRule(object targetPropertyName, bool inverse, params (object PropertyName, object? Value)[] sourcePropertyNameValuePairs)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -127,7 +127,42 @@
   <dd></dd>
   <dt><code>inverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
   <dd></dd>
-  <dt><code>sourcePropertyNameValuePairs</code> <a class="xref" href="PaintDotNet.TupleStruct-2.html">TupleStruct</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;[]</dt>
+  <dt><code>sourcePropertyNameValuePairs</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.object,system.object-.propertyname">PropertyName</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.object,system.object-.value">Value</a>)[]</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_PropertySystem_ReadOnlyBoundToNameValuesRule__ctor_" data-uid="PaintDotNet.PropertySystem.ReadOnlyBoundToNameValuesRule.#ctor*"></a>
+
+<h3 id="PaintDotNet_PropertySystem_ReadOnlyBoundToNameValuesRule__ctor_System_Object_System_Boolean_System_Collections_Generic_IEnumerable_System_ValueTuple_System_Object_System_Object___" data-uid="PaintDotNet.PropertySystem.ReadOnlyBoundToNameValuesRule.#ctor(System.Object,System.Boolean,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Object,System.Object}})">
+  ReadOnlyBoundToNameValuesRule(object, bool, IEnumerable&lt;(object PropertyName, object? Value)&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ReadOnlyBoundToNameValuesRule(object targetPropertyName, bool inverse, IEnumerable&lt;(object PropertyName, object? Value)&gt; sourcePropertyNameValuePairs)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>targetPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+  <dd></dd>
+  <dt><code>inverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd></dd>
+  <dt><code>sourcePropertyNameValuePairs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.object,system.object-.propertyname">PropertyName</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.object,system.object-.value">Value</a>)&gt;</dt>
   <dd></dd>
 </dl>
 
