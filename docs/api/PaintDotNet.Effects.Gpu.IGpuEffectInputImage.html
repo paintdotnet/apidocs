@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGpuEffectInputImage : IGpuEffectImage, IDeviceImage, IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGpuEffectInputImage : IGpuEffectImage, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceImageMetadata, IObjectRef, IIsDisposed, IDisposable</code></pre>
   </div>
 
 
@@ -104,10 +104,13 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectImage.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectImage_ColorContext">IGpuEffectImage.ColorContext</a>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
     </div>
     <div>
-      <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectImage.AlphaMode.html#PaintDotNet_Effects_Gpu_IGpuEffectImage_AlphaMode">IGpuEffectImage.AlphaMode</a>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_ColorContext">IDeviceImageMetadata.ColorContext</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.AlphaMode.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_AlphaMode">IDeviceImageMetadata.AlphaMode</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
@@ -117,9 +120,6 @@
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
     </div>
   </dd></dl>
 

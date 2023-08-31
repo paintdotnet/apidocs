@@ -109,8 +109,8 @@
 
 <a id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit*"></a>
 
-<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_PaintDotNet_Imaging_ColorBgra64__PaintDotNet_Imaging_ColorBgra32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(PaintDotNet.Imaging.ColorBgra64)~PaintDotNet.Imaging.ColorBgra32">
-  explicit operator ColorBgra32(ColorBgra64)
+<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_System_UInt32__PaintDotNet_Imaging_ColorBgra32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(System.UInt32)~PaintDotNet.Imaging.ColorBgra32">
+  explicit operator ColorBgra32(uint)
   
 </h3>
 
@@ -118,12 +118,12 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static explicit operator ColorBgra32(ColorBgra64 color)</code></pre>
+  <pre><code class="lang-csharp hljs">public static explicit operator ColorBgra32(uint bgra)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorBgra64.html">ColorBgra64</a></dt>
+  <dt><code>bgra</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
   <dd></dd>
 </dl>
 
@@ -145,8 +145,8 @@
 
 <a id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit*"></a>
 
-<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_PaintDotNet_Imaging_ColorRgba32__PaintDotNet_Imaging_ColorBgra32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(PaintDotNet.Imaging.ColorRgba32)~PaintDotNet.Imaging.ColorBgra32">
-  explicit operator ColorBgra32(ColorRgba32)
+<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_PaintDotNet_Imaging_ColorBgra32__System_UInt32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(PaintDotNet.Imaging.ColorBgra32)~System.UInt32">
+  explicit operator uint(ColorBgra32)
   
 </h3>
 
@@ -154,12 +154,84 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static explicit operator ColorBgra32(ColorRgba32 color)</code></pre>
+  <pre><code class="lang-csharp hljs">public static explicit operator uint(ColorBgra32 color)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorRgba32.html">ColorRgba32</a></dt>
+  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit*"></a>
+
+<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_PaintDotNet_Imaging_ColorBgr32__PaintDotNet_Imaging_ColorBgra32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(PaintDotNet.Imaging.ColorBgr32)~PaintDotNet.Imaging.ColorBgra32">
+  explicit operator ColorBgra32(ColorBgr32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static explicit operator ColorBgra32(ColorBgr32 color)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorBgr32.html">ColorBgr32</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit*"></a>
+
+<h3 id="PaintDotNet_Imaging_ColorBgra32_op_Explicit_PaintDotNet_Imaging_ColorRgb32__PaintDotNet_Imaging_ColorBgra32" data-uid="PaintDotNet.Imaging.ColorBgra32.op_Explicit(PaintDotNet.Imaging.ColorRgb32)~PaintDotNet.Imaging.ColorBgra32">
+  explicit operator ColorBgra32(ColorRgb32)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static explicit operator ColorBgra32(ColorRgb32 color)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ColorRgb32.html">ColorRgb32</a></dt>
   <dd></dd>
 </dl>
 

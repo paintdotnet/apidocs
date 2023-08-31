@@ -190,8 +190,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a></dt>
-      <dd><p>A dynamic effect is a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that provides metadata properties
-for DisplayName, Author, Category, and Description.</p>
+      <dd><p>A dynamic effect is a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that provides metadata properties for
+DisplayName, Author, Category, and Description.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -206,18 +206,7 @@ for DisplayName, Author, Category, and Description.</p>
       <dt><a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a></dt>
       <dd><p>A dynamic image is a <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> that is similar to an effect (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>),
 but typically uses rendering techniques that are either not possible or performance-prohibitive within
-the context of an effect implementation.<br>
-<br>
-<b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
-images that are also used in effect graphs may need to be wrapped in an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>
-when used outside of the dynamic image. You can use the <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceImage).html">CreateBufferedImage(IDeviceContext, IDeviceImage)</a>
-extension method for this. See that method for more details.<br>
-<br>
-<b>NOTE:</b> Dynamic images usually require the device context's target to be using a buffer precision of
-<a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float32">Float32</a> for correct rendering.<br>
-If your target is lower precision, use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> to
-create an off-screen buffer to render the dynamic image into, and then draw the compatible device context's
-bitmap to the final render target (device context).</p>
+the context of an effect implementation.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -908,6 +897,11 @@ This interface corresponds to the follow Direct2D interfaces:
       <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
       <dd><p>Represents a producer of pixels that can fill an arbitrary 2D plane.<br>
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1image">ID2D1Image</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.html">IDeviceImageMetadata</a></dt>
+      <dd><p>Provides metadata for an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">

@@ -87,8 +87,8 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A dynamic effect is a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that provides metadata properties
-for DisplayName, Author, Category, and Description.</p>
+  <div class="markdown summary"><p>A dynamic effect is a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that provides metadata properties for
+DisplayName, Author, Category, and Description.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -169,6 +169,9 @@ for DisplayName, Author, Category, and Description.</p>
       <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetPropertyInfos.html#PaintDotNet_Direct2D1_DynamicImage_GetPropertyInfos">DynamicImage.GetPropertyInfos()</a>
     </div>
     <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetPropertyInfo.html#PaintDotNet_Direct2D1_DynamicImage_GetPropertyInfo_System_String_">DynamicImage.GetPropertyInfo(string)</a>
+    </div>
+    <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.CreateProperties.html#PaintDotNet_Direct2D1_DynamicImage_CreateProperties">DynamicImage.CreateProperties()</a>
     </div>
     <div>
@@ -239,13 +242,23 @@ for DisplayName, Author, Category, and Description.</p>
   <h2 id="PaintDotNet_Direct2D1_DynamicEffect_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>The difference between a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> and a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a> is
 intention, not functionality. <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a>s are intended as public APIs
-that can be gathered using reflection and displayed in a UI (such as a node editor). If
-a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> is not a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a>, then it is essentially
-private infrastructure and should not be surfaced as a user editable object.<br>
+that can be gathered using reflection and displayed in a UI, such as a node/graph editor,
+alongside regular <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>s. If a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> is not a
+<a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a>, then it should not be considered an &quot;effect&quot; that should
+be surfaced in a UI that works with effects (such as a node/graph editor).<br>
 <br>
 The effect properties are intended to be presented to the user and should not be relied
 upon to have any specific text or pattern. They may be changed at any time, and may be
-provided in the user's chosen language.</p>
+localized (translated).<br>
+<br>
+<b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
+images that are also used in effect graphs may need to be wrapped in an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>
+when used outside of the dynamic image. You can use the <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceImage).html">CreateBufferedImage(IDeviceContext, IDeviceImage)</a>
+extension method for this. See that method for more details.<br><br><b>NOTE:</b> Dynamic images usually require the device context's target to be using a buffer precision of
+<a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float32">Float32</a> for correct rendering.<br>
+If your target is lower precision, use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> to
+create an off-screen buffer to render the dynamic image into, and then draw the compatible device context's
+bitmap to the final render target (device context).</p>
 </div>
 
 

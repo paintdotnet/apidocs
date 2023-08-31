@@ -87,13 +87,12 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This is the base interface for GPU images that are accessible within a GPU effect's
-<a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment.html">IGpuEffectEnvironment</a>.</p>
+  <div class="markdown summary"><p>This is the base interface for GPU images that are accessible from a GPU effect's environment (<a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.html">IGpuEffectEnvironment2</a>).</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGpuEffectImage : IDeviceImage, IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGpuEffectImage : IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceImageMetadata, IObjectRef, IIsDisposed, IDisposable</code></pre>
   </div>
 
 
@@ -106,6 +105,15 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_ColorContext">IDeviceImageMetadata.ColorContext</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.AlphaMode.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_AlphaMode">IDeviceImageMetadata.AlphaMode</a>
+    </div>
+    <div>
       <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
     </div>
     <div>
@@ -114,28 +122,11 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
     </div>
-    <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.Factory.html#PaintDotNet_Direct2D1_IFactoryProperty_Factory">IFactoryProperty.Factory</a>
-    </div>
   </dd></dl>
 
 
 
 
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectImage.AlphaMode.html#PaintDotNet_Effects_Gpu_IGpuEffectImage_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Gets the alpha mode of the image.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectImage.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectImage_ColorContext">ColorContext</a></dt>
-    <dd><p>Gets the color context information associated with the image, if any.</p>
-</dd>
-  </dl>
 
 
 
