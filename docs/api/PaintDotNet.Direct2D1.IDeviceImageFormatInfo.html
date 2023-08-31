@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method GetInputNames
+      <title>Interface IDeviceImageFormatInfo
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method GetInputNames
+      <meta name="title" content="Interface IDeviceImageFormatInfo
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,28 +73,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetInputNames*">
+        <article data-uid="PaintDotNet.Direct2D1.IDeviceImageFormatInfo">
 
 
 
-
-
-<h1 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetInputNames_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetInputNames*" class="text-break">
-  Method GetInputNames
+  <h1 id="PaintDotNet_Direct2D1_IDeviceImageFormatInfo" data-uid="PaintDotNet.Direct2D1.IDeviceImageFormatInfo" class="text-break">
+    Interface IDeviceImageFormatInfo
   
-</h1>
+  </h1>
 
-<div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides color and format metadata for an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>.</p>
 </div>
+  <div class="markdown conceptual"></div>
 
-<div class="markdown summary"></div>
-<div class="markdown conceptual"></div>
-
-
-
-
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeviceImageFormatInfo : IObjectRef, IIsDisposed, IDisposable</code></pre>
+  </div>
 
 
 
@@ -102,44 +101,37 @@
 
 
 
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
 
 
 
 
 
-<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetInputNames_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetInputNames*"></a>
+  <h2 class="section" id="properties">Properties
+</h2>
 
-<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetInputNames_PaintDotNet_Direct2D1_IDeviceEffectProperties_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetInputNames(PaintDotNet.Direct2D1.IDeviceEffectProperties)">
-  GetInputNames(IDeviceEffectProperties)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; GetInputNames(this IDeviceEffectProperties properties)</code></pre>
-</div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
-  <dd></dd>
-</dl>
-
-<h4 class="section">Returns</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-  <dd></dd>
-</dl>
-
-
-
-
-
-
-
-
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.AlphaMode.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_AlphaMode">AlphaMode</a></dt>
+    <dd><p>Gets the alpha mode of the image.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a></dt>
+    <dd><p>Gets the color context information associated with the image, if any.</p>
+</dd>
+  </dl>
 
 
 

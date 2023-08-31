@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IDeviceImageMetadata
+      <title>Method GetPropertyType
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDeviceImageMetadata
+      <meta name="title" content="Method GetPropertyType
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,27 +73,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Direct2D1.IDeviceImageMetadata">
+        <article data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetPropertyType*">
 
 
 
-  <h1 id="PaintDotNet_Direct2D1_IDeviceImageMetadata" data-uid="PaintDotNet.Direct2D1.IDeviceImageMetadata" class="text-break">
-    Interface IDeviceImageMetadata
+
+
+<h1 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetPropertyType_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetPropertyType*" class="text-break">
+  Method GetPropertyType
   
-  </h1>
+</h1>
 
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Provides metadata for an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>.</p>
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
 </div>
-  <div class="markdown conceptual"></div>
 
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDeviceImageMetadata : IObjectRef, IIsDisposed, IDisposable</code></pre>
-  </div>
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
 
 
 
@@ -101,37 +98,55 @@
 
 
 
-  <dl class="typelist derived">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
-    </div>
-  </dd></dl>
 
 
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
 
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.AlphaMode.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Gets the alpha mode of the image.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageMetadata.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageMetadata_ColorContext">ColorContext</a></dt>
-    <dd><p>Gets the color context information associated with the image, if any.</p>
-</dd>
-  </dl>
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetPropertyType_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetPropertyType*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetPropertyType__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetPropertyType``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0)">
+  GetPropertyType&lt;TIndex&gt;(IDeviceEffectProperties, TIndex)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static DeviceEffectPropertyType GetPropertyType&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : unmanaged</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
+  <dd></dd>
+  <dt><code>index</code> <span class="xref">TIndex</span></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectPropertyType.html">DeviceEffectPropertyType</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TIndex</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
 
 
 
