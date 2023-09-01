@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,15 +110,14 @@
 <a id="PaintDotNet_FileDialogFilterBuilder_SetAllTypesDescription_" data-uid="PaintDotNet.FileDialogFilterBuilder.SetAllTypesDescription*"></a>
 
 <h3 id="PaintDotNet_FileDialogFilterBuilder_SetAllTypesDescription_System_String_" data-uid="PaintDotNet.FileDialogFilterBuilder.SetAllTypesDescription(System.String)">
-  SetAllTypesDescription(string?)
+  SetAllTypesDescription(string)
   
 </h3>
 
 <div class="markdown level1 summary"><p>Sets the description for an entry that includes the extensions from all of the other entries.
 This is useful when working with a FileOpenDialog. This will typically be set to something like
 &quot;All file types&quot; or &quot;All image types&quot;. The entry is automatically created and is
-placed at the front/top of the generated filter text.<br>
-<br>
+placed at the front/top of the generated filter text.<br><br>
 Setting this to a non-null string will cause the entry to be generated.<br>
 Setting this to null or an empty string will omit the entry.<br>
 The default value is null.</p>
@@ -126,7 +125,7 @@ The default value is null.</p>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public FileDialogFilterBuilder SetAllTypesDescription(string? allTypesDescription)</code></pre>
+  <pre><code class="lang-csharp hljs">public FileDialogFilterBuilder SetAllTypesDescription(string allTypesDescription)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

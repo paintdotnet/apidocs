@@ -84,24 +84,17 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>The command sink is implemented by you for an application when you want to receive a playback of the commands
 recorded in a command list. A typical usage will be for transforming the command list into another format such
-as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br>
-<br>
+as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br><br>
 The command sink interface doesn't have any resource creation methods on it. The resources are still logically
 bound to the Direct2D device on which the command list was created and will be passed in to the command sink
-implementation.<br>
-<br>
+implementation.<br><br>
 This interface corresponds to the following Direct2D interfaces:
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -129,6 +122,28 @@ This interface corresponds to the following Direct2D interfaces:
     </div>
   </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.CreateRef(IObjectRef, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef&lt;TInterface&gt;(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.TryCreateRef(IObjectRef, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -166,7 +181,7 @@ derives from this interface.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGeometry.html#PaintDotNet_Direct2D1_ICommandSink_DrawGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawGeometry(IGeometry, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawGeometry.html#PaintDotNet_Direct2D1_ICommandSink_DrawGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawGeometry(IGeometry, IDeviceBrush, float, IStrokeStyle)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -182,15 +197,15 @@ derives from this interface.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawInk.html#PaintDotNet_Direct2D1_ICommandSink_DrawInk_PaintDotNet_Direct2D1_IDeviceInk_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceInkStyle_">DrawInk(IDeviceInk, IDeviceBrush, IDeviceInkStyle?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawInk.html#PaintDotNet_Direct2D1_ICommandSink_DrawInk_PaintDotNet_Direct2D1_IDeviceInk_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceInkStyle_">DrawInk(IDeviceInk, IDeviceBrush, IDeviceInkStyle)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawLine.html#PaintDotNet_Direct2D1_ICommandSink_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawLine.html#PaintDotNet_Direct2D1_ICommandSink_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawRectangle.html#PaintDotNet_Direct2D1_ICommandSink_DrawRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(RectFloat, IDeviceBrush, float, IStrokeStyle?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.DrawRectangle.html#PaintDotNet_Direct2D1_ICommandSink_DrawRectangle_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawRectangle(RectFloat, IDeviceBrush, float, IStrokeStyle)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -202,7 +217,7 @@ derives from this interface.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -230,7 +245,7 @@ derives from this interface.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PushLayer.html#PaintDotNet_Direct2D1_ICommandSink_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(in LayerParameters, IDeviceLayer?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.PushLayer.html#PaintDotNet_Direct2D1_ICommandSink_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer_">PushLayer(in LayerParameters, IDeviceLayer)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

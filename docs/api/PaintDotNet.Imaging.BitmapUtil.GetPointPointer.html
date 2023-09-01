@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TPixel* GetPointPointer&lt;TPixel&gt;(TPixel* pScan0, int stride, int x, int y) where TPixel : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static TPixel* GetPointPointer&lt;TPixel&gt;(TPixel* pScan0, int stride, int x, int y) where TPixel : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -165,7 +165,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TPixel* GetPointPointer&lt;TPixel&gt;(TPixel* pScan0, int stride, Point2Int32 pt) where TPixel : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static TPixel* GetPointPointer&lt;TPixel&gt;(TPixel* pScan0, int stride, Point2Int32 pt) where TPixel : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

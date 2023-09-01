@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -114,14 +114,12 @@
   
 </h3>
 
-<div class="markdown level1 summary"><p>Creates a 3D lookup table for mapping a 3-channel input to a 3-channel output. The table data must be provided in 4-channel format.<br>
-<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createlookuptable3d">ID2D1DeviceContext2::CreateLookupTable3D()</a><br>
-<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor_1/nf-d2d1effectauthor_1-id2d1effectcontext1-createlookuptable3d">ID2D1EffectContext1::CreateLookupTable3D()</a></p>
+<div class="markdown level1 summary"><p>Creates a 3D lookup table for mapping a 3-channel input to a 3-channel output. The table data must be provided in 4-channel format.<br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createlookuptable3d">ID2D1DeviceContext2::CreateLookupTable3D()</a><br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor_1/nf-d2d1effectauthor_1-id2d1effectcontext1-createlookuptable3d">ID2D1EffectContext1::CreateLookupTable3D()</a></p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ILookupTable3D CreateLookupTable3D&lt;T&gt;(this ILookupTable3DFactory factory, BufferPrecision precision, int extentX, int extentY, int extentZ, ReadOnlySpan&lt;T&gt; data) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static ILookupTable3D CreateLookupTable3D&lt;T&gt;(this ILookupTable3DFactory factory, BufferPrecision precision, int extentX, int extentY, int extentZ, ReadOnlySpan&lt;T&gt; data) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -166,8 +164,7 @@
 <h4 class="section" id="PaintDotNet_Direct2D1_LookupTable3DFactoryExtensions_CreateLookupTable3D__1_PaintDotNet_Direct2D1_ILookupTable3DFactory_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_System_ReadOnlySpan___0___remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>The maximum extent in any direction is 256, which means that a 256x256x256 table using 32-bits per component will consume 64MB.
 Because lookup uses linear interpolation, much smaller tables will usually give good results.<br>
-T may be any unmanaged type, but it is recommended to use a type that is appropriate for the given precision and to simplify working with it. For example:<br></p>
-<ul><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt8Normalized">UInt8Normalized</a> or <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt8NormalizedSrgb">UInt8NormalizedSrgb</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba32.html">ColorRgba32</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> with 4 times as many elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt16Normalized">UInt16Normalized</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> with 4 times as many elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float16">Float16</a>, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.half">Half</a> with each lookup table entry spanning 4 elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float32">Float32</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>, <a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a>, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector4">Vector4</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> with 4 times as many elements.</li></ul>
+T may be any unmanaged type, but it is recommended to use a type that is appropriate for the given precision and to simplify working with it. For example:<br><ul><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt8Normalized">UInt8Normalized</a> or <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt8NormalizedSrgb">UInt8NormalizedSrgb</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba32.html">ColorRgba32</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> with 4 times as many elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_UInt16Normalized">UInt16Normalized</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> with 4 times as many elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float16">Float16</a>, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.half">Half</a> with each lookup table entry spanning 4 elements.</li><li>For <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float32">Float32</a>, use <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>, <a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a>, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector4">Vector4</a>. You can also use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> with 4 times as many elements.</li></ul>
 The total number of elements when using a 4-component data type must be extentX * extentY * extentZ.<br>
 If using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.half">Half</a>, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, the number of elements must be 4 * extentX * extentY * extentZ.<br>
 The total byte size of the data buffer must be appropriate for the given precision and extents. The elements of type T are bitwise reinterpreted; they are neither converted nor cast.
@@ -188,7 +185,7 @@ The total byte size of the data buffer must be appropriate for the given precisi
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ILookupTable3D CreateLookupTable3D&lt;T&gt;(this ILookupTable3DFactory factory, BufferPrecision precision, int extentX, int extentY, int extentZ, T[] data) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static ILookupTable3D CreateLookupTable3D&lt;T&gt;(this ILookupTable3DFactory factory, BufferPrecision precision, int extentX, int extentY, int extentZ, T[] data) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

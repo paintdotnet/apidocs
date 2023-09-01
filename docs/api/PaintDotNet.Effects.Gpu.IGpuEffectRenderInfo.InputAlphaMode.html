@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -142,22 +142,19 @@
 right choice because Direct2D operates natively in premultiplied alpha space. Some advanced
 rendering scenarios may benefit from setting this to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectAlphaMode.html#PaintDotNet_Effects_Gpu_GpuEffectAlphaMode_Straight">Straight</a>,
 such as when it is important to preserve color values for transparent pixels, or if you are
-using a custom pixel shader that operates on straight alpha.<br>
-<br>
+using a custom pixel shader that operates on straight alpha.<br><br>
 Usually it is best to use the default value (Premultiplied), and to then use <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a>,
 <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a>, or <a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.html">ConvertAlphaEffect</a> to convert the alpha
 mode as required for each effect in the effect graph. This is important when different
 effects or pixel shaders expect different alpha modes. Many effects have an AlphaMode property
 which lets you specify the alpha mode for that effect's inputs and outputs. If an effect does
-not specify anything about its alpha mode, you can assume it uses premultiplied alpha.<br>
-<br>
+not specify anything about its alpha mode, you can assume it uses premultiplied alpha.<br><br>
 Paint.NET always uses straight alpha for storage, and Direct2D always uses premultiplied alpha
 for rendering, blending, and compositing. Some Direct2D effects can operate on straight alpha
 and will have documentation saying this, and/or they will have an AlphaMode property to configure
 this. Premultiplied alpha makes many calculations easier, especially for blending and compositing,
 but straight alpha is generally easier to reason about when doing other types of calculations
-(such as in a custom pixel shader).<br>
-<br>
+(such as in a custom pixel shader).<br><br>
 For more information on alpha formats and compositing, see: <a href="https://en.wikipedia.org/wiki/Alpha_compositing">Alpha compositing (Wikipedia)</a>.</p>
 </div>
 

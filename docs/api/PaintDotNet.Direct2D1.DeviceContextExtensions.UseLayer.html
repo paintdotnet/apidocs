@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceContextExtensions_UseLayer_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.UseLayer*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_UseLayer_PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_AntialiasMode_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Single_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_LayerOptions_PaintDotNet_Direct2D1_IDeviceLayer_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.UseLayer(PaintDotNet.Direct2D1.IDeviceContext,System.Nullable{PaintDotNet.Rendering.RectFloat}@,PaintDotNet.Direct2D1.IGeometry,PaintDotNet.Direct2D1.AntialiasMode,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@,System.Single,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.LayerOptions,PaintDotNet.Direct2D1.IDeviceLayer)">
-  UseLayer(IDeviceContext, in RectFloat?, IGeometry?, AntialiasMode, in Matrix3x2Float?, float, IDeviceBrush?, LayerOptions, IDeviceLayer?)
+  UseLayer(IDeviceContext, in RectFloat?, IGeometry, AntialiasMode, in Matrix3x2Float?, float, IDeviceBrush, LayerOptions, IDeviceLayer)
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static PushLayerScope UseLayer(this IDeviceContext deviceContext, in RectFloat? contentBounds = null, IGeometry? geometricMask = null, AntialiasMode maskAntialiasMode = AntialiasMode.PerPrimitive, in Matrix3x2Float? maskTransform = null, float opacity = 1, IDeviceBrush? opacityBrush = null, LayerOptions layerOptions = LayerOptions.None, IDeviceLayer? layer = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public static PushLayerScope UseLayer(this IDeviceContext deviceContext, in RectFloat? contentBounds = null, IGeometry geometricMask = null, AntialiasMode maskAntialiasMode = AntialiasMode.PerPrimitive, in Matrix3x2Float? maskTransform = null, float opacity = 1, IDeviceBrush opacityBrush = null, LayerOptions layerOptions = LayerOptions.None, IDeviceLayer layer = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

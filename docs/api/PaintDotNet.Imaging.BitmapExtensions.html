@@ -84,7 +84,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -140,6 +140,17 @@
   <h2 class="section" id="methods">Methods
 </h2>
 
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapExtensions.CreatePremultipliedAdapter.html#PaintDotNet_Imaging_BitmapExtensions_CreatePremultipliedAdapter_PaintDotNet_Imaging_IBitmap_PaintDotNet_Imaging_ColorBgra32__PaintDotNet_Imaging_PremultipliedAdapterOptions_">CreatePremultipliedAdapter(IBitmap&lt;ColorBgra32&gt;, PremultipliedAdapterOptions)</a></dt>
+    <dd><p>Creates an adapter that reinterprets a bitmap in a straight alpha pixel format over to a
+premultiplied alpha pixel format, such as from <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a> to <a class="xref" href="PaintDotNet.Imaging.ColorPbgra32.html">ColorPbgra32</a>.<br>
+The adapter can then be used for Direct2D rendering, such as with
+<a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>.<br>
+A copy is not made; the adapter references the same memory as the original bitmap.<br>
+Optionally supports conversion to premultiplied alpha on creation, and conversion back to
+straight alpha on disposal.</p>
+</dd>
+  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapExtensions.CreateWindow.html#PaintDotNet_Imaging_BitmapExtensions_CreateWindow_PaintDotNet_Imaging_IBitmap_PaintDotNet_Rendering_RectInt32_">CreateWindow(IBitmap, RectInt32)</a></dt>
     <dd></dd>

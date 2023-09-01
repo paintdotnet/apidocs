@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_IDeviceContext_GetSvgGlyphImage_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_IFontFace_System_Single_System_UInt16_System_Boolean_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Rendering_Matrix3x2Float__" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetSvgGlyphImage(PaintDotNet.Rendering.Point2Float,PaintDotNet.DirectWrite.IFontFace,System.Single,System.UInt16,System.Boolean,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.ISvgGlyphStyle,System.Int32,PaintDotNet.Rendering.Matrix3x2Float@)">
-  GetSvgGlyphImage(Point2Float, IFontFace, float, ushort, bool, in Matrix3x2Float?, IDeviceBrush?, ISvgGlyphStyle?, int, out Matrix3x2Float)
+  GetSvgGlyphImage(Point2Float, IFontFace, float, ushort, bool, in Matrix3x2Float?, IDeviceBrush, ISvgGlyphStyle, int, out Matrix3x2Float)
   
 </h3>
 
@@ -121,7 +121,7 @@ evicted from the color glyph cache.</p>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">ICommandList GetSvgGlyphImage(Point2Float glyphOrigin, IFontFace fontFace, float fontEmSize, ushort glyphIndex, bool isSideways, in Matrix3x2Float? worldTransform, IDeviceBrush? defaultFillBrush, ISvgGlyphStyle? svgGlyphStyle, int colorPaletteIndex, out Matrix3x2Float glyphTransform)</code></pre>
+  <pre><code class="lang-csharp hljs">ICommandList GetSvgGlyphImage(Point2Float glyphOrigin, IFontFace fontFace, float fontEmSize, ushort glyphIndex, bool isSideways, in Matrix3x2Float? worldTransform, IDeviceBrush defaultFillBrush, ISvgGlyphStyle svgGlyphStyle, int colorPaletteIndex, out Matrix3x2Float glyphTransform)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

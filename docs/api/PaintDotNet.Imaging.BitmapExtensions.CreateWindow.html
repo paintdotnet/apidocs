@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -156,7 +156,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; CreateWindow&lt;TPixel&gt;(this IBitmap&lt;TPixel&gt; bitmap, RectInt32 rect) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; CreateWindow&lt;TPixel&gt;(this IBitmap&lt;TPixel&gt; bitmap, RectInt32 rect) where TPixel : struct, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

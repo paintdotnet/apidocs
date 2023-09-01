@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Clipboard.html">Clipboard</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -186,7 +186,7 @@
 <a id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader_" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader*"></a>
 
 <h3 id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader__1_PaintDotNet_Clipboard_IClipboard_System_Collections_Generic_IEnumerable_PaintDotNet_Clipboard_IClipboardReader___0___" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader``1(PaintDotNet.Clipboard.IClipboard,System.Collections.Generic.IEnumerable{PaintDotNet.Clipboard.IClipboardReader{``0}})">
-  CreateCombinedReader&lt;T&gt;(IClipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt;)
+  CreateCombinedReader&lt;T&gt;(IClipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;&gt;)
   
 </h3>
 
@@ -194,7 +194,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt; readers) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;&gt; readers) where T : class</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -229,7 +229,7 @@
 <a id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader_" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader*"></a>
 
 <h3 id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader__1_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Clipboard_IClipboardReader___0____" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader``1(PaintDotNet.Clipboard.IClipboard,PaintDotNet.Clipboard.IClipboardReader{``0}[])">
-  CreateCombinedReader&lt;T&gt;(IClipboard, params IClipboardReader&lt;T&gt;?[])
+  CreateCombinedReader&lt;T&gt;(IClipboard, params IClipboardReader&lt;T&gt;[])
   
 </h3>
 
@@ -237,7 +237,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, params IClipboardReader&lt;T&gt;?[] readers) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, params IClipboardReader&lt;T&gt;[] readers) where T : class</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

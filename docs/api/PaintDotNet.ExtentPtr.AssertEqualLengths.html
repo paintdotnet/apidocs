@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -119,7 +119,7 @@
 
 <div class="codewrapper">
   <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void AssertEqualLengths&lt;T1, T2&gt;(ExtentPtr&lt;T1&gt; extent1, ExtentPtr&lt;T2&gt; extent2) where T1 : unmanaged where T2 : unmanaged</code></pre>
+public static void AssertEqualLengths&lt;T1, T2&gt;(ExtentPtr&lt;T1&gt; extent1, ExtentPtr&lt;T2&gt; extent2) where T1 : struct where T2 : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

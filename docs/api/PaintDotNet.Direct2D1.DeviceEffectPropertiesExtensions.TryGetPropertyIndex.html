@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method ToBitmap
+      <title>Method TryGetPropertyIndex
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method ToBitmap
+      <meta name="title" content="Method TryGetPropertyIndex
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,20 +73,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap*">
+        <article data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex*">
 
 
 
 
 
-<h1 id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap*" class="text-break">
-  Method ToBitmap
+<h1 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex*" class="text-break">
+  Method TryGetPropertyIndex
   
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -107,10 +107,10 @@
 
 
 
-<a id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap*"></a>
+<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap_PaintDotNet_Imaging_IBitmapSource_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap(PaintDotNet.Imaging.IBitmapSource)">
-  ToBitmap(IBitmapSource)
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex__1_PaintDotNet_Direct2D1_IDeviceEffectProperties_System_String___0__" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,System.String,``0@)">
+  TryGetPropertyIndex&lt;TIndex&gt;(IDeviceEffectProperties, string, out TIndex)
   
 </h3>
 
@@ -118,60 +118,28 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmap ToBitmap(this IBitmapSource source)</code></pre>
+  <pre><code class="lang-csharp hljs">public static bool TryGetPropertyIndex&lt;TIndex&gt;(this IDeviceEffectProperties properties, string name, out TIndex index) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
+  <dd></dd>
+  <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dd></dd>
+  <dt><code>index</code> <span class="xref">TIndex</span></dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a></dt>
-  <dd></dd>
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-<a id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap*"></a>
-
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap__1_PaintDotNet_Imaging_IBitmapSource___0__" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap``1(PaintDotNet.Imaging.IBitmapSource{``0})">
-  ToBitmap&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; ToBitmap&lt;TPixel&gt;(this IBitmapSource&lt;TPixel&gt; source) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
-</div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
-  <dd></dd>
-</dl>
-
-<h4 class="section">Returns</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmap-1.html">IBitmap</a>&lt;TPixel&gt;</dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
-  <dt><code>TPixel</code></dt>
+  <dt><code>TIndex</code></dt>
   <dd></dd>
 </dl>
 
@@ -184,10 +152,10 @@
 
 
 
-<a id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap*"></a>
+<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_ToBitmap__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Rendering_RectInt32_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.ToBitmap``1(PaintDotNet.Imaging.IBitmapSource{``0},PaintDotNet.Rendering.RectInt32)">
-  ToBitmap&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, RectInt32)
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex_PaintDotNet_Direct2D1_IDeviceEffectProperties_System_String_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex(PaintDotNet.Direct2D1.IDeviceEffectProperties,System.String)">
+  TryGetPropertyIndex(IDeviceEffectProperties, string)
   
 </h3>
 
@@ -195,26 +163,64 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; ToBitmap&lt;TPixel&gt;(this IBitmapSource&lt;TPixel&gt; source, RectInt32 rect) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static int? TryGetPropertyIndex(this IDeviceEffectProperties properties, string name)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
+  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
   <dd></dd>
-  <dt><code>rect</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
+  <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmap-1.html">IBitmap</a>&lt;TPixel&gt;</dt>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyIndex__1_PaintDotNet_Direct2D1_IDeviceEffectProperties_System_String_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyIndex``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,System.String)">
+  TryGetPropertyIndex&lt;TIndex&gt;(IDeviceEffectProperties, string)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TIndex? TryGetPropertyIndex&lt;TIndex&gt;(this IDeviceEffectProperties properties, string name) where TIndex : struct</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
+  <dd></dd>
+  <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt>TIndex?</dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
-  <dt><code>TPixel</code></dt>
+  <dt><code>TIndex</code></dt>
   <dd></dd>
 </dl>
 

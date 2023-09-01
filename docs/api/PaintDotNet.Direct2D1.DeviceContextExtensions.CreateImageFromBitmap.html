@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateImageFromBitmap
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateImageFromBitmap
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap*" class="text-break">
+  Method CreateImageFromBitmap
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_BitmapImageOptions_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Direct2D1.IDeviceColorContext,PaintDotNet.Direct2D1.BitmapImageOptions)">
+  CreateImageFromBitmap(IDeviceContext, IBitmapSource, IDeviceColorContext?, BitmapImageOptions)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an image that renders the given bitmap. This method supports bitmaps of arbitrary sizes and in
+many pixel formats, whereas CreateBitmap() is limited by the MaximumBitmapSize property and requires
+that the bitmap be in a pixel format natively supported by Direct2D (e.g. indexed or straight alpha pixel
+formats are not supported).<br></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IBitmapImage CreateImageFromBitmap(this IDeviceContext deviceContext, IBitmapSource bitmap, IDeviceColorContext? bitmapColorContext, BitmapImageOptions options = BitmapImageOptions.Default)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
+  <dd><p>The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> to use for creating resources.</p>
+</dd>
+  <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd><p>The <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> or <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> to create an <a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a> for.</p>
+</dd>
+  <dt><code>bitmapColorContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
+  <dd><p>The optionally specified color context information. This will be used when converting to the device context's
+color space. If null is specified then the default color context for the bitmap's pixel format will be used
+(e.g. sRGB for Bgra32, scRGB for Rgba128Float).</p>
+</dd>
+  <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html">BitmapImageOptions</a></dt>
+  <dd><p>The options for creating the image.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_BitmapImageOptions__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The bitmap may be cached or streamed depending on various factors, including the bitmap type (IBitmap or
+IBitmapSource), its size, the maximum bitmap size supported by the device context, the amount of available
+GPU memory, and whether hardware or software rendering is being used.<br><br><b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct
+rendering results.</b> If the bitmap is modified after the image is created, results are undefined.<br><br>
+The bitmap will be converted to a format that is suitable for rendering with Direct2D. For instance, if
+the bitmap is not in a premultiplied alpha format, it will be premultiplied unless the
+<a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. Indexed pixel formats are also
+supported. Alpha8 bitmaps will be converted to a mask where each pixel is colored white and using the
+source bitmap's alpha value.<br><br>
+The bitmap will be converted to the color space associated with the device context, if any. This ensures,
+for example, that sRGB bitmaps (which is most of them) can be drawn correctly when rendering to a device
+context that uses linear gamma. Note that it is not always possible to determine the color contexts to
+use for conversion. If that is the case, color space conversion will not be performed.<br><br>
+Premultiplication and conversions are either performed on the GPU, or while copying the bitmap to the GPU.
+The bitmap is not modified by this method.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_BitmapImageOptions_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Direct2D1.BitmapImageOptions)">
+  CreateImageFromBitmap(IDeviceContext, IBitmapSource, BitmapImageOptions)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an image that renders the given bitmap. This method supports bitmaps of arbitrary sizes and in
+many pixel formats, whereas CreateBitmap() is limited by the MaximumBitmapSize property and requires
+that the bitmap be in a pixel format natively supported by Direct2D (e.g. indexed or straight alpha pixel
+formats are not supported).<br></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IBitmapImage CreateImageFromBitmap(this IDeviceContext deviceContext, IBitmapSource bitmap, BitmapImageOptions options = BitmapImageOptions.Default)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
+  <dd><param name="deviceContext">The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> to use for creating resources.
+</dd>
+  <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd><pre><code>&lt;param name=&quot;bitmap&quot;&gt;
+</code></pre>
+<p>The <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> or <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> to create an <a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a> for.</p>
+
+</dd>
+  <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html">BitmapImageOptions</a></dt>
+  <dd><param name="options">The options for creating the image.
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_BitmapImageOptions__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The bitmap may be cached or streamed depending on various factors, including the bitmap type (IBitmap or
+IBitmapSource), its size, the maximum bitmap size supported by the device context, the amount of available
+GPU memory, and whether hardware or software rendering is being used.<br><br><b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct
+rendering results.</b> If the bitmap is modified after the image is created, results are undefined.<br><br>
+The bitmap will be converted to a format that is suitable for rendering with Direct2D. For instance, if
+the bitmap is not in a premultiplied alpha format, it will be premultiplied unless the
+<a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. Indexed pixel formats are also
+supported. Alpha8 bitmaps will be converted to a mask where each pixel is colored white and using the
+source bitmap's alpha value.<br><br>
+The bitmap will be converted to the color space associated with the device context, if any. This ensures,
+for example, that sRGB bitmaps (which is most of them) can be drawn correctly when rendering to a device
+context that uses linear gamma. Note that it is not always possible to determine the color contexts to
+use for conversion. If that is the case, color space conversion will not be performed.<br><br>
+Premultiplication and conversions are either performed on the GPU, or while copying the bitmap to the GPU.
+The bitmap is not modified by this method.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

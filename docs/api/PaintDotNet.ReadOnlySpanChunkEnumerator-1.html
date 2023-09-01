@@ -84,7 +84,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Affords the traversal of a large memory region (64-bit length) in terms of ReadOnlySpan.</p>
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ref struct ReadOnlySpanChunkEnumerator&lt;T&gt; where T : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public ref struct ReadOnlySpanChunkEnumerator&lt;T&gt; where T : struct</code></pre>
   </div>
 
 

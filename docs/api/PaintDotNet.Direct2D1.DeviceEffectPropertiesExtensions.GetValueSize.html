@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -109,6 +109,44 @@
 
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetValueSize_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetValueSize*"></a>
 
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetValueSize_PaintDotNet_Direct2D1_IDeviceEffectProperties_System_Int32_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetValueSize(PaintDotNet.Direct2D1.IDeviceEffectProperties,System.Int32)">
+  GetValueSize(IDeviceEffectProperties, int)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int GetValueSize(this IDeviceEffectProperties properties, int index)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>properties</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></dt>
+  <dd></dd>
+  <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetValueSize_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetValueSize*"></a>
+
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_GetValueSize__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.GetValueSize``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0)">
   GetValueSize&lt;TIndex&gt;(IDeviceEffectProperties, TIndex)
   
@@ -118,7 +156,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetValueSize&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static int GetValueSize&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

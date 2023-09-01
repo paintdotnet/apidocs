@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -188,7 +188,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, Span&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, Span&lt;byte&gt; data) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -230,7 +230,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, Memory&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, Memory&lt;byte&gt; data) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -272,7 +272,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, Span&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, Span&lt;byte&gt; data) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -312,7 +312,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, Memory&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, Memory&lt;byte&gt; data) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -352,7 +352,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static T GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -397,7 +397,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static T GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -440,7 +440,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type, out T value) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type, out T value) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -482,7 +482,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, out T value) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, out T value) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -522,7 +522,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, out T value) where TIndex : unmanaged where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, out T value) where TIndex : struct where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -566,7 +566,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, out T value) where TIndex : unmanaged where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void GetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, out T value) where TIndex : struct where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

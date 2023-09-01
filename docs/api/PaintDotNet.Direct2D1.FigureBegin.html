@@ -85,11 +85,10 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Indicates whether a specific <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.html">ISimplifiedGeometrySink</a> figure is filled or hollow.<br>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_figure_begin">D2D1_FIGURE_BEGIN</a></p>
+  <div class="markdown summary"><p>Indicates whether a specific <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.html">ISimplifiedGeometrySink</a> figure is filled or hollow.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_figure_begin">D2D1_FIGURE_BEGIN</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -109,14 +108,13 @@
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_FigureBegin_Filled"><code>Filled = 0</code></dt>
-    <dd><p>Indicates the figure will be filled by the FillGeometry (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a>
-or <a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a> method.</p>
+    <dd><p>Indicates the figure will be filled by the FillGeometry (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush)</a>
+or <a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush)</a> method.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_FigureBegin_Hollow"><code>Hollow = 1</code></dt>
-    <dd><p>Indicates the figure will not be filled by the FillGeometry (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a>
-or <a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a> method and will only consist of an outline.<br>
-Moreover, the bounds of a hollow figure are zero.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.FigureBegin.html#PaintDotNet_Direct2D1_FigureBegin_Hollow">Hollow</a> should be used for stroking, or for other geometry operations.</p>
+    <dd><p>Indicates the figure will not be filled by the FillGeometry (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush)</a>
+or <a class="xref" href="PaintDotNet.Direct2D1.ICommandSink.FillGeometry.html#PaintDotNet_Direct2D1_ICommandSink_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush)</a> method and will only consist of an outline.<br>
+Moreover, the bounds of a hollow figure are zero.<br><a class="xref" href="PaintDotNet.Direct2D1.FigureBegin.html#PaintDotNet_Direct2D1_FigureBegin_Hollow">Hollow</a> should be used for stroking, or for other geometry operations.</p>
 </dd>
   </dl>
 

@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Diagnostics.html">Diagnostics</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -156,7 +156,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T* IsNotNull&lt;T&gt;(T* value, string valueName = &quot;&quot;) where T : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static T* IsNotNull&lt;T&gt;(T* value, string valueName = &quot;&quot;) where T : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -191,7 +191,7 @@
 <a id="PaintDotNet_Diagnostics_Validate_IsNotNull_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull*"></a>
 
 <h3 id="PaintDotNet_Diagnostics_Validate_IsNotNull__1___0_System_String_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull``1(``0,System.String)">
-  IsNotNull&lt;T&gt;(T?, string)
+  IsNotNull&lt;T&gt;(T, string)
   
 </h3>
 
@@ -199,7 +199,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T? value, string valueName = &quot;&quot;) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T value, string valueName = &quot;&quot;) where T : class</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -234,7 +234,7 @@
 <a id="PaintDotNet_Diagnostics_Validate_IsNotNull_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull*"></a>
 
 <h3 id="PaintDotNet_Diagnostics_Validate_IsNotNull__1___0_System_String_System_Int32_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull``1(``0,System.String,System.Int32)">
-  IsNotNull&lt;T&gt;(T?, string, int)
+  IsNotNull&lt;T&gt;(T, string, int)
   
 </h3>
 
@@ -242,7 +242,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T? value, string valueNameFormat, int arg0) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T value, string valueNameFormat, int arg0) where T : class</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -279,7 +279,7 @@
 <a id="PaintDotNet_Diagnostics_Validate_IsNotNull_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull*"></a>
 
 <h3 id="PaintDotNet_Diagnostics_Validate_IsNotNull__1___0_System_String_System_Object_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull``1(``0,System.String,System.Object)">
-  IsNotNull&lt;T&gt;(T?, string, object)
+  IsNotNull&lt;T&gt;(T, string, object)
   
 </h3>
 
@@ -287,7 +287,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T? value, string valueNameFormat, object arg0)</code></pre>
+  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T value, string valueNameFormat, object arg0)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -324,7 +324,7 @@
 <a id="PaintDotNet_Diagnostics_Validate_IsNotNull_" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull*"></a>
 
 <h3 id="PaintDotNet_Diagnostics_Validate_IsNotNull__1___0_System_String_System_Object___" data-uid="PaintDotNet.Diagnostics.Validate.IsNotNull``1(``0,System.String,System.Object[])">
-  IsNotNull&lt;T&gt;(T?, string, params object[])
+  IsNotNull&lt;T&gt;(T, string, params object[])
   
 </h3>
 
@@ -332,7 +332,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T? value, string valueNameFormat, params object[] args)</code></pre>
+  <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(T value, string valueNameFormat, params object[] args)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

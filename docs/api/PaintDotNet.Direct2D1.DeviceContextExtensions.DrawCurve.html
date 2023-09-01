@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method EnsurePluginSupportInfoCached
+      <title>Method DrawCurve
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method EnsurePluginSupportInfoCached
+      <meta name="title" content="Method DrawCurve
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,20 +73,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached*">
+        <article data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawCurve*">
 
 
 
 
 
-<h1 id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached*" class="text-break">
-  Method EnsurePluginSupportInfoCached
+<h1 id="PaintDotNet_Direct2D1_DeviceContextExtensions_DrawCurve_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawCurve*" class="text-break">
+  Method DrawCurve
   
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -107,10 +107,10 @@
 
 
 
-<a id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached*"></a>
+<a id="PaintDotNet_Direct2D1_DeviceContextExtensions_DrawCurve_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawCurve*"></a>
 
-<h3 id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_System_Reflection_Assembly_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached(System.Reflection.Assembly)">
-  EnsurePluginSupportInfoCached(Assembly)
+<h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_DrawCurve_PaintDotNet_Direct2D1_IDeviceContext_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawCurve(PaintDotNet.Direct2D1.IDeviceContext,System.ReadOnlySpan{PaintDotNet.Rendering.Point2Float},PaintDotNet.Direct2D1.IDeviceBrush,System.Single,PaintDotNet.Direct2D1.IStrokeStyle)">
+  DrawCurve(IDeviceContext, ReadOnlySpan&lt;Point2Float&gt;, IDeviceBrush, float, IStrokeStyle?)
   
 </h3>
 
@@ -118,74 +118,20 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EnsurePluginSupportInfoCached(Assembly assembly)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void DrawCurve(this IDeviceContext deviceContext, ReadOnlySpan&lt;Point2Float&gt; points, IDeviceBrush brush, float strokeWidth = 1, IStrokeStyle? strokeStyle = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+  <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
   <dd></dd>
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-<a id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached*"></a>
-
-<h3 id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_System_Type_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached(System.Type)">
-  EnsurePluginSupportInfoCached(Type)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EnsurePluginSupportInfoCached(Type type)</code></pre>
-</div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+  <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a>&gt;</dt>
   <dd></dd>
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-<a id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached*"></a>
-
-<h3 id="PaintDotNet_PluginSupportInfo_EnsurePluginSupportInfoCached_System_Object_" data-uid="PaintDotNet.PluginSupportInfo.EnsurePluginSupportInfoCached(System.Object)">
-  EnsurePluginSupportInfoCached(object)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EnsurePluginSupportInfoCached(object theObject)</code></pre>
-</div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>theObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+  <dt><code>brush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
+  <dd></dd>
+  <dt><code>strokeWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd></dd>
+  <dt><code>strokeStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a></dt>
   <dd></dd>
 </dl>
 

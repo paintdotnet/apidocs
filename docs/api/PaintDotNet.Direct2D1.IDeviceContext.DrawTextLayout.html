@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -156,7 +156,7 @@ device context is put in an error state.</p>
 <a id="PaintDotNet_Direct2D1_IDeviceContext_DrawTextLayout_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawTextLayout*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawTextLayout_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_ITextLayout_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Direct2D1_DrawTextOptions_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawTextLayout(PaintDotNet.Rendering.Point2Float,PaintDotNet.DirectWrite.ITextLayout,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.ISvgGlyphStyle,System.Int32,PaintDotNet.Direct2D1.DrawTextOptions)">
-  DrawTextLayout(Point2Float, ITextLayout, IDeviceBrush?, ISvgGlyphStyle?, int, DrawTextOptions)
+  DrawTextLayout(Point2Float, ITextLayout, IDeviceBrush, ISvgGlyphStyle, int, DrawTextOptions)
   
 </h3>
 
@@ -166,7 +166,7 @@ DrawText when drawing the same layout repeatedly.</p>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void DrawTextLayout(Point2Float origin, ITextLayout textLayout, IDeviceBrush? defaultFillBrush, ISvgGlyphStyle? svgGlyphStyle, int colorPaletteIndex = 0, DrawTextOptions options = DrawTextOptions.EnableColorFont)</code></pre>
+  <pre><code class="lang-csharp hljs">void DrawTextLayout(Point2Float origin, ITextLayout textLayout, IDeviceBrush defaultFillBrush, ISvgGlyphStyle svgGlyphStyle, int colorPaletteIndex = 0, DrawTextOptions options = DrawTextOptions.EnableColorFont)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

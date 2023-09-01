@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_EventHandlerExtensions_Raise_" data-uid="PaintDotNet.EventHandlerExtensions.Raise*"></a>
 
 <h3 id="PaintDotNet_EventHandlerExtensions_Raise_System_EventHandler_System_Object_" data-uid="PaintDotNet.EventHandlerExtensions.Raise(System.EventHandler,System.Object)">
-  Raise(EventHandler?, object?)
+  Raise(EventHandler, object)
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Raise(this EventHandler? handler, object? sender)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Raise(this EventHandler handler, object sender)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -143,7 +143,7 @@
 <a id="PaintDotNet_EventHandlerExtensions_Raise_" data-uid="PaintDotNet.EventHandlerExtensions.Raise*"></a>
 
 <h3 id="PaintDotNet_EventHandlerExtensions_Raise_System_EventHandler_System_Object_System_EventArgs_" data-uid="PaintDotNet.EventHandlerExtensions.Raise(System.EventHandler,System.Object,System.EventArgs)">
-  Raise(EventHandler?, object?, EventArgs)
+  Raise(EventHandler, object, EventArgs)
   
 </h3>
 
@@ -151,7 +151,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Raise(this EventHandler? handler, object? sender, EventArgs e)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Raise(this EventHandler handler, object sender, EventArgs e)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -178,7 +178,7 @@
 <a id="PaintDotNet_EventHandlerExtensions_Raise_" data-uid="PaintDotNet.EventHandlerExtensions.Raise*"></a>
 
 <h3 id="PaintDotNet_EventHandlerExtensions_Raise__1_System_EventHandler___0__System_Object___0_" data-uid="PaintDotNet.EventHandlerExtensions.Raise``1(System.EventHandler{``0},System.Object,``0)">
-  Raise&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;?, object?, TEventArgs)
+  Raise&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;, object, TEventArgs)
   
 </h3>
 
@@ -186,7 +186,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Raise&lt;TEventArgs&gt;(this EventHandler&lt;TEventArgs&gt;? handler, object? sender, TEventArgs e)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Raise&lt;TEventArgs&gt;(this EventHandler&lt;TEventArgs&gt; handler, object sender, TEventArgs e)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

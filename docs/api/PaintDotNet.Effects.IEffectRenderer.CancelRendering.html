@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -118,7 +118,7 @@
 will either return early without completing rendering, or will throw an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a>.
 Calling this method does not guarantee that the effect will honor the cancellation
 request for threads that are currently rendering, but it will prevent new rendering calls
-from performing any work until the next token change (e.g. with <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.SetToken.html#PaintDotNet_Effects_IBitmapEffectRenderer_SetToken_PaintDotNet_Effects_EffectConfigToken_">SetToken(EffectConfigToken?)</a>).</p>
+from performing any work until the next token change (e.g. with <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.SetToken.html#PaintDotNet_Effects_IBitmapEffectRenderer_SetToken_PaintDotNet_Effects_EffectConfigToken_">SetToken(EffectConfigToken)</a>).</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method CreateFlipRotator
+      <title>Method CreateBeziersPathGeometry
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method CreateFlipRotator
+      <meta name="title" content="Method CreateBeziersPathGeometry
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,20 +73,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator*">
+        <article data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry*">
 
 
 
 
 
-<h1 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFlipRotator_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator*" class="text-break">
-  Method CreateFlipRotator
+<h1 id="PaintDotNet_Direct2D1_Direct2DFactoryExtensions_CreateBeziersPathGeometry_" data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry*" class="text-break">
+  Method CreateBeziersPathGeometry
   
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -107,10 +107,10 @@
 
 
 
-<a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFlipRotator_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator*"></a>
+<a id="PaintDotNet_Direct2D1_Direct2DFactoryExtensions_CreateBeziersPathGeometry_" data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFlipRotator_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapTransformOptions_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.BitmapTransformOptions)">
-  CreateFlipRotator(IBitmapSource, BitmapTransformOptions)
+<h3 id="PaintDotNet_Direct2D1_Direct2DFactoryExtensions_CreateBeziersPathGeometry_PaintDotNet_Direct2D1_IDirect2DFactory_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__PaintDotNet_Direct2D1_FillMode_" data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry(PaintDotNet.Direct2D1.IDirect2DFactory,System.ReadOnlySpan{PaintDotNet.Rendering.Point2Float},PaintDotNet.Direct2D1.FillMode)">
+  CreateBeziersPathGeometry(IDirect2DFactory, ReadOnlySpan&lt;Point2Float&gt;, FillMode)
   
 </h3>
 
@@ -118,20 +118,22 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapSource CreateFlipRotator(this IBitmapSource source, BitmapTransformOptions options)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IPathGeometry CreateBeziersPathGeometry(this IDirect2DFactory factory, ReadOnlySpan&lt;Point2Float&gt; points, FillMode fillMode = FillMode.Alternate)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dt><code>factory</code> <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.html">IDirect2DFactory</a></dt>
   <dd></dd>
-  <dt><code>options</code> <a class="xref" href="PaintDotNet.Imaging.BitmapTransformOptions.html">BitmapTransformOptions</a></dt>
+  <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>fillMode</code> <a class="xref" href="PaintDotNet.Direct2D1.FillMode.html">FillMode</a></dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.html">IPathGeometry</a></dt>
   <dd></dd>
 </dl>
 
@@ -145,10 +147,10 @@
 
 
 
-<a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFlipRotator_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator*"></a>
+<a id="PaintDotNet_Direct2D1_Direct2DFactoryExtensions_CreateBeziersPathGeometry_" data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFlipRotator__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Imaging_BitmapTransformOptions_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFlipRotator``1(PaintDotNet.Imaging.IBitmapSource{``0},PaintDotNet.Imaging.BitmapTransformOptions)">
-  CreateFlipRotator&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, BitmapTransformOptions)
+<h3 id="PaintDotNet_Direct2D1_Direct2DFactoryExtensions_CreateBeziersPathGeometry_PaintDotNet_Direct2D1_IDirect2DFactory_PaintDotNet_Rendering_Point2Float_System_ReadOnlySpan_PaintDotNet_Direct2D1_BezierSegment__PaintDotNet_Direct2D1_FillMode_" data-uid="PaintDotNet.Direct2D1.Direct2DFactoryExtensions.CreateBeziersPathGeometry(PaintDotNet.Direct2D1.IDirect2DFactory,PaintDotNet.Rendering.Point2Float,System.ReadOnlySpan{PaintDotNet.Direct2D1.BezierSegment},PaintDotNet.Direct2D1.FillMode)">
+  CreateBeziersPathGeometry(IDirect2DFactory, Point2Float, ReadOnlySpan&lt;BezierSegment&gt;, FillMode)
   
 </h3>
 
@@ -156,28 +158,27 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TPixel&gt; CreateFlipRotator&lt;TPixel&gt;(this IBitmapSource&lt;TPixel&gt; source, BitmapTransformOptions options) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IPathGeometry CreateBeziersPathGeometry(this IDirect2DFactory factory, Point2Float startPoint, ReadOnlySpan&lt;BezierSegment&gt; beziers, FillMode fillMode = FillMode.Alternate)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
+  <dt><code>factory</code> <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.html">IDirect2DFactory</a></dt>
   <dd></dd>
-  <dt><code>options</code> <a class="xref" href="PaintDotNet.Imaging.BitmapTransformOptions.html">BitmapTransformOptions</a></dt>
+  <dt><code>startPoint</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
+  <dd></dd>
+  <dt><code>beziers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.BezierSegment.html">BezierSegment</a>&gt;</dt>
+  <dd></dd>
+  <dt><code>fillMode</code> <a class="xref" href="PaintDotNet.Direct2D1.FillMode.html">FillMode</a></dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.html">IPathGeometry</a></dt>
   <dd></dd>
 </dl>
 
-<h4 class="section">Type Parameters</h4>
-<dl class="parameters">
-  <dt><code>TPixel</code></dt>
-  <dd></dd>
-</dl>
 
 
 

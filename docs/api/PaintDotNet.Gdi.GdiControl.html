@@ -84,18 +84,16 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Gdi.html">Gdi</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>A control that does its painting in WM_PAINT via GDI calls, completely bypassing System.Drawing (GDI+)
 and WinForm's built-in painting mechanisms. You will need to implement your own interop definitions to
-paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br>
-<br>
+paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br><br>
 The <a class="xref" href="PaintDotNet.Gdi.IGdiPaintContext.html">IGdiPaintContext</a> passed to <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a>
 implements the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.idevicecontext">IDeviceContext</a> interface, which is accepted by some rendering
 code in the System.Windows.Forms namespaces, such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonrenderer">ButtonRenderer</a>,
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br>
-<br>
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br><br>
 This class primarily exists to serve as the base class for Direct2DControl.</p>
 </div>
   <div class="markdown conceptual"></div>

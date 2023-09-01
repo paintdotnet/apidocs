@@ -84,14 +84,14 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Rendering.html">Rendering</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Primitives.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRenderer&lt;TPixel&gt; where TPixel : unmanaged, INaturalPixelInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRenderer&lt;TPixel&gt; where TPixel : struct, INaturalPixelInfo</code></pre>
   </div>
 
 

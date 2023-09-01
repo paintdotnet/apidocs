@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -128,16 +128,14 @@
   <dd><p>The effect environment.</p>
 </dd>
   <dt><code>pixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd><p>The requested pixel format for the bitmap. The native pixel format used by Paint.NET is currently
-<a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>, which can be accessed using the <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a> struct.
-Specifying a different pixel format is valid, but will incur conversion overhead.</p>
+  <dd><p><inheritdoc cref="M:PaintDotNet.Effects.IEffectLayerInfo.GetBitmap(PaintDotNet.Imaging.PixelFormat@)"></inheritdoc></p>
 </dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectInputBitmap.html">IEffectInputBitmap</a></dt>
-  <dd><p>The bitmap.</p>
+  <dd><p><inheritdoc cref="M:PaintDotNet.Effects.IEffectLayerInfo.GetBitmap(PaintDotNet.Imaging.PixelFormat@)"></inheritdoc></p>
 </dd>
 </dl>
 
@@ -162,12 +160,12 @@ Specifying a different pixel format is valid, but will incur conversion overhead
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets a bitmap that renders the source layer's contents in the requested pixel format.</p>
+<div class="markdown level1 summary"><p><inheritdoc cref="M:PaintDotNet.Effects.EffectEnvironmentExtensions.GetSourceBitmap(PaintDotNet.Effects.IEffectEnvironment,PaintDotNet.Imaging.PixelFormat@)"></inheritdoc></p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEffectInputBitmap&lt;TPixel&gt; GetSourceBitmap&lt;TPixel&gt;(this IEffectEnvironment environment) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IEffectInputBitmap&lt;TPixel&gt; GetSourceBitmap&lt;TPixel&gt;(this IEffectEnvironment environment) where TPixel : struct, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

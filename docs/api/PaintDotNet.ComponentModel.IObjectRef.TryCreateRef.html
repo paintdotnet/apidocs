@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.ComponentModel.html">ComponentModel</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.ComponentModel.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_" data-uid="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef*"></a>
 
 <h3 id="PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__" data-uid="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef(System.Type,PaintDotNet.ComponentModel.IObjectRef@)">
-  TryCreateRef(Type, out IObjectRef?)
+  TryCreateRef(Type, out IObjectRef)
   
 </h3>
 
@@ -122,7 +122,7 @@ collected. When the reference count reaches 0, the object will be disposed.</p>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool? TryCreateRef(Type interfaceType, out IObjectRef? newObjectRef)</code></pre>
+  <pre><code class="lang-csharp hljs">bool? TryCreateRef(Type interfaceType, out IObjectRef newObjectRef)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -138,13 +138,12 @@ collected. When the reference count reaches 0, the object will be disposed.</p>
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-  <dd><p><b>true</b> if the interface is supported, in which case <code class="paramref">newObjectRef</code> will be
-the new ref. It will be castable to <code class="paramref">interfaceType</code>, and should be disposed
+  <dd><pre><code>&lt;b&gt;true&lt;/b&gt; if the interface is supported, in which case &lt;code class=&quot;paramref&quot;&gt;newObjectRef&lt;/code&gt; will be
+</code></pre>
+<p>the new ref. It will be castable to <code class="paramref">interfaceType</code>, and should be disposed
 (by calling <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>) when the caller is finished using it. Not disposing
-it is also safe, as the GC will handle it, but performance may be impacted.<br>
-<b>false</b> if the interface is not supported, in which case <code class="paramref">newObjectRef</code> will
-be null.<br>
-<b>null</b> if the existing ref is disposed.<br>
+it is also safe, as the GC will handle it, but performance may be impacted.<br><b>false</b> if the interface is not supported, in which case <code class="paramref">newObjectRef</code> will
+be null.<br><b>null</b> if the existing ref is disposed.<br>
 It is always safe to call this method.</p>
 </dd>
 </dl>

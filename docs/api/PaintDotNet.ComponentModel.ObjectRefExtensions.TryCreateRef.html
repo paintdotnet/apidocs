@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.ComponentModel.html">ComponentModel</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.ComponentModel.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IObjectRef? TryCreateRef(this IObjectRef objectRef, Type interfaceType)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IObjectRef TryCreateRef(this IObjectRef objectRef, Type interfaceType)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -148,7 +148,7 @@
 <a id="PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef_" data-uid="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef*"></a>
 
 <h3 id="PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__" data-uid="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef``1(PaintDotNet.ComponentModel.IObjectRef,``0@)">
-  TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface?)
+  TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface)
   
 </h3>
 
@@ -156,7 +156,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool? TryCreateRef&lt;TInterface&gt;(this IObjectRef objectRef, out TInterface? newObjectRefT) where TInterface : class, IObjectRef</code></pre>
+  <pre><code class="lang-csharp hljs">public static bool? TryCreateRef&lt;TInterface&gt;(this IObjectRef objectRef, out TInterface newObjectRefT) where TInterface : class, IObjectRef</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -199,7 +199,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TInterface? TryCreateRef&lt;TInterface&gt;(this IObjectRef objectRef) where TInterface : class, IObjectRef</code></pre>
+  <pre><code class="lang-csharp hljs">public static TInterface TryCreateRef&lt;TInterface&gt;(this IObjectRef objectRef) where TInterface : class, IObjectRef</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

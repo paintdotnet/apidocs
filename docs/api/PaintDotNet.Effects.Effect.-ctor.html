@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Effects_Effect__ctor_" data-uid="PaintDotNet.Effects.Effect.#ctor*"></a>
 
 <h3 id="PaintDotNet_Effects_Effect__ctor_System_String_PaintDotNet_Imaging_IBitmapSource_System_String_PaintDotNet_Effects_EffectOptions_" data-uid="PaintDotNet.Effects.Effect.#ctor(System.String,PaintDotNet.Imaging.IBitmapSource,System.String,PaintDotNet.Effects.EffectOptions)">
-  Effect(string, IBitmapSource, string?, EffectOptions)
+  Effect(string, IBitmapSource, string, EffectOptions)
   
 </h3>
 
@@ -119,7 +119,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected Effect(string name, IBitmapSource image, string? submenuName, EffectOptions options)</code></pre>
+  <pre><code class="lang-csharp hljs">protected Effect(string name, IBitmapSource image, string submenuName, EffectOptions options)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -128,10 +128,11 @@
   <dd><param name="name">The display name of the effect which will be used in UI elements (e.g. menus, dialog titles, history entries).
 </dd>
   <dt><code>image</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd><param name="image">
-            An image/icon for the effect that will be used in UI elements (e.g. menus, dialog boxes, history entries).<br>
-            This should have a square size, at least 16x16 pixels, and will be scaled up or down to 16x16 dips (e.g. 32x32 pixels if system scaling is set to 200%).
-            
+  <dd><pre><code>&lt;param name=&quot;image&quot;&gt;
+</code></pre>
+<p>An image/icon for the effect that will be used in UI elements (e.g. menus, dialog boxes, history entries).<br>
+This should have a square size, at least 16x16 pixels, and will be scaled up or down to 16x16 dips (e.g. 32x32 pixels if system scaling is set to 200%).</p>
+
 </dd>
   <dt><code>submenuName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
   <dd><param name="submenuName">The name of a sub-menu to place the effect into. May be null, in which case no sub-menu is used.
@@ -155,7 +156,7 @@
 <a id="PaintDotNet_Effects_Effect__ctor_" data-uid="PaintDotNet.Effects.Effect.#ctor*"></a>
 
 <h3 id="PaintDotNet_Effects_Effect__ctor_System_String_System_Drawing_Image_System_String_PaintDotNet_Effects_EffectOptions_" data-uid="PaintDotNet.Effects.Effect.#ctor(System.String,System.Drawing.Image,System.String,PaintDotNet.Effects.EffectOptions)">
-  Effect(string, Image, string?, EffectOptions)
+  Effect(string, Image, string, EffectOptions)
   
 </h3>
 
@@ -164,7 +165,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected Effect(string name, Image image, string? submenuName, EffectOptions options)</code></pre>
+  <pre><code class="lang-csharp hljs">protected Effect(string name, Image image, string submenuName, EffectOptions options)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -198,7 +199,7 @@ This should have a square size, at least 16x16 pixels, and will be scaled up or 
 <a id="PaintDotNet_Effects_Effect__ctor_" data-uid="PaintDotNet.Effects.Effect.#ctor*"></a>
 
 <h3 id="PaintDotNet_Effects_Effect__ctor_System_String_System_String_PaintDotNet_Effects_EffectOptions_" data-uid="PaintDotNet.Effects.Effect.#ctor(System.String,System.String,PaintDotNet.Effects.EffectOptions)">
-  Effect(string, string?, EffectOptions)
+  Effect(string, string, EffectOptions)
   
 </h3>
 
@@ -207,7 +208,7 @@ This should have a square size, at least 16x16 pixels, and will be scaled up or 
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected Effect(string name, string? submenuName, EffectOptions options)</code></pre>
+  <pre><code class="lang-csharp hljs">protected Effect(string name, string submenuName, EffectOptions options)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

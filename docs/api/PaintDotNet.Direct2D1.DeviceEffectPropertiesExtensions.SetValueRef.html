@@ -86,7 +86,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef_PaintDotNet_Direct2D1_IDeviceEffectProperties_System_Int32_PaintDotNet_ComponentModel_IObjectRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef(PaintDotNet.Direct2D1.IDeviceEffectProperties,System.Int32,PaintDotNet.ComponentModel.IObjectRef)">
-  SetValueRef(IDeviceEffectProperties, int, IObjectRef?)
+  SetValueRef(IDeviceEffectProperties, int, IObjectRef)
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValueRef(this IDeviceEffectProperties properties, int index, IObjectRef? valueRef)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValueRef(this IDeviceEffectProperties properties, int index, IObjectRef valueRef)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -145,7 +145,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_PaintDotNet_Direct2D1_DeviceEffectPropertyType_PaintDotNet_ComponentModel_IObjectRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0,PaintDotNet.Direct2D1.DeviceEffectPropertyType,PaintDotNet.ComponentModel.IObjectRef)">
-  SetValueRef&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, DeviceEffectPropertyType, IObjectRef?)
+  SetValueRef&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, DeviceEffectPropertyType, IObjectRef)
   
 </h3>
 
@@ -153,7 +153,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValueRef&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, IObjectRef? valueRef) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValueRef&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, IObjectRef valueRef) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -187,7 +187,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_SetValueRef__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_PaintDotNet_ComponentModel_IObjectRef_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.SetValueRef``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0,PaintDotNet.ComponentModel.IObjectRef)">
-  SetValueRef&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, IObjectRef?)
+  SetValueRef&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, IObjectRef)
   
 </h3>
 
@@ -195,7 +195,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValueRef&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, IObjectRef? valueRef) where TIndex : unmanaged</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValueRef&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, IObjectRef valueRef) where TIndex : struct</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

@@ -85,11 +85,10 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies the indices of the system properties present on the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> interface for an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>.<br>
-<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_property">D2D1_PROPERTY</a></p>
+  <div class="markdown summary"><p>Specifies the indices of the system properties present on the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> interface for an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>.<br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_property">D2D1_PROPERTY</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -137,6 +136,11 @@
 </dd>
     <dt id="PaintDotNet_Direct2D1_DeviceEffectProperty_MaxInputs"><code>MaxInputs = -2147483639</code></dt>
     <dd><p>The maximum number of inputs supported by the effect.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_DeviceEffectProperty_Invalid"><code>Invalid = -1</code></dt>
+    <dd><p>An invalid property index. This reserved value will never map to a valid index,
+and will cause null or sentinel values to be returned, or exceptions to be thrown,
+from other parts of the property interface.</p>
 </dd>
   </dl>
 

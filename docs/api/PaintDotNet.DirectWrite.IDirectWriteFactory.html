@@ -84,22 +84,11 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.DirectWrite.html">DirectWrite</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Used to create all subsequent DirectWrite objects. This interface is the root factory interface for all DirectWrite objects.<br>
-<br>
-This interface corresponds to the following DirectWrite interfaces:<br>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1">IDWriteFactory1</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefactory2">IDWriteFactory2</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory3">IDWriteFactory3</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory4">IDWriteFactory4</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory5">IDWriteFactory5</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory6">IDWriteFactory6</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory7">IDWriteFactory7</a><br>
-<br>
-<b>NOTE:</b> Not all DirectWrite functionality is supported.</p>
+  <div class="markdown summary"><p>Used to create all subsequent DirectWrite objects. This interface is the root factory interface for all DirectWrite objects.<br><br>
+This interface corresponds to the following DirectWrite interfaces:<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1">IDWriteFactory1</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefactory2">IDWriteFactory2</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory3">IDWriteFactory3</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory4">IDWriteFactory4</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory5">IDWriteFactory5</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory6">IDWriteFactory6</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory7">IDWriteFactory7</a><br><br><b>NOTE:</b> Not all DirectWrite functionality is supported.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -127,6 +116,40 @@ This interface corresponds to the following DirectWrite interfaces:<br>
     </div>
   </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.CreateRef(IObjectRef, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef&lt;TInterface&gt;(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.TryCreateRef(IObjectRef, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.DirectWriteFactoryExtensions.CreateTextFormat.html#PaintDotNet_DirectWrite_DirectWriteFactoryExtensions_CreateTextFormat_PaintDotNet_DirectWrite_IDirectWriteFactory_PaintDotNet_DirectWrite_FontProperties__System_Single_PaintDotNet_DirectWrite_IFontCollection_System_String_">DirectWriteFactoryExtensions.CreateTextFormat(IDirectWriteFactory, in FontProperties, float, IFontCollection, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.DirectWriteFactoryExtensions.CreateTextFormat.html#PaintDotNet_DirectWrite_DirectWriteFactoryExtensions_CreateTextFormat_PaintDotNet_DirectWrite_IDirectWriteFactory_PaintDotNet_DirectWrite_SizedFontProperties__PaintDotNet_DirectWrite_IFontCollection_System_String_">DirectWriteFactoryExtensions.CreateTextFormat(IDirectWriteFactory, in SizedFontProperties, IFontCollection, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.DirectWriteFactoryExtensions.GetGdiFontMap.html#PaintDotNet_DirectWrite_DirectWriteFactoryExtensions_GetGdiFontMap_PaintDotNet_DirectWrite_IDirectWriteFactory_System_Boolean_">DirectWriteFactoryExtensions.GetGdiFontMap(IDirectWriteFactory, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.DirectWriteFactoryExtensions.GetSystemFonts.html#PaintDotNet_DirectWrite_DirectWriteFactoryExtensions_GetSystemFonts_PaintDotNet_DirectWrite_IDirectWriteFactory_System_Boolean_">DirectWriteFactoryExtensions.GetSystemFonts(IDirectWriteFactory, bool)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -159,7 +182,7 @@ This interface corresponds to the following DirectWrite interfaces:<br>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.CreateTextFormat.html#PaintDotNet_DirectWrite_IDirectWriteFactory_CreateTextFormat_System_String_PaintDotNet_DirectWrite_IFontCollection_PaintDotNet_DirectWrite_FontWeight_PaintDotNet_DirectWrite_FontStyle_PaintDotNet_DirectWrite_FontStretch_System_Single_System_String_">CreateTextFormat(string, IFontCollection?, FontWeight, FontStyle, FontStretch, float, string?)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.CreateTextFormat.html#PaintDotNet_DirectWrite_IDirectWriteFactory_CreateTextFormat_System_String_PaintDotNet_DirectWrite_IFontCollection_PaintDotNet_DirectWrite_FontWeight_PaintDotNet_DirectWrite_FontStyle_PaintDotNet_DirectWrite_FontStretch_System_Single_System_String_">CreateTextFormat(string, IFontCollection, FontWeight, FontStyle, FontStretch, float, string)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

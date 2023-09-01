@@ -85,7 +85,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,18 +110,15 @@ public enum BitmapImageOptions</code></pre>
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_Default"><code>Default = 0</code></dt>
     <dd><p>The default option, which selects an appropriate image creation strategy based on how large the bitmap is, whether
 it is an IBitmapSource or IBitmap, the amount of available GPU memory, and whether the device context is using
-hardware or software rendering.<br>
-<br>
+hardware or software rendering.<br><br>
 Depending on which strategy is used to create the image for the device context, the bitmap may be copied to the
-to the GPU (cached), or streamed during rendering.<br>
-<br>
+to the GPU (cached), or streamed during rendering.<br><br>
 The bitmap's colors will be converted to the color space of the device context, if available and if possible,
 unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion">DisableColorSpaceConversion</a> option is specified.
 <br>
 The image will use premultiplied alpha unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. The bitmap
 will be premultiplied or unpremultiplied as necessary.
-<br>
-<b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
+<br><b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
 results.</b> If the bitmap is modified after the image is created, results are undefined.<br></p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_DoNotCache"><code>DoNotCache = 1</code></dt>

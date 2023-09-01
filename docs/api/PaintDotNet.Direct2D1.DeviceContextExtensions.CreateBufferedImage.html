@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateBufferedImage
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateBufferedImage
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage*">
+
+
+
+
+
+<h1 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage*" class="text-break">
+  Method CreateBufferedImage
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceImage)">
+  CreateBufferedImage(IDeviceContext, IDeviceImage)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates a buffered version of the given image. This can be used to work around limitations in Direct2D's
+effect rendering system that can result in an <a class="xref" href="PaintDotNet.Direct2D1.InvalidGraphConfigurationException.html">InvalidGraphConfigurationException</a> when an
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> is used both in an effect graph and in a command list.<br></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IBufferedImage CreateBufferedImage(this IDeviceContext deviceContext, IDeviceImage image)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
+  <dd></dd>
+  <dt><code>image</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.IBufferedImage.html">IBufferedImage</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If you get an <a class="xref" href="PaintDotNet.Direct2D1.InvalidGraphConfigurationException.html">InvalidGraphConfigurationException</a> for an effect graph that otherwise looks
+correct, use this method to wrap any <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>s that are used by command lists which are
+part of the effect graph that is causing the error. The command list(s) at fault may not be yours; they are
+often contained within <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>s, for instance. The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> may still be
+set as the input for the <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, but the other nodes in the effect graph should use the
+wrapper created by this method.<br><br>
+When the Direct2D debug layer and Visual Studio's mixed-mode debugging (&quot;Enable debugging for managed and
+native code together&quot;) are both enabled, you would see the following error:<br><br><pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
+See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br><br>
+An example of an effect graph that can cause this error:
+<pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
+         |         |    
+         |         |    
+         v         v
+       CompositeEffect</code></pre><br>
+<p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> is used as an input for both a SampleMapRenderer and a
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.CompositeEffect.html">CompositeEffect</a>. The SampleMapRenderer, which implements <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, internally
+uses several effects and command lists to produce its output. In this case, the SampleMapRenderer should
+still be given the original IDeviceImage, while the CompositeEffect should use the buffered image:</p>
+<pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
+         |         |
+         v         |
+  IBufferedImage   |
+         |         |
+         v         v
+       CompositeEffect</code></pre><br>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
