@@ -91,8 +91,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ValueSerializer(typeof(ParsableValueSerializer&lt;Matrix5x4Double&gt;))]
-[TypeConverter(typeof(ParsableTypeConverter&lt;Matrix5x4Double&gt;))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Matrix5x4Double&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;Matrix5x4Double&gt;))]
 public struct Matrix5x4Double : IEquatable&lt;Matrix5x4Double&gt;, IFormattable, IParsable&lt;Matrix5x4Double&gt;</code></pre>
   </div>
 
