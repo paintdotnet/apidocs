@@ -22,12 +22,16 @@ Here are some useful links to start:
 - Plugin Dev channel on the Paint.NET Discord Server
   - Invitation link: https://discord.gg/wQhWmqDP
 
-TODO:
+Articles or other information that are on the TODO list:
 - How to create a Visual Studio project for plugin development
 - Programming guide for FileType plugins
-- Programming guide for BitmapEffect/GpuEffect plugins
+- Programming guide for BitmapEffect plugins
+- Programming guide for GpuEffect plugins
 - How to use IndirectUI to create a standard UI for your Effect or FileType
   - How to add tabs to your UI (new for 5.0)
+- How to provide PluginSupportInfo, and why you should do it
+- Always increment the assembly version when releasing an update to your plugin
 - How to package a plugin with .deps.json, how it should be installed by the end-user, etc.
-- How to use linking to avoid multi-DLL plugins (if using nuget packages), and avoid need for .deps.json in the first place
+- How to use `il-repack` to avoid multi-DLL plugins (e.g. if using nuget packages), and avoid need for .deps.json in the first place
+- How to use `illink` so that you can pull in a huge dependency like TerraFX.Interop.Windows and trim it down to only what you actually use
 - etc.
