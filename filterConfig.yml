@@ -9,7 +9,7 @@ apiRules:
     uidRegex: (.*)\.CanvasObjectRefExtensions
     type: Class
 - exclude:
-    uidRegex: (.*)\.Direct3D11RefExtensions
+    uidRegex: (.*)\.Direct3D11ObjectRefExtensions
     type: Class
 - exclude:
     uidRegex: (.*)\.DirectCompositionObjectRefExtensions
@@ -22,6 +22,9 @@ apiRules:
     type: Class
 - exclude:
     uidRegex: (.*)\.MemoryManagementObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.ObjectModelObjectRefExtensions
     type: Class
 - exclude:
     uidRegex: (.*)\.ThreadingObjectRefExtensions
