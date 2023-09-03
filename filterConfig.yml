@@ -1,7 +1,28 @@
 apiRules:
 - exclude:
-    uidRegex: (.*)\.[^.]+ObjectRefExtensions
-    type: Class
-- exclude:
     hasAttribute:
       uid: System.ObsoleteAttribute
+- exclude:
+    uidRegex: (.*)\.AnimationObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.CanvasObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.Direct3D11RefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.DirectCompositionObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.DxgiObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.InteropObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.MemoryManagementObjectRefExtensions
+    type: Class
+- exclude:
+    uidRegex: (.*)\.ThreadingObjectRefExtensions
+    type: Class
