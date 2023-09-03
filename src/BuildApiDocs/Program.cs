@@ -7,6 +7,8 @@
 using ILRepacking;
 using System;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text.Json;
 
 namespace PaintDotNet.BuildApiDocs;
 
@@ -32,6 +34,9 @@ public static class Program
     private static int MainImpl(params string[] args)
     {
         string sourceDir = args[0];
+        /MetadataAggregator[0]/src
+        string docfxJsonText = File.ReadAllText(@"D:\src\github\rickbrew\apidocs\docfx.json");
+        JsonDocument jsonDoc = JsonDocument.Parse(docfxJsonText);
 
         string stagingDir = Path.Combine(Path.GetTempPath(), $"PDNBuildApiDocs{Guid.NewGuid()}");
         if (!Directory.Exists(stagingDir))
