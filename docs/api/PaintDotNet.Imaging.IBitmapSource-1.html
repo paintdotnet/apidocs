@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IBitmapSource&lt;TPixel&gt; : IBitmapSource, IObjectRef, IIsDisposed, IDisposable where TPixel : struct, INaturalPixelInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBitmapSource&lt;TPixel&gt; : IBitmapSource, IObjectRef, IIsDisposed, IDisposable where TPixel : unmanaged, INaturalPixelInfo</code></pre>
   </div>
 
 
@@ -153,7 +153,7 @@
       <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef)</a>
   </div>
   <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface)</a>
+      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface?)</a>
   </div>
   </dd></dl>
 

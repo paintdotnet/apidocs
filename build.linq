@@ -122,6 +122,23 @@ private static void MergeAssemblies(string sourceDir, string outputFile)
         XmlDocumentation = true
     };
 
+    // See: https://github.com/gluck/il-repack/issues/263
+    string[] allowedDuplicateTypes =
+        new string[]
+        {
+            "Microsoft.CodeAnalysis.EmbeddedAttribute",
+            "System.Runtime.CompilerServices.IsByRefLikeAttribute",
+            "System.Runtime.CompilerServices.IsUnmanagedAttribute",
+            "System.Runtime.CompilerServices.NullableAttribute",
+            "System.Runtime.CompilerServices.NullableContextAttribute",
+            "System.Runtime.CompilerServices.RefSafetyRulesAttribute",
+    };
+
+    foreach (string allowedDuplicateType in allowedDuplicateTypes)
+    {
+        options.AllowedDuplicateTypes.Add(allowedDuplicateType, allowedDuplicateType);
+    }
+
     ILRepack repack = new ILRepack(options);
     repack.Repack();
 }

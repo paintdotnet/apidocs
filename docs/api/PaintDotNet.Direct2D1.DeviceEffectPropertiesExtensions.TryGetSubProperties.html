@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetSubProperties_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetSubProperties*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetSubProperties__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_PaintDotNet_Direct2D1_IDeviceEffectProperties__" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetSubProperties``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0,PaintDotNet.Direct2D1.IDeviceEffectProperties@)">
-  TryGetSubProperties&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, out IDeviceEffectProperties)
+  TryGetSubProperties&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, out IDeviceEffectProperties?)
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool TryGetSubProperties&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, out IDeviceEffectProperties subProperties) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static bool TryGetSubProperties&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, out IDeviceEffectProperties? subProperties) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -163,7 +163,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IDeviceEffectProperties TryGetSubProperties(this IDeviceEffectProperties properties, int index)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IDeviceEffectProperties? TryGetSubProperties(this IDeviceEffectProperties properties, int index)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -201,7 +201,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IDeviceEffectProperties TryGetSubProperties&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static IDeviceEffectProperties? TryGetSubProperties&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

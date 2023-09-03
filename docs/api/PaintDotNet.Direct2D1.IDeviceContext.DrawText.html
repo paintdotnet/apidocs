@@ -152,7 +152,7 @@
 
 
 <h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>To create an <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a> object, retrieve an <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.html">IDirectWriteFactory</a> object and call its <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.CreateTextFormat.html#PaintDotNet_DirectWrite_IDirectWriteFactory_CreateTextFormat_System_String_PaintDotNet_DirectWrite_IFontCollection_PaintDotNet_DirectWrite_FontWeight_PaintDotNet_DirectWrite_FontStyle_PaintDotNet_DirectWrite_FontStretch_System_Single_System_String_">CreateTextFormat(string, IFontCollection, FontWeight, FontStyle, FontStretch, float, string)</a> method.</p>
+<div class="markdown level1 remarks"><p>To create an <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a> object, retrieve an <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.html">IDirectWriteFactory</a> object and call its <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.CreateTextFormat.html#PaintDotNet_DirectWrite_IDirectWriteFactory_CreateTextFormat_System_String_PaintDotNet_DirectWrite_IFontCollection_PaintDotNet_DirectWrite_FontWeight_PaintDotNet_DirectWrite_FontStyle_PaintDotNet_DirectWrite_FontStretch_System_Single_System_String_">CreateTextFormat(string, IFontCollection?, FontWeight, FontStyle, FontStretch, float, string?)</a> method.</p>
 </div>
 
 
@@ -161,7 +161,7 @@
 <a id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_IDeviceContext_DrawText_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_ISvgGlyphStyle_System_Int32_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.DrawText(System.String,PaintDotNet.DirectWrite.ITextFormat,PaintDotNet.Rendering.RectFloat,PaintDotNet.Direct2D1.IDeviceBrush,PaintDotNet.Direct2D1.ISvgGlyphStyle,System.Int32,PaintDotNet.Direct2D1.DrawTextOptions,PaintDotNet.DirectWrite.TextMeasuringMode)">
-  DrawText(string, ITextFormat, RectFloat, IDeviceBrush, ISvgGlyphStyle, int, DrawTextOptions, TextMeasuringMode)
+  DrawText(string, ITextFormat, RectFloat, IDeviceBrush?, ISvgGlyphStyle?, int, DrawTextOptions, TextMeasuringMode)
   
 </h3>
 
@@ -171,7 +171,7 @@ By default, this method performs baseline snapping and renders color versions of
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void DrawText(string text, ITextFormat textFormat, RectFloat layoutRect, IDeviceBrush defaultFillBrush, ISvgGlyphStyle svgGlyphStyle, int colorPaletteIndex = 0, DrawTextOptions options = DrawTextOptions.EnableColorFont, TextMeasuringMode measuringMode = TextMeasuringMode.Natural)</code></pre>
+  <pre><code class="lang-csharp hljs">void DrawText(string text, ITextFormat textFormat, RectFloat layoutRect, IDeviceBrush? defaultFillBrush, ISvgGlyphStyle? svgGlyphStyle, int colorPaletteIndex = 0, DrawTextOptions options = DrawTextOptions.EnableColorFont, TextMeasuringMode measuringMode = TextMeasuringMode.Natural)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

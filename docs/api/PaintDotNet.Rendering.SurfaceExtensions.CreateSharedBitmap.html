@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; CreateSharedBitmap&lt;TPixel&gt;(this ISurfaceRef&lt;TPixel&gt; surface) where TPixel : struct, INaturalPixelInfo&lt;TPixel&gt;</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmap&lt;TPixel&gt; CreateSharedBitmap&lt;TPixel&gt;(this ISurfaceRef&lt;TPixel&gt; surface) where TPixel : unmanaged, INaturalPixelInfo&lt;TPixel&gt;</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

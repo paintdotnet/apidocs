@@ -170,7 +170,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IResourceTexture CreateResourceTexture2D&lt;T&gt;(this IDeviceEffectContext effectContext, in Guid? resourceID, int extentX, int extentY, BufferPrecision bufferPrecision, ChannelDepth channelDepth, TextureFilter filter, ExtendMode extendModeX, ExtendMode extendModeY, ExtentPtr&lt;T&gt; data, uint rowStride) where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static IResourceTexture CreateResourceTexture2D&lt;T&gt;(this IDeviceEffectContext effectContext, in Guid? resourceID, int extentX, int extentY, BufferPrecision bufferPrecision, ChannelDepth channelDepth, TextureFilter filter, ExtendMode extendModeX, ExtendMode extendModeY, ExtentPtr&lt;T&gt; data, uint rowStride) where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

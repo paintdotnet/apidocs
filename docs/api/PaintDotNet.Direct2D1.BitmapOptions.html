@@ -131,7 +131,7 @@ other flags.</p>
   <h2 id="PaintDotNet_Direct2D1_BitmapOptions_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>BitmapOptions.None implies that none of the flags are set. This means that the bitmap can be used for drawing from,
 cannot be set as a target and cannot be read from by the CPU.<br>
-BitmapOptions.Target means that the bitmap can be specified as a target in <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_SetTarget_PaintDotNet_Direct2D1_IDeviceImage_">SetTarget(IDeviceImage)</a>.
+BitmapOptions.Target means that the bitmap can be specified as a target in <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_SetTarget_PaintDotNet_Direct2D1_IDeviceImage_">SetTarget(IDeviceImage?)</a>.
 If you also specify the BitmapOptions.CannotDraw flag the bitmap can be used a target but, it cannot be drawn from.
 Attempting to draw with a bitmap that has both flags set will result in the device context being put into an error
 state with D2DERR_BITMAP_CANNOT_DRAW.<br>

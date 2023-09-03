@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INaturalPixelInfo&lt;TPixel&gt; : INaturalPixelInfo, IPixelInfo, IEquatable&lt;TPixel&gt; where TPixel : struct, INaturalPixelInfo&lt;TPixel&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INaturalPixelInfo&lt;TPixel&gt; : INaturalPixelInfo, IPixelInfo, IEquatable&lt;TPixel&gt; where TPixel : unmanaged, INaturalPixelInfo&lt;TPixel&gt;</code></pre>
   </div>
 
 

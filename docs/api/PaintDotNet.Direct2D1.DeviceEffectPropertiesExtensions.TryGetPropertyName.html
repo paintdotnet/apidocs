@@ -110,7 +110,7 @@
 <a id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyName_" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyName*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceEffectPropertiesExtensions_TryGetPropertyName__1_PaintDotNet_Direct2D1_IDeviceEffectProperties___0_System_String__" data-uid="PaintDotNet.Direct2D1.DeviceEffectPropertiesExtensions.TryGetPropertyName``1(PaintDotNet.Direct2D1.IDeviceEffectProperties,``0,System.String@)">
-  TryGetPropertyName&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, out string)
+  TryGetPropertyName&lt;TIndex&gt;(IDeviceEffectProperties, TIndex, out string?)
   
 </h3>
 
@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool TryGetPropertyName&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, out string name) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static bool TryGetPropertyName&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, out string? name) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -163,7 +163,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static string TryGetPropertyName(this IDeviceEffectProperties properties, int index)</code></pre>
+  <pre><code class="lang-csharp hljs">public static string? TryGetPropertyName(this IDeviceEffectProperties properties, int index)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -201,7 +201,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static string TryGetPropertyName&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static string? TryGetPropertyName&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

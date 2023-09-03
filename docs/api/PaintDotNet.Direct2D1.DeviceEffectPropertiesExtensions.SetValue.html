@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, ReadOnlySpan&lt;byte&gt; data) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, ReadOnlySpan&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -160,7 +160,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, ReadOnlySpan&lt;byte&gt; data) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, ReadOnlySpan&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -272,7 +272,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, ReadOnlyMemory&lt;byte&gt; data) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, ReadOnlyMemory&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -314,7 +314,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, ReadOnlyMemory&lt;byte&gt; data) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, ReadOnlyMemory&lt;byte&gt; data) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -354,7 +354,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type, in T value) where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, DeviceEffectPropertyType type, in T value) where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -396,7 +396,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, in T value) where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;T&gt;(this IDeviceEffectProperties properties, int index, in T value) where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -436,7 +436,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, in T value) where TIndex : struct where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, DeviceEffectPropertyType type, in T value) where TIndex : unmanaged where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -480,7 +480,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, in T value) where TIndex : struct where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex, T&gt;(this IDeviceEffectProperties properties, TIndex index, in T value) where TIndex : unmanaged where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -557,7 +557,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, string value) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, string value) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -632,7 +632,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, bool value) where TIndex : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void SetValue&lt;TIndex&gt;(this IDeviceEffectProperties properties, TIndex index, bool value) where TIndex : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Update3D&lt;T&gt;(this IResourceTexture resourceTexture, int minExtentX, int minExtentY, int minExtentZ, int maxExtentX, int maxExtentY, int maxExtentZ, ExtentPtr&lt;T&gt; data, uint rowStride, uint planeStride) where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Update3D&lt;T&gt;(this IResourceTexture resourceTexture, int minExtentX, int minExtentY, int minExtentZ, int maxExtentX, int maxExtentY, int maxExtentZ, ExtentPtr&lt;T&gt; data, uint rowStride, uint planeStride) where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -172,7 +172,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Update3D&lt;T&gt;(this IResourceTexture resourceTexture, ExtentPtr&lt;T&gt; data, uint rowStride, uint planeStride) where T : struct</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Update3D&lt;T&gt;(this IResourceTexture resourceTexture, ExtentPtr&lt;T&gt; data, uint rowStride, uint planeStride) where T : unmanaged</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

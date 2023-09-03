@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct RegionPtr&lt;T&gt; : IEquatable&lt;RegionPtr&lt;T&gt;&gt; where T : struct</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct RegionPtr&lt;T&gt; : IEquatable&lt;RegionPtr&lt;T&gt;&gt; where T : unmanaged</code></pre>
   </div>
 
 
@@ -128,6 +128,64 @@
     </div>
   </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.CheckOffset.html#PaintDotNet_RegionPtrExtensions_CheckOffset__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">RegionPtrExtensions.CheckOffset&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.CheckOffset.html#PaintDotNet_RegionPtrExtensions_CheckOffset__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_">RegionPtrExtensions.CheckOffset&lt;T&gt;(RegionPtr&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.CopyToClipped.html#PaintDotNet_RegionPtrExtensions_CopyToClipped__1_PaintDotNet_RegionPtr___0__PaintDotNet_RegionPtr___0__">RegionPtrExtensions.CopyToClipped&lt;T&gt;(RegionPtr&lt;T&gt;, RegionPtr&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.OffsetView.html#PaintDotNet_RegionPtrExtensions_OffsetView__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">RegionPtrExtensions.OffsetView&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.OffsetView.html#PaintDotNet_RegionPtrExtensions_OffsetView__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Vector2Int32_">RegionPtrExtensions.OffsetView&lt;T&gt;(RegionPtr&lt;T&gt;, Vector2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.OffsetView.html#PaintDotNet_RegionPtrExtensions_OffsetView__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_">RegionPtrExtensions.OffsetView&lt;T&gt;(RegionPtr&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_PaintDotNet_Rendering_SizeInt32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32, SizeInt32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_System_Int32_System_Int32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_SizeInt32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, SizeInt32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_PaintDotNet_Rendering_SizeInt32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, int, int, SizeInt32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.Slice.html#PaintDotNet_RegionPtrExtensions_Slice__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_System_Int32_System_Int32_">RegionPtrExtensions.Slice&lt;T&gt;(RegionPtr&lt;T&gt;, int, int, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyColumnRange.html#PaintDotNet_RegionPtrExtensions_VerifyColumnRange__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_">RegionPtrExtensions.VerifyColumnRange&lt;T&gt;(RegionPtr&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyColumn.html#PaintDotNet_RegionPtrExtensions_VerifyColumn__1_PaintDotNet_RegionPtr___0__System_Int32_">RegionPtrExtensions.VerifyColumn&lt;T&gt;(RegionPtr&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyOffset.html#PaintDotNet_RegionPtrExtensions_VerifyOffset__1_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">RegionPtrExtensions.VerifyOffset&lt;T&gt;(RegionPtr&lt;T&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyOffset.html#PaintDotNet_RegionPtrExtensions_VerifyOffset__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_">RegionPtrExtensions.VerifyOffset&lt;T&gt;(RegionPtr&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyRowRange.html#PaintDotNet_RegionPtrExtensions_VerifyRowRange__1_PaintDotNet_RegionPtr___0__System_Int32_System_Int32_">RegionPtrExtensions.VerifyRowRange&lt;T&gt;(RegionPtr&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.RegionPtrExtensions.VerifyRow.html#PaintDotNet_RegionPtrExtensions_VerifyRow__1_PaintDotNet_RegionPtr___0__System_Int32_">RegionPtrExtensions.VerifyRow&lt;T&gt;(RegionPtr&lt;T&gt;, int)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -136,11 +194,11 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.-ctor.html#PaintDotNet_RegionPtr_1__ctor_System_Object__0__PaintDotNet_Rendering_SizeInt32_System_Int32_">RegionPtr(object, T*, SizeInt32, int)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.-ctor.html#PaintDotNet_RegionPtr_1__ctor_System_Object__0__PaintDotNet_Rendering_SizeInt32_System_Int32_">RegionPtr(object?, T*, SizeInt32, int)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.-ctor.html#PaintDotNet_RegionPtr_1__ctor_System_Object__0__System_Int32_System_Int32_System_Int32_">RegionPtr(object, T*, int, int, int)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.-ctor.html#PaintDotNet_RegionPtr_1__ctor_System_Object__0__System_Int32_System_Int32_System_Int32_">RegionPtr(object?, T*, int, int, int)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -240,7 +298,7 @@
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.Equals.html#PaintDotNet_RegionPtr_1_Equals_System_Object_">Equals(object)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.RegionPtr-1.Equals.html#PaintDotNet_RegionPtr_1_Equals_System_Object_">Equals(object?)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

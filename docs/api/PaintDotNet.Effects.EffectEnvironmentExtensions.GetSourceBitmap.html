@@ -167,7 +167,7 @@ Specifying a different pixel format is valid, but will incur conversion overhead
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEffectInputBitmap&lt;TPixel&gt; GetSourceBitmap&lt;TPixel&gt;(this IEffectEnvironment environment) where TPixel : struct, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IEffectInputBitmap&lt;TPixel&gt; GetSourceBitmap&lt;TPixel&gt;(this IEffectEnvironment environment) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

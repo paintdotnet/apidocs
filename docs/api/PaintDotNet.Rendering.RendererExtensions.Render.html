@@ -118,7 +118,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, RegionPtr&lt;TPixel&gt; dst) where TPixel : struct, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, RegionPtr&lt;TPixel&gt; dst) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -156,7 +156,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, ISurface&lt;TPixel&gt; dst) where TPixel : struct, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, ISurface&lt;TPixel&gt; dst) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -194,7 +194,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, ISurface&lt;TPixel&gt; dst, Point2Int32 renderOffset) where TPixel : struct, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static void Render&lt;TPixel&gt;(this IRenderer&lt;TPixel&gt; renderer, ISurface&lt;TPixel&gt; dst, Point2Int32 renderOffset) where TPixel : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

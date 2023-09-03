@@ -91,8 +91,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ValueSerializer(typeof(ParsableValueSerializer&lt;Point2Float&gt;))]
-[TypeConverter(typeof(ParsableTypeConverter&lt;Point2Float&gt;))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Point2Float&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;Point2Float&gt;))]
 public struct Point2Float : IEquatable&lt;Point2Float&gt;, IFormattable, IParsable&lt;Point2Float&gt;</code></pre>
   </div>
 
@@ -184,7 +184,7 @@ public struct Point2Float : IEquatable&lt;Point2Float&gt;, IFormattable, IParsab
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.Equals.html#PaintDotNet_Rendering_Point2Float_Equals_System_Object_">Equals(object)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.Equals.html#PaintDotNet_Rendering_Point2Float_Equals_System_Object_">Equals(object?)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -212,15 +212,15 @@ public struct Point2Float : IEquatable&lt;Point2Float&gt;, IFormattable, IParsab
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.ToString.html#PaintDotNet_Rendering_Point2Float_ToString_System_IFormatProvider_">ToString(IFormatProvider)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.ToString.html#PaintDotNet_Rendering_Point2Float_ToString_System_IFormatProvider_">ToString(IFormatProvider?)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.ToString.html#PaintDotNet_Rendering_Point2Float_ToString_System_String_System_IFormatProvider_">ToString(string, IFormatProvider)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.ToString.html#PaintDotNet_Rendering_Point2Float_ToString_System_String_System_IFormatProvider_">ToString(string?, IFormatProvider?)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.TryParse.html#PaintDotNet_Rendering_Point2Float_TryParse_System_String_PaintDotNet_Rendering_Point2Float__">TryParse(string, out Point2Float)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.TryParse.html#PaintDotNet_Rendering_Point2Float_TryParse_System_String_PaintDotNet_Rendering_Point2Float__">TryParse(string?, out Point2Float)</a></dt>
     <dd></dd>
   </dl>
 
@@ -336,11 +336,11 @@ public struct Point2Float : IEquatable&lt;Point2Float&gt;, IFormattable, IParsab
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.Parse.html#PaintDotNet_Rendering_Point2Float_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.Parse.html#PaintDotNet_Rendering_Point2Float_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.TryParse.html#PaintDotNet_Rendering_Point2Float_TryParse_System_String_System_IFormatProvider_PaintDotNet_Rendering_Point2Float__">TryParse(string, IFormatProvider, out Point2Float)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.TryParse.html#PaintDotNet_Rendering_Point2Float_TryParse_System_String_System_IFormatProvider_PaintDotNet_Rendering_Point2Float__">TryParse(string?, IFormatProvider?, out Point2Float)</a></dt>
     <dd></dd>
   </dl>
 

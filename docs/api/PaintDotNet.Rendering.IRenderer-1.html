@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRenderer&lt;TPixel&gt; where TPixel : struct, INaturalPixelInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRenderer&lt;TPixel&gt; where TPixel : unmanaged, INaturalPixelInfo</code></pre>
   </div>
 
 
@@ -106,6 +106,28 @@
 
 
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Reinterpret.html#PaintDotNet_Rendering_RendererExtensions_Reinterpret__2_PaintDotNet_Rendering_IRenderer___0__">RendererExtensions.Reinterpret&lt;TPixelSrc, TPixelDst&gt;(IRenderer&lt;TPixelSrc&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_RegionPtr___0__">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, RegionPtr&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_ISurface___0__">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, ISurface&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.Render.html#PaintDotNet_Rendering_RendererExtensions_Render__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_ISurface___0__PaintDotNet_Rendering_Point2Int32_">RendererExtensions.Render&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, ISurface&lt;TPixel&gt;, Point2Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.ToSurface.html#PaintDotNet_Rendering_RendererExtensions_ToSurface__1_PaintDotNet_Rendering_IRenderer___0__">RendererExtensions.ToSurface&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Rendering.RendererExtensions.ToSurface.html#PaintDotNet_Rendering_RendererExtensions_ToSurface__1_PaintDotNet_Rendering_IRenderer___0__PaintDotNet_Rendering_RectInt32_">RendererExtensions.ToSurface&lt;TPixel&gt;(IRenderer&lt;TPixel&gt;, RectInt32)</a>
+  </div>
+  </dd></dl>
 
 
 
