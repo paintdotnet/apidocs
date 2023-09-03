@@ -8,6 +8,7 @@ This is an index of the namespaces and members that are accessible for Paint.NET
 The following DLLs should be referenced by plugins:
 - All plugins
   - `PaintDotNet.Base.dll`
+  - `PaintDotNet.Collections.dll`
   - `PaintDotNet.ComponentModel.dll`
   - `PaintDotNet.Core.dll`
   - `PaintDotNet.Fundamentals.dll`
