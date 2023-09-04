@@ -91,8 +91,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ValueSerializer(typeof(ParsableValueSerializer&lt;Vector2Float&gt;))]
-[TypeConverter(typeof(ParsableTypeConverter&lt;Vector2Float&gt;))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Vector2Float&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;Vector2Float&gt;))]
 public struct Vector2Float : IEquatable&lt;Vector2Float&gt;, IFormattable, IParsable&lt;Vector2Float&gt;</code></pre>
   </div>
 

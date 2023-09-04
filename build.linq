@@ -81,30 +81,33 @@ private static int MainImpl(string dllSourceDir, IEnumerable<string> additionalD
 
 private static void MergeAssemblies(string sourceDir, string outputFile)
 {
+    // Sorted from lower layer to top layer
     string[] dllFileNames =
         new string[]
         {
-            "paintdotnet.dll", // included because the docs seem to work better w/ this (fixes some "inheritdoc" docfx mistakes)
-            "PaintDotNet.Base.dll",
-            "PaintDotNet.Collections.dll",
+            // Included because the docs seem to work better w/ this (fixes some "inheritdoc" docfx mistakes)
+            // And we put this at the top so that if a class is defined here as internal, with the same name
+            // as a lower level assembly that is defined as public, then we'll notice that the class goes
+            // missing when we look at the diff of generated files.
+            "paintdotnet.dll", 
+            
             "PaintDotNet.ComponentModel.dll",
-            "PaintDotNet.Core.dll",
-            "PaintDotNet.Data.dll",
-            "PaintDotNet.Effects.Core.dll",
-            "PaintDotNet.Effects.Gpu.dll",
-            "PaintDotNet.Framework.dll",
             "PaintDotNet.Fundamentals.dll",
-            "PaintDotNet.ObjectModel.dll",
             "PaintDotNet.Primitives.dll",
             "PaintDotNet.PropertySystem.dll",
-            //"PaintDotNet.Resources.dll",
+            "PaintDotNet.Collections.dll",
             "PaintDotNet.Runtime.dll",
-            //"PaintDotNet.SystemLayer.dll",
-            //"PaintDotNet.Systrace.dll",
-            "PaintDotNet.UI.dll",
+            "PaintDotNet.ObjectModel.dll",
             "PaintDotNet.Windows.dll",
             "PaintDotNet.Windows.Core.dll",
-            "PaintDotNet.Windows.Framework.dll"
+            "PaintDotNet.Windows.Framework.dll",
+            "PaintDotNet.UI.dll",
+            "PaintDotNet.Base.dll",            
+            "PaintDotNet.Core.dll",
+            "PaintDotNet.Framework.dll",
+            "PaintDotNet.Data.dll",
+            "PaintDotNet.Effects.Core.dll",
+            "PaintDotNet.Effects.Gpu.dll",            
         };
 
     RepackOptions options = new RepackOptions()
