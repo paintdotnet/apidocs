@@ -108,7 +108,7 @@
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_SampleMap"><code>SampleMap = 0</code></dt>
-    <dd><p>The scene position will be provided as { X, Y, 1, 1 }. This can be used as the input value for a sample
+    <dd><p>The scene position will be provided as { X, Y, 0, 1 }. This can be used as the input value for a sample
 map effect or the SampleMapRenderer, in which case it is essentially the identity transform.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_Raw"><code>Raw = 1</code></dt>
@@ -117,7 +117,7 @@ See also <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d2dget
 The Z and W components contain values used for calculating texture offsets and can be useful
 in very advanced scenarios for low-level pixel shaders.<br>
 These values may not be interpreted correctly if used in sample map effects, which expect values
-in the form {X, Y, A, 1}.</p>
+in the form {X, Y, *, A}.</p>
 </dd>
   </dl>
 

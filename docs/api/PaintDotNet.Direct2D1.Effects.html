@@ -1091,10 +1091,9 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.html">ScenePositionEffect</a></dt>
       <dd><p>An effect whose output at each location is the scene position. This can be useful for sample map
 effects that take a sample map as input, and produce a sample map as an output. If this effect
-is plugged in to the SampleMapRenderer as the SampleMap input, the output will be the same as
-Input image. The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 },
-instead of whole-integer offsets, such as { x = 0, y = 0 }.<br>
-output[x,y] = { D2DGetScenePosition().XY, 1, 1 }</p>
+is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as
+the Input image. The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 },
+instead of whole-integer offsets, such as { x = 0, y = 0 }.<br></p>
 </dd>
     </dl>
     <dl class="jumplist">
