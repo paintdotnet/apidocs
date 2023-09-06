@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ISetting&lt;TValue&gt; : ISetting where TValue : notnull</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISetting&lt;TValue&gt; : ISetting, IInternalImpl where TValue : notnull</code></pre>
   </div>
 
 

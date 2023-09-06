@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IScalarAppSetting&lt;TValue&gt; : ISetting&lt;TValue&gt;, ISetting where TValue : struct, IComparable&lt;TValue&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IScalarAppSetting&lt;TValue&gt; : ISetting&lt;TValue&gt;, ISetting, IInternalImpl where TValue : struct, IComparable&lt;TValue&gt;</code></pre>
   </div>
 
 
