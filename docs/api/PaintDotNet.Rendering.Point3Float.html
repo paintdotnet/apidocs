@@ -91,8 +91,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;Point3Float&gt;))]
-[ValueSerializer(typeof(ParsableValueSerializer&lt;Point3Float&gt;))]
+    <pre><code class="lang-csharp hljs">[ValueSerializer(typeof(ParsableValueSerializer&lt;Point3Float&gt;))]
+[TypeConverter(typeof(ParsableTypeConverter&lt;Point3Float&gt;))]
 public struct Point3Float : IEquatable&lt;Point3Float&gt;, IFormattable, IParsable&lt;Point3Float&gt;</code></pre>
   </div>
 

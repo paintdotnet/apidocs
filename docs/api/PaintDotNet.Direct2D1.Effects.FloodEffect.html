@@ -530,9 +530,10 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
   <h2 id="PaintDotNet_Direct2D1_Effects_FloodEffect_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>NOTE: The effect passes along the color value exactly as specified. You must pre-multiply the
 value if you plan to pass the output to effects that expect a pre-multiplied input, which is
-almost always the case. If you have a ColorRgba128Float, you can convert it to a premultiplied
-ColorPrgba128Float with the ToPremultiplied() method, then cast to Vector4Float when setting
-the Color property.<br><br>
+almost always the case. If you have a <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>, you can convert it to a
+premultiplied <a class="xref" href="PaintDotNet.Imaging.ColorPrgba128Float.html">ColorPrgba128Float</a> with the <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.ToPremultiplied.html#PaintDotNet_Imaging_ColorRgba128Float_ToPremultiplied">ToPremultiplied()</a>
+method, then cast to <a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a> when setting the <a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect.Props.Color.html#PaintDotNet_Direct2D1_Effects_FloodEffect_Props_Color">Color</a>
+property.<br><br>
 You can use FloodEffect2 to simplify setting the Color property.</p>
 </div>
 

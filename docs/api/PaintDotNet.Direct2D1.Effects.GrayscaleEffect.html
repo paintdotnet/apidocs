@@ -533,7 +533,8 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
 This effect calculates the <i>luma</i> for the image's color values, which is different than
 <i>luminance</i> which is calculated by the <a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminanceToAlphaEffect.html">LuminanceToAlphaEffect</a>.
 See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
-for more information.</p>
+for more information.<br>
+This effect works correctly with both premultiplied and straight alpha images.</p>
 </div>
 
   <h2 class="section" id="constructors">Constructors
@@ -541,6 +542,10 @@ for more information.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_GrayscaleEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_">GrayscaleEffect(IDeviceEffectFactory)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_GrayscaleEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_">GrayscaleEffect(IDeviceEffectFactory, IDeviceImage)</a></dt>
     <dd></dd>
   </dl>
 
