@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method ConvertToPixelsInt
+      <title>Method RescalePixelsInt
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method ConvertToPixelsInt
+      <meta name="title" content="Method RescalePixelsInt
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,14 +73,14 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*">
+        <article data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt*">
 
 
 
 
 
-<h1 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*" class="text-break">
-  Method ConvertToPixelsInt
+<h1 id="PaintDotNet_UIScaleFactor_RescalePixelsInt_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt*" class="text-break">
+  Method RescalePixelsInt
   
 </h1>
 
@@ -107,25 +107,27 @@
 
 
 
-<a id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*"></a>
+<a id="PaintDotNet_UIScaleFactor_RescalePixelsInt_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt*"></a>
 
-<h3 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_System_Double_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt(System.Double,PaintDotNet.UIScaleFactor,PaintDotNet.UIScaleFactor)">
-  ConvertToPixelsInt(double, UIScaleFactor, UIScaleFactor)
+<h3 id="PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt(System.Int32,PaintDotNet.UIScaleFactor,PaintDotNet.UIScaleFactor)">
+  RescalePixelsInt(int, UIScaleFactor, UIScaleFactor)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int ConvertToPixelsInt(double length, UIScaleFactor lengthScale, UIScaleFactor targetScale)</code></pre>
+  <pre><code class="lang-csharp hljs">public static int RescalePixelsInt(int px, UIScaleFactor sourceScale, UIScaleFactor targetScale)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dt><code>px</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
   <dd></dd>
-  <dt><code>lengthScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
+  <dt><code>sourceScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
   <dt><code>targetScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
@@ -143,29 +145,36 @@
 
 
 
+<h4 class="section" id="PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This is useful for scaling a bitmap from its DPI setting to the DPI setting for the display.</p>
+</div>
 
 
 
 
-<a id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*"></a>
+<a id="PaintDotNet_UIScaleFactor_RescalePixelsInt_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt*"></a>
 
-<h3 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_PaintDotNet_Rendering_SizeDouble_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt(PaintDotNet.Rendering.SizeDouble,PaintDotNet.UIScaleFactor,PaintDotNet.UIScaleFactor)">
-  ConvertToPixelsInt(SizeDouble, UIScaleFactor, UIScaleFactor)
+<h3 id="PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt(System.Int32,System.Int32,PaintDotNet.UIScaleFactor,PaintDotNet.UIScaleFactor)">
+  RescalePixelsInt(int, int, UIScaleFactor, UIScaleFactor)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static SizeInt32 ConvertToPixelsInt(SizeDouble size, UIScaleFactor sizeScale, UIScaleFactor targetScale)</code></pre>
+  <pre><code class="lang-csharp hljs">public static SizeInt32 RescalePixelsInt(int widthPx, int heightPx, UIScaleFactor sourceScale, UIScaleFactor targetScale)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>size</code> <a class="xref" href="PaintDotNet.Rendering.SizeDouble.html">SizeDouble</a></dt>
+  <dt><code>widthPx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
   <dd></dd>
-  <dt><code>sizeScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
+  <dt><code>heightPx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd></dd>
+  <dt><code>sourceScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
   <dt><code>targetScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
@@ -183,65 +192,36 @@
 
 
 
+<h4 class="section" id="PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This is useful for scaling a bitmap from its DPI setting to the DPI setting for the display.</p>
+</div>
 
 
 
 
-<a id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*"></a>
+<a id="PaintDotNet_UIScaleFactor_RescalePixelsInt_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt*"></a>
 
-<h3 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_System_Double_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt(System.Double)">
-  ConvertToPixelsInt(double)
+<h3 id="PaintDotNet_UIScaleFactor_RescalePixelsInt_PaintDotNet_Rendering_SizeInt32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_" data-uid="PaintDotNet.UIScaleFactor.RescalePixelsInt(PaintDotNet.Rendering.SizeInt32,PaintDotNet.UIScaleFactor,PaintDotNet.UIScaleFactor)">
+  RescalePixelsInt(SizeInt32, UIScaleFactor, UIScaleFactor)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public int ConvertToPixelsInt(double length)</code></pre>
+  <pre><code class="lang-csharp hljs">public static SizeInt32 RescalePixelsInt(SizeInt32 sizePx, UIScaleFactor sourceScale, UIScaleFactor targetScale)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dt><code>sizePx</code> <a class="xref" href="PaintDotNet.Rendering.SizeInt32.html">SizeInt32</a></dt>
   <dd></dd>
-</dl>
-
-<h4 class="section">Returns</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dt><code>sourceScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-<a id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*"></a>
-
-<h3 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_System_Double_System_Double_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt(System.Double,System.Double)">
-  ConvertToPixelsInt(double, double)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public SizeInt32 ConvertToPixelsInt(double width, double height)</code></pre>
-</div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
-  <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dt><code>targetScale</code> <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
   <dd></dd>
 </dl>
 
@@ -257,42 +237,9 @@
 
 
 
-
-
-
-
-<a id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt*"></a>
-
-<h3 id="PaintDotNet_UIScaleFactor_ConvertToPixelsInt_PaintDotNet_Rendering_SizeDouble_" data-uid="PaintDotNet.UIScaleFactor.ConvertToPixelsInt(PaintDotNet.Rendering.SizeDouble)">
-  ConvertToPixelsInt(SizeDouble)
-  
-</h3>
-
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public SizeInt32 ConvertToPixelsInt(SizeDouble size)</code></pre>
+<h4 class="section" id="PaintDotNet_UIScaleFactor_RescalePixelsInt_PaintDotNet_Rendering_SizeInt32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This is useful for scaling a bitmap from its DPI setting to the DPI setting for the display.</p>
 </div>
-
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>size</code> <a class="xref" href="PaintDotNet.Rendering.SizeDouble.html">SizeDouble</a></dt>
-  <dd></dd>
-</dl>
-
-<h4 class="section">Returns</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Rendering.SizeInt32.html">SizeInt32</a></dt>
-  <dd></dd>
-</dl>
-
-
-
-
-
-
-
 
 
 
