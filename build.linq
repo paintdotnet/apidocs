@@ -81,7 +81,7 @@ private static int MainImpl(string dllSourceDir, IEnumerable<string> additionalD
 
 private static void MergeAssemblies(string sourceDir, string outputFile)
 {
-    // Sorted from lower layer to top layer
+    // Mostly sorted from lower layer to top layer.
     string[] dllFileNames =
         new string[]
         {
@@ -107,7 +107,11 @@ private static void MergeAssemblies(string sourceDir, string outputFile)
             "PaintDotNet.Framework.dll",
             "PaintDotNet.Data.dll",
             "PaintDotNet.Effects.Core.dll",
-            "PaintDotNet.Effects.Gpu.dll",            
+            "PaintDotNet.Effects.Gpu.dll",
+
+            // These have no public APIs, won't affect the docs, but help reduce warnings during the merge process
+            "PaintDotNet.Resources.dll",
+            "PaintDotNet.SystemLayer.dll",
         };
 
     RepackOptions options = new RepackOptions()
