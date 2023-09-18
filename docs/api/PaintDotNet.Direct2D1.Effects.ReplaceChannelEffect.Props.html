@@ -184,6 +184,8 @@ If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChan
 channel replacement will be performed, and then the result will be premultiplied.<br>
 If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelAlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelAlphaMode_Straight">Straight</a>, the channel replacement will be performed on the
 input images without any further processing.<br>
+The effect may also skip the premultiplication/unpremultiplication steps if it is not necessary for the given
+channel replacement (such as when the alpha channel is not being modified).<br>
 The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelAlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelAlphaMode_Premultiplied">Premultiplied</a>.</p>
 </dd>
   </dl>

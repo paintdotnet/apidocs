@@ -91,8 +91,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ValueSerializer(typeof(ParsableValueSerializer&lt;SizeInt64&gt;))]
-[TypeConverter(typeof(ParsableTypeConverter&lt;SizeInt64&gt;))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ParsableTypeConverter&lt;SizeInt64&gt;))]
+[ValueSerializer(typeof(ParsableValueSerializer&lt;SizeInt64&gt;))]
 public struct SizeInt64 : IEquatable&lt;SizeInt64&gt;, IFormattable, IParsable&lt;SizeInt64&gt;</code></pre>
   </div>
 
