@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -147,11 +158,10 @@ specified for the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.
 <h4 class="section" id="PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>The pixel format for the output buffer is established by setting the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat.html#PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat">OutputPixelFormat</a>
 property during the <a class="xref" href="PaintDotNet.Effects.BitmapEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_BitmapEffect_OnInitializeRenderInfo_PaintDotNet_Effects_IBitmapEffectRenderInfo_">OnInitializeRenderInfo(IBitmapEffectRenderInfo)</a> method.
-If the property is not set then the pixel format defaults to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.</p>
-<pre><code>&lt;br /&gt;
-&lt;br /&gt;
-</code></pre>
-<p>It is recommended that you use the <a class="xref" href="PaintDotNet.Effects.BitmapEffectOutputExtensions.Lock.html#PaintDotNet_Effects_BitmapEffectOutputExtensions_Lock__1_PaintDotNet_Effects_IBitmapEffectOutput_">Lock&lt;TPixel&gt;(IBitmapEffectOutput)</a>
+If the property is not set then the pixel format defaults to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.
+<br>
+<br>
+It is recommended that you use the <a class="xref" href="PaintDotNet.Effects.BitmapEffectOutputExtensions.Lock.html#PaintDotNet_Effects_BitmapEffectOutputExtensions_Lock__1_PaintDotNet_Effects_IBitmapEffectOutput_">Lock&lt;TPixel&gt;(IBitmapEffectOutput)</a>
 or <a class="xref" href="PaintDotNet.Effects.BitmapEffectOutputExtensions.LockBgra32.html#PaintDotNet_Effects_BitmapEffectOutputExtensions_LockBgra32_PaintDotNet_Effects_IBitmapEffectOutput_">LockBgra32(IBitmapEffectOutput)</a> extension methods
 in order to get a strongly-typed <a class="xref" href="PaintDotNet.Imaging.IBitmapLock-1.html">IBitmapLock&lt;TPixel&gt;</a>. You can then use the
 <a class="xref" href="PaintDotNet.Imaging.BitmapLockExtensions.AsRegionPtr.html#PaintDotNet_Imaging_BitmapLockExtensions_AsRegionPtr__1_PaintDotNet_Imaging_IBitmapLock___0__">AsRegionPtr&lt;TPixel&gt;(IBitmapLock&lt;TPixel&gt;)</a> extension method to

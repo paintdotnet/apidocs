@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -115,7 +126,8 @@
 </h3>
 
 <div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource&lt;TPixel&gt;</a> that renders the given <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> into
-CPU accessible memory.<br><br>
+CPU accessible memory.<br>
+<br>
 If the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> is using hardware acceleration, rendering will be performed on the GPU
 and then copied to CPU memory. This is done on-demand when <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.CopyPixels.html#PaintDotNet_Imaging_IBitmapSource_CopyPixels_System_Void__System_Int32_System_UInt32_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyPixels(void*, int, uint, in RectInt32?)</a>
 is called. No caching is used.</p>
@@ -158,7 +170,9 @@ is called. No caching is used.</p>
 <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a>. Some effects require higher precision buffers to render correctly (e.g. distortion
 effects that use SampleMapRenderer). In that case, use the
 <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapSourceFromImage.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmapSourceFromImage__1_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_DevicePixelFormat_">CreateBitmapSourceFromImage&lt;TPixel&gt;(IDeviceContext, SizeInt32, IDeviceImage, DevicePixelFormat)</a>
-overload and specify something like <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba128Float.html#PaintDotNet_Direct2D1_DevicePixelFormats_Prgba128Float">Prgba128Float</a>.<br><br><b>Note:</b> The pixel format of the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> must use premultiplied alpha.</p>
+overload and specify something like <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba128Float.html#PaintDotNet_Direct2D1_DevicePixelFormats_Prgba128Float">Prgba128Float</a>.<br>
+<br>
+<b>Note:</b> The pixel format of the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> must use premultiplied alpha.</p>
 </div>
 
 
@@ -216,7 +230,9 @@ is called. No caching is used.</p>
 <div class="markdown level1 remarks"><p>Use this overload to specify a pixel format for the rendering buffer. Some effects require higher precision
 buffers to render correctly (e.g. distortion effects that use SampleMapRenderer). In that case
 you can specify <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba128Float.html#PaintDotNet_Direct2D1_DevicePixelFormats_Prgba128Float">Prgba128Float</a> for the pixel format. The GPU will be used
-to convert from the buffer's pixel format to the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a>'s pixel format.<br><br><b>Note:</b> The pixel format of the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> must use premultiplied alpha.</p>
+to convert from the buffer's pixel format to the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a>'s pixel format.<br>
+<br>
+<b>Note:</b> The pixel format of the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> must use premultiplied alpha.</p>
 </div>
 
 

@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -142,10 +153,12 @@ is unchanged.</p>
 <div class="markdown level1 remarks"><p>This color context permits you to work with the original pixel data with the highest level of accuracy,
 but with the added cost of complexity or loss of correctness. The image may be encoded in any color
 space or gamma, and you will need to accommodate that, or be implementing an effect where this is not
-a concern.<br><br>
+a concern.<br>
+<br>
 Using this color context is generally not recommended unless you know what you're doing with respect
 to color management, or if you require access to the raw pixel values no matter what, or if you will
-not be doing any sort of blending, antialiasing, sampling, or filtering.<br><br>
+not be doing any sort of blending, antialiasing, sampling, or filtering.<br>
+<br>
 The color context of the source image is accessible via the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a>
 property.<br></p>
 </div>

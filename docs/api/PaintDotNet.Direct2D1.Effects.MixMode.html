@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -85,7 +96,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Provides composite modes, blend modes, and alpha masking. These modes are aggregated
@@ -124,12 +135,6 @@ from CompositeMode, BlendMode, BlendMode2, and the AlphaMaskEffect.<br></p>
   </div>
   <div>
       <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixModeExtensions.ToCompositeMode.html#PaintDotNet_Direct2D1_Effects_MixModeExtensions_ToCompositeMode_PaintDotNet_Direct2D1_Effects_MixMode_">MixModeExtensions.ToCompositeMode(MixMode)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.LayerBlendModeExtensions.GetLayerBlendMode.html#PaintDotNet_LayerBlendModeExtensions_GetLayerBlendMode_PaintDotNet_Direct2D1_Effects_MixMode_">LayerBlendModeExtensions.GetLayerBlendMode(MixMode)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.LayerBlendModeExtensions.TryGetLayerBlendMode.html#PaintDotNet_LayerBlendModeExtensions_TryGetLayerBlendMode_PaintDotNet_Direct2D1_Effects_MixMode_System_Nullable_PaintDotNet_LayerBlendMode___">LayerBlendModeExtensions.TryGetLayerBlendMode(MixMode, out LayerBlendMode?)</a>
   </div>
   </dd></dl>
 
@@ -311,7 +316,8 @@ output = [R=max(dst.R, src.R), G=max(dst.G, src.G), B=max(dst.B, src.B)]</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_AlphaMask"><code>AlphaMask = 3000</code></dt>
     <dd><p>Applies an alpha mask from the source to the destination.<br>
-Color values in the destination are multiplied by the alpha channel of the source.<br><a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/alpha-mask-effect">Direct2D Alpha mask effect</a>
+Color values in the destination are multiplied by the alpha channel of the source.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/alpha-mask-effect">Direct2D Alpha mask effect</a>
 for more information.</p>
 </dd>
   </dl>

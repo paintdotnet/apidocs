@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -139,11 +150,14 @@
 <div class="markdown level1 remarks"><p>Compared to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a>, this color context may be more familiar or comfortable
 if you are accustomed to working with 32-bit BGRA/RGBA pixel data, which is always stored as sRGB.
 However, operations on color values, such as blending, sampling, antialiasing, and filtering, will
-not preserve perceptual luminance. Colors will generally end up darker than they should.<br><br>
-If you need predefined color values (e.g. red, blue, etc.), use the <a class="xref" href="PaintDotNet.Imaging.SrgbColors.html">SrgbColors</a> class.<br><br>
+not preserve perceptual luminance. Colors will generally end up darker than they should.<br>
+<br>
+If you need predefined color values (e.g. red, blue, etc.), use the <a class="xref" href="PaintDotNet.Imaging.SrgbColors.html">SrgbColors</a> class.<br>
+<br>
 Most images are stored as sRGB, which means that most of the time using this color context is
 equivalent to using <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>. However, if an image is not stored as sRGB, this
-color context will convert it to sRGB. This may result in precision loss and gamut clipping.<br><br>
+color context will convert it to sRGB. This may result in precision loss and gamut clipping.<br>
+<br>
 For more information, see: <a href="https://en.wikipedia.org/wiki/SRGB">sRGB - Wikipedia</a></p>
 </div>
 

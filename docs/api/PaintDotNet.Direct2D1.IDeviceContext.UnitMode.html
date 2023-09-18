@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -137,7 +148,8 @@
 
 <h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_UnitMode_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This method will affect all properties and parameters affected by the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Dpi.html#PaintDotNet_Direct2D1_IDeviceContext_Dpi">Dpi</a> property. This affects all coordinates,
-lengths, and other properties that are not explicitly defined as being in another unit. For example:<br><ul><li>Setting the unit mode will affect a coordinate passed into <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawLine.html#PaintDotNet_Direct2D1_IDeviceContext_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle?)</a>, and the scale of geometry passed into <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a>.</li><li>Setting the unit mode will not affect the value returned by <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.PixelSize.html#PaintDotNet_Direct2D1_IDeviceBitmap_PixelSize">PixelSize</a>.</li></ul>
+lengths, and other properties that are not explicitly defined as being in another unit. For example:<br></p>
+<ul><li>Setting the unit mode will affect a coordinate passed into <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawLine.html#PaintDotNet_Direct2D1_IDeviceContext_DrawLine_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_IDeviceBrush_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_">DrawLine(Point2Float, Point2Float, IDeviceBrush, float, IStrokeStyle?)</a>, and the scale of geometry passed into <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillGeometry.html#PaintDotNet_Direct2D1_IDeviceContext_FillGeometry_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_IDeviceBrush_">FillGeometry(IGeometry, IDeviceBrush, IDeviceBrush?)</a>.</li><li>Setting the unit mode will not affect the value returned by <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.PixelSize.html#PaintDotNet_Direct2D1_IDeviceBitmap_PixelSize">PixelSize</a>.</li></ul>
 </div>
 
 

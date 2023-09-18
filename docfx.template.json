@@ -5,7 +5,23 @@
         {
           "src": "{$AssemblySourceDir$}",
           "files": [
-            "PaintDotNet.Merged.dll"
+            "PaintDotNet.ComponentModel.dll",
+            "PaintDotNet.Fundamentals.dll",
+            "PaintDotNet.Primitives.dll",
+            "PaintDotNet.PropertySystem.dll",
+            "PaintDotNet.Collections.dll",
+            "PaintDotNet.Runtime.dll",
+            "PaintDotNet.ObjectModel.dll",
+            "PaintDotNet.Windows.dll",
+            "PaintDotNet.Windows.Core.dll",
+            "PaintDotNet.Windows.Framework.dll",
+            "PaintDotNet.UI.dll",
+            "PaintDotNet.Base.dll",            
+            "PaintDotNet.Core.dll",
+            "PaintDotNet.Framework.dll",
+            "PaintDotNet.Data.dll",
+            "PaintDotNet.Effects.Core.dll",
+            "PaintDotNet.Effects.Gpu.dll"
           ]
         }
       ],

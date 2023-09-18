@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -147,7 +158,8 @@ masking or blending.</p>
 
 <h4 class="section" id="PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32__remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>Any pixel format can be used for the buffer. If it matches the pixel format that the effect is
-using for its output buffer, no conversion will be necessary and performance will be optimal.<br><br>
+using for its output buffer, no conversion will be necessary and performance will be optimal.<br>
+<br>
 This method will handle clearing / zero-filling the buffer if necessary based on whether the
 effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
 necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>

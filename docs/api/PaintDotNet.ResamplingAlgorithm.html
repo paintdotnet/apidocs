@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -85,7 +96,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -123,9 +134,8 @@ which is equivalent to the HighQualityCubic algorithm offered by WIC and Direct2
 (b=0, c=0.5).</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_SuperSampling"><code>SuperSampling = 3</code></dt>
-    <dd><pre><code>&lt;b&gt;Deprecated.&lt;/b&gt; It is highly recommend that you not use this.&lt;br /&gt;
-</code></pre>
-<p>This is equivalent to Fant for down-sizing, and CubicSmooth for upsizing.<br>
+    <dd><p><b>Deprecated.</b> It is highly recommend that you not use this.<br>
+This is equivalent to Fant for down-sizing, and CubicSmooth for upsizing.<br>
 Note that the name of this was poorly chosen and should not actually be referred to as &quot;super sampling.&quot;</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_Fant"><code>Fant = 4</code></dt>

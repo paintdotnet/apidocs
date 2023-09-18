@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -150,11 +161,14 @@ correct, use this method to wrap any <a class="xref" href="PaintDotNet.Direct2D1
 part of the effect graph that is causing the error. The command list(s) at fault may not be yours; they are
 often contained within <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>s, for instance. The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> may still be
 set as the input for the <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, but the other nodes in the effect graph should use the
-wrapper created by this method.<br><br>
+wrapper created by this method.<br>
+<br>
 When the Direct2D debug layer and Visual Studio's mixed-mode debugging (&quot;Enable debugging for managed and
-native code together&quot;) are both enabled, you would see the following error:<br><pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
-See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br><br>
-An example of an effect graph that can cause this error:
+native code together&quot;) are both enabled, you would see the following error:<br></p>
+<pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
+<p>See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br>
+<br>
+An example of an effect graph that can cause this error:</p>
 <pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
          |         |    
          |         |    

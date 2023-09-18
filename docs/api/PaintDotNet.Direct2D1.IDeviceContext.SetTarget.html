@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -144,7 +155,8 @@ will enter the <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1Error.html#P
 You cannot use SetTarget to render to a bitmap/command list from multiple device contexts simultaneously. An image is considered
 “being rendered to” if it has ever been set on a device context within a BeginDraw/EndDraw timespan. If an attempt is made to
 render to an image through multiple device contexts, all subsequent device contexts after the first will enter an error state.<br>
-Callers wishing to attach an image to a second device context should first call EndDraw on the first device context.<br><b>Note:</b> Changing the target does not change the bitmap that an HWND device context presents from, nor does it change the
+Callers wishing to attach an image to a second device context should first call EndDraw on the first device context.<br>
+<b>Note:</b> Changing the target does not change the bitmap that an HWND device context presents from, nor does it change the
 bitmap that a DC device context blts to/from.<br>
 This API makes it easy for an application to use a bitmap as a source (like in DrawBitmap) and as a destination at the same time.
 Attempting to use a bitmap as a source on the same device context to which it is bound as a target will put the device context
@@ -156,10 +168,13 @@ You can set the target to null, in which case drawing calls will put the device 
 Calling SetTarget with a null target does not restore the original target bitmap to the device context.<br>
 If the device context has an outstanding HDC, the context will enter the <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1Error.html#PaintDotNet_Direct2D1_Direct2D1Error_WrongState">WrongState</a> error state. The target will not be changed.<br>
 If the bitmap and the device context are not in the same resource domain, the context will enter an error state. The target will
-not be changed.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelSize.html#PaintDotNet_Direct2D1_IDeviceContext_PixelSize">PixelSize</a> returns the size of the current target bitmap (or 0, 0) if there is no bitmap bound). <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Size.html#PaintDotNet_Direct2D1_IDeviceContext_Size">Size</a>
+not be changed.<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelSize.html#PaintDotNet_Direct2D1_IDeviceContext_PixelSize">PixelSize</a> returns the size of the current target bitmap (or 0, 0) if there is no bitmap bound). <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Size.html#PaintDotNet_Direct2D1_IDeviceContext_Size">Size</a>
 returns the pixel size of the current bitmap scaled by the DPI of the render target. SetTarget does not affect the DPI of the
-render target.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelFormat.html#PaintDotNet_Direct2D1_IDeviceContext_PixelFormat">PixelFormat</a> returns the pixel format of the current target bitmap, or <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Unknown.html#PaintDotNet_Direct2D1_DevicePixelFormats_Unknown">Unknown</a> if
-there is none.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.CopyFromDeviceContext.html#PaintDotNet_Direct2D1_IDeviceBitmap_CopyFromDeviceContext_System_Nullable_PaintDotNet_Rendering_Point2Int32__PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyFromDeviceContext(Point2Int32?, IDeviceContext, in RectInt32?)</a> copies from the currently bound target bitmap.</p>
+render target.<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelFormat.html#PaintDotNet_Direct2D1_IDeviceContext_PixelFormat">PixelFormat</a> returns the pixel format of the current target bitmap, or <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Unknown.html#PaintDotNet_Direct2D1_DevicePixelFormats_Unknown">Unknown</a> if
+there is none.<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.CopyFromDeviceContext.html#PaintDotNet_Direct2D1_IDeviceBitmap_CopyFromDeviceContext_System_Nullable_PaintDotNet_Rendering_Point2Int32__PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyFromDeviceContext(Point2Int32?, IDeviceContext, in RectInt32?)</a> copies from the currently bound target bitmap.</p>
 </div>
 
 

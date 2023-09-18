@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -84,7 +95,7 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Interface describing SVG path data. Path data can be set as the 'd' attribute on a 'path' element. The
@@ -92,7 +103,8 @@ path data set is factored into two arrays. The segment data array stores all num
 array stores the set of commands. Unlike the string data set in the d attribute, each command in this
 representation uses a fixed number of elements in the segment data array. Therefore, the path
 'M 0,0 100,0 0,100 Z' is represented as: 'M0,0 L100,0 L0,100 Z'. This is split into two arrays, with
-the segment data containing '0,0 100,0 0,100', and the commands containing 'M L L Z'.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgpathdata">ID2D1SvgPathData</a></p>
+the segment data containing '0,0 100,0 0,100', and the commands containing 'M L L Z'.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgpathdata">ID2D1SvgPathData</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -130,67 +142,13 @@ the segment data containing '0,0 100,0 0,100', and the commands containing 'M L 
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.CreateRef(IObjectRef, Type)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef&lt;TInterface&gt;(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.TryCreateRef(IObjectRef, Type)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface?)</a>
-  </div>
-  <div>
       <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1ObjectRefExtensions.CreateRef.html#PaintDotNet_Direct2D1_Direct2D1ObjectRefExtensions_CreateRef_PaintDotNet_Direct2D1_IDirect2DResource_">Direct2D1ObjectRefExtensions.CreateRef(IDirect2DResource)</a>
   </div>
   <div>
       <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1ObjectRefExtensions.CreateRef.html#PaintDotNet_Direct2D1_Direct2D1ObjectRefExtensions_CreateRef_PaintDotNet_Direct2D1_ISvgAttribute_">Direct2D1ObjectRefExtensions.CreateRef(ISvgAttribute)</a>
   </div>
   <div>
-      <a class="xref" href="PaintDotNet.CloneableExtensions.CloneT.html#PaintDotNet_CloneableExtensions_CloneT__1___0_">CloneableExtensions.CloneT&lt;T&gt;(T)</a>
-  </div>
-  <div>
       <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1ObjectRefExtensions.CreateRef.html#PaintDotNet_Direct2D1_Direct2D1ObjectRefExtensions_CreateRef_PaintDotNet_Direct2D1_ISvgPathData_">Direct2D1ObjectRefExtensions.CreateRef(ISvgPathData)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddArc.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddArc_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Single_System_Single_">SvgPathDataExtensions.AddArc(ISvgPathData, SvgPathCommandSuffix, float, float, float, bool, bool, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddClosePath.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddClosePath_PaintDotNet_Direct2D1_ISvgPathData_">SvgPathDataExtensions.AddClosePath(ISvgPathData)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddCommandAndSegmentData.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddCommandAndSegmentData_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommand_System_ReadOnlySpan_System_Single__">SvgPathDataExtensions.AddCommandAndSegmentData(ISvgPathData, SvgPathCommand, ReadOnlySpan&lt;float&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddCubic.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddCubic_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_">SvgPathDataExtensions.AddCubic(ISvgPathData, SvgPathCommandSuffix, float, float, float, float, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddCubicSmooth.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddCubicSmooth_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_System_Single_System_Single_">SvgPathDataExtensions.AddCubicSmooth(ISvgPathData, SvgPathCommandSuffix, float, float, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddHorizontal.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddHorizontal_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_">SvgPathDataExtensions.AddHorizontal(ISvgPathData, SvgPathCommandSuffix, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddLine.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddLine_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_">SvgPathDataExtensions.AddLine(ISvgPathData, SvgPathCommandSuffix, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddMove.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddMove_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_">SvgPathDataExtensions.AddMove(ISvgPathData, SvgPathCommandSuffix, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddQuadratic.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddQuadratic_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_System_Single_System_Single_">SvgPathDataExtensions.AddQuadratic(ISvgPathData, SvgPathCommandSuffix, float, float, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddQuadraticSmooth.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddQuadraticSmooth_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_System_Single_">SvgPathDataExtensions.AddQuadraticSmooth(ISvgPathData, SvgPathCommandSuffix, float, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.SvgPathDataExtensions.AddVertical.html#PaintDotNet_Direct2D1_SvgPathDataExtensions_AddVertical_PaintDotNet_Direct2D1_ISvgPathData_PaintDotNet_Direct2D1_SvgPathCommandSuffix_System_Single_">SvgPathDataExtensions.AddVertical(ISvgPathData, SvgPathCommandSuffix, float)</a>
   </div>
   </dd></dl>
 

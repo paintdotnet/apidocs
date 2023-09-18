@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -128,11 +139,10 @@
   <dd><param name="name">The display name of the effect which will be used in UI elements (e.g. menus, dialog titles, history entries).
 </dd>
   <dt><code>image</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd><pre><code>&lt;param name=&quot;image&quot;&gt;
-</code></pre>
-<p>An image/icon for the effect that will be used in UI elements (e.g. menus, dialog boxes, history entries).<br>
-This should have a square size, at least 16x16 pixels, and will be scaled up or down to 16x16 dips (e.g. 32x32 pixels if system scaling is set to 200%).</p>
-
+  <dd><param name="image">
+            An image/icon for the effect that will be used in UI elements (e.g. menus, dialog boxes, history entries).<br>
+            This should have a square size, at least 16x16 pixels, and will be scaled up or down to 16x16 dips (e.g. 32x32 pixels if system scaling is set to 200%).
+            
 </dd>
   <dt><code>submenuName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
   <dd><param name="submenuName">The name of a sub-menu to place the effect into. May be null, in which case no sub-menu is used.

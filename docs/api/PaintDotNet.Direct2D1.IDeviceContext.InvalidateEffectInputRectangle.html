@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -115,7 +126,8 @@
 </h3>
 
 <div class="markdown level1 summary"><p>This indicates that a portion of an effect's input is invalid. This method can be called many times.<br>
-You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br><b>Note:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
+You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br>
+<b>Note:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
 You can also use this methods to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
 </div>
 <div class="markdown level1 conceptual"></div>

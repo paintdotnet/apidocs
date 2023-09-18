@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -111,7 +122,8 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect2.html">AlphaMaskEffect2</a></dt>
-      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.html">AlphaMaskEffect</a>, but also supports Straight alpha via configuring the AlphaMode property.<br><br>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.html">AlphaMaskEffect</a>, but also supports Straight alpha via configuring the AlphaMode property.<br>
+<br>
 This effect applies an alpha mask to an image. It has two inputs, named Destination and Mask.
 Color values in the Destination image are multiplied by the alpha channel of the Mask image.<br></p>
 </dd>
@@ -265,8 +277,11 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorMatrixEffect.html">ColorMatrixEffect</a></dt>
-      <dd><p>Use the color matrix effect to alter the RGBA values of a bitmap.<br><br>
-You can use this effect to:<br><ul><li>Remove a color channel from an image.</li><li>Reduce the color in an image.</li><li>Swap color channels.</li><li>Combine color channels.</li></ul><br>
+      <dd><p>Use the color matrix effect to alter the RGBA values of a bitmap.<br>
+<br>
+You can use this effect to:<br></p>
+<ul><li>Remove a color channel from an image.</li><li>Reduce the color in an image.</li><li>Swap color channels.</li><li>Combine color channels.</li></ul>
+<br>
 Many built-in effects are specializations of color matrix that are optimized for the intended use of the effects. Examples include saturation, hue rotate, sepia, and temperature and tint.<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/color-matrix">Color matrix effect</a>
 </dd>
@@ -613,7 +628,9 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
 mode that does not apply any optimizations or shortcuts that reduce image quality. When using
 the HighQuality mode, rendering quality is greatly improved for images that are gamma corrected
 or that have a low dynamic range (such as when using a large gamma exponent), but performance
-is greatly reduced.<br><br><b>NOTE:</b> The maximum value for the StandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a>.</p>
+is greatly reduced.<br>
+<br>
+<b>NOTE:</b> The maximum value for the StandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -743,11 +760,13 @@ This effect can be useful for changing an effect graph without having to rebuild
 to each output channel.<br>
 This effect supports any number of inputs, but only 4 can be used at once. Use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.InputCount.html#PaintDotNet_Direct2D1_IDeviceEffect_InputCount">InputCount</a>
 to specify the number of inputs.<br>
-If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br><br><pre><code class="lang-csharp">output = new Color(
-Input[RedInputIndex][RedInputChannel],
-Input[GreenInputIndex][GreenInputChannel],
-Input[BlueInputIndex][BlueInputChannel],
-Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
+If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br>
+<br></p>
+<pre><code class="lang-csharp">output = new Color(
+    Input[RedInputIndex][RedInputChannel],
+    Input[GreenInputIndex][GreenInputChannel],
+    Input[BlueInputIndex][BlueInputChannel],
+    Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -827,17 +846,19 @@ color matrix:</p>
 [R' G' B' A'] = [R G B A 1] * │   0   0   0  0.0721 │  B
                               │   0   0   0       0 │  A
                               │   0   0   0       0 │  1
-                              └                     ┘</code></pre><br>
-<p>This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
+                              └                     ┘</code></pre>
+<br>
+This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
 alpha images unless they are fully opaque.<br>
 This effect calculates the <i>luminance</i> for the image's color values, which is different than
 <i>luma</i> which is calculated by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>.
 See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
-for more information.<br><b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
+for more information.<br>
+<b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
 luminance for an image you should first perform inverse gamma correction to get the true color
 values for the image. Since images are normally stored at 2.2 gamma, you can use the Gamma
 transfer effect with an exponent of (1/2.2) and then use the output of that effect.<br>
-For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a></p>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -1041,7 +1062,8 @@ may or may not need to use premultiplication depending on their own configuratio
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.html">ReplaceChannelEffect</a></dt>
-      <dd><p>Replaces one channel of the input image with that of another image.<br><pre><code class="lang-csharp">color = Input[x,y];
+      <dd><p>Replaces one channel of the input image with that of another image.<br></p>
+<pre><code class="lang-csharp">color = Input[x,y];
 color[Channel] = ChannelSource[x,y][Channel];
 return color;</code></pre>
 </dd>
@@ -1136,7 +1158,9 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
       <dd><p>Provides the same functionality as <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>, but adds a HighQuality
 mode that does not apply any optimizations that reduce image quality. When using the HighQuality
 mode, rendering quality is greatly improved for certain types of images, but performance is
-also greatly reduced.<br><br><b>NOTE:</b> The maximum value for the BlurStandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>.</p>
+also greatly reduced.<br>
+<br>
+<b>NOTE:</b> The maximum value for the BlurStandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -1250,8 +1274,9 @@ For more information, see <a href="https://learn.microsoft.com/en-us/windows/win
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.html">Transform3DEffect</a></dt>
       <dd><p>Use the 3D transform effect to apply an arbitrary 4x4 transform matrix to an image.<br>
-This effect applies the matrix (M) you provide to the corner vertices of the source:<br><pre><code class="lang-csharp">image([ x y z 1 ]) using this calculation: [ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
-For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform">3D transform effect</a>
+This effect applies the matrix (M) you provide to the corner vertices of the source:<br></p>
+<pre><code class="lang-csharp">image([ x y z 1 ]) using this calculation: [ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform">3D transform effect</a></p>
 </dd>
     </dl>
     <dl class="jumplist">

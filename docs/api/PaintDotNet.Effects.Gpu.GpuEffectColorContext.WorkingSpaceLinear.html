@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -86,7 +97,7 @@
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -137,12 +148,17 @@
 
 <h4 class="section" id="PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This is the recommended color context for most purposes. For more information on linear gamma, see
-articles such as:<br><a href="https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear">GPU Gems 3, Chapter 24: The Importance of Being Linear</a><br><a href="http://www.ericbrasseur.org/gamma.html">Gamma error in picture scaling (Eric Brasseur)</a><br><br>
+articles such as:<br>
+<a href="https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear">GPU Gems 3, Chapter 24: The Importance of Being Linear</a><br>
+<a href="http://www.ericbrasseur.org/gamma.html">Gamma error in picture scaling (Eric Brasseur)</a><br>
+<br>
 This will use the source image's color profile and convert it to the linearized version of that color
 profile. For example, sRGB will be converted to scRGB. If the color profile is already linearized, then
-this is equivalent to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>.<br><br>
+this is equivalent to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>.<br>
+<br>
 Some Direct2D effects have an InputGamma property that defaults to sRGB. When using linear gamma you
-should make sure to set this property to Linear.<br><br>
+should make sure to set this property to Linear.<br>
+<br>
 If you need predefined color values (e.g. red, blue, etc.) use the <a class="xref" href="PaintDotNet.Imaging.LinearColors.html">LinearColors</a> class.<br></p>
 </div>
 

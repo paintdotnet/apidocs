@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -84,17 +95,24 @@
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Merged.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>The command sink is implemented by you for an application when you want to receive a playback of the commands
 recorded in a command list. A typical usage will be for transforming the command list into another format such
-as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br><br>
+as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br>
+<br>
 The command sink interface doesn't have any resource creation methods on it. The resources are still logically
 bound to the Direct2D device on which the command list was created and will be passed in to the command sink
-implementation.<br><br>
+implementation.<br>
+<br>
 This interface corresponds to the following Direct2D interfaces:
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -125,24 +143,6 @@ This interface corresponds to the following Direct2D interfaces:
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
     <dd>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.CreateRef(IObjectRef, Type)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.CreateRef&lt;TInterface&gt;(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef_PaintDotNet_ComponentModel_IObjectRef_System_Type_">ObjectRefExtensions.TryCreateRef(IObjectRef, Type)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.TryCreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_TryCreateRef__1_PaintDotNet_ComponentModel_IObjectRef___0__">ObjectRefExtensions.TryCreateRef&lt;TInterface&gt;(IObjectRef, out TInterface?)</a>
-  </div>
   <div>
       <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1ObjectRefExtensions.CreateRef.html#PaintDotNet_Direct2D1_Direct2D1ObjectRefExtensions_CreateRef_PaintDotNet_Direct2D1_ICommandSink_">Direct2D1ObjectRefExtensions.CreateRef(ICommandSink)</a>
   </div>
