@@ -104,7 +104,7 @@ for rendering with Direct2D.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PdnRadialBlurEffect : DynamicEffect, ISerializable, IDeviceImage, IDirect2DResource, IFactoryProperty, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PdnRadialBlurEffect : DynamicEffect, ISerializable, IDynamicEffect, IDynamicImage, IDeviceImage, IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty, IInternalImpl</code></pre>
   </div>
 
 
@@ -125,13 +125,15 @@ for rendering with Direct2D.</p>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDynamicEffect.html">IDynamicEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
-      <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 
@@ -168,6 +170,12 @@ for rendering with Direct2D.</p>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetPropertyInfo.html#PaintDotNet_Direct2D1_DynamicImage_GetPropertyInfo_System_String_">DynamicImage.GetPropertyInfo(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetOutput.html#PaintDotNet_Direct2D1_DynamicImage_GetOutput">DynamicImage.GetOutput()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.UpdateOutput.html#PaintDotNet_Direct2D1_DynamicImage_UpdateOutput">DynamicImage.UpdateOutput()</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.Factory.html#PaintDotNet_Direct2D1_DynamicImage_Factory">DynamicImage.Factory</a>

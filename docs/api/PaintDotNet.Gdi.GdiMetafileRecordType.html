@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum GdiMetafileRecordType
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum GdiMetafileRecordType
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Gdi.GdiMetafileRecordType">
+
+
+
+
+  <h1 id="PaintDotNet_Gdi_GdiMetafileRecordType" data-uid="PaintDotNet.Gdi.GdiMetafileRecordType" class="text-break">
+    Enum GdiMetafileRecordType
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Gdi.html">Gdi</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The type of a GDI metafile record. This enum may not be exhaustive; it does not include
+record types that were defined after this enum was created or updated.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum GdiMetafileRecordType</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Header"><code>Header = 1</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyBezier"><code>PolyBezier = 2</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Polygon"><code>Polygon = 3</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyLine"><code>PolyLine = 4</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyBezierTo"><code>PolyBezierTo = 5</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyLineTo"><code>PolyLineTo = 6</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyPolyLine"><code>PolyPolyLine = 7</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyPolygon"><code>PolyPolygon = 8</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetWindowExtEx"><code>SetWindowExtEx = 9</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetWindowOrgEx"><code>SetWindowOrgEx = 10</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetViewportExtEx"><code>SetViewportExtEx = 11</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetViewportOrgEx"><code>SetViewportOrgEx = 12</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetBrushOrgEx"><code>SetBrushOrgEx = 13</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Eof"><code>Eof = 14</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetPixelV"><code>SetPixelV = 15</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetMapperFlags"><code>SetMapperFlags = 16</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetMapMode"><code>SetMapMode = 17</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetBkMode"><code>SetBkMode = 18</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetPolyFillMode"><code>SetPolyFillMode = 19</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetRop2"><code>SetRop2 = 20</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetStretchBltMode"><code>SetStretchBltMode = 21</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetTextAlign"><code>SetTextAlign = 22</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetColorAdjustment"><code>SetColorAdjustment = 23</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetTextColor"><code>SetTextColor = 24</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetBkColor"><code>SetBkColor = 25</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_OffsetClipRgn"><code>OffsetClipRgn = 26</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_MoveToEx"><code>MoveToEx = 27</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetMetaRgn"><code>SetMetaRgn = 28</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExcludeClipRect"><code>ExcludeClipRect = 29</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_IntersectClipRect"><code>IntersectClipRect = 30</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ScaleViewportExtEx"><code>ScaleViewportExtEx = 31</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ScaleWindowExtEx"><code>ScaleWindowExtEx = 32</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SaveDC"><code>SaveDC = 33</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_RestoreDC"><code>RestoreDC = 34</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetWorldTransform"><code>SetWorldTransform = 35</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ModifyWorldTransform"><code>ModifyWorldTransform = 36</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SelectObject"><code>SelectObject = 37</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreatePen"><code>CreatePen = 38</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreateBrushIndirect"><code>CreateBrushIndirect = 39</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_DeleteObject"><code>DeleteObject = 40</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_AngleArc"><code>AngleArc = 41</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Ellipse"><code>Ellipse = 42</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Rectangle"><code>Rectangle = 43</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_RoundRect"><code>RoundRect = 44</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Arc"><code>Arc = 45</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Chord"><code>Chord = 46</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Pie"><code>Pie = 47</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SelectPalette"><code>SelectPalette = 48</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreatePalette"><code>CreatePalette = 49</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetPaletteEntries"><code>SetPaletteEntries = 50</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ResizePalette"><code>ResizePalette = 51</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_RealizePalette"><code>RealizePalette = 52</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtFloodFill"><code>ExtFloodFill = 53</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_LineTo"><code>LineTo = 54</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ArcTo"><code>ArcTo = 55</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyDraw"><code>PolyDraw = 56</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetArcDirection"><code>SetArcDirection = 57</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetMiterLimit"><code>SetMiterLimit = 58</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_BeginPath"><code>BeginPath = 59</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_EndPath"><code>EndPath = 60</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CloseFigure"><code>CloseFigure = 61</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_FillPath"><code>FillPath = 62</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_StrokeAndFillPath"><code>StrokeAndFillPath = 63</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_StrokePath"><code>StrokePath = 64</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_FlattenPath"><code>FlattenPath = 65</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_WidenPath"><code>WidenPath = 66</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SelectClipPath"><code>SelectClipPath = 67</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_AbortPath"><code>AbortPath = 68</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Comment"><code>Comment = 70</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_FillRgn"><code>FillRgn = 71</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_FrameRgn"><code>FrameRgn = 72</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_InvertRgn"><code>InvertRgn = 73</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PaintRgn"><code>PaintRgn = 74</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtSelectClipRgn"><code>ExtSelectClipRgn = 75</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_BitBlt"><code>BitBlt = 76</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_StretchBlt"><code>StretchBlt = 77</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_MaskBlt"><code>MaskBlt = 78</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PlgBlt"><code>PlgBlt = 79</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetDIBitsToDevice"><code>SetDIBitsToDevice = 80</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_StretchDIBits"><code>StretchDIBits = 81</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtCreateFontIndirectW"><code>ExtCreateFontIndirectW = 82</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtTextOutA"><code>ExtTextOutA = 83</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtTextOutW"><code>ExtTextOutW = 84</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyBezier16"><code>PolyBezier16 = 85</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_Polygon16"><code>Polygon16 = 86</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyLine16"><code>PolyLine16 = 87</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyBezierTo16"><code>PolyBezierTo16 = 88</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyLineTo16"><code>PolyLineTo16 = 89</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyPolyLine16"><code>PolyPolyLine16 = 90</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyPolygon16"><code>PolyPolygon16 = 91</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyDraw16"><code>PolyDraw16 = 92</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreateMonoBrush"><code>CreateMonoBrush = 93</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreateDibPatternBrushPt"><code>CreateDibPatternBrushPt = 94</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtCreatePen"><code>ExtCreatePen = 95</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyTextOutA"><code>PolyTextOutA = 96</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PolyTextOutW"><code>PolyTextOutW = 97</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetICMode"><code>SetICMode = 98</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreateColorSpace"><code>CreateColorSpace = 99</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetColorSpace"><code>SetColorSpace = 100</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_DeleteColorSpace"><code>DeleteColorSpace = 101</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_GlsRecord"><code>GlsRecord = 102</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_GlsBoundedRecord"><code>GlsBoundedRecord = 103</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_PixelFormat"><code>PixelFormat = 104</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_DrawEscape"><code>DrawEscape = 105</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ExtEscape"><code>ExtEscape = 106</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SmallTextOut"><code>SmallTextOut = 108</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ForceUfiMapping"><code>ForceUfiMapping = 109</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_NamedEscape"><code>NamedEscape = 110</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ColorCorrectPalette"><code>ColorCorrectPalette = 111</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetIcmProfileA"><code>SetIcmProfileA = 112</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetIcmProfileW"><code>SetIcmProfileW = 113</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_AlphaBlend"><code>AlphaBlend = 114</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetLayout"><code>SetLayout = 115</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_TransparentBlt"><code>TransparentBlt = 116</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_GradientFill"><code>GradientFill = 118</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetLinkedUfis"><code>SetLinkedUfis = 119</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_SetTextJustification"><code>SetTextJustification = 120</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_ColorMatchToTargetW"><code>ColorMatchToTargetW = 121</code></dt>
+    <dd></dd>
+    <dt id="PaintDotNet_Gdi_GdiMetafileRecordType_CreateColorSpaceW"><code>CreateColorSpaceW = 122</code></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h2 id="PaintDotNet_Gdi_GdiMetafileRecordType_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This list may not be exhaustive, as the specification for MS-EMF has been periodically updated and amended.
+See <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emf/91c257d7-c39d-4a36-9b1f-63e3f73d30ca">MS-EMF</a>
+and <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emfplus/5f92c789-64f2-46b5-9ed4-15a9bb0946c6">MS-EMFPLUS</a>
+for more information.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

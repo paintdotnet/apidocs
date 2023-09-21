@@ -3,6 +3,8 @@ apiRules:
     hasAttribute:
       uid: System.ObsoleteAttribute
 - exclude:
+    uidRegex: (.*)\.<(.*)>(.*)FixedBuffer
+- exclude:
     uidRegex: (.*)\.\{Clone\}\$(.*)
 - exclude:
     uidRegex: (.*)\.AnimationObjectRefExtensions

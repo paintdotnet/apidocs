@@ -99,6 +99,8 @@
   </div>
 
   <div class="markdown summary"><p>Represents a color context that can be used with an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> or the Color Management effect.<br>
+This interface corresponds to the following Direct2D interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1colorcontext">ID2D1ColorContext</a>
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1colorcontext1">ID2D1ColorContext1</a></p>
 </div>
   <div class="markdown conceptual"></div>
@@ -154,12 +156,12 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.DxgiColorSpace.html#PaintDotNet_Direct2D1_IDeviceColorContext_DxgiColorSpace">DxgiColorSpace</a></dt>
-    <dd><p>Retrieves the DXGI color space of this context. Returns DXGI_COLOR_SPACE_CUSTOM when color context type is ICC.</p>
+    <dd><p>Retrieves the DXGI color space of this context. Returns <a class="xref" href="PaintDotNet.Dxgi.DxgiColorSpace.html#PaintDotNet_Dxgi_DxgiColorSpace_Custom">Custom</a> when <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.Type.html#PaintDotNet_Direct2D1_IDeviceColorContext_Type">Type</a> is <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextType.html#PaintDotNet_Direct2D1_DeviceColorContextType_Icc">Icc</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.SimpleColorProfile.html#PaintDotNet_Direct2D1_IDeviceColorContext_SimpleColorProfile">SimpleColorProfile</a></dt>
-    <dd><p>Gets the SimpleColorProfile used to create this color context.</p>
+    <dd><p>Gets the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.SimpleColorProfile.html#PaintDotNet_Direct2D1_IDeviceColorContext_SimpleColorProfile">SimpleColorProfile</a> used to create this color context.</p>
 </dd>
   </dl>
   <dl class="jumplist">

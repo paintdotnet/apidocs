@@ -120,8 +120,8 @@
 
 <a id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_" data-uid="PaintDotNet.Direct2D1.IGdiMetafileSink.ProcessRecord*"></a>
 
-<h3 id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_PaintDotNet_Gdi_MetafileRecordType_System_ReadOnlySpan_System_Byte__System_UInt32_" data-uid="PaintDotNet.Direct2D1.IGdiMetafileSink.ProcessRecord(PaintDotNet.Gdi.MetafileRecordType,System.ReadOnlySpan{System.Byte},System.UInt32)">
-  ProcessRecord(MetafileRecordType, ReadOnlySpan&lt;byte&gt;, uint)
+<h3 id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_PaintDotNet_Gdi_GdiMetafileRecordType_System_ReadOnlySpan_System_Byte__System_UInt32_" data-uid="PaintDotNet.Direct2D1.IGdiMetafileSink.ProcessRecord(PaintDotNet.Gdi.GdiMetafileRecordType,System.ReadOnlySpan{System.Byte},System.UInt32)">
+  ProcessRecord(GdiMetafileRecordType, ReadOnlySpan&lt;byte&gt;, uint)
   
 </h3>
 
@@ -130,12 +130,12 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ProcessRecord(MetafileRecordType recordType, ReadOnlySpan&lt;byte&gt; recordData, uint flags)</code></pre>
+  <pre><code class="lang-csharp hljs">void ProcessRecord(GdiMetafileRecordType recordType, ReadOnlySpan&lt;byte&gt; recordData, uint flags)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>recordType</code> <a class="xref" href="PaintDotNet.Gdi.MetafileRecordType.html">MetafileRecordType</a></dt>
+  <dt><code>recordType</code> <a class="xref" href="PaintDotNet.Gdi.GdiMetafileRecordType.html">GdiMetafileRecordType</a></dt>
   <dd><p>The type of metafile record being processed.
 Please see See <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emf/91c257d7-c39d-4a36-9b1f-63e3f73d30ca">MS-EMF</a>
 and <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emfplus/5f92c789-64f2-46b5-9ed4-15a9bb0946c6">MS_EMFPLUS</a>
@@ -156,7 +156,7 @@ for a list of record types.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_PaintDotNet_Gdi_MetafileRecordType_System_ReadOnlySpan_System_Byte__System_UInt32__remarks">Remarks</h4>
+<h4 class="section" id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_PaintDotNet_Gdi_GdiMetafileRecordType_System_ReadOnlySpan_System_Byte__System_UInt32__remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>For details on the EMF and EMF+ formats, please see Microsoft technical documents
 <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emf/91c257d7-c39d-4a36-9b1f-63e3f73d30ca">MS-EMF</a>
 and <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emfplus/5f92c789-64f2-46b5-9ed4-15a9bb0946c6">MS-EMFPLUS</a></p>

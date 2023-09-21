@@ -201,7 +201,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a></dt>
-      <dd><p>A dynamic effect is a <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a> that provides metadata properties for
+      <dd><p>A dynamic effect is an <a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a> that provides metadata properties for
 DisplayName, Author, Category, and Description.</p>
 </dd>
     </dl>
@@ -848,6 +848,8 @@ This interface corresponds to the follow Direct2D interfaces:
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
       <dd><p>Represents a color context that can be used with an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a> or the Color Management effect.<br>
+This interface corresponds to the following Direct2D interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1colorcontext">ID2D1ColorContext</a>
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1colorcontext1">ID2D1ColorContext1</a></p>
 </dd>
     </dl>
@@ -989,6 +991,19 @@ implementation through the SetDrawInfo method.<br>
       <dt><a class="xref" href="PaintDotNet.Direct2D1.IDrawingStateBlock.html">IDrawingStateBlock</a></dt>
       <dd><p>Represents the drawing state of a render target: the antialiasing mode, transform, tags, and text-rendering options.<br>
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1drawingstateblock1">ID2D1DrawingStateBlock1</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Direct2D1.IDynamicEffect.html">IDynamicEffect</a></dt>
+      <dd><p>A dynamic effect is an <a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a> that provides metadata properties for
+DisplayName, Author, Category, and Description.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a></dt>
+      <dd><p>A dynamic image is a <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> that is similar to an effect (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>),
+but typically uses rendering techniques that are either not possible or performance-prohibitive within
+the context of an effect implementation.</p>
 </dd>
     </dl>
     <dl class="jumplist">
