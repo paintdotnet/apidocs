@@ -208,10 +208,11 @@ The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteIn
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.Offset.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_Offset">Offset</a></dt>
     <dd><p>The offset of the vignette from the center. This is specified in coordinates that are
-normalized to half of the image coordinate space.
+normalized to half of the image coordinate space.<br>
 [0, 0] draws the vignette from the center of the image, while [-1, -1] draws the vignette
 between the top left of the image and the center, and [+1, +1] draws the between the center
-and the bottom right of the image. The default value is [0, 0].</p>
+and the bottom right of the image.<br>
+The range of this property is [-2, -2] to [+2, +2]. The default value is [0, 0].</p>
 </dd>
   </dl>
   <dl class="jumplist">

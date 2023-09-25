@@ -99,11 +99,14 @@
   </div>
 
   <div class="markdown summary"><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect.html">BitmapSourceEffect</a>, but has improved performance and reduced functionality.<br>
+<br>
 This effect will stream the bitmap source to the GPU as needed; the bitmap is not cached.<br>
+<br>
 This effect will copy the pixels from the bitmap source directly to GPU memory, and as such will only
 work with pixel formats that can be copied directly to the GPU. It will not perform premultiplication,
 pixel format conversion, or color space conversion, nor will it ensure that the alpha channel contains opaque
 values for pixel formats that do not support alpha (such as Bgr32). Mipmap chains are also not supported.<br>
+<br>
 For most purposes, it is recommended to use <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageFromBitmap.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageFromBitmap_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_BitmapImageOptions_">CreateImageFromBitmap(IDeviceContext, IBitmapSource, BitmapImageOptions)</a>
 which will perform format conversions from pixel formats that cannot be directly copied to the GPU (e.g.
 Bgr24, indexed formats, etc.), and will ensure pixel formats like Bgr32 have an opaque alpha chanel.</p>
@@ -248,9 +251,11 @@ Bgr24, indexed formats, etc.), and will ensure pixel formats like Bgr32 have an 
   <div class="markdown level0 remarks"><p>If you are using a bitmap in a straight alpha pixel format, such as Bgra32, you should use this effect as
 the input to a <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a> unless you are certain that the next effect in the graph is
 expecting straight alpha pixel values (most do not).<br>
+<br>
 If you are using a bitmap in a pixel format that does not have an alpha channel, such as Bgr32, you must
 ensure that all pixels are actually encoded with an opaque alpha channel. Otherwise rendering may be
 incorrect. You can use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.MakeOpaqueEffect.html">MakeOpaqueEffect</a> to ensure that the alpha channel is opaque.<br>
+<br>
 The following pixel formats are supported: Alpha8, Bgr32, Bgra32, Pbgra32, Rgba64, Prgba64, Rgb64Half,
 Rgba64Half, Prgba64Half, Rgb128Float, Rgba128Float, and Prgba128Float.</p>
 </div>

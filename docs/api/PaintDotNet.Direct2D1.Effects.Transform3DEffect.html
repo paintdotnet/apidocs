@@ -99,8 +99,12 @@
   </div>
 
   <div class="markdown summary"><p>Use the 3D transform effect to apply an arbitrary 4x4 transform matrix to an image.<br>
-This effect applies the matrix (M) you provide to the corner vertices of the source:<br></p>
-<pre><code class="lang-csharp">image([ x y z 1 ]) using this calculation: [ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
+<br>
+This effect applies the matrix (M) you provide to the corner vertices of the source:<br>
+<br></p>
+<pre><code class="lang-csharp">image([ x y z 1 ])</code></pre>
+<p>using this calculation:</p>
+<pre><code class="lang-csharp">[ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform">3D transform effect</a></p>
 </div>
   <div class="markdown conceptual"></div>

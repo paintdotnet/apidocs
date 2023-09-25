@@ -101,8 +101,12 @@
   <div class="markdown summary"><p>An effect whose output at each location is the scene position. This can be useful for sample map
 effects that take a sample map as input, and produce a sample map as an output. If this effect
 is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as
-the Input image. The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 },
-instead of whole-integer offsets, such as { x = 0, y = 0 }.<br></p>
+the Input image.<br>
+<br>
+The scene position enumerates center-of-pixel offsets, such as <code>{ x = 0.5, y = 0.5 }</code>,
+instead of whole-integer offsets, such as <code>{ x = 0, y = 0 }</code>. If you prefer to have
+whole-integer offsets, pass the output of this effect to an <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.html">HlslUnaryFunctionEffect</a>
+with the <code>Function</code> property set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunction.html#PaintDotNet_Direct2D1_Effects_HlslUnaryFunction_Floor">Floor</a>.<br></p>
 </div>
   <div class="markdown conceptual"></div>
 

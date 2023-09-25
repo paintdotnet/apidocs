@@ -485,7 +485,8 @@ to add sprites to it, then use <a class="xref" href="PaintDotNet.Direct2D1.IDevi
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawSpriteBatch.html#PaintDotNet_Direct2D1_IDeviceContext_DrawSpriteBatch_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_SpriteOptions_">DrawSpriteBatch(ISpriteBatch, IDeviceBitmap, InterpolationMode, SpriteOptions)</a></dt>
-    <dd><p>Renders all sprites in the given sprite batch to the device context using the specified drawing options.</p>
+    <dd><p>Renders all sprites in the given sprite batch to the device context using the specified drawing options.<br>
+<b>NOTE:</b> The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -539,13 +540,13 @@ DrawText when drawing the same layout repeatedly.</p>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillMesh.html#PaintDotNet_Direct2D1_IDeviceContext_FillMesh_PaintDotNet_Direct2D1_IDeviceMesh_PaintDotNet_Direct2D1_IDeviceBrush_">FillMesh(IDeviceMesh, IDeviceBrush)</a></dt>
     <dd><p>Paints the interior of the specified mesh.<br>
-<b>Note:</b> The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.AntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_AntialiasMode">AntialiasMode</a> must be see to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
+<b>NOTE:</b> The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.AntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_AntialiasMode">AntialiasMode</a> must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillOpacityMask.html#PaintDotNet_Direct2D1_IDeviceContext_FillOpacityMask_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_IDeviceBrush_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_RectFloat___">FillOpacityMask(IDeviceBitmap, IDeviceBrush, in RectFloat?, in RectFloat?)</a></dt>
     <dd><p>Fill using the alpha channel of the supplied opacity mask bitmap. The brush opacity will be modulated by the mask.<br>
-<b>The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</b></p>
+<b>NOTE:</b> The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -622,7 +623,7 @@ evicted from the color glyph cache.</p>
     <dd><p>This indicates that a portion of an effect's input is invalid. This method can be called many times.<br>
 You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br>
 <b>Note:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
-You can also use this methods to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
+You can also use this method to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
 </dd>
   </dl>
   <dl class="jumplist">

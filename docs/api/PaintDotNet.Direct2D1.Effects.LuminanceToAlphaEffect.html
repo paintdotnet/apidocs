@@ -114,14 +114,17 @@ color matrix:</p>
 <br>
 This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
 alpha images unless they are fully opaque.<br>
+<br>
 This effect calculates the <i>luminance</i> for the image's color values, which is different than
 <i>luma</i> which is calculated by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>.
 See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
 for more information.<br>
+<br>
 <b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
 luminance for an image you should first perform inverse gamma correction to get the true color
-values for the image. Since images are normally stored at 2.2 gamma, you can use the Gamma
-transfer effect with an exponent of (1/2.2) and then use the output of that effect.<br>
+values for the image. Since images are normally stored at 2.2 gamma, you can use <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a>
+with an exponent of (1/2.2) and then use the output of that effect.<br>
+<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a>
 </div>
   <div class="markdown conceptual"></div>

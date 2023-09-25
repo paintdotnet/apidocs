@@ -99,12 +99,17 @@
   </div>
 
   <div class="markdown summary"><p>This effect combines two images by adding weighted pixels from the input images.<br>
+<br>
 It has two inputs, named Destination and Source.<br>
+<br>
 The cross fade formula is: <pre><code class="lang-csharp">Output = SourceWeight * Source + (1 - SourceWeight) * Destination</code></pre><br>
+<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/cross-fade-effect">Cross-fade effect</a>.<br>
+<br>
 Please note that Direct2D's Weight property is reversed from what is implemented here; put another
 way, the inputs have been renamed from Destination and Source to Source and Destination. This results
 in a more natural mapping for the SourceWeight property.<br>
+<br>
 You can use the Direct2D meanings for the inputs and properties by creating the effect manually
 with IDeviceContext.CreateEffect(DeviceEffectIDs.CrossFade), and then using SetValue(CrossFadeProperty.Weight)
 to set the Weight property.

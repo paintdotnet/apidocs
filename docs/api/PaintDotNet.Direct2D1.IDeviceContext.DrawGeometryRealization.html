@@ -156,7 +156,7 @@ such as faceting may appear when rendering the realizations with a large effecti
 DPI). Callers should create their realizations with an appropriate flattening tolerance using either <a class="xref" href="PaintDotNet.Direct2D1.FlatteningTolerance.Default.html">Default</a>
 or <a class="xref" href="PaintDotNet.Direct2D1.FlatteningTolerance.Compute.html#PaintDotNet_Direct2D1_FlatteningTolerance_Compute_PaintDotNet_Rendering_Matrix3x2Float__PaintDotNet_Rendering_Vector2Float_System_Single_">Compute(in Matrix3x2Float, Vector2Float, float)</a> to compensate for this.<br>
 Additionally, callers should be aware of the safe render bounds when creating geometry realizations. If a geometry extends
-outside of [-524,287, 524,287] DIPs in either the X- or the Y- direction in its original (pre-transform) coordinate space,
+outside of [-524287, 524287] DIPs in either the X- or the Y- direction in its original (pre-transform) coordinate space,
 then it may be clipped to those bounds when it is realized. This clipping will be visible even if the realization is
 subsequently transformed to fit within the safe render bounds.</p>
 </div>

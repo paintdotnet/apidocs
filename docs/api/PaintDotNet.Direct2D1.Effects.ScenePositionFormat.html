@@ -118,7 +118,7 @@
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_SampleMap"><code>SampleMap = 0</code></dt>
+    <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_XY01"><code>XY01 = 0</code></dt>
     <dd><p>The scene position will be provided as { X, Y, 0, 1 }. This can be used as the input value for a sample
 map effect or the SampleMapRenderer, in which case it is essentially the identity transform.</p>
 </dd>
@@ -129,6 +129,9 @@ The Z and W components contain values used for calculating texture offsets and c
 in very advanced scenarios for low-level pixel shaders.<br>
 These values may not be interpreted correctly if used in sample map effects, which expect values
 in the form {X, Y, *, A}.</p>
+</dd>
+    <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_XY00"><code>XY00 = 2</code></dt>
+    <dd><p>The scene position will be provided as { X, Y, 0, 0 }.</p>
 </dd>
   </dl>
 

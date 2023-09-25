@@ -100,8 +100,11 @@
 
   <div class="markdown summary"><p>You can use this effect to mark an area of an input image as opaque, so internal rendering optimizations
 to the graph are possible.<br>
-NOTE: This effect doesn't modify the image itself to be opaque. It modifies data associated with the
-image so the renderer assumes the specified region is opaque.<br>
+<br>
+<b>NOTE:</b> This effect doesn't modify the image itself to be opaque. It modifies data associated with the
+image so the renderer assumes the specified region is opaque. Use the MakeOpaqueEffect if you need the alpha
+channel to actually be opaque.<br>
+<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/opacity-metadata-effect">Opacity metadata effect</a></p>
 </div>
   <div class="markdown conceptual"></div>
@@ -258,6 +261,10 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityMetadataEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_OpacityMetadataEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_">OpacityMetadataEffect(IDeviceEffectFactory)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityMetadataEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_OpacityMetadataEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Rendering_RectFloat_">OpacityMetadataEffect(IDeviceEffectFactory, IDeviceImage, RectFloat)</a></dt>
     <dd></dd>
   </dl>
 

@@ -101,11 +101,14 @@
   <div class="markdown summary"><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>, but with different blend modes. Includes the layer blend
 modes from Paint.NET that are not supported by <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>, such as Xor. Does not
 include the blend modes that are supported by <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>.<br>
+<br>
 The classic &quot;Normal&quot; blend mode from Paint.NET is equivalent to <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html#PaintDotNet_Direct2D1_CompositeMode_SourceOver">SourceOver</a>
 or <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixMode.html#PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceOver">CompositeSourceOver</a>.<br>
+<br>
 The inputs are converted to straight alpha if the AlphaMode property is set to Premultiplied. The
 blend mode is applied, then the result is clamped to the range [0, 1]. Lastly, the output is
 premultiplied if the AlphaMode property is set to Premultiplied.<br>
+<br>
 For a convenient way to use any blend or composite mode, see <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.html">MixEffect</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
