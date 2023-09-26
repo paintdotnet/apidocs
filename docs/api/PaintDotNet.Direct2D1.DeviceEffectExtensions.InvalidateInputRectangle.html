@@ -125,7 +125,10 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>This indicates that a portion of an effect's input is invalid. This method can be called many times.<br><br>
+You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br><br><b>NOTE:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
+You can also use this method to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

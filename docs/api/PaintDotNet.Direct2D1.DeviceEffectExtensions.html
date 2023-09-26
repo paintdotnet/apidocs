@@ -159,7 +159,10 @@ a local variable.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.InvalidateInputRectangle.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_InvalidateInputRectangle_PaintDotNet_Direct2D1_IDeviceEffect_PaintDotNet_Direct2D1_IDeviceContext_System_Int32_PaintDotNet_Rendering_RectFloat_">InvalidateInputRectangle(IDeviceEffect, IDeviceContext, int, RectFloat)</a></dt>
-    <dd></dd>
+    <dd><p>This indicates that a portion of an effect's input is invalid. This method can be called many times.<br><br>
+You can use this method to propagate invalid rectangles through an effect graph. You can query Direct2D using the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetEffectInvalidRectangles.html#PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect_">GetEffectInvalidRectangles(IDeviceEffect)</a> method.<br><br><b>NOTE:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
+You can also use this method to invalidate caches that have accumulated while rendering effects that have the Cached property set to true.</p>
+</dd>
   </dl>
 
 
