@@ -98,7 +98,12 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The keys in this class are used to set property values in an <a class="xref" href="PaintDotNet.ComponentModel.IPropertyBag2.html">IPropertyBag2</a>
+when working with the JPEG <a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.html">IBitmapEncoder</a>'s options.<br>
+<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/wic/jpeg-format-overview">JPEG Format Overview</a>
+for more information.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,12 +157,32 @@
 </h2>
 
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.BitmapTransform.html#PaintDotNet_Imaging_JpegEncoderOptions_BitmapTransform">BitmapTransform</a></dt>
+    <dd><p>Specifies how the image is to be transformed during image decoding.<br>
+<br>
+The default value is <a class="xref" href="PaintDotNet.Imaging.BitmapTransformOptions.html#PaintDotNet_Imaging_BitmapTransformOptions_None">None</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.ImageQuality.html#PaintDotNet_Imaging_JpegEncoderOptions_ImageQuality">ImageQuality</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the desired image fidelity. 0.0 indicates the lowest possible fidelity and 1.0 specifies the highest fidelity.<br>
+<br>
+The range of this value is [0, 1]. The default value is 0.9.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.JpegYCrCbSubsampling.html#PaintDotNet_Imaging_JpegEncoderOptions_JpegYCrCbSubsampling">JpegYCrCbSubsampling</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the subsampling ratio to use for YCrCb encoding.<br>
+<br>
+The default value is <a class="xref" href="PaintDotNet.Imaging.JpegYCrCbSubsamplingOption.html#PaintDotNet_Imaging_JpegYCrCbSubsamplingOption_Subsample420">Subsample420</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.SuppressApp0.html#PaintDotNet_Imaging_JpegEncoderOptions_SuppressApp0">SuppressApp0</a></dt>
+    <dd><p>Specifies whether to suppress the write of App0 metadata while encoding the image data.<br>
+<br>
+The default value is <code>false</code>.</p>
+</dd>
   </dl>
 
 
