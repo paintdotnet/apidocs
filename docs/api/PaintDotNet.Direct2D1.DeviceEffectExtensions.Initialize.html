@@ -125,20 +125,8 @@
   
 </h3>
 
-<div class="markdown level1 summary"><p>Using this method enables creating an effect and setting its properties without needing to
-use a local variable. For example:<br>
-<br></p>
-<pre><code class="lang-csharp">InvertEffect invert = new InvertEffect(deviceContext).Initialize(e =&gt;
-{
-    e.Properties.Input.Set(new GaussianBlurEffect(deviceContext).Initialize(e =&gt;
-    {
-        e.Properties.Input.Set(sourceImage);
-        e.Properties.StandardDeviation.SetValue(30.0f);
-    }));
-});</code></pre>
-<p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a> is created and initialized without needing
-to declare and name a local variable. This simplifies the creation of effect graphs, especially
-when there are effects that are only used once.</p>
+<div class="markdown level1 summary"><p>This extension method enables creating an effect and setting its properties without the need for
+a local variable.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
@@ -172,6 +160,22 @@ when there are effects that are only used once.</p>
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize__1___0_System_Action___0___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a> is created and initialized without needing
+to declare and name a local variable:<br>
+<br></p>
+<pre><code class="lang-csharp">InvertEffect invert = new InvertEffect(deviceContext).Initialize(e =&gt;
+{
+    e.Properties.Input.Set(new GaussianBlurEffect(deviceContext).Initialize(e =&gt;
+    {
+        e.Properties.Input.Set(sourceImage);
+        e.Properties.StandardDeviation.SetValue(30.0f);
+    }));
+});</code></pre>
+<br>
+This simplifies the creation of effect graphs, especially when there are effects that are only
+used once.
+</div>
 
 
 

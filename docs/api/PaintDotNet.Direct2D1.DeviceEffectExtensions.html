@@ -153,20 +153,8 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize__1___0_System_Action___0__">Initialize&lt;TEffect&gt;(TEffect, Action&lt;TEffect&gt;)</a></dt>
-    <dd><p>Using this method enables creating an effect and setting its properties without needing to
-use a local variable. For example:<br>
-<br></p>
-<pre><code class="lang-csharp">InvertEffect invert = new InvertEffect(deviceContext).Initialize(e =&gt;
-{
-    e.Properties.Input.Set(new GaussianBlurEffect(deviceContext).Initialize(e =&gt;
-    {
-        e.Properties.Input.Set(sourceImage);
-        e.Properties.StandardDeviation.SetValue(30.0f);
-    }));
-});</code></pre>
-<p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a> is created and initialized without needing
-to declare and name a local variable. This simplifies the creation of effect graphs, especially
-when there are effects that are only used once.</p>
+    <dd><p>This extension method enables creating an effect and setting its properties without the need for
+a local variable.</p>
 </dd>
   </dl>
   <dl class="jumplist">
