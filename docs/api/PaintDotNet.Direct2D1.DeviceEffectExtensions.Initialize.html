@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DeviceEffectExtensions
+      <title>Method Initialize
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DeviceEffectExtensions
+      <meta name="title" content="Method Initialize
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -84,76 +84,48 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions">
+        <article data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize*">
 
 
 
-  <h1 id="PaintDotNet_Direct2D1_DeviceEffectExtensions" data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions" class="text-break">
-    Class DeviceEffectExtensions
+
+
+<h1 id="PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize_" data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize*" class="text-break">
+  Method Initialize
   
-  </h1>
+</h1>
 
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
-  </div>
+</div>
 
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DeviceEffectExtensions</code></pre>
-  </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DeviceEffectExtensions</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist derived">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-  </dd></dl>
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
 
 
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
 
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize__1___0_System_Action___0__">Initialize&lt;TEffect&gt;(TEffect, Action&lt;TEffect&gt;)</a></dt>
-    <dd><p>Using this method enables creating an effect and setting its properties without needing to
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize_" data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize*"></a>
+
+<h3 id="PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize__1___0_System_Action___0__" data-uid="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize``1(``0,System.Action{``0})">
+  Initialize&lt;TEffect&gt;(TEffect, Action&lt;TEffect&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Using this method enables creating an effect and setting its properties without needing to
 use a local variable. For example:<br>
 <br></p>
 <pre><code class="lang-csharp">InvertEffect invert = new InvertEffect(deviceContext).Initialize(e =&gt;
@@ -167,12 +139,40 @@ use a local variable. For example:<br>
 <p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a> is created and initialized without needing
 to declare and name a local variable. This simplifies the creation of effect graphs, especially
 when there are effects that are only used once.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TEffect Initialize&lt;TEffect&gt;(this TEffect effect, Action&lt;TEffect&gt; initFunction) where TEffect : class, IDeviceEffect</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>effect</code> <span class="xref">TEffect</span></dt>
+  <dd></dd>
+  <dt><code>initFunction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TEffect&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><span class="xref">TEffect</span></dt>
+  <dd><p>The effect that was passed in for the <code class="paramref">effect</code> parameter.</p>
 </dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.InvalidateInputRectangle.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_InvalidateInputRectangle_PaintDotNet_Direct2D1_IDeviceEffect_PaintDotNet_Direct2D1_IDeviceContext_System_Int32_PaintDotNet_Rendering_RectFloat_">InvalidateInputRectangle(IDeviceEffect, IDeviceContext, int, RectFloat)</a></dt>
-    <dd></dd>
-  </dl>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TEffect</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
 
 
 
