@@ -125,7 +125,10 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>The output of the effect should be cached.
+<br>
+The default value is <code>false</code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -145,6 +148,15 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_Cached_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Setting this to <code>true</code> may or may not improve performance, and will likely increase
+GPU memory use (sometimes substantially). It can be used to workaround some bugs in Direct2D's
+built-in effects library, such as when using <a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.html">ScaleEffect</a> with a clipping rect.
+It can also sometimes be used to fix a <a class="xref" href="PaintDotNet.Direct2D1.IntermediateTooLargeException.html">IntermediateTooLargeException</a> in certain
+types of effect graphs, such as when chaining transforms (e.g. <a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.html">ScaleEffect</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.html">AffineTransform2DEffect</a>, <a class="xref" href="PaintDotNet.Direct2D1.Effects.PerspectiveTransform3DEffect.html">PerspectiveTransform3DEffect</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.html">Transform3DEffect</a>).</p>
+</div>
 
 
 
