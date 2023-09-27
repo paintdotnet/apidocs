@@ -164,7 +164,7 @@ a local variable.</p>
 <div class="markdown level1 remarks"><p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a> is created and initialized without needing
 to declare and name a local variable:<br>
 <br></p>
-<pre><code class="lang-csharp">InvertEffect invert = new InvertEffect(
+<pre><code class="lang-csharp">InvertEffect invertedBlur = new InvertEffect(
     deviceContext,
     new GaussianBlurEffect(deviceContext).Initialize(e =&gt;
     {
@@ -172,8 +172,7 @@ to declare and name a local variable:<br>
         e.Properties.StandardDeviation.SetValue(30.0f);
         e.Properties.BorderMode.SetValue(BorderMode.Hard);
         e.Properties.Optimization.SetValue(GaussianBlurOptimization.Balanced);
-    }));
-});</code></pre>
+    }));</code></pre>
 <br>
 This simplifies the creation of effect graphs, especially when there are effects that are only
 used once.
