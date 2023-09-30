@@ -1288,9 +1288,12 @@ This class primarily exists to serve as the base class for Direct2DControl.</p>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.DoubleBufferedGdiPaint.html#PaintDotNet_Gdi_GdiControl_DoubleBufferedGdiPaint">DoubleBufferedGdiPaint</a></dt>
     <dd><p>Gets or sets whether painting in <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a> is double-buffered.<br>
+<br>
 Double-buffering is implemented using the <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-beginbufferedpaint">BeginBufferedPaint()</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-endbufferedpaint">EndBufferedPaint()</a> APIs.<br>
-Note that <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br>
+<br>
+<b>NOTE:</b> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br>
+<br>
 The default value is false.</p>
 </dd>
   </dl>
@@ -1300,7 +1303,9 @@ The default value is false.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.CheckAccess.html#PaintDotNet_Gdi_GdiControl_CheckAccess">CheckAccess()</a></dt>
-    <dd></dd>
+    <dd><p>Checks whether the calling thread has access to this control. This means that the calling thread
+is the same thread that created this control.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.Dispose.html#PaintDotNet_Gdi_GdiControl_Dispose_System_Boolean_">Dispose(bool)</a></dt>
@@ -1348,7 +1353,9 @@ The default value is false.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.VerifyAccess.html#PaintDotNet_Gdi_GdiControl_VerifyAccess">VerifyAccess()</a></dt>
-    <dd></dd>
+    <dd><p>Enforces that the calling thread has access to this control. This means that the calling thread
+is the same thread that created this control.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.WndProc.html#PaintDotNet_Gdi_GdiControl_WndProc_System_Windows_Forms_Message__">WndProc(ref Message)</a></dt>

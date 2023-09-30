@@ -207,12 +207,12 @@
 
 
   <h2 id="PaintDotNet_Direct2D1_IDeviceEffectContext_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This interface is passed to an effect implementation through the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a>. In order to
-prevent applications casually gaining access to this interface, and to separate reference counts between the public
-and private interfaces, it is not possible to call CreateRef() between the IDeviceContext and the IDeviceEffectContext.
-Each call to IDeviceEffectImpl.Initialize() will be provided a different IDeviceEffectContext interface. This interface
-tracks resource allocations for the effect. When the effect is released, the corresponding allocations will also be
-released.</p>
+  <div class="markdown level0 remarks"><p>This interface is passed to an effect implementation through the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a> method. In
+order to prevent applications casually gaining access to this interface, and to separate reference counts between the
+public and private interfaces, it is not possible to call CreateRef() between the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> and the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a>. Each call to <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a> will be provided a different
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a> object. This interface tracks resource allocations for the effect. When the effect is
+released, the corresponding allocations will also be released.</p>
 </div>
 
   <h2 class="section" id="properties">Properties
