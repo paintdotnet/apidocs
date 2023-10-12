@@ -98,7 +98,9 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The FontMetrics structure specifies the metrics that are applicable to all glyphs within the font face.</p>
+  <div class="markdown summary"><p>The FontMetrics structure specifies the metrics that are applicable to all glyphs within the font face.<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_font_metrics1">DWRITE_FONT_METRICS1</a>
+for more information.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -143,7 +145,7 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.-ctor.html#PaintDotNet_DirectWrite_FontMetrics__ctor_System_UInt16_System_UInt16_System_UInt16_System_Int16_System_UInt16_System_UInt16_System_Int16_System_UInt16_System_Int16_System_UInt16_">FontMetrics(ushort, ushort, ushort, short, ushort, ushort, short, ushort, short, ushort)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.-ctor.html#PaintDotNet_DirectWrite_FontMetrics__ctor_System_UInt16_System_UInt16_System_UInt16_System_Int16_System_UInt16_System_UInt16_System_Int16_System_UInt16_System_Int16_System_UInt16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Boolean_">FontMetrics(ushort, ushort, ushort, short, ushort, ushort, short, ushort, short, ushort, short, short, short, short, short, short, short, short, short, short, short, short, bool)</a></dt>
     <dd></dd>
   </dl>
 
@@ -171,6 +173,30 @@
 </dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.GlyphBox.html#PaintDotNet_DirectWrite_FontMetrics_GlyphBox">GlyphBox</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.GlyphBoxBottom.html#PaintDotNet_DirectWrite_FontMetrics_GlyphBoxBottom">GlyphBoxBottom</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.GlyphBoxLeft.html#PaintDotNet_DirectWrite_FontMetrics_GlyphBoxLeft">GlyphBoxLeft</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.GlyphBoxRight.html#PaintDotNet_DirectWrite_FontMetrics_GlyphBoxRight">GlyphBoxRight</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.GlyphBoxTop.html#PaintDotNet_DirectWrite_FontMetrics_GlyphBoxTop">GlyphBoxTop</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.HasTypographicMetrics.html#PaintDotNet_DirectWrite_FontMetrics_HasTypographicMetrics">HasTypographicMetrics</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.LineGap.html#PaintDotNet_DirectWrite_FontMetrics_LineGap">LineGap</a></dt>
     <dd><p>The line gap in font design units. Recommended additional white space to add between lines to improve legibility. The recommended line spacing (baseline-to-baseline distance) is the sum of ascent, descent, and lineGap. The line gap is usually positive or zero but can be negative, in which case the recommended line spacing is less than the height of the character alignment box.</p>
 </dd>
@@ -184,6 +210,54 @@
     <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.StrikethroughThickness.html#PaintDotNet_DirectWrite_FontMetrics_StrikethroughThickness">StrikethroughThickness</a></dt>
     <dd><p>The suggested strikethrough thickness value of the font face in font design units.</p>
 </dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptPosition.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptPosition">SubscriptPosition</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptPositionX.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptPositionX">SubscriptPositionX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptPositionY.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptPositionY">SubscriptPositionY</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptSize.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptSize">SubscriptSize</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptSizeX.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptSizeX">SubscriptSizeX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SubscriptSizeY.html#PaintDotNet_DirectWrite_FontMetrics_SubscriptSizeY">SubscriptSizeY</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptPosition.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptPosition">SuperscriptPosition</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptPositionX.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptPositionX">SuperscriptPositionX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptPositionY.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptPositionY">SuperscriptPositionY</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptSize.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptSize">SuperscriptSize</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptSizeX.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptSizeX">SuperscriptSizeX</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.SuperscriptSizeY.html#PaintDotNet_DirectWrite_FontMetrics_SuperscriptSizeY">SuperscriptSizeY</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.FontMetrics.UnderlinePosition.html#PaintDotNet_DirectWrite_FontMetrics_UnderlinePosition">UnderlinePosition</a></dt>
