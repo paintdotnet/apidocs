@@ -29,13 +29,10 @@
       <meta name="loc:themeAuto" content="Auto">
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
-  <script type="module">
-    import options from './../public/main.js'
-    import { init } from './../public/docfx.min.js'
-    init(options)
-  </script>
+  <script type="module" src="./../public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -189,7 +186,7 @@
       <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_GradientStopGamma_PaintDotNet_Direct2D1_ExtendMode_">IDeviceContext.CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, GradientStopGamma, ExtendMode)</a>
     </div>
     <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_ColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode_">IDeviceContext.CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, ColorSpace, ColorSpace, BufferPrecision, ExtendMode, ColorInterpolationMode)</a>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_IDeviceContext_CreateGradientStopCollection_System_ReadOnlySpan_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode_">IDeviceContext.CreateGradientStopCollection(ReadOnlySpan&lt;GradientStop&gt;, DeviceColorSpace, DeviceColorSpace, BufferPrecision, ExtendMode, ColorInterpolationMode)</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_ImageBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties___">IDeviceContext.CreateImageBrush(IDeviceImage, in ImageBrushProperties, in BrushProperties?)</a>
@@ -393,7 +390,7 @@
       <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectFactory.CreateEffect.html#PaintDotNet_Direct2D1_IDeviceEffectFactory_CreateEffect_PaintDotNet_Direct2D1_DeviceEffectID__">IDeviceEffectFactory.CreateEffect(in DeviceEffectID)</a>
     </div>
     <div>
-      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_ColorSpace_">IDeviceColorContextFactory.CreateColorContext(ColorSpace)</a>
+      <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_DeviceColorSpace_">IDeviceColorContextFactory.CreateColorContext(DeviceColorSpace)</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContextFactory.CreateColorContext.html#PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_System_ReadOnlySpan_System_Byte__">IDeviceColorContextFactory.CreateColorContext(ReadOnlySpan&lt;byte&gt;)</a>
@@ -495,10 +492,8 @@
 
 </article>
 
-        <div class="contribution d-print-none">
-        </div>
 
-        
+
       </div>
 
       <div class="affix">
@@ -507,7 +502,7 @@
     </main>
 
 
-    <footer class="border-top">
+    <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
           <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>

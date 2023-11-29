@@ -73,6 +73,11 @@ private static void CopyDirectoryNonRecursive(string sourceDir, string targetDir
 {
     foreach (string sourceFilePath in Directory.EnumerateFiles(sourceDir, "*.*"))
     {
+        if (string.Equals(".pdb", Path.GetExtension(sourceFilePath), StringComparison.OrdinalIgnoreCase))
+        {
+            continue;
+        }
+        
         string sourceFileName = Path.GetFileName(sourceFilePath);
         string targetFilePath = Path.Combine(targetDir, sourceFileName);
         Console.Write($"Copying {sourceFileName} ...");

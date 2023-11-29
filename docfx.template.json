@@ -28,13 +28,13 @@
       "dest": "api",
       "filter": "filterConfig.yml",
       "includePrivateMembers": false,
-      "disableGitFeatures": true,
       "disableDefaultFilter": false,
       "noRestore": false,
       "namespaceLayout": "flattened",
       "memberLayout": "separatePages",
       "EnumSortOrder": "declaringOrder",
-      "allowCompilationErrors": false
+      "allowCompilationErrors": false,
+      "disableGitFeatures": true
     }
   ],
   "build": {
@@ -60,7 +60,8 @@
       }
     ],
     "globalMetadata": {
-      "_appLogoPath":  "images/logo.png"
+      "_appLogoPath": "images/logo.png",
+      "_disableContribution": true
     },
     "resource": [
       {
