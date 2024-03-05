@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method UpdateOutput
+      <title>Method CloneWithNewUserColors
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method UpdateOutput
+      <meta name="title" content="Method CloneWithNewUserColors
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,20 +81,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Direct2D1.IDynamicImage.UpdateOutput*">
+        <article data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors*">
 
 
 
 
 
-<h1 id="PaintDotNet_Direct2D1_IDynamicImage_UpdateOutput_" data-uid="PaintDotNet.Direct2D1.IDynamicImage.UpdateOutput*" class="text-break">
-  Method UpdateOutput
+<h1 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors*" class="text-break">
+  Method CloneWithNewUserColors
   
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -115,22 +115,41 @@
 
 
 
-<a id="PaintDotNet_Direct2D1_IDynamicImage_UpdateOutput_" data-uid="PaintDotNet.Direct2D1.IDynamicImage.UpdateOutput*"></a>
+<a id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors*"></a>
 
-<h3 id="PaintDotNet_Direct2D1_IDynamicImage_UpdateOutput" data-uid="PaintDotNet.Direct2D1.IDynamicImage.UpdateOutput">
-  UpdateOutput()
+<h3 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_ColorBgra32_PaintDotNet_Imaging_ColorBgra32_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors(PaintDotNet.Effects.IEffectEnvironment,PaintDotNet.Imaging.ColorBgra32,PaintDotNet.Imaging.ColorBgra32)">
+  CloneWithNewUserColors(IEffectEnvironment, ColorBgra32, ColorBgra32)
   
 </h3>
 
-<div class="markdown level1 summary"><p>Ensures that the underlying image or effect graph has been updated for the latest property changes, as
-well as for any layout changes to the inputs.</p>
+<div class="markdown level1 summary"><p>Creates a copy of the environment for use with another effect instance, while replacing the
+primary and secondary colors. Other data is unaffected.<br></p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void UpdateOutput()</code></pre>
+  <pre><code class="lang-csharp hljs">public static IEffectEnvironment CloneWithNewUserColors(this IEffectEnvironment environment, ColorBgra32 newPrimaryColor, ColorBgra32 newSecondaryColor)</code></pre>
 </div>
 
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>environment</code> <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The environment to clone from.</p>
+</dd>
+  <dt><code>newPrimaryColor</code> <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a></dt>
+  <dd><p>The new value for the <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.PrimaryColor.html#PaintDotNet_Effects_IEffectEnvironment_PrimaryColor">PrimaryColor</a> property.</p>
+</dd>
+  <dt><code>newSecondaryColor</code> <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a></dt>
+  <dd><p>The new value for the <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.SecondaryColor.html#PaintDotNet_Effects_IEffectEnvironment_SecondaryColor">SecondaryColor</a> property.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The new environment.</p>
+</dd>
+</dl>
 
 
 
@@ -138,11 +157,8 @@ well as for any layout changes to the inputs.</p>
 
 
 
-
-<h4 class="section" id="PaintDotNet_Direct2D1_IDynamicImage_UpdateOutput_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p><b>NOTE:</b> This method does not need to be used before drawing the dynamic image. It is only necessary
-when inspecting the underlying image or effect graph (via <a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.GetOutput.html#PaintDotNet_Direct2D1_IDynamicImage_GetOutput">GetOutput()</a> before drawing it,
-either after creating the dynamic image or after changing its inputs or properties.</p>
+<h4 class="section" id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_ColorBgra32_PaintDotNet_Imaging_ColorBgra32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><inheritdoc cref="M:PaintDotNet.Effects.EffectEnvironmentExtensions.Clone(PaintDotNet.Effects.IEffectEnvironment)"></inheritdoc></p>
 </div>
 
 
@@ -150,8 +166,6 @@ either after creating the dynamic image or after changing its inputs or properti
 
 </article>
 
-        <div class="contribution d-print-none">
-        </div>
 
 
       </div>

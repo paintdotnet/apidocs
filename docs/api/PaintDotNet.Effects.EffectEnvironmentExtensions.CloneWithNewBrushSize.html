@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Property Prgba64Float
+      <title>Method CloneWithNewBrushSize
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Property Prgba64Float
+      <meta name="title" content="Method CloneWithNewBrushSize
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,20 +81,20 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba64Float*">
+        <article data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize*">
 
 
 
 
 
-<h1 id="PaintDotNet_Direct2D1_DevicePixelFormats_Prgba64Float_" data-uid="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba64Float*" class="text-break">
-  Property Prgba64Float
+<h1 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize*" class="text-break">
+  Method CloneWithNewBrushSize
   
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Direct2D1.html">Direct2D1</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -115,29 +115,37 @@
 
 
 
-<a id="PaintDotNet_Direct2D1_DevicePixelFormats_Prgba64Float_" data-uid="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba64Float*"></a>
+<a id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize*"></a>
 
-<h3 id="PaintDotNet_Direct2D1_DevicePixelFormats_Prgba64Float" data-uid="PaintDotNet.Direct2D1.DevicePixelFormats.Prgba64Float">
-  Prgba64Float
+<h3 id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment_System_Single_" data-uid="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize(PaintDotNet.Effects.IEffectEnvironment,System.Single)">
+  CloneWithNewBrushSize(IEffectEnvironment, float)
   
 </h3>
 
-<div class="markdown level1 summary"><p>Specifies <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html#PaintDotNet_Dxgi_DxgiFormat_R16G16B16A16_Float">R16G16B16A16_Float</a> and <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Premultiplied">Premultiplied</a>.</p>
+<div class="markdown level1 summary"><p>Creates a copy of the environment for use with another effect instance, while replacing the
+primary and secondary colors. Other data is unaffected.<br></p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DevicePixelFormat Prgba64Float { get; }</code></pre>
+  <pre><code class="lang-csharp hljs">public static IEffectEnvironment CloneWithNewBrushSize(this IEffectEnvironment environment, float newBrushSize)</code></pre>
 </div>
 
-
-
-
-
-<h4 class="section">Property Value</h4>
+<h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormat.html">DevicePixelFormat</a></dt>
-  <dd></dd>
+  <dt><code>environment</code> <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The environment to clone from.</p>
+</dd>
+  <dt><code>newBrushSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>The new value for the <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.BrushSize.html#PaintDotNet_Effects_IEffectEnvironment_BrushSize">BrushSize</a> property.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
+  <dd><p>The new environment.</p>
+</dd>
 </dl>
 
 
@@ -146,11 +154,15 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment_System_Single__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><inheritdoc cref="M:PaintDotNet.Effects.EffectEnvironmentExtensions.Clone(PaintDotNet.Effects.IEffectEnvironment)"></inheritdoc></p>
+</div>
+
+
+
 
 </article>
 
-        <div class="contribution d-print-none">
-        </div>
 
 
       </div>
