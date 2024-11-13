@@ -102,7 +102,7 @@ objects from a given Surface object.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RenderArgs : IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class RenderArgs : Disposable, IIsDisposed, IDisposable</code></pre>
   </div>
 
 
@@ -112,6 +112,7 @@ objects from a given Surface object.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.Disposable.html">Disposable</a></div>
       <div><span class="xref">RenderArgs</span></div>
     </dd>
   </dl>
@@ -128,6 +129,12 @@ objects from a given Surface object.</p>
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Disposable.Dispose.html#PaintDotNet_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Disposable.IsDisposed.html#PaintDotNet_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -196,14 +203,6 @@ g.DrawRectangle(...);
 </dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RenderArgs.ISurfaceRefBgra32.html#PaintDotNet_RenderArgs_ISurfaceRefBgra32">ISurfaceRefBgra32</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RenderArgs.IsDisposed.html#PaintDotNet_RenderArgs_IsDisposed">IsDisposed</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Size.html#PaintDotNet_RenderArgs_Size">Size</a></dt>
     <dd><p>Gets the size of the associated Surface object.</p>
 </dd>
@@ -223,7 +222,7 @@ g.DrawRectangle(...);
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.RenderArgs.Dispose.html#PaintDotNet_RenderArgs_Dispose">Dispose()</a></dt>
+    <dt><a class="xref" href="PaintDotNet.RenderArgs.Dispose.html#PaintDotNet_RenderArgs_Dispose_System_Boolean_">Dispose(bool)</a></dt>
     <dd></dd>
   </dl>
 

@@ -99,7 +99,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class EffectEnvironmentParameters : RefTrackedObject, ISerializable, IEffectEnvironment, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class EffectEnvironmentParameters : RefTrackedObject, ISerializable, IEffectEnvironment2, IEffectEnvironment, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -118,6 +118,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.html">IEffectEnvironment2</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
@@ -163,18 +164,6 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithAliasedSelection.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithAliasedSelection_PaintDotNet_Effects_IEffectEnvironment_">EffectEnvironmentExtensions.CloneWithAliasedSelection(IEffectEnvironment)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment_System_Single_">EffectEnvironmentExtensions.CloneWithNewBrushSize(IEffectEnvironment, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewSource_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_IBitmapSource_">EffectEnvironmentExtensions.CloneWithNewSource(IEffectEnvironment, IBitmapSource)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_ColorBgra32_PaintDotNet_Imaging_ColorBgra32_">EffectEnvironmentExtensions.CloneWithNewUserColors(IEffectEnvironment, ColorBgra32, ColorBgra32)</a>
-  </div>
-  <div>
       <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.GetSourceBitmap.html#PaintDotNet_Effects_EffectEnvironmentExtensions_GetSourceBitmap_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_PixelFormat__">EffectEnvironmentExtensions.GetSourceBitmap(IEffectEnvironment, in PixelFormat)</a>
   </div>
   <div>
@@ -186,6 +175,21 @@
   <div>
       <a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Effects_IEffectEnvironment_">EffectsObjectRefExtensions.CreateRef(IEffectEnvironment)</a>
   </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithAliasedSelection.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithAliasedSelection_PaintDotNet_Effects_IEffectEnvironment2_">EffectEnvironment2Extensions.CloneWithAliasedSelection(IEffectEnvironment2)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewBrushSize.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment2_System_Single_">EffectEnvironment2Extensions.CloneWithNewBrushSize(IEffectEnvironment2, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewSource.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewSource_PaintDotNet_Effects_IEffectEnvironment2_PaintDotNet_Imaging_IBitmapSource_">EffectEnvironment2Extensions.CloneWithNewSource(IEffectEnvironment2, IBitmapSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewUserColors.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment2_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Imaging_ManagedColor_">EffectEnvironment2Extensions.CloneWithNewUserColors(IEffectEnvironment2, ManagedColor, ManagedColor)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Effects_IEffectEnvironment2_">EffectsObjectRefExtensions.CreateRef(IEffectEnvironment2)</a>
+  </div>
   </dd></dl>
 
 
@@ -196,10 +200,6 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectEnvironmentParameters.BrushWidth.html#PaintDotNet_Effects_EffectEnvironmentParameters_BrushWidth">BrushWidth</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.EffectEnvironmentParameters.DefaultParameters.html#PaintDotNet_Effects_EffectEnvironmentParameters_DefaultParameters">DefaultParameters</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -226,16 +226,6 @@
   <h2 class="section" id="methods">Methods
 </h2>
 
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.EffectEnvironmentParameters.CloneWithDifferentSourceSurface.html#PaintDotNet_Effects_EffectEnvironmentParameters_CloneWithDifferentSourceSurface_PaintDotNet_Surface_">CloneWithDifferentSourceSurface(Surface)</a></dt>
-    <dd><p>Use this if you are implementing an Effect that needs to chain together other Effects which will
-need the same environment parameters but which will be reading from a different source Surface.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.EffectEnvironmentParameters.CreateFrom.html#PaintDotNet_Effects_EffectEnvironmentParameters_CreateFrom_PaintDotNet_Effects_IEffectEnvironment_">CreateFrom(IEffectEnvironment)</a></dt>
-    <dd></dd>
-  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectEnvironmentParameters.GetSelectionAsPdnRegion.html#PaintDotNet_Effects_EffectEnvironmentParameters_GetSelectionAsPdnRegion">GetSelectionAsPdnRegion()</a></dt>
     <dd></dd>

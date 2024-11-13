@@ -101,7 +101,7 @@ handles many things automatically, such as just-in-time registration and auto-ge
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CustomEffect&lt;TProperties&gt; : DeviceEffect&lt;TProperties&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable where TProperties : CustomEffectProperties, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CustomEffect&lt;TProperties&gt; : DeviceEffect&lt;TProperties&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl where TProperties : CustomEffectProperties, new()</code></pre>
   </div>
 
 
@@ -133,10 +133,10 @@ handles many things automatically, such as just-in-time registration and auto-ge
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 
@@ -144,12 +144,12 @@ handles many things automatically, such as just-in-time registration and auto-ge
     <dt>Derived</dt>
     <dd>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect2.html">AlphaMaskEffect2</a></div>
-      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.BitmapSourceEffect2.html">BitmapSourceEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.html">BlendEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurEffect.html">BokehBlurEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.html">BokehBlurMapEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect2.html">BorderEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampEffect.html">ClampEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.html">ConvertAlphaEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertGammaEffect.html">ConvertGammaEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.html">CroppedFloodEffect</a></div>
@@ -162,6 +162,7 @@ handles many things automatically, such as just-in-time registration and auto-ge
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect2.html">GaussianBlurEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.html">GaussianBlurMapEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect2.html">GrayscaleEffect2</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.html">HistogramEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryFunctionEffect.html">HlslBinaryFunctionEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryOperatorEffect.html">HlslBinaryOperatorEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslTernaryFunctionEffect.html">HlslTernaryFunctionEffect</a></div>
@@ -172,8 +173,12 @@ handles many things automatically, such as just-in-time registration and auto-ge
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertAlphaEffect.html">InvertAlphaEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect2.html">InvertEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.html">LinearToSrgbEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminosityTableTransferEffect.html">LuminosityTableTransferEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.MakeOpaqueEffect.html">MakeOpaqueEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.html">MedianBlurEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.html">MixEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.PackFloat32Effect.html">PackFloat32Effect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisEffect.html">PassthroughAnalysisEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughEffect.html">PassthroughEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.html">PosterizeEffect2</a></div>
@@ -184,8 +189,11 @@ handles many things automatically, such as just-in-time registration and auto-ge
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.html">ScenePositionEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.html">SepiaEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect2.html">ShadowEffect2</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.SquareBlurEffect.html">SquareBlurEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect2.html">TableTransferEffect2</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect2.html">UnPremultiplyEffect2</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.html">UnpackFloat16Effect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.html">PdnAddNoiseEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastEffect.html">PdnBrightnessContrastEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnCloudsEffect.html">PdnCloudsEffect</a></div>
@@ -196,12 +204,18 @@ handles many things automatically, such as just-in-time registration and auto-ge
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.html">PdnHueSaturationLightnessEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchEffect.html">PdnInkSketchEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnJuliaFractalEffect.html">PdnJuliaFractalEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnLevelsEffect.html">PdnLevelsEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMandelbrotFractalEffect.html">PdnMandelbrotFractalEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEffect.html">PdnMotionBlurEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingEffect.html">PdnOilPaintingEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEffect.html">PdnOutlineEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPencilSketchEffect.html">PdnPencilSketchEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnPixelateEffect.html">PdnPixelateEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.html">PdnReduceNoiseEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefEffect.html">PdnReliefEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurEffect.html">PdnSketchBlurEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitEffect.html">PdnSoftenPortraitEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSurfaceBlurEffect.html">PdnSurfaceBlurEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.html">PdnVignetteEffect</a></div>
     </dd>
   </dl>

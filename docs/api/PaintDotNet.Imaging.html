@@ -186,6 +186,10 @@ for more information.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ExifOrientationUtil.html">ExifOrientationUtil</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ExifPropertyItem.html">ExifPropertyItem</a></dt>
       <dd></dd>
     </dl>
@@ -257,7 +261,15 @@ for more information.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.InvalidColorSpaceException.html">InvalidColorSpaceException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.InvalidJpegScanIndexException.html">InvalidJpegScanIndexException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.InvalidProfileException.html">InvalidProfileException</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -313,6 +325,22 @@ for more information.</p>
       <dt><a class="xref" href="PaintDotNet.Imaging.LinearColors.html">LinearColors</a></dt>
       <dd><p>Provides predefined colors in the scRGB color space, which uses linear (1.0) gamma.</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a></dt>
+      <dd><p>Encapsulates an RGBA color value and the color space that it is defined within, along
+with methods for retrieving the color while transforming it to a target color space.
+This removes color space ambiguity for color values, enabling them to maintain the
+correct visual color when moving through a larger system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColorExtensions.html">ManagedColorExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColorListExtensions.html">ManagedColorListExtensions</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.MetadataBlockReaderExtensions.html">MetadataBlockReaderExtensions</a></dt>
@@ -510,6 +538,14 @@ Structs
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ColorGray16Half.html">ColorGray16Half</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ColorGray32Float.html">ColorGray32Float</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ColorGray8.html">ColorGray8</a></dt>
       <dd></dd>
     </dl>
@@ -542,6 +578,10 @@ Structs
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb24.html">ColorRgb24</a></dt>
       <dd></dd>
     </dl>
@@ -551,6 +591,10 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb48.html">ColorRgb48</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb48Half.html">ColorRgb48Half</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -570,6 +614,10 @@ Structs
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64Half.html">ColorRgba64Half</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ContainerFormat.html">ContainerFormat</a></dt>
       <dd></dd>
     </dl>
@@ -580,6 +628,12 @@ Structs
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ExifPropertyPath.html">ExifPropertyPath</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ImageParameters.html">ImageParameters</a></dt>
+      <dd><p>This defines parameters that you can use to override the default parameters normally used when encoding an image.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/ns-wincodec-wicimageparameters">WICImageParameters</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ImagingComponentID.html">ImagingComponentID</a></dt>
@@ -646,7 +700,9 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.html">IBitmapEncoder</a></dt>
-      <dd></dd>
+      <dd><p>Defines methods for setting an encoder's properties such as thumbnails, frames, and palettes.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapencoder">IWICBitmapEncoder</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoderInfo.html">IBitmapEncoderInfo</a></dt>
@@ -670,11 +726,18 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-      <dd></dd>
+      <dd><p>Exposes methods that refers to a source from which pixels are retrieved, but cannot be written back to.<br>
+<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapsource">IWICBitmapSource</a>
+for more information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource&lt;TPixel&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Exposes methods that refers to a source from which pixels are retrieved, but cannot be written back to.<br><br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapsource">IWICBitmapSource</a>
+for more information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IBitmap-1.html">IBitmap&lt;TPixel&gt;</a></dt>
@@ -682,7 +745,10 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a></dt>
-      <dd></dd>
+      <dd><p>Exposes methods for color management.<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwiccolorcontext">IWICColorContext</a>
+for more information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IFastMetadataEncoder.html">IFastMetadataEncoder</a></dt>
@@ -690,6 +756,10 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IFormatConverterInfo.html">IFormatConverterInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.IImageEncoder.html">IImageEncoder</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -702,7 +772,18 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IImagingFactory.html">IImagingFactory</a></dt>
-      <dd></dd>
+      <dd><p>Exposes methods used to create components for the Windows Imaging Component (WIC) such as decoders, encoders and pixel format converters.<br>
+See also:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicimagingfactory">IWICImagingFactory</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicimagingfactory2">IWICImagingFactory2</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.IManagedColorList.html">IManagedColorList</a></dt>
+      <dd><p>Represents a list of colors associated with a color profile, along with
+methods to retrieve those colors after transforming them to a destination
+color profile.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IMetadataBlockReader.html">IMetadataBlockReader</a></dt>
@@ -761,12 +842,9 @@ Interfaces
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo.html">IPixelFormatInfo</a></dt>
       <dd><p>Exposes methods that provide information about a pixel format.<br>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicpixelformatinfo">IWICPixelFormatInfo</a></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo2.html">IPixelFormatInfo2</a></dt>
-      <dd><p>Extends <span class="xref">TerraFX.Interop.Windows.IWICPixelFormatInfo</span> by providing additional information about a pixel format.<br>
+<br>
+Corresponds to the following native interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicpixelformatinfo">IWICPixelFormatInfo</a>,
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicpixelformatinfo2">IWICPixelFormatInfo2</a></p>
 </dd>
     </dl>
@@ -777,6 +855,10 @@ Interfaces
     <h3 id="enums">
 Enums
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.BitmapAllocationOptions.html">BitmapAllocationOptions</a></dt>
+      <dd></dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.BitmapAlphaChannelOption.html">BitmapAlphaChannelOption</a></dt>
       <dd><p>Specifies the desired alpha channel usage.<br>
@@ -791,7 +873,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.BitmapDecodeOptions.html">BitmapDecodeOptions</a></dt>
-      <dd></dd>
+      <dd><p>Specifies decode options.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.BitmapDecoderCapabilities.html">BitmapDecoderCapabilities</a></dt>
@@ -823,10 +906,15 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ColorContextType.html">ColorContextType</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the color context types.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.ExifColorSpace.html">ExifColorSpace</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.ExifOrientation.html">ExifOrientation</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -863,6 +951,10 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Imaging.KnownColorSpace.html">KnownColorSpace</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.MetadataCreationOptions.html">MetadataCreationOptions</a></dt>
       <dd><p>Specifies metadata creation options.<br>
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions">WICMetadataCreationOptions</a></p>
@@ -880,7 +972,9 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.PngFilterOption.html">PngFilterOption</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the Portable Network Graphics (PNG) filters available for compression optimization.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/ne-wincodec-wicpngfilteroption">WICPngFilterOption</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Imaging.PremultipliedAdapterOptions.html">PremultipliedAdapterOptions</a></dt>

@@ -103,15 +103,16 @@ The classic &quot;Normal&quot; blend mode from Paint.NET is equivalent to <a cla
 or <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixMode.html#PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceOver">CompositeSourceOver</a>.<br>
 <br>
 The inputs are converted to straight alpha if the AlphaMode property is set to Premultiplied. The
-blend mode is applied, then the result is clamped to the range [0, 1]. Lastly, the output is
-premultiplied if the AlphaMode property is set to Premultiplied.<br>
+blend mode is applied, then the result is clamped to the range [0, 1] (unless the
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.Props.ClampOutput.html#PaintDotNet_Direct2D1_Effects_BlendEffect2_Props_ClampOutput">ClampOutput</a> property is set to false). Lastly, the output is premultiplied
+if the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_BlendEffect2_Props_AlphaMode">AlphaMode</a> property is set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendAlphaMode2.html#PaintDotNet_Direct2D1_Effects_BlendAlphaMode2_Premultiplied">Premultiplied</a>.<br>
 <br>
 For a convenient way to use any blend or composite mode, see <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.html">MixEffect</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class BlendEffect2 : CustomEffect&lt;BlendEffect2.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BlendEffect2 : CustomEffect&lt;BlendEffect2.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -138,10 +139,10 @@ For a convenient way to use any blend or composite mode, see <a class="xref" hre
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 

@@ -182,6 +182,9 @@
       <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.CreateResourceTexture3D.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_CreateResourceTexture3D__1_PaintDotNet_Direct2D1_IDeviceEffectContext_System_Nullable_System_Guid___System_Int32_System_Int32_System_Int32_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ChannelDepth_PaintDotNet_Direct2D1_TextureFilter_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_ExtentPtr___0__System_UInt32_System_UInt32_">DeviceEffectContextExtensions.CreateResourceTexture3D&lt;T&gt;(IDeviceEffectContext, in Guid?, int, int, int, BufferPrecision, ChannelDepth, TextureFilter, ExtendMode, ExtendMode, ExtendMode, ExtentPtr&lt;T&gt;, uint, uint)</a>
   </div>
   <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.LoadComputeShader.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_LoadComputeShader_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlyMemory_System_Byte__">DeviceEffectContextExtensions.LoadComputeShader(IDeviceEffectContext, in ShaderID, ReadOnlyMemory&lt;byte&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectContextExtensions.LoadPixelShader.html#PaintDotNet_Direct2D1_DeviceEffectContextExtensions_LoadPixelShader_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlyMemory_System_Byte__">DeviceEffectContextExtensions.LoadPixelShader(IDeviceEffectContext, in ShaderID, ReadOnlyMemory&lt;byte&gt;)</a>
   </div>
   <div>
@@ -271,7 +274,7 @@ the same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.gui
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.GetMaximumSupportedFeatureLevel.html#PaintDotNet_Direct2D1_IDeviceEffectContext_GetMaximumSupportedFeatureLevel_System_ReadOnlySpan_PaintDotNet_Direct3D_D3DFeatureLevel__">GetMaximumSupportedFeatureLevel(ReadOnlySpan&lt;D3DFeatureLevel&gt;)</a></dt>
     <dd><p>Gets the maximum feature level from the provided list which is supported by the device. If none of the provided levels
-are supported, then this method returns null.</p>
+are supported then this method returns null.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -282,6 +285,12 @@ are supported, then this method returns null.</p>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.IsShaderLoaded.html#PaintDotNet_Direct2D1_IDeviceEffectContext_IsShaderLoaded_PaintDotNet_Direct2D1_ShaderID__">IsShaderLoaded(in ShaderID)</a></dt>
     <dd><p>This tests to see if the given shader is loaded.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.LoadComputeShader.html#PaintDotNet_Direct2D1_IDeviceEffectContext_LoadComputeShader_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlySpan_System_Byte__">LoadComputeShader(in ShaderID, ReadOnlySpan&lt;byte&gt;)</a></dt>
+    <dd><p>Loads the given shader by its unique ID. Loading the shader multiple times is ignored. When the shader is loaded it is
+also handed to the driver to JIT, if it hasn’t been already.</p>
 </dd>
   </dl>
   <dl class="jumplist">

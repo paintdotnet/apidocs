@@ -101,7 +101,7 @@ and sets it back to its original setting upon disposal.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class WaitCursorChanger : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class WaitCursorChanger : Disposable, IIsDisposed, IDisposable</code></pre>
   </div>
 
 
@@ -111,6 +111,7 @@ and sets it back to its original setting upon disposal.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.Disposable.html">Disposable</a></div>
       <div><span class="xref">WaitCursorChanger</span></div>
     </dd>
   </dl>
@@ -118,6 +119,7 @@ and sets it back to its original setting upon disposal.</p>
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
@@ -126,6 +128,12 @@ and sets it back to its original setting upon disposal.</p>
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Disposable.Dispose.html#PaintDotNet_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Disposable.IsDisposed.html#PaintDotNet_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -154,7 +162,7 @@ and sets it back to its original setting upon disposal.</p>
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.-ctor.html#PaintDotNet_WaitCursorChanger__ctor_System_Windows_Forms_Control_">WaitCursorChanger(Control)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.-ctor.html#PaintDotNet_WaitCursorChanger__ctor_System_Windows_Forms_Control_">WaitCursorChanger(Control?)</a></dt>
     <dd></dd>
   </dl>
 
@@ -162,11 +170,7 @@ and sets it back to its original setting upon disposal.</p>
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.Dispose.html#PaintDotNet_WaitCursorChanger_Dispose">Dispose()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.Finalize.html#PaintDotNet_WaitCursorChanger_Finalize">~WaitCursorChanger()</a></dt>
+    <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.Dispose.html#PaintDotNet_WaitCursorChanger_Dispose_System_Boolean_">Dispose(bool)</a></dt>
     <dd></dd>
   </dl>
 

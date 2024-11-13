@@ -140,17 +140,22 @@
 
 <h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_BeginDraw_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>Drawing operations can only be issued between a BeginDraw and EndDraw call.<br>
+<br>
 BeginDraw and EndDraw are used to indicate that a device context is in use by the Direct2D system. Different implementations of
 IDeviceContext might behave differently when BeginDraw is called. A bitmap device context may be locked between BeginDraw/EndDraw
 calls, a DXGI surface render target might be acquired on BeginDraw and released on EndDraw, while an <a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.html">IHwndDeviceContext</a>
 may begin batching at BeginDraw and may present on EndDraw, for example.<br>
+<br>
 The BeginDraw method must be called before rendering operations can be called, though state-setting and state-retrieval operations
 can be performed even outside of BeginDraw/EndDraw.<br>
+<br>
 After BeginDraw is called, a device context will normally build up a batch of rendering commands, but defer processing of these
 commands until either an internal buffer is full, the Flush method is called, or until EndDraw is called. The EndDraw method causes
 any batched drawing operations to complete, and then returns to indicate success or throws an exception to indicate an error.
 The EndDraw method always succeeds: it should not be called twice even if a previous EndDraw resulted in an error.<br>
+<br>
 If EndDraw is called without a matched call to BeginDraw, it returns an error indicating that BeginDraw must be called before EndDraw.<br>
+<br>
 Calling BeginDraw twice on a render target puts the target into an error state where nothing further is drawn, and throws an
 appropriate exception when EndDraw is called.<br></p>
 </div>

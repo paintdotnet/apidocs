@@ -117,25 +117,26 @@
 
 <a id="PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_" data-uid="PaintDotNet.Clipboard.IClipboardTransaction.AddNativeData*"></a>
 
-<h3 id="PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_System_UInt32_System_Int64_PaintDotNet_Clipboard_ClipboardNativeDataCallback_" data-uid="PaintDotNet.Clipboard.IClipboardTransaction.AddNativeData(System.UInt32,System.Int64,PaintDotNet.Clipboard.ClipboardNativeDataCallback)">
-  AddNativeData(uint, long, ClipboardNativeDataCallback)
+<h3 id="PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_System_UInt32_System_IntPtr_PaintDotNet_Clipboard_ClipboardDataCallback_" data-uid="PaintDotNet.Clipboard.IClipboardTransaction.AddNativeData(System.UInt32,System.IntPtr,PaintDotNet.Clipboard.ClipboardDataCallback)">
+  AddNativeData(uint, nint, ClipboardDataCallback)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Provides a mechanism for writing native data to the clipboard.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void AddNativeData(uint formatID, long dataLength, ClipboardNativeDataCallback writeDataCallback)</code></pre>
+  <pre><code class="lang-csharp hljs">void AddNativeData(uint formatID, nint dataLength, ClipboardDataCallback writeDataCallback)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>formatID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
   <dd></dd>
-  <dt><code>dataLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+  <dt><code>dataLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
   <dd></dd>
-  <dt><code>writeDataCallback</code> <a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeDataCallback.html">ClipboardNativeDataCallback</a></dt>
+  <dt><code>writeDataCallback</code> <a class="xref" href="PaintDotNet.Clipboard.ClipboardDataCallback.html">ClipboardDataCallback</a></dt>
   <dd></dd>
 </dl>
 
@@ -146,6 +147,11 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_System_UInt32_System_IntPtr_PaintDotNet_Clipboard_ClipboardDataCallback__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>See <a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.html">ClipboardNativeFormats</a> for the built-in native format IDs, and
+<a href="https://learn.microsoft.com/en-us/windows/win32/dataxchg/standard-clipboard-formats">Standard
+Clipboard Formats</a> for more info.</p>
+</div>
 
 
 

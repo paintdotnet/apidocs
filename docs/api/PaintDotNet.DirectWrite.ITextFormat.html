@@ -95,7 +95,14 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Describes the font and paragraph properties used to format text, and describes locale information.<br>
+<br>
+This corresponds to the following DirectWrite interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritetextformat">IDWriteTextFormat</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritetextformat1">IDWriteTextFormat1</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextformat2">IDWriteTextFormat2</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextformat3">IDWriteTextFormat3</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -138,63 +145,93 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FlowDirection.html#PaintDotNet_DirectWrite_ITextFormat_FlowDirection">FlowDirection</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the direction that text lines flow.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontCollection.html#PaintDotNet_DirectWrite_ITextFormat_FontCollection">FontCollection</a></dt>
-    <dd></dd>
+    <dd><p>Gets or set the current font collection.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontFamilyName.html#PaintDotNet_DirectWrite_ITextFormat_FontFamilyName">FontFamilyName</a></dt>
-    <dd></dd>
+    <dd><p>Gets the font family name.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontSize.html#PaintDotNet_DirectWrite_ITextFormat_FontSize">FontSize</a></dt>
-    <dd></dd>
+    <dd><p>Gets the font size in DIP units.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontStretch.html#PaintDotNet_DirectWrite_ITextFormat_FontStretch">FontStretch</a></dt>
-    <dd></dd>
+    <dd><p>Gets the font stretch of the text.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontStyle.html#PaintDotNet_DirectWrite_ITextFormat_FontStyle">FontStyle</a></dt>
-    <dd></dd>
+    <dd><p>Gets the font style of the text.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.FontWeight.html#PaintDotNet_DirectWrite_ITextFormat_FontWeight">FontWeight</a></dt>
-    <dd></dd>
+    <dd><p>Gets the font weight of the text.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.IncrementalTabStop.html#PaintDotNet_DirectWrite_ITextFormat_IncrementalTabStop">IncrementalTabStop</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the incremental tab stop position.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LastLineWrapping.html#PaintDotNet_DirectWrite_ITextFormat_LastLineWrapping">LastLineWrapping</a></dt>
+    <dd><p>Gets or sets the wrapping mode of the last line.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LineSpacing.html#PaintDotNet_DirectWrite_ITextFormat_LineSpacing">LineSpacing</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the line spacing adjustment for a multiline text paragraph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LocaleName.html#PaintDotNet_DirectWrite_ITextFormat_LocaleName">LocaleName</a></dt>
-    <dd></dd>
+    <dd><p>Gets the locale name.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.OpticalAlignment.html#PaintDotNet_DirectWrite_ITextFormat_OpticalAlignment">OpticalAlignment</a></dt>
+    <dd><p>Gets or sets the optical margin alignment for the text format.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.ParagraphAlignment.html#PaintDotNet_DirectWrite_ITextFormat_ParagraphAlignment">ParagraphAlignment</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the alignment option of a paragraph which is relative to the top and bottom edges of a layout box.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.ReadingDirection.html#PaintDotNet_DirectWrite_ITextFormat_ReadingDirection">ReadingDirection</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the current reading direction for text in a paragraph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.TextAlignment.html#PaintDotNet_DirectWrite_ITextFormat_TextAlignment">TextAlignment</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the alignment option of text relative to the layout box's leading and trailing edge.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.Trimming.html#PaintDotNet_DirectWrite_ITextFormat_Trimming">Trimming</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the trimming parameters for text that overflows the layout box.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.VerticalGlyphOrientation.html#PaintDotNet_DirectWrite_ITextFormat_VerticalGlyphOrientation">VerticalGlyphOrientation</a></dt>
+    <dd><p>Gets or sets the preferred orientation of glyphs when using a vertical reading direction.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.WordWrapping.html#PaintDotNet_DirectWrite_ITextFormat_WordWrapping">WordWrapping</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the word wrapping option.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -202,11 +239,13 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.GetTrimmingSign.html#PaintDotNet_DirectWrite_ITextFormat_GetTrimmingSign">GetTrimmingSign()</a></dt>
-    <dd></dd>
+    <dd><p>Gets the trimming sign inline object.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.SetTrimmingSign.html#PaintDotNet_DirectWrite_ITextFormat_SetTrimmingSign_PaintDotNet_DirectWrite_IInlineObject_">SetTrimmingSign(IInlineObject?)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the trimming sign inline object.</p>
+</dd>
   </dl>
 
 

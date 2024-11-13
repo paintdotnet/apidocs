@@ -135,7 +135,7 @@ called when there are no threads busy with calls to <a class="xref" href="PaintD
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>newToken</code> <a class="xref" href="PaintDotNet.Effects.EffectConfigToken.html">EffectConfigToken</a></dt>
-  <dd><p>The effect configuration token. This may only be null if the effect is not configurable, as
+  <dd><p>The effect configuration token. This may only be <code>null</code> if the effect is not configurable, as
 determined by <a class="xref" href="PaintDotNet.Effects.IEffectOptions.IsConfigurable.html#PaintDotNet_Effects_IEffectOptions_IsConfigurable">IsConfigurable</a>.</p>
 </dd>
 </dl>
@@ -150,6 +150,9 @@ determined by <a class="xref" href="PaintDotNet.Effects.IEffectOptions.IsConfigu
 
 <h4 class="section">Exceptions</h4>
 <dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd><p>The token is <code>null</code>, but <a class="xref" href="PaintDotNet.Effects.IEffectOptions.IsConfigurable.html#PaintDotNet_Effects_IEffectOptions_IsConfigurable">IsConfigurable</a> is true.</p>
+</dd>
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
   <dd><p><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a> must be called first.</p>
 </dd>

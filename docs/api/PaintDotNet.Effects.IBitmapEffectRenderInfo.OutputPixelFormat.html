@@ -122,7 +122,7 @@
   
 </h3>
 
-<div class="markdown level1 summary"><p>Sets the pixel format for the output buffer.</p>
+<div class="markdown level1 summary"><p>Specifies the pixel format for the output buffer.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
@@ -151,7 +151,12 @@ The effect must use the same pixel format when retrieving its output buffer with
 <br>
 Setting this value does not guarantee that the effect's output will be stored in any particular pixel
 format, but it permits the effect infrastructure to know ahead-of-time the format and precision that
-is optimal for the effect.</p>
+is optimal for the effect.<br>
+<br>
+When specifying a floating-point pixel format, such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>, the
+effect must operate in linear gamma mode. If the working space of the document
+(<a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a> cannot be linearized, then scRGB (aka linearized
+sRGB) must be used instead.</p>
 </div>
 
 <h4 class="section">Exceptions</h4>

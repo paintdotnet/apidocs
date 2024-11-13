@@ -149,7 +149,7 @@
 <a id="PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_" data-uid="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.#ctor*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_" data-uid="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.#ctor(PaintDotNet.Direct2D1.IDeviceEffectFactory,PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Direct2D1.IDeviceColorContext,PaintDotNet.Direct2D1.ColorManagementRenderingIntent,PaintDotNet.Direct2D1.IDeviceColorContext,PaintDotNet.Direct2D1.ColorManagementRenderingIntent,PaintDotNet.Direct2D1.ColorManagementAlphaMode,PaintDotNet.Direct2D1.ColorManagementQuality)">
-  ColorManagementEffect(IDeviceEffectFactory, IDeviceImage, IDeviceColorContext, ColorManagementRenderingIntent, IDeviceColorContext, ColorManagementRenderingIntent, ColorManagementAlphaMode, ColorManagementQuality)
+  ColorManagementEffect(IDeviceEffectFactory, IDeviceImage?, IDeviceColorContext?, ColorManagementRenderingIntent, IDeviceColorContext?, ColorManagementRenderingIntent, ColorManagementAlphaMode, ColorManagementQuality)
   
 </h3>
 
@@ -157,7 +157,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ColorManagementEffect(IDeviceEffectFactory factory, IDeviceImage source, IDeviceColorContext sourceColorContext, ColorManagementRenderingIntent sourceRenderingIntent, IDeviceColorContext destinationColorContext, ColorManagementRenderingIntent destinationRenderingIntent, ColorManagementAlphaMode alphaMode = ColorManagementAlphaMode.Premultiplied, ColorManagementQuality quality = ColorManagementQuality.Best)</code></pre>
+  <pre><code class="lang-csharp hljs">public ColorManagementEffect(IDeviceEffectFactory factory, IDeviceImage? source, IDeviceColorContext? sourceColorContext = null, ColorManagementRenderingIntent sourceRenderingIntent = ColorManagementRenderingIntent.Perceptual, IDeviceColorContext? destinationColorContext = null, ColorManagementRenderingIntent destinationRenderingIntent = ColorManagementRenderingIntent.Perceptual, ColorManagementAlphaMode alphaMode = ColorManagementAlphaMode.Premultiplied, ColorManagementQuality quality = ColorManagementQuality.Best)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -194,7 +194,7 @@
 <a id="PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_" data-uid="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.#ctor*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_" data-uid="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.#ctor(PaintDotNet.Direct2D1.IDeviceEffectFactory,PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Direct2D1.IDeviceColorContext,PaintDotNet.Direct2D1.IDeviceColorContext,PaintDotNet.Direct2D1.ColorManagementAlphaMode,PaintDotNet.Direct2D1.ColorManagementQuality)">
-  ColorManagementEffect(IDeviceEffectFactory, IDeviceImage, IDeviceColorContext, IDeviceColorContext, ColorManagementAlphaMode, ColorManagementQuality)
+  ColorManagementEffect(IDeviceEffectFactory, IDeviceImage?, IDeviceColorContext, IDeviceColorContext, ColorManagementAlphaMode, ColorManagementQuality)
   
 </h3>
 
@@ -202,7 +202,7 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ColorManagementEffect(IDeviceEffectFactory factory, IDeviceImage source, IDeviceColorContext sourceColorContext, IDeviceColorContext destinationColorContext, ColorManagementAlphaMode alphaMode = ColorManagementAlphaMode.Premultiplied, ColorManagementQuality quality = ColorManagementQuality.Best)</code></pre>
+  <pre><code class="lang-csharp hljs">public ColorManagementEffect(IDeviceEffectFactory factory, IDeviceImage? source, IDeviceColorContext sourceColorContext, IDeviceColorContext destinationColorContext, ColorManagementAlphaMode alphaMode = ColorManagementAlphaMode.Premultiplied, ColorManagementQuality quality = ColorManagementQuality.Best)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

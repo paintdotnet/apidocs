@@ -187,10 +187,10 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_ClampEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Specifies the alpha mode of the input image.<br>
-If set to ClampAlphaMode.Premultiplied, each pixel's alpha value is clamped to the range [0, 1] and then the RGB values are clamped to the range [0, alpha].<br>
-If set to ClampAlphaMode.Straight, all components are clamped to the range [0, 1].<br>
-The default value is ClampAlphaMode.Premultiplied.</p>
+    <dd><p>Specifies the alpha mode of the input and the output.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampAlphaMode.html#PaintDotNet_Direct2D1_Effects_ClampAlphaMode_Premultiplied">Premultiplied</a>, the input is unpremultiplied, clamped as straight alpha format, and then premultiplied.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampAlphaMode.html#PaintDotNet_Direct2D1_Effects_ClampAlphaMode_Straight">Straight</a>, all components are clamped to the range [0, 1].<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampAlphaMode.html#PaintDotNet_Direct2D1_Effects_ClampAlphaMode_Premultiplied">Premultiplied</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">

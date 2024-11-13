@@ -95,7 +95,9 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines methods for setting an encoder's properties such as thumbnails, frames, and palettes.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapencoder">IWICBitmapEncoder</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -126,6 +128,9 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
+      <a class="xref" href="PaintDotNet.Imaging.BitmapEncoderExtensions.CreateNewFrame.html#PaintDotNet_Imaging_BitmapEncoderExtensions_CreateNewFrame_PaintDotNet_Imaging_IBitmapEncoder_">BitmapEncoderExtensions.CreateNewFrame(IBitmapEncoder)</a>
+  </div>
+  <div>
       <a class="xref" href="PaintDotNet.Imaging.BitmapEncoderExtensions.SetColorContexts.html#PaintDotNet_Imaging_BitmapEncoderExtensions_SetColorContexts_PaintDotNet_Imaging_IBitmapEncoder_System_Collections_Generic_IReadOnlyList_PaintDotNet_Imaging_IColorContext__">BitmapEncoderExtensions.SetColorContexts(IBitmapEncoder, IReadOnlyList&lt;IColorContext&gt;)</a>
   </div>
   <div>
@@ -144,15 +149,18 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.ContainerFormat.html#PaintDotNet_Imaging_IBitmapEncoder_ContainerFormat">ContainerFormat</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the encoder's container format.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.EncoderInfo.html#PaintDotNet_Imaging_IBitmapEncoder_EncoderInfo">EncoderInfo</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves an <a class="xref" href="PaintDotNet.Imaging.IBitmapEncoderInfo.html">IBitmapEncoderInfo</a> for the encoder.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.Metadata.html#PaintDotNet_Imaging_IBitmapEncoder_Metadata">Metadata</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves a metadata query writer for the encoder.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -160,27 +168,33 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.Commit.html#PaintDotNet_Imaging_IBitmapEncoder_Commit">Commit()</a></dt>
-    <dd></dd>
+    <dd><p>Commits all changes for the image and closes the stream.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.CreateNewFrame.html#PaintDotNet_Imaging_IBitmapEncoder_CreateNewFrame_PaintDotNet_ComponentModel_IPropertyBag2__">CreateNewFrame(out IPropertyBag2)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.html">IBitmapFrameEncode</a> instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.SetColorContexts.html#PaintDotNet_Imaging_IBitmapEncoder_SetColorContexts_System_ReadOnlySpan_PaintDotNet_Imaging_IColorContext__">SetColorContexts(ReadOnlySpan&lt;IColorContext&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> objects for the encoder.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.SetPalette.html#PaintDotNet_Imaging_IBitmapEncoder_SetPalette_PaintDotNet_Imaging_IPalette_">SetPalette(IPalette)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the global palette for the image.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.SetPreview.html#PaintDotNet_Imaging_IBitmapEncoder_SetPreview_PaintDotNet_Imaging_IBitmapSource_">SetPreview(IBitmapSource)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the global preview for the image.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.SetThumbnail.html#PaintDotNet_Imaging_IBitmapEncoder_SetThumbnail_PaintDotNet_Imaging_IBitmapSource_">SetThumbnail(IBitmapSource)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the global thumbnail for the image.</p>
+</dd>
   </dl>
 
 

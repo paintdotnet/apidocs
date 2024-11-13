@@ -150,8 +150,8 @@ when it is finished with it (as per standard COM ref counting rules).</p>
 <h4 class="section" id="PaintDotNet_AppModel_IDxgiAdapterService_GetRenderingAdapter_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This method may return an adapter for a hardware device or the WARP device, depending on the user's settings
 or other factors. The adapter will meet the minimum requirements for Paint.NET's use: Feature Level 11,
-compute shaders, and all required precisions and buffer formats (Alpha8, Bgra32, Rgba64, Rgba64Float16, and
-RgbaFloat32). It is up to the caller to evaluate the device's capabilities if their requirements go beyond
+compute shaders, and all required precisions and buffer formats (Alpha8, Bgra32, Rgba64, Rgba64Half, and
+Rgba128Float). It is up to the caller to evaluate the device's capabilities if their requirements go beyond
 that (e.g. Feature Level 12, double precision floating point).<br></p>
 </div>
 

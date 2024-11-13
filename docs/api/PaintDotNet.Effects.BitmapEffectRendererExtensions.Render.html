@@ -122,7 +122,10 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Renders the requested area and stores the result in the given buffer. The entire buffer is
+written to, including areas that are outside of the selection. The caller must perform any
+masking or blending.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -151,6 +154,16 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_BitmapEffectRendererExtensions_Render__1_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Most BGRA/RGBA pixel formats can be used for the buffer. If it matches the pixel format that the
+effect is using for its output buffer, no conversion will be necessary and performance will
+be optimal. Integer formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a> will be stored in
+gamma compressed format (e.g. sRGB), while floating point formats such as <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>
+will use linear gamma.<br><br>
+This method will handle clearing / zero-filling the buffer if necessary based on whether the
+effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
+necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>
+</div>
 
 
 
@@ -162,7 +175,10 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Renders the requested area and stores the result in the given buffer. The entire buffer is
+written to, including areas that are outside of the selection. The caller must perform any
+masking or blending.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -191,6 +207,16 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_BitmapEffectRendererExtensions_Render__1_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_Imaging_IBitmapLock___0__PaintDotNet_Rendering_Point2Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Most BGRA/RGBA pixel formats can be used for the buffer. If it matches the pixel format that the
+effect is using for its output buffer, no conversion will be necessary and performance will
+be optimal. Integer formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a> will be stored in
+gamma compressed format (e.g. sRGB), while floating point formats such as <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>
+will use linear gamma.<br><br>
+This method will handle clearing / zero-filling the buffer if necessary based on whether the
+effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
+necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>
+</div>
 
 
 
@@ -202,7 +228,10 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Renders the requested area and stores the result in the given buffer. The entire buffer is
+written to, including areas that are outside of the selection. The caller must perform any
+masking or blending.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -226,6 +255,16 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_BitmapEffectRendererExtensions_Render_PaintDotNet_Effects_IBitmapEffectRenderer_PaintDotNet_Imaging_IBitmapLock_PaintDotNet_Rendering_Point2Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Most BGRA/RGBA pixel formats can be used for the buffer. If it matches the pixel format that the
+effect is using for its output buffer, no conversion will be necessary and performance will
+be optimal. Integer formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a> will be stored in
+gamma compressed format (e.g. sRGB), while floating point formats such as <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>
+will use linear gamma.<br><br>
+This method will handle clearing / zero-filling the buffer if necessary based on whether the
+effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
+necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>
+</div>
 
 
 

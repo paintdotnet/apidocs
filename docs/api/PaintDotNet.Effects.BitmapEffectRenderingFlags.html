@@ -135,7 +135,7 @@ threaded manner. No other threads will be activated until after the first Render
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer"><code>UninitializedOutputBuffer = 16</code></dt>
     <dd><p>Enabling this causes the effect system to not zero-fill the output buffer before sending it
 to <a class="xref" href="PaintDotNet.Effects.BitmapEffect.OnRender.html#PaintDotNet_Effects_BitmapEffect_OnRender_PaintDotNet_Effects_IBitmapEffectOutput_">OnRender(IBitmapEffectOutput)</a>. If the effect implementation always
-sets every output pixel, this can improve performance a little. If the effect does not set
+sets every output pixel this can improve performance a little. If the effect does not set
 every output pixel, then the output contents are undefined and there will be rendering artifacts.</p>
 </dd>
   </dl>

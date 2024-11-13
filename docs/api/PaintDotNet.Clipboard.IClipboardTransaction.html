@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Base.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides methods for reading and writing clipboard data.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -125,43 +126,53 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.Clipboard.html#PaintDotNet_Clipboard_IClipboardTransaction_Clipboard">Clipboard</a></dt>
-    <dd></dd>
+    <dd><p>Gets a reference to the <a class="xref" href="PaintDotNet.Clipboard.IClipboard.html">IClipboard</a> object that created this transaction.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.AddNativeData.html#PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_System_UInt32_System_Int64_PaintDotNet_Clipboard_ClipboardNativeDataCallback_">AddNativeData(uint, long, ClipboardNativeDataCallback)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.AddNativeData.html#PaintDotNet_Clipboard_IClipboardTransaction_AddNativeData_System_UInt32_System_IntPtr_PaintDotNet_Clipboard_ClipboardDataCallback_">AddNativeData(uint, nint, ClipboardDataCallback)</a></dt>
+    <dd><p>Provides a mechanism for writing native data to the clipboard.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.Empty.html#PaintDotNet_Clipboard_IClipboardTransaction_Empty">Empty()</a></dt>
-    <dd></dd>
+    <dd><p>Empties the clipboard. This is generally the first method called after opening a transaction when
+copying data to the clipboard</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.GetNativeDataFormats.html#PaintDotNet_Clipboard_IClipboardTransaction_GetNativeDataFormats">GetNativeDataFormats()</a></dt>
-    <dd></dd>
+    <dd><p>Gets the list of native data formats.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.IsNativeDataPresent.html#PaintDotNet_Clipboard_IClipboardTransaction_IsNativeDataPresent_System_UInt32_">IsNativeDataPresent(uint)</a></dt>
-    <dd></dd>
+    <dd><p>Checks whether a given native data format ID is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.RegisterNativeFormat.html#PaintDotNet_Clipboard_IClipboardTransaction_RegisterNativeFormat_System_String_">RegisterNativeFormat(string)</a></dt>
-    <dd></dd>
+    <dd><p>Registers a format with the clipboard.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.TryGetNativeData.html#PaintDotNet_Clipboard_IClipboardTransaction_TryGetNativeData_System_UInt32_PaintDotNet_Clipboard_ClipboardNativeDataCallback_">TryGetNativeData(uint, ClipboardNativeDataCallback)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.TryGetNativeData.html#PaintDotNet_Clipboard_IClipboardTransaction_TryGetNativeData_System_UInt32_PaintDotNet_Clipboard_ClipboardDataCallback_">TryGetNativeData(uint, ClipboardDataCallback)</a></dt>
+    <dd><p>Provides a mechanism for reading native data from the clipboard.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.TryGetNativeDataHandle.html#PaintDotNet_Clipboard_IClipboardTransaction_TryGetNativeDataHandle_System_UInt32_">TryGetNativeDataHandle(uint)</a></dt>
-    <dd></dd>
+    <dd><p>Gets a handle to the data on the clipboard that is associated with the given native data format ID.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.TryGetNativeFormatName.html#PaintDotNet_Clipboard_IClipboardTransaction_TryGetNativeFormatName_System_UInt32_">TryGetNativeFormatName(uint)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the registered name for the native data format.</p>
+</dd>
   </dl>
 
 

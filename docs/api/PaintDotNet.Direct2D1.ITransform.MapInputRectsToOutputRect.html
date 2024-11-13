@@ -155,12 +155,13 @@
 
 <h4 class="section" id="PaintDotNet_Direct2D1_ITransform_MapInputRectsToOutputRect_System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__PaintDotNet_Rendering_RectInt32__PaintDotNet_Rendering_RectInt32___remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>The transform implementation must ensure that any pixel shader or software callback implementation it
-provides honors this calculation.
+provides honors this calculation.<br>
+<br>
 Unlike the MapOutputRectToInputRects and MapInvalidRect functions, this method is explicitly called by
 the renderer at a determined place in its rendering algorithm. The transform implementation may change
 its state based on the input rectangles and use this information to control its rendering information.
-This method is always called before the MapInvalidRect and MapOutputRectToInputRects methods of the
-transform.</p>
+This method is always called before the <a class="xref" href="PaintDotNet.Direct2D1.ITransform.MapInvalidRect.html#PaintDotNet_Direct2D1_ITransform_MapInvalidRect_System_Int32_PaintDotNet_Rendering_RectInt32_PaintDotNet_Rendering_RectInt32__">MapInvalidRect(int, RectInt32, out RectInt32)</a> and <a class="xref" href="PaintDotNet.Direct2D1.ITransform.MapOutputRectToInputRects.html#PaintDotNet_Direct2D1_ITransform_MapOutputRectToInputRects_PaintDotNet_Rendering_RectInt32_System_Span_PaintDotNet_Rendering_RectInt32__">MapOutputRectToInputRects(RectInt32, Span&lt;RectInt32&gt;)</a>
+methods of the transform.</p>
 </div>
 
 

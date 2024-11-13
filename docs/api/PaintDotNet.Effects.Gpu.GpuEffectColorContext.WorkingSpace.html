@@ -149,15 +149,12 @@ is unchanged.</p>
 <h4 class="section" id="PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This color context permits you to work with the original pixel data with the highest level of accuracy,
 but with the added cost of complexity or loss of correctness. The image may be encoded in any color
-space or gamma, and you will need to accommodate that, or be implementing an effect where this is not
+space or gamma, and you will need to accommodate that or be implementing an effect where this is not
 a concern.<br>
 <br>
 Using this color context is generally not recommended unless you know what you're doing with respect
 to color management, or if you require access to the raw pixel values no matter what, or if you will
-not be doing any sort of blending, antialiasing, sampling, or filtering.<br>
-<br>
-The color context of the source image is accessible via the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a>
-property.<br></p>
+not be doing any sort of blending, antialiasing, sampling, or filtering.<br></p>
 </div>
 
 

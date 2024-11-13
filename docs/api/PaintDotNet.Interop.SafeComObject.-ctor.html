@@ -117,23 +117,19 @@
 
 <a id="PaintDotNet_Interop_SafeComObject__ctor_" data-uid="PaintDotNet.Interop.SafeComObject.#ctor*"></a>
 
-<h3 id="PaintDotNet_Interop_SafeComObject__ctor_System_Boolean_" data-uid="PaintDotNet.Interop.SafeComObject.#ctor(System.Boolean)">
-  SafeComObject(bool)
+<h3 id="PaintDotNet_Interop_SafeComObject__ctor" data-uid="PaintDotNet.Interop.SafeComObject.#ctor">
+  SafeComObject()
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public SafeComObject(bool ownsHandle)</code></pre>
+  <pre><code class="lang-csharp hljs">public SafeComObject()</code></pre>
 </div>
 
-<h4 class="section">Parameters</h4>
-<dl class="parameters">
-  <dt><code>ownsHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
-</dl>
 
 
 
@@ -153,16 +149,18 @@
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
+indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public SafeComObject(nint pObject, bool ownsHandle)</code></pre>
+  <pre><code class="lang-csharp hljs">public SafeComObject(nint pExistingObject, bool ownsHandle)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>pObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+  <dt><code>pExistingObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
   <dd></dd>
   <dt><code>ownsHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
   <dd></dd>
@@ -175,6 +173,51 @@
 
 
 
+<h4 class="section" id="PaintDotNet_Interop_SafeComObject__ctor_System_IntPtr_System_Boolean__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method does <u>not</u> call <code>AddRef()</code> on the object. If <code class="paramref">ownsHandle</code>
+is specified as <code>true</code> and the caller wishes to maintain its own reference to the COM object,
+it should also call the object's <code>AddRef()</code> method.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Interop_SafeComObject__ctor_" data-uid="PaintDotNet.Interop.SafeComObject.#ctor*"></a>
+
+<h3 id="PaintDotNet_Interop_SafeComObject__ctor_System_Void__System_Boolean_" data-uid="PaintDotNet.Interop.SafeComObject.#ctor(System.Void*,System.Boolean)">
+  SafeComObject(void*, bool)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
+indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SafeComObject(void* pExistingObject, bool ownsHandle)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>pExistingObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+  <dd></dd>
+  <dt><code>ownsHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Interop_SafeComObject__ctor_System_Void__System_Boolean__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method does <u>not</u> call <code>AddRef()</code> on the object. If <code class="paramref">ownsHandle</code>
+is specified as <code>true</code> and the caller wishes to maintain its own reference to the COM object,
+it should also call the object's <code>AddRef()</code> method.</p>
+</div>
 
 
 

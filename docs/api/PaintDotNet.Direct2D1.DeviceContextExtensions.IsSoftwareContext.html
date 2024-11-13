@@ -154,6 +154,7 @@ to create a device bitmap that shares memory with a CPU bitmap (without copying)
 <div class="markdown level1 remarks"><p>If the device context is using software rendering, it can be appropriate to lower the complexity or
 quality of rendering in order to improve performance. Hardware accelerated rendering is always
 significantly faster.<br>
+<br>
 This method is more accurate than using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties__">IsSupported(in DeviceContextProperties)</a> with <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextType.html#PaintDotNet_Direct2D1_DeviceContextType_Software">Software</a>,
 which only returns true if the device context was created with <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>.
 This method also returns true if the device was created using <span class="xref">PaintDotNet.Direct2D1.IDirect2DFactory.CreateDevice(PaintDotNet.Dxgi.IDxgiDevice)</span>

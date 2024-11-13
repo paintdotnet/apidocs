@@ -100,7 +100,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LinearToSrgbEffect : CustomEffect&lt;LinearToSrgbEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LinearToSrgbEffect : CustomEffect&lt;LinearToSrgbEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -127,10 +127,10 @@
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 
@@ -235,9 +235,10 @@
 
   <h2 id="PaintDotNet_Direct2D1_Effects_LinearToSrgbEffect_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>This effect is the inverse of <a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a>.<br>
-This is a helper effect that is the same as using the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a> with the
-SourceColorContext initialized to <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorSpace.html#PaintDotNet_Direct2D1_DeviceColorSpace_ScRgb">ScRgb</a> and the DestinationColorContext
-set to <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorSpace.html#PaintDotNet_Direct2D1_DeviceColorSpace_Srgb">Srgb</a>.</p>
+<br>
+<b>NOTE:</b> This effect should only be used for conversion between sRGB and scRGB. It
+is not appropriate for converting between any other color spaces. In general, the use
+of <a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a> should be strongly preferred.</p>
 </div>
 
   <h2 class="section" id="constructors">Constructors

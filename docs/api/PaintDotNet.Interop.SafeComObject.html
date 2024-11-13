@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Safely encapsulates a reference to a COM object.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,12 +190,21 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor_System_Boolean_">SafeComObject(bool)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor">SafeComObject()</a></dt>
+    <dd><p>Creates a <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor_System_IntPtr_System_Boolean_">SafeComObject(nint, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
+indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor_System_Void__System_Boolean_">SafeComObject(void*, bool)</a></dt>
+    <dd><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
+indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

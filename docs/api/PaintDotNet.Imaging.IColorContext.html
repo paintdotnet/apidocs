@@ -95,11 +95,14 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Exposes methods for color management.<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwiccolorcontext">IWICColorContext</a>
+for more information.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IColorContext : IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IColorContext : IObjectRef, IIsDisposed, IDisposable, IEquatable&lt;IColorContext&gt;, IInternalImpl</code></pre>
   </div>
 
 
@@ -120,6 +123,9 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
     </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals">IEquatable&lt;IColorContext&gt;.Equals(IColorContext)</a>
+    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -138,7 +144,8 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IColorContext.ExifColorSpace.html#PaintDotNet_Imaging_IColorContext_ExifColorSpace">ExifColorSpace</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the Exchangeable Image File (EXIF) color space color context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IColorContext.Type.html#PaintDotNet_Imaging_IColorContext_Type">Type</a></dt>
@@ -151,7 +158,8 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IColorContext.GetProfileBytes.html#PaintDotNet_Imaging_IColorContext_GetProfileBytes">GetProfileBytes()</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the color context profile.</p>
+</dd>
   </dl>
 
 

@@ -193,6 +193,10 @@ Classes
 Structs
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.CharacterSpacing.html">CharacterSpacing</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.ClusterMetrics.html">ClusterMetrics</a></dt>
       <dd><p>Contains information about a glyph cluster.</p>
 </dd>
@@ -267,6 +271,14 @@ for more information.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.TextStrikethrough.html">TextStrikethrough</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.TextUnderline.html">TextUnderline</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.TrimmingParameters.html">TrimmingParameters</a></dt>
       <dd></dd>
     </dl>
@@ -336,10 +348,33 @@ This interface corresponds to the following DirectWrite interfaces:<br>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.html">ITextFormat</a></dt>
-      <dd></dd>
+      <dd><p>Describes the font and paragraph properties used to format text, and describes locale information.<br>
+<br>
+This corresponds to the following DirectWrite interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritetextformat">IDWriteTextFormat</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritetextformat1">IDWriteTextFormat1</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextformat2">IDWriteTextFormat2</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextformat3">IDWriteTextFormat3</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.html">ITextLayout</a></dt>
+      <dd><p>Represents a block of text after it has been fully analyzed and formatted.<br>
+<br>
+This corresponds to the following DirectWrite interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout">IDWriteTextLayout</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextlayout1">IDWriteTextLayout1</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritetextlayout2">IDWriteTextLayout2</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextlayout3">IDWriteTextLayout3</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextlayout4">IDWriteTextLayout4</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextPixelSnapping.html">ITextPixelSnapping</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextRenderer.html">ITextRenderer</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -416,6 +451,10 @@ for more information.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.GlyphOrientationAngle.html">GlyphOrientationAngle</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.GridFitMode.html">GridFitMode</a></dt>
       <dd><p>Specifies whether to enable grid-fitting of glyph outlines (also known as hinting).</p>
 </dd>
@@ -427,6 +466,15 @@ for more information.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.LineSpacingMethod.html">LineSpacingMethod</a></dt>
       <dd><p>The method used for line spacing in a text layout.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.OpticalAlignment.html">OpticalAlignment</a></dt>
+      <dd><p>The optical margin alignment mode.<br>
+<br>
+By default, glyphs are aligned to the margin by the default origin and side-bearings of the glyph.
+If you specify <a class="xref" href="PaintDotNet.DirectWrite.OpticalAlignment.html#PaintDotNet_DirectWrite_OpticalAlignment_NoSideBearings">NoSideBearings</a>, then the alignment uses the side
+bearings to offset the glyph from the aligned edge to ensure the ink of the glyphs are aligned.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -464,6 +512,11 @@ for more information.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DirectWrite.TrimmingGranularity.html">TrimmingGranularity</a></dt>
       <dd><p>Specifies the text granularity used to trim text overflowing the layout box.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.DirectWrite.VerticalGlyphOrientation.html">VerticalGlyphOrientation</a></dt>
+      <dd><p>Contains values that specify the desired kind of glyph orientation for the text.</p>
 </dd>
     </dl>
     <dl class="jumplist">

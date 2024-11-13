@@ -98,12 +98,18 @@
   <div class="markdown summary"><p>Use the color management effect to transform an image from one ICC (International Color Consortium)
 color profile to another. The effect transforms the image according to the ICC specification.<br>
 <br>
+Note that this effect is a wrapper around Direct2D's built-in Color Management effect. This wrapper
+has several workarounds for bugs or inconsistencies in Direct2D's implementation, and has improved
+quality. To create an instance of an un-wrapped Direct2D Color Management effect, use the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectFactory.CreateEffect.html#PaintDotNet_Direct2D1_IDeviceEffectFactory_CreateEffect_PaintDotNet_Direct2D1_DeviceEffectID__">CreateEffect(in DeviceEffectID)</a> method, which is available on
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a>.<br>
+<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/color-management">Color management effect</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ColorManagementEffect : DeviceEffect&lt;ColorManagementEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ColorManagementEffect : CustomEffect&lt;ColorManagementEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -116,6 +122,7 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
       <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.html">DeviceEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect-1.html">DeviceEffect</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.Props.html">Props</a>&gt;</div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.CustomEffect-1.html">CustomEffect</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a>.<a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.Props.html">Props</a>&gt;</div>
       <div><span class="xref">ColorManagementEffect</span></div>
     </dd>
   </dl>
@@ -129,10 +136,10 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 
@@ -260,11 +267,11 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_">ColorManagementEffect(IDeviceEffectFactory, IDeviceImage, IDeviceColorContext, ColorManagementRenderingIntent, IDeviceColorContext, ColorManagementRenderingIntent, ColorManagementAlphaMode, ColorManagementQuality)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementRenderingIntent_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_">ColorManagementEffect(IDeviceEffectFactory, IDeviceImage?, IDeviceColorContext?, ColorManagementRenderingIntent, IDeviceColorContext?, ColorManagementRenderingIntent, ColorManagementAlphaMode, ColorManagementQuality)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_">ColorManagementEffect(IDeviceEffectFactory, IDeviceImage, IDeviceColorContext, IDeviceColorContext, ColorManagementAlphaMode, ColorManagementQuality)</a></dt>
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.-ctor.html#PaintDotNet_Direct2D1_Effects_ColorManagementEffect__ctor_PaintDotNet_Direct2D1_IDeviceEffectFactory_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_IDeviceColorContext_PaintDotNet_Direct2D1_ColorManagementAlphaMode_PaintDotNet_Direct2D1_ColorManagementQuality_">ColorManagementEffect(IDeviceEffectFactory, IDeviceImage?, IDeviceColorContext, IDeviceColorContext, ColorManagementAlphaMode, ColorManagementQuality)</a></dt>
     <dd></dd>
   </dl>
 

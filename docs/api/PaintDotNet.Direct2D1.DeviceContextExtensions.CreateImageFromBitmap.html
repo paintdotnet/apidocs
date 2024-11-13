@@ -182,8 +182,8 @@ for example, that sRGB bitmaps (which is most of them) can be drawn correctly wh
 context that uses linear gamma. Note that it is not always possible to determine the color contexts to
 use for conversion. If that is the case, color space conversion will not be performed.<br>
 <br>
-Premultiplication and conversions are either performed on the GPU, or while copying the bitmap to the GPU.
-The bitmap is not modified by this method.</p>
+Premultiplication and conversions are either performed on-the-fly by the GPU while rendering, or while
+copying the bitmap to the GPU. The bitmap is not actually modified by this method.</p>
 </div>
 
 
@@ -248,8 +248,8 @@ The bitmap will be converted to the color space associated with the device conte
 for example, that sRGB bitmaps (which is most of them) can be drawn correctly when rendering to a device
 context that uses linear gamma. Note that it is not always possible to determine the color contexts to
 use for conversion. If that is the case, color space conversion will not be performed.<br><br>
-Premultiplication and conversions are either performed on the GPU, or while copying the bitmap to the GPU.
-The bitmap is not modified by this method.</p>
+Premultiplication and conversions are either performed on-the-fly by the GPU while rendering, or while
+copying the bitmap to the GPU. The bitmap is not actually modified by this method.</p>
 </div>
 
 

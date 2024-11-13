@@ -121,13 +121,14 @@ it is an IBitmapSource or IBitmap, the amount of available GPU memory, and wheth
 hardware or software rendering.<br>
 <br>
 Depending on which strategy is used to create the image for the device context, the bitmap may be copied to the
-to the GPU (cached), or streamed during rendering.<br>
+GPU (cached), or streamed during rendering.<br>
 <br>
 The bitmap's colors will be converted to the color space of the device context, if available and if possible,
-unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion">DisableColorSpaceConversion</a> option is specified.
+unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion">DisableColorSpaceConversion</a> option is specified. The <a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a> instance
+will have its <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property set for the appropriate color space.<br>
 <br>
 The image will use premultiplied alpha unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. The bitmap
-will be premultiplied or unpremultiplied as necessary.
+will be premultiplied or unpremultiplied as necessary.<br>
 <br>
 <b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
 results.</b> If the bitmap is modified after the image is created, results are undefined.<br></p>

@@ -95,7 +95,15 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a block of text after it has been fully analyzed and formatted.<br>
+<br>
+This corresponds to the following DirectWrite interfaces:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout">IDWriteTextLayout</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextlayout1">IDWriteTextLayout1</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_2/nn-dwrite_2-idwritetextlayout2">IDWriteTextLayout2</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextlayout3">IDWriteTextLayout3</a>,
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextlayout4">IDWriteTextLayout4</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -142,10 +150,16 @@
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.IncrementalTabStop.html#PaintDotNet_DirectWrite_ITextFormat_IncrementalTabStop">ITextFormat.IncrementalTabStop</a>
     </div>
     <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LastLineWrapping.html#PaintDotNet_DirectWrite_ITextFormat_LastLineWrapping">ITextFormat.LastLineWrapping</a>
+    </div>
+    <div>
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LineSpacing.html#PaintDotNet_DirectWrite_ITextFormat_LineSpacing">ITextFormat.LineSpacing</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.LocaleName.html#PaintDotNet_DirectWrite_ITextFormat_LocaleName">ITextFormat.LocaleName</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.OpticalAlignment.html#PaintDotNet_DirectWrite_ITextFormat_OpticalAlignment">ITextFormat.OpticalAlignment</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.ParagraphAlignment.html#PaintDotNet_DirectWrite_ITextFormat_ParagraphAlignment">ITextFormat.ParagraphAlignment</a>
@@ -158,6 +172,9 @@
     </div>
     <div>
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.Trimming.html#PaintDotNet_DirectWrite_ITextFormat_Trimming">ITextFormat.Trimming</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.VerticalGlyphOrientation.html#PaintDotNet_DirectWrite_ITextFormat_VerticalGlyphOrientation">ITextFormat.VerticalGlyphOrientation</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.DirectWrite.ITextFormat.WordWrapping.html#PaintDotNet_DirectWrite_ITextFormat_WordWrapping">ITextFormat.WordWrapping</a>
@@ -181,6 +198,9 @@
   </div>
   <div>
       <a class="xref" href="PaintDotNet.DirectWrite.DirectWriteObjectRefExtensions.CreateRef.html#PaintDotNet_DirectWrite_DirectWriteObjectRefExtensions_CreateRef_PaintDotNet_DirectWrite_ITextLayout_">DirectWriteObjectRefExtensions.CreateRef(ITextLayout)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetCharacterSpacing.html#PaintDotNet_DirectWrite_TextLayoutExtensions_GetCharacterSpacing_PaintDotNet_DirectWrite_ITextLayout_System_Int32_">TextLayoutExtensions.GetCharacterSpacing(ITextLayout, int)</a>
   </div>
   <div>
       <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetDrawingEffect.html#PaintDotNet_DirectWrite_TextLayoutExtensions_GetDrawingEffect_PaintDotNet_DirectWrite_ITextLayout_System_Int32_">TextLayoutExtensions.GetDrawingEffect(ITextLayout, int)</a>
@@ -208,6 +228,9 @@
   </div>
   <div>
       <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetLocaleName.html#PaintDotNet_DirectWrite_TextLayoutExtensions_GetLocaleName_PaintDotNet_DirectWrite_ITextLayout_System_Int32_">TextLayoutExtensions.GetLocaleName(ITextLayout, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetPairKerning.html#PaintDotNet_DirectWrite_TextLayoutExtensions_GetPairKerning_PaintDotNet_DirectWrite_ITextLayout_System_Int32_">TextLayoutExtensions.GetPairKerning(ITextLayout, int)</a>
   </div>
   <div>
       <a class="xref" href="PaintDotNet.DirectWrite.TextLayoutExtensions.GetStrikethrough.html#PaintDotNet_DirectWrite_TextLayoutExtensions_GetStrikethrough_PaintDotNet_DirectWrite_ITextLayout_System_Int32_">TextLayoutExtensions.GetStrikethrough(ITextLayout, int)</a>
@@ -257,6 +280,14 @@
 </h2>
 
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.Draw.html#PaintDotNet_DirectWrite_ITextLayout_Draw_System_Object_PaintDotNet_DirectWrite_ITextRenderer_PaintDotNet_Rendering_Point2Float_">Draw(object?, ITextRenderer, Point2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetCharacterSpacing.html#PaintDotNet_DirectWrite_ITextLayout_GetCharacterSpacing_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetCharacterSpacing(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetClusterMetrics.html#PaintDotNet_DirectWrite_ITextLayout_GetClusterMetrics">GetClusterMetrics()</a></dt>
     <dd></dd>
   </dl>
@@ -301,6 +332,10 @@
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetPairKerning.html#PaintDotNet_DirectWrite_ITextLayout_GetPairKerning_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetPairKerning(int, out TextRange)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.GetStrikethrough.html#PaintDotNet_DirectWrite_ITextLayout_GetStrikethrough_System_Int32_PaintDotNet_DirectWrite_TextRange__">GetStrikethrough(int, out TextRange)</a></dt>
     <dd></dd>
   </dl>
@@ -322,6 +357,17 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.HitTestTextRange.html#PaintDotNet_DirectWrite_ITextLayout_HitTestTextRange_PaintDotNet_DirectWrite_TextRange_PaintDotNet_Rendering_Point2Float_">HitTestTextRange(TextRange, Point2Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.InvalidateLayout.html#PaintDotNet_DirectWrite_ITextLayout_InvalidateLayout">InvalidateLayout()</a></dt>
+    <dd><p>Invalidates the layout, forcing layout to remeasure before calling the metrics or drawing
+functions.This is useful if the locality of a font changes, and layout should be redrawn,
+or if the size of a client implemented <a class="xref" href="PaintDotNet.DirectWrite.IInlineObject.html">IInlineObject</a> changes.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetCharacterSpacing.html#PaintDotNet_DirectWrite_ITextLayout_SetCharacterSpacing_PaintDotNet_DirectWrite_TextRange_PaintDotNet_DirectWrite_CharacterSpacing_">SetCharacterSpacing(TextRange, CharacterSpacing)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -358,6 +404,10 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetLocaleName.html#PaintDotNet_DirectWrite_ITextLayout_SetLocaleName_PaintDotNet_DirectWrite_TextRange_System_String_">SetLocaleName(TextRange, string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.SetPairKerning.html#PaintDotNet_DirectWrite_ITextLayout_SetPairKerning_PaintDotNet_DirectWrite_TextRange_System_Boolean_">SetPairKerning(TextRange, bool)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

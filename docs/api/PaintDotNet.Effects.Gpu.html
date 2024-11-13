@@ -123,9 +123,8 @@ GpuDrawingEffect/PropertyBasedGpuDrawingEffect.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.html">GpuEffectColorContext</a></dt>
       <dd><p>Secifies the color space that a <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.html">GpuEffect</a> performs its rendering in.
-Input images will be converted from their working space to this color space, and
-the output of the effect will then be converted back to the working space of the
-source image.</p>
+Input images will be converted to this color space, and the output of the effect
+will then be converted back to the working space of the source image.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -175,6 +174,11 @@ GpuDrawingEffect/PropertyBasedGpuDrawingEffect.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.html">PdnAddNoiseEffect.Props</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAutoLevel.html">PdnAutoLevel</a></dt>
+      <dd><p>Contains methods that enable the calculation of auto-leveling values for use with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnLevelsEffect.html">PdnLevelsEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnBrightnessContrastEffect.html">PdnBrightnessContrastEffect</a></dt>
@@ -234,10 +238,6 @@ for rendering with Direct2D.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.Props-1.html">PdnDistortionEffect.Props&lt;TDerived&gt;</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.html">PdnDropShadowEffect</a></dt>
       <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Drop Shadow effect.</p>
 </dd>
@@ -293,7 +293,8 @@ Hue &amp; Saturation adjustment.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchEffect.html">PdnInkSketchEffect</a></dt>
-      <dd></dd>
+      <dd><p>A Direct2D effect that renders Paint.NET's Ink Sketch effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnInkSketchEffect.Props.html">PdnInkSketchEffect.Props</a></dt>
@@ -306,6 +307,15 @@ Hue &amp; Saturation adjustment.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnJuliaFractalEffect.Props.html">PdnJuliaFractalEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnLevelsEffect.html">PdnLevelsEffect</a></dt>
+      <dd><p>A Direct2D effect that can move and stretch the brightness and contrast levels of an image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnLevelsEffect.Props.html">PdnLevelsEffect.Props</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -323,6 +333,23 @@ Hue &amp; Saturation adjustment.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEffect.Props.html">PdnMotionBlurEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingEffect.html">PdnOilPaintingEffect</a></dt>
+      <dd><p>A Direct2D effect that implements Paint.NET's Oil Painting effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingEffect.Props.html">PdnOilPaintingEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEffect.html">PdnOutlineEffect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEffect.Props.html">PdnOutlineEffect.Props</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -364,6 +391,15 @@ for rendering with Direct2D.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.html">PdnReduceNoiseEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's built-in Reduce Noise effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.html">PdnReduceNoiseEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefEffect.html">PdnReliefEffect</a></dt>
       <dd><p>A Direct2D effect that operates the same as Paint.NET's Relief effect.</p>
 </dd>
@@ -383,12 +419,32 @@ for rendering with Direct2D.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurEffect.html">PdnSketchBlurEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's Sketch Blur effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurEffect.Props.html">PdnSketchBlurEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitEffect.html">PdnSoftenPortraitEffect</a></dt>
       <dd><p>A Direct2D effect that operates the same as Paint.NET's built-in Soften Portrait effect.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitEffect.Props.html">PdnSoftenPortraitEffect.Props</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSurfaceBlurEffect.html">PdnSurfaceBlurEffect</a></dt>
+      <dd><p>A Direct2D effect that renders Paint.NET's built-in Surface Blur effect.<br>
+<br>
+Surface Blur is a bilateral filter that blurs the image while preserving sharp details and edges.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSurfaceBlurEffect.Props.html">PdnSurfaceBlurEffect.Props</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -632,6 +688,10 @@ Enums
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnLevelsAlphaMode.html">PdnLevelsAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMandelbrotFractalAlphaMode.html">PdnMandelbrotFractalAlphaMode</a></dt>
       <dd></dd>
     </dl>
@@ -641,6 +701,31 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurEdgeMode.html">PdnMotionBlurEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnMotionBlurKernelType.html">PdnMotionBlurKernelType</a></dt>
+      <dd><p>Specifies the kernel that is used for blurring.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingAlphaMode.html">PdnOilPaintingAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingEdgeMode.html">PdnOilPaintingEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOilPaintingKernelShape.html">PdnOilPaintingKernelShape</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineAlphaMode.html">PdnOutlineAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEdgeMode.html">PdnOutlineEdgeMode</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -660,11 +745,35 @@ Enums
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseAlphaMode.html">PdnReduceNoiseAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEdgeMode.html">PdnReduceNoiseEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReliefAlphaMode.html">PdnReliefAlphaMode</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurAlphaMode.html">PdnSketchBlurAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurEdgeMode.html">PdnSketchBlurEdgeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSoftenPortraitAlphaMode.html">PdnSoftenPortraitAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSurfaceBlurAlphaMode.html">PdnSurfaceBlurAlphaMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnSurfaceBlurEdgeMode.html">PdnSurfaceBlurEdgeMode</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">

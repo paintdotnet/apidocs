@@ -99,7 +99,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGpuEffectEnvironment2 : IGpuEffectEnvironment, IEffectEnvironment, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGpuEffectEnvironment2 : IGpuEffectEnvironment, IEffectEnvironment2, IEffectEnvironment, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -121,16 +121,16 @@
       <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment.DirectWriteFactory.html#PaintDotNet_Effects_Gpu_IGpuEffectEnvironment_DirectWriteFactory">IGpuEffectEnvironment.DirectWriteFactory</a>
     </div>
     <div>
-      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.PrimaryColor.html#PaintDotNet_Effects_IEffectEnvironment_PrimaryColor">IEffectEnvironment.PrimaryColor</a>
+      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.PrimaryColor.html#PaintDotNet_Effects_IEffectEnvironment2_PrimaryColor">IEffectEnvironment2.PrimaryColor</a>
     </div>
     <div>
-      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.SecondaryColor.html#PaintDotNet_Effects_IEffectEnvironment_SecondaryColor">IEffectEnvironment.SecondaryColor</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.BrushSize.html#PaintDotNet_Effects_IEffectEnvironment_BrushSize">IEffectEnvironment.BrushSize</a>
+      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.SecondaryColor.html#PaintDotNet_Effects_IEffectEnvironment2_SecondaryColor">IEffectEnvironment2.SecondaryColor</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.SourceLayerIndex.html#PaintDotNet_Effects_IEffectEnvironment_SourceLayerIndex">IEffectEnvironment.SourceLayerIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.BrushSize.html#PaintDotNet_Effects_IEffectEnvironment_BrushSize">IEffectEnvironment.BrushSize</a>
     </div>
     <div>
       <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
@@ -153,18 +153,6 @@
       <a class="xref" href="PaintDotNet.Effects.Gpu.GpuObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_Gpu_GpuObjectRefExtensions_CreateRef_PaintDotNet_Effects_Gpu_IGpuEffectEnvironment2_">GpuObjectRefExtensions.CreateRef(IGpuEffectEnvironment2)</a>
   </div>
   <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithAliasedSelection.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithAliasedSelection_PaintDotNet_Effects_IEffectEnvironment_">EffectEnvironmentExtensions.CloneWithAliasedSelection(IEffectEnvironment)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewBrushSize.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment_System_Single_">EffectEnvironmentExtensions.CloneWithNewBrushSize(IEffectEnvironment, float)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewSource.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewSource_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_IBitmapSource_">EffectEnvironmentExtensions.CloneWithNewSource(IEffectEnvironment, IBitmapSource)</a>
-  </div>
-  <div>
-      <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.CloneWithNewUserColors.html#PaintDotNet_Effects_EffectEnvironmentExtensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_ColorBgra32_PaintDotNet_Imaging_ColorBgra32_">EffectEnvironmentExtensions.CloneWithNewUserColors(IEffectEnvironment, ColorBgra32, ColorBgra32)</a>
-  </div>
-  <div>
       <a class="xref" href="PaintDotNet.Effects.EffectEnvironmentExtensions.GetSourceBitmap.html#PaintDotNet_Effects_EffectEnvironmentExtensions_GetSourceBitmap_PaintDotNet_Effects_IEffectEnvironment_PaintDotNet_Imaging_PixelFormat__">EffectEnvironmentExtensions.GetSourceBitmap(IEffectEnvironment, in PixelFormat)</a>
   </div>
   <div>
@@ -176,6 +164,21 @@
   <div>
       <a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Effects_IEffectEnvironment_">EffectsObjectRefExtensions.CreateRef(IEffectEnvironment)</a>
   </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithAliasedSelection.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithAliasedSelection_PaintDotNet_Effects_IEffectEnvironment2_">EffectEnvironment2Extensions.CloneWithAliasedSelection(IEffectEnvironment2)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewBrushSize.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewBrushSize_PaintDotNet_Effects_IEffectEnvironment2_System_Single_">EffectEnvironment2Extensions.CloneWithNewBrushSize(IEffectEnvironment2, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewSource.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewSource_PaintDotNet_Effects_IEffectEnvironment2_PaintDotNet_Imaging_IBitmapSource_">EffectEnvironment2Extensions.CloneWithNewSource(IEffectEnvironment2, IBitmapSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectEnvironment2Extensions.CloneWithNewUserColors.html#PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithNewUserColors_PaintDotNet_Effects_IEffectEnvironment2_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Imaging_ManagedColor_">EffectEnvironment2Extensions.CloneWithNewUserColors(IEffectEnvironment2, ManagedColor, ManagedColor)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Effects_IEffectEnvironment2_">EffectsObjectRefExtensions.CreateRef(IEffectEnvironment2)</a>
+  </div>
   </dd></dl>
 
 
@@ -186,11 +189,14 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.Document.html#PaintDotNet_Effects_Gpu_IGpuEffectEnvironment2_Document">Document</a></dt>
-    <dd></dd>
+    <dd><p>Gets an object that provides information about the document, a bitmap that contains
+its full composition, and information and bitmaps about the layers in the document.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.Selection.html#PaintDotNet_Effects_Gpu_IGpuEffectEnvironment2_Selection">Selection</a></dt>
-    <dd></dd>
+    <dd><p>Gets an object that provides information about the currently selected area.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.SourceImage.html#PaintDotNet_Effects_Gpu_IGpuEffectEnvironment2_SourceImage">SourceImage</a></dt>

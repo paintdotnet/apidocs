@@ -185,24 +185,89 @@
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_Action_PaintDotNet_Clipboard_IClipboardTransaction__">OpenAndUseWithRetry(IClipboard, Action&lt;IClipboardTransaction&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_IntPtr_System_Action_PaintDotNet_Clipboard_IClipboardTransaction__">OpenAndUseWithRetry(IClipboard, nint, Action&lt;IClipboardTransaction&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_Windows_Forms_IWin32Window_System_Action_PaintDotNet_Clipboard_IClipboardTransaction__">OpenAndUseWithRetry(IClipboard, IWin32Window, Action&lt;IClipboardTransaction&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0__">OpenAndUseWithRetry&lt;T&gt;(IClipboard, Func&lt;IClipboardTransaction, T&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_IntPtr_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0__">OpenAndUseWithRetry&lt;T&gt;(IClipboard, nint, Func&lt;IClipboardTransaction, T&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.OpenAndUseWithRetry.html#PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_Windows_Forms_IWin32Window_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0__">OpenAndUseWithRetry&lt;T&gt;(IClipboard, IWin32Window, Func&lt;IClipboardTransaction, T&gt;)</a></dt>
+    <dd><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a></dt>
-    <dd></dd>
+    <dd><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_IColorContext_">SetImage(IClipboard, IBitmapSource, IColorContext?)</a></dt>
+    <dd><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+<p>This overload also allows including a color profile for the clipboard types that support it, such
+as PNG. For formats that do not support an embedded color profile, such as DIB/DIBv5, the image
+will not be converted to any particular color space and the color profile will not be included.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Rendering_ISurface_PaintDotNet_ColorBgra__">SetImage(IClipboard, ISurface&lt;ColorBgra&gt;)</a></dt>
-    <dd><p>Takes the image and puts it onto the clipboard in a few standard formats.
+    <dd><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
 The clipboard is first emptied.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_System_Drawing_Bitmap_">SetImage(IClipboard, Bitmap)</a></dt>
-    <dd><p>Takes the image and puts it onto the clipboard in a few standard formats.
+    <dd><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
 The clipboard is first emptied.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_System_Drawing_Image_">SetImage(IClipboard, Image)</a></dt>
-    <dd><p>Takes the image and puts it onto the clipboard in a few standard formats.
+    <dd><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
 The clipboard is first emptied.</p>
 </dd>
   </dl>
@@ -211,8 +276,27 @@ The clipboard is first emptied.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetBitmap.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetBitmap_PaintDotNet_Clipboard_IClipboard_">TryGetBitmap(IClipboard)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetImage_PaintDotNet_Clipboard_IClipboard_">TryGetImage(IClipboard)</a></dt>
+    <dd><p>Retrieves the image that is on the clipboard, if possible.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_PixelFormat__">TryGetImage(IClipboard, in PixelFormat)</a></dt>
+    <dd><p>Retrieves the image that is on the clipboard, if possible.</p>
+<p>The image is converted to the requested pixel format if necessary.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetImageBgra32.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetImageBgra32_PaintDotNet_Clipboard_IClipboard_">TryGetImageBgra32(IClipboard)</a></dt>
+    <dd><p>Retrieves the image that is on the clipboard, if possible.</p>
+<p>The image is converted to BGRA32 if necessary.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetImage__1_PaintDotNet_Clipboard_IClipboard_">TryGetImage&lt;TPixel&gt;(IClipboard)</a></dt>
+    <dd><p>Retrieves the image that is on the clipboard, if possible.</p>
+<p>The image is converted to the requested pixel format if necessary.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetSurface.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetSurface_PaintDotNet_Clipboard_IClipboard_">TryGetSurface(IClipboard)</a></dt>

@@ -190,6 +190,10 @@ for obtaining information about the supported pixel formats.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra64Fixed.html#PaintDotNet_Imaging_PixelFormats_Bgra64Fixed">Bgra64Fixed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.BlackWhite.html#PaintDotNet_Imaging_PixelFormats_BlackWhite">BlackWhite</a></dt>
     <dd></dd>
   </dl>
@@ -322,6 +326,10 @@ for obtaining information about the supported pixel formats.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba64Fixed.html#PaintDotNet_Imaging_PixelFormats_Rgba64Fixed">Rgba64Fixed</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba64Half.html#PaintDotNet_Imaging_PixelFormats_Rgba64Half">Rgba64Half</a></dt>
     <dd></dd>
   </dl>
@@ -337,7 +345,9 @@ for obtaining information about the supported pixel formats.</p>
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.GetSupportedFormatsList.html#PaintDotNet_Imaging_PixelFormats_GetSupportedFormatsList">GetSupportedFormatsList()</a></dt>
     <dd><p>Gets a list of the <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>s that have full support in the imaging framework.
 These pixel formats will have a corresponding color struct, such as <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>,
-as well as support for <code>IBitmapSource</code>, <code>IBitmap</code>, and <code>IBitmapLock</code>.</p>
+as well as support for <code>IBitmapSource</code>, <code>IBitmap</code>, and <code>IBitmapLock</code>, and their
+generic counterparts <code>IBitmapSource&lt;TPixel&gt;</code>, <code>IBitmap&lt;TPixel&gt;</code>, and
+<code>IBitmapLock&lt;TPixel&gt;</code>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -349,7 +359,12 @@ as well as support for <code>IBitmapSource</code>, <code>IBitmap</code>, and <co
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.IsSupported.html#PaintDotNet_Imaging_PixelFormats_IsSupported_PaintDotNet_Imaging_PixelFormat__">IsSupported(in PixelFormat)</a></dt>
-    <dd></dd>
+    <dd><p>Gets a flag indicating whether the <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a> has full support in the imaging framework.
+Supported pixel formats will have a corresponding color struct, such as <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>,
+as well as support for <code>IBitmapSource</code>, <code>IBitmap</code>, and <code>IBitmapLock</code>, and their
+generic counterparts <code>IBitmapSource&lt;TPixel&gt;</code>, <code>IBitmap&lt;TPixel&gt;</code>, and
+<code>IBitmapLock&lt;TPixel&gt;</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormats.TryGetPixelInfo.html#PaintDotNet_Imaging_PixelFormats_TryGetPixelInfo_PaintDotNet_Imaging_PixelFormat__">TryGetPixelInfo(in PixelFormat)</a></dt>

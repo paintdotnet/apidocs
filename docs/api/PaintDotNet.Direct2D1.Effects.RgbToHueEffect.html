@@ -100,7 +100,7 @@ HSL and HSV are two different models for representing an RGB color in a cylindri
 because they allow you to reason about a color using more intuitive concepts like hue and intensity versus
 combining red, green and blue values.<br>
 <br>
-This effect normalizes the output data (hue, saturation value for HSV or hue, saturation, lightness for HSL) to
+This effect normalizes the output data (hue, saturation, value for HSV or hue, saturation, lightness for HSL) to
 the range [0, 1].<br>
 <br>
 To reverse the behavior of this effect, use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.HueToRgbEffect.html">HueToRgbEffect</a>.<br>
@@ -110,7 +110,7 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RgbToHueEffect : DeviceEffect&lt;RgbToHueEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class RgbToHueEffect : DeviceEffect&lt;RgbToHueEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -136,10 +136,10 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 

@@ -151,10 +151,11 @@ articles such as:<br>
 <br>
 This will use the source image's color profile and convert it to the linearized version of that color
 profile. For example, sRGB will be converted to scRGB. If the color profile is already linearized, then
-this is equivalent to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>.<br>
+this is equivalent to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>. If the color profile cannot be linearized, then
+scRGB (linear sRGB) will be used.<br>
 <br>
 Some Direct2D effects have an InputGamma property that defaults to sRGB. When using linear gamma you
-should make sure to set this property to Linear.<br>
+should make sure to set that property to Linear.<br>
 <br>
 If you need predefined color values (e.g. red, blue, etc.) use the <a class="xref" href="PaintDotNet.Imaging.LinearColors.html">LinearColors</a> class.<br></p>
 </div>

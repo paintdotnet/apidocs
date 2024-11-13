@@ -124,6 +124,9 @@
       <a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.Metadata.html#PaintDotNet_Effects_IEffectDocumentInfo_Metadata">IEffectDocumentInfo.Metadata</a>
     </div>
     <div>
+      <a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.PixelFormat.html#PaintDotNet_Effects_IEffectDocumentInfo_PixelFormat">IEffectDocumentInfo.PixelFormat</a>
+    </div>
+    <div>
       <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
     </div>
     <div>
@@ -160,6 +163,17 @@
   <h2 class="section" id="properties">Properties
 </h2>
 
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_ColorContext">ColorContext</a></dt>
+    <dd><p>Gets the Direct2D color context of the document, which defines the working space (color space)
+of the document and layer <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a>s, and for the effect's rendering.<br>
+<br>
+This is affected by the effect's <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.html">GpuEffectColorContext</a>, which can be changed by
+overriding the <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_Gpu_GpuEffect_OnInitializeRenderInfo_PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_">OnInitializeRenderInfo(IGpuEffectRenderInfo)</a> method and
+setting the <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a> property. The default is <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a>,
+which results in the linear gamma version of the document's color space.</p>
+</dd>
+  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.Image.html#PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_Image">Image</a></dt>
     <dd><p>Gets an image that renders the document for use with Direct2D. This is the full composition

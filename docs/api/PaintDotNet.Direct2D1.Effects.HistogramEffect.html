@@ -105,7 +105,7 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class HistogramEffect : DeviceEffect&lt;HistogramEffect.Props&gt;, ISerializable, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IInternalImpl, IObjectRef, IIsDisposed, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class HistogramEffect : DeviceEffect&lt;HistogramEffect.Props&gt;, ISerializable, IAnalysisEffect, IDeviceEffect, IDeviceImage, IDirect2DResource, IFactoryProperty, IDeviceEffectProperties, IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -126,15 +126,16 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.IAnalysisEffect.html">IAnalysisEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
       <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
     </dd>
   </dl>
 
@@ -239,6 +240,9 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
     <dd>
   <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.Initialize.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_Initialize__1___0_System_Action___0__">DeviceEffectExtensions.Initialize&lt;TEffect&gt;(TEffect, Action&lt;TEffect&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Direct2D1_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Direct2D1_Effects_IAnalysisEffect_">EffectsObjectRefExtensions.CreateRef(IAnalysisEffect)</a>
   </div>
   <div>
       <a class="xref" href="PaintDotNet.Direct2D1.DeviceEffectExtensions.InvalidateInputRectangle.html#PaintDotNet_Direct2D1_DeviceEffectExtensions_InvalidateInputRectangle_PaintDotNet_Direct2D1_IDeviceEffect_PaintDotNet_Direct2D1_IDeviceContext_System_Int32_PaintDotNet_Rendering_RectFloat_">DeviceEffectExtensions.InvalidateInputRectangle(IDeviceEffect, IDeviceContext, int, RectFloat)</a>

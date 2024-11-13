@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Base.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains constants for common, standard clipboard formats.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -144,41 +145,53 @@
 
 
 
+  <h2 id="PaintDotNet_Clipboard_ClipboardNativeFormats_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>See <a href="https://learn.microsoft.com/en-us/windows/win32/dataxchg/standard-clipboard-formats">Standard
+Clipboard Formats</a> for more info.</p>
+</div>
 
   <h2 class="section" id="fields">Fields
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.Bitmap.html">Bitmap</a></dt>
-    <dd></dd>
+    <dd><p>A handle to a bitmap (<code>HBITMAP</code>). <code>CF_BITMAP</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.Dib.html">Dib</a></dt>
-    <dd></dd>
+    <dd><p>A memory object containing a <code>BITMAPINFO</code> structure followed by the bitmap bits. <code>CF_DIB</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.DibV5.html">DibV5</a></dt>
-    <dd></dd>
+    <dd><p>A memory object containing a <code>BITMAPV5HEADER</code> structure followed by the bitmap color space information and the bitmap bits. <code>CF_DIBV5</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.Emf.html">Emf</a></dt>
-    <dd></dd>
+    <dd><p>A handle to an enhanced metafile (<code>HENHMETAFILE</code>). <code>CF_ENHMETAFILE</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.FileDropList.html">FileDropList</a></dt>
-    <dd></dd>
+    <dd><p>A handle to type <code>HDROP</code> that identifies a list of files. An application can retrieve information about the files by passing the handle to the DragQueryFile function. <code>CF_HDROP</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.OemText.html">OemText</a></dt>
-    <dd></dd>
+    <dd><p>Text format containing characters in the OEM character set. Each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data. <code>CF_OEMTEXT</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.Text.html">Text</a></dt>
-    <dd></dd>
+    <dd><p>Text format. Each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data. Use this format for ANSI text. <code>CF_TEXT</code></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Clipboard.ClipboardNativeFormats.UnicodeText.html">UnicodeText</a></dt>
-    <dd></dd>
+    <dd><p>Unicode text format. Each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data. <code>CF_UNICODETEXT</code></p>
+</dd>
   </dl>
 
 
