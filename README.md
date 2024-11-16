@@ -27,3 +27,5 @@ How to build the docs and get into a nice edit/build loop:
 5. Go back to the console window where you ran `build_and_serve.cmd` and press Ctrl+C to kill it, then press Y for the "terminate batch file?" question.
 6. If you made changes in the Paint.NET code, like adding or editing doc comments, make sure you do another Build -> Build Solution over in Visual Studio. docfx looks at the DLLs that are already built, it does not compile the code.
 7. Go back to step 3.
+
+.
