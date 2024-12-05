@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SampleMapRenderer
- </title>
+      <title>Class SampleMapRenderer </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SampleMapRenderer
- ">
+      <meta name="title" content="Class SampleMapRenderer ">
       
+      <meta name="description" content="Transforms an image with a sample map. A sample map is an image (IDeviceImage) where the [x,y] (or [r,g]) component of each pixel is used for reading a sample from the input image. The w (or a) component is used as an alpha value that the sampled pixel is multiplied by (it should usually just be 1). Multiple sample maps can be specified, and the outputs will be averaged together. This can be used to implement multisample sub-pixel antialiasing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_SampleMapRenderer" data-uid="PaintDotNet.Direct2D1.SampleMapRenderer" class="text-break">
-    Class SampleMapRenderer
-  
+Class SampleMapRenderer  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +95,7 @@
 
   <div class="markdown summary"><p>Transforms an image with a sample map. A sample map is an image (IDeviceImage) where the [x,y] (or [r,g]) component of
 each pixel is used for reading a sample from the input image. The w (or a) component is used as an alpha value
-that the sampled pixel is multiplied by (it should usually just be 1).<br>
-<br>
+that the sampled pixel is multiplied by (it should usually just be 1).<br><br>
 Multiple sample maps can be specified, and the outputs will be averaged together. This can be used to implement
 multisample sub-pixel antialiasing.</p>
 </div>
@@ -139,7 +136,7 @@ multisample sub-pixel antialiasing.</p>
   </dl>
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

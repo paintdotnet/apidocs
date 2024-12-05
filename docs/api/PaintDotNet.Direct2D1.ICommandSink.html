@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface ICommandSink
- </title>
+      <title>Interface ICommandSink </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ICommandSink
- ">
+      <meta name="title" content="Interface ICommandSink ">
       
+      <meta name="description" content="The command sink is implemented by you for an application when you want to receive a playback of the commands recorded in a command list. A typical usage will be for transforming the command list into another format such as XPS when some degree of conversion between the Direct2D primitives and the target format is required. The command sink interface doesn&#39;t have any resource creation methods on it. The resources are still logically bound to the Direct2D device on which the command list was created and will be passed in to the command sink implementation. This interface corresponds to the following Direct2D interfaces: ID2D1CommandSinkID2D1CommandSink1ID2D1CommandSink2ID2D1CommandSink3ID2D1CommandSink4ID2D1CommandSink5">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_ICommandSink" data-uid="PaintDotNet.Direct2D1.ICommandSink" class="text-break">
-    Interface ICommandSink
-  
+Interface ICommandSink  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,19 +95,12 @@
 
   <div class="markdown summary"><p>The command sink is implemented by you for an application when you want to receive a playback of the commands
 recorded in a command list. A typical usage will be for transforming the command list into another format such
-as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br>
-<br>
+as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br><br>
 The command sink interface doesn't have any resource creation methods on it. The resources are still logically
 bound to the Direct2D device on which the command list was created and will be passed in to the command sink
-implementation.<br>
-<br>
+implementation.<br><br>
 This interface corresponds to the following Direct2D interfaces:
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -123,7 +114,7 @@ This interface corresponds to the following Direct2D interfaces:
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

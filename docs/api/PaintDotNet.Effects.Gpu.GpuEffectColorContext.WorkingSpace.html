@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Property WorkingSpace
- </title>
+      <title>Property WorkingSpace </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Property WorkingSpace
- ">
+      <meta name="title" content="Property WorkingSpace ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace_" data-uid="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace*" class="text-break">
-  Property WorkingSpace
-  
+Property WorkingSpace  
 </h1>
 
 <div class="facts text-secondary">
@@ -150,8 +148,7 @@ is unchanged.</p>
 <div class="markdown level1 remarks"><p>This color context permits you to work with the original pixel data with the highest level of accuracy,
 but with the added cost of complexity or loss of correctness. The image may be encoded in any color
 space or gamma, and you will need to accommodate that or be implementing an effect where this is not
-a concern.<br>
-<br>
+a concern.<br><br>
 Using this color context is generally not recommended unless you know what you're doing with respect
 to color management, or if you require access to the raw pixel values no matter what, or if you will
 not be doing any sort of blending, antialiasing, sampling, or filtering.<br></p>

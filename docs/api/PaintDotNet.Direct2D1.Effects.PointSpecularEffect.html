@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class PointSpecularEffect
- </title>
+      <title>Class PointSpecularEffect </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PointSpecularEffect
- ">
+      <meta name="title" content="Class PointSpecularEffect ">
       
+      <meta name="description" content="Use the point-specular lighting effect to create an image that appears to be a reflective surface. The effect uses the alpha channel of the image as a height map and a point light source that you position, and calculates the reflection and light according to the specular portion of the Phong lighting model. The color of the output bitmap is a result of light color, light position, and the surface geometry. The alpha channel output for each pixel with specular lighting is the maximum of the red, green, and blue channel outputs for that pixel. For more information, see Point-specular lighting effect">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_Effects_PointSpecularEffect" data-uid="PaintDotNet.Direct2D1.Effects.PointSpecularEffect" class="text-break">
-    Class PointSpecularEffect
-  
+Class PointSpecularEffect  
   </h1>
 
   <div class="facts text-secondary">
@@ -98,13 +96,10 @@
   <div class="markdown summary"><p>Use the point-specular lighting effect to create an image that appears to be a reflective surface.
 The effect uses the alpha channel of the image as a height map and a point light source that you
 position, and calculates the reflection and light according to the specular portion of the Phong
-lighting model.<br>
-<br>
-The color of the output bitmap is a result of light color, light position, and the surface geometry.<br>
-<br>
+lighting model.<br><br>
+The color of the output bitmap is a result of light color, light position, and the surface geometry.<br><br>
 The alpha channel output for each pixel with specular lighting is the maximum of the red, green,
-and blue channel outputs for that pixel.<br>
-<br>
+and blue channel outputs for that pixel.<br><br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/point-specular">Point-specular lighting effect</a></p>
 </div>
   <div class="markdown conceptual"></div>
@@ -144,7 +139,7 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
   </dl>
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

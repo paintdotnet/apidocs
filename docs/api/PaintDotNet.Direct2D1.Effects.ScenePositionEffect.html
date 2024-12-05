@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ScenePositionEffect
- </title>
+      <title>Class ScenePositionEffect </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ScenePositionEffect
- ">
+      <meta name="title" content="Class ScenePositionEffect ">
       
+      <meta name="description" content="An effect whose output at each location is the scene position. This can be useful for sample map effects that take a sample map as input, and produce a sample map as an output. If this effect is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as the Input image. The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 }, instead of whole-integer offsets, such as { x = 0, y = 0 }. If you prefer to have whole-integer offsets, pass the output of this effect to an  with the Function property set to .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_Effects_ScenePositionEffect" data-uid="PaintDotNet.Direct2D1.Effects.ScenePositionEffect" class="text-break">
-    Class ScenePositionEffect
-  
+Class ScenePositionEffect  
   </h1>
 
   <div class="facts text-secondary">
@@ -98,8 +96,7 @@
   <div class="markdown summary"><p>An effect whose output at each location is the scene position. This can be useful for sample map
 effects that take a sample map as input, and produce a sample map as an output. If this effect
 is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as
-the Input image.<br>
-<br>
+the Input image.<br><br>
 The scene position enumerates center-of-pixel offsets, such as <code>{ x = 0.5, y = 0.5 }</code>,
 instead of whole-integer offsets, such as <code>{ x = 0, y = 0 }</code>. If you prefer to have
 whole-integer offsets, pass the output of this effect to an <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.html">HlslUnaryFunctionEffect</a>
@@ -143,7 +140,7 @@ with the <code>Function</code> property set to <a class="xref" href="PaintDotNet
   </dl>
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

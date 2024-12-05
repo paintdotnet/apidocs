@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MedianBlurEffect.Props
- </title>
+      <title>Class MedianBlurEffect.Props </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MedianBlurEffect.Props
- ">
+      <meta name="title" content="Class MedianBlurEffect.Props ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props" data-uid="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props" class="text-break">
-    Class MedianBlurEffect.Props
-  
+Class MedianBlurEffect.Props  
   </h1>
 
   <div class="facts text-secondary">
@@ -117,7 +115,7 @@
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -221,11 +219,9 @@ The range is [0,1] which correspond's to the UI's range of [0, 100]. The default
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.PrecisionBits.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_PrecisionBits">PrecisionBits</a></dt>
-    <dd><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br>
-<br>
+    <dd><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br><br>
 Higher values will have lower performance. The current implementation will also have better
-performance when using an even number for this property value.<br>
-<br>
+performance when using an even number for this property value.<br><br>
 The range is [1,12]. The default value is 8, which produces 8-bits of precision and is appropriate for most images.</p>
 </dd>
   </dl>

@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class InputSwizzleEffect
- </title>
+      <title>Class InputSwizzleEffect </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class InputSwizzleEffect
- ">
+      <meta name="title" content="Class InputSwizzleEffect ">
       
+      <meta name="description" content="Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds to each output channel. This effect supports any number of inputs, but only 4 can be used at once. Use  to specify the number of inputs. If you are only swizzling from 1 input, it is recommended to use the  instead.output = new Color( Input[RedInputIndex][RedInputChannel], Input[GreenInputIndex][GreenInputChannel], Input[BlueInputIndex][BlueInputChannel], Input[AlphaInputIndex][AlphaInputChannel]);">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_Effects_InputSwizzleEffect" data-uid="PaintDotNet.Direct2D1.Effects.InputSwizzleEffect" class="text-break">
-    Class InputSwizzleEffect
-  
+Class InputSwizzleEffect  
   </h1>
 
   <div class="facts text-secondary">
@@ -96,18 +94,14 @@
   </div>
 
   <div class="markdown summary"><p>Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds
-to each output channel.<br>
-<br>
+to each output channel.<br><br>
 This effect supports any number of inputs, but only 4 can be used at once. Use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.InputCount.html#PaintDotNet_Direct2D1_IDeviceEffect_InputCount">InputCount</a>
-to specify the number of inputs.<br>
-<br>
-If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br>
-<br></p>
-<pre><code class="lang-csharp">output = new Color(
-    Input[RedInputIndex][RedInputChannel],
-    Input[GreenInputIndex][GreenInputChannel],
-    Input[BlueInputIndex][BlueInputChannel],
-    Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
+to specify the number of inputs.<br><br>
+If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br><br><pre><code class="lang-csharp">output = new Color(
+Input[RedInputIndex][RedInputChannel],
+Input[GreenInputIndex][GreenInputChannel],
+Input[BlueInputIndex][BlueInputChannel],
+Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,7 +141,7 @@ If you are only swizzling from 1 input, it is recommended to use the <a class="x
   </dl>
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

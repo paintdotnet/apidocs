@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IBitmapEffectRenderer
- </title>
+      <title>Interface IBitmapEffectRenderer </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IBitmapEffectRenderer
- ">
+      <meta name="title" content="Interface IBitmapEffectRenderer ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Effects_IBitmapEffectRenderer" data-uid="PaintDotNet.Effects.IBitmapEffectRenderer" class="text-break">
-    Interface IBitmapEffectRenderer
-  
+Interface IBitmapEffectRenderer  
   </h1>
 
   <div class="facts text-secondary">
@@ -108,7 +106,7 @@
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -162,8 +160,7 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.RenderInfo.html#PaintDotNet_Effects_IBitmapEffectRenderer_RenderInfo">RenderInfo</a></dt>
-    <dd><p>Gets the effect's rendering information.<br>
-<br>
+    <dd><p>Gets the effect's rendering information.<br><br>
 This property may only be accessed after <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a>
 has been called.</p>
 </dd>
@@ -176,8 +173,7 @@ has been called.</p>
     <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.GetRenderColorContext.html#PaintDotNet_Effects_IBitmapEffectRenderer_GetRenderColorContext_PaintDotNet_Imaging_PixelFormat__">GetRenderColorContext(in PixelFormat)</a></dt>
     <dd><p>Gets a color context defining the color space for the effect's rendering output. This is the
 color space that will be used by the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Render.html#PaintDotNet_Effects_IBitmapEffectRenderer_Render_System_Void__System_Int32_System_IntPtr_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Rendering_RectInt32_">Render(void*, int, nint, in PixelFormat, RectInt32)</a>
-method when it is called with the same <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>.<br>
-<br>
+method when it is called with the same <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>.<br><br>
 This method may only be called after <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.Initialize.html#PaintDotNet_Effects_IBitmapEffectRenderer_Initialize_PaintDotNet_Effects_BitmapEffectInitializeInfo_">Initialize(BitmapEffectInitializeInfo)</a> has
 been called.</p>
 </dd>

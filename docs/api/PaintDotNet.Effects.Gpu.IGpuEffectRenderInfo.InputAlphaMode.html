@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Property InputAlphaMode
- </title>
+      <title>Property InputAlphaMode </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Property InputAlphaMode
- ">
+      <meta name="title" content="Property InputAlphaMode ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_InputAlphaMode_" data-uid="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.InputAlphaMode*" class="text-break">
-  Property InputAlphaMode
-  
+Property InputAlphaMode  
 </h1>
 
 <div class="facts text-secondary">
@@ -150,22 +148,19 @@
 right choice because Direct2D operates natively in premultiplied alpha space. Some advanced
 rendering scenarios may benefit from setting this to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectAlphaMode.html#PaintDotNet_Effects_Gpu_GpuEffectAlphaMode_Straight">Straight</a>,
 such as when it is important to preserve color values for transparent pixels, or if you are
-using a custom pixel shader that operates on straight alpha.<br>
-<br>
+using a custom pixel shader that operates on straight alpha.<br><br>
 Usually it is best to use the default value (Premultiplied), and to then use <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a>,
 <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a>, or <a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.html">ConvertAlphaEffect</a> to convert the alpha
 mode as required for each effect in the effect graph. This is important when different
 effects or pixel shaders expect different alpha modes. Many effects have an AlphaMode property
 which lets you specify the alpha mode for that effect's inputs and outputs. If an effect does
-not specify anything about its alpha mode, you can assume it uses premultiplied alpha.<br>
-<br>
+not specify anything about its alpha mode, you can assume it uses premultiplied alpha.<br><br>
 Paint.NET always uses straight alpha for storage, and Direct2D always uses premultiplied alpha
 for rendering, blending, and compositing. Some Direct2D effects can operate on straight alpha
 and will have documentation saying this, and/or they will have an AlphaMode property to configure
 this. Premultiplied alpha makes many calculations easier, especially for blending and compositing,
 but straight alpha is generally easier to reason about when doing other types of calculations
-(such as in a custom pixel shader).<br>
-<br>
+(such as in a custom pixel shader).<br><br>
 For more information on alpha formats and compositing, see: <a href="https://en.wikipedia.org/wiki/Alpha_compositing">Alpha compositing (Wikipedia)</a>.</p>
 </div>
 

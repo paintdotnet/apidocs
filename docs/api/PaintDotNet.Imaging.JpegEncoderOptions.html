@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class JpegEncoderOptions
- </title>
+      <title>Class JpegEncoderOptions </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class JpegEncoderOptions
- ">
+      <meta name="title" content="Class JpegEncoderOptions ">
       
+      <meta name="description" content="The keys in this class are used to set property values in an  when working with the JPEG &#39;s options. See JPEG Format Overview for more information.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Imaging_JpegEncoderOptions" data-uid="PaintDotNet.Imaging.JpegEncoderOptions" class="text-break">
-    Class JpegEncoderOptions
-  
+Class JpegEncoderOptions  
   </h1>
 
   <div class="facts text-secondary">
@@ -96,8 +94,7 @@
   </div>
 
   <div class="markdown summary"><p>The keys in this class are used to set property values in an <a class="xref" href="PaintDotNet.ComponentModel.IPropertyBag2.html">IPropertyBag2</a>
-when working with the JPEG <a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.html">IBitmapEncoder</a>'s options.<br>
-<br>
+when working with the JPEG <a class="xref" href="PaintDotNet.Imaging.IBitmapEncoder.html">IBitmapEncoder</a>'s options.<br><br>
 See <a href="https://learn.microsoft.com/en-us/windows/win32/wic/jpeg-format-overview">JPEG Format Overview</a>
 for more information.</p>
 </div>
@@ -120,7 +117,7 @@ for more information.</p>
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -155,29 +152,25 @@ for more information.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.BitmapTransform.html#PaintDotNet_Imaging_JpegEncoderOptions_BitmapTransform">BitmapTransform</a></dt>
-    <dd><p>Specifies how the image is to be transformed during image decoding.<br>
-<br>
+    <dd><p>Specifies how the image is to be transformed during image decoding.<br><br>
 The default value is <a class="xref" href="PaintDotNet.Imaging.BitmapTransformOptions.html#PaintDotNet_Imaging_BitmapTransformOptions_None">None</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.ImageQuality.html#PaintDotNet_Imaging_JpegEncoderOptions_ImageQuality">ImageQuality</a></dt>
-    <dd><p>Specifies the desired image fidelity. 0.0 indicates the lowest possible fidelity and 1.0 specifies the highest fidelity.<br>
-<br>
+    <dd><p>Specifies the desired image fidelity. 0.0 indicates the lowest possible fidelity and 1.0 specifies the highest fidelity.<br><br>
 The range of this value is [0, 1]. The default value is 0.9.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.JpegYCrCbSubsampling.html#PaintDotNet_Imaging_JpegEncoderOptions_JpegYCrCbSubsampling">JpegYCrCbSubsampling</a></dt>
-    <dd><p>Specifies the subsampling ratio to use for YCrCb encoding.<br>
-<br>
+    <dd><p>Specifies the subsampling ratio to use for YCrCb encoding.<br><br>
 The default value is <a class="xref" href="PaintDotNet.Imaging.JpegYCrCbSubsamplingOption.html#PaintDotNet_Imaging_JpegYCrCbSubsamplingOption_Subsample420">Subsample420</a>.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.JpegEncoderOptions.SuppressApp0.html#PaintDotNet_Imaging_JpegEncoderOptions_SuppressApp0">SuppressApp0</a></dt>
-    <dd><p>Specifies whether to suppress the writing of App0 metadata while encoding the image data.<br>
-<br>
+    <dd><p>Specifies whether to suppress the writing of App0 metadata while encoding the image data.<br><br>
 The default value is <code>false</code>.</p>
 </dd>
   </dl>

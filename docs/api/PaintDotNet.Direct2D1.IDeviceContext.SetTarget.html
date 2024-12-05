@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method SetTarget
- </title>
+      <title>Method SetTarget </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method SetTarget
- ">
+      <meta name="title" content="Method SetTarget ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Direct2D1_IDeviceContext_SetTarget_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.SetTarget*" class="text-break">
-  Method SetTarget
-  
+Method SetTarget  
 </h1>
 
 <div class="facts text-secondary">
@@ -152,8 +150,7 @@ will enter the <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1Error.html#P
 You cannot use SetTarget to render to a bitmap/command list from multiple device contexts simultaneously. An image is considered
 “being rendered to” if it has ever been set on a device context within a BeginDraw/EndDraw timespan. If an attempt is made to
 render to an image through multiple device contexts, all subsequent device contexts after the first will enter an error state.<br>
-Callers wishing to attach an image to a second device context should first call EndDraw on the first device context.<br>
-<b>Note:</b> Changing the target does not change the bitmap that an HWND device context presents from, nor does it change the
+Callers wishing to attach an image to a second device context should first call EndDraw on the first device context.<br><b>Note:</b> Changing the target does not change the bitmap that an HWND device context presents from, nor does it change the
 bitmap that a DC device context blts to/from.<br>
 This API makes it easy for an application to use a bitmap as a source (like in DrawBitmap) and as a destination at the same time.
 Attempting to use a bitmap as a source on the same device context to which it is bound as a target will put the device context
@@ -165,13 +162,10 @@ You can set the target to null, in which case drawing calls will put the device 
 Calling SetTarget with a null target does not restore the original target bitmap to the device context.<br>
 If the device context has an outstanding HDC, the context will enter the <a class="xref" href="PaintDotNet.Direct2D1.Direct2D1Error.html#PaintDotNet_Direct2D1_Direct2D1Error_WrongState">WrongState</a> error state. The target will not be changed.<br>
 If the bitmap and the device context are not in the same resource domain, the context will enter an error state. The target will
-not be changed.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelSize.html#PaintDotNet_Direct2D1_IDeviceContext_PixelSize">PixelSize</a> returns the size of the current target bitmap (or 0, 0) if there is no bitmap bound). <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Size.html#PaintDotNet_Direct2D1_IDeviceContext_Size">Size</a>
+not be changed.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelSize.html#PaintDotNet_Direct2D1_IDeviceContext_PixelSize">PixelSize</a> returns the size of the current target bitmap (or 0, 0) if there is no bitmap bound). <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Size.html#PaintDotNet_Direct2D1_IDeviceContext_Size">Size</a>
 returns the pixel size of the current bitmap scaled by the DPI of the render target. SetTarget does not affect the DPI of the
-render target.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelFormat.html#PaintDotNet_Direct2D1_IDeviceContext_PixelFormat">PixelFormat</a> returns the pixel format of the current target bitmap, or <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Unknown.html#PaintDotNet_Direct2D1_DevicePixelFormats_Unknown">Unknown</a> if
-there is none.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.CopyFromDeviceContext.html#PaintDotNet_Direct2D1_IDeviceBitmap_CopyFromDeviceContext_System_Nullable_PaintDotNet_Rendering_Point2Int32__PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyFromDeviceContext(Point2Int32?, IDeviceContext, in RectInt32?)</a> copies from the currently bound target bitmap.</p>
+render target.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PixelFormat.html#PaintDotNet_Direct2D1_IDeviceContext_PixelFormat">PixelFormat</a> returns the pixel format of the current target bitmap, or <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Unknown.html#PaintDotNet_Direct2D1_DevicePixelFormats_Unknown">Unknown</a> if
+there is none.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.CopyFromDeviceContext.html#PaintDotNet_Direct2D1_IDeviceBitmap_CopyFromDeviceContext_System_Nullable_PaintDotNet_Rendering_Point2Int32__PaintDotNet_Direct2D1_IDeviceContext_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyFromDeviceContext(Point2Int32?, IDeviceContext, in RectInt32?)</a> copies from the currently bound target bitmap.</p>
 </div>
 
 

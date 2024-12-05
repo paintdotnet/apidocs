@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IBitmapSource
- </title>
+      <title>Interface IBitmapSource </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IBitmapSource
- ">
+      <meta name="title" content="Interface IBitmapSource ">
       
+      <meta name="description" content="Exposes methods that refers to a source from which pixels are retrieved, but cannot be written back to. See IWICBitmapSource for more information.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Imaging_IBitmapSource" data-uid="PaintDotNet.Imaging.IBitmapSource" class="text-break">
-    Interface IBitmapSource
-  
+Interface IBitmapSource  
   </h1>
 
   <div class="facts text-secondary">
@@ -95,8 +93,7 @@
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Exposes methods that refers to a source from which pixels are retrieved, but cannot be written back to.<br>
-<br>
+  <div class="markdown summary"><p>Exposes methods that refers to a source from which pixels are retrieved, but cannot be written back to.<br><br>
 See <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicbitmapsource">IWICBitmapSource</a>
 for more information.</p>
 </div>
@@ -112,7 +109,7 @@ for more information.</p>
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -139,8 +136,7 @@ for more information.</p>
   <h2 id="PaintDotNet_Imaging_IBitmapSource_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>This interface provides a common way of accessing and linking together bitmaps, decoders, format converters,
 and scalers. Components that implement this interface can be connected together in a graph to pull imaging
-data through.<br>
-<br>
+data through.<br><br>
 This interface defines only the notion of readability or being able to produce pixels. Modifying or writing
 to a bitmap is considered to be a specialization specific to bitmaps which have storage and is defined in
 the descendant interface <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</p>

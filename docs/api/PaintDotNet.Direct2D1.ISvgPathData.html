@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface ISvgPathData
- </title>
+      <title>Interface ISvgPathData </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ISvgPathData
- ">
+      <meta name="title" content="Interface ISvgPathData ">
       
+      <meta name="description" content="Interface describing SVG path data. Path data can be set as the &#39;d&#39; attribute on a &#39;path&#39; element. The path data set is factored into two arrays. The segment data array stores all numbers and the commands array stores the set of commands. Unlike the string data set in the d attribute, each command in this representation uses a fixed number of elements in the segment data array. Therefore, the path &#39;M 0,0 100,0 0,100 Z&#39; is represented as: &#39;M0,0 L100,0 L0,100 Z&#39;. This is split into two arrays, with the segment data containing &#39;0,0 100,0 0,100&#39;, and the commands containing &#39;M L L Z&#39;.ID2D1SvgPathData">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_ISvgPathData" data-uid="PaintDotNet.Direct2D1.ISvgPathData" class="text-break">
-    Interface ISvgPathData
-  
+Interface ISvgPathData  
   </h1>
 
   <div class="facts text-secondary">
@@ -100,8 +98,7 @@ path data set is factored into two arrays. The segment data array stores all num
 array stores the set of commands. Unlike the string data set in the d attribute, each command in this
 representation uses a fixed number of elements in the segment data array. Therefore, the path
 'M 0,0 100,0 0,100 Z' is represented as: 'M0,0 L100,0 L0,100 Z'. This is split into two arrays, with
-the segment data containing '0,0 100,0 0,100', and the commands containing 'M L L Z'.<br>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgpathdata">ID2D1SvgPathData</a></p>
+the segment data containing '0,0 100,0 0,100', and the commands containing 'M L L Z'.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgpathdata">ID2D1SvgPathData</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,7 +112,7 @@ the segment data containing '0,0 100,0 0,100', and the commands containing 'M L 
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>

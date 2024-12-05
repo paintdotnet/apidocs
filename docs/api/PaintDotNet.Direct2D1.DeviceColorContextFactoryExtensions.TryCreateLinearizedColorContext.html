@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method TryCreateLinearizedColorContext
- </title>
+      <title>Method TryCreateLinearizedColorContext </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method TryCreateLinearizedColorContext
- ">
+      <meta name="title" content="Method TryCreateLinearizedColorContext ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateLinearizedColorContext_" data-uid="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.TryCreateLinearizedColorContext*" class="text-break">
-  Method TryCreateLinearizedColorContext
-  
+Method TryCreateLinearizedColorContext  
 </h1>
 
 <div class="facts text-secondary">
@@ -156,13 +154,11 @@ a copy will be made using the given factory.</p>
 <h4 class="section" id="PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Direct2D1_IDeviceColorContext__remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This method is useful when you want to standardize on rendering using linear gamma. By using
 an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a> and a <a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a>, you can issue
-drawing commands that are automatically converted from one color space to another.<br>
-<br>
+drawing commands that are automatically converted from one color space to another.<br><br>
 Not all color contexts can be linearized. If you always require the use of a linear color space,
 you should use scRGB as a fallback. scRGB is sometimes referred to by Microsoft as CCCS, or
 Canonical Composition Color Space. It is possible to convert to and from scRGB without color gamut
-clipping.<br>
-<br>
+clipping.<br><br>
 This uses the same algorithm as <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.TryCreateLinearizedColorContext.html#PaintDotNet_Imaging_ImagingFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IColorContext_">TryCreateLinearizedColorContext(IImagingFactory, IColorContext)</a>.</p>
 </div>
 

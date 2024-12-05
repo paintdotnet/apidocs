@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IDynamicEffect
- </title>
+      <title>Interface IDynamicEffect </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDynamicEffect
- ">
+      <meta name="title" content="Interface IDynamicEffect ">
       
+      <meta name="description" content="A dynamic effect is an  that provides metadata properties for DisplayName, Author, Category, and Description.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_IDynamicEffect" data-uid="PaintDotNet.Direct2D1.IDynamicEffect" class="text-break">
-    Interface IDynamicEffect
-  
+Interface IDynamicEffect  
   </h1>
 
   <div class="facts text-secondary">
@@ -110,7 +108,7 @@ DisplayName, Author, Category, and Description.</p>
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -188,13 +186,10 @@ intention, not functionality. <a class="xref" href="PaintDotNet.Direct2D1.IDynam
 that can be gathered using reflection and displayed in a UI, such as a node/graph editor,
 alongside regular <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>s. If an <a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a> is not an
 <a class="xref" href="PaintDotNet.Direct2D1.IDynamicEffect.html">IDynamicEffect</a>, then it should not be considered an &quot;effect&quot; that can be
-surfaced in a UI that works with effects (such as a node/graph editor).<br>
-<br>
+surfaced in a UI that works with effects (such as a node/graph editor).<br><br>
 The effect properties are intended to be presented to the user and should not be relied
 upon to have any specific text or pattern. They may be changed at any time, and may be
-localized (translated).<br>
-<br>
-<b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
+localized (translated).<br><br><b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
 images that are also used in effect graphs may need to be wrapped in an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>
 when used outside of the dynamic image. You can use the <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_">CreateBufferedImage(IDeviceContext, IDeviceImage)</a>
 extension method for this. See that method for more details.<br><br><b>NOTE:</b> Dynamic images usually require the device context's target to be using a buffer precision of

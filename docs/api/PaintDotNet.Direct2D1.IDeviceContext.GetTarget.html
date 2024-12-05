@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method GetTarget
- </title>
+      <title>Method GetTarget </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method GetTarget
- ">
+      <meta name="title" content="Method GetTarget ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Direct2D1_IDeviceContext_GetTarget_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.GetTarget*" class="text-break">
-  Method GetTarget
-  
+Method GetTarget  
 </h1>
 
 <div class="facts text-secondary">
@@ -150,16 +148,10 @@ If the currently selected target is a bitmap rather than a command list, the app
 created by using one of the following methods: <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateHwndDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateHwndDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__PaintDotNet_Direct2D1_HwndDeviceContextProperties__">CreateHwndDeviceContext(in DeviceContextProperties, in HwndDeviceContextProperties)</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>,
 <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateDCDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateDCDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateDCDeviceContext(in DeviceContextProperties)</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a>.<br>
 It is not possible for an application to destroy these bitmaps. All of these bitmaps are bindable as bitmap targets. However not all
-of these bitmaps can be used as bitmap sources for <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> methods.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> will always create bitmaps that are usable as a bitmap source.<br>
+of these bitmaps can be used as bitmap sources for <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> methods.<br><a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> will always create bitmaps that are usable as a bitmap source.<br>
 When using <a class="xref" href="PaintDotNet.Direct2D1.IDCDeviceContext.html">IDCDeviceContext</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.BeginDraw.html#PaintDotNet_Direct2D1_IDeviceContext_BeginDraw">BeginDraw()</a> will copy from the HDC to the original bitmap associated with it.
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> will copy from the original bitmap to the HDC.<br>
-<a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be locked in the following circumstances:<br></p>
-<ul><li>BeginDraw has been called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is set as the target of a device context after BeginDraw has been called and before EndDraw has been called.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or detination.</li></ul>
-<a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be unlocked in the following circumstances:<br>
-<ul><li>EndDraw is called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is removed as the target of a device context between the calls to BeginDraw and EndDraw.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or destination.</li></ul>
-Direct2D will only lock bitmaps that are not currently locked.<br>
-<a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.Resize.html#PaintDotNet_Direct2D1_IHwndDeviceContext_Resize_PaintDotNet_Rendering_SizeInt32_">Resize(SizeInt32)</a> will throw <a class="xref" href="PaintDotNet.Direct2D1.InvalidCallException.html">InvalidCallException</a> if there are any outstanding references to
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> will copy from the original bitmap to the HDC.<br><a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be locked in the following circumstances:<br><ul><li>BeginDraw has been called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is set as the target of a device context after BeginDraw has been called and before EndDraw has been called.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or detination.</li></ul><a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be unlocked in the following circumstances:<br><ul><li>EndDraw is called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is removed as the target of a device context between the calls to BeginDraw and EndDraw.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or destination.</li></ul>
+Direct2D will only lock bitmaps that are not currently locked.<br><a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.Resize.html#PaintDotNet_Direct2D1_IHwndDeviceContext_Resize_PaintDotNet_Rendering_SizeInt32_">Resize(SizeInt32)</a> will throw <a class="xref" href="PaintDotNet.Direct2D1.InvalidCallException.html">InvalidCallException</a> if there are any outstanding references to
 the original bitmap associated with the device context.<br>
 Although the target can be a command list, it cannot be any other type of image. It cannot be an effect.
 </div>

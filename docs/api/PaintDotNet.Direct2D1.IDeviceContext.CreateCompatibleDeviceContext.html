@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method CreateCompatibleDeviceContext
- </title>
+      <title>Method CreateCompatibleDeviceContext </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method CreateCompatibleDeviceContext
- ">
+      <meta name="title" content="Method CreateCompatibleDeviceContext ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -88,8 +87,7 @@
 
 
 <h1 id="PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_" data-uid="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext*" class="text-break">
-  Method CreateCompatibleDeviceContext
-  
+Method CreateCompatibleDeviceContext  
 </h1>
 
 <div class="facts text-secondary">
@@ -163,8 +161,7 @@ see <a href="https://docs.microsoft.com/en-us/windows/win32/Direct2D/supported-p
 
 
 <h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The pixel size and DPI of the new render target can be altered by specifying values for desiredSize or desiredPixelSize.<br></p>
-<ul><li>If desiredSize is specified but desiredPixelSize is not, the pixel size is computed from the desired size using the parent target DPI. If the desiredSize maps to a integer-pixel size, the DPI of the compatible render target is the same as the DPI of the parent target. If desiredSize maps to a fractional-pixel size, the pixel size is rounded up to the nearest integer and the DPI for the compatible device context is slightly higher than the DPI of the parent device context. In all cases, the coordinate (desiredSize.width, desiredSize.height) maps to the lower-right corner of the compatible device context.</li><li>If the desiredPixelSize is specified and desiredSize is not, the DPI of the new render target is the same as the original device context.</li><li>If both desiredSize and desiredPixelSize are specified, the DPI of the new device context is computed to account for the difference in scale.</li><li>If neither desiredSize nor desiredPixelSize is specified, the new render target size and DPI match the original device context.</li></ul>
+<div class="markdown level1 remarks"><p>The pixel size and DPI of the new render target can be altered by specifying values for desiredSize or desiredPixelSize.<br><ul><li>If desiredSize is specified but desiredPixelSize is not, the pixel size is computed from the desired size using the parent target DPI. If the desiredSize maps to a integer-pixel size, the DPI of the compatible render target is the same as the DPI of the parent target. If desiredSize maps to a fractional-pixel size, the pixel size is rounded up to the nearest integer and the DPI for the compatible device context is slightly higher than the DPI of the parent device context. In all cases, the coordinate (desiredSize.width, desiredSize.height) maps to the lower-right corner of the compatible device context.</li><li>If the desiredPixelSize is specified and desiredSize is not, the DPI of the new render target is the same as the original device context.</li><li>If both desiredSize and desiredPixelSize are specified, the DPI of the new device context is computed to account for the difference in scale.</li><li>If neither desiredSize nor desiredPixelSize is specified, the new render target size and DPI match the original device context.</li></ul>
 </div>
 
 

@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace PaintDotNet.Gdi
- </title>
+      <title>Namespace PaintDotNet.Gdi </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace PaintDotNet.Gdi
- ">
+      <meta name="title" content="Namespace PaintDotNet.Gdi ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -83,8 +82,7 @@
 
         <article data-uid="PaintDotNet.Gdi">
 
-  <h1 id="PaintDotNet_Gdi" data-uid="PaintDotNet.Gdi" class="text-break">Namespace PaintDotNet.Gdi
-</h1>
+  <h1 id="PaintDotNet_Gdi" data-uid="PaintDotNet.Gdi" class="text-break">Namespace PaintDotNet.Gdi</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
@@ -96,13 +94,11 @@ Classes
       <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.html">GdiControl</a></dt>
       <dd><p>A control that does its painting in WM_PAINT via GDI calls, completely bypassing System.Drawing (GDI+)
 and WinForm's built-in painting mechanisms. You will need to implement your own interop definitions to
-paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br>
-<br>
+paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br><br>
 The <a class="xref" href="PaintDotNet.Gdi.IGdiPaintContext.html">IGdiPaintContext</a> passed to <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a>
 implements the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.idevicecontext">IDeviceContext</a> interface, which is accepted by some rendering
 code in the System.Windows.Forms namespaces, such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonrenderer">ButtonRenderer</a>,
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br>
-<br>
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br><br>
 This class primarily exists to serve as the base class for Direct2DControl.</p>
 </dd>
     </dl>

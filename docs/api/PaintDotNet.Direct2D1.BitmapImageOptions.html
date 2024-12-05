@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum BitmapImageOptions
- </title>
+      <title>Enum BitmapImageOptions </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum BitmapImageOptions
- ">
+      <meta name="title" content="Enum BitmapImageOptions ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -87,8 +86,7 @@
 
 
   <h1 id="PaintDotNet_Direct2D1_BitmapImageOptions" data-uid="PaintDotNet.Direct2D1.BitmapImageOptions" class="text-break">
-    Enum BitmapImageOptions
-  
+Enum BitmapImageOptions  
   </h1>
 
   <div class="facts text-secondary">
@@ -118,19 +116,14 @@ public enum BitmapImageOptions</code></pre>
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_Default"><code>Default = 0</code></dt>
     <dd><p>The default option, which selects an appropriate image creation strategy based on how large the bitmap is, whether
 it is an IBitmapSource or IBitmap, the amount of available GPU memory, and whether the device context is using
-hardware or software rendering.<br>
-<br>
+hardware or software rendering.<br><br>
 Depending on which strategy is used to create the image for the device context, the bitmap may be copied to the
-GPU (cached), or streamed during rendering.<br>
-<br>
+GPU (cached), or streamed during rendering.<br><br>
 The bitmap's colors will be converted to the color space of the device context, if available and if possible,
 unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion">DisableColorSpaceConversion</a> option is specified. The <a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a> instance
-will have its <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property set for the appropriate color space.<br>
-<br>
+will have its <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property set for the appropriate color space.<br><br>
 The image will use premultiplied alpha unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. The bitmap
-will be premultiplied or unpremultiplied as necessary.<br>
-<br>
-<b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
+will be premultiplied or unpremultiplied as necessary.<br><br><b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
 results.</b> If the bitmap is modified after the image is created, results are undefined.<br></p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_DoNotCache"><code>DoNotCache = 1</code></dt>
