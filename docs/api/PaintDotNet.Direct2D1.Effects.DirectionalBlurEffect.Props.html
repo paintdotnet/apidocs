@@ -186,18 +186,18 @@ Class DirectionalBlurEffect.Props
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.Angle.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_Angle">Angle</a></dt>
     <dd><p>The angle of the blur relative to the x-axis, in the counterclockwise direction. The units are
 specified in degrees. The blur kernel is first generated using the same process as for the Gaussian
-blur effect. The kernel values are then transformed according to the blur angle.
+blur effect. The kernel values are then transformed according to the blur angle.<br>
 The default value is 0.0f.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd><p>The mode used to calculate the border of the image, soft or hard.
+    <dd><p>The mode used to calculate the border of the image, soft or hard.<br>
 When set to BorderMode.Soft, the effect pads the image with transparent black pixels as it applies
-the blur kernel, resulting in a soft edge.
+the blur kernel, resulting in a soft edge.<br>
 When set to BorderMode.Hard, the effect clamps the output to the size of the input image. When the
 effect applies the blur kernel, it extends the input image with a mirror-type border transform for
-samples outside of the input bounds.
+samples outside of the input bounds.<br>
 The default value is BorderMode.Soft.</p>
 </dd>
   </dl>
@@ -225,7 +225,7 @@ generic type arguments (e.g. PixelShaderEffect).</p>
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.StandardDeviation.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_StandardDeviation">StandardDeviation</a></dt>
     <dd><p>The amount of blur to be applied to the image. You can compute the blur radius of the kernel by
 multiplying the standard deviation by 3. The units of both the standard deviation and blur
-radius are DIPs. A value of 0 DIPs disables this effect.
+radius are DIPs. A value of 0 DIPs disables this effect.<br>
 The default value is 3.0f.</p>
 </dd>
   </dl>

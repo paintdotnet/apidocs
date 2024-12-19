@@ -188,7 +188,7 @@ Class TurbulenceEffect.Props
 A value of 1 (1/DIPs) for the base frequency results in the Perlin noise completing an entire cycle between two pixels.
 The ease interpolation for these pixels results in completely random pixels, since there is no correlation between the pixels.
 A value of 0.1(1/DIPs) for the base frequency, the Perlin noise function repeats every 10 DIPs.
-This results in correlation between pixels and the typical turbulence effect is visible.
+This results in correlation between pixels and the typical turbulence effect is visible.<br>
 The default value is { 0.01f, 0.01f }.</p>
 </dd>
   </dl>
@@ -210,16 +210,16 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.Props.Octaves.html#PaintDotNet_Direct2D1_Effects_TurbulenceEffect_Props_Octaves">Octaves</a></dt>
-    <dd><p>The number of octaves for the noise function. This value must be greater than 0.
+    <dd><p>The number of octaves for the noise function. This value must be greater than 0.<br>
 The default value is 1.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.Props.Offset.html#PaintDotNet_Direct2D1_Effects_TurbulenceEffect_Props_Offset">Offset</a></dt>
-    <dd><p>The coordinates where the turbulence output is generated.
+    <dd><p>The coordinates where the turbulence output is generated.<br>
 The algorithm used to generate the Perlin noise is position dependent, so a different
 offset results in a different output. This property is not bounded and the units are
-specified in DIPs.
+specified in DIPs.<br>
 The default value is { 0, 0 }.</p>
 </dd>
   </dl>
@@ -230,19 +230,19 @@ The default value is { 0, 0 }.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.Props.Size.html#PaintDotNet_Direct2D1_Effects_TurbulenceEffect_Props_Size">Size</a></dt>
-    <dd><p>The size of the turbulence output.
-This property is not bounded and the units are specified in DIPs.
+    <dd><p>The size of the turbulence output.<br>
+This property is not bounded and the units are specified in DIPs.<br>
 The default value is { 0, 0 }.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.Props.Stitchable.html#PaintDotNet_Direct2D1_Effects_TurbulenceEffect_Props_Stitchable">Stitchable</a></dt>
     <dd><p>Turns stitching on or off. The base frequency is adjusted so that output bitmap can be stitched.
-This is useful if you want to tile multiple copies of the turbulence effect output.
+This is useful if you want to tile multiple copies of the turbulence effect output.<br>
 When set to true, the output bitmap can be tiled (using the tile effect) without the apperance
-of seams. The base frequency is adjusted so that the output can be stitched.
+of seams. The base frequency is adjusted so that the output can be stitched.<br>
 When set to false, the base frequency is not adjusted, so seams may appear between tiles if the
-bitmap is tiled.
+bitmap is tiled.<br>
 The default value is false.</p>
 </dd>
   </dl>

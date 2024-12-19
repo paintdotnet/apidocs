@@ -114,31 +114,44 @@ Enum BlendOption
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_BlendOption_Zero"><code>Zero = 1</code></dt>
-    <dd></dd>
+    <dd><p>The data source is black (0, 0, 0, 0). There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_One"><code>One = 2</code></dt>
-    <dd></dd>
+    <dd><p>The data source is white (1, 1, 1, 1). There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_SourceColor"><code>SourceColor = 3</code></dt>
-    <dd></dd>
+    <dd><p>The data source is color data (RGB) from the second input of the blend transform. There is not a preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_InverseSourceColor"><code>InverseSourceColor = 4</code></dt>
-    <dd></dd>
+    <dd><p>The data source is color data (RGB) from second input of the blend transform. The preblend operation inverts the data, generating 1 - RGB.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_SourceAlpha"><code>SourceAlpha = 5</code></dt>
-    <dd></dd>
+    <dd><p>The data source is alpha data (A) from second input of the blend transform. There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_InverseSourceAlpha"><code>InverseSourceAlpha = 6</code></dt>
-    <dd></dd>
+    <dd><p>The data source is alpha data (A) from the second input of the blend transform. The preblend operation inverts the data, generating 1 - A.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_DestinationAlpha"><code>DestinationAlpha = 7</code></dt>
-    <dd></dd>
+    <dd><p>The data source is alpha data (A) from the first input of the blend transform. There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_InverseDestinationAlpha"><code>InverseDestinationAlpha = 8</code></dt>
-    <dd></dd>
+    <dd><p>The data source is alpha data (A) from the first input of the blend transform. The preblend operation inverts the data, generating 1 - A.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_DestinationColor"><code>DestinationColor = 9</code></dt>
-    <dd></dd>
+    <dd><p>The data source is color data from the first input of the blend transform. There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_InverseDestinationColor"><code>InverseDestinationColor = 10</code></dt>
-    <dd></dd>
+    <dd><p>The data source is color data from the first input of the blend transform. The preblend operation inverts the data, generating 1 - RGB.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_SourceAlphaSaturated"><code>SourceAlphaSaturated = 11</code></dt>
-    <dd></dd>
+    <dd><p>The data source is alpha data from the second input of the blend transform. The preblend operation clamps the data to 1 or less.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_BlendFactor"><code>BlendFactor = 14</code></dt>
-    <dd></dd>
+    <dd><p>The data source is the blend factor. There is no preblend operation.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_BlendOption_InverseBlendFactor"><code>InverseBlendFactor = 15</code></dt>
-    <dd></dd>
+    <dd><p>The data source is the blend factor. The preblend operation inverts the blend factor, generating 1 - blend_factor.</p>
+</dd>
   </dl>
 
 
