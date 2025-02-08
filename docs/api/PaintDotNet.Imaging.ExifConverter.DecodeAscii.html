@@ -120,7 +120,10 @@ Method DecodeAscii
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Decodes the data to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> array. The data is treated as using UTF-8
+encoding, despite the use of ASCII terminology. Thus, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>s may be
+outside the range [1, 255] (but not including 0).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -145,6 +148,9 @@ Method DecodeAscii
 
 
 
+<h4 class="section" id="PaintDotNet_Imaging_ExifConverter_DecodeAscii_System_Collections_Generic_IReadOnlyList_System_Byte___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The de facto standard for EXIF ASCII data is to use UTF-8, despite it not being &quot;standard.&quot;</p>
+</div>
 
 
 

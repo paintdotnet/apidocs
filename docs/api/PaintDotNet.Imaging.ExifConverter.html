@@ -148,7 +148,10 @@ Class ExifConverter
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeAscii.html#PaintDotNet_Imaging_ExifConverter_DecodeAscii_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeAscii(IReadOnlyList&lt;byte&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Decodes the data to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> array. The data is treated as using UTF-8
+encoding, despite the use of ASCII terminology. Thus, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>s may be
+outside the range [1, 255] (but not including 0).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeByte.html#PaintDotNet_Imaging_ExifConverter_DecodeByte_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeByte(IReadOnlyList&lt;byte&gt;)</a></dt>
@@ -259,8 +262,16 @@ Class ExifConverter
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.DecodeUtf8.html#PaintDotNet_Imaging_ExifConverter_DecodeUtf8_System_Collections_Generic_IReadOnlyList_System_Byte__">DecodeUtf8(IReadOnlyList&lt;byte&gt;)</a></dt>
+    <dd><p>Decodes the data to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>. The data is treated as using UTF-8 encoding.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeAscii.html#PaintDotNet_Imaging_ExifConverter_EncodeAscii_System_Char___">EncodeAscii(char[])</a></dt>
-    <dd></dd>
+    <dd><p>Encodes the character array as an <a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a> of type <a class="xref" href="PaintDotNet.Imaging.ExifValueType.html#PaintDotNet_Imaging_ExifValueType_Ascii">Ascii</a>.
+The full range of Unicode characters is actually supported, as the string is encoded using UTF-8.
+Thus, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>s outside the range of [1, 255] (but not 0) are permitted.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeByte.html#PaintDotNet_Imaging_ExifConverter_EncodeByte_System_Byte_">EncodeByte(byte)</a></dt>
@@ -365,6 +376,12 @@ Class ExifConverter
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeShortArray.html#PaintDotNet_Imaging_ExifConverter_EncodeShortArray_System_Collections_Generic_IReadOnlyList_System_UInt16__">EncodeShortArray(IReadOnlyList&lt;ushort&gt;)</a></dt>
     <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.EncodeUtf8.html#PaintDotNet_Imaging_ExifConverter_EncodeUtf8_System_String_">EncodeUtf8(string)</a></dt>
+    <dd><p>Encodes the Unicode string as a sequence of UTF-8 characters. The returned <a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a>
+will be of type <a class="xref" href="PaintDotNet.Imaging.ExifValueType.html#PaintDotNet_Imaging_ExifValueType_Ascii">Ascii</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ExifConverter.TryDecodeToVariant.html#PaintDotNet_Imaging_ExifConverter_TryDecodeToVariant_PaintDotNet_Imaging_ExifValue_System_Object__">TryDecodeToVariant(ExifValue, out object?)</a></dt>
