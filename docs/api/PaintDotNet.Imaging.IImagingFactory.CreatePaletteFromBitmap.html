@@ -120,7 +120,8 @@ Method CreatePaletteFromBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a palette using a computed optimized values based on the reference bitmap.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,11 +131,14 @@ Method CreatePaletteFromBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd></dd>
+  <dd><p>The source bitmap.</p>
+</dd>
   <dt><code>colorCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of colors to initialize the palette with.</p>
+</dd>
   <dt><code>addTransparentColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>A value to indicate whether to add a transparent color.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -149,6 +153,15 @@ Method CreatePaletteFromBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_Imaging_IImagingFactory_CreatePaletteFromBitmap_PaintDotNet_Imaging_IBitmapSource_System_Int32_System_Boolean__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The resulting palette contains the specified number of colors which best represent the colors present
+in the bitmap. The algorithm operates on the opaque RGB color value of each pixel in the reference
+bitmap and hence ignores any alpha values. If a transparent color is required, set the <code class="paramref">addTransparentColor</code>
+to true and one fewer optimized color will be computed, reducing the colorCount, and a fully transparent
+color entry will be added.<br><br>
+This method uses the <a href="https://en.wikipedia.org/wiki/Median_cut">Median Cut algorithm</a> for palette generation.<br><br>
+This method is a wrapper around <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicpalette-initializefrombitmap">IWICPalette::InitializeFromBitmap()</a>.</p>
+</div>
 
 
 

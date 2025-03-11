@@ -157,8 +157,9 @@ Interface IGpuEffectSelectionInfo2
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectSelectionInfo2.MaskImage.html#PaintDotNet_Effects_Gpu_IGpuEffectSelectionInfo2_MaskImage">MaskImage</a></dt>
-    <dd><p>Gets an image that renders a mask based on the selection's geometry. If no selection is active then
-this will be an opaque white image.</p>
+    <dd><p>Gets an image that renders a mask based on the selection's geometry. Each pixel will be black, and
+the alpha component will be proportional to the selection's coverage within that pixel. If no
+selection is active then this will be an opaque black image.</p>
 </dd>
   </dl>
 
