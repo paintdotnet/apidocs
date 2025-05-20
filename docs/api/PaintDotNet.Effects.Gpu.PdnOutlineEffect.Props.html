@@ -203,15 +203,19 @@ The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEdg
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEffect.Props.Intensity.html#PaintDotNet_Effects_Gpu_PdnOutlineEffect_Props_Intensity">Intensity</a></dt>
     <dd><p>The intensity of the effect. This indirectly specifies the range of percentiles used to drive
 the underlying median approximation algorithm. An intensity value of 0.5f will render the
-difference between percentiles of 0.25 and 0.75. To calculate the range, use:<br><code>percentileLo = (1 - intensity) / 2</code><br><code>percentileHi = (1 + intensity) / 2</code><br>
+difference between percentiles of 0.25 and 0.75. To calculate the range, use:<br>
+<code>percentileLo = (1 - intensity) / 2</code><br>
+<code>percentileHi = (1 + intensity) / 2</code><br>
 The range is [0, 1]. The default value is 0.5f.</p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnOutlineEffect.Props.PrecisionBits.html#PaintDotNet_Effects_Gpu_PdnOutlineEffect_Props_PrecisionBits">PrecisionBits</a></dt>
-    <dd><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br><br>
+    <dd><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br>
+<br>
 Higher values will have lower performance. The current implementation will also have better
-performance when using an even number for this property value.<br><br>
+performance when using an even number for this property value.<br>
+<br>
 The range is [1,12]. The default value is 8, which produces 8-bits of precision and is appropriate for most images.</p>
 </dd>
   </dl>

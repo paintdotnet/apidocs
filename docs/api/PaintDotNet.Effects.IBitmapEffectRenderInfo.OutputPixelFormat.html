@@ -142,12 +142,15 @@ Property OutputPixelFormat
 
 
 <h4 class="section" id="PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>If the effect does not set this property, the output buffer will default to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.<br><br>
+<div class="markdown level1 remarks"><p>If the effect does not set this property, the output buffer will default to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.<br>
+<br>
 The effect must use the same pixel format when retrieving its output buffer with
-<a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a>.<br><br>
+<a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a>.<br>
+<br>
 Setting this value does not guarantee that the effect's output will be stored in any particular pixel
 format, but it permits the effect infrastructure to know ahead-of-time the format and precision that
-is optimal for the effect.<br><br>
+is optimal for the effect.<br>
+<br>
 When specifying a floating-point pixel format, such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>, the
 effect must operate in linear gamma mode. If the working space of the document
 (<a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a> cannot be linearized, then scRGB (aka linearized

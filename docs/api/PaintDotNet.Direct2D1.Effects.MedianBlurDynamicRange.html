@@ -113,19 +113,23 @@ Enum MedianBlurDynamicRange
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Auto"><code>Auto = 0</code></dt>
-    <dd><p>Automatically chooses <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Fast">Fast</a> or <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Accurate">Accurate</a> depending on the
+  
+  <dd><p>Automatically chooses <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Fast">Fast</a> or <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Accurate">Accurate</a> depending on the
 value of the <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.PrecisionBits.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_PrecisionBits">PrecisionBits</a> property. Lower values
 will use <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Accurate">Accurate</a> to improve quality, while higher values will use
 <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Fast">Fast</a> to improve performance.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Fast"><code>Fast = 1</code></dt>
-    <dd><p>Calculates the dynamic range on a per-pixel basis using the neighborhood of pixels
+  
+  <dd><p>Calculates the dynamic range on a per-pixel basis using the neighborhood of pixels
 within a square kernel.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Accurate"><code>Accurate = 2</code></dt>
-    <dd><p>Calculates the dynamic range on a per-pixel basis using the neighborhood of pixels
+  <dd><p>Calculates the dynamic range on a per-pixel basis using the neighborhood of pixels
 within a circular kernel.</p>
+<p>This is the slowest but highest quality option.</p>
 </dd>
+  
   </dl>
 
 

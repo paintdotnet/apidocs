@@ -114,21 +114,26 @@ public enum BitmapAllocationOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_BitmapAllocationOptions_Default"><code>Default = 0</code></dt>
-    <dd><p>Uses the default options for allocating a bitmap: the bitmap is guaranteed to be zero-
+  
+  <dd><p>Uses the default options for allocating a bitmap: the bitmap is guaranteed to be zero-
 filled (black or transparent black), and will potentially have a stride that is larger
 than necessary in order to help improve performance in other areas (esp. use with
 Direct2D).</p>
 </dd>
     <dt id="PaintDotNet_Imaging_BitmapAllocationOptions_Uninitialized"><code>Uninitialized = 1</code></dt>
-    <dd><p>This option will remove the guarantee that the bitmap is zero-filled. This can improve
+  
+  <dd><p>This option will remove the guarantee that the bitmap is zero-filled. This can improve
 performance a little, but can result in graphical artifacts if every pixel of the bitmap
 is not filled in. (The artifacts may consist of leftover pixel data from previous/recent
-rendering activity.)<br><br><b>NOTE:</b> In general it is highly recommend that you do <u>not</u> use this option.
+rendering activity.)<br>
+<br>
+<b>NOTE:</b> In general it is highly recommend that you do <u>not</u> use this option.
 The performance improvement is minor, and it's easy to end up with graphical glitches
 that are difficult to debug.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_BitmapAllocationOptions_Contiguous"><code>Contiguous = 2</code></dt>
-    <dd><p>This option ensures that there is zero margin between rows. In other words, the bitmap's
+  
+  <dd><p>This option ensures that there is zero margin between rows. In other words, the bitmap's
 stride will be the minimum that is necessary: <code>stride = width * bytesPerPixel</code>.
 This will not reduce memory usage, but can be useful when debugging or working with code
 that does not correctly honor stride or that is simply not stride-aware.</p>

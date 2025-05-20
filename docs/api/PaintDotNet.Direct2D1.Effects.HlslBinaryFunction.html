@@ -113,38 +113,53 @@ Enum HlslBinaryFunction
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Atan2"><code>Atan2 = 0</code></dt>
-    <dd><p>Returns the arctangent of two values (y, x).</p>
+  
+  <dd><p>Returns the arctangent of two values (y, x).</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Fmod"><code>Fmod = 1</code></dt>
-    <dd><p>Returns the floating-point remainder of x / y.</p>
+  
+  <dd><p>Returns the floating-point remainder of x / y.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Ldexp"><code>Ldexp = 2</code></dt>
-    <dd><p>Returns the result of multiplying the specified value by two, raised to the power of the specified exponent.</p>
+  
+  <dd><p>Returns the result of multiplying the specified value by two, raised to the power of the specified exponent.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Max"><code>Max = 3</code></dt>
-    <dd><p>Selects the greater between two inputs.</p>
+  
+  <dd><p>Selects the greater between two inputs.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Min"><code>Min = 4</code></dt>
-    <dd><p>Selects the lesser between two inputs.</p>
+  
+  <dd><p>Selects the lesser between two inputs.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Pow"><code>Pow = 5</code></dt>
-    <dd><p>Returns the specified value raised to the specified power.</p>
+  <dd><p>Returns the specified value raised to the specified power.</p>
+<p>NOTE: This method will use the absolute value of the first parameter.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Reflect"><code>Reflect = 6</code></dt>
-    <dd><p>Returns a reflection vector using an incident ray and a surface normal.</p>
+  
+  <dd><p>Returns a reflection vector using an incident ray and a surface normal.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Step"><code>Step = 7</code></dt>
-    <dd><p>Compares two values, returning 0 or 1 based on which value is greater.</p>
+  
+  <dd><p>Compares two values, returning 0 or 1 based on which value is greater.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Distance"><code>Distance = 8</code></dt>
-    <dd><p>Returns a distance scalar between two vectors.</p>
+  <dd><p>Returns a distance scalar between two vectors.</p>
+<p>The result of this function is a scalar value which is broadcast to all fields of the vector.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Dot"><code>Dot = 9</code></dt>
-    <dd><p>Returns the dot product of two vectors.</p>
+  <dd><p>Returns the dot product of two vectors.</p>
+<p>The result of this function is a scalar value which is broadcast to all fields of the vector.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_HlslBinaryFunction_Cross"><code>Cross = 10</code></dt>
-    <dd><p>Returns the cross product of two floating-point, 3D vectors.</p>
+  <dd><p>Returns the cross product of two floating-point, 3D vectors.</p>
+<p>The fourth component (W or A) of the inputs is ignored, and is always 0 for the output.</p>
 </dd>
+  
   </dl>
 
 

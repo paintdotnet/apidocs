@@ -151,7 +151,8 @@ Specifying a different pixel format is valid, but will incur conversion overhead
 
 
 <h4 class="section" id="PaintDotNet_Effects_IEffectLayerInfo_GetBitmap_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This bitmap does not take <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Visible.html#PaintDotNet_Effects_IEffectLayerInfo_Visible">Visible</a> or <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Opacity.html#PaintDotNet_Effects_IEffectLayerInfo_Opacity">Opacity</a> into account.<br><br>
+<div class="markdown level1 remarks"><p>This bitmap does not take <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Visible.html#PaintDotNet_Effects_IEffectLayerInfo_Visible">Visible</a> or <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Opacity.html#PaintDotNet_Effects_IEffectLayerInfo_Opacity">Opacity</a> into account.<br>
+<br>
 When retrieving a bitmap in a floating-point pixel format, such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>,
 linear gamma will be used. The source will be converted if necessary. If the working space of the document
 (<a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a>) cannot be linearized, then scRGB (aka linearized sRGB)

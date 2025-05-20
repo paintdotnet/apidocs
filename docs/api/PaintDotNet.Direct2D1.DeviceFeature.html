@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum DeviceFeature ">
       
-      <meta name="description" content="Defines capabilities of the underlying Direct3D device which may be queried using .D2D1_FEATURE">
+      <meta name="description" content="Defines capabilities of the underlying Direct3D device which may be queried using . D2D1_FEATURE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum DeviceFeature
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Defines capabilities of the underlying Direct3D device which may be queried using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CheckFeatureSupport.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CheckFeatureSupport_PaintDotNet_Direct2D1_DeviceFeature_System_Span_System_Byte__">CheckFeatureSupport(DeviceFeature, Span&lt;byte&gt;)</a>.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ne-d2d1effectauthor-d2d1_feature">D2D1_FEATURE</a></p>
+  <div class="markdown summary"><p>Defines capabilities of the underlying Direct3D device which may be queried using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CheckFeatureSupport.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CheckFeatureSupport_PaintDotNet_Direct2D1_DeviceFeature_System_Span_System_Byte__">CheckFeatureSupport(DeviceFeature, Span&lt;byte&gt;)</a>.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ne-d2d1effectauthor-d2d1_feature">D2D1_FEATURE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,11 +115,13 @@ Enum DeviceFeature
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_DeviceFeature_Doubles"><code>Doubles = 0</code></dt>
-    <dd><p>The data argument should be a FeatureDataDoubles reference.<br>
+  
+  <dd><p>The data argument should be a FeatureDataDoubles reference.<br>
 The use of DeviceEffectContextExtensions.CheckFeatureSupport(DeviceFeatures.Doubles) is recommended to simplify this.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DeviceFeature_D3D10XHardwareOptions"><code>D3D10XHardwareOptions = 1</code></dt>
-    <dd><p>The data argument should be a FeatureDataD3D10XHardwareOptions.<br>
+  
+  <dd><p>The data argument should be a FeatureDataD3D10XHardwareOptions.<br>
 The use of DeviceEffectContextExtensions.CheckFeatureSupport(DeviceFeatures.D3D10XHardwareOptions) is recommended to simplify this.</p>
 </dd>
   </dl>

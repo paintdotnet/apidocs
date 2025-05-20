@@ -240,13 +240,18 @@ intention, not functionality. <a class="xref" href="PaintDotNet.Direct2D1.IDynam
 that can be gathered using reflection and displayed in a UI, such as a node/graph editor,
 alongside regular <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a>s. If an <a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a> is not an
 <a class="xref" href="PaintDotNet.Direct2D1.IDynamicEffect.html">IDynamicEffect</a>, then it should not be considered an &quot;effect&quot; that can be
-surfaced in a UI that works with effects (such as a node/graph editor).<br><br>
+surfaced in a UI that works with effects (such as a node/graph editor).<br>
+<br>
 The effect properties are intended to be presented to the user and should not be relied
 upon to have any specific text or pattern. They may be changed at any time, and may be
-localized (translated).<br><br><b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
+localized (translated).<br>
+<br></p>
+<p><b>NOTE:</b> Due to limitations in the Direct2D effects and rendering systems, inputs to dynamic
 images that are also used in effect graphs may need to be wrapped in an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>
 when used outside of the dynamic image. You can use the <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBufferedImage.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_">CreateBufferedImage(IDeviceContext, IDeviceImage)</a>
-extension method for this. See that method for more details.<br><br><b>NOTE:</b> Dynamic images usually require the device context's target to be using a buffer precision of
+extension method for this. See that method for more details.<br>
+<br>
+<b>NOTE:</b> Dynamic images usually require the device context's target to be using a buffer precision of
 <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html#PaintDotNet_Direct2D1_BufferPrecision_Float32">Float32</a> for correct rendering.<br>
 If your target is lower precision, use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.CreateCompatibleDeviceContext.html#PaintDotNet_Direct2D1_IDeviceContext_CreateCompatibleDeviceContext_System_Nullable_PaintDotNet_Rendering_SizeFloat__System_Nullable_PaintDotNet_Rendering_SizeInt32__System_Nullable_PaintDotNet_Direct2D1_DevicePixelFormat__PaintDotNet_Direct2D1_CompatibleDeviceContextOptions_">CreateCompatibleDeviceContext(SizeFloat?, SizeInt32?, DevicePixelFormat?, CompatibleDeviceContextOptions)</a> to
 create an off-screen buffer to render the dynamic image into, and then draw the compatible device context's

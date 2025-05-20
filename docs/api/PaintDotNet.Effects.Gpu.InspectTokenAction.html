@@ -113,23 +113,40 @@ Enum InspectTokenAction
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_InspectTokenAction_None"><code>None = 0</code></dt>
-    <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
+  <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
 OnCreateOutput() will be retained. OnUpdateOutput() will not be called, and then the
 output image will be rendered using IDeviceContext.DrawImage().</p>
+<p>This value is useful if you can safely determine that the changes to the token do not
+actually affect the output image.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_Gpu_InspectTokenAction_RecreateOutput"><code>RecreateOutput = 1</code></dt>
-    <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
-OnCreateOutput() will be disposed.<br><br>
+  <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
+OnCreateOutput() will be disposed.<br>
+<br>
 Then, both OnCreateOutput() and OnUpdateOutput() will be called, and then the output
 image will be rendered using IDeviceContext.DrawImage().</p>
+<p>If this value is always returned from OnInspectTokenChanges() then there is no need
+to implement OnUpdateOutput(). This affords a much simpler programming model, but
+not the best performance.<br>
+<br>
+It is always safe to return this value from OnInspectTokenChanges().</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_Gpu_InspectTokenAction_UpdateOutput"><code>UpdateOutput = 2</code></dt>
-    <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
+  <dd><p>If this value is returned from OnInspectTokenChanges(), the output image created by
 the earlier call to OnCreateOutput() will be retained. OnCreateOutput() will not be
-called again.<br><br>
+called again.<br>
+<br>
 Then, OnUpdateOutput() will be called, and then the output image will be rendered
 using IDeviceContext.DrawImage().</p>
+<p>Using this value can be significantly faster than RecreateOutput in scenarios where
+creating the output image is expensive (that is, OnCreateOutput() is expensive, or if
+the output has internal caching). However, it can be difficult -- sometimes
+significantly -- to correctly implement OnUpdateOutput(). Therefore, using this value
+is recommended only for experienced developers who are seeking maximum performance.</p>
 </dd>
+  
   </dl>
 
 

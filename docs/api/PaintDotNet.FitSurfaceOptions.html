@@ -114,16 +114,20 @@ public enum FitSurfaceOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_FitSurfaceOptions_Default"><code>Default = 0</code></dt>
-    <dd><p>Rendering will use multiple threads to improve performance. Gamma correction will not be used.</p>
+  
+  <dd><p>Rendering will use multiple threads to improve performance. Gamma correction will not be used.</p>
 </dd>
     <dt id="PaintDotNet_FitSurfaceOptions_DisableMultiThreadedOptimizations"><code>DisableMultiThreadedOptimizations = 1</code></dt>
-    <dd><p>Rendering will only use a single thread.</p>
+  
+  <dd><p>Rendering will only use a single thread.</p>
 </dd>
     <dt id="PaintDotNet_FitSurfaceOptions_UseGammaCorrection"><code>UseGammaCorrection = 2</code></dt>
-    <dd><p>Rendering will use gamma correction. The source will be converted from sRGB (2.2) to linear (1.0)
+  <dd><p>Rendering will use gamma correction. The source will be converted from sRGB (2.2) to linear (1.0)
 gamma, then resampled, and then converted back from linear (1.0) to sRGB (2.2) gamma.<br>
 This is slower, but preserves perceptual brightness, and is recommended.</p>
+<p>This does not have any effect when using <a class="xref" href="PaintDotNet.ResamplingAlgorithm.html#PaintDotNet_ResamplingAlgorithm_NearestNeighbor">NearestNeighbor</a>.</p>
 </dd>
+  
   </dl>
 
 

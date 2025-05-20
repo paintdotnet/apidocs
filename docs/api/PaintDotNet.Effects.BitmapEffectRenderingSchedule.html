@@ -113,14 +113,17 @@ Enum BitmapEffectRenderingSchedule
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingSchedule_None"><code>None = 0</code></dt>
-    <dd><p>There is only one call to the Effect's Render method, and all regions of interest (scans) are
+  
+  <dd><p>There is only one call to the Effect's Render method, and all regions of interest (scans) are
 delivered at that time. This also means rendering is effectively single threaded.</p>
 </dd>
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingSchedule_HorizontalStrips"><code>HorizontalStrips = 1</code></dt>
-    <dd><p>The image is broken up into small horizontal strips that cover the full width of the image.</p>
+  
+  <dd><p>The image is broken up into small horizontal strips that cover the full width of the image.</p>
 </dd>
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingSchedule_SquareTiles"><code>SquareTiles = 2</code></dt>
-    <dd><p>The image is broken up into square tiles.</p>
+  
+  <dd><p>The image is broken up into square tiles.</p>
 </dd>
   </dl>
 

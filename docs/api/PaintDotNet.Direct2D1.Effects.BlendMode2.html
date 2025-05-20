@@ -113,35 +113,53 @@ Enum BlendMode2
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Additive"><code>Additive = 0</code></dt>
-    <dd><p>The source and destination colors are summed.<br>
+  
+  <dd><p>The source and destination colors are summed.<br>
 output = dst + src</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Reflect"><code>Reflect = 1</code></dt>
-    <dd><p>The source colors are reflected over the destination colors.<br>
+  
+  <dd><p>The source colors are reflected over the destination colors.<br>
 output = min(1, (dst * dst) / (1 - src))</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Glow"><code>Glow = 2</code></dt>
-    <dd><p>The inverse of Reflect.<br>
+  
+  <dd><p>The inverse of Reflect.<br>
 output = min(1, (src * src) / (1 - dst))</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Negation"><code>Negation = 3</code></dt>
-    <dd><p>The source colors are negated over the destination colors.<br>
+  
+  <dd><p>The source colors are negated over the destination colors.<br>
 output = (1 - abs(1 - dst - src))</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Min"><code>Min = 4</code></dt>
-    <dd><p>The minimum of each color channel is used.<br>
+  
+  <dd><p>The minimum of each color channel is used.<br>
 output = [R=min(dst.R, src.R), G=min(dst.G, src.G), B=min(dst.B, src.B)]</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_Max"><code>Max = 5</code></dt>
-    <dd><p>The maximum of each color channel is used.<br>
+  
+  <dd><p>The maximum of each color channel is used.<br>
 output = [R=max(dst.R, src.R), G=max(dst.G, src.G), B=max(dst.B, src.B)]</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_XorInt8"><code>XorInt8 = 6</code></dt>
-    <dd><p>The source and destination colors are XOR'd together using 8-bits of precision.</p>
+  <dd><p>The source and destination colors are XOR'd together using 8-bits of precision.</p>
+<p>&quot;8-bits of precision&quot; refers to the normalized range of [0.0f, 1.0f].
+Pixel values outside of that normalized range are not clamped and will still work,
+but very large values may not have enough precision to work correctly.<br>
+The pixel values are multiplied by 255.0f, rounded to integers, xor'd together,
+then cast back to float, and finally divided by 255.0f.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_BlendMode2_XorInt16"><code>XorInt16 = 7</code></dt>
-    <dd><p>The source and destination colors are XOR'd together using 16-bits of precision.</p>
+  <dd><p>The source and destination colors are XOR'd together using 16-bits of precision.</p>
+<p>&quot;16-bits of precision&quot; refers to the normalized range of [0.0f, 1.0f].
+Pixel values outside of that normalized range are not clamped and will still work,
+but very large values may not have enough precision to work correctly.<br>
+The pixel values are multiplied by 65535.0f, rounded to integers, xor'd together,
+then cast back to float, and finally divided by 65535.0f.</p>
 </dd>
+  
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PatchEdgeMode ">
       
-      <meta name="description" content="Specifies how to render gradient mesh edges.D2D1_PATCH_EDGE_MODE">
+      <meta name="description" content="Specifies how to render gradient mesh edges. D2D1_PATCH_EDGE_MODE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum PatchEdgeMode
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies how to render gradient mesh edges.<br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/ne-d2d1_3-d2d1_patch_edge_mode">D2D1_PATCH_EDGE_MODE</a></p>
+  <div class="markdown summary"><p>Specifies how to render gradient mesh edges.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/ne-d2d1_3-d2d1_patch_edge_mode">D2D1_PATCH_EDGE_MODE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,13 +115,16 @@ Enum PatchEdgeMode
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_PatchEdgeMode_Aliased"><code>Aliased = 0</code></dt>
-    <dd><p>Render this patch edge aliased. Use this value for the internal edges of your gradient mesh.</p>
+  
+  <dd><p>Render this patch edge aliased. Use this value for the internal edges of your gradient mesh.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PatchEdgeMode_Antialiased"><code>Antialiased = 1</code></dt>
-    <dd><p>Render this patch edge antialiased. Use this value for the external (boundary) edges of your mesh.</p>
+  
+  <dd><p>Render this patch edge antialiased. Use this value for the external (boundary) edges of your mesh.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PatchEdgeMode_AliasedInflated"><code>AliasedInflated = 2</code></dt>
-    <dd><p>Render this patch edge aliased and also slightly inflated. Use this for the internal edges of your
+  
+  <dd><p>Render this patch edge aliased and also slightly inflated. Use this for the internal edges of your
 gradient mesh when there could be t-junctions among patches.
 Inflating the internal edges mitigates seams that can appear along those junctions.</p>
 </dd>

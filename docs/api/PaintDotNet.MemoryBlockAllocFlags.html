@@ -114,10 +114,12 @@ public enum MemoryBlockAllocFlags</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_MemoryBlockAllocFlags_Default"><code>Default = 0</code></dt>
-    <dd><p>Default flags for memory allocation. The memory block is guaranteed to be zero filled.</p>
+  
+  <dd><p>Default flags for memory allocation. The memory block is guaranteed to be zero filled.</p>
 </dd>
     <dt id="PaintDotNet_MemoryBlockAllocFlags_DoNotRequireZeroFill"><code>DoNotRequireZeroFill = 1</code></dt>
-    <dd><p>The block is not required to be zero-filled upon allocation. This can sometimes
+  
+  <dd><p>The block is not required to be zero-filled upon allocation. This can sometimes
 be beneficial to performance if you know you will be filling the block with
 data anyway (e.g., loading stuff from a file).</p>
 </dd>

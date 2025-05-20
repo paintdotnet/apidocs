@@ -204,7 +204,8 @@ The default value is Transparent.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.MapIsNormalized.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_MapIsNormalized">MapIsNormalized</a></dt>
-    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.RadiusMap.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_RadiusMap">RadiusMap</a> input image is normalized.<br><br>
+    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.RadiusMap.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_RadiusMap">RadiusMap</a> input image is normalized.<br>
+<br>
 If this value is true, the map's alpha values are expected to be in the range [0, 1]. The blur radius
 at each pixel will be the map's alpha value multiplied by <a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.MaxRadius.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_MaxRadius">MaxRadius</a>.
 <br>
@@ -216,7 +217,8 @@ The default value is <code>true</code>, which affords easily using the output of
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.MaxRadius.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_MaxRadius">MaxRadius</a></dt>
     <dd><p>Specifies the maximum blur radius that is rendered. If the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.RadiusMap.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_RadiusMap">RadiusMap</a> contains pixels
-specifying a blur radius larger than this value, then they will be clamped to this value.<br><br>
+specifying a blur radius larger than this value, then they will be clamped to this value.<br>
+<br>
 The range of this value is [0, 300]. The default value is 30.</p>
 </dd>
   </dl>
@@ -231,7 +233,8 @@ The range is [1, 10] and the default is 3.</p>
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.RadiusLevels.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_RadiusLevels">RadiusLevels</a></dt>
     <dd><p>Specifies the number of blur levels to be rendered. The image will be blurred this many times with
 an exponentially increasing blur radius based on the value of <a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.MaxRadius.html#PaintDotNet_Direct2D1_Effects_BokehBlurMapEffect_Props_MaxRadius">MaxRadius</a>. Increasing
-this value will improve quality, but also reduce performance.<br><br>
+this value will improve quality, but also reduce performance.<br>
+<br>
 The range of this value is [1, 30]. The default value is 10.</p>
 </dd>
   </dl>

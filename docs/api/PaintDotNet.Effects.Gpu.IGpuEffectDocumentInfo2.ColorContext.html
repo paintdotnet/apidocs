@@ -121,7 +121,8 @@ Property ColorContext
 </h3>
 
 <div class="markdown level1 summary"><p>Gets the Direct2D color context of the document, which defines the working space (color space)
-of the document and layer <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a>s, and for the effect's rendering.<br><br>
+of the document and layer <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a>s, and for the effect's rendering.<br>
+<br>
 This is affected by the effect's <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.html">GpuEffectColorContext</a>, which can be changed by
 overriding the <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_Gpu_GpuEffect_OnInitializeRenderInfo_PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_">OnInitializeRenderInfo(IGpuEffectRenderInfo)</a> method and
 setting the <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a> property. The default is <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a>,
@@ -148,7 +149,8 @@ which results in the linear gamma version of the document's color space.</p>
 
 <h4 class="section" id="PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_ColorContext_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This color context may not be the same one defined by the document itself. The actual color
-context will depend on the value specified for <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a>.<br><br>
+context will depend on the value specified for <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a>.<br>
+<br>
 To access the document's original color context, cast this <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.html">IGpuEffectDocumentInfo2</a>
 object to the base <a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.html">IEffectDocumentInfo</a> interface and access the <a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a>
 property. You can then create a Direct2D color context using a method such as

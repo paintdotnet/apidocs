@@ -156,7 +156,8 @@ masking or blending.</p>
 effect is using for its output buffer, no conversion will be necessary and performance will
 be optimal. Integer formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a> will be stored in
 gamma compressed format (e.g. sRGB), while floating point formats such as <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>
-will use linear gamma.<br><br>
+will use linear gamma.<br>
+<br>
 This method will handle clearing / zero-filling the buffer if necessary based on whether the
 effect uses <a class="xref" href="PaintDotNet.Effects.BitmapEffectRenderingFlags.html#PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer">UninitializedOutputBuffer</a>. It is never
 necessary for the caller to clear / zero-fill the buffer before passing it to this method.</p>

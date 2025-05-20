@@ -113,44 +113,67 @@ Enum EffectRenderingSchedule
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_DefaultTilesForCpuRendering"><code>DefaultTilesForCpuRendering = -2</code></dt>
-    <dd><p>The image is broken up into square tiles, the size of which is chosen automatically.
+  
+  <dd><p>The image is broken up into square tiles, the size of which is chosen automatically.
 Each call to Render() contains the scans for 1 tile.</p>
 </dd>
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_DefaultTilesForGpuRendering"><code>DefaultTilesForGpuRendering = -1</code></dt>
-    <dd><p>The image is broken up into square tiles, the size of which is chosen automatically.
+  
+  <dd><p>The image is broken up into square tiles, the size of which is chosen automatically.
 Each call to Render() contains the scans for 1 tile.</p>
 </dd>
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_SmallHorizontalStrips"><code>SmallHorizontalStrips = 0</code></dt>
-    <dd><p>The image is broken up into small horizontal strips that cover the full width of the image.</p>
+  <dd><p>The image is broken up into small horizontal strips that cover the full width of the image.</p>
+<p>This is the &quot;classic&quot; rendering schedule up through version 4.0.21. It can be useful for effects
+whose rendering code is most optimal when dealing with full horizontal extents.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_None"><code>None = 5</code></dt>
-    <dd><p>There is only one call to the Effect's Render method, and all regions of interest (scans) are
+  <dd><p>There is only one call to the Effect's Render method, and all regions of interest (scans) are
 delivered at that time. This also means rendering is effectively single threaded.</p>
+<p>This is the same behavior as the now-obsolete EffectFlags.SingleRenderCall.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles128x128"><code>Tiles128x128 = 4103</code></dt>
-    <dd><p>The image is broken up into 128x128 tiles.
+  <dd><p>The image is broken up into 128x128 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This generally works best for classic effects with the 4.0 rendering engine which is based on
+rendering 128x128 tiles. It is also appropriate for GPU/Direct2D effects on very small images
+(less than 1024x1024 pixels).</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles256x256"><code>Tiles256x256 = 4104</code></dt>
-    <dd><p>The image is broken up into 256x256 tiles.
+  <dd><p>The image is broken up into 256x256 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This is a good size for GPU/Direct2D effects on small-to-medium sized images (1024x1024 pixels
+or more).</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles512x512"><code>Tiles512x512 = 4105</code></dt>
-    <dd><p>The image is broken up into 512x512 tiles.
+  <dd><p>The image is broken up into 512x512 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This is a good size for GPU/Direct2D effects on medium-to-large sized images (2048x2048 pixels
+or more).</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles1024x1024"><code>Tiles1024x1024 = 4106</code></dt>
-    <dd><p>The image is broken up into 1024x1024 tiles.
+  <dd><p>The image is broken up into 1024x1024 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This is a good size for GPU/Direct2D effects on large sized images (4096x4096 pixels or more).</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles2048x2048"><code>Tiles2048x2048 = 4107</code></dt>
-    <dd><p>The image is broken up into 2048x2048 tiles.
+  <dd><p>The image is broken up into 2048x2048 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This is a good size for GPU/Direct2D effects on very large sized images (8192x8192 pixels or more).</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_EffectRenderingSchedule_Tiles4096x4096"><code>Tiles4096x4096 = 4108</code></dt>
-    <dd><p>The image is broken up into 4096x4096 tiles.
+  <dd><p>The image is broken up into 4096x4096 tiles.
 Each call to Render() contains the scans for 1 tile.</p>
+<p>This is a good size for GPU/Direct2D effects on extremely large sized images (16384x16384 pixels or more).</p>
 </dd>
+  
   </dl>
 
 

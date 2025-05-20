@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum SvgPathCommand ">
       
-      <meta name="description" content="Represents a path commmand. Each command may reference floats from the segment data. Commands ending in Absolute interpret data as absolute coordinate. Commands ending in Relative interpret data as being relative to the previous point.D2D1_SVG_PATH_COMMAND">
+      <meta name="description" content="Represents a path commmand. Each command may reference floats from the segment data. Commands ending in Absolute interpret data as absolute coordinate. Commands ending in Relative interpret data as being relative to the previous point. D2D1_SVG_PATH_COMMAND">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -96,7 +96,8 @@ Enum SvgPathCommand
 
   <div class="markdown summary"><p>Represents a path commmand. Each command may reference floats from the segment data.<br>
 Commands ending in Absolute interpret data as absolute coordinate.<br>
-Commands ending in Relative interpret data as being relative to the previous point.<br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/ne-d2d1svg-d2d1_svg_path_command">D2D1_SVG_PATH_COMMAND</a></p>
+Commands ending in Relative interpret data as being relative to the previous point.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/ne-d2d1svg-d2d1_svg_path_command">D2D1_SVG_PATH_COMMAND</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -116,63 +117,82 @@ Commands ending in Relative interpret data as being relative to the previous poi
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ClosePath"><code>ClosePath = 0</code></dt>
-    <dd><p>Closes the current subpath. Uses no segment data.</p>
+  
+  <dd><p>Closes the current subpath. Uses no segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_MoveAbsolute"><code>MoveAbsolute = 1</code></dt>
-    <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_MoveRelative"><code>MoveRelative = 2</code></dt>
-    <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Starts a new subpath at the coordinate (x y). Uses 2 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_LineAbsolute"><code>LineAbsolute = 3</code></dt>
-    <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_LineRelative"><code>LineRelative = 4</code></dt>
-    <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Draws a line to the coordinate (x y). Uses 2 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicAbsolute"><code>CubicAbsolute = 5</code></dt>
-    <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
+  
+  <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicRelative"><code>CubicRelative = 6</code></dt>
-    <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
+  
+  <dd><p>Draws a cubic Bezier curve (x1 y1 x2 y2 x y). The curve ends at (x, y) and is defined by the two control points (x1, y1) and (x2, y2). Uses 6 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticAbsolute"><code>QuadraticAbsolute = 7</code></dt>
-    <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
+  
+  <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticRelative"><code>QuadraticRelative = 8</code></dt>
-    <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
+  
+  <dd><p>Draws a quadratic Bezier curve (x1 y1 x y). The curve ends at (x, y) and is defined by the control point (x1 y1). Uses 4 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ArcAbsolute"><code>ArcAbsolute = 9</code></dt>
-    <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
+  
+  <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
 considered set if their values are non-zero. Uses 7 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_ArcRelative"><code>ArcRelative = 10</code></dt>
-    <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
+  
+  <dd><p>Draws an elliptical arc (rx ry x-axis-rotation large-arc-flag sweep-flag x y). The curve ends at (x, y) and is defined by the arc parameters. The two flags are
 considered set if their values are non-zero. Uses 7 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_HorizontalAbsolute"><code>HorizontalAbsolute = 11</code></dt>
-    <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
+  
+  <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_HorizontalRelative"><code>HorizontalRelative = 12</code></dt>
-    <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
+  
+  <dd><p>Draws a horizontal line to the coordinate (x). Uses 1 float of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_VerticalAbsolute"><code>VerticalAbsolute = 13</code></dt>
-    <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
+  
+  <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_VerticalRelative"><code>VerticalRelative = 14</code></dt>
-    <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
+  
+  <dd><p>Draws a vertical line to the coordinate (y). Uses 1 float of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicSmoothAbsolute"><code>CubicSmoothAbsolute = 15</code></dt>
-    <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
+  
+  <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_CubicSmoothRelative"><code>CubicSmoothRelative = 16</code></dt>
-    <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
+  
+  <dd><p>Draws a smooth cubic Bezier curve (x2 y2 x y). The curve ends at (x, y) and is defined by the control point (x2, y2). Uses 4 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticSmoothAbsolute"><code>QuadraticSmoothAbsolute = 17</code></dt>
-    <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SvgPathCommand_QuadraticSmoothRelative"><code>QuadraticSmoothRelative = 18</code></dt>
-    <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
+  
+  <dd><p>Draws a smooth quadratic Bezier curve ending at (x, y). Uses 2 floats of segment data.</p>
 </dd>
   </dl>
 

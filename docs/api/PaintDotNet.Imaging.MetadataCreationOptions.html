@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum MetadataCreationOptions ">
       
-      <meta name="description" content="Specifies metadata creation options.WICMetadataCreationOptions">
+      <meta name="description" content="Specifies metadata creation options. WICMetadataCreationOptions">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum MetadataCreationOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies metadata creation options.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions">WICMetadataCreationOptions</a></p>
+  <div class="markdown summary"><p>Specifies metadata creation options.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions">WICMetadataCreationOptions</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,28 +116,40 @@ public enum MetadataCreationOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_Default"><code>Default = 0</code></dt>
-    <dd><p>The default metadata creation options. This equals <a class="xref" href="PaintDotNet.Imaging.MetadataCreationOptions.html#PaintDotNet_Imaging_MetadataCreationOptions_AllowUnknown">AllowUnknown</a> and <a class="xref" href="PaintDotNet.Imaging.MetadataCreationOptions.html#PaintDotNet_Imaging_MetadataCreationOptions_PersistLittleEndian">PersistLittleEndian</a>.</p>
+  
+  <dd><p>The default metadata creation options. This equals <a class="xref" href="PaintDotNet.Imaging.MetadataCreationOptions.html#PaintDotNet_Imaging_MetadataCreationOptions_AllowUnknown">AllowUnknown</a> and <a class="xref" href="PaintDotNet.Imaging.MetadataCreationOptions.html#PaintDotNet_Imaging_MetadataCreationOptions_PersistLittleEndian">PersistLittleEndian</a>.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_AllowUnknown"><code>AllowUnknown = 0</code></dt>
-    <dd><p>Allow unknown metadata creation.</p>
+  
+  <dd><p>Allow unknown metadata creation.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_PersistLittleEndian"><code>PersistLittleEndian = 0</code></dt>
-    <dd><p>The data byte order is little endian.</p>
+  
+  <dd><p>The data byte order is little endian.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_PersistBigEndian"><code>PersistBigEndian = 1</code></dt>
-    <dd><p>The data byte order is big endian.</p>
+  
+  <dd><p>The data byte order is big endian.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_PersistStrictFormat"><code>PersistStrictFormat = 2</code></dt>
-    <dd><p>The data format must strictly conform to the specification.</p>
+  <dd><p>The data format must strictly conform to the specification.</p>
+<p><b>Warning:</b> This option is inconsistently implement and should not be relied on.</p>
 </dd>
+  
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_PersistNoCacheStream"><code>PersistNoCacheStream = 4</code></dt>
-    <dd><p>No cache for the metadata stream.</p>
+  <dd><p>No cache for the metadata stream.</p>
+<p>Certain operations, such as <a class="xref" href="PaintDotNet.Imaging.IImagingComponentFactory.CreateMetadataWriterFromReader.html#PaintDotNet_Imaging_IImagingComponentFactory_CreateMetadataWriterFromReader_PaintDotNet_Imaging_IMetadataReader_System_Nullable_PaintDotNet_Imaging_VendorID___">CreateMetadataWriterFromReader(IMetadataReader, in VendorID?)</a> require that the reader
+have a stream. Therefore, these operations will be unavailable if the reader is initialized with <a class="xref" href="PaintDotNet.Imaging.MetadataPersistOptions.html#PaintDotNet_Imaging_MetadataPersistOptions_NoCacheStream">NoCacheStream</a>.</p>
 </dd>
+  
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_PersistPreferUtf8"><code>PersistPreferUtf8 = 8</code></dt>
-    <dd><p>Use UTF8 instead of the default UTF16.</p>
+  <dd><p>Use UTF8 instead of the default UTF16.</p>
+<p><b>Note:</b> This option is currently unused.</p>
 </dd>
+  
     <dt id="PaintDotNet_Imaging_MetadataCreationOptions_FailUnknown"><code>FailUnknown = 65536</code></dt>
-    <dd><p>Fail on unknown metadata creation.</p>
+  
+  <dd><p>Fail on unknown metadata creation.</p>
 </dd>
   </dl>
 

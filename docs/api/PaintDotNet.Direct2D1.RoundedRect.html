@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct RoundedRect ">
       
-      <meta name="description" content="Contains the dimensions and corner radii of a rounded rectangle.D2D1_ROUNDED_RECT">
+      <meta name="description" content="Contains the dimensions and corner radii of a rounded rectangle. D2D1_ROUNDED_RECT">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Struct RoundedRect
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Contains the dimensions and corner radii of a rounded rectangle.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ns-d2d1-d2d1_rounded_rect">D2D1_ROUNDED_RECT</a></p>
+  <div class="markdown summary"><p>Contains the dimensions and corner radii of a rounded rectangle.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ns-d2d1-d2d1_rounded_rect">D2D1_ROUNDED_RECT</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -134,8 +135,10 @@ Struct RoundedRect
 
 
   <h2 id="PaintDotNet_Direct2D1_RoundedRect_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Each corner of the rectangle specified by rect is replaced with a quarter ellipse, with a radius in each direction specified by radiusX and radiusY.<br><br>
-If radiusX is greater than or equal to half the width of the rectangle, and radiusY is greater than or equal to one-half the height, then the rounded rectangle is an ellipse with the same width and height of rect.<br><br>
+  <div class="markdown level0 remarks"><p>Each corner of the rectangle specified by rect is replaced with a quarter ellipse, with a radius in each direction specified by radiusX and radiusY.<br>
+<br>
+If radiusX is greater than or equal to half the width of the rectangle, and radiusY is greater than or equal to one-half the height, then the rounded rectangle is an ellipse with the same width and height of rect.<br>
+<br>
 Even when both radiusX and radiusY are zero, the rounded rectangle is different from a rectangle. When stroked, the corners of the rounded rectangle are roundly joined, not mitered (square).</p>
 </div>
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GdiControl ">
       
-      <meta name="description" content="A control that does its painting in WM_PAINT via GDI calls, completely bypassing System.Drawing (GDI+) and WinForm&#39;s built-in painting mechanisms. You will need to implement your own interop definitions to paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended. The  passed to  implements the  interface, which is accepted by some rendering code in the System.Windows.Forms namespaces, such as , , and . This class primarily exists to serve as the base class for Direct2DControl.">
+      <meta name="description" content="A control that does its painting in WM_PAINT via GDI calls, completely bypassing System.Drawing (GDI+) and WinForm&#39;s built-in painting mechanisms. You will need to implement your own interop definitions to paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.  The  passed to  implements the  interface, which is accepted by some rendering code in the System.Windows.Forms namespaces, such as , , and .  This class primarily exists to serve as the base class for Direct2DControl.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -95,11 +95,13 @@ Class GdiControl
 
   <div class="markdown summary"><p>A control that does its painting in WM_PAINT via GDI calls, completely bypassing System.Drawing (GDI+)
 and WinForm's built-in painting mechanisms. You will need to implement your own interop definitions to
-paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br><br>
+paint using GDI. Use of the TerraFX.Interop.Windows nuget package is highly recommended.<br>
+<br>
 The <a class="xref" href="PaintDotNet.Gdi.IGdiPaintContext.html">IGdiPaintContext</a> passed to <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a>
 implements the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.idevicecontext">IDeviceContext</a> interface, which is accepted by some rendering
 code in the System.Windows.Forms namespaces, such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.buttonrenderer">ButtonRenderer</a>,
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br><br>
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.textrenderer">TextRenderer</a>, and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.visualstyles.visualstylerenderer">VisualStyleRenderer</a>.<br>
+<br>
 This class primarily exists to serve as the base class for Direct2DControl.</p>
 </div>
   <div class="markdown conceptual"></div>
@@ -1280,9 +1282,13 @@ This class primarily exists to serve as the base class for Direct2DControl.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiControl.DoubleBufferedGdiPaint.html#PaintDotNet_Gdi_GdiControl_DoubleBufferedGdiPaint">DoubleBufferedGdiPaint</a></dt>
-    <dd><p>Gets or sets whether painting in <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a> is double-buffered.<br><br>
+    <dd><p>Gets or sets whether painting in <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a> is double-buffered.<br>
+<br>
 Double-buffering is implemented using the <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-beginbufferedpaint">BeginBufferedPaint()</a>
-and <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-endbufferedpaint">EndBufferedPaint()</a> APIs.<br><br><b>NOTE:</b><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br><br>
+and <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-endbufferedpaint">EndBufferedPaint()</a> APIs.<br>
+<br>
+<b>NOTE:</b> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br>
+<br>
 The default value is false.</p>
 </dd>
   </dl>

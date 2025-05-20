@@ -139,7 +139,8 @@ Method Close
 <h4 class="section" id="PaintDotNet_Direct2D1_ISimplifiedGeometrySink_Close_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>Do not close the geometry sink while a figure is still in progress; doing so puts the geometry sink in
 an error state. For the close operation to be successful, there must be one <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.EndFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_EndFigure_PaintDotNet_Direct2D1_FigureEnd_">EndFigure(FigureEnd)</a>
-call for each call to <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a><br><br>
+call for each call to <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a><br>
+<br>
 After calling this method, the geometry sink might not be usable. Direct2D implementations of this
 interface do not allow the geometry sink to be modified after it is closed, but other implementations
 might not impose this restriction.</p>

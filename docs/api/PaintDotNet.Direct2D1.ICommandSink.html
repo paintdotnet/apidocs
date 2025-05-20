@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ICommandSink ">
       
-      <meta name="description" content="The command sink is implemented by you for an application when you want to receive a playback of the commands recorded in a command list. A typical usage will be for transforming the command list into another format such as XPS when some degree of conversion between the Direct2D primitives and the target format is required. The command sink interface doesn&#39;t have any resource creation methods on it. The resources are still logically bound to the Direct2D device on which the command list was created and will be passed in to the command sink implementation. This interface corresponds to the following Direct2D interfaces: ID2D1CommandSinkID2D1CommandSink1ID2D1CommandSink2ID2D1CommandSink3ID2D1CommandSink4ID2D1CommandSink5">
+      <meta name="description" content="The command sink is implemented by you for an application when you want to receive a playback of the commands recorded in a command list. A typical usage will be for transforming the command list into another format such as XPS when some degree of conversion between the Direct2D primitives and the target format is required.  The command sink interface doesn&#39;t have any resource creation methods on it. The resources are still logically bound to the Direct2D device on which the command list was created and will be passed in to the command sink implementation.  This interface corresponds to the following Direct2D interfaces: ID2D1CommandSink ID2D1CommandSink1 ID2D1CommandSink2 ID2D1CommandSink3 ID2D1CommandSink4 ID2D1CommandSink5">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -95,12 +95,19 @@ Interface ICommandSink
 
   <div class="markdown summary"><p>The command sink is implemented by you for an application when you want to receive a playback of the commands
 recorded in a command list. A typical usage will be for transforming the command list into another format such
-as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br><br>
+as XPS when some degree of conversion between the Direct2D primitives and the target format is required.<br>
+<br>
 The command sink interface doesn't have any resource creation methods on it. The resources are still logically
 bound to the Direct2D device on which the command list was created and will be passed in to the command sink
-implementation.<br><br>
+implementation.<br>
+<br>
 This interface corresponds to the following Direct2D interfaces:
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandsink">ID2D1CommandSink</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1commandsink1">ID2D1CommandSink1</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink2">ID2D1CommandSink2</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink3">ID2D1CommandSink3</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink4">ID2D1CommandSink4</a>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1commandsink5">ID2D1CommandSink5</a></p>
 </div>
   <div class="markdown conceptual"></div>
 

@@ -113,16 +113,20 @@ Enum PdnDropShadowOptimization
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_PdnDropShadowOptimization_Speed"><code>Speed = 0</code></dt>
-    <dd><p>Applies internal optimizations such as pre-scaling at relatively small radii. Uses linear filtering.</p>
+  
+  <dd><p>Applies internal optimizations such as pre-scaling at relatively small radii. Uses linear filtering.</p>
 </dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnDropShadowOptimization_Balanced"><code>Balanced = 1</code></dt>
-    <dd><p>Uses the same optimization thresholds as Speed mode, but uses trilinear filtering.</p>
+  
+  <dd><p>Uses the same optimization thresholds as Speed mode, but uses trilinear filtering.</p>
 </dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnDropShadowOptimization_Quality"><code>Quality = 2</code></dt>
-    <dd><p>Only uses internal optimizations with large blur radii, where approximations are less likely to be visible. Uses trilinear filtering.</p>
+  
+  <dd><p>Only uses internal optimizations with large blur radii, where approximations are less likely to be visible. Uses trilinear filtering.</p>
 </dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnDropShadowOptimization_HighQuality"><code>HighQuality = 3</code></dt>
-    <dd><p>No internal optimizations are applied, and no shortcuts are taken to improve performance. This
+  
+  <dd><p>No internal optimizations are applied, and no shortcuts are taken to improve performance. This
 produces the highest quality output, but performance is significantly reduced.<br>
 This is typically only necesary for images that are gamma corrected, or those with a low dynamic
 range, such as when amplifying with a high gamma value, such as seen in Paint.NET's built-in

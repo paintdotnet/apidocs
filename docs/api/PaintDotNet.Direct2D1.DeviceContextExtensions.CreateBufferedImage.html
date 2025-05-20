@@ -156,11 +156,14 @@ correct, use this method to wrap any <a class="xref" href="PaintDotNet.Direct2D1
 part of the effect graph that is causing the error. The command list(s) at fault may not be yours; they are
 often contained within <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>s, for instance. The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> may still be
 set as the input for the <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, but the other nodes in the effect graph should use the
-wrapper created by this method.<br><br>
+wrapper created by this method.<br>
+<br>
 When the Direct2D debug layer and Visual Studio's mixed-mode debugging (&quot;Enable debugging for managed and
-native code together&quot;) are both enabled, you would see the following error:<br><pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
-See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br><br>
-An example of an effect graph that can cause this error:
+native code together&quot;) are both enabled, you would see the following error:<br></p>
+<pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
+<p>See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br>
+<br>
+An example of an effect graph that can cause this error:</p>
 <pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
          |         |    
          |         |    

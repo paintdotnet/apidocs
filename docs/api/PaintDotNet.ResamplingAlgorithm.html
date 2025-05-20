@@ -113,28 +113,33 @@ Enum ResamplingAlgorithm
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_ResamplingAlgorithm_NearestNeighbor"><code>NearestNeighbor = 0</code></dt>
-    <dd><p>A nearest neighbor interpolation algorithm. Also known as nearest pixel or point interpolation.<br>
+  
+  <dd><p>A nearest neighbor interpolation algorithm. Also known as nearest pixel or point interpolation.<br>
 The output pixel is assigned the value of the pixel that the point falls within. No other pixels
 are considered.<br></p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_LinearLowQuality"><code>LinearLowQuality = 1</code></dt>
-    <dd><p>A bilinear interpolation algorithm. The output pixel values are computed as a weighted average
+  
+  <dd><p>A bilinear interpolation algorithm. The output pixel values are computed as a weighted average
 of the nearest four pixels in a 2x2 grid. This is the algorithm often used in real-time computer
 graphics for (bi)linear filtering.</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_Cubic"><code>Cubic = 2</code></dt>
-    <dd><p>A bicubic interpolation algorithm. Specifically this is the Catmull-Rom cubic interpolation kernel,
+  
+  <dd><p>A bicubic interpolation algorithm. Specifically this is the Catmull-Rom cubic interpolation kernel,
 which is equivalent to the HighQualityCubic algorithm offered by WIC and Direct2D. In the
 <a href="https://imagemagick.org/Usage/filter/#cubics">family of cubic filters,</a> this uses
 (b=0, c=0.5).</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_SuperSampling"><code>SuperSampling = 3</code></dt>
-    <dd><p><b>Deprecated.</b> It is highly recommend that you not use this.<br>
+  
+  <dd><p><b>Deprecated.</b> It is highly recommend that you not use this.<br>
 This is equivalent to Fant for down-sizing, and CubicSmooth for upsizing.<br>
 Note that the name of this was poorly chosen and should not actually be referred to as &quot;super sampling.&quot;</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_Fant"><code>Fant = 4</code></dt>
-    <dd><p>For downsizing, destination pixel values are computed as a weighted average of the all the pixels
+  
+  <dd><p>For downsizing, destination pixel values are computed as a weighted average of the all the pixels
 that map to the new pixel.<br>
 For upsizing, this is equivalent to <a class="xref" href="PaintDotNet.ResamplingAlgorithm.html#PaintDotNet_ResamplingAlgorithm_Linear">Linear</a>.<br>
 This implements Karl M. Fant's interpolation algorithm as described in the paper, &quot;A Nonaliasing,
@@ -142,30 +147,38 @@ Real-Time Spatial Transform Technique.&quot; It is equivalent to WIC/WPF's Fant 
 the bugs (e.g. the half-pixel offset when upsizing).</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_Linear"><code>Linear = 5</code></dt>
-    <dd><p>Implements <a href="http://www.imagemagick.org/Usage/filter/#triangle">Linear</a> (Triangle/Tent)
+  
+  <dd><p>Implements <a href="http://www.imagemagick.org/Usage/filter/#triangle">Linear</a> (Triangle/Tent)
 interpolation. This is much higher quality than <a class="xref" href="PaintDotNet.ResamplingAlgorithm.html#PaintDotNet_ResamplingAlgorithm_LinearLowQuality">LinearLowQuality</a> for downsizing,
 but produces the same result for upsizing.</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_AdaptiveFast"><code>AdaptiveFast = 6</code></dt>
-    <dd><p>Uses lower-quality downscaling to the nearest power of 2 to the target size. A high-quality
+  <dd><p>Uses lower-quality downscaling to the nearest power of 2 to the target size. A high-quality
 scaler is then used to reach the final size. This uses
 <a href="https://github.com/saucecontrol/PhotoSauce">MagicScaler's</a> HybridScaleMode.Turbo.</p>
+<p>NOTE: This mode should not be used with gamma correction, as it produces inconsistent results
+based on the input and output sizes.</p>
 </dd>
+  
     <dt id="PaintDotNet_ResamplingAlgorithm_Lanczos3"><code>Lanczos3 = 7</code></dt>
-    <dd><p>Uses the <a href="https://imagemagick.org/Usage/filter/#lanczos">Lanczos filter</a> with 3 lobes.</p>
+  
+  <dd><p>Uses the <a href="https://imagemagick.org/Usage/filter/#lanczos">Lanczos filter</a> with 3 lobes.</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_CubicSmooth"><code>CubicSmooth = 8</code></dt>
-    <dd><p>A bicubic interpolation algorithm. In the <a href="https://imagemagick.org/Usage/filter/#cubics">family of cubic filters,</a>
+  
+  <dd><p>A bicubic interpolation algorithm. In the <a href="https://imagemagick.org/Usage/filter/#cubics">family of cubic filters,</a>
 this uses (b=1, c=0). No sharpening is employed, and the resulting image will not have any ringing
 artifacts.</p>
 </dd>
     <dt id="PaintDotNet_ResamplingAlgorithm_AdaptiveHighQuality"><code>AdaptiveHighQuality = 9</code></dt>
-    <dd><p>A high-quality mode that chooses an appropriate high-quality interpolator based on the ratio between
+  <dd><p>A high-quality mode that chooses an appropriate high-quality interpolator based on the ratio between
 the source and target sizes. This is a very good choice for resizing photos and produces a sharper
 result than the other resamplers.<br>
 This uses <a href="https://github.com/saucecontrol/PhotoSauce">MagicScaler's</a> default interpolation
 settings with HybridScaleMode.Off.<br></p>
+<p>This is referred to as &quot;Adaptive (Sharp)&quot; in the UI for Image -&gt; Resize.</p>
 </dd>
+  
   </dl>
 
 

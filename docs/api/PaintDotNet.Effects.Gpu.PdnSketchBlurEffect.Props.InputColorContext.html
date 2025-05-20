@@ -146,9 +146,11 @@ of this effect's rendering.</p>
 <div class="markdown level1 remarks"><p>If this property is set (is non-<code>null</code>, in other words), the image will be converted to linear
 gamma for some of the effect's internal rendering, while remaining in the original gamma (specified
 by this property) for other portions of rendering. The output of this effect will be in the color
-space defined by this property.<br><br>
+space defined by this property.<br>
+<br>
 This effect's rendering quality is optimal when the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnSketchBlurEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnSketchBlurEffect_Props_Input">Input</a> image has not been linearized,
-and this property is set to its (non-linearized) color context.<br><br>
+and this property is set to its (non-linearized) color context.<br>
+<br>
 For Paint.NET GPU effect plugins, this means you should specify <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>
 for the <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a> property in your <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_Gpu_GpuEffect_OnInitializeRenderInfo_PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_">OnInitializeRenderInfo(IGpuEffectRenderInfo)</a>
 implementation. You can then set this property with the value of <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_ColorContext">ColorContext</a>,

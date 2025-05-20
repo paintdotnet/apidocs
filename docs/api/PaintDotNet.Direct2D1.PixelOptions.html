@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PixelOptions ">
       
-      <meta name="description" content="Indicates how pixel shader sampling will be restricted.D2D1_PIXEL_OPTIONS">
+      <meta name="description" content="Indicates how pixel shader sampling will be restricted. D2D1_PIXEL_OPTIONS">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum PixelOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Indicates how pixel shader sampling will be restricted.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ne-d2d1effectauthor-d2d1_pixel_options">D2D1_PIXEL_OPTIONS</a></p>
+  <div class="markdown summary"><p>Indicates how pixel shader sampling will be restricted.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ne-d2d1effectauthor-d2d1_pixel_options">D2D1_PIXEL_OPTIONS</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,10 +116,12 @@ public enum PixelOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_PixelOptions_None"><code>None = 0</code></dt>
-    <dd><p>The pixel shader is not restricted in its sampling.</p>
+  
+  <dd><p>The pixel shader is not restricted in its sampling.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PixelOptions_TrivialSampling"><code>TrivialSampling = 1</code></dt>
-    <dd><p>The pixel shader samples inputs only at the same scene coordinate as the output pixel and
+  
+  <dd><p>The pixel shader samples inputs only at the same scene coordinate as the output pixel and
 returns transparent black whenever the input pixels are also transparent black.</p>
 </dd>
   </dl>

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GrayscaleEffect ">
       
-      <meta name="description" content="Converts an image to monochromatic gray. For more information, see Grayscale effect">
+      <meta name="description" content="Converts an image to monochromatic gray.  For more information, see Grayscale effect">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Class GrayscaleEffect
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Converts an image to monochromatic gray.<br><br>
+  <div class="markdown summary"><p>Converts an image to monochromatic gray.<br>
+<br>
 For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/grayscale-effect">Grayscale effect</a></p>
 </div>
   <div class="markdown conceptual"></div>
@@ -249,11 +250,13 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
 
   <h2 id="PaintDotNet_Direct2D1_Effects_GrayscaleEffect_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p><b>NOTE:</b> This effect works on sRGB (gamma 2.2) images. To correctly apply this effect to linear (gamma 1.0,
-aka &quot;scRGB&quot;) images, use GrayscaleEffect2 instead and set the InputGamma property to Linear.<br><br>
+aka &quot;scRGB&quot;) images, use GrayscaleEffect2 instead and set the InputGamma property to Linear.<br>
+<br>
 This effect calculates the <i>luma</i> for the image's color values, which is different than
 <i>luminance</i> which is calculated by the <a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminanceToAlphaEffect.html">LuminanceToAlphaEffect</a>.
 See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
-for more information.<br><br>
+for more information.<br>
+<br>
 This effect works correctly with both premultiplied and straight alpha images.</p>
 </div>
 

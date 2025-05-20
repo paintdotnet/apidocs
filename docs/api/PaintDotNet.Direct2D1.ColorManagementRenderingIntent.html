@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ColorManagementRenderingIntent ">
       
-      <meta name="description" content="Specifies which ICC rendering intent the Color management effect should use.D2D1_COLORMANAGEMENT_RENDERING_INTENT">
+      <meta name="description" content="Specifies which ICC rendering intent the Color management effect should use. D2D1_COLORMANAGEMENT_RENDERING_INTENT">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum ColorManagementRenderingIntent
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies which ICC rendering intent the Color management effect should use.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_colormanagement_rendering_intent">D2D1_COLORMANAGEMENT_RENDERING_INTENT</a></p>
+  <div class="markdown summary"><p>Specifies which ICC rendering intent the Color management effect should use.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_colormanagement_rendering_intent">D2D1_COLORMANAGEMENT_RENDERING_INTENT</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,18 +115,22 @@ Enum ColorManagementRenderingIntent
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_ColorManagementRenderingIntent_Perceptual"><code>Perceptual = 0</code></dt>
-    <dd><p>The effect compresses or expands the full color gamut of the image to fill the color gamut of
+  
+  <dd><p>The effect compresses or expands the full color gamut of the image to fill the color gamut of
 the device, so that gray balance is preserved but colorimetric accuracy may not be preserved.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_ColorManagementRenderingIntent_RelativeColorimetric"><code>RelativeColorimetric = 1</code></dt>
-    <dd><p>The effect preserves the chroma of colors in the image at the possible expense of hue and lightness.</p>
+  
+  <dd><p>The effect preserves the chroma of colors in the image at the possible expense of hue and lightness.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_ColorManagementRenderingIntent_Saturation"><code>Saturation = 2</code></dt>
-    <dd><p>The effect adjusts colors that fall outside the range of colors the output device renders to the
+  
+  <dd><p>The effect adjusts colors that fall outside the range of colors the output device renders to the
 closest color available. It does not preserve the white point.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_ColorManagementRenderingIntent_AbsoluteColorimetric"><code>AbsoluteColorimetric = 3</code></dt>
-    <dd><p>The effect adjusts any colors that fall outside the range that the output device can render to the
+  
+  <dd><p>The effect adjusts any colors that fall outside the range that the output device can render to the
 closest color that can be rendered. The effect does not change the other colors and preserves the
 white point.</p>
 </dd>

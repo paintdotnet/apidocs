@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum AlphaMode ">
       
-      <meta name="description" content="Specifies how the alpha value of a bitmap or render target should be treated.D2D1_ALPHA_MODE">
+      <meta name="description" content="Specifies how the alpha value of a bitmap or render target should be treated. D2D1_ALPHA_MODE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum AlphaMode
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies how the alpha value of a bitmap or render target should be treated.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/dcommon/ne-dcommon-d2d1_alpha_mode">D2D1_ALPHA_MODE</a></p>
+  <div class="markdown summary"><p>Specifies how the alpha value of a bitmap or render target should be treated.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dcommon/ne-dcommon-d2d1_alpha_mode">D2D1_ALPHA_MODE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,19 +115,23 @@ Enum AlphaMode
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_AlphaMode_Unknown"><code>Unknown = 0</code></dt>
-    <dd><p>The alpha value might not be meaningful.</p>
+  
+  <dd><p>The alpha value might not be meaningful.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_AlphaMode_Premultiplied"><code>Premultiplied = 1</code></dt>
-    <dd><p>The alpha value has been premultiplied. Each color is first scaled by the alpha value. The alpha value itself
+  
+  <dd><p>The alpha value has been premultiplied. Each color is first scaled by the alpha value. The alpha value itself
 is the same in both straight and premultiplied alpha. Typically, no color channel value is greater than the
 alpha channel value. If a color channel value in a premultiplied format is greater than the alpha channel,
 the standard source-over blending math results in an additive blend.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_AlphaMode_Straight"><code>Straight = 2</code></dt>
-    <dd><p>The alpha value has not been premultiplied. The alpha channel indicates the transparency of the color.</p>
+  
+  <dd><p>The alpha value has not been premultiplied. The alpha channel indicates the transparency of the color.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_AlphaMode_Ignore"><code>Ignore = 3</code></dt>
-    <dd><p>The alpha value is ignored.</p>
+  
+  <dd><p>The alpha value is ignored.</p>
 </dd>
   </dl>
 

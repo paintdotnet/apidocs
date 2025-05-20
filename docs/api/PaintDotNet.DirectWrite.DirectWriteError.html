@@ -113,57 +113,91 @@ Enum DirectWriteError
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FileFormat"><code>FileFormat = -2003283968</code></dt>
-    <dd><p>Indicates an error in an input file such as a font file.</p>
+  <dd><p>Indicates an error in an input file such as a font file.</p>
+<p>DWRITE_E_FILEFORMAT</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_Unexpected"><code>Unexpected = -2003283967</code></dt>
-    <dd><p>Indicates an error originating in DirectWrite code, which is not expected to occur but is safe to recover from.</p>
+  <dd><p>Indicates an error originating in DirectWrite code, which is not expected to occur but is safe to recover from.</p>
+<p>DWRITE_E_UNEXPECTED</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_NoFont"><code>NoFont = -2003283966</code></dt>
-    <dd><p>Indicates the specified font does not exist.</p>
+  <dd><p>Indicates the specified font does not exist.</p>
+<p>DWRITE_E_NOFONT</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_NoColor"><code>NoColor = -2003283956</code></dt>
-    <dd><p>Indicates that the font has no color information. This is returned from IDWriteFactory4::TranslateColorGlyphRun().</p>
+  <dd><p>Indicates that the font has no color information. This is returned from IDWriteFactory4::TranslateColorGlyphRun().</p>
+<p>DWRITE_E_NOCOLOR</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FileNotFound"><code>FileNotFound = -2003283965</code></dt>
-    <dd><p>A font file could not be opened because the file, directory, network location, drive, or other storage
+  <dd><p>A font file could not be opened because the file, directory, network location, drive, or other storage
 location does not exist or is unavailable.</p>
+<p>DWRITE_E_FILENOTFOUND</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FileAccess"><code>FileAccess = -2003283964</code></dt>
-    <dd><p>A font file exists but could not be opened due to access denied, sharing violation, or similar error.</p>
+  <dd><p>A font file exists but could not be opened due to access denied, sharing violation, or similar error.</p>
+<p>DWRITE_E_FILEACCESS</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FontCollectionObsolete"><code>FontCollectionObsolete = -2003283963</code></dt>
-    <dd><p>A font collection is obsolete due to changes in the system.</p>
+  <dd><p>A font collection is obsolete due to changes in the system.</p>
+<p>DWRITE_E_FONTCOLLECTIONOBSOLETE</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_AlreadyRegistered"><code>AlreadyRegistered = -2003283962</code></dt>
-    <dd><p>The given interface is already registered.</p>
+  <dd><p>The given interface is already registered.</p>
+<p>DWRITE_E_ALREADYREGISTERED</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_RemoteFont"><code>RemoteFont = -2003283955</code></dt>
-    <dd><p>The remote font could not be constructed.</p>
+  <dd><p>The remote font could not be constructed.</p>
+<p>DWRITE_E_REMOTEFONT</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FontCacheFormat"><code>FontCacheFormat = -2003283961</code></dt>
-    <dd><p>The font cache contains invalid data.</p>
+  <dd><p>The font cache contains invalid data.</p>
+<p>DWRITE_E_CACHEFORMAT</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FontCacheVersion"><code>FontCacheVersion = -2003283960</code></dt>
-    <dd><p>A font cache file corresponds to a different version of DirectWrite.</p>
+  <dd><p>A font cache file corresponds to a different version of DirectWrite.</p>
+<p>DWRITE_E_CACHEVERSION</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FontDownloadFailed"><code>FontDownloadFailed = -2003283953</code></dt>
-    <dd><p>The font download failed.</p>
+  <dd><p>The font download failed.</p>
+<p>DWRITE_E_DOWNLOADFAILED</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_TooManyFontDownloads"><code>TooManyFontDownloads = -2003283952</code></dt>
-    <dd><p>There are too many active font downloads.</p>
+  <dd><p>There are too many active font downloads.</p>
+<p>DWRITE_E_TOOMANYDOWNLOADS</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FontDownloadCancelled"><code>FontDownloadCancelled = -2003283954</code></dt>
-    <dd><p>The font download was cancelled.</p>
+  <dd><p>The font download was cancelled.</p>
+<p>DWRITE_E_DOWNLOADCANCELLED</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_UnsupportedOperation"><code>UnsupportedOperation = -2003283959</code></dt>
-    <dd><p>The operation is not supported for this type of font.</p>
+  <dd><p>The operation is not supported for this type of font.</p>
+<p>DWRITE_E_UNSUPPORTEDOPERATION</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_FlowDirectionConflicts"><code>FlowDirectionConflicts = -2003283957</code></dt>
-    <dd><p>The reading direction and flow direction must be 90 degrees orthogonal to each other.</p>
+  <dd><p>The reading direction and flow direction must be 90 degrees orthogonal to each other.</p>
+<p>DWRITE_E_FLOWDIRECTIONCONFLICTS</p>
 </dd>
+  
     <dt id="PaintDotNet_DirectWrite_DirectWriteError_TextRendererIncompatible"><code>TextRendererIncompatible = -2003283958</code></dt>
-    <dd><p>When setting a vertical text direction, you must pass an interface that implements IDWriteTextRenderer1.</p>
+  <dd><p>When setting a vertical text direction, you must pass an interface that implements IDWriteTextRenderer1.</p>
+<p>DWRITE_E_TEXTRENDERERINCOMPATIBLE</p>
 </dd>
+  
   </dl>
 
 

@@ -142,15 +142,18 @@ Property SecondaryColor
 
 
 <h4 class="section" id="PaintDotNet_Effects_IEffectEnvironment2_SecondaryColor_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This color can be used with IndirectUI by using a <a class="xref" href="PaintDotNet.PropertySystem.ManagedColorProperty.html">ManagedColorProperty</a>.<br><br>
+<div class="markdown level1 remarks"><p>This color can be used with IndirectUI by using a <a class="xref" href="PaintDotNet.PropertySystem.ManagedColorProperty.html">ManagedColorProperty</a>.<br>
+<br>
 This color can be converted to the color space necessary for a <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.html">GpuEffect</a>'s
 rendering with Direct2D by using the <a class="xref" href="PaintDotNet.Imaging.ManagedColorExtensions.Get.html#PaintDotNet_Imaging_ManagedColorExtensions_Get_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Direct2D1_IDeviceContext_">Get(ManagedColor, IDeviceContext)</a>
-extension method.<br><br>
+extension method.<br>
+<br>
 This color can be converted to the color space necessary for a <a class="xref" href="PaintDotNet.Effects.BitmapEffect.html">BitmapEffect</a>'s
 rendering by using either the <a class="xref" href="PaintDotNet.Imaging.ManagedColor.Get.html#PaintDotNet_Imaging_ManagedColor_Get_PaintDotNet_Imaging_IColorContext_">Get(IColorContext)</a> method or the
 <a class="xref" href="PaintDotNet.Imaging.ManagedColorExtensions.GetBgra32.html#PaintDotNet_Imaging_ManagedColorExtensions_GetBgra32_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Imaging_IColorContext_">GetBgra32(ManagedColor, IColorContext)</a> extension method.
 Use the <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> provided by the <code>Environment.Document.ColorContext</code>
-property.<br><br>
+property.<br>
+<br>
 For UI purposes, which usually uses the sRGB color space, you can use the
 <a class="xref" href="PaintDotNet.Imaging.ManagedColorExtensions.GetSrgb.html#PaintDotNet_Imaging_ManagedColorExtensions_GetSrgb_PaintDotNet_Imaging_ManagedColor_">GetSrgb(ManagedColor)</a> extension method.</p>
 </div>

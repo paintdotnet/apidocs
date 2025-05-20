@@ -164,7 +164,8 @@ Interface IGpuEffectDocumentInfo2
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_ColorContext">ColorContext</a></dt>
     <dd><p>Gets the Direct2D color context of the document, which defines the working space (color space)
-of the document and layer <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a>s, and for the effect's rendering.<br><br>
+of the document and layer <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectInputImage.html">IGpuEffectInputImage</a>s, and for the effect's rendering.<br>
+<br>
 This is affected by the effect's <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.html">GpuEffectColorContext</a>, which can be changed by
 overriding the <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_Gpu_GpuEffect_OnInitializeRenderInfo_PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_">OnInitializeRenderInfo(IGpuEffectRenderInfo)</a> method and
 setting the <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a> property. The default is <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a>,

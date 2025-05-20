@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ShadowOptimization ">
       
-      <meta name="description" content="The level of performance optimization for the Shadow effect.D2D1_SHADOW_OPTIMIZATION">
+      <meta name="description" content="The level of performance optimization for the Shadow effect. D2D1_SHADOW_OPTIMIZATION">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum ShadowOptimization
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The level of performance optimization for the Shadow effect.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_shadow_optimization">D2D1_SHADOW_OPTIMIZATION</a></p>
+  <div class="markdown summary"><p>The level of performance optimization for the Shadow effect.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_shadow_optimization">D2D1_SHADOW_OPTIMIZATION</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,13 +115,16 @@ Enum ShadowOptimization
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_ShadowOptimization_Speed"><code>Speed = 0</code></dt>
-    <dd><p>Applies internal optimizations such as pre-scaling at relatively small radii. Uses linear filtering.</p>
+  
+  <dd><p>Applies internal optimizations such as pre-scaling at relatively small radii. Uses linear filtering.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_ShadowOptimization_Balanced"><code>Balanced = 1</code></dt>
-    <dd><p>Uses the same optimization thresholds as Speed mode, but uses trilinear filtering.</p>
+  
+  <dd><p>Uses the same optimization thresholds as Speed mode, but uses trilinear filtering.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_ShadowOptimization_Quality"><code>Quality = 2</code></dt>
-    <dd><p>Only uses internal optimizations with large blur radii, where approximations are less likely to be visible. Uses trilinear filtering.</p>
+  
+  <dd><p>Only uses internal optimizations with large blur radii, where approximations are less likely to be visible. Uses trilinear filtering.</p>
 </dd>
   </dl>
 

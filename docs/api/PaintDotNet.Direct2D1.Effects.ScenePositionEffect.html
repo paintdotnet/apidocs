@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ScenePositionEffect ">
       
-      <meta name="description" content="An effect whose output at each location is the scene position. This can be useful for sample map effects that take a sample map as input, and produce a sample map as an output. If this effect is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as the Input image. The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 }, instead of whole-integer offsets, such as { x = 0, y = 0 }. If you prefer to have whole-integer offsets, pass the output of this effect to an  with the Function property set to .">
+      <meta name="description" content="An effect whose output at each location is the scene position. This can be useful for sample map effects that take a sample map as input, and produce a sample map as an output. If this effect is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as the Input image.  The scene position enumerates center-of-pixel offsets, such as { x = 0.5, y = 0.5 }, instead of whole-integer offsets, such as { x = 0, y = 0 }. If you prefer to have whole-integer offsets, pass the output of this effect to an  with the Function property set to .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -96,7 +96,8 @@ Class ScenePositionEffect
   <div class="markdown summary"><p>An effect whose output at each location is the scene position. This can be useful for sample map
 effects that take a sample map as input, and produce a sample map as an output. If this effect
 is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as
-the Input image.<br><br>
+the Input image.<br>
+<br>
 The scene position enumerates center-of-pixel offsets, such as <code>{ x = 0.5, y = 0.5 }</code>,
 instead of whole-integer offsets, such as <code>{ x = 0, y = 0 }</code>. If you prefer to have
 whole-integer offsets, pass the output of this effect to an <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.html">HlslUnaryFunctionEffect</a>

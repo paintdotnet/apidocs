@@ -115,28 +115,36 @@ All Direct2D InterpolationMode enums (e.g. <a class="xref" href="PaintDotNet.Dir
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_NearestNeighbor"><code>NearestNeighbor = 0</code></dt>
-    <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
+  
+  <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_Linear"><code>Linear = 1</code></dt>
-    <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_Cubic"><code>Cubic = 2</code></dt>
-    <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_MultisampleLinear"><code>MultisampleLinear = 3</code></dt>
-    <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
+  
+  <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_Anisotropic"><code>Anisotropic = 4</code></dt>
-    <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
+  
+  <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_HighQualityCubic"><code>HighQualityCubic = 5</code></dt>
-    <dd><p>Uses a variable size high quality cubic kernel to perform a pre-downscale of the image if downscaling is involved in the transform matrix. Then uses the cubic interpolation mode for the final output.</p>
+  
+  <dd><p>Uses a variable size high quality cubic kernel to perform a pre-downscale of the image if downscaling is involved in the transform matrix. Then uses the cubic interpolation mode for the final output.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_Fant"><code>Fant = 6</code></dt>
-    <dd><p>Uses the WIC Fant interpolation, the same as the IWICBitmapScaler interface. Doesn't generate a mipmap.</p>
+  
+  <dd><p>Uses the WIC Fant interpolation, the same as the IWICBitmapScaler interface. Doesn't generate a mipmap.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_InterpolationModeDefinition_MipmapLinear"><code>MipmapLinear = 7</code></dt>
-    <dd><p>Generates mipmap chain in system memory using bilinear interpolation. For each mipmap the effect scales to the nearest multiple of 0.5 using bilinear interpolation and then scales the remaining amount using linear interpolation.</p>
+  
+  <dd><p>Generates mipmap chain in system memory using bilinear interpolation. For each mipmap the effect scales to the nearest multiple of 0.5 using bilinear interpolation and then scales the remaining amount using linear interpolation.</p>
 </dd>
   </dl>
 

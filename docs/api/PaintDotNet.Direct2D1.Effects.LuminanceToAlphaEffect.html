@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LuminanceToAlphaEffect ">
       
-      <meta name="description" content="Use the luminance to alpha effect to set the alpha channel to the luminance of the image and sets the color channels to 0. You can use the output of this effect to make a semitransparent overlay based on the brightness of the input image. Or you can use it to make an image mask. This effect sets the alpha channel of the output to the luminance of the input image using this color matrix:                                  R&#39;  G&#39;  B&#39;      A&#39;                               ┌                     ┐                               │   0   0   0  0.2125 │  R                               │   0   0   0  0.7154 │  G [R&#39; G&#39; B&#39; A&#39;] = [R G B A 1] * │   0   0   0  0.0721 │  B                               │   0   0   0       0 │  A                               │   0   0   0       0 │  1                               └                     ┘ This effect consumes and outputs premultiplied alpha images. The effect won&#39;t work on straight alpha images unless they are fully opaque. This effect calculates the luminance for the image&#39;s color values, which is different than luma which is calculated by . See Difference between Luma and Luminance for more information.NOTE: Because images are stored in a gamma-compensated format, before you calculate the luminance for an image you should first perform inverse gamma correction to get the true color values for the image. Since images are normally stored at 2.2 gamma, you can use  with an exponent of (1/2.2) and then use the output of that effect. For more information, see Luminance to alpha effect">
+      <meta name="description" content="Use the luminance to alpha effect to set the alpha channel to the luminance of the image and sets the color channels to 0. You can use the output of this effect to make a semitransparent overlay based on the brightness of the input image. Or you can use it to make an image mask. This effect sets the alpha channel of the output to the luminance of the input image using this color matrix:                                  R&#39;  G&#39;  B&#39;      A&#39;                               ┌                     ┐                               │   0   0   0  0.2125 │  R                               │   0   0   0  0.7154 │  G [R&#39; G&#39; B&#39; A&#39;] = [R G B A 1] * │   0   0   0  0.0721 │  B                               │   0   0   0       0 │  A                               │   0   0   0       0 │  1                               └                     ┘  This effect consumes and outputs premultiplied alpha images. The effect won&#39;t work on straight alpha images unless they are fully opaque.  This effect calculates the luminance for the image&#39;s color values, which is different than luma which is calculated by . See Difference between Luma and Luminance for more information.  NOTE: Because images are stored in a gamma-compensated format, before you calculate the luminance for an image you should first perform inverse gamma correction to get the true color values for the image. Since images are normally stored at 2.2 gamma, you can use  with an exponent of (1/2.2) and then use the output of that effect.  For more information, see Luminance to alpha effect">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -105,17 +105,22 @@ color matrix:</p>
 [R' G' B' A'] = [R G B A 1] * │   0   0   0  0.0721 │  B
                               │   0   0   0       0 │  A
                               │   0   0   0       0 │  1
-                              └                     ┘</code></pre><br>
-<p>This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
-alpha images unless they are fully opaque.<br><br>
+                              └                     ┘</code></pre>
+<br>
+This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
+alpha images unless they are fully opaque.<br>
+<br>
 This effect calculates the <i>luminance</i> for the image's color values, which is different than
 <i>luma</i> which is calculated by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>.
 See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
-for more information.<br><br><b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
+for more information.<br>
+<br>
+<b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
 luminance for an image you should first perform inverse gamma correction to get the true color
 values for the image. Since images are normally stored at 2.2 gamma, you can use <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a>
-with an exponent of (1/2.2) and then use the output of that effect.<br><br>
-For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a></p>
+with an exponent of (1/2.2) and then use the output of that effect.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a>
 </div>
   <div class="markdown conceptual"></div>
 

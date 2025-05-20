@@ -210,7 +210,8 @@ The default value is <a class="xref" href="PaintDotNet.Direct2D1.BorderMode.html
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MapIsNormalized.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MapIsNormalized">MapIsNormalized</a></dt>
-    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a> input image is normalized.<br><br>
+    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a> input image is normalized.<br>
+<br>
 If this value is true, the map's alpha values are expected to be in the range [0, 1]. The standard deviation
 at each pixel will be the map's alpha value multiplied by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a>.
 <br>
@@ -222,7 +223,8 @@ The default value is <code>true</code>, which affords easily using the output of
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a></dt>
     <dd><p>Specifies the maximum blur radius (standard deviation) that is rendered. If the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a>
-contains pixels specifying a standard deviation larger than this value, then they will be clamped to this value.<br><br>
+contains pixels specifying a standard deviation larger than this value, then they will be clamped to this value.<br>
+<br>
 The range of this value is [0, 100]. The default value is 10.</p>
 </dd>
   </dl>
@@ -235,7 +237,8 @@ The range of this value is [0, 100]. The default value is 10.</p>
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationLevels.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationLevels">StandardDeviationLevels</a></dt>
     <dd><p>Specifies the number of blur levels to be rendered. The image will be blurred this many times with
 an increasing blur radius based on the value of <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a>. Increasing this
-value will improve quality, but also reduce performance.<br><br>
+value will improve quality, but also reduce performance.<br>
+<br>
 The range of this value is [1, 30]. The default value is 10.</p>
 </dd>
   </dl>

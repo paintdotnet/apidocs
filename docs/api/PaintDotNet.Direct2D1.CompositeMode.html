@@ -115,44 +115,70 @@ and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/composite">
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_CompositeMode_SourceOver"><code>SourceOver = 0</code></dt>
-    <dd><p>The standard source-over-destination blend mode.</p>
+  <dd><p>The standard source-over-destination blend mode.</p>
+<p>O = S + (1 - SA) * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_DestinationOver"><code>DestinationOver = 1</code></dt>
-    <dd><p>The destination is rendered over the source.</p>
+  <dd><p>The destination is rendered over the source.</p>
+<p>O = (1 - DA) * S + D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_SourceIn"><code>SourceIn = 2</code></dt>
-    <dd><p>Performs a logical clip of the source pixels against the destination pixels.</p>
+  <dd><p>Performs a logical clip of the source pixels against the destination pixels.</p>
+<p>O = DA * S</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_DestinationIn"><code>DestinationIn = 3</code></dt>
-    <dd><p>The inverse of the SourceIn operation.</p>
+  <dd><p>The inverse of the SourceIn operation.</p>
+<p>O = SA * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_SourceOut"><code>SourceOut = 4</code></dt>
-    <dd><p>The logical inverse of the SourceIn operation.</p>
+  <dd><p>The logical inverse of the SourceIn operation.</p>
+<p>O = (1 - DA) * S</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_DestinationOut"><code>DestinationOut = 5</code></dt>
-    <dd><p>The logical inverse to the DestinationIn operation.</p>
+  <dd><p>The logical inverse to the DestinationIn operation.</p>
+<p>O = (1 - SA) * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_SourceAtop"><code>SourceAtop = 6</code></dt>
-    <dd><p>Writes the source pixels over the destination where there are destination pixels.</p>
+  <dd><p>Writes the source pixels over the destination where there are destination pixels.</p>
+<p>O = DA * S + (1 - SA) * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_DestinationAtop"><code>DestinationAtop = 7</code></dt>
-    <dd><p>The logical inverse of the SourceAtop operation.</p>
+  <dd><p>The logical inverse of the SourceAtop operation.</p>
+<p>O = (1 - DA) * S + SA * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_Xor"><code>Xor = 8</code></dt>
-    <dd><p>The source is inverted with the destination.</p>
+  <dd><p>The source is inverted with the destination.</p>
+<p>O = (1 - DA) * S + (1 - SA) * D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_Plus"><code>Plus = 9</code></dt>
-    <dd><p>The channel components are summed.</p>
+  <dd><p>The channel components are summed.</p>
+<p>O = S + D</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_SourceCopy"><code>SourceCopy = 10</code></dt>
-    <dd><p>The source is copied to the destination; the destination pixels are ignored.</p>
+  <dd><p>The source is copied to the destination; the destination pixels are ignored.</p>
+<p>O = S</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_BoundedSourceCopy"><code>BoundedSourceCopy = 11</code></dt>
-    <dd><p>Equivalent to SourceCopy, but pixels outside of the source bounds are unchanged.</p>
+  <dd><p>Equivalent to SourceCopy, but pixels outside of the source bounds are unchanged.</p>
+<p>O = S (only where source exists)</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_CompositeMode_MaskInvert"><code>MaskInvert = 12</code></dt>
-    <dd><p>Destination colors are inverted according to a source mask.</p>
+  <dd><p>Destination colors are inverted according to a source mask.</p>
+<p>O = (1 - DA) * S + (1 - SA) * D</p>
 </dd>
+  
   </dl>
 
 

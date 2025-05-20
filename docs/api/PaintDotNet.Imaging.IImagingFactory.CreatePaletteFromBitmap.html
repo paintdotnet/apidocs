@@ -158,8 +158,10 @@ Method CreatePaletteFromBitmap
 in the bitmap. The algorithm operates on the opaque RGB color value of each pixel in the reference
 bitmap and hence ignores any alpha values. If a transparent color is required, set the <code class="paramref">addTransparentColor</code>
 to true and one fewer optimized color will be computed, reducing the colorCount, and a fully transparent
-color entry will be added.<br><br>
-This method uses the <a href="https://en.wikipedia.org/wiki/Median_cut">Median Cut algorithm</a> for palette generation.<br><br>
+color entry will be added.<br>
+<br>
+This method uses the <a href="https://en.wikipedia.org/wiki/Median_cut">Median Cut algorithm</a> for palette generation.<br>
+<br>
 This method is a wrapper around <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicpalette-initializefrombitmap">IWICPalette::InitializeFromBitmap()</a>.</p>
 </div>
 

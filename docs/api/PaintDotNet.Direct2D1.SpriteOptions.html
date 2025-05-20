@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum SpriteOptions ">
       
-      <meta name="description" content="Specifies additional aspects of how a sprite batch is to be drawn.D2D1_SPRITE_OPTIONS">
+      <meta name="description" content="Specifies additional aspects of how a sprite batch is to be drawn. D2D1_SPRITE_OPTIONS">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum SpriteOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies additional aspects of how a sprite batch is to be drawn.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/ne-d2d1_3-d2d1_sprite_options">D2D1_SPRITE_OPTIONS</a></p>
+  <div class="markdown summary"><p>Specifies additional aspects of how a sprite batch is to be drawn.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/ne-d2d1_3-d2d1_sprite_options">D2D1_SPRITE_OPTIONS</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,10 +116,12 @@ public enum SpriteOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_SpriteOptions_None"><code>None = 0</code></dt>
-    <dd><p>Default value. No special drawing configuration. This option yields the best drawing performance.</p>
+  
+  <dd><p>Default value. No special drawing configuration. This option yields the best drawing performance.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_SpriteOptions_ClampToSourceRectangle"><code>ClampToSourceRectangle = 1</code></dt>
-    <dd><p>Interpolation of bitmap pixels will be clamped to the sprite’s source rectangle.
+  
+  <dd><p>Interpolation of bitmap pixels will be clamped to the sprite’s source rectangle.
 If the sub-images in your source bitmap have no pixels separating them, then you may see color bleeding
 when drawing them with D2D1_SPRITE_OPTIONS_NONE. In that case, consider adding borders between them with
 your sprite-packing tool, or use this option. Note that drawing sprites with this option enabled is

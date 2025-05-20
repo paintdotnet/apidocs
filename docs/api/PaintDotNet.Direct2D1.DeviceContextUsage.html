@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum DeviceContextUsage ">
       
-      <meta name="description" content="Describes how a device context is remoted and whether it should be GDI-compatible. This enumeration allows a bitwise combination of its member values.D2D1_RENDER_TARGET_USAGE">
+      <meta name="description" content="Describes how a device context is remoted and whether it should be GDI-compatible. This enumeration allows a bitwise combination of its member values. D2D1_RENDER_TARGET_USAGE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum DeviceContextUsage
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes how a device context is remoted and whether it should be GDI-compatible. This enumeration allows a bitwise combination of its member values.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_render_target_usage">D2D1_RENDER_TARGET_USAGE</a></p>
+  <div class="markdown summary"><p>Describes how a device context is remoted and whether it should be GDI-compatible. This enumeration allows a bitwise combination of its member values.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_render_target_usage">D2D1_RENDER_TARGET_USAGE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,13 +116,16 @@ public enum DeviceContextUsage</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_DeviceContextUsage_None"><code>None = 0</code></dt>
-    <dd><p>The render target attempts to use Direct3D command-stream remoting and uses bitmap remoting if stream remoting fails. The render target is not GDI-compatible.</p>
+  
+  <dd><p>The render target attempts to use Direct3D command-stream remoting and uses bitmap remoting if stream remoting fails. The render target is not GDI-compatible.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DeviceContextUsage_ForceBitmapRemoting"><code>ForceBitmapRemoting = 1</code></dt>
-    <dd><p>The render target renders content locally and sends it to the terminal services client as a bitmap.</p>
+  
+  <dd><p>The render target renders content locally and sends it to the terminal services client as a bitmap.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DeviceContextUsage_GdiCompatible"><code>GdiCompatible = 2</code></dt>
-    <dd><p>The render target can be used efficiently with GDI.</p>
+  
+  <dd><p>The render target can be used efficiently with GDI.</p>
 </dd>
   </dl>
 

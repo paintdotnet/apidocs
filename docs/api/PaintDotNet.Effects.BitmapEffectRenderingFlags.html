@@ -114,24 +114,35 @@ public enum BitmapEffectRenderingFlags : ulong</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_None"><code>None = 0</code></dt>
-    <dd></dd>
+  
+  <dd></dd>
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_SingleThreaded"><code>SingleThreaded = 1</code></dt>
-    <dd><p>Only one thread will be used for rendering the effect.</p>
+  
+  <dd><p>Only one thread will be used for rendering the effect.</p>
 </dd>
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_DisableSelectionClipping"><code>DisableSelectionClipping = 2</code></dt>
-    <dd><p>An effect's rendering is normally clipped (masked) by the active selection. This flag disables that,
+  <dd><p>An effect's rendering is normally clipped (masked) by the active selection. This flag disables that,
 giving the effect access to the entire output buffer.</p>
+<p>The selection data provided by Environment.Selection is not affected by this flag.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_ForceAliasedSelectionQuality"><code>ForceAliasedSelectionQuality = 4</code></dt>
-    <dd><p>The active selection will be rendered without antialiasing, as if the user had chosen pixelated
+  <dd><p>The active selection will be rendered without antialiasing, as if the user had chosen pixelated
 selection quality in the toolbar.</p>
+<p>The selection data provided by Environment.Selection will be pixelated, even if the user
+had not chosen pixelated selection quality in the toolbar.<br>
+It is recommended to use the DisableSelectionClipping flag instead of this one, which will enable
+access to the full quality selection.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_FirstTileIsRenderedWithBarrier"><code>FirstTileIsRenderedWithBarrier = 8</code></dt>
-    <dd><p>Enabling this causes the first tile (that is, the first call to Render) to happen in a single-
+  
+  <dd><p>Enabling this causes the first tile (that is, the first call to Render) to happen in a single-
 threaded manner. No other threads will be activated until after the first Render call completes.</p>
 </dd>
     <dt id="PaintDotNet_Effects_BitmapEffectRenderingFlags_UninitializedOutputBuffer"><code>UninitializedOutputBuffer = 16</code></dt>
-    <dd><p>Enabling this causes the effect system to not zero-fill the output buffer before sending it
+  
+  <dd><p>Enabling this causes the effect system to not zero-fill the output buffer before sending it
 to <a class="xref" href="PaintDotNet.Effects.BitmapEffect.OnRender.html#PaintDotNet_Effects_BitmapEffect_OnRender_PaintDotNet_Effects_IBitmapEffectOutput_">OnRender(IBitmapEffectOutput)</a>. If the effect implementation always
 sets every output pixel this can improve performance a little. If the effect does not set
 every output pixel, then the output contents are undefined and there will be rendering artifacts.</p>

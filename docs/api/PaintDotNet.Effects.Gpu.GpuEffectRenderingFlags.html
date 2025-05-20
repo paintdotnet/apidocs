@@ -114,15 +114,23 @@ public enum GpuEffectRenderingFlags : ulong</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_GpuEffectRenderingFlags_None"><code>None = 0</code></dt>
-    <dd></dd>
+  
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_GpuEffectRenderingFlags_DisableSelectionClipping"><code>DisableSelectionClipping = 2</code></dt>
-    <dd><p>An effect's rendering is normally clipped (masked) by the active selection. This flag disables that,
+  <dd><p>An effect's rendering is normally clipped (masked) by the active selection. This flag disables that,
 giving the effect access to the entire output buffer.</p>
+<p>The selection data provided by Environment.Selection is not affected by this flag.</p>
 </dd>
+  
     <dt id="PaintDotNet_Effects_Gpu_GpuEffectRenderingFlags_ForceAliasedSelectionQuality"><code>ForceAliasedSelectionQuality = 4</code></dt>
-    <dd><p>The active selection will be rendered without antialiasing, as if the user had chosen pixelated
+  <dd><p>The active selection will be rendered without antialiasing, as if the user had chosen pixelated
 selection quality in the toolbar.</p>
+<p>The selection data provided by Environment.Selection will be pixelated, even if the user
+had not chosen pixelated selection quality in the toolbar.<br>
+It is recommended to use the DisableSelectionClipping flag instead of this one, which will enable
+access to the full quality selection.</p>
 </dd>
+  
   </dl>
 
 

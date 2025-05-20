@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConvertGammaEffect ">
       
-      <meta name="description" content="This effect is used to convert the gamma of an input image. Conversion can be done from sRGB to Linear, Linear to sRGB, or a custom exponent can be used. Conversion between sRGB and Linear uses the  or , which implements a gamma exponent approximately equal to 2.2. See The sRGB Learning Curve for more information. If a custom exponent is used, then  is used. Images are usually encoded using sRGB, and most effects are implemented in the Linear gamma space. Therefore, it is more accurate to convert an image from sRGB to Linear before other effects are used for processing. The image should then be converted back from Linear to sRGB.">
+      <meta name="description" content="This effect is used to convert the gamma of an input image. Conversion can be done from sRGB to Linear, Linear to sRGB, or a custom exponent can be used.  Conversion between sRGB and Linear uses the  or , which implements a gamma exponent approximately equal to 2.2. See The sRGB Learning Curve for more information.  If a custom exponent is used, then  is used.  Images are usually encoded using sRGB, and most effects are implemented in the Linear gamma space. Therefore, it is more accurate to convert an image from sRGB to Linear before other effects are used for processing. The image should then be converted back from Linear to sRGB.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,12 +94,15 @@ Class ConvertGammaEffect
   </div>
 
   <div class="markdown summary"><p>This effect is used to convert the gamma of an input image. Conversion can be done from sRGB to Linear,
-Linear to sRGB, or a custom exponent can be used.<br><br>
+Linear to sRGB, or a custom exponent can be used.<br>
+<br>
 Conversion between sRGB and Linear uses the <a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a> or <a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.html">LinearToSrgbEffect</a>,
 which implements a gamma exponent approximately equal to 2.2. See
 <a href="https://medium.com/@tomforsyth/the-srgb-learning-curve-773b7f68cf7a">The sRGB Learning Curve</a>
-for more information.<br><br>
-If a custom exponent is used, then <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.html">GammaTransferEffect2</a> is used.<br><br>
+for more information.<br>
+<br>
+If a custom exponent is used, then <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.html">GammaTransferEffect2</a> is used.<br>
+<br>
 Images are usually encoded using sRGB, and most effects are implemented in the Linear gamma space. Therefore,
 it is more accurate to convert an image from sRGB to Linear before other effects are used for processing.
 The image should then be converted back from Linear to sRGB.</p>

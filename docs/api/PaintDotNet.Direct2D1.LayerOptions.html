@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum LayerOptions ">
       
-      <meta name="description" content="Specifies how the layer contents should be prepared.D2D1_LAYER_OPTIONS1">
+      <meta name="description" content="Specifies how the layer contents should be prepared. D2D1_LAYER_OPTIONS1">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum LayerOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies how the layer contents should be prepared.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1">D2D1_LAYER_OPTIONS1</a></p>
+  <div class="markdown summary"><p>Specifies how the layer contents should be prepared.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1">D2D1_LAYER_OPTIONS1</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,13 +116,16 @@ public enum LayerOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_LayerOptions_None"><code>None = 0</code></dt>
-    <dd><p>Default layer behavior. A premultiplied layer target is pushed and its contents are cleared to transparent black.</p>
+  
+  <dd><p>Default layer behavior. A premultiplied layer target is pushed and its contents are cleared to transparent black.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_LayerOptions_InitializeFromBackground"><code>InitializeFromBackground = 1</code></dt>
-    <dd><p>The layer is not cleared to transparent black.</p>
+  
+  <dd><p>The layer is not cleared to transparent black.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_LayerOptions_IgnoreAlpha"><code>IgnoreAlpha = 2</code></dt>
-    <dd><p>The layer is always created as ignore alpha. All content rendered into the layer will be treated as opaque.</p>
+  
+  <dd><p>The layer is always created as ignore alpha. All content rendered into the layer will be treated as opaque.</p>
 </dd>
   </dl>
 

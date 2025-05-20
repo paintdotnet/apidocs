@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum StraightenScaleMode ">
       
-      <meta name="description" content="Values for the ScaleMode property of the Straighten effect.D2D1_STRAIGHTEN_SCALE_MODE">
+      <meta name="description" content="Values for the ScaleMode property of the Straighten effect. D2D1_STRAIGHTEN_SCALE_MODE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum StraightenScaleMode
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Values for the ScaleMode property of the Straighten effect.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_scale_mode">D2D1_STRAIGHTEN_SCALE_MODE</a></p>
+  <div class="markdown summary"><p>Values for the ScaleMode property of the Straighten effect.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_scale_mode">D2D1_STRAIGHTEN_SCALE_MODE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,19 +115,24 @@ Enum StraightenScaleMode
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_StraightenScaleMode_NearestNeighbor"><code>NearestNeighbor = 0</code></dt>
-    <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
+  
+  <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_StraightenScaleMode_Linear"><code>Linear = 1</code></dt>
-    <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_StraightenScaleMode_Cubic"><code>Cubic = 2</code></dt>
-    <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_StraightenScaleMode_MultisampleLinear"><code>MultisampleLinear = 3</code></dt>
-    <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
+  
+  <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_StraightenScaleMode_Anisotropic"><code>Anisotropic = 4</code></dt>
-    <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
+  
+  <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
 </dd>
   </dl>
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PerspectiveTransform3DInterpolationMode ">
       
-      <meta name="description" content="The interpolation mode the PerspectiveTransform3D effect uses on the image. There are 5 scale modes that range in quality and speed.D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE">
+      <meta name="description" content="The interpolation mode the PerspectiveTransform3D effect uses on the image. There are 5 scale modes that range in quality and speed. D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum PerspectiveTransform3DInterpolationMode
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The interpolation mode the PerspectiveTransform3D effect uses on the image. There are 5 scale modes that range in quality and speed.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_3dperspectivetransform_interpolation_mode">D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE</a></p>
+  <div class="markdown summary"><p>The interpolation mode the PerspectiveTransform3D effect uses on the image. There are 5 scale modes that range in quality and speed.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_3dperspectivetransform_interpolation_mode">D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,19 +115,24 @@ Enum PerspectiveTransform3DInterpolationMode
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_PerspectiveTransform3DInterpolationMode_NearestNeighbor"><code>NearestNeighbor = 0</code></dt>
-    <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
+  
+  <dd><p>Samples the nearest single point and uses that. This mode uses less processing time, but outputs the lowest quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PerspectiveTransform3DInterpolationMode_Linear"><code>Linear = 1</code></dt>
-    <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a four point sample and linear interpolation. This mode uses more processing time than the nearest neighbor mode, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PerspectiveTransform3DInterpolationMode_Cubic"><code>Cubic = 2</code></dt>
-    <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
+  
+  <dd><p>Uses a 16 sample cubic kernel for interpolation. This mode uses the most processing time, but outputs a higher quality image.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PerspectiveTransform3DInterpolationMode_MultisampleLinear"><code>MultisampleLinear = 3</code></dt>
-    <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
+  
+  <dd><p>Uses 4 linear samples within a single pixel for good edge anti-aliasing. This mode is good for scaling down by small amounts on images with few pixels.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PerspectiveTransform3DInterpolationMode_Anisotropic"><code>Anisotropic = 4</code></dt>
-    <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
+  
+  <dd><p>Uses anisotropic filtering to sample a pattern according to the transformed shape of the bitmap.</p>
 </dd>
   </dl>
 

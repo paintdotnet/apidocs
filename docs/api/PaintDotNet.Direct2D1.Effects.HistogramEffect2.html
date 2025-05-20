@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class HistogramEffect2 ">
       
-      <meta name="description" content="Similar to , but processes all channels and outputs an array of  counts instead of normalized  values. The alpha format of the input can also be specified as straight or premultiplied, and the maximum number of bins is 4096 instead of 1024. This effect does not produce an image output. Instead, its results are available through the  property after it has been drawn with . You can also use the RunAnalysisEffect extension method.">
+      <meta name="description" content="Similar to , but processes all channels and outputs an array of  counts instead of normalized  values. The alpha format of the input can also be specified as straight or premultiplied, and the maximum number of bins is 4096 instead of 1024.  This effect does not produce an image output. Instead, its results are available through the  property after it has been drawn with . You can also use the RunAnalysisEffect extension method.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -96,7 +96,8 @@ Class HistogramEffect2
   <div class="markdown summary"><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.html">HistogramEffect</a>, but processes all channels and outputs an array
 of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> counts instead of normalized <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> values. The alpha
 format of the input can also be specified as straight or premultiplied, and the maximum
-number of bins is 4096 instead of 1024.<br><br>
+number of bins is 4096 instead of 1024.<br>
+<br>
 This effect does not produce an image output. Instead, its results are available through
 the <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_HistogramOutput">HistogramOutput</a> property after it has been drawn
 with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a>. You can also use the <code>RunAnalysisEffect</code>

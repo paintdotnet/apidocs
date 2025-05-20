@@ -114,33 +114,51 @@ public enum BitmapImageOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_Default"><code>Default = 0</code></dt>
-    <dd><p>The default option, which selects an appropriate image creation strategy based on how large the bitmap is, whether
+  <dd><p>The default option, which selects an appropriate image creation strategy based on how large the bitmap is, whether
 it is an IBitmapSource or IBitmap, the amount of available GPU memory, and whether the device context is using
-hardware or software rendering.<br><br>
+hardware or software rendering.<br>
+<br>
 Depending on which strategy is used to create the image for the device context, the bitmap may be copied to the
-GPU (cached), or streamed during rendering.<br><br>
+GPU (cached), or streamed during rendering.<br>
+<br>
 The bitmap's colors will be converted to the color space of the device context, if available and if possible,
 unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion">DisableColorSpaceConversion</a> option is specified. The <a class="xref" href="PaintDotNet.Direct2D1.IBitmapImage.html">IBitmapImage</a> instance
-will have its <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property set for the appropriate color space.<br><br>
+will have its <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property set for the appropriate color space.<br>
+<br>
 The image will use premultiplied alpha unless the <a class="xref" href="PaintDotNet.Direct2D1.BitmapImageOptions.html#PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha">UseStraightAlpha</a> option is specified. The bitmap
-will be premultiplied or unpremultiplied as necessary.<br><br><b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
+will be premultiplied or unpremultiplied as necessary.<br>
+<br>
+<b>NOTE: The bitmap should not be modified after the image is created in order to guarantee correct rendering
 results.</b> If the bitmap is modified after the image is created, results are undefined.<br></p>
+<p>This is the recommended option for the best balance between performance and memory consumption.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_DoNotCache"><code>DoNotCache = 1</code></dt>
-    <dd><p>The source bitmap is not copied to the GPU. Instead, it is streamed on-demand as portions of it are needed for
+  <dd><p>The source bitmap is not copied to the GPU. Instead, it is streamed on-demand as portions of it are needed for
 rendering. If the same portion of the bitmap is rendered multiple times, it will be streamed again. No caching
 is used.</p>
+<p>This option guarantees the least memory consumption, but not the best performance, especially when the device
+context is using hardware rendering. The source bitmap should not be modified after the image is created in order
+to guarantee consistent rendering results.<br>
+<br>
+This option can be appropriate if the image will only be rendered exactly once.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_UseStraightAlpha"><code>UseStraightAlpha = 2</code></dt>
-    <dd><p>This option ensures that the image uses straight alpha instead of premultiplied alpha. If the bitmap is in
+  
+  <dd><p>This option ensures that the image uses straight alpha instead of premultiplied alpha. If the bitmap is in
 a premultiplied alpha format then it will be unpremultiplied. If the bitmap is in a straight alpha format
 then it will not be premultiplied.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapImageOptions_DisableColorSpaceConversion"><code>DisableColorSpaceConversion = 4</code></dt>
-    <dd><p>Use this option to prevent the image from being converted to the device context's color space.
+  <dd><p>Use this option to prevent the image from being converted to the device context's color space.
 This is usually only needed for advanced scenarios where you are performing your own color
 management.</p>
+<p>When this option is specified, the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property will
+either be the color context supplied to CreateImageFromBitmap(), or the default color context
+for the bitmap's pixel format.<br></p>
 </dd>
+  
   </dl>
 
 

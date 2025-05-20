@@ -120,9 +120,13 @@ Property DoubleBufferedGdiPaint
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets or sets whether painting in <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a> is double-buffered.<br><br>
+<div class="markdown level1 summary"><p>Gets or sets whether painting in <a class="xref" href="PaintDotNet.Gdi.GdiControl.OnGdiPaint.html#PaintDotNet_Gdi_GdiControl_OnGdiPaint_PaintDotNet_Gdi_IGdiPaintContext_">OnGdiPaint(IGdiPaintContext)</a> is double-buffered.<br>
+<br>
 Double-buffering is implemented using the <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-beginbufferedpaint">BeginBufferedPaint()</a>
-and <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-endbufferedpaint">EndBufferedPaint()</a> APIs.<br><br><b>NOTE:</b><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br><br>
+and <a href="https://docs.microsoft.com/en-us/windows/win32/api/uxtheme/nf-uxtheme-endbufferedpaint">EndBufferedPaint()</a> APIs.<br>
+<br>
+<b>NOTE:</b> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control.doublebuffered">DoubleBuffered</a> has no effect for this class.<br>
+<br>
 The default value is false.</p>
 </div>
 <div class="markdown level1 conceptual"></div>

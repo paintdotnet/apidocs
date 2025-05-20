@@ -114,18 +114,21 @@ public enum PremultipliedAdapterOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_PremultipliedAdapterOptions_None"><code>None = 0</code></dt>
-    <dd><p>Reinterprets the bitmap in the new pixel format. The same memory is referenced by both the original
+  
+  <dd><p>Reinterprets the bitmap in the new pixel format. The same memory is referenced by both the original
 bitmap and the adapter; a copy is not made. This is useful for adapting an <a class="xref" href="PaintDotNet.Imaging.IBitmap-1.html">IBitmap&lt;TPixel&gt;</a>
 from <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a> to <a class="xref" href="PaintDotNet.Imaging.ColorPbgra32.html">ColorPbgra32</a> for rendering with Direct2D.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_PremultipliedAdapterOptions_PremultiplyOnCreate"><code>PremultiplyOnCreate = 1</code></dt>
-    <dd><p>The contents of the bitmap are converted to premultiplied alpha at the time the adapter is created.
+  
+  <dd><p>The contents of the bitmap are converted to premultiplied alpha at the time the adapter is created.
 Using this option enables the correct rendering of Direct2D content on top of non-Direct2D content.
 This option is not necessary if the bitmap is blank (filled with transparent black, or is
 completely opaque).</p>
 </dd>
     <dt id="PaintDotNet_Imaging_PremultipliedAdapterOptions_UnPremultiplyOnDispose"><code>UnPremultiplyOnDispose = 2</code></dt>
-    <dd><p>The contents of the bitmap are converted to straight alpha when the adapter is disposed.
+  
+  <dd><p>The contents of the bitmap are converted to straight alpha when the adapter is disposed.
 If the bitmap is not disposed, and left for the garbage collector to clean up, then conversion
 is not performed.</p>
 </dd>

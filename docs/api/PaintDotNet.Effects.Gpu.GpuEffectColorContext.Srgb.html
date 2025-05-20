@@ -145,11 +145,14 @@ Property Srgb
 <div class="markdown level1 remarks"><p>Compared to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a>, this color context may be more familiar or comfortable
 if you are accustomed to working with 32-bit BGRA/RGBA pixel data, which is always stored as sRGB.
 However, operations on color values, such as blending, sampling, antialiasing, and filtering, will
-not preserve perceptual luminance. Colors will generally end up darker than they should.<br><br>
-If you need predefined color values (e.g. red, blue, etc.), use the <a class="xref" href="PaintDotNet.Imaging.SrgbColors.html">SrgbColors</a> class.<br><br>
+not preserve perceptual luminance. Colors will generally end up darker than they should.<br>
+<br>
+If you need predefined color values (e.g. red, blue, etc.), use the <a class="xref" href="PaintDotNet.Imaging.SrgbColors.html">SrgbColors</a> class.<br>
+<br>
 Many images are stored as sRGB, which means that most of the time using this color context is
 equivalent to using <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>. However, if an image is not stored as sRGB, this
-color context will convert it to sRGB. In some cases this may result in gamut clipping.<br><br>
+color context will convert it to sRGB. In some cases this may result in gamut clipping.<br>
+<br>
 For more information, see: <a href="https://en.wikipedia.org/wiki/SRGB">sRGB - Wikipedia</a></p>
 </div>
 

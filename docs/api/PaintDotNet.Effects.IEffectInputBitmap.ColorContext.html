@@ -143,7 +143,8 @@ Property ColorContext
 
 <h4 class="section" id="PaintDotNet_Effects_IEffectInputBitmap_ColorContext_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>Alpha8 bitmaps, such as the selection mask bitmap, will not have a color context because
-they are color space invariant.<br><br>
+they are color space invariant.<br>
+<br>
 If the pixel format requires linear gamma, which is true for all floating point formats such
 as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>, then this color context will be linearized. To
 get the original color context with the transfer curve, use the <a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a>

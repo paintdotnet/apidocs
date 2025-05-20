@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class InputSwizzleEffect ">
       
-      <meta name="description" content="Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds to each output channel. This effect supports any number of inputs, but only 4 can be used at once. Use  to specify the number of inputs. If you are only swizzling from 1 input, it is recommended to use the  instead.output = new Color( Input[RedInputIndex][RedInputChannel], Input[GreenInputIndex][GreenInputChannel], Input[BlueInputIndex][BlueInputChannel], Input[AlphaInputIndex][AlphaInputChannel]);">
+      <meta name="description" content="Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds to each output channel.  This effect supports any number of inputs, but only 4 can be used at once. Use  to specify the number of inputs.  If you are only swizzling from 1 input, it is recommended to use the  instead.  output = new Color(     Input[RedInputIndex][RedInputChannel],     Input[GreenInputIndex][GreenInputChannel],     Input[BlueInputIndex][BlueInputChannel],     Input[AlphaInputIndex][AlphaInputChannel]);">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,14 +94,18 @@ Class InputSwizzleEffect
   </div>
 
   <div class="markdown summary"><p>Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds
-to each output channel.<br><br>
+to each output channel.<br>
+<br>
 This effect supports any number of inputs, but only 4 can be used at once. Use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.InputCount.html#PaintDotNet_Direct2D1_IDeviceEffect_InputCount">InputCount</a>
-to specify the number of inputs.<br><br>
-If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br><br><pre><code class="lang-csharp">output = new Color(
-Input[RedInputIndex][RedInputChannel],
-Input[GreenInputIndex][GreenInputChannel],
-Input[BlueInputIndex][BlueInputChannel],
-Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
+to specify the number of inputs.<br>
+<br>
+If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br>
+<br></p>
+<pre><code class="lang-csharp">output = new Color(
+    Input[RedInputIndex][RedInputChannel],
+    Input[GreenInputIndex][GreenInputChannel],
+    Input[BlueInputIndex][BlueInputChannel],
+    Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
 </div>
   <div class="markdown conceptual"></div>
 

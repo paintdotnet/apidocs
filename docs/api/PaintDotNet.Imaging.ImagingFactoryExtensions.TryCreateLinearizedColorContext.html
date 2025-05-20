@@ -152,11 +152,13 @@ linearized then <code>null</code> will be returned.</p>
 
 
 <h4 class="section" id="PaintDotNet_Imaging_ImagingFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IColorContext__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This method is useful when you want to standardize on rendering using linear gamma.<br><br>
+<div class="markdown level1 remarks"><p>This method is useful when you want to standardize on rendering using linear gamma.<br>
+<br>
 Not all color contexts can be linearized. If you require the use of a linear color space, you
 should use scRGB as a fallback. You can use the <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateLinearizedColorContextOrScRgb.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateLinearizedColorContextOrScRgb_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IColorContext_">CreateLinearizedColorContextOrScRgb(IImagingFactory, IColorContext)</a>
 to simplify this, or <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateColorContext.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Direct2D1_DeviceColorSpace_">CreateColorContext(IImagingFactory, DeviceColorSpace)</a> to
-create an scRGB color context directly.<br><br>
+create an scRGB color context directly.<br>
+<br>
 scRGB is sometimes referred to by Microsoft as CCCS, or Canonical Composition Color Space. It is
 possible to convert to and from scRGB without color gamut clipping. See
 <a href="https://en.wikipedia.org/wiki/ScRGB">scRGB (Wikipedia)</a> for more information.</p>

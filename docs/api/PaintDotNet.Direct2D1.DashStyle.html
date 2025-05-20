@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum DashStyle ">
       
-      <meta name="description" content="Describes the sequence of dashes and gaps in a stroke.D2D1_DASH_STYLE">
+      <meta name="description" content="Describes the sequence of dashes and gaps in a stroke. D2D1_DASH_STYLE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum DashStyle
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes the sequence of dashes and gaps in a stroke.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_dash_style">D2D1_DASH_STYLE</a></p>
+  <div class="markdown summary"><p>Describes the sequence of dashes and gaps in a stroke.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_dash_style">D2D1_DASH_STYLE</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -114,26 +115,32 @@ Enum DashStyle
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_DashStyle_Solid"><code>Solid = 0</code></dt>
-    <dd><p>A solid line with no breaks.</p>
+  
+  <dd><p>A solid line with no breaks.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DashStyle_Dash"><code>Dash = 1</code></dt>
-    <dd><p>A dash followed by a gap of equal length. The dash and the gap are each twice as long as the stroke thickness.<br>
+  
+  <dd><p>A dash followed by a gap of equal length. The dash and the gap are each twice as long as the stroke thickness.<br>
 The equivalent dash array is {2, 2}.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DashStyle_Dot"><code>Dot = 2</code></dt>
-    <dd><p>A dot followed by a longer gap.<br>
+  
+  <dd><p>A dot followed by a longer gap.<br>
 The equivalent dash array is {0, 2}.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DashStyle_DashDot"><code>DashDot = 3</code></dt>
-    <dd><p>A dash, followed by a gap, followed by a dot, followed by another gap.<br>
+  
+  <dd><p>A dash, followed by a gap, followed by a dot, followed by another gap.<br>
 The equivalent dash array is {2, 2, 0, 2}.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DashStyle_DashDotDot"><code>DashDotDot = 4</code></dt>
-    <dd><p>A dash, followed by a gap, followed by a dot, followed by another gap, followed by another dot, followed by another gap.<br>
+  
+  <dd><p>A dash, followed by a gap, followed by a dot, followed by another gap, followed by another dot, followed by another gap.<br>
 The equivalent dash array is {2, 2, 0, 2, 0, 2}.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_DashStyle_Custom"><code>Custom = 5</code></dt>
-    <dd><p>The dash pattern is specified by an array of floating-point values.</p>
+  
+  <dd><p>The dash pattern is specified by an array of floating-point values.</p>
 </dd>
   </dl>
 

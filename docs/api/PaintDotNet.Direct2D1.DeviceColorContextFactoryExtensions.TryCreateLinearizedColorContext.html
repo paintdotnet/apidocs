@@ -154,11 +154,13 @@ a copy will be made using the given factory.</p>
 <h4 class="section" id="PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Direct2D1_IDeviceColorContext__remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This method is useful when you want to standardize on rendering using linear gamma. By using
 an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a> and a <a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a>, you can issue
-drawing commands that are automatically converted from one color space to another.<br><br>
+drawing commands that are automatically converted from one color space to another.<br>
+<br>
 Not all color contexts can be linearized. If you always require the use of a linear color space,
 you should use scRGB as a fallback. scRGB is sometimes referred to by Microsoft as CCCS, or
 Canonical Composition Color Space. It is possible to convert to and from scRGB without color gamut
-clipping.<br><br>
+clipping.<br>
+<br>
 This uses the same algorithm as <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.TryCreateLinearizedColorContext.html#PaintDotNet_Imaging_ImagingFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IColorContext_">TryCreateLinearizedColorContext(IImagingFactory, IColorContext)</a>.</p>
 </div>
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum BitmapOptions ">
       
-      <meta name="description" content="Specifies how a bitmap can be used.D2D1_BITMAP_OPTIONS">
+      <meta name="description" content="Specifies how a bitmap can be used. D2D1_BITMAP_OPTIONS">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum BitmapOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies how a bitmap can be used.<br><a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_bitmap_options">D2D1_BITMAP_OPTIONS</a></p>
+  <div class="markdown summary"><p>Specifies how a bitmap can be used.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_bitmap_options">D2D1_BITMAP_OPTIONS</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,21 +116,26 @@ public enum BitmapOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_BitmapOptions_None"><code>None = 0</code></dt>
-    <dd><p>The bitmap is created with default properties.</p>
+  
+  <dd><p>The bitmap is created with default properties.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapOptions_Target"><code>Target = 1</code></dt>
-    <dd><p>The bitmap can be used as a device context target.</p>
+  
+  <dd><p>The bitmap can be used as a device context target.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapOptions_CannotDraw"><code>CannotDraw = 2</code></dt>
-    <dd><p>The bitmap cannot be used as an input.</p>
+  
+  <dd><p>The bitmap cannot be used as an input.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapOptions_CpuRead"><code>CpuRead = 4</code></dt>
-    <dd><p>The bitmap can be read from the CPU by using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.Map.html#PaintDotNet_Direct2D1_IDeviceBitmap_Map_PaintDotNet_Direct2D1_MapOptions_">Map(MapOptions)</a>.
+  
+  <dd><p>The bitmap can be read from the CPU by using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.Map.html#PaintDotNet_Direct2D1_IDeviceBitmap_Map_PaintDotNet_Direct2D1_MapOptions_">Map(MapOptions)</a>.
 This flag requires <a class="xref" href="PaintDotNet.Direct2D1.BitmapOptions.html#PaintDotNet_Direct2D1_BitmapOptions_CannotDraw">CannotDraw</a> and cannot be combined with any
 other flags.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_BitmapOptions_GdiCompatible"><code>GdiCompatible = 8</code></dt>
-    <dd><p>The bitmap works with ID2D1GdiInteropRenderTarget::GetDC(). (unsupported)</p>
+  
+  <dd><p>The bitmap works with ID2D1GdiInteropRenderTarget::GetDC(). (unsupported)</p>
 </dd>
   </dl>
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PathSegmentOptions ">
       
-      <meta name="description" content="Indicates whether a segment should be stroked and whether the join between this segment and the previous one should be smooth. This enumeration allows a bitwise combination of its member values.D2D1_PATH_SEGMENT">
+      <meta name="description" content="Indicates whether a segment should be stroked and whether the join between this segment and the previous one should be smooth. This enumeration allows a bitwise combination of its member values. D2D1_PATH_SEGMENT">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -96,7 +96,8 @@ Enum PathSegmentOptions
 
   <div class="markdown summary"><p>Indicates whether a segment should be stroked and whether the join between this segment
 and the previous one should be smooth. This enumeration allows a bitwise combination of
-its member values.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_path_segment">D2D1_PATH_SEGMENT</a></p>
+its member values.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_path_segment">D2D1_PATH_SEGMENT</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -117,13 +118,16 @@ public enum PathSegmentOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_PathSegmentOptions_None"><code>None = 0</code></dt>
-    <dd><p>The segment is joined as specified by the <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a> interface, and it is stroked.</p>
+  
+  <dd><p>The segment is joined as specified by the <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a> interface, and it is stroked.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PathSegmentOptions_ForceUnstroked"><code>ForceUnstroked = 1</code></dt>
-    <dd><p>The segment is not stroked.</p>
+  
+  <dd><p>The segment is not stroked.</p>
 </dd>
     <dt id="PaintDotNet_Direct2D1_PathSegmentOptions_ForceRoundLineJoin"><code>ForceRoundLineJoin = 2</code></dt>
-    <dd><p>The segment is always joined with the one preceding it using a round line join, regardless of
+  
+  <dd><p>The segment is always joined with the one preceding it using a round line join, regardless of
 which <a class="xref" href="PaintDotNet.Direct2D1.LineJoin.html">LineJoin</a> enumeration is specified by the <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a> interface.
 If this segment is the first segment and the figure is closed, a round line join is used to
 connect the closing segment with the first segment. If the figure is not closed, this setting has

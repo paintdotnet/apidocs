@@ -137,183 +137,376 @@ from CompositeMode, BlendMode, BlendMode2, and the AlphaMaskEffect.<br></p>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceOver"><code>CompositeSourceOver = 0</code></dt>
-    <dd><p>The standard source-over-destination blend mode.</p>
+  <dd><p>The standard source-over-destination blend mode.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeDestinationOver"><code>CompositeDestinationOver = 1</code></dt>
-    <dd><p>The destination is rendered over the source.</p>
+  <dd><p>The destination is rendered over the source.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceIn"><code>CompositeSourceIn = 2</code></dt>
-    <dd><p>Performs a logical clip of the source pixels against the destination pixels.</p>
+  <dd><p>Performs a logical clip of the source pixels against the destination pixels.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeDestinationIn"><code>CompositeDestinationIn = 3</code></dt>
-    <dd><p>The inverse of the SourceIn operation.</p>
+  <dd><p>The inverse of the SourceIn operation.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceOut"><code>CompositeSourceOut = 4</code></dt>
-    <dd><p>The logical inverse of the SourceIn operation.</p>
+  <dd><p>The logical inverse of the SourceIn operation.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeDestinationOut"><code>CompositeDestinationOut = 5</code></dt>
-    <dd><p>The logical inverse to the DestinationIn operation.</p>
+  <dd><p>The logical inverse to the DestinationIn operation.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceAtop"><code>CompositeSourceAtop = 6</code></dt>
-    <dd><p>Writes the source pixels over the destination where there are destination pixels.</p>
+  <dd><p>Writes the source pixels over the destination where there are destination pixels.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeDestinationAtop"><code>CompositeDestinationAtop = 7</code></dt>
-    <dd><p>The logical inverse of the SourceAtop operation.</p>
+  <dd><p>The logical inverse of the SourceAtop operation.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeXor"><code>CompositeXor = 8</code></dt>
-    <dd><p>The source is inverted with the destination.</p>
+  <dd><p>The source is inverted with the destination.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositePlus"><code>CompositePlus = 9</code></dt>
-    <dd><p>The channel components are summed.</p>
+  <dd><p>The channel components are summed.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceCopy"><code>CompositeSourceCopy = 10</code></dt>
-    <dd><p>The source is copied to the destination; the destination pixels are ignored.</p>
+  <dd><p>The source is copied to the destination; the destination pixels are ignored.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeBoundedSourceCopy"><code>CompositeBoundedSourceCopy = 11</code></dt>
-    <dd><p>Equivalent to SourceCopy, but pixels outside of the source bounds are unchanged.</p>
+  <dd><p>Equivalent to SourceCopy, but pixels outside of the source bounds are unchanged.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_CompositeMaskInvert"><code>CompositeMaskInvert = 12</code></dt>
-    <dd><p>Destination colors are inverted according to a source mask.</p>
+  <dd><p>Destination colors are inverted according to a source mask.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendMultiply"><code>BlendMultiply = 1000</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendScreen"><code>BlendScreen = 1001</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendDarken"><code>BlendDarken = 1002</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLighten"><code>BlendLighten = 1003</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendDissolve"><code>BlendDissolve = 1004</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendColorBurn"><code>BlendColorBurn = 1005</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLinearBurn"><code>BlendLinearBurn = 1006</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendDarkerColor"><code>BlendDarkerColor = 1007</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLighterColor"><code>BlendLighterColor = 1008</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendColorDodge"><code>BlendColorDodge = 1009</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLinearDodge"><code>BlendLinearDodge = 1010</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendOverlay"><code>BlendOverlay = 1011</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendSoftLight"><code>BlendSoftLight = 1012</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendHardLight"><code>BlendHardLight = 1013</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendVividLight"><code>BlendVividLight = 1014</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLinearLight"><code>BlendLinearLight = 1015</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendPinLight"><code>BlendPinLight = 1016</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendHardMix"><code>BlendHardMix = 1017</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendDifference"><code>BlendDifference = 1018</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendExclusion"><code>BlendExclusion = 1019</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendHue"><code>BlendHue = 1020</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendSaturation"><code>BlendSaturation = 1021</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendColor"><code>BlendColor = 1022</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendLuminosity"><code>BlendLuminosity = 1023</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendSubtract"><code>BlendSubtract = 1024</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_BlendDivision"><code>BlendDivision = 1025</code></dt>
-    <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
+  <dd><p>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effects/ne-d2d1effects-d2d1_blend_mode">Direct2D Blend modes</a>
 and <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Direct2D Blend effect</a> for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Additive"><code>Blend2Additive = 2000</code></dt>
-    <dd><p>The source colors are reflected over the destination colors.<br>
+  <dd><p>The source colors are reflected over the destination colors.<br>
 output = min(1, (dst * dst) / (1 - src))</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Reflect"><code>Blend2Reflect = 2001</code></dt>
-    <dd><p>The source colors are reflected over the destination colors.<br>
+  <dd><p>The source colors are reflected over the destination colors.<br>
 output = min(1, (dst * dst) / (1 - src))</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Glow"><code>Blend2Glow = 2002</code></dt>
-    <dd><p>The inverse of Reflect.<br>
+  <dd><p>The inverse of Reflect.<br>
 output = min(1, (src * src) / (1 - dst))</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Negation"><code>Blend2Negation = 2003</code></dt>
-    <dd><p>The source colors are negated over the destination colors.<br>
+  <dd><p>The source colors are negated over the destination colors.<br>
 output = (1 - abs(1 - dst - src))</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Min"><code>Blend2Min = 2004</code></dt>
-    <dd><p>The minimum of each color channel is used.<br>
+  <dd><p>The minimum of each color channel is used.<br>
 output = [R=min(dst.R, src.R), G=min(dst.G, src.G), B=min(dst.B, src.B)]</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2Max"><code>Blend2Max = 2005</code></dt>
-    <dd><p>The maximum of each color channel is used.<br>
+  <dd><p>The maximum of each color channel is used.<br>
 output = [R=max(dst.R, src.R), G=max(dst.G, src.G), B=max(dst.B, src.B)]</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2XorInt8"><code>Blend2XorInt8 = 2006</code></dt>
-    <dd><p>The source and destination colors are XOR'd together using 8-bits of precision.</p>
+  <dd><p>The source and destination colors are XOR'd together using 8-bits of precision.</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_Blend2XorInt16"><code>Blend2XorInt16 = 2007</code></dt>
-    <dd><p>The source and destination colors are XOR'd together using 16-bits of precision.</p>
+  <dd><p>The source and destination colors are XOR'd together using 16-bits of precision.</p>
+<p>This mode operates in straight alpha space. If the AlphaMode property is set to
+Premultiplied then the input will be unpremultiplied, the operation will be performed,
+and then the output will be premultiplied.</p>
 </dd>
+  
     <dt id="PaintDotNet_Direct2D1_Effects_MixMode_AlphaMask"><code>AlphaMask = 3000</code></dt>
-    <dd><p>Applies an alpha mask from the source to the destination.<br>
-Color values in the destination are multiplied by the alpha channel of the source.<br><a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/alpha-mask-effect">Direct2D Alpha mask effect</a>
+  <dd><p>Applies an alpha mask from the source to the destination.<br>
+Color values in the destination are multiplied by the alpha channel of the source.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/alpha-mask-effect">Direct2D Alpha mask effect</a>
 for more information.</p>
+<p>This mode operates in premultiplied alpha space. If the AlphaMode property is set
+to Straight then the input will be premultiplied, the operation will be performed,
+and then the output will be unpremultiplied.</p>
 </dd>
+  
   </dl>
 
 

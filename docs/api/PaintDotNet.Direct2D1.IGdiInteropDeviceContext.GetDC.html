@@ -149,9 +149,12 @@ Method GetDC
 
 
 <h4 class="section" id="PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>Calling this method flushes the Direct2D device context.<br><br>
+<div class="markdown level1 remarks"><p>Calling this method flushes the Direct2D device context.<br>
+<br>
 This command can only be called after <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.BeginDraw.html#PaintDotNet_Direct2D1_IDeviceContext_BeginDraw">BeginDraw()</a> and before
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a>.<br><br><a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.ReleaseDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_ReleaseDC_System_Nullable_PaintDotNet_Rendering_RectInt32___">ReleaseDC(in RectInt32?)</a> must be called once for each call to <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a>.</p>
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a>.<br>
+<br>
+<a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.ReleaseDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_ReleaseDC_System_Nullable_PaintDotNet_Rendering_RectInt32___">ReleaseDC(in RectInt32?)</a> must be called once for each call to <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a>.</p>
 </div>
 
 

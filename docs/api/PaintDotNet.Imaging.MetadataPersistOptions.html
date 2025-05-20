@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum MetadataPersistOptions ">
       
-      <meta name="description" content="Specifies options that are used when initializing a component with a stream.WICPersistOptions">
+      <meta name="description" content="Specifies options that are used when initializing a component with a stream. WICPersistOptions">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum MetadataPersistOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies options that are used when initializing a component with a stream.<br><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicpersistoptions">WICPersistOptions</a></p>
+  <div class="markdown summary"><p>Specifies options that are used when initializing a component with a stream.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodecsdk/ne-wincodecsdk-wicpersistoptions">WICPersistOptions</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,23 +116,33 @@ public enum MetadataPersistOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_Default"><code>Default = 0</code></dt>
-    <dd><p>The default persist options. The default is <a class="xref" href="PaintDotNet.Imaging.MetadataPersistOptions.html#PaintDotNet_Imaging_MetadataPersistOptions_LittleEndian">LittleEndian</a>.</p>
+  
+  <dd><p>The default persist options. The default is <a class="xref" href="PaintDotNet.Imaging.MetadataPersistOptions.html#PaintDotNet_Imaging_MetadataPersistOptions_LittleEndian">LittleEndian</a>.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_LittleEndian"><code>LittleEndian = 0</code></dt>
-    <dd><p>The data byte order is little endian.</p>
+  
+  <dd><p>The data byte order is little endian.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_BigEndian"><code>BigEndian = 1</code></dt>
-    <dd><p>The data byte order is big endian.</p>
+  
+  <dd><p>The data byte order is big endian.</p>
 </dd>
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_StrictFormat"><code>StrictFormat = 2</code></dt>
-    <dd><p>The data format must strictly conform to the specification.</p>
+  <dd><p>The data format must strictly conform to the specification.</p>
+<p><b>Warning:</b> This option is inconsistently implement and should not be relied on.</p>
 </dd>
+  
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_NoCacheStream"><code>NoCacheStream = 4</code></dt>
-    <dd><p>No cache for the metadata stream.</p>
+  <dd><p>No cache for the metadata stream.</p>
+<p>Certain operations, such as <a class="xref" href="PaintDotNet.Imaging.IImagingComponentFactory.CreateMetadataWriterFromReader.html#PaintDotNet_Imaging_IImagingComponentFactory_CreateMetadataWriterFromReader_PaintDotNet_Imaging_IMetadataReader_System_Nullable_PaintDotNet_Imaging_VendorID___">CreateMetadataWriterFromReader(IMetadataReader, in VendorID?)</a> require that the reader
+have a stream. Therefore, these operations will be unavailable if the reader is initialized with <a class="xref" href="PaintDotNet.Imaging.MetadataPersistOptions.html#PaintDotNet_Imaging_MetadataPersistOptions_NoCacheStream">NoCacheStream</a>.</p>
 </dd>
+  
     <dt id="PaintDotNet_Imaging_MetadataPersistOptions_PreferUtf8"><code>PreferUtf8 = 8</code></dt>
-    <dd><p>Use UTF8 instead of the default UTF16.</p>
+  <dd><p>Use UTF8 instead of the default UTF16.</p>
+<p><b>Note:</b> This option is currently unused.</p>
 </dd>
+  
   </dl>
 
 

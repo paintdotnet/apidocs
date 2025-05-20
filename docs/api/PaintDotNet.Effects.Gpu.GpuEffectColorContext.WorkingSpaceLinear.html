@@ -143,13 +143,18 @@ Property WorkingSpaceLinear
 
 <h4 class="section" id="PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear_remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>This is the recommended color context for most purposes. For more information on linear gamma, see
-articles such as:<br><a href="https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear">GPU Gems 3, Chapter 24: The Importance of Being Linear</a><br><a href="http://www.ericbrasseur.org/gamma.html">Gamma error in picture scaling (Eric Brasseur)</a><br><br>
+articles such as:<br>
+<a href="https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear">GPU Gems 3, Chapter 24: The Importance of Being Linear</a><br>
+<a href="http://www.ericbrasseur.org/gamma.html">Gamma error in picture scaling (Eric Brasseur)</a><br>
+<br>
 This will use the source image's color profile and convert it to the linearized version of that color
 profile. For example, sRGB will be converted to scRGB. If the color profile is already linearized, then
 this is equivalent to <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>. If the color profile cannot be linearized, then
-scRGB (linear sRGB) will be used.<br><br>
+scRGB (linear sRGB) will be used.<br>
+<br>
 Some Direct2D effects have an InputGamma property that defaults to sRGB. When using linear gamma you
-should make sure to set that property to Linear.<br><br>
+should make sure to set that property to Linear.<br>
+<br>
 If you need predefined color values (e.g. red, blue, etc.) use the <a class="xref" href="PaintDotNet.Imaging.LinearColors.html">LinearColors</a> class.<br></p>
 </div>
 
