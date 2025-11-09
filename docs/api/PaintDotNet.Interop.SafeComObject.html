@@ -98,7 +98,7 @@ Class SafeComObject
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SafeComObject : SafeHandleZeroOrMinusOneIsInvalid, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class SafeComObject : SafeHandleZeroOrMinusOneIsInvalid, IDisposable</code></pre>
   </div>
 
 
@@ -122,12 +122,24 @@ Class SafeComObject
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="PaintDotNet.Dxgi.SafeDxgiAdapter.html">SafeDxgiAdapter</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid.isinvalid">SafeHandleZeroOrMinusOneIsInvalid.IsInvalid</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.handle">SafeHandle.handle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.sethandle">SafeHandle.SetHandle(nint)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.dangerousgethandle">SafeHandle.DangerousGetHandle()</a>
@@ -137,6 +149,9 @@ Class SafeComObject
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.dispose#system-runtime-interopservices-safehandle-dispose">SafeHandle.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.dispose#system-runtime-interopservices-safehandle-dispose(system-boolean)">SafeHandle.Dispose(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.sethandleasinvalid">SafeHandle.SetHandleAsInvalid()</a>
@@ -152,6 +167,9 @@ Class SafeComObject
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -184,30 +202,17 @@ Class SafeComObject
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor">SafeComObject()</a></dt>
-    <dd><p>Creates a <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a>.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor_System_IntPtr_System_Boolean_">SafeComObject(nint, bool)</a></dt>
-    <dd><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
-indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.-ctor.html#PaintDotNet_Interop_SafeComObject__ctor_System_Void__System_Boolean_">SafeComObject(void*, bool)</a></dt>
-    <dd><p>Initializes a new instance of the <a class="xref" href="PaintDotNet.Interop.SafeComObject.html">SafeComObject</a> class from the specified COM object,
-indicating whether to call <code>Release()</code> on the object during the finalization phase.</p>
-</dd>
-  </dl>
-
   <h2 class="section" id="methods">Methods
 </h2>
 
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.GetObject.html#PaintDotNet_Interop_SafeComObject_GetObject__1___0___">GetObject&lt;T&gt;(T**)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.QueryInterface.html#PaintDotNet_Interop_SafeComObject_QueryInterface_System_Guid__System_Void___">QueryInterface(in Guid, void**)</a></dt>
+    <dd></dd>
+  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Interop.SafeComObject.ReleaseHandle.html#PaintDotNet_Interop_SafeComObject_ReleaseHandle">ReleaseHandle()</a></dt>
     <dd></dd>
