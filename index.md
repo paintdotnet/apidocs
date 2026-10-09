@@ -20,4 +20,4 @@ Here are some useful links to get started with plugin development:
   - Forum page with discussion: https://forums.getpaint.net/topic/121344-codelab-v68-for-paintnet-50-updated-january-22-2023/
   - GitHub source code: https://github.com/BoltBait/CodeLab
 - Plugin Dev channel on the Paint.NET Discord Server
-  - Invitation link: https://discord.gg/wQhWmqDP
+  - Invitation link: https://discord.gg/6V3Ace9SBg
