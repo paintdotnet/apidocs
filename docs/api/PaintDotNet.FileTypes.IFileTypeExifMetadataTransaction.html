@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFileTypeExifMetadataTransaction </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFileTypeExifMetadataTransaction ">
+      
+      <meta name="description" content="Represents a transaction for making atomic changes to the EXIF metadata stored within an .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction">
+
+
+
+  <h1 id="PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction" data-uid="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction" class="text-break">
+Interface IFileTypeExifMetadataTransaction  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.FileTypes.html">FileTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes to the EXIF metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadata.html">IFileTypeExifMetadata</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFileTypeExifMetadataTransaction : IFileTypeMetadataSectionTransaction, IFileTypeTransaction, IReadOnlyFileTypeExifMetadata, IReadOnlyFileTypeMetadataSection, IObjectRef, IIsDisposed, IDisposable, IInternalImpl, ICloneable, IEnumerable&lt;KeyValuePair&lt;ExifPropertyPath, IEnumerable&lt;ExifValue&gt;&gt;&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.Clear.html#PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_Clear">IFileTypeMetadataSectionTransaction.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_">IFileTypeMetadataSectionTransaction.ReplaceFrom(IReadOnlyFileTypeMetadataSection)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">IFileTypeTransaction.Commit()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">IFileTypeTransaction.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.ContainsPath.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_ContainsPath_PaintDotNet_Imaging_ExifPropertyPath_">IReadOnlyFileTypeExifMetadata.ContainsPath(ExifPropertyPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.TryGetItems.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_TryGetItems_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyItem___">IReadOnlyFileTypeExifMetadata.TryGetItems(ExifPropertyPath, out IEnumerable&lt;ExifPropertyItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.TryGetValues.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_TryGetValues_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue___">IReadOnlyFileTypeExifMetadata.TryGetValues(ExifPropertyPath, out IEnumerable&lt;ExifValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Clone.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Clone">IReadOnlyFileTypeExifMetadata.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Paths.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Paths">IReadOnlyFileTypeExifMetadata.Paths</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Items.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Items">IReadOnlyFileTypeExifMetadata.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.Kind.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_Kind">IReadOnlyFileTypeMetadataSection.Kind</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;ExifPropertyPath, IEnumerable&lt;ExifValue&gt;&gt;&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator">IEnumerable.GetEnumerator()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypeExifMetadataTransactionExtensions.RemoveRange.html#PaintDotNet_FileTypes_FileTypeExifMetadataTransactionExtensions_RemoveRange_PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyKey__">FileTypeExifMetadataTransactionExtensions.RemoveRange(IFileTypeExifMetadataTransaction, IEnumerable&lt;ExifPropertyKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypeExifMetadataTransactionExtensions.SetItems.html#PaintDotNet_FileTypes_FileTypeExifMetadataTransactionExtensions_SetItems_PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyKey_PaintDotNet_Imaging_ExifValue___">FileTypeExifMetadataTransactionExtensions.SetItems(IFileTypeExifMetadataTransaction, IEnumerable&lt;KeyValuePair&lt;ExifPropertyKey, ExifValue&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypeExifMetadataTransactionExtensions.SetItems.html#PaintDotNet_FileTypes_FileTypeExifMetadataTransactionExtensions_SetItems_PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyKey_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue____">FileTypeExifMetadataTransactionExtensions.SetItems(IFileTypeExifMetadataTransaction, IEnumerable&lt;KeyValuePair&lt;ExifPropertyKey, IEnumerable&lt;ExifValue&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeExifMetadataTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeMetadataSectionTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_">FileTypesObjectRefExtensions.CreateRef(IReadOnlyFileTypeExifMetadata)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypeExifMetadataExtensions.GetItems.html#PaintDotNet_FileTypes_ReadOnlyFileTypeExifMetadataExtensions_GetItems_PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_PaintDotNet_Imaging_ExifPropertyPath_">ReadOnlyFileTypeExifMetadataExtensions.GetItems(IReadOnlyFileTypeExifMetadata, ExifPropertyPath)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypeExifMetadataExtensions.GetValues.html#PaintDotNet_FileTypes_ReadOnlyFileTypeExifMetadataExtensions_GetValues_PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_PaintDotNet_Imaging_ExifPropertyPath_">ReadOnlyFileTypeExifMetadataExtensions.GetValues(IReadOnlyFileTypeExifMetadata, ExifPropertyPath)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_">FileTypesObjectRefExtensions.CreateRef(IReadOnlyFileTypeMetadataSection)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.Remove.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_Remove_PaintDotNet_Imaging_ExifPropertyPath_">Remove(ExifPropertyPath)</a></dt>
+    <dd><p>Removes the EXIF property items with the specified path.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.RemoveRange.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_RemoveRange_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyPath__">RemoveRange(IEnumerable&lt;ExifPropertyPath&gt;)</a></dt>
+    <dd><p>Removes the EXIF property items for all of the specified paths.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_">ReplaceFrom(IReadOnlyFileTypeExifMetadata)</a></dt>
+    <dd><p>Replaces all of the EXIF metadata with the values from another EXIF metadata section.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItem.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItem_PaintDotNet_Imaging_ExifPropertyItem_">SetItem(ExifPropertyItem)</a></dt>
+    <dd><p>Sets an EXIF property item with a single value.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItem.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItem_PaintDotNet_Imaging_ExifPropertyPath_PaintDotNet_Imaging_ExifValue_">SetItem(ExifPropertyPath, ExifValue)</a></dt>
+    <dd><p>Sets an EXIF property item with a single value.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItem.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItem_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue__">SetItem(ExifPropertyPath, IEnumerable&lt;ExifValue&gt;)</a></dt>
+    <dd><p>Sets an EXIF property item with multiple values.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItems.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyItem__">SetItems(IEnumerable&lt;ExifPropertyItem&gt;)</a></dt>
+    <dd><p>Sets multiple EXIF property items from a list of <a class="xref" href="PaintDotNet.Imaging.ExifPropertyItem.html">ExifPropertyItem</a>s.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItems.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyPath_PaintDotNet_Imaging_ExifValue___">SetItems(IEnumerable&lt;KeyValuePair&lt;ExifPropertyPath, ExifValue&gt;&gt;)</a></dt>
+    <dd><p>Sets multiple EXIF property items from path-value pairs.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.SetItems.html#PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue____">SetItems(IEnumerable&lt;KeyValuePair&lt;ExifPropertyPath, IEnumerable&lt;ExifValue&gt;&gt;&gt;)</a></dt>
+    <dd><p>Sets multiple EXIF property items from path-values pairs.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

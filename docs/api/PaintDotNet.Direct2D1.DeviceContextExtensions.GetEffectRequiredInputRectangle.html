@@ -115,12 +115,65 @@ Method GetEffectRequiredInputRectangle
 
 <a id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle*"></a>
 
+<h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_EffectInputDescription__" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceEffect,System.Nullable{PaintDotNet.Rendering.RectFloat}@,System.Collections.Generic.IReadOnlyList{PaintDotNet.Direct2D1.EffectInputDescription})">
+  GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, IReadOnlyList&lt;EffectInputDescription&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;RectFloat&gt; GetEffectRequiredInputRectangle(this IDeviceContext deviceContext, IDeviceEffect renderEffect, in RectFloat? renderImageRectangle, IReadOnlyList&lt;EffectInputDescription&gt; inputDescriptions)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
+  <dd></dd>
+  <dt><code>renderEffect</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></dt>
+  <dd><p>The effect whose output is being rendered.</p>
+</dd>
+  <dt><code>renderImageRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
+  <dd><p>The portion of the output image whose inputs are being inspected.</p>
+</dd>
+  <dt><code>inputDescriptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.EffectInputDescription.html">EffectInputDescription</a>&gt;</dt>
+  <dd><p>A list of the inputs whose rectangles are being queried.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>&gt;</dt>
+  <dd><p>The input rectangles.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_EffectInputDescription___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The caller should be very careful not to place a reliance on the required input rectangles returned. Small changes for
+correctness to an effect's behavior can result in different rectangles being returned. In addition, different kinds of
+optimization applied inside the render can also influence the result.</p>
+</div>
+
+
+
+
+<a id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle*"></a>
+
 <h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_EffectInputDescription__" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceEffect,System.Nullable{PaintDotNet.Rendering.RectFloat}@,PaintDotNet.Direct2D1.EffectInputDescription@)">
   GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, in EffectInputDescription)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,9 +185,11 @@ Method GetEffectRequiredInputRectangle
   <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
   <dd></dd>
   <dt><code>renderEffect</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></dt>
-  <dd></dd>
+  <dd><p>The effect whose output is being rendered.</p>
+</dd>
   <dt><code>renderImageRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
-  <dd></dd>
+  <dd><p>The portion of the output image whose inputs are being inspected.</p>
+</dd>
   <dt><code>inputDescription</code> <a class="xref" href="PaintDotNet.Direct2D1.EffectInputDescription.html">EffectInputDescription</a></dt>
   <dd></dd>
 </dl>
@@ -142,7 +197,8 @@ Method GetEffectRequiredInputRectangle
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
-  <dd></dd>
+  <dd><p>The input rectangles.</p>
+</dd>
 </dl>
 
 
@@ -151,6 +207,11 @@ Method GetEffectRequiredInputRectangle
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_EffectInputDescription___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The caller should be very careful not to place a reliance on the required input rectangles returned. Small changes for
+correctness to an effect's behavior can result in different rectangles being returned. In addition, different kinds of
+optimization applied inside the render can also influence the result.</p>
+</div>
 
 
 

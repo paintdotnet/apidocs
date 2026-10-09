@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum PdnMosaicTileShape </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum PdnMosaicTileShape ">
+      
+      <meta name="description" content="Specifies the shape of the tiles the Mosaic effect lays down.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu.PdnMosaicTileShape">
+
+
+
+
+  <h1 id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape" data-uid="PaintDotNet.Effects.Gpu.PdnMosaicTileShape" class="text-break">
+Enum PdnMosaicTileShape  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specifies the shape of the tiles the Mosaic effect lays down.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PdnMosaicTileShape</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Square"><code>Square = 0</code></dt>
+  
+  <dd><p>Square tiles on an axis-aligned grid, laid out like bathroom tile.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Rhombus"><code>Rhombus = 1</code></dt>
+  
+  <dd><p>Diamonds: squares turned forty-five degrees, on a grid rotated to match, so every seam runs on
+the diagonal.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Triangle"><code>Triangle = 2</code></dt>
+  
+  <dd><p>Equilateral triangles, alternating point-up and point-down.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Hexagon"><code>Hexagon = 3</code></dt>
+  
+  <dd><p>Regular hexagons with vertical left and right sides on the triangular lattice that packs them.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_OctagonSquare"><code>OctagonSquare = 4</code></dt>
+  
+  <dd><p>The truncated-square tiling: regular octagons with a small diamond filling each four-way gap.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Cairo"><code>Cairo = 5</code></dt>
+  
+  <dd><p>The Cairo pentagonal tiling: basket-weave pentagons in four orientations, as paved in the
+streets of Cairo.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_SnubSquare"><code>SnubSquare = 6</code></dt>
+  
+  <dd><p>The snub square tiling: squares in two orientations with pairs of equilateral triangles
+filling the gaps between them.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Brick"><code>Brick = 7</code></dt>
+  
+  <dd><p>A running-bond brick wall: rectangles twice as wide as tall, each row offset half a brick.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Herringbone"><code>Herringbone = 8</code></dt>
+  
+  <dd><p>A herringbone weave of two-by-one bricks, each perpendicular to its neighbors and stepping along
+the diagonal.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Basketweave"><code>Basketweave = 9</code></dt>
+  
+  <dd><p>A basketweave: pairs of two-by-one bricks, a horizontal pair alternating with a vertical pair.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_FishScale"><code>FishScale = 10</code></dt>
+  
+  <dd><p>Overlapping rows of scallops, like fish scales or roof shingles.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Polar"><code>Polar = 11</code></dt>
+  
+  <dd><p>Concentric rings of sectors around the anchor point, like amphitheater seating.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Ashlar"><code>Ashlar = 12</code></dt>
+  
+  <dd><p>Ashlar masonry: courses of stones of random lengths, like a coursed stone wall. The seed
+picks the coursing.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Pythagorean"><code>Pythagorean = 13</code></dt>
+  
+  <dd><p>The Pythagorean tiling: interlocking squares of two sizes, one twice the side of the other.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Versailles"><code>Versailles = 14</code></dt>
+  
+  <dd><p>The Versailles pattern, known in some regions as the French pattern: tiles in four sizes
+laid into a repeating module, arranged so that no two seams line up into a long run.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Mondrian"><code>Mondrian = 15</code></dt>
+  
+  <dd><p>Rectangles of mixed sizes from recursive subdivision, like a Mondrian canvas. The seed picks
+the subdivision.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Tetromino"><code>Tetromino = 16</code></dt>
+  
+  <dd><p>The seven tetromino pieces, randomly packed with no gaps. The seed picks the packing.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Pentomino"><code>Pentomino = 17</code></dt>
+  
+  <dd><p>Pentominoes packed tightly together with no gaps. The seed picks the packing.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Rhombille"><code>Rhombille = 18</code></dt>
+  
+  <dd><p>The rhombille tiling: 60/120-degree rhombi in three orientations, three meeting around
+alternate vertices, reading as the tumbling-blocks pattern of stacked cubes.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Cobblestone"><code>Cobblestone = 19</code></dt>
+  
+  <dd><p>Rounded stones of slightly uneven shapes and sizes, like a cobbled pavement. The seed lays
+the stones.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnMosaicTileShape_Penrose"><code>Penrose = 20</code></dt>
+  
+  <dd><p>The Penrose tiling: thick and thin rhombi in an aperiodic pattern with fivefold symmetry
+that never repeats. The seed picks the tiling.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

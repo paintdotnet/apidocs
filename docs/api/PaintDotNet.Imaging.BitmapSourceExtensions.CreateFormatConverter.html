@@ -115,12 +115,127 @@ Method CreateFormatConverter
 
 <a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
 
+<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.PixelFormat@,PaintDotNet.Imaging.BitmapDitherType,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
+  CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, IPalette?, double, BitmapPaletteType)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IBitmapSource CreateFormatConverter(this IBitmapSource source, in PixelFormat dstFormat, BitmapDitherType dither, IPalette? palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd><param name="source">The input bitmap to convert.
+</dd>
+  <dt><code>dstFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
+  <dd><param name="dstFormat">The destination pixel format.
+</dd>
+  <dt><code>dither</code> <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a></dt>
+  <dd><param name="dither">The dithering type used for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>palette</code> <a class="xref" href="PaintDotNet.Imaging.IPalette.html">IPalette</a></dt>
+  <dd><param name="palette">The palette to use for conversion. Should be <code>null</code> if not using an indexed destination format such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>alphaThresholdPercent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dd><param name="alphaThresholdPercent">The alpha threshold to use for conversion. Specifies the percentage of transparency that should map to the transparent color of the palette. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>paletteTranslate</code> <a class="xref" href="PaintDotNet.Imaging.BitmapPaletteType.html">BitmapPaletteType</a></dt>
+  <dd><param name="paletteTranslate">The palette translation type to use for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
+
+<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter``1(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.BitmapDitherType,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
+  CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource, BitmapDitherType, IPalette?, double, BitmapPaletteType)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TPixelDst&gt; CreateFormatConverter&lt;TPixelDst&gt;(this IBitmapSource source, BitmapDitherType dither, IPalette? palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate) where TPixelDst : unmanaged, INaturalPixelInfo</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
+  <dd><param name="source"><param name="source">The input bitmap to convert.
+</dd>
+  <dt><code>dither</code> <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a></dt>
+  <dd><param name="dither"><param name="dither">The dithering type used for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>palette</code> <a class="xref" href="PaintDotNet.Imaging.IPalette.html">IPalette</a></dt>
+  <dd><param name="palette"><param name="palette">The palette to use for conversion. Should be <code>null</code> if not using an indexed destination format such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>alphaThresholdPercent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dd><param name="alphaThresholdPercent"><param name="alphaThresholdPercent">The alpha threshold to use for conversion. Specifies the percentage of transparency that should map to the transparent color of the palette. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>paletteTranslate</code> <a class="xref" href="PaintDotNet.Imaging.BitmapPaletteType.html">BitmapPaletteType</a></dt>
+  <dd><param name="paletteTranslate"><param name="paletteTranslate">The palette translation type to use for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixelDst&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TPixelDst</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
+
 <h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.PixelFormat@)">
   CreateFormatConverter(IBitmapSource, in PixelFormat)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -153,32 +268,44 @@ Method CreateFormatConverter
 
 <a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.PixelFormat@,PaintDotNet.Imaging.BitmapDitherType,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
-  CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, IPalette, double, BitmapPaletteType)
+<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_System_Int32_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.PixelFormat@,PaintDotNet.Imaging.BitmapDitherType,System.Int32,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
+  CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, int, IPalette?, double, BitmapPaletteType)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapSource CreateFormatConverter(this IBitmapSource source, in PixelFormat dstFormat, BitmapDitherType dither, IPalette palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmapSource CreateFormatConverter(this IBitmapSource source, in PixelFormat dstFormat, BitmapDitherType dither, int ditherLevel, IPalette? palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd></dd>
+  <dd><param name="source"><param name="source">The input bitmap to convert.
+</dd>
   <dt><code>dstFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd></dd>
+  <dd><param name="dstFormat"><param name="dstFormat">The destination pixel format.
+</dd>
   <dt><code>dither</code> <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a></dt>
-  <dd></dd>
+  <dd><param name="dither"><param name="dither">The dithering type used for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>ditherLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><param name="ditherLevel">Specifies the dithering level when <code class="paramref">dither</code> is set to <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html#PaintDotNet_Imaging_BitmapDitherType_ErrorDiffusion">ErrorDiffusion</a>. The range of this value is 0 to 8. A good default value is 7.
+</dd>
   <dt><code>palette</code> <a class="xref" href="PaintDotNet.Imaging.IPalette.html">IPalette</a></dt>
-  <dd></dd>
+  <dd><param name="palette"><param name="palette">The palette to use for conversion. Should be <code>null</code> if not using an indexed destination format such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
   <dt><code>alphaThresholdPercent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
+  <dd><param name="alphaThresholdPercent"><param name="alphaThresholdPercent">The alpha threshold to use for conversion. Specifies the percentage of transparency that should map to the transparent color of the palette. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
   <dt><code>paletteTranslate</code> <a class="xref" href="PaintDotNet.Imaging.BitmapPaletteType.html">BitmapPaletteType</a></dt>
-  <dd></dd>
+  <dd><param name="paletteTranslate"><param name="paletteTranslate">The palette translation type to use for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -199,33 +326,52 @@ Method CreateFormatConverter
 
 <a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter``1(PaintDotNet.Imaging.IBitmapSource)">
-  CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource)
+<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_System_Int32_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter``1(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.BitmapDitherType,System.Int32,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
+  CreateFormatConverter&lt;TDstPixel&gt;(IBitmapSource, BitmapDitherType, int, IPalette?, double, BitmapPaletteType)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TPixelDst&gt; CreateFormatConverter&lt;TPixelDst&gt;(this IBitmapSource source) where TPixelDst : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TDstPixel&gt; CreateFormatConverter&lt;TDstPixel&gt;(this IBitmapSource source, BitmapDitherType dither, int ditherLevel, IPalette? palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate) where TDstPixel : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd></dd>
+  <dd><param name="source"><param name="source"><param name="source">The input bitmap to convert.
+</dd>
+  <dt><code>dither</code> <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a></dt>
+  <dd><param name="dither"><param name="dither"><param name="dither">The dithering type used for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>ditherLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><param name="ditherLevel"><param name="ditherLevel">Specifies the dithering level when <code class="paramref">dither</code> is set to <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html#PaintDotNet_Imaging_BitmapDitherType_ErrorDiffusion">ErrorDiffusion</a>. The range of this value is 0 to 8. A good default value is 7.
+</dd>
+  <dt><code>palette</code> <a class="xref" href="PaintDotNet.Imaging.IPalette.html">IPalette</a></dt>
+  <dd><param name="palette"><param name="palette"><param name="palette">The palette to use for conversion. Should be <code>null</code> if not using an indexed destination format such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>alphaThresholdPercent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+  <dd><param name="alphaThresholdPercent"><param name="alphaThresholdPercent"><param name="alphaThresholdPercent">The alpha threshold to use for conversion. Specifies the percentage of transparency that should map to the transparent color of the palette. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
+  <dt><code>paletteTranslate</code> <a class="xref" href="PaintDotNet.Imaging.BitmapPaletteType.html">BitmapPaletteType</a></dt>
+  <dd><param name="paletteTranslate"><param name="paletteTranslate"><param name="paletteTranslate">The palette translation type to use for conversion. Applicable only for indexed destination formats such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Indexed8.html#PaintDotNet_Imaging_PixelFormats_Indexed8">Indexed8</a>.
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixelDst&gt;</dt>
+  <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TDstPixel&gt;</dt>
   <dd></dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
-  <dt><code>TPixelDst</code></dt>
+  <dt><code>TDstPixel</code></dt>
   <dd></dd>
 </dl>
 
@@ -240,29 +386,24 @@ Method CreateFormatConverter
 
 <a id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter*"></a>
 
-<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter``1(PaintDotNet.Imaging.IBitmapSource,PaintDotNet.Imaging.BitmapDitherType,PaintDotNet.Imaging.IPalette,System.Double,PaintDotNet.Imaging.BitmapPaletteType)">
-  CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource, BitmapDitherType, IPalette, double, BitmapPaletteType)
+<h3 id="PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_" data-uid="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter``1(PaintDotNet.Imaging.IBitmapSource)">
+  CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TPixelDst&gt; CreateFormatConverter&lt;TPixelDst&gt;(this IBitmapSource source, BitmapDitherType dither, IPalette palette, double alphaThresholdPercent, BitmapPaletteType paletteTranslate) where TPixelDst : unmanaged, INaturalPixelInfo</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmapSource&lt;TPixelDst&gt; CreateFormatConverter&lt;TPixelDst&gt;(this IBitmapSource source) where TPixelDst : unmanaged, INaturalPixelInfo</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd></dd>
-  <dt><code>dither</code> <a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a></dt>
-  <dd></dd>
-  <dt><code>palette</code> <a class="xref" href="PaintDotNet.Imaging.IPalette.html">IPalette</a></dt>
-  <dd></dd>
-  <dt><code>alphaThresholdPercent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
-  <dt><code>paletteTranslate</code> <a class="xref" href="PaintDotNet.Imaging.BitmapPaletteType.html">BitmapPaletteType</a></dt>
   <dd></dd>
 </dl>
 

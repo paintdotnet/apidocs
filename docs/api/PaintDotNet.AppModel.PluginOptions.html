@@ -100,7 +100,7 @@ icons.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record PluginOptions : IEquatable&lt;PluginOptions&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record PluginOptions : IPluginOptions, IInternalImpl, IEquatable&lt;PluginOptions&gt;</code></pre>
   </div>
 
 
@@ -117,6 +117,8 @@ icons.</p>
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="PaintDotNet.AppModel.IPluginOptions.html">IPluginOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.AppModel.PluginOptions.html">PluginOptions</a>&gt;</div>
     </dd>
   </dl>
@@ -126,7 +128,7 @@ icons.</p>
     <dd>
       <div><a class="xref" href="PaintDotNet.Effects.EffectOptions.html">EffectOptions</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.EffectOptionsBase.html">EffectOptionsBase</a></div>
-      <div><a class="xref" href="PaintDotNet.FileTypeOptions.html">FileTypeOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions1.html">FileTypeOptions1</a></div>
     </dd>
   </dl>
 
@@ -166,10 +168,6 @@ icons.</p>
     <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.EqualityContract.html#PaintDotNet_AppModel_PluginOptions_EqualityContract">EqualityContract</a></dt>
     <dd></dd>
   </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.IsFrozen.html#PaintDotNet_AppModel_PluginOptions_IsFrozen">IsFrozen</a></dt>
-    <dd></dd>
-  </dl>
 
   <h2 class="section" id="methods">Methods
 </h2>
@@ -187,21 +185,11 @@ icons.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.OnFrozen.html#PaintDotNet_AppModel_PluginOptions_OnFrozen">OnFrozen()</a></dt>
-    <dd><p>Called by the base class when Freeze() is called for the first time. This is where
-&quot;fixups&quot; should be applied, such as adjusting or migrating obsolete options.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.PrintMembers.html#PaintDotNet_AppModel_PluginOptions_PrintMembers_System_Text_StringBuilder_">PrintMembers(StringBuilder)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.ToString.html#PaintDotNet_AppModel_PluginOptions_ToString">ToString()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.VerifyNotFrozen.html#PaintDotNet_AppModel_PluginOptions_VerifyNotFrozen">VerifyNotFrozen()</a></dt>
     <dd></dd>
   </dl>
 

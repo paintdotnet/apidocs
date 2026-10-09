@@ -117,8 +117,8 @@ public enum BitmapAllocationOptions</code></pre>
   
   <dd><p>Uses the default options for allocating a bitmap: the bitmap is guaranteed to be zero-
 filled (black or transparent black), and will potentially have a stride that is larger
-than necessary in order to help improve performance in other areas (esp. use with
-Direct2D).</p>
+than necessary in order to help improve performance in other areas (esp. for use with
+Direct2D and/or SIMD optimized code).</p>
 </dd>
     <dt id="PaintDotNet_Imaging_BitmapAllocationOptions_Uninitialized"><code>Uninitialized = 1</code></dt>
   

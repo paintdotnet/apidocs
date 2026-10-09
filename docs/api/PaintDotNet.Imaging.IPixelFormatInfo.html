@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPixelFormatInfo ">
       
-      <meta name="description" content="Exposes methods that provide information about a pixel format.  Corresponds to the following native interfaces: IWICPixelFormatInfo, IWICPixelFormatInfo2">
+      <meta name="description" content="Corresponds to the following native interfaces: IWICPixelFormatInfo, IWICPixelFormatInfo2">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,7 @@ Interface IPixelFormatInfo
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Exposes methods that provide information about a pixel format.<br>
+  <div class="markdown summary"><p><inheritdoc cref="T:TerraFX.Interop.Windows.IWICPixelFormatInfo"></inheritdoc><br>
 <br>
 Corresponds to the following native interfaces:
 <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicpixelformatinfo">IWICPixelFormatInfo</a>,
@@ -168,17 +168,17 @@ Corresponds to the following native interfaces:
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo.BitsPerPixel.html#PaintDotNet_Imaging_IPixelFormatInfo_BitsPerPixel">BitsPerPixel</a></dt>
-    <dd><p>Gets the bits per pixel (BPP) of the pixel format.</p>
+    <dd><p><inheritdoc cref="M:TerraFX.Interop.Windows.IWICPixelFormatInfo.GetBitsPerPixel(System.UInt32*)"></inheritdoc></p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo.ChannelCount.html#PaintDotNet_Imaging_IPixelFormatInfo_ChannelCount">ChannelCount</a></dt>
-    <dd><p>Gets the number of channels the pixel format contains.</p>
+    <dd><p><inheritdoc cref="M:TerraFX.Interop.Windows.IWICPixelFormatInfo.GetChannelCount(System.UInt32*)"></inheritdoc></p>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo.ChannelMasks.html#PaintDotNet_Imaging_IPixelFormatInfo_ChannelMasks">ChannelMasks</a></dt>
-    <dd><p>Gets the pixel format's channel mask.</p>
+    <dd><p><inheritdoc cref="M:TerraFX.Interop.Windows.IWICPixelFormatInfo.GetChannelMask(System.UInt32,System.UInt32,System.Byte*,System.UInt32*)"></inheritdoc></p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -193,7 +193,7 @@ Corresponds to the following native interfaces:
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IPixelFormatInfo.PixelFormat.html#PaintDotNet_Imaging_IPixelFormatInfo_PixelFormat">PixelFormat</a></dt>
-    <dd><p>Gets the pixel format GUID.</p>
+    <dd><p><inheritdoc cref="M:TerraFX.Interop.Windows.IWICPixelFormatInfo.GetFormatGUID(System.Guid*)"></inheritdoc></p>
 </dd>
   </dl>
   <dl class="jumplist">

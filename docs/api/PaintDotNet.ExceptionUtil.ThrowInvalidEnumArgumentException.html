@@ -124,7 +124,8 @@ Method ThrowInvalidEnumArgumentException
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ThrowInvalidEnumArgumentException(string paramName, int invalidValue, Type enumType)</code></pre>
+  <pre><code class="lang-csharp hljs">[DoesNotReturn]
+public static void ThrowInvalidEnumArgumentException(string paramName, int invalidValue, Type enumType)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -159,7 +160,8 @@ Method ThrowInvalidEnumArgumentException
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ThrowInvalidEnumArgumentException&lt;T&gt;(T value, string valueName = &quot;&quot;) where T : struct, IComparable, IFormattable, IConvertible</code></pre>
+  <pre><code class="lang-csharp hljs">[DoesNotReturn]
+public static void ThrowInvalidEnumArgumentException&lt;T&gt;(T value, string valueName = &quot;&quot;) where T : struct, IComparable, IFormattable, IConvertible</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

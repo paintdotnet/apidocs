@@ -116,7 +116,7 @@ Method CreateCombinedReader
 <a id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader_" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader*"></a>
 
 <h3 id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader_PaintDotNet_Clipboard_IClipboard_System_Collections_Generic_IEnumerable_PaintDotNet_Clipboard_IClipboardReader__" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader(PaintDotNet.Clipboard.IClipboard,System.Collections.Generic.IEnumerable{PaintDotNet.Clipboard.IClipboardReader})">
-  CreateCombinedReader(IClipboard, IEnumerable&lt;IClipboardReader&gt;)
+  CreateCombinedReader(IClipboard, params IEnumerable&lt;IClipboardReader&gt;)
   
 </h3>
 
@@ -124,7 +124,7 @@ Method CreateCombinedReader
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IClipboardReader CreateCombinedReader(this IClipboard clipboard, IEnumerable&lt;IClipboardReader&gt; readers)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IClipboardReader CreateCombinedReader(this IClipboard clipboard, params IEnumerable&lt;IClipboardReader&gt; readers)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -192,7 +192,7 @@ Method CreateCombinedReader
 <a id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader_" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader*"></a>
 
 <h3 id="PaintDotNet_Clipboard_ClipboardExtensions_CreateCombinedReader__1_PaintDotNet_Clipboard_IClipboard_System_Collections_Generic_IEnumerable_PaintDotNet_Clipboard_IClipboardReader___0___" data-uid="PaintDotNet.Clipboard.ClipboardExtensions.CreateCombinedReader``1(PaintDotNet.Clipboard.IClipboard,System.Collections.Generic.IEnumerable{PaintDotNet.Clipboard.IClipboardReader{``0}})">
-  CreateCombinedReader&lt;T&gt;(IClipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt;)
+  CreateCombinedReader&lt;T&gt;(IClipboard, params IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt;)
   
 </h3>
 
@@ -200,7 +200,7 @@ Method CreateCombinedReader
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt; readers) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public static IClipboardReader&lt;T&gt; CreateCombinedReader&lt;T&gt;(this IClipboard clipboard, params IEnumerable&lt;IClipboardReader&lt;T&gt;?&gt; readers) where T : class</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

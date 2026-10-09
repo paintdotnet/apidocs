@@ -97,7 +97,7 @@ Interface IEffectDocumentMetadata
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IEffectDocumentMetadata : IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IEffectDocumentMetadata : IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -106,7 +106,27 @@ Interface IEffectDocumentMetadata
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.CreateRef.html#PaintDotNet_Effects_EffectsObjectRefExtensions_CreateRef_PaintDotNet_Effects_IEffectDocumentMetadata_">EffectsObjectRefExtensions.CreateRef(IEffectDocumentMetadata)</a>
+  </div>
+  </dd></dl>
 
 
 

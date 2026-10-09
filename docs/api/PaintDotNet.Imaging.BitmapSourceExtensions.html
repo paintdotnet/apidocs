@@ -90,7 +90,7 @@ Class BitmapSourceExtensions
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Framework.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -168,6 +168,14 @@ Class BitmapSourceExtensions
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CopyPixels.html#PaintDotNet_Imaging_BitmapSourceExtensions_CopyPixels_PaintDotNet_Imaging_IBitmapSource_System_Void__System_Int32_System_IntPtr_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyPixels(IBitmapSource, void*, int, nint, in RectInt32?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CopyPixels.html#PaintDotNet_Imaging_BitmapSourceExtensions_CopyPixels_PaintDotNet_Imaging_IBitmapSource_System_Void__System_Int32_System_UIntPtr_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyPixels(IBitmapSource, void*, int, nuint, in RectInt32?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CopyPixels.html#PaintDotNet_Imaging_BitmapSourceExtensions_CopyPixels__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_ExtentPtr___0__PaintDotNet_Rendering_Point2Int32_">CopyPixels&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, ExtentPtr&lt;TPixel&gt;, Point2Int32)</a></dt>
     <dd></dd>
   </dl>
@@ -185,6 +193,22 @@ Class BitmapSourceExtensions
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CopyPixels.html#PaintDotNet_Imaging_BitmapSourceExtensions_CopyPixels__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_RegionPtr___0__PaintDotNet_Rendering_Point2Int32_">CopyPixels&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, RegionPtr&lt;TPixel&gt;, Point2Int32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateChannelExtractor.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateChannelExtractor_PaintDotNet_Imaging_IBitmapSource_System_Int32_PaintDotNet_Imaging_PixelFormat__">CreateChannelExtractor(IBitmapSource, int, in PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateChannelExtractor.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateChannelExtractor__1_PaintDotNet_Imaging_IBitmapSource_System_Int32_">CreateChannelExtractor&lt;TPixelOutput&gt;(IBitmapSource, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateChannelReplacer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateChannelReplacer_PaintDotNet_Imaging_IBitmapSource_System_Int32_PaintDotNet_Imaging_IBitmapSource_">CreateChannelReplacer(IBitmapSource, int, IBitmapSource)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateChannelReplacer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateChannelReplacer__1_PaintDotNet_Imaging_IBitmapSource___0__System_Int32_PaintDotNet_Imaging_IBitmapSource_">CreateChannelReplacer&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, int, IBitmapSource)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -217,11 +241,59 @@ Class BitmapSourceExtensions
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_SimpleColorProfile_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformer(IBitmapSource, SimpleColorProfile, IColorContext, in PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Dxgi_DxgiColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformer(IBitmapSource, DxgiColorSpace, IColorContext, in PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformer(IBitmapSource, CicpColorSpace, IColorContext, in PixelFormat)</a></dt>
+    <dd><p>Color-transforms <code class="paramref">source</code>, whose colorimetry is described by
+<code class="paramref">sourceCicpColorSpace</code>, into the given destination color context and pixel format.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformer(IBitmapSource, IColorContext, IColorContext, in PixelFormat)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Direct2D1_SimpleColorProfile_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixelDst&gt;(IBitmapSource, SimpleColorProfile, IColorContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Dxgi_DxgiColorSpace_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixelDst&gt;(IBitmapSource, DxgiColorSpace, IColorContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixelDst&gt;(IBitmapSource, CicpColorSpace, IColorContext)</a></dt>
+    <dd><p>Color-transforms <code class="paramref">source</code>, whose colorimetry is described by
+<code class="paramref">sourceCicpColorSpace</code>, into the given destination color context, with the output
+pixel format determined by <code class="typeparamref">TPixelDst</code>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixel&gt;(IBitmapSource, IColorContext, IColorContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Direct2D1_SimpleColorProfile_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, SimpleColorProfile, IColorContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Dxgi_DxgiColorSpace_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, DxgiColorSpace, IColorContext)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, CicpColorSpace, IColorContext)</a></dt>
+    <dd><p>Color-transforms <code class="paramref">source</code>, whose colorimetry is described by
+<code class="paramref">sourceCicpColorSpace</code>, into the given destination color context. The output
+pixel format is inferred from <code class="paramref">source</code>'s pixel format (<code class="typeparamref">TPixel</code>).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_IColorContext_">CreateColorTransformer&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, IColorContext, IColorContext)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -234,22 +306,52 @@ Class BitmapSourceExtensions
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__">CreateFormatConverter(IBitmapSource, in PixelFormat)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, IPalette, double, BitmapPaletteType)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, IPalette?, double, BitmapPaletteType)</a></dt>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_BitmapDitherType_System_Int32_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter(IBitmapSource, in PixelFormat, BitmapDitherType, int, IPalette?, double, BitmapPaletteType)</a></dt>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_">CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource, BitmapDitherType, IPalette, double, BitmapPaletteType)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter&lt;TPixelDst&gt;(IBitmapSource, BitmapDitherType, IPalette?, double, BitmapPaletteType)</a></dt>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateFormatConverter.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateFormatConverter__1_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_BitmapDitherType_System_Int32_PaintDotNet_Imaging_IPalette_System_Double_PaintDotNet_Imaging_BitmapPaletteType_">CreateFormatConverter&lt;TDstPixel&gt;(IBitmapSource, BitmapDitherType, int, IPalette?, double, BitmapPaletteType)</a></dt>
+    <dd><p>Converts a bitmap from one pixel format to another, handling dithering and
+halftoning to indexed formats, palette translation, and alpha thresholding.</p>
+<p>For more information, see <code><a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize">IWICFormatConverter::Initialize</a></code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateScaler.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateScaler_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Imaging_BitmapInterpolationMode_">CreateScaler(IBitmapSource, SizeInt32, BitmapInterpolationMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateScaler.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateScaler_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Imaging_BitmapInterpolationMode2_">CreateScaler(IBitmapSource, SizeInt32, BitmapInterpolationMode2)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -258,6 +360,10 @@ Class BitmapSourceExtensions
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateScaler.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateScaler__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Rendering_SizeInt32_PaintDotNet_Imaging_BitmapInterpolationMode_">CreateScaler&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, SizeInt32, BitmapInterpolationMode)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateScaler.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateScaler__1_PaintDotNet_Imaging_IBitmapSource___0__PaintDotNet_Rendering_SizeInt32_PaintDotNet_Imaging_BitmapInterpolationMode2_">CreateScaler&lt;TPixel&gt;(IBitmapSource&lt;TPixel&gt;, SizeInt32, BitmapInterpolationMode2)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

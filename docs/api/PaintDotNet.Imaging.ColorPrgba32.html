@@ -97,7 +97,7 @@ Struct ColorPrgba32
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct ColorPrgba32 : INaturalPixelInfo&lt;ColorPrgba32&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, IEquatable&lt;ColorPrgba32&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ColorPrgba32 : INaturalPixelInfo&lt;ColorPrgba32&gt;, IEquatable&lt;ColorPrgba32&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, ISpanParsable&lt;ColorPrgba32&gt;, IParsable&lt;ColorPrgba32&gt;</code></pre>
   </div>
 
 
@@ -108,10 +108,12 @@ Struct ColorPrgba32
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo-1.html">INaturalPixelInfo</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.html">ColorPrgba32</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.html">ColorPrgba32</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo.html">INaturalPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.Imaging.IPixelInfo.html">IPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.html">ColorPrgba32</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.ispanparsable-1">ISpanParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.html">ColorPrgba32</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.html">ColorPrgba32</a>&gt;</div>
     </dd>
   </dl>
 
@@ -119,9 +121,6 @@ Struct ColorPrgba32
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -209,7 +208,19 @@ Struct ColorPrgba32
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.Parse.html#PaintDotNet_Imaging_ColorPrgba32_Parse_System_ReadOnlySpan_System_Char__">Parse(ReadOnlySpan&lt;char&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.Parse.html#PaintDotNet_Imaging_ColorPrgba32_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.Round.html#PaintDotNet_Imaging_ColorPrgba32_Round_PaintDotNet_Imaging_ColorPrgba128Float_System_MidpointRounding_">Round(ColorPrgba128Float, MidpointRounding)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.ToString.html#PaintDotNet_Imaging_ColorPrgba32_ToString">ToString()</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -218,6 +229,14 @@ Struct ColorPrgba32
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.Truncate.html#PaintDotNet_Imaging_ColorPrgba32_Truncate_PaintDotNet_Imaging_ColorPrgba128Float_">Truncate(ColorPrgba128Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.TryParse.html#PaintDotNet_Imaging_ColorPrgba32_TryParse_System_ReadOnlySpan_System_Char__PaintDotNet_Imaging_ColorPrgba32__">TryParse(ReadOnlySpan&lt;char&gt;, out ColorPrgba32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba32.TryParse.html#PaintDotNet_Imaging_ColorPrgba32_TryParse_System_String_PaintDotNet_Imaging_ColorPrgba32__">TryParse(string?, out ColorPrgba32)</a></dt>
     <dd></dd>
   </dl>
 

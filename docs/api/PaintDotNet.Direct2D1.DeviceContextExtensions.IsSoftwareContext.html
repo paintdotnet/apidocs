@@ -154,9 +154,10 @@ quality of rendering in order to improve performance. Hardware accelerated rende
 significantly faster.<br>
 <br>
 This method is more accurate than using <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties__">IsSupported(in DeviceContextProperties)</a> with <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextType.html#PaintDotNet_Direct2D1_DeviceContextType_Software">Software</a>,
-which only returns true if the device context was created with <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>.
-This method also returns true if the device was created using <span class="xref">PaintDotNet.Direct2D1.IDirect2DFactory.CreateDevice(PaintDotNet.Dxgi.IDxgiDevice)</span>
-with the WARP <span class="xref">PaintDotNet.Dxgi.IDxgiAdapter</span>.</p>
+which only returns true if the device context was created with <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateBitmapDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateBitmapDeviceContext_PaintDotNet_Imaging_IBitmap_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateBitmapDeviceContext(IBitmap, in DeviceContextProperties)</a>
+or <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.CreateDCDeviceContext.html#PaintDotNet_Direct2D1_IDirect2DFactory_CreateDCDeviceContext_PaintDotNet_Direct2D1_DeviceContextProperties__">CreateDCDeviceContext(in DeviceContextProperties)</a>. This method also
+returns true if the <a class="xref" href="PaintDotNet.Direct2D1.IDevice.html">IDevice</a> was created specifically using the WARP adapter, which
+would otherwise return false via <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.IsSupported.html#PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties__">IsSupported(in DeviceContextProperties)</a>.</p>
 </div>
 
 

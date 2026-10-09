@@ -120,7 +120,8 @@ Property AssemblyLocation
   
 </h3>
 
-<div class="markdown level1 summary"><p>The path to the assembly that contains the plugin.</p>
+<div class="markdown level1 summary"><p>The path to the assembly that contains the plugin. You should not use GetType().Assembly.Location
+from the plugin instance itself, as it may be different or blank due to shimming.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
@@ -141,10 +142,6 @@ Property AssemblyLocation
 
 
 
-<h4 class="section" id="PaintDotNet_Effects_IEffectInfo2_AssemblyLocation_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>Calling <code>GetType().Type.Assembly.Location</code> on an effect instance should not be used because
-it may not reflect the actual <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> of the effect's implementation.</p>
-</div>
 
 
 

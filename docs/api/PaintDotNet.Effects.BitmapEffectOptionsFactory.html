@@ -97,7 +97,7 @@ Class BitmapEffectOptionsFactory
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BitmapEffectOptionsFactory : EffectOptionsBase, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IEquatable&lt;EffectOptionsBase&gt;, IEquatable&lt;BitmapEffectOptionsFactory&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BitmapEffectOptionsFactory : EffectOptionsBase, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IPluginOptions, IInternalImpl, IEquatable&lt;EffectOptionsBase&gt;, IEquatable&lt;BitmapEffectOptionsFactory&gt;</code></pre>
   </div>
 
 
@@ -118,6 +118,8 @@ Class BitmapEffectOptionsFactory
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.AppModel.PluginOptions.html">PluginOptions</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Effects.IEffectOptions.html">IEffectOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.AppModel.IPluginOptions.html">IPluginOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.EffectOptionsBase.html">EffectOptionsBase</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.BitmapEffectOptionsFactory.html">BitmapEffectOptionsFactory</a>&gt;</div>
     </dd>
@@ -138,15 +140,6 @@ Class BitmapEffectOptionsFactory
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Effects.EffectOptionsBase.IsConfigurable.html#PaintDotNet_Effects_EffectOptionsBase_IsConfigurable">EffectOptionsBase.IsConfigurable</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.VerifyNotFrozen.html#PaintDotNet_AppModel_PluginOptions_VerifyNotFrozen">PluginOptions.VerifyNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.OnFrozen.html#PaintDotNet_AppModel_PluginOptions_OnFrozen">PluginOptions.OnFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.IsFrozen.html#PaintDotNet_AppModel_PluginOptions_IsFrozen">PluginOptions.IsFrozen</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>

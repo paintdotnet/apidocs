@@ -128,7 +128,8 @@ Thus, by using this method you are promising to not modify the array that is ret
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public RectangleF[] GetRegionScansReadOnly()</code></pre>
+  <pre><code class="lang-csharp hljs">[MemberNotNull(&quot;cachedRectsF&quot;)]
+public RectangleF[] GetRegionScansReadOnly()</code></pre>
 </div>
 
 

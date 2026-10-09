@@ -97,7 +97,7 @@ Interface IEffectInfo2
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IEffectInfo2 : IObjectRef, IIsDisposed, IDisposable, IEquatable&lt;IEffectInfo2&gt;, IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IEffectInfo2 : IPluginInfo, IObjectRef, IIsDisposed, IDisposable, IEquatable&lt;IPluginInfo&gt;, IInternalImpl, IEquatable&lt;IEffectInfo2&gt;</code></pre>
   </div>
 
 
@@ -117,6 +117,9 @@ Interface IEffectInfo2
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals">IEquatable&lt;IPluginInfo&gt;.Equals(IPluginInfo)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals">IEquatable&lt;IEffectInfo2&gt;.Equals(IEffectInfo2)</a>
@@ -145,7 +148,8 @@ Interface IEffectInfo2
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectInfo2.AssemblyLocation.html#PaintDotNet_Effects_IEffectInfo2_AssemblyLocation">AssemblyLocation</a></dt>
-    <dd><p>The path to the assembly that contains the plugin.</p>
+    <dd><p>The path to the assembly that contains the plugin. You should not use GetType().Assembly.Location
+from the plugin instance itself, as it may be different or blank due to shimming.</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -155,7 +159,7 @@ Interface IEffectInfo2
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectInfo2.IsBuiltIn.html#PaintDotNet_Effects_IEffectInfo2_IsBuiltIn">IsBuiltIn</a></dt>
-    <dd><p>Indicates whether the effect is built-in to Paint.NET and is therefore not a plugin.</p>
+    <dd><p>Indicates whether the plugin is built-in to Paint.NET (and is therefore not technically a &quot;plugin&quot;).</p>
 </dd>
   </dl>
   <dl class="jumplist">

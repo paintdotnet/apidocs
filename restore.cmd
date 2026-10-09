@@ -1,1 +1,1 @@
-dotnet tool update -g docfx
+dotnet tool update -g docfx %*

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum CicpMatrixCoefficients </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum CicpMatrixCoefficients ">
+      
+      <meta name="description" content="Identifies the matrix coefficients used to derive luma and chroma signals from the source RGB primaries. These are the &amp;quot;MatrixCoefficients&amp;quot; code points defined by ITU-T H.273 (Table 4) and used by the PNG cICP chunk.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Imaging.CicpMatrixCoefficients">
+
+
+
+
+  <h1 id="PaintDotNet_Imaging_CicpMatrixCoefficients" data-uid="PaintDotNet.Imaging.CicpMatrixCoefficients" class="text-break">
+Enum CicpMatrixCoefficients  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Imaging.html">Imaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Identifies the matrix coefficients used to derive luma and chroma signals from the source
+RGB primaries. These are the &quot;MatrixCoefficients&quot; code points defined by ITU-T H.273
+(Table 4) and used by the PNG cICP chunk.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CicpMatrixCoefficients : byte</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Identity"><code>Identity = 0</code></dt>
+  
+  <dd><p>Identity. The samples are RGB (or GBR / XYZ); no matrixing is applied. Also IEC 61966-2-1
+(sRGB) and SMPTE ST 428-1. This is the only value permitted in a PNG cICP chunk.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Bt709"><code>Bt709 = 1</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.709-6.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Unspecified"><code>Unspecified = 2</code></dt>
+  
+  <dd><p>Unspecified. The matrix coefficients are determined by the application or by other means.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Fcc"><code>Fcc = 4</code></dt>
+  
+  <dd><p>United States FCC Title 47 Code of Federal Regulations 73.682 (a) (20).</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Bt470Bg"><code>Bt470Bg = 5</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.470-6 System B, G (historical); BT.601-7 625; BT.1358 625; BT.1700 625 PAL and SECAM.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Smpte170M"><code>Smpte170M = 6</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.601-7 525; BT.1358 525 or 625; BT.1700 NTSC; SMPTE ST 170.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Smpte240M"><code>Smpte240M = 7</code></dt>
+  
+  <dd><p>SMPTE ST 240 (historical).</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_YCgCo"><code>YCgCo = 8</code></dt>
+  
+  <dd><p>YCgCo.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Bt2020Ncl"><code>Bt2020Ncl = 9</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.2020-2 non-constant luminance system; Rec. ITU-R BT.2100-2 Y'CbCr.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_Bt2020Cl"><code>Bt2020Cl = 10</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.2020-2 constant luminance system.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_SmpteSt2085"><code>SmpteSt2085 = 11</code></dt>
+  
+  <dd><p>SMPTE ST 2085 (Y'D'zD'x).</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_ChromaticityDerivedNcl"><code>ChromaticityDerivedNcl = 12</code></dt>
+  
+  <dd><p>Chromaticity-derived non-constant luminance system.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_ChromaticityDerivedCl"><code>ChromaticityDerivedCl = 13</code></dt>
+  
+  <dd><p>Chromaticity-derived constant luminance system.</p>
+</dd>
+    <dt id="PaintDotNet_Imaging_CicpMatrixCoefficients_ICtCp"><code>ICtCp = 14</code></dt>
+  
+  <dd><p>Rec. ITU-R BT.2100-2 ICtCp.</p>
+</dd>
+  </dl>
+
+
+  <h2 id="PaintDotNet_Imaging_CicpMatrixCoefficients_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+The underlying type is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> to match the 8-bit code point in the cICP chunk.
+Only the values defined by H.273 are named here; reserved and unassigned values (3 and
+15–255) are intentionally not enumerated, but still round-trip faithfully because the
+storage type is a raw byte.
+</p>
+<p>
+For PNG, the only valid value is <a class="xref" href="PaintDotNet.Imaging.CicpMatrixCoefficients.html#PaintDotNet_Imaging_CicpMatrixCoefficients_Identity">Identity</a>, because PNG stores RGB (not Y'CbCr)
+samples. Other values are retained for faithful round-tripping and validation.
+</p>
+</div>
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

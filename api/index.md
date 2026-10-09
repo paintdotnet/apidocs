@@ -8,7 +8,6 @@ This is an index of the namespaces and members that are accessible for Paint.NET
 The following DLLs should be referenced by plugins:
 - All plugins
   - `PaintDotNet.Base.dll`
-  - `PaintDotNet.Collections.dll`
   - `PaintDotNet.ComponentModel.dll`
   - `PaintDotNet.Core.dll`
   - `PaintDotNet.Fundamentals.dll`
@@ -23,6 +22,6 @@ The following DLLs should be referenced by plugins:
 - GPU Effect plugins
   - `PaintDotNet.Effects.Gpu.dll`
 - FileTypes
-  - `PaintDotNet.Data.dll`
+  - `PaintDotNet.FileTypes.dll`
 
 > **NOTE:** Paint.NET's DLLs are not licensed for use in other applications. You may not embed them in your own software or redistribute them.

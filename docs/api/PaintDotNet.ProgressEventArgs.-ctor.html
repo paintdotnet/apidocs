@@ -92,7 +92,7 @@ Constructor ProgressEventArgs
 
 <div class="facts text-secondary">
   <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
 </div>
 
 <div class="markdown summary"></div>
@@ -120,7 +120,8 @@ Constructor ProgressEventArgs
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an instance of this class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,10 @@ Constructor ProgressEventArgs
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>percent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
+  <dd><summary>
+            A value between 0 and 100 indicating the percentage of completion.
+            </summary>. This value will be clamped to the valid range of [0, 100].
+</dd>
 </dl>
 
 
@@ -151,7 +155,8 @@ Constructor ProgressEventArgs
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an instance of this class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -161,9 +166,13 @@ Constructor ProgressEventArgs
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>percent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
+  <dd><summary>
+            A value between 0 and 100 indicating the percentage of completion.
+            </summary>
+</dd>
   <dt><code>clamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>Whether to clamp the <code class="paramref">percent</code> to the valid range of [0, 100].</p>
+</dd>
 </dl>
 
 

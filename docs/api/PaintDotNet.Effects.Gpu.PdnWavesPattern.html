@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum PdnWavesPattern </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum PdnWavesPattern ">
+      
+      <meta name="description" content="Specifies how  arranges its wavefronts, and which direction it displaces the image in.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu.PdnWavesPattern">
+
+
+
+
+  <h1 id="PaintDotNet_Effects_Gpu_PdnWavesPattern" data-uid="PaintDotNet.Effects.Gpu.PdnWavesPattern" class="text-break">
+Enum PdnWavesPattern  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specifies how <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.html">PdnWavesEffect</a> arranges its wavefronts, and which direction it
+displaces the image in.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PdnWavesPattern</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear"><code>Linear = 0</code></dt>
+  
+  <dd><p>Parallel wavefronts travelling in the direction given by the effect's Angle, displacing the
+image perpendicular to that direction. Never folds.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial"><code>Radial = 1</code></dt>
+  
+  <dd><p>Concentric wavefronts radiating from the effect's Center, displacing the image along the
+radius. This is the ripples-on-a-pond pattern. Folds at high amplitude.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_LongitudinalLinear"><code>LongitudinalLinear = 2</code></dt>
+  
+  <dd><p>Parallel wavefronts as with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a>, but displacing the image along the
+direction of travel instead of across it. This compresses and stretches the image into
+bands, like an accordion, rather than making it undulate. Folds at high amplitude.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Tangential"><code>Tangential = 3</code></dt>
+  
+  <dd><p>Concentric wavefronts as with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>, but displacing the image around the
+center rather than toward and away from it, so successive rings twist in alternating
+directions. Never folds, so it tolerates much larger amplitudes than <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_SquareRings"><code>SquareRings = 4</code></dt>
+  
+  <dd><p>Concentric square rings, using the larger of the two axis distances from Center in place of
+a true radius. Displaces along the radius. Folds at high amplitude.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_DiamondRings"><code>DiamondRings = 5</code></dt>
+  
+  <dd><p>Concentric diamond rings, using the sum of the two axis distances from Center in place of a
+true radius. Displaces along the radius. Folds at high amplitude.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Crossed"><code>Crossed = 6</code></dt>
+  
+  <dd><p>Two sets of parallel wavefronts at right angles, each displacing the image across its own
+direction of travel. The result is a woven, basket-like warp. Each component is a shear on
+its own, but composing the two is not one-to-one, so this folds at high amplitude just as
+the along-gradient patterns do.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular"><code>Angular = 7</code></dt>
+  
+  <dd><p>Wavefronts arranged as spokes around Center, with the phase driven by angle rather than
+distance. Displaces along the radius, producing rosettes and starbursts. The number of lobes
+comes from the effect's Lobes property; Wavelength is unused.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Spiral"><code>Spiral = 8</code></dt>
+  
+  <dd><p>Spiral wavefronts, combining a distance-driven phase with an angle-driven one. Displaces
+along the radius. The effect's Lobes property sets how many turns the spiral makes.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_FromEdges"><code>FromEdges = 9</code></dt>
+  <dd><p>Wavefronts running parallel to the image border, displacing inward. The phase runs from zero
+at the nearest edge up to a maximum at Center, so the ripples travel in from the frame and
+converge on that point.</p>
+<p>Each edge distance is normalized by how far Center sits from that edge. With Center in the
+middle of a square region that reduces to a plain distance-to-nearest-edge; on a non-square
+region it converges the wavefronts onto the single Center point rather than onto the long
+medial line that an unnormalized distance would produce.</p>
+</dd>
+  
+  </dl>
+
+
+  <h2 id="PaintDotNet_Effects_Gpu_PdnWavesPattern_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Each pattern is really two independent choices: where the wave's phase comes from (a projection
+along a direction, a distance from a center point, an angle around it), and whether the
+displacement runs along that phase gradient or across it.<br>
+<br>
+That second choice decides whether the pattern can fold over itself. Displacement <i>across</i>
+the gradient is a shear, and a shear is one-to-one at any amplitude. Displacement <i>along</i>
+the gradient piles pixels up once the amplitude gets large relative to the wavelength — see the
+remarks on <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a>.</p>
+</div>
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

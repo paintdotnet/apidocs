@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum PdnHalftonePattern </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum PdnHalftonePattern ">
+      
+      <meta name="description" content="Specifies the shape that the Halftone effect lays down in each cell of its screen. Every pattern is amplitude modulated: the cells are always the same size and sit on the same grid, and it is the amount of the cell that gets inked which carries the tone.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu.PdnHalftonePattern">
+
+
+
+
+  <h1 id="PaintDotNet_Effects_Gpu_PdnHalftonePattern" data-uid="PaintDotNet.Effects.Gpu.PdnHalftonePattern" class="text-break">
+Enum PdnHalftonePattern  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specifies the shape that the Halftone effect lays down in each cell of its screen. Every pattern
+is amplitude modulated: the cells are always the same size and sit on the same grid, and it is
+the amount of the cell that gets inked which carries the tone.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PdnHalftonePattern</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Dots"><code>Dots = 0</code></dt>
+  
+  <dd><p>A circular dot at the centre of each cell, growing outward as the cell's ink coverage rises.
+The classic amplitude-modulated screen used for print and comics.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Diamond"><code>Diamond = 1</code></dt>
+  
+  <dd><p>The Euclidean spot, known to PostScript as PSSquare: a disc in the highlights that swells into
+a diamond at the midtone and then recedes as a disc of white in the shadows. The diamond is
+reached at exactly fifty percent, where the inked and uninked areas are congruent, and the
+second half of the range is the first half inverted, so tone moves through the midtone at a
+constant rate - where <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftonePattern.html#PaintDotNet_Effects_Gpu_PdnHalftonePattern_Dots">Dots</a> stays circular, so its corners of white close
+abruptly once the dots touch at a coverage of pi/4.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Ellipse"><code>Ellipse = 2</code></dt>
+  
+  <dd><p>An elliptical dot, elongated along the screen's own axis; the workhorse of commercial offset
+printing. Where a round dot meets all four neighbours at once, an ellipse meets them along its
+long axis first and its short axis later, splitting the single abrupt join into two smaller
+ones - between which the dots visibly chain into lines.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Square"><code>Square = 3</code></dt>
+  
+  <dd><p>A square dot, growing until it fills its cell exactly. The only shape here whose inked area is
+exact at every tone rather than fitted, because a square inside a square cell is never clipped.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Crosshatch"><code>Crosshatch = 4</code></dt>
+  
+  <dd><p>Two line screens at right angles to each other, each thinned so that their union still
+reproduces the requested tone rather than doubling it.</p>
+</dd>
+    <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Lines"><code>Lines = 5</code></dt>
+  
+  <dd><p>A single straight line through each cell, growing thicker as the cell's ink coverage rises.
+Cells along the line are inked independently, so it swells and narrows along its length.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

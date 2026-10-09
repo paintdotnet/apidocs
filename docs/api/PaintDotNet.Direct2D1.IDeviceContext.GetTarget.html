@@ -156,10 +156,10 @@ When using <a class="xref" href="PaintDotNet.Direct2D1.IDCDeviceContext.html">ID
 <ul><li>BeginDraw has been called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is set as the target of a device context after BeginDraw has been called and before EndDraw has been called.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or detination.</li></ul>
 <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> objects will be unlocked in the following circumstances:<br>
 <ul><li>EndDraw is called and the currently selected target bitmap is an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</li><li>An <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> is removed as the target of a device context between the calls to BeginDraw and EndDraw.</li><li>Any of the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>.Copy* methods are called with an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a> as either the source or destination.</li></ul>
-Direct2D will only lock bitmaps that are not currently locked.<br>
+<p>Direct2D will only lock bitmaps that are not currently locked.<br>
 <a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.Resize.html#PaintDotNet_Direct2D1_IHwndDeviceContext_Resize_PaintDotNet_Rendering_SizeInt32_">Resize(SizeInt32)</a> will throw <a class="xref" href="PaintDotNet.Direct2D1.InvalidCallException.html">InvalidCallException</a> if there are any outstanding references to
 the original bitmap associated with the device context.<br>
-Although the target can be a command list, it cannot be any other type of image. It cannot be an effect.
+Although the target can be a command list, it cannot be any other type of image. It cannot be an effect.</p>
 </div>
 
 

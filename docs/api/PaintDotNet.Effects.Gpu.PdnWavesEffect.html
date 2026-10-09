@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdnWavesEffect </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdnWavesEffect ">
+      
+      <meta name="description" content="Provides Paint.NET&#39;s Waves effect as a  that can be used for rendering with Direct2D.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect">
+
+
+
+  <h1 id="PaintDotNet_Effects_Gpu_PdnWavesEffect" data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect" class="text-break">
+Class PdnWavesEffect  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides Paint.NET's Waves effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a> that can be used
+for rendering with Direct2D.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PdnWavesEffect : PdnDistortionEffect, ISerializable, IDynamicEffect, IDynamicImage, IDeviceImage, IDirect2DResource, IObjectRef, IIsDisposed, IDisposable, IFactoryProperty, IInternalImpl</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.html">PdnDistortionEffect</a></div>
+      <div><span class="xref">PdnWavesEffect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDynamicEffect.html">IDynamicEffect</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDynamicImage.html">IDynamicImage</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IDirect2DResource.html">IDirect2DResource</a></div>
+      <div><a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a></div>
+      <div><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="PaintDotNet.Direct2D1.IFactoryProperty.html">IFactoryProperty</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetInput.html#PaintDotNet_Direct2D1_DynamicImage_GetInput_System_Int32_">DynamicImage.GetInput(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetInputInfo.html#PaintDotNet_Direct2D1_DynamicImage_GetInputInfo_System_Int32_">DynamicImage.GetInputInfo(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.SetInput.html#PaintDotNet_Direct2D1_DynamicImage_SetInput_System_Int32_PaintDotNet_Direct2D1_IDeviceImage_">DynamicImage.SetInput(int, IDeviceImage)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetPropertyInfo.html#PaintDotNet_Direct2D1_DynamicImage_GetPropertyInfo_System_String_">DynamicImage.GetPropertyInfo(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetPropertyInfos.html#PaintDotNet_Direct2D1_DynamicImage_GetPropertyInfos">DynamicImage.GetPropertyInfos()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetValue.html#PaintDotNet_Direct2D1_DynamicImage_GetValue_System_String_System_Span_System_Byte__">DynamicImage.GetValue(string, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetValueObject.html#PaintDotNet_Direct2D1_DynamicImage_GetValueObject_System_String_">DynamicImage.GetValueObject(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.GetValueSize.html#PaintDotNet_Direct2D1_DynamicImage_GetValueSize_System_String_">DynamicImage.GetValueSize(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.SetValue.html#PaintDotNet_Direct2D1_DynamicImage_SetValue_System_String_System_ReadOnlySpan_System_Byte__">DynamicImage.SetValue(string, ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.SetValueObject.html#PaintDotNet_Direct2D1_DynamicImage_SetValueObject_System_String_System_Object_">DynamicImage.SetValueObject(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.Factory.html#PaintDotNet_Direct2D1_DynamicImage_Factory">DynamicImage.Factory</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.InputCount.html#PaintDotNet_Direct2D1_DynamicImage_InputCount">DynamicImage.InputCount</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.MinInputCount.html#PaintDotNet_Direct2D1_DynamicImage_MinInputCount">DynamicImage.MinInputCount</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.MaxInputCount.html#PaintDotNet_Direct2D1_DynamicImage_MaxInputCount">DynamicImage.MaxInputCount</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.Dispose.html#PaintDotNet_ComponentModel_RefTrackedObject_Dispose">RefTrackedObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">RefTrackedObject.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.IsDisposed.html#PaintDotNet_ComponentModel_RefTrackedObject_IsDisposed">RefTrackedObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="PaintDotNet_Effects_Gpu_PdnWavesEffect_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Which properties matter depends on the pattern. A property a pattern ignores is still stored and
+still forwarded to the shader; it simply has no part in the geometry that pattern builds.</p>
+<pre><code class="lang-csharp">                      Angle   Center   WaveLength   Lobes   Damping   Bounds
+Linear                 yes    phase       yes         -        -         -
+LongitudinalLinear     yes    phase       yes         -        -         -
+Crossed                yes    phase       yes         -        -         -
+Radial                  -      yes        yes         -       yes        -
+Tangential              -      yes        yes         -       yes        -
+SquareRings             -      yes        yes         -       yes        -
+DiamondRings            -      yes        yes         -       yes        -
+Angular                 -      yes         -         yes       -         -
+Spiral                  -      yes        yes        yes      yes        -
+FromEdges               -      yes        yes         -       yes       yes</code></pre>
+<p><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Pattern.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Pattern">Pattern</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Waveform.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Waveform">Waveform</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a> and
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a> are read by every pattern, as are the
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.html">PdnDistortionEffect</a> properties this inherits.<br>
+&quot;phase&quot; marks the patterns that read <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a> only as the point where the
+wave's phase is zero, rather than as something the wavefronts are arranged around. Moving it
+slides those patterns along their direction of travel, which is what
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a> already does, so Paint.NET's own Waves dialog does not offer it for
+them.<br>
+<br>
+The waveform decides how much of <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a> the displacement actually reaches,
+and how the result breaks down once the amplitude passes the fold threshold described there:</p>
+<pre><code class="lang-csharp">                Reaches      Past the fold threshold
+Sine             all         folds over itself
+Triangle         all         folds over itself, but not until a higher amplitude
+Sawtooth         all         tears along the line where the wave resets
+Square           all         tears along the line where the wave flips
+Semicircle       all         creases at any amplitude; its arcs meet at a vertical tangent
+Harmonics        about 58%   folds over itself
+SteppedSine      all         tears along each step</code></pre>
+<p>Harmonics reaches less because it is scaled to match a sine's steepest slope rather than a
+sine's peak, which is what lets one fold threshold cover every waveform.</p>
+</div>
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.-ctor.html#PaintDotNet_Effects_Gpu_PdnWavesEffect__ctor_PaintDotNet_Direct2D1_IDeviceContext_">PdnWavesEffect(IDeviceContext)</a></dt>
+    <dd><p>Creates an instance of the distortion effect.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Properties.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Properties">Properties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

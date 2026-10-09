@@ -195,15 +195,20 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.Color.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_Color">Color</a></dt>
-    <dd></dd>
+    <dd><p>The color of the incoming light. The default value is { 1, 1, 1 } (white).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.DiffuseConstant.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_DiffuseConstant">DiffuseConstant</a></dt>
-    <dd></dd>
+    <dd><p>The ratio of diffuse reflection to amount of incoming light. This property must be between 0 and
+10,000 and is unitless. The default value is 1.0.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.Focus.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_Focus">Focus</a></dt>
-    <dd></dd>
+    <dd><p>The focus of the spotlight. This value controls the exponent used for the spot falloff.
+The default value is 1.0.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_Input">Input</a></dt>
@@ -211,27 +216,39 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.KernelUnitLength.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_KernelUnitLength">KernelUnitLength</a></dt>
-    <dd></dd>
+    <dd><p>The size of an element in the Sobel kernel used to generate the surface normal in the X and Y
+direction. This value is defined in (DIPs / Kernel Unit). The default value is { 1, 1 }.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.LightPosition.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_LightPosition">LightPosition</a></dt>
-    <dd></dd>
+    <dd><p>The light position of the point light source. The units are in device-independent pixels (DIPs)
+and are unbounded. The default value is { 0, 0, 0 }.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.LimitingConeAngle.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_LimitingConeAngle">LimitingConeAngle</a></dt>
-    <dd></dd>
+    <dd><p>The angle that restricts the region where the light is projected, in degrees. No light is projected
+outside this cone. The default value is 90.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.PointsAt.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_PointsAt">PointsAt</a></dt>
-    <dd></dd>
+    <dd><p>Where the spotlight is directed. The units are in DIPs and the values are unbounded.
+The default value is { 0, 0, 0 }.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.ScaleMode.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_ScaleMode">ScaleMode</a></dt>
-    <dd></dd>
+    <dd><p>The interpolation mode the effect uses to scale the image to the corresponding kernel unit length.
+The default value is SpotDiffuseScaleMode.Linear.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.SurfaceScale.html#PaintDotNet_Direct2D1_Effects_SpotDiffuseEffect_Props_SurfaceScale">SurfaceScale</a></dt>
-    <dd></dd>
+    <dd><p>The scale factor in the Z direction. The surface scale is unitless and must be between 0 and 10,000.
+The default value is 1.0.</p>
+</dd>
   </dl>
 
 

@@ -97,7 +97,7 @@ Struct ColorPrgba64Half
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct ColorPrgba64Half : INaturalPixelInfo&lt;ColorPrgba64Half&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, IEquatable&lt;ColorPrgba64Half&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ColorPrgba64Half : INaturalPixelInfo&lt;ColorPrgba64Half&gt;, IEquatable&lt;ColorPrgba64Half&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, ISpanParsable&lt;ColorPrgba64Half&gt;, IParsable&lt;ColorPrgba64Half&gt;</code></pre>
   </div>
 
 
@@ -108,10 +108,12 @@ Struct ColorPrgba64Half
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo-1.html">INaturalPixelInfo</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo.html">INaturalPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.Imaging.IPixelInfo.html">IPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.ispanparsable-1">ISpanParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.html">ColorPrgba64Half</a>&gt;</div>
     </dd>
   </dl>
 
@@ -186,11 +188,27 @@ Struct ColorPrgba64Half
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.Parse.html#PaintDotNet_Imaging_ColorPrgba64Half_Parse_System_ReadOnlySpan_System_Char__">Parse(ReadOnlySpan&lt;char&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.Parse.html#PaintDotNet_Imaging_ColorPrgba64Half_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.ToString.html#PaintDotNet_Imaging_ColorPrgba64Half_ToString">ToString()</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.ToUnpremultiplied.html#PaintDotNet_Imaging_ColorPrgba64Half_ToUnpremultiplied">ToUnpremultiplied()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.TryParse.html#PaintDotNet_Imaging_ColorPrgba64Half_TryParse_System_ReadOnlySpan_System_Char__PaintDotNet_Imaging_ColorPrgba64Half__">TryParse(ReadOnlySpan&lt;char&gt;, out ColorPrgba64Half)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.TryParse.html#PaintDotNet_Imaging_ColorPrgba64Half_TryParse_System_String_PaintDotNet_Imaging_ColorPrgba64Half__">TryParse(string?, out ColorPrgba64Half)</a></dt>
     <dd></dd>
   </dl>
 
@@ -203,6 +221,10 @@ Struct ColorPrgba64Half
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.op_Explicit.html#PaintDotNet_Imaging_ColorPrgba64Half_op_Explicit_PaintDotNet_Imaging_ColorBgr48__PaintDotNet_Imaging_ColorPrgba64Half">explicit operator ColorPrgba64Half(ColorBgr48)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorPrgba64Half.op_Explicit.html#PaintDotNet_Imaging_ColorPrgba64Half_op_Explicit_PaintDotNet_Imaging_ColorGray16__PaintDotNet_Imaging_ColorPrgba64Half">explicit operator ColorPrgba64Half(ColorGray16)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

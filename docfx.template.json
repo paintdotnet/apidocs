@@ -5,23 +5,21 @@
         {
           "src": "{$AssemblySourceDir$}",
           "files": [
+            "PaintDotNet.Base.dll",            
             "PaintDotNet.ComponentModel.dll",
+            "PaintDotNet.Core.dll",
+            "PaintDotNet.Effects.Core.dll",
+            "PaintDotNet.Effects.Gpu.dll",
+            "PaintDotNet.FileTypes.dll",
+            "PaintDotNet.Framework.dll",
             "PaintDotNet.Fundamentals.dll",
+            "PaintDotNet.ObjectModel.dll",
             "PaintDotNet.Primitives.dll",
             "PaintDotNet.PropertySystem.dll",
-            "PaintDotNet.Collections.dll",
-            "PaintDotNet.Runtime.dll",
-            "PaintDotNet.ObjectModel.dll",
+            "PaintDotNet.UI.dll",
             "PaintDotNet.Windows.dll",
             "PaintDotNet.Windows.Core.dll",
-            "PaintDotNet.Windows.Framework.dll",
-            "PaintDotNet.UI.dll",
-            "PaintDotNet.Base.dll",            
-            "PaintDotNet.Core.dll",
-            "PaintDotNet.Framework.dll",
-            "PaintDotNet.Data.dll",
-            "PaintDotNet.Effects.Core.dll",
-            "PaintDotNet.Effects.Gpu.dll"
+            "PaintDotNet.Windows.Framework.dll"
           ]
         }
       ],

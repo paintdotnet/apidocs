@@ -97,7 +97,7 @@ Class EffectOptionsBase
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public record EffectOptionsBase : PluginOptions, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IEquatable&lt;EffectOptionsBase&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record EffectOptionsBase : PluginOptions, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IPluginOptions, IInternalImpl, IEquatable&lt;EffectOptionsBase&gt;</code></pre>
   </div>
 
 
@@ -117,6 +117,8 @@ Class EffectOptionsBase
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.AppModel.PluginOptions.html">PluginOptions</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Effects.IEffectOptions.html">IEffectOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.AppModel.IPluginOptions.html">IPluginOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.EffectOptionsBase.html">EffectOptionsBase</a>&gt;</div>
     </dd>
   </dl>
@@ -132,15 +134,6 @@ Class EffectOptionsBase
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.VerifyNotFrozen.html#PaintDotNet_AppModel_PluginOptions_VerifyNotFrozen">PluginOptions.VerifyNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.OnFrozen.html#PaintDotNet_AppModel_PluginOptions_OnFrozen">PluginOptions.OnFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.IsFrozen.html#PaintDotNet_AppModel_PluginOptions_IsFrozen">PluginOptions.IsFrozen</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>

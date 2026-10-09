@@ -120,7 +120,10 @@ Method GetPercentileColor
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the color at the specified percentile of the histogram.
+For each channel independently, finds the intensity bin at which the cumulative
+sum of histogram values first exceeds the given fraction of the total sum.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +133,17 @@ Method GetPercentileColor
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>The percentile as a fraction in the range [0, 1], where 0 returns the darkest
+represented color and 1 returns the brightest.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a></dt>
-  <dd></dd>
+  <dd><p>A <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a> whose per-channel values are the intensities
+at the requested percentile.</p>
+</dd>
 </dl>
 
 

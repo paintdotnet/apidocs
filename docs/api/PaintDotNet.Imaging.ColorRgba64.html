@@ -97,7 +97,7 @@ Struct ColorRgba64
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct ColorRgba64 : INaturalPixelInfo&lt;ColorRgba64&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, IEquatable&lt;ColorRgba64&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ColorRgba64 : INaturalPixelInfo&lt;ColorRgba64&gt;, IEquatable&lt;ColorRgba64&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, ISpanParsable&lt;ColorRgba64&gt;, IParsable&lt;ColorRgba64&gt;</code></pre>
   </div>
 
 
@@ -108,10 +108,12 @@ Struct ColorRgba64
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo-1.html">INaturalPixelInfo</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Imaging.INaturalPixelInfo.html">INaturalPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.Imaging.IPixelInfo.html">IPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.ispanparsable-1">ISpanParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba64.html">ColorRgba64</a>&gt;</div>
     </dd>
   </dl>
 
@@ -119,9 +121,6 @@ Struct ColorRgba64
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -225,6 +224,14 @@ Struct ColorRgba64
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.Parse.html#PaintDotNet_Imaging_ColorRgba64_Parse_System_ReadOnlySpan_System_Char__">Parse(ReadOnlySpan&lt;char&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.Parse.html#PaintDotNet_Imaging_ColorRgba64_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.Round.html#PaintDotNet_Imaging_ColorRgba64_Round_PaintDotNet_Imaging_ColorRgba128Float_System_MidpointRounding_">Round(ColorRgba128Float, MidpointRounding)</a></dt>
     <dd></dd>
   </dl>
@@ -233,7 +240,19 @@ Struct ColorRgba64
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.ToString.html#PaintDotNet_Imaging_ColorRgba64_ToString">ToString()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.Truncate.html#PaintDotNet_Imaging_ColorRgba64_Truncate_PaintDotNet_Imaging_ColorRgba128Float_">Truncate(ColorRgba128Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.TryParse.html#PaintDotNet_Imaging_ColorRgba64_TryParse_System_ReadOnlySpan_System_Char__PaintDotNet_Imaging_ColorRgba64__">TryParse(ReadOnlySpan&lt;char&gt;, out ColorRgba64)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.TryParse.html#PaintDotNet_Imaging_ColorRgba64_TryParse_System_String_PaintDotNet_Imaging_ColorRgba64__">TryParse(string?, out ColorRgba64)</a></dt>
     <dd></dd>
   </dl>
 
@@ -277,6 +296,10 @@ Struct ColorRgba64
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.op_Implicit.html#PaintDotNet_Imaging_ColorRgba64_op_Implicit_PaintDotNet_Imaging_ColorGray16__PaintDotNet_Imaging_ColorRgba64">implicit operator ColorRgba64(ColorGray16)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.op_Implicit.html#PaintDotNet_Imaging_ColorRgba64_op_Implicit_PaintDotNet_Imaging_ColorGray8__PaintDotNet_Imaging_ColorRgba64">implicit operator ColorRgba64(ColorGray8)</a></dt>
     <dd></dd>
   </dl>
@@ -286,6 +309,10 @@ Struct ColorRgba64
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.op_Implicit.html#PaintDotNet_Imaging_ColorRgba64_op_Implicit_PaintDotNet_Imaging_ColorRgb48__PaintDotNet_Imaging_ColorRgba64">implicit operator ColorRgba64(ColorRgb48)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgba64.op_Implicit.html#PaintDotNet_Imaging_ColorRgba64_op_Implicit_PaintDotNet_Imaging_ColorRgb64__PaintDotNet_Imaging_ColorRgba64">implicit operator ColorRgba64(ColorRgb64)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

@@ -97,7 +97,7 @@ Class GpuImageEffectOptionsFactory
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record GpuImageEffectOptionsFactory : GpuEffectOptions, IEquatable&lt;PluginOptions&gt;, IEquatable&lt;EffectOptionsBase&gt;, IEquatable&lt;GpuEffectOptionsFactory&gt;, IGpuEffectOptions, IEffectOptions, IEquatable&lt;GpuEffectOptions&gt;, IEquatable&lt;GpuImageEffectOptionsFactory&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record GpuImageEffectOptionsFactory : GpuEffectOptions, IEquatable&lt;PluginOptions&gt;, IEquatable&lt;EffectOptionsBase&gt;, IEquatable&lt;GpuEffectOptionsFactory&gt;, IGpuEffectOptions, IEffectOptions, IPluginOptions, IInternalImpl, IEquatable&lt;GpuEffectOptions&gt;, IEquatable&lt;GpuImageEffectOptionsFactory&gt;</code></pre>
   </div>
 
 
@@ -123,6 +123,8 @@ Class GpuImageEffectOptionsFactory
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectOptionsFactory.html">GpuEffectOptionsFactory</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectOptions.html">IGpuEffectOptions</a></div>
       <div><a class="xref" href="PaintDotNet.Effects.IEffectOptions.html">IEffectOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.AppModel.IPluginOptions.html">IPluginOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectOptions.html">GpuEffectOptions</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.Gpu.GpuImageEffectOptionsFactory.html">GpuImageEffectOptionsFactory</a>&gt;</div>
     </dd>
@@ -149,15 +151,6 @@ Class GpuImageEffectOptionsFactory
     </div>
     <div>
       <a class="xref" href="PaintDotNet.Effects.EffectOptionsBase.IsConfigurable.html#PaintDotNet_Effects_EffectOptionsBase_IsConfigurable">EffectOptionsBase.IsConfigurable</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.VerifyNotFrozen.html#PaintDotNet_AppModel_PluginOptions_VerifyNotFrozen">PluginOptions.VerifyNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.OnFrozen.html#PaintDotNet_AppModel_PluginOptions_OnFrozen">PluginOptions.OnFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.IsFrozen.html#PaintDotNet_AppModel_PluginOptions_IsFrozen">PluginOptions.IsFrozen</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>

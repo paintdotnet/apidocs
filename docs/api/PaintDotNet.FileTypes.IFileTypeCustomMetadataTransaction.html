@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFileTypeCustomMetadataTransaction </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFileTypeCustomMetadataTransaction ">
+      
+      <meta name="description" content="Represents a transaction for making atomic changes to the metadata stored within an .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction">
+
+
+
+  <h1 id="PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction" data-uid="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction" class="text-break">
+Interface IFileTypeCustomMetadataTransaction  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.FileTypes.html">FileTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes to the metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFileTypeCustomMetadataTransaction : IFileTypeMetadataSectionTransaction, IFileTypeTransaction, IObjectRef, IIsDisposed, IDisposable, IFileTypePropertyBag, IReadOnlyFileTypePropertyBag, IInternalImpl, IReadOnlyDictionary&lt;string, string&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;string, string&gt;&gt;, IDictionary&lt;string, string&gt;, ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_">IFileTypeMetadataSectionTransaction.ReplaceFrom(IReadOnlyFileTypeMetadataSection)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">IFileTypeTransaction.Commit()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">IFileTypeTransaction.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.TryCreateRef.html#PaintDotNet_ComponentModel_IObjectRef_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">IObjectRef.TryCreateRef(Type, out IObjectRef)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.IIsDisposed.IsDisposed.html#PaintDotNet_IIsDisposed_IsDisposed">IIsDisposed.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.ContainsKey.html#PaintDotNet_FileTypes_IFileTypePropertyBag_ContainsKey_System_String_">IFileTypePropertyBag.ContainsKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.TryGetValue.html#PaintDotNet_FileTypes_IFileTypePropertyBag_TryGetValue_System_String_System_String__">IFileTypePropertyBag.TryGetValue(string, out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.Count.html#PaintDotNet_FileTypes_IFileTypePropertyBag_Count">IFileTypePropertyBag.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.Item.html#PaintDotNet_FileTypes_IFileTypePropertyBag_Item_System_String_">IFileTypePropertyBag.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.Keys.html#PaintDotNet_FileTypes_IFileTypePropertyBag_Keys">IFileTypePropertyBag.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.Values.html#PaintDotNet_FileTypes_IFileTypePropertyBag_Values">IFileTypePropertyBag.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey">IReadOnlyDictionary&lt;string, string&gt;.ContainsKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue">IReadOnlyDictionary&lt;string, string&gt;.TryGetValue(string, out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.item">IReadOnlyDictionary&lt;string, string&gt;.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.keys">IReadOnlyDictionary&lt;string, string&gt;.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.values">IReadOnlyDictionary&lt;string, string&gt;.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1.count">IReadOnlyCollection&lt;KeyValuePair&lt;string, string&gt;&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add">IDictionary&lt;string, string&gt;.Add(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove">IDictionary&lt;string, string&gt;.Remove(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.Add(KeyValuePair&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.Contains(KeyValuePair&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.CopyTo(KeyValuePair&lt;string, string&gt;[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.Remove(KeyValuePair&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly">ICollection&lt;KeyValuePair&lt;string, string&gt;&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator">IEnumerable.GetEnumerator()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeCustomMetadataTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeMetadataSectionTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.Add.html#PaintDotNet_FileTypes_FileTypePropertyBagEnumExtensions_Add__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_KeyValuePair_System_String___0__">FileTypePropertyBagEnumExtensions.Add&lt;TEnum&gt;(IFileTypePropertyBag, KeyValuePair&lt;string, TEnum&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.Add.html#PaintDotNet_FileTypes_FileTypePropertyBagEnumExtensions_Add__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_String___0_">FileTypePropertyBagEnumExtensions.Add&lt;TEnum&gt;(IFileTypePropertyBag, string, TEnum)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.SetItem.html#PaintDotNet_FileTypes_FileTypePropertyBagEnumExtensions_SetItem__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_KeyValuePair_System_String___0__">FileTypePropertyBagEnumExtensions.SetItem&lt;TEnum&gt;(IFileTypePropertyBag, KeyValuePair&lt;string, TEnum&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.SetItem.html#PaintDotNet_FileTypes_FileTypePropertyBagEnumExtensions_SetItem__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_String___0_">FileTypePropertyBagEnumExtensions.SetItem&lt;TEnum&gt;(IFileTypePropertyBag, string, TEnum)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.SetItems.html#PaintDotNet_FileTypes_FileTypePropertyBagEnumExtensions_SetItems__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String___0___">FileTypePropertyBagEnumExtensions.SetItems&lt;TEnum&gt;(IFileTypePropertyBag, IEnumerable&lt;KeyValuePair&lt;string, TEnum&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagExtensions.Add.html#PaintDotNet_FileTypes_FileTypePropertyBagExtensions_Add__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_KeyValuePair_System_String___0__">FileTypePropertyBagExtensions.Add&lt;T&gt;(IFileTypePropertyBag, KeyValuePair&lt;string, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagExtensions.Add.html#PaintDotNet_FileTypes_FileTypePropertyBagExtensions_Add__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_String___0__">FileTypePropertyBagExtensions.Add&lt;T&gt;(IFileTypePropertyBag, string, in T)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagExtensions.SetItem.html#PaintDotNet_FileTypes_FileTypePropertyBagExtensions_SetItem__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_KeyValuePair_System_String___0__">FileTypePropertyBagExtensions.SetItem&lt;T&gt;(IFileTypePropertyBag, KeyValuePair&lt;string, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagExtensions.SetItem.html#PaintDotNet_FileTypes_FileTypePropertyBagExtensions_SetItem__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_String___0__">FileTypePropertyBagExtensions.SetItem&lt;T&gt;(IFileTypePropertyBag, string, in T)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagExtensions.SetItems.html#PaintDotNet_FileTypes_FileTypePropertyBagExtensions_SetItems__1_PaintDotNet_FileTypes_IFileTypePropertyBag_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String___0___">FileTypePropertyBagExtensions.SetItems&lt;T&gt;(IFileTypePropertyBag, IEnumerable&lt;KeyValuePair&lt;string, T&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeTransaction)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypePropertyBagEnumExtensions.GetValue.html#PaintDotNet_FileTypes_ReadOnlyFileTypePropertyBagEnumExtensions_GetValue__1_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_System_String___0_">ReadOnlyFileTypePropertyBagEnumExtensions.GetValue&lt;TEnum&gt;(IReadOnlyFileTypePropertyBag, string, TEnum)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypePropertyBagEnumExtensions.TryGetValue.html#PaintDotNet_FileTypes_ReadOnlyFileTypePropertyBagEnumExtensions_TryGetValue__1_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_System_String___0__">ReadOnlyFileTypePropertyBagEnumExtensions.TryGetValue&lt;TEnum&gt;(IReadOnlyFileTypePropertyBag, string, out TEnum)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypePropertyBagExtensions.GetValue.html#PaintDotNet_FileTypes_ReadOnlyFileTypePropertyBagExtensions_GetValue__1_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_System_String___0__">ReadOnlyFileTypePropertyBagExtensions.GetValue&lt;T&gt;(IReadOnlyFileTypePropertyBag, string, in T)</a>
+  </div>
+  <div>
+      <a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypePropertyBagExtensions.TryGetValue.html#PaintDotNet_FileTypes_ReadOnlyFileTypePropertyBagExtensions_TryGetValue__1_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_System_String___0__">ReadOnlyFileTypePropertyBagExtensions.TryGetValue&lt;T&gt;(IReadOnlyFileTypePropertyBag, string, out T)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Custom metadata is stored as key-value pairs through the <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.html">IFileTypePropertyBag</a> interface. You can use the
+extension methods to make it easy to read and write values of any type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable&lt;TSelf&gt;</a>.</p>
+</div>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction.Clear.html#PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_Clear">Clear()</a></dt>
+    <dd><p>Removes all metadata entries, and/or resets all metadata to their default values.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeCustomMetadata_">ReplaceFrom(IReadOnlyFileTypeCustomMetadata)</a></dt>
+    <dd><p>Replaces all of the custom metadata with the values from another custom metadata section.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

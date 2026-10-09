@@ -97,7 +97,7 @@ Class CrossFadeEffect.Props
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class CrossFadeEffect.Props : CustomEffectProperties</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class CrossFadeEffect.Props : DeviceEffectProperties</code></pre>
   </div>
 
 
@@ -108,7 +108,6 @@ Class CrossFadeEffect.Props
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.html">DeviceEffectProperties</a></div>
-      <div><a class="xref" href="PaintDotNet.Direct2D1.Effects.CustomEffectProperties.html">CustomEffectProperties</a></div>
       <div><span class="xref">CrossFadeEffect.Props</span></div>
     </dd>
   </dl>
@@ -184,6 +183,17 @@ Class CrossFadeEffect.Props
 </h2>
 
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_ClassID">ClassID</a></dt>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.Destination.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_Destination">Destination</a></dt>
     <dd></dd>
   </dl>
@@ -198,30 +208,6 @@ is 0.0f (exclusively use Destination to determine the output) and the maximum va
 (exclusively use Source to determine the output).<br>
 The default value is 0.5f.</p>
 </dd>
-  </dl>
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.CreateImpl.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_CreateImpl">CreateImpl()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.GetAuthor.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_GetAuthor">GetAuthor()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.GetCategory.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_GetCategory">GetCategory()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.GetDescription.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_GetDescription">GetDescription()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.GetDisplayName.html#PaintDotNet_Direct2D1_Effects_CrossFadeEffect_Props_GetDisplayName">GetDisplayName()</a></dt>
-    <dd></dd>
   </dl>
 
 

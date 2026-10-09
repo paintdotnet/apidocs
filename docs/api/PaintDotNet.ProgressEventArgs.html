@@ -90,14 +90,14 @@ Class ProgressEventArgs
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Fundamentals.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ProgressEventArgs : EventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ProgressEventArgs : EventArgs</code></pre>
   </div>
 
 
@@ -122,9 +122,6 @@ Class ProgressEventArgs
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -152,11 +149,13 @@ Class ProgressEventArgs
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.ProgressEventArgs.-ctor.html#PaintDotNet_ProgressEventArgs__ctor_System_Double_">ProgressEventArgs(double)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of this class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.ProgressEventArgs.-ctor.html#PaintDotNet_ProgressEventArgs__ctor_System_Double_System_Boolean_">ProgressEventArgs(double, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of this class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -164,7 +163,8 @@ Class ProgressEventArgs
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.ProgressEventArgs.Percent.html#PaintDotNet_ProgressEventArgs_Percent">Percent</a></dt>
-    <dd></dd>
+    <dd><p>A value between 0 and 100 indicating the percentage of completion.</p>
+</dd>
   </dl>
 
 

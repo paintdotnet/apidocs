@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Property Amplitude </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Property Amplitude ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude*">
+
+
+
+
+
+<h1 id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude_" data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude*" class="text-break">
+Property Amplitude  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.Effects.html">Effects</a>.<a class="xref" href="PaintDotNet.Effects.Gpu.html">Gpu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude_" data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude*"></a>
+
+<h3 id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude" data-uid="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude">
+  Amplitude
+  
+</h3>
+
+<div class="markdown level1 summary"><p>The furthest distance that a pixel will be displaced, in pixels. This is an upper bound
+rather than an exact figure: a waveform steep enough to fold earlier than a sine is scaled
+down to match it, and so does not reach the full amplitude. Negative values invert the
+wave, which is equivalent to shifting the phase by 180 degrees.<br>
+The default value is 100. There is no fixed ceiling: callers scale this to the image, and
+half the minor axis of a large one runs past any bound worth naming.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public DynamicImage.ValuePropertyAccessor&lt;float&gt; Amplitude { get; }</code></pre>
+</div>
+
+
+
+
+
+<h4 class="section">Property Value</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>.<a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.ValuePropertyAccessor-1.html">ValuePropertyAccessor</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+
+
+
+<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Whether there is a practical ceiling here depends on the pattern. Where displacement runs
+along the same axis as the wave's phase (<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>,
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_LongitudinalLinear">LongitudinalLinear</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_SquareRings">SquareRings</a>,
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_DiamondRings">DiamondRings</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Spiral">Spiral</a>, and
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_FromEdges">FromEdges</a>), too much of it makes the image fold over itself.
+Staying below <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.WaveLength.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_WaveLength">WaveLength</a>/(2<em>pi) keeps the mapping one-to-one. That single
+bound covers every waveform, because each one is normalized so that its steepest slope is
+no greater than a sine's; the exception is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesWaveform.html#PaintDotNet_Effects_Gpu_PdnWavesWaveform_Semicircle">Semicircle</a>, whose
+slope is unbounded where its arcs meet, so it creases at any amplitude.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Crossed">Crossed</a> shares that bound even though each of its two
+components displaces across its own phase gradient, because composing two perpendicular
+shears gives a Jacobian determinant of 1 - A^2</em>f'*f'/WaveLength^2, which changes sign at
+the same ratio.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a> and <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Tangential">Tangential</a> have no
+limit at all: the first is a single shear, and the second rotates each circle around
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a> rigidly. Both are invertible at any amplitude.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular">Angular</a> is its own case. It takes its phase from the angle,
+so <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.WaveLength.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_WaveLength">WaveLength</a> does not apply, and it always degenerates within a radius of
+roughly the amplitude around <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a>, where the displacement reaches back
+past the center.</p>
+</div>
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

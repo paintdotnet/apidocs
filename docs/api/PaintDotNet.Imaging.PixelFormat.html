@@ -97,7 +97,7 @@ Struct PixelFormat
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct PixelFormat : IEquatable&lt;PixelFormat&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct PixelFormat : IEquatable&lt;PixelFormat&gt;, ISpanParsable&lt;PixelFormat&gt;, IParsable&lt;PixelFormat&gt;</code></pre>
   </div>
 
 
@@ -108,6 +108,8 @@ Struct PixelFormat
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.ispanparsable-1">ISpanParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>&gt;</div>
     </dd>
   </dl>
 
@@ -174,11 +176,27 @@ Struct PixelFormat
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.Parse.html#PaintDotNet_Imaging_PixelFormat_Parse_System_ReadOnlySpan_System_Char__">Parse(ReadOnlySpan&lt;char&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.Parse.html#PaintDotNet_Imaging_PixelFormat_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.ToString.html#PaintDotNet_Imaging_PixelFormat_ToString">ToString()</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.TryGetBitsPerPixel.html#PaintDotNet_Imaging_PixelFormat_TryGetBitsPerPixel_System_Int32__">TryGetBitsPerPixel(out int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.TryParse.html#PaintDotNet_Imaging_PixelFormat_TryParse_System_ReadOnlySpan_System_Char__PaintDotNet_Imaging_PixelFormat__">TryParse(ReadOnlySpan&lt;char&gt;, out PixelFormat)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.PixelFormat.TryParse.html#PaintDotNet_Imaging_PixelFormat_TryParse_System_String_PaintDotNet_Imaging_PixelFormat__">TryParse(string?, out PixelFormat)</a></dt>
     <dd></dd>
   </dl>
 

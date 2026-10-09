@@ -97,7 +97,7 @@ Struct ColorRgb96Float
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct ColorRgb96Float : INaturalPixelInfo&lt;ColorRgb96Float&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, IEquatable&lt;ColorRgb96Float&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ColorRgb96Float : INaturalPixelInfo&lt;ColorRgb96Float&gt;, INaturalPixelInfo, IPixelInfo, IInternalImpl, IEquatable&lt;ColorRgb96Float&gt;, ISpanParsable&lt;ColorRgb96Float&gt;, IParsable&lt;ColorRgb96Float&gt;</code></pre>
   </div>
 
 
@@ -112,6 +112,8 @@ Struct ColorRgb96Float
       <div><a class="xref" href="PaintDotNet.Imaging.IPixelInfo.html">IPixelInfo</a></div>
       <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.html">ColorRgb96Float</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.ispanparsable-1">ISpanParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.html">ColorRgb96Float</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.html">ColorRgb96Float</a>&gt;</div>
     </dd>
   </dl>
 
@@ -186,11 +188,27 @@ Struct ColorRgb96Float
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.Parse.html#PaintDotNet_Imaging_ColorRgb96Float_Parse_System_ReadOnlySpan_System_Char__">Parse(ReadOnlySpan&lt;char&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.Parse.html#PaintDotNet_Imaging_ColorRgb96Float_Parse_System_String_">Parse(string)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.ToHsv.html#PaintDotNet_Imaging_ColorRgb96Float_ToHsv">ToHsv()</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.ToString.html#PaintDotNet_Imaging_ColorRgb96Float_ToString">ToString()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.TryParse.html#PaintDotNet_Imaging_ColorRgb96Float_TryParse_System_ReadOnlySpan_System_Char__PaintDotNet_Imaging_ColorRgb96Float__">TryParse(ReadOnlySpan&lt;char&gt;, out ColorRgb96Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.TryParse.html#PaintDotNet_Imaging_ColorRgb96Float_TryParse_System_String_PaintDotNet_Imaging_ColorRgb96Float__">TryParse(string?, out ColorRgb96Float)</a></dt>
     <dd></dd>
   </dl>
 
@@ -206,7 +224,15 @@ Struct ColorRgb96Float
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.op_Explicit.html#PaintDotNet_Imaging_ColorRgb96Float_op_Explicit_PaintDotNet_Imaging_ColorRgb128Float__PaintDotNet_Imaging_ColorRgb96Float">explicit operator ColorRgb96Float(ColorRgb128Float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.op_Explicit.html#PaintDotNet_Imaging_ColorRgb96Float_op_Explicit_PaintDotNet_Imaging_ColorRgb32__PaintDotNet_Imaging_ColorRgb96Float">explicit operator ColorRgb96Float(ColorRgb32)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.op_Explicit.html#PaintDotNet_Imaging_ColorRgb96Float_op_Explicit_PaintDotNet_Imaging_ColorRgb64Half__PaintDotNet_Imaging_ColorRgb96Float">explicit operator ColorRgb96Float(ColorRgb64Half)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -231,6 +257,10 @@ Struct ColorRgb96Float
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.op_Implicit.html#PaintDotNet_Imaging_ColorRgb96Float_op_Implicit_PaintDotNet_Imaging_ColorBgr48__PaintDotNet_Imaging_ColorRgb96Float">implicit operator ColorRgb96Float(ColorBgr48)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Imaging.ColorRgb96Float.op_Implicit.html#PaintDotNet_Imaging_ColorRgb96Float_op_Implicit_PaintDotNet_Imaging_ColorGray16__PaintDotNet_Imaging_ColorRgb96Float">implicit operator ColorRgb96Float(ColorGray16)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method GetRecommendedRenderingMode </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method GetRecommendedRenderingMode ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode*">
+
+
+
+
+
+<h1 id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_" data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode*" class="text-break">
+Method GetRecommendedRenderingMode  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="PaintDotNet.html">PaintDotNet</a>.<a class="xref" href="PaintDotNet.DirectWrite.html">DirectWrite</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_" data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode*"></a>
+
+<h3 id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_System_Single_System_Single_PaintDotNet_DirectWrite_TextMeasuringMode_PaintDotNet_DirectWrite_ITextRenderingParameters_" data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode(System.Single,System.Single,PaintDotNet.DirectWrite.TextMeasuringMode,PaintDotNet.DirectWrite.ITextRenderingParameters)">
+  GetRecommendedRenderingMode(float, float, TextMeasuringMode, ITextRenderingParameters?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Determines the recommended rendering mode for the font, using the specified size and rendering parameters.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">TextRenderingMode GetRecommendedRenderingMode(float emSize, float pixelsPerDip, TextMeasuringMode measuringMode, ITextRenderingParameters? renderingParameters)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>emSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>The logical size of the font in DIP units. A DIP (&quot;device-independent pixel&quot;) equals 1/96 inch.</p>
+</dd>
+  <dt><code>pixelsPerDip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>The number of physical pixels per DIP. For example, if the DPI of the rendering surface is 96, this value is 1.0f. If the DPI is 120, this value is 120.0f/96.</p>
+</dd>
+  <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
+  <dd><p>The measuring method that will be used for glyphs in the font. Renderer implementations may choose different rendering modes for different measuring methods, for example TextRenderingMode.Natural for TextMeasuringMode.Natural, TextRenderingMode.GdiClassic for TextMeasuringMode.GdiClassic, and TextRenderingMode.GdiNatural for TextMeasuringMode.GdiNatural.</p>
+</dd>
+  <dt><code>renderingParameters</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextRenderingParameters.html">ITextRenderingParameters</a></dt>
+  <dd><p>An object that contains rendering settings such as gamma level, enhanced contrast, and ClearType level. This parameter is necessary in case the rendering parameters object overrides the rendering mode.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html">TextRenderingMode</a></dt>
+  <dd><p>A value that indicates the recommended rendering mode to use.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<a id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_" data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode*"></a>
+
+<h3 id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_System_Single_PaintDotNet_Rendering_Vector2Float_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Boolean_PaintDotNet_DirectWrite_OutlineThreshold_PaintDotNet_DirectWrite_TextMeasuringMode_PaintDotNet_DirectWrite_ITextRenderingParameters_" data-uid="PaintDotNet.DirectWrite.IFontFace.GetRecommendedRenderingMode(System.Single,PaintDotNet.Rendering.Vector2Float,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@,System.Boolean,PaintDotNet.DirectWrite.OutlineThreshold,PaintDotNet.DirectWrite.TextMeasuringMode,PaintDotNet.DirectWrite.ITextRenderingParameters)">
+  GetRecommendedRenderingMode(float, Vector2Float, in Matrix3x2Float?, bool, OutlineThreshold, TextMeasuringMode, ITextRenderingParameters?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Determines the recommended text rendering and grid-fit mode to be used based on the font, size, world transform, and measuring mode.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">TextRenderingMode GetRecommendedRenderingMode(float emSize, Vector2Float dpi, in Matrix3x2Float? transform, bool isSideways, OutlineThreshold outlineThreshold, TextMeasuringMode measuringMode, ITextRenderingParameters? renderingParameters)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>emSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+  <dd><p>Logical font size in DIPs.</p>
+</dd>
+  <dt><code>dpi</code> <a class="xref" href="PaintDotNet.Rendering.Vector2Float.html">Vector2Float</a></dt>
+  <dd><p>Number of pixels per logical inch in the horizontal (X) and vertical (Y) directions.</p>
+</dd>
+  <dt><code>transform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
+  <dd><p>A matrix that describes the world transform, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for identity.</p>
+</dd>
+  <dt><code>isSideways</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><p>Specifies whether the font is sideways. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the font is sideways; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  <dt><code>outlineThreshold</code> <a class="xref" href="PaintDotNet.DirectWrite.OutlineThreshold.html">OutlineThreshold</a></dt>
+  <dd><p>A value that specifies the quality of the graphics system's outline rendering, affects the size threshold above which outline rendering is used.</p>
+</dd>
+  <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
+  <dd><p>A value that specifies the method used to measure during text layout. For proper glyph spacing, this method returns a rendering mode that is compatible with the specified measuring mode.</p>
+</dd>
+  <dt><code>renderingParameters</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextRenderingParameters.html">ITextRenderingParameters</a></dt>
+  <dd><p>The rendering parameters object. This parameter is necessary in case the rendering parameters object overrides the rendering mode.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html">TextRenderingMode</a></dt>
+  <dd><p>The recommended rendering mode.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_System_Single_PaintDotNet_Rendering_Vector2Float_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Boolean_PaintDotNet_DirectWrite_OutlineThreshold_PaintDotNet_DirectWrite_TextMeasuringMode_PaintDotNet_DirectWrite_ITextRenderingParameters__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Unlike the pixels-per-DIP overload, this one can return
+<a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html#PaintDotNet_DirectWrite_TextRenderingMode_NaturalSymmetricDownsampled">NaturalSymmetricDownsampled</a> (which DWrite recommends whenever the
+DPI scale is &gt;= ~1.8x, i.e. DPI &gt;= ~172.8), so reproducing native high-DPI rasterization
+requires resolving through this overload.</p>
+</div>
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

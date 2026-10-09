@@ -210,6 +210,22 @@ effect rendering system that can result in an <a class="xref" href="PaintDotNet.
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateGradientMesh.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateGradientMesh_PaintDotNet_Direct2D1_IDeviceContext_System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_GradientMeshPatch__">CreateGradientMesh(IDeviceContext, IReadOnlyList&lt;GradientMeshPatch&gt;)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="PaintDotNet.Direct2D1.IGradientMesh.html">IGradientMesh</a> instance using the given array of patches.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateGradientStopCollection_PaintDotNet_Direct2D1_IDeviceContext_System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode_">CreateGradientStopCollection(IDeviceContext, IReadOnlyList&lt;GradientStop&gt;, DeviceColorSpace, DeviceColorSpace, BufferPrecision, ExtendMode, ColorInterpolationMode)</a></dt>
+    <dd><p>Creates a gradient stop collection, enabling the gradient to contain color channels with values outside of [0,1]
+and also enabling rendering to a high-color render target with interpolation in sRGB space.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateGradientStopCollection.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateGradientStopCollection_PaintDotNet_Direct2D1_IDeviceContext_System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_GradientStopGamma_PaintDotNet_Direct2D1_ExtendMode_">CreateGradientStopCollection(IDeviceContext, IReadOnlyList&lt;GradientStop&gt;, GradientStopGamma, ExtendMode)</a></dt>
+    <dd><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a> from the specified array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)</a></dt>
     <dd></dd>
   </dl>
@@ -380,6 +396,12 @@ are undefined and may or may not cause an exception to be thrown.</p>
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawSpriteBatch.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawSpriteBatch_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_SpriteOptions_">DrawSpriteBatch(IDeviceContext, ISpriteBatch, IDeviceBitmap, InterpolationMode, SpriteOptions)</a></dt>
+    <dd><p>Renders all sprites in the given sprite batch to the device context using the specified drawing options.<br>
+<b>NOTE:</b> The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.DrawText.html#PaintDotNet_Direct2D1_DeviceContextExtensions_DrawText_PaintDotNet_Direct2D1_IDeviceContext_System_String_PaintDotNet_DirectWrite_ITextFormat_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_SizeFloat_PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_Direct2D1_DrawTextOptions_PaintDotNet_DirectWrite_TextMeasuringMode_">DrawText(IDeviceContext, string, ITextFormat, Point2Float, SizeFloat, IDeviceBrush, DrawTextOptions, TextMeasuringMode)</a></dt>
     <dd></dd>
   </dl>
@@ -511,11 +533,17 @@ This defines the working space for the device context when color management is e
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_EffectInputDescription__">GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, in EffectInputDescription)</a></dt>
-    <dd></dd>
+    <dd><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_IDeviceEffect_System_Int32_PaintDotNet_Rendering_RectFloat_">GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, IDeviceEffect, int, RectFloat)</a></dt>
     <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.GetEffectRequiredInputRectangle.html#PaintDotNet_Direct2D1_DeviceContextExtensions_GetEffectRequiredInputRectangle_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_EffectInputDescription__">GetEffectRequiredInputRectangle(IDeviceContext, IDeviceEffect, in RectFloat?, IReadOnlyList&lt;EffectInputDescription&gt;)</a></dt>
+    <dd><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.IsSoftwareContext.html#PaintDotNet_Direct2D1_DeviceContextExtensions_IsSoftwareContext_PaintDotNet_Direct2D1_IDeviceContext_">IsSoftwareContext(IDeviceContext)</a></dt>
@@ -535,7 +563,7 @@ to create a device bitmap that shares memory with a CPU bitmap (without copying)
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.RunAnalysisEffect.html#PaintDotNet_Direct2D1_DeviceContextExtensions_RunAnalysisEffect_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_Effects_IAnalysisEffect_">RunAnalysisEffect(IDeviceContext, IAnalysisEffect)</a></dt>
     <dd><p>Runs the given analysis effect. When this method returns, the effect's output may be retrieved
-from the appropriate property (e.g. <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_HistogramOutput">HistogramOutput</a>.</p>
+from the appropriate property (e.g. HistogramEffect's Props.HistogramOutput).</p>
 </dd>
   </dl>
   <dl class="jumplist">
@@ -583,7 +611,15 @@ from the appropriate property (e.g. <a class="xref" href="PaintDotNet.Direct2D1.
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, float, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_PaintDotNet_Rendering_Point2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, float, float, Point2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleAtTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleAtTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_System_Single_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleAtTransform(IDeviceContext, float, float, float, MatrixMultiplyOrder)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
@@ -592,6 +628,10 @@ from the appropriate property (e.g. <a class="xref" href="PaintDotNet.Direct2D1.
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleTransform_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Rendering_Vector2Float_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleTransform(IDeviceContext, Vector2Float, MatrixMultiplyOrder)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.UseScaleTransform.html#PaintDotNet_Direct2D1_DeviceContextExtensions_UseScaleTransform_PaintDotNet_Direct2D1_IDeviceContext_System_Single_PaintDotNet_Rendering_MatrixMultiplyOrder_">UseScaleTransform(IDeviceContext, float, MatrixMultiplyOrder)</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">

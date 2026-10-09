@@ -97,7 +97,7 @@ Class EffectOptions
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public record EffectOptions : PluginOptions, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IEquatable&lt;EffectOptions&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public record EffectOptions : PluginOptions, IEquatable&lt;PluginOptions&gt;, IEffectOptions, IPluginOptions, IInternalImpl, IEquatable&lt;EffectOptions&gt;</code></pre>
   </div>
 
 
@@ -117,6 +117,8 @@ Class EffectOptions
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.AppModel.PluginOptions.html">PluginOptions</a>&gt;</div>
       <div><a class="xref" href="PaintDotNet.Effects.IEffectOptions.html">IEffectOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.AppModel.IPluginOptions.html">IPluginOptions</a></div>
+      <div><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PaintDotNet.Effects.EffectOptions.html">EffectOptions</a>&gt;</div>
     </dd>
   </dl>
@@ -125,12 +127,6 @@ Class EffectOptions
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.VerifyNotFrozen.html#PaintDotNet_AppModel_PluginOptions_VerifyNotFrozen">PluginOptions.VerifyNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="PaintDotNet.AppModel.PluginOptions.IsFrozen.html#PaintDotNet_AppModel_PluginOptions_IsFrozen">PluginOptions.IsFrozen</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -195,12 +191,6 @@ Class EffectOptions
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectOptions.GetHashCode.html#PaintDotNet_Effects_EffectOptions_GetHashCode">GetHashCode()</a></dt>
     <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.Effects.EffectOptions.OnFrozen.html#PaintDotNet_Effects_EffectOptions_OnFrozen">OnFrozen()</a></dt>
-    <dd><p>Called by the base class when Freeze() is called for the first time. This is where
-&quot;fixups&quot; should be applied, such as adjusting or migrating obsolete options.</p>
-</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectOptions.PrintMembers.html#PaintDotNet_Effects_EffectOptions_PrintMembers_System_Text_StringBuilder_">PrintMembers(StringBuilder)</a></dt>
