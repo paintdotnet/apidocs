@@ -9,10 +9,10 @@ Paint.NET's Shapes tool supports Custom Shapes as a form of declarative plugin -
 The object model for Custom Shapes is contained in the [PaintDotNet.Shapes](xref:PaintDotNet.Shapes) and [PaintDotNet.UI.Media](xref:PaintDotNet.UI.Media) namespaces.
 
 Links:
-- [Installing Additional Plugins](https://getpaint.net/doc/latest/InstallPlugins.html) - Paint.NET Documentation
-- [Plugins - Shapes section of the Paint.NET forum](https://forums.getpaint.net/forum/48-shapes/). Download custom shapes plugins.
-- [How to make custom shapes](https://forums.getpaint.net/topic/32101-how-to-make-custom-shapes-for-paintnet-406/) tutorial by BoltBait
-- [ShapeMaker plugin by The Dwarf Horde](https://forums.getpaint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/)
+- [Installing Additional Plugins](https://paint.net/doc/latest/InstallPlugins.html) - Paint.NET Documentation
+- [Plugins - Shapes section of the Paint.NET forum](https://forums.paint.net/forum/48-shapes/). Download custom shapes plugins.
+- [How to make custom shapes](https://forums.paint.net/topic/32101-how-to-make-custom-shapes-for-paintnet-406/) tutorial by BoltBait
+- [ShapeMaker plugin by The Dwarf Horde](https://forums.paint.net/topic/110677-shapemaker-by-the-dwarf-horde-v1704-may-21-2022/)
 
 ## Differences from WPF Geometry
 The Geometry object model used for Custom Shapes is identical to WPF's Geometry object model, except for a few differences:
@@ -44,7 +44,7 @@ There are two primary ways of expressing a custom shape. The first is with [Path
 ### Path Markup syntax example
 This is an example of a coffee mug shape defined using [Path Markup syntax](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax), which is compatible with [SVG path data syntax](https://www.w3.org/TR/SVG2/paths.html). 
 
-This example is from [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
+This example is from [TechnoRobbo's shapes pack](https://forums.paint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
 
 ```xml
 <ps:SimpleGeometryShape 
@@ -59,7 +59,7 @@ This example is from [TechnoRobbo's shapes pack](https://forums.getpaint.net/top
 ### Geometry object model example
 This is an example of a clock shape defined using the Geometry object model. 
 
-This example is from [TechnoRobbo's shapes pack](https://forums.getpaint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
+This example is from [TechnoRobbo's shapes pack](https://forums.paint.net/topic/32140-trs-not-too-useful-but-fun-shapes/).
 
 ```xml
 <ps:SimpleGeometryShape xmlns="clr-namespace:PaintDotNet.UI.Media;assembly=PaintDotNet.Framework"
