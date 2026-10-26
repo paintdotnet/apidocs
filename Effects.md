@@ -12,8 +12,6 @@ Next, add a Nuget package reference for the [`Paint.NET.Plugin.SDK`](https://www
 ## Sample Effects Project
 The [effect samples on GitHub](https://github.com/paintdotnet/PdnV5EffectSamples/) can be used as a template to get started. Just copy it, change the name of the `.csproj` file, and update its `<RootNamespace>` property to something appropriate.
 
-The project file can also be used as a template for FileType plugins, you'll just be writing different code.
-
 ## Useful Links
 Here are some useful links to get started with effect plugin development:
 - [Plugins](https://forums.paint.net.net/forum/7-plugins-publishing-only/) section of the Paint.NET Forum, for publishing and downloading plugins
