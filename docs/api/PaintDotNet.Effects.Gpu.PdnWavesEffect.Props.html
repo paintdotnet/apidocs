@@ -169,94 +169,55 @@ Class PdnWavesEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a></dt>
-    <dd><p>The furthest distance that a pixel will be displaced, in pixels. This is an upper bound
-rather than an exact figure: a waveform steep enough to fold earlier than a sine is scaled
-down to match it, and so does not reach the full amplitude. Negative values invert the
-wave, which is equivalent to shifting the phase by 180 degrees.<br>
-The default value is 100. There is no fixed ceiling: callers scale this to the image, and
-half the minor axis of a large one runs past any bound worth naming.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Angle.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Angle">Angle</a></dt>
-    <dd><p>The direction that the wavefronts travel in, in degrees, measured counter-clockwise from east.
-This is only used by the linear patterns (<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a>,
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_LongitudinalLinear">LongitudinalLinear</a>, and <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Crossed">Crossed</a>).<br>
-The range is [-180, +180] and the default value is 0.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Bounds.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Bounds">Bounds</a></dt>
-    <dd><p>The rectangle that <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_FromEdges">FromEdges</a> measures its distances from.
-This is normally the clipping region's bounds. Ignored by every other pattern.<br>
-The default value is an empty rectangle.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Category.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Category">Category</a></dt>
-    <dd><p>The category of the effect.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a></dt>
-    <dd><p>The origin of the wave pattern.<br>
-For the distance- and angle-based patterns this is the point that the wavefronts are
-arranged around. For the linear patterns it is the point at which the wave's phase is
-zero, so moving it slides them along their direction of travel.<br>
-The default value is (0, 0).</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Damping.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Damping">Damping</a></dt>
-    <dd><p>The percentage of the wave's amplitude that is lost over each successive wavelength of
-distance from <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a>. At 50, for example, each ring of the wave is half as
-strong as the one before it. Zero disables damping.<br>
-The range is [0, 100] and the default value is 0.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Description.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Description">Description</a></dt>
-    <dd><p>The description of the effect.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.DisplayName.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_DisplayName">DisplayName</a></dt>
-    <dd><p>The name of the effect.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Lobes.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Lobes">Lobes</a></dt>
-    <dd><p>For <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular">Angular</a>, the number of lobes arranged around
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a>. For <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Spiral">Spiral</a>, the number of turns the
-spiral makes. Ignored by every other pattern.<br>
-The range is [1, 64] and the default value is 6.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Pattern.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Pattern">Pattern</a></dt>
-    <dd><p>The arrangement of the wavefronts and the direction the image is displaced in.
-The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a></dt>
-    <dd><p>The phase offset of the wave, in degrees, where 360 degrees is one full wavelength.<br>
-The range is [-360, +360] and the default value is 0.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.WaveLength.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_WaveLength">WaveLength</a></dt>
-    <dd><p>The distance between adjacent wavefronts, in pixels. Callers will usually derive this from the
-size of the clipping region so that the effect looks consistent across image sizes.<br>
-Ignored by <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular">Angular</a>, which takes its phase from an angle rather
-than from a distance and so has no wavefront spacing to set.<br>
-The range is [float.Epsilon, float.MaxValue] and the default value is 100.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Waveform.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Waveform">Waveform</a></dt>
-    <dd><p>The shape of the wave. The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesWaveform.html#PaintDotNet_Effects_Gpu_PdnWavesWaveform_Sine">Sine</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

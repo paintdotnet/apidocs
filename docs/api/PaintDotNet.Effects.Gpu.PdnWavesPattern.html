@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PdnWavesPattern ">
       
-      <meta name="description" content="Specifies how  arranges its wavefronts, and which direction it displaces the image in.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,9 +94,7 @@ Enum PdnWavesPattern
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies how <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.html">PdnWavesEffect</a> arranges its wavefronts, and which direction it
-displaces the image in.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,77 +114,37 @@ displaces the image in.</p>
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear"><code>Linear = 0</code></dt>
   
-  <dd><p>Parallel wavefronts travelling in the direction given by the effect's Angle, displacing the
-image perpendicular to that direction. Never folds.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial"><code>Radial = 1</code></dt>
   
-  <dd><p>Concentric wavefronts radiating from the effect's Center, displacing the image along the
-radius. This is the ripples-on-a-pond pattern. Folds at high amplitude.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_LongitudinalLinear"><code>LongitudinalLinear = 2</code></dt>
   
-  <dd><p>Parallel wavefronts as with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a>, but displacing the image along the
-direction of travel instead of across it. This compresses and stretches the image into
-bands, like an accordion, rather than making it undulate. Folds at high amplitude.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Tangential"><code>Tangential = 3</code></dt>
   
-  <dd><p>Concentric wavefronts as with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>, but displacing the image around the
-center rather than toward and away from it, so successive rings twist in alternating
-directions. Never folds, so it tolerates much larger amplitudes than <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_SquareRings"><code>SquareRings = 4</code></dt>
   
-  <dd><p>Concentric square rings, using the larger of the two axis distances from Center in place of
-a true radius. Displaces along the radius. Folds at high amplitude.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_DiamondRings"><code>DiamondRings = 5</code></dt>
   
-  <dd><p>Concentric diamond rings, using the sum of the two axis distances from Center in place of a
-true radius. Displaces along the radius. Folds at high amplitude.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Crossed"><code>Crossed = 6</code></dt>
   
-  <dd><p>Two sets of parallel wavefronts at right angles, each displacing the image across its own
-direction of travel. The result is a woven, basket-like warp. Each component is a shear on
-its own, but composing the two is not one-to-one, so this folds at high amplitude just as
-the along-gradient patterns do.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular"><code>Angular = 7</code></dt>
   
-  <dd><p>Wavefronts arranged as spokes around Center, with the phase driven by angle rather than
-distance. Displaces along the radius, producing rosettes and starbursts. The number of lobes
-comes from the effect's Lobes property; Wavelength is unused.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_Spiral"><code>Spiral = 8</code></dt>
   
-  <dd><p>Spiral wavefronts, combining a distance-driven phase with an angle-driven one. Displaces
-along the radius. The effect's Lobes property sets how many turns the spiral makes.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesPattern_FromEdges"><code>FromEdges = 9</code></dt>
-  <dd><p>Wavefronts running parallel to the image border, displacing inward. The phase runs from zero
-at the nearest edge up to a maximum at Center, so the ripples travel in from the frame and
-converge on that point.</p>
-<p>Each edge distance is normalized by how far Center sits from that edge. With Center in the
-middle of a square region that reduces to a plain distance-to-nearest-edge; on a non-square
-region it converges the wavefronts onto the single Center point rather than onto the long
-medial line that an unnormalized distance would produce.</p>
-</dd>
   
+  <dd></dd>
   </dl>
 
 
-  <h2 id="PaintDotNet_Effects_Gpu_PdnWavesPattern_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Each pattern is really two independent choices: where the wave's phase comes from (a projection
-along a direction, a distance from a center point, an angle around it), and whether the
-displacement runs along that phase gradient or across it.<br>
-<br>
-That second choice decides whether the pattern can fold over itself. Displacement <i>across</i>
-the gradient is a shear, and a shear is one-to-one at any amplitude. Displacement <i>along</i>
-the gradient piles pixels up once the amplitude gets large relative to the wavelength — see the
-remarks on <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a>.</p>
-</div>
 
 </article>
 

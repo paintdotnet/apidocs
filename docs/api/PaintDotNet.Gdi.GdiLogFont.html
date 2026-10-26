@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct GdiLogFont ">
       
-      <meta name="description" content="A logical font description.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,8 +93,7 @@ Struct GdiLogFont
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A logical font description.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -133,17 +132,16 @@ Struct GdiLogFont
 
 
 
-  <h2 id="PaintDotNet_Gdi_GdiLogFont_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This is a projection of Win32's <a href="https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-logfontw">LOGFONTW</a>
-struct. It has the same size and layout, and the two are &quot;reinterpret-cast&quot; compatible (such as with
-<code>(LOGFONTW*)&amp;gdiLogFont</code> or <code>(GdiLogFont*)&amp;logFontW</code>, or with <span class="xref">System.Runtime.CompilerServices.Unsafe.BitCast``2(``0)</span>).</p>
-</div>
 
   <h2 class="section" id="fields">Fields
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameLength.html">MaxFaceNameLength</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength.html">MaxFaceNameWithNullLength</a></dt>
     <dd></dd>
   </dl>
 
@@ -204,13 +202,19 @@ struct. It has the same size and layout, and the two are &quot;reinterpret-cast&
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceName.html#PaintDotNet_Gdi_GdiLogFont_GetFaceName">GetFaceName()</a></dt>
-    <dd><p>Gets the face name of the logical font.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceName.html#PaintDotNet_Gdi_GdiLogFont_GetFaceName_System_Span_System_Char__">GetFaceName(Span&lt;char&gt;)</a></dt>
-    <dd><p>Copies the logical font's face name to the provided buffer.</p>
-</dd>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan.html#PaintDotNet_Gdi_GdiLogFont_GetFaceNameSpan">GetFaceNameSpan()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan.html#PaintDotNet_Gdi_GdiLogFont_GetFaceNameWithNullSpan">GetFaceNameWithNullSpan()</a></dt>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.SetFaceName.html#PaintDotNet_Gdi_GdiLogFont_SetFaceName_System_ReadOnlySpan_System_Char__System_Boolean_">SetFaceName(ReadOnlySpan&lt;char&gt;, bool)</a></dt>
@@ -218,6 +222,18 @@ struct. It has the same size and layout, and the two are &quot;reinterpret-cast&
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.SetFaceName.html#PaintDotNet_Gdi_GdiLogFont_SetFaceName_System_String_System_Boolean_">SetFaceName(string, bool)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.op_Implicit.html#PaintDotNet_Gdi_GdiLogFont_op_Implicit_PaintDotNet_Gdi_GdiLogFont___System_Drawing_Interop_LOGFONT">implicit operator LOGFONT(in GdiLogFont)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.op_Implicit.html#PaintDotNet_Gdi_GdiLogFont_op_Implicit_System_Drawing_Interop_LOGFONT___PaintDotNet_Gdi_GdiLogFont">implicit operator GdiLogFont(in LOGFONT)</a></dt>
     <dd></dd>
   </dl>
 

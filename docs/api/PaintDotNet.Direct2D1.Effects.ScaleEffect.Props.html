@@ -184,32 +184,15 @@ Class ScaleEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd><p>The mode used to calculate the border of the image, soft or hard.
-When BorderMode.Soft is used, the effect pads the input image with transparent black pixels for samples outside
-of the input bounds when it applies the convolution kernel. This creates a soft edge for the image, and in the
-process expands the output bitmap by the size of the kernel.
-When BorderMode.Hard is used, the effect extends the input image with a mirror-type border transform for samples
-outside of the input bounds. The size of the output bitmap is equal to the size of the input bitmap.
-The default value is BorderMode.Soft.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.CenterPoint.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_CenterPoint">CenterPoint</a></dt>
-    <dd><p>The image scaling center point. The units are in DIPs. Use the center point to scale around
-a point other than the upper-left corner.<br>
-The default value is { 0, 0 }.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_ClassID">ClassID</a></dt>
-    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
-the effect and for binding to an IDeviceEffectProperties.<br>
-Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
-Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
-effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
-generic type arguments (e.g. PixelShaderEffect).</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_Input">Input</a></dt>
@@ -217,24 +200,15 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.InterpolationMode.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_InterpolationMode">InterpolationMode</a></dt>
-    <dd><p>The interpolation mode the effect uses to scale the image. There are 6 scale modes that range in quality and speed.
-The default value is ScaleInterpolationMode.Linear.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.Scale.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_Scale">Scale</a></dt>
-    <dd><p>The scale amount in the X and Y direction as a ratio of the output size to the input size.<br>
-The scale amounts are unitless and must be non-negative.<br>
-The minimum value is { 0.01f, 0.01f }. The default value is { 1, 1 }.<br></p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.Sharpness.html#PaintDotNet_Direct2D1_Effects_ScaleEffect_Props_Sharpness">Sharpness</a></dt>
-    <dd><p>In the high quality cubic interpolation mode, the sharpness level of the scaling filter as a float between 0 and 1.<br>
-The values are unitless. You can use sharpness to adjust the quality of an image when you scale the image down.<br>
-The sharpness factor affects the shape of the kernel. The higher the sharpness factor, the smaller the kernel.<br>
-The default value is 0.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

@@ -185,51 +185,27 @@ Class PdnHalftoneEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Specifies the alpha mode for the input, and for the output. The default value is
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneAlphaMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneAlphaMode_Premultiplied">Premultiplied</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Angle.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Angle">Angle</a></dt>
-    <dd><p>Specifies the angle of the screen, in degrees. The default value is 0. In
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneColorMode_Cmyk">Cmyk</a> the four inks sit at the traditional 15, 75, 0 and
-45 degrees, and this turns all of them together: it rotates the whole rosette while leaving
-the relationships between the screens intact. In
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneColorMode_Monochrome">Monochrome</a> it turns the single screen, which sits on
-black's 45.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.BlackGeneration.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_BlackGeneration">BlackGeneration</a></dt>
-    <dd><p>Specifies how much of the ink that could go into black actually does. At 1 every bit of
-neutral ink is carried by the black screen; at 0 it is built out of cyan, magenta and
-yellow together. The range is [0, 1], the default is 0.75. Ignored when <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.ColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_ColorMode">ColorMode</a>
-is set to <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneColorMode_Monochrome">Monochrome</a>. Tone-neutral by construction, but it
-decides whether the result reads as a rosette - at 1 the chromatic screens carry nothing
-neutral and there is none - and it costs accuracy in the deep shadows, where near-closed
-shapes leave a sliver at each cell corner whose rendered area depends on the screen's
-angle.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.CellSize.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_CellSize">CellSize</a></dt>
-    <dd><p>Specifies the screen ruling, in pixels: the distance from one cell to the next. The range
-is [2, 200], the default is 8.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.ColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_ColorMode">ColorMode</a></dt>
-    <dd><p>Specifies whether the image is separated into four process-color inks on four grids, or
-screened with a single black ink on one. The default value is
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneColorMode_Cmyk">Cmyk</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.GridOrigin.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_GridOrigin">GridOrigin</a></dt>
-    <dd><p>Specifies the point, in the input's own coordinate space, that every screen puts a cell
-centre exactly on. The default value is { 0, 0 }, but usually this is set to the center
-point of the image or selected area.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Input">Input</a></dt>
@@ -237,30 +213,19 @@ point of the image or selected area.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.InputColorContext.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_InputColorContext">InputColorContext</a></dt>
-    <dd><p>Specifies the color context of the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Input">Input</a> image, which is used to optimize the quality
-of this effect's rendering.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Pattern.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Pattern">Pattern</a></dt>
-    <dd><p>Specifies the shape that is laid down in each cell of the screen. The default value is
-<a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftonePattern.html#PaintDotNet_Effects_Gpu_PdnHalftonePattern_Dots">Dots</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Quality.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Quality">Quality</a></dt>
-    <dd><p>Specifies how many jittered samples of the screen each output pixel averages: the square
-of this value. The range is [1, 8], the default is 2. The shapes are rendered with hard
-edges, so this controls antialiasing. A value of 1 produces aliased output.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Softness.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Softness">Softness</a></dt>
-    <dd><p>Specifies how soft the edge of each shape is. At 0 there is no transition beyond
-what <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Quality.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Quality">Quality</a> antialiases; at 1 it grows with <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.CellSize.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_CellSize">CellSize</a>,
-dissolving the shapes into soft blobs at any ruling. The range is [0, 1], the
-default is 0.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

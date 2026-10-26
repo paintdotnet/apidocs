@@ -116,7 +116,7 @@ Method CreateBitmapBrush
 <a id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmapBrush_" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush*"></a>
 
 <h3 id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmapBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___" data-uid="PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceBitmap,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.InterpolationMode,System.Single,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)">
-  CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
+  CreateBitmapBrush(IDeviceContext, IDeviceBitmap?, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
   
 </h3>
 
@@ -124,7 +124,7 @@ Method CreateBitmapBrush
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IBitmapBrush CreateBitmapBrush(this IDeviceContext deviceContext, IDeviceBitmap bitmap, ExtendMode extendModeX = ExtendMode.Clamp, ExtendMode extendModeY = ExtendMode.Clamp, InterpolationMode interpolationMode = InterpolationMode.Linear, float opacity = 1, in Matrix3x2Float? transform = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IBitmapBrush CreateBitmapBrush(this IDeviceContext deviceContext, IDeviceBitmap? bitmap, ExtendMode extendModeX = ExtendMode.Clamp, ExtendMode extendModeY = ExtendMode.Clamp, InterpolationMode interpolationMode = InterpolationMode.Linear, float opacity = 1, in Matrix3x2Float? transform = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>

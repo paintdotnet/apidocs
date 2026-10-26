@@ -120,8 +120,7 @@ Method GetBitmap
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets a bitmap that renders the layer's contents in the requested pixel format.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,17 +130,13 @@ Method GetBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>pixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd><p>The requested pixel format for the bitmap. The native pixel format used by Paint.NET is currently
-<a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>, which can be accessed using the <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a> struct.
-Specifying a different pixel format is valid, but will incur conversion overhead.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectInputBitmap.html">IEffectInputBitmap</a></dt>
-  <dd><p>The bitmap.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -150,14 +145,6 @@ Specifying a different pixel format is valid, but will incur conversion overhead
 
 
 
-<h4 class="section" id="PaintDotNet_Effects_IEffectLayerInfo_GetBitmap_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This bitmap does not take <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Visible.html#PaintDotNet_Effects_IEffectLayerInfo_Visible">Visible</a> or <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Opacity.html#PaintDotNet_Effects_IEffectLayerInfo_Opacity">Opacity</a> into account.<br>
-<br>
-When retrieving a bitmap in a floating-point pixel format, such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>,
-linear gamma will be used. The source will be converted if necessary. If the working space of the document
-(<a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a>) cannot be linearized, then scRGB (aka linearized sRGB)
-will be used instead.</p>
-</div>
 
 
 

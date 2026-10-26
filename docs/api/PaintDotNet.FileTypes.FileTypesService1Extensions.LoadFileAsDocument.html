@@ -120,8 +120,7 @@ Method LoadFileAsDocument
   
 </h3>
 
-<div class="markdown level1 summary"><p>Loads an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> from the given file path.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,18 +130,15 @@ Method LoadFileAsDocument
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>service</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService1.html">IFileTypesService1</a></dt>
-  <dd><p>The service to use for finding and creating <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a> instances.</p>
-</dd>
+  <dd></dd>
   <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd><p>The path of the file to load from.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a></dt>
-  <dd><p>A <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> with its layers, metadata, color context, etc.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -151,22 +147,7 @@ Method LoadFileAsDocument
 
 
 
-<h4 class="section" id="PaintDotNet_FileTypes_FileTypesService1Extensions_LoadFileAsDocument_PaintDotNet_FileTypes_IFileTypesService1_System_String__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This method may also throw exceptions for I/O errors, including <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a>,
-as well as any exceptions that the FileType itself may throw. This method may return a document in
-a non-RGB pixel format, such as <a class="xref" href="PaintDotNet.Imaging.ColorCmyk32.html">ColorCmyk32</a>, depending on the image's contents and
-the FileType's implementation.</p>
-</div>
 
-<h4 class="section">Exceptions</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-  <dd><p><code class="paramref">filePath</code> does not have an extension.</p>
-</dd>
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
-  <dd><p>A FileType that handles the file's extension could not be found.</p>
-</dd>
-</dl>
 
 
 

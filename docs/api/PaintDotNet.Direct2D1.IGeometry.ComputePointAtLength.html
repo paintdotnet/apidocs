@@ -120,9 +120,7 @@ Method ComputePointAtLength
   
 </h3>
 
-<div class="markdown level1 summary"><p>Calculates the point and tangent vector at the specified distance along the geometry after it has been transformed by the
-specified matrix and flattened using the specified tolerance.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,27 +130,19 @@ specified matrix and flattened using the specified tolerance.</p>
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>The distance along the geometry of the point and tangent to find. If this distance is less than 0, this method calculates the first
-point in the geometry. If this distance is greater than the length of the geometry, this method calculates the last point in the geometry.</p>
-</dd>
+  <dd></dd>
   <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd><p>The transform to apply to the geometry before calculating the specified point and tangent, or null for no transform.</p>
-</dd>
+  <dd></dd>
   <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-  <dd><p>The maximum error allowed when constructing a polygonal approximation of the geometry, or null to use FlatteningTolerance.Default.
-No point in the polygonal representation will diverge from the original geometry by more than the flattening tolerance. Smaller
-values produce more accurate results but cause slower execution.</p>
-</dd>
+  <dd></dd>
   <dt><code>unitTangentVector</code> <a class="xref" href="PaintDotNet.Rendering.Vector2Float.html">Vector2Float</a></dt>
-  <dd><p>On return, contains the tangent vector at the specified distance along the geometry. If the geometry is empty, this vector contains NaN as its x and y values.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd><p>Returns the location at the specified distance along the geometry. If the geometry is empty, this point contains NaN as its x and y values.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 

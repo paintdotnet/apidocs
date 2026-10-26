@@ -120,19 +120,7 @@ Property PrecisionBits
   
 </h3>
 
-<div class="markdown level1 summary"><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br>
-<br>
-Higher values will have lower performance. Execution time scales linearly with this property's value.<br>
-<br>
-The range is [1, 32]. The default value is 8 which produces 8-bits of precision and is suitable for source images
-that use 8 bits-per-component (e.g. BGRA32). Using a quality value of 9 in that case will take 12.5% more time to
-render and will only produce some pixels that are +/-1 delta from using quality=8 (e.g. R=191 instead of R=192, or
-G=67 instead of G=66).<br>
-<br>
-When precision is critical, this property should be set to the bit-depth of the source image, plus 1. However,
-larger values will cause the pixel shader to take longer to execute and could result in a TDR or crash on slower
-hardware.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

@@ -120,9 +120,7 @@ Method GetColorContext
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets the color context that defines the color space of the document. If the document has a color profile
-defined in its metadata then this will provide access to that. A document always has a color context.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -142,16 +140,6 @@ defined in its metadata then this will provide access to that. A document always
 
 
 
-<h4 class="section" id="PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_GetColorContext_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>If a color context is not set when creating the document, then this will be the default color context
-of the document's <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument.PixelFormat.html#PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_PixelFormat">PixelFormat</a> (usually sRGB).</p>
-<p>If your <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a> implementation already handles saving or loading metadata accessible
-through the <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument.Metadata.html#PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_Metadata">Metadata</a> property, there is probably no need to worry about this method or using
-the <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> interface. The color profile data will already be provided through the EXIF
-metadata section. Some image types can specify color space information more compactly (e.g. PNG's sRGB, iCCP,
-and cICP chunks) without needing to store the whole color profile, which may be worth implementing. For help
-with handling CICP, see <a class="xref" href="PaintDotNet.Imaging.CicpColorSpace.html">CicpColorSpace</a>.</p>
-</div>
 
 
 

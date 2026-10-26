@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ISimplifiedGeometrySink ">
       
-      <meta name="description" content="Describes a geometric path that does not contain quadratic bezier curves or arcs. See ID2D1SimplifiedGeometrySink for more information.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,10 +93,7 @@ Interface ISimplifiedGeometrySink
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes a geometric path that does not contain quadratic bezier curves or arcs.<br>
-See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink">ID2D1SimplifiedGeometrySink</a>
-for more information.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -133,54 +130,37 @@ for more information.</p>
 
 
 
-  <h2 id="PaintDotNet_Direct2D1_ISimplifiedGeometrySink_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>An implementation of this interface is provided when using <a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.Open.html#PaintDotNet_Direct2D1_IPathGeometry_Open">Open()</a>.<br>
-<br>
-To implement this yourself, such as to capture the data provided from various methods on <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a>,
-create a class that derives from <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a> and that also derives from this interface.<br>
-<br>
-For higher fidelity and better performance, implement the <a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.html">IGeometrySink</a> interface, which
-derives from this interface.</p>
-</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.AddBeziers.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_AddBeziers_System_ReadOnlySpan_PaintDotNet_Direct2D1_BezierSegment__">AddBeziers(ReadOnlySpan&lt;BezierSegment&gt;)</a></dt>
-    <dd><p>Creates a sequence of cubic Bezier curves and adds them to the geometry sink.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.AddLines.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_AddLines_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__">AddLines(ReadOnlySpan&lt;Point2Float&gt;)</a></dt>
-    <dd><p>Creates a sequence of lines using the specified points and adds them to the geometry sink.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a></dt>
-    <dd><p>Starts a new figure at the specified point.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.Close.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_Close">Close()</a></dt>
-    <dd><p>Closes the geometry sink, indicates whether it is in an error state, and resets the sink's error state.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.EndFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_EndFigure_PaintDotNet_Direct2D1_FigureEnd_">EndFigure(FigureEnd)</a></dt>
-    <dd><p>Ends the current figure; optionally, closes it.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.SetFillMode.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetFillMode_PaintDotNet_Direct2D1_FillMode_">SetFillMode(FillMode)</a></dt>
-    <dd><p>Specifies the method used to determine which points are inside the geometry described by this geometry
-sink and which points are outside.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.SetSegmentOptions.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetSegmentOptions_PaintDotNet_Direct2D1_PathSegmentOptions_">SetSegmentOptions(PathSegmentOptions)</a></dt>
-    <dd><p>Specifies stroke and join options to be applied to new segments added to the geometry sink.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

@@ -120,8 +120,7 @@ Method TryGetOrWrap
   
 </h3>
 
-<div class="markdown level1 summary"><p>Returns an object that implements IDynamicInvoke which can be used for dynamic method invocation on the given target.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,18 +130,13 @@ Method TryGetOrWrap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd><p>The object to return or wrap.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Dynamic.IDynamicInvoke.html">IDynamicInvoke</a></dt>
-  <dd><p>If the target implements IDynamicInvoke, then it is returned directly. Otherwise, a wrapper is returned:
-If the target has a private method, OnInvokeDynamicMethod(string name, object[] args), then the wrapper will delegate to that method.
-Otherwise, null will be returned. This latter mechanism is provided so that classes compiled for an older version of this assembly,
-which lacks IDynamicInvoke, may still essentially implement IDynamicInvoke.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 

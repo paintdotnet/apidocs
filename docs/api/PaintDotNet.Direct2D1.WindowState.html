@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum WindowState ">
       
-      <meta name="description" content="Describes whether a window is occluded. D2D1_WINDOW_STATE">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,9 +94,7 @@ Enum WindowState
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes whether a window is occluded.<br>
-<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_window_state">D2D1_WINDOW_STATE</a></p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,22 +114,13 @@ Enum WindowState
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_WindowState_None"><code>None = 0</code></dt>
   
-  <dd><p>The window is not occluded.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Direct2D1_WindowState_Occluded"><code>Occluded = 1</code></dt>
   
-  <dd><p>The window is occluded.</p>
-</dd>
+  <dd></dd>
   </dl>
 
 
-  <h2 id="PaintDotNet_Direct2D1_WindowState_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>If the window was occluded the last time <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> was called, the next time the device
-context calls <a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.CheckWindowState.html#PaintDotNet_Direct2D1_IHwndDeviceContext_CheckWindowState">CheckWindowState()</a>, it returns <a class="xref" href="PaintDotNet.Direct2D1.WindowState.html#PaintDotNet_Direct2D1_WindowState_Occluded">Occluded</a>
-regardless of the current window state. If you want to use CheckWindowState to check the current window state,
-call CheckWindowState after every EndDraw call and ignore its return value. This will ensure that your next call
-to CheckWindowState state returns the actual window state.</p>
-</div>
 
 </article>
 

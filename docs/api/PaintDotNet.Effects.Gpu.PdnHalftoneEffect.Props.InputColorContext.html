@@ -120,9 +120,7 @@ Property InputColorContext
   
 </h3>
 
-<div class="markdown level1 summary"><p>Specifies the color context of the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Input">Input</a> image, which is used to optimize the quality
-of this effect's rendering.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -142,20 +140,6 @@ of this effect's rendering.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_InputColorContext_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>If this property is set (is non-<code>null</code>, in other words), the image will be converted to linear
-gamma for some of the effect's internal rendering, while remaining in the original gamma (specified
-by this property) for other portions of rendering. The output of this effect will be in the color
-space defined by this property.<br>
-<br>
-This effect's rendering quality is optimal when the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_Input">Input</a> image has not been linearized,
-and this property is set to its (non-linearized) color context.<br>
-<br>
-For Paint.NET GPU effect plugins, this means you should specify <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a>
-for the <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectRenderInfo.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_ColorContext">ColorContext</a> property in your <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_Gpu_GpuEffect_OnInitializeRenderInfo_PaintDotNet_Effects_Gpu_IGpuEffectRenderInfo_">OnInitializeRenderInfo(IGpuEffectRenderInfo)</a>
-implementation. You can then set this property with the value of <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectDocumentInfo2.ColorContext.html#PaintDotNet_Effects_Gpu_IGpuEffectDocumentInfo2_ColorContext">ColorContext</a>,
-or with the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImageFormatInfo.ColorContext.html#PaintDotNet_Direct2D1_IDeviceImageFormatInfo_ColorContext">ColorContext</a> property of <a class="xref" href="PaintDotNet.Effects.Gpu.IGpuEffectEnvironment2.SourceImage.html#PaintDotNet_Effects_Gpu_IGpuEffectEnvironment2_SourceImage">SourceImage</a>.</p>
-</div>
 
 
 

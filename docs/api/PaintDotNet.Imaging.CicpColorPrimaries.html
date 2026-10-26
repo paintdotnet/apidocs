@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum CicpColorPrimaries ">
       
-      <meta name="description" content="Identifies the chromaticity coordinates of the source primaries (red, green, blue) and the white point. These are the &amp;quot;ColourPrimaries&amp;quot; code points defined by ITU-T H.273 (Table 2) and used by the PNG cICP chunk.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,10 +94,7 @@ Enum CicpColorPrimaries
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Identifies the chromaticity coordinates of the source primaries (red, green, blue) and
-the white point. These are the &quot;ColourPrimaries&quot; code points defined by ITU-T H.273
-(Table 2) and used by the PNG cICP chunk.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,61 +124,43 @@ the white point. These are the &quot;ColourPrimaries&quot; code points defined b
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Bt709"><code>Bt709 = 1</code></dt>
   
-  <dd><p>Rec. ITU-R BT.709-6; also IEC 61966-2-1 (sRGB or sYCC) and IEC 61966-2-4. (D65 white point.)</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Unspecified"><code>Unspecified = 2</code></dt>
   
-  <dd><p>Unspecified. The primaries are determined by the application or by other means.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Bt470M"><code>Bt470M = 4</code></dt>
   
-  <dd><p>Rec. ITU-R BT.470-6 System M (historical), US NTSC 1953, FCC Title 47.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Bt470Bg"><code>Bt470Bg = 5</code></dt>
   
-  <dd><p>Rec. ITU-R BT.470-6 System B, G (historical); BT.601-7 625; BT.1358-0 625; BT.1700 625 PAL and SECAM.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Smpte170M"><code>Smpte170M = 6</code></dt>
   
-  <dd><p>Rec. ITU-R BT.601-7 525; BT.1358-1 525 or 625; BT.1700 NTSC; SMPTE ST 170.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Smpte240M"><code>Smpte240M = 7</code></dt>
   
-  <dd><p>SMPTE ST 240 (historical). Functionally the same primaries as <a class="xref" href="PaintDotNet.Imaging.CicpColorPrimaries.html#PaintDotNet_Imaging_CicpColorPrimaries_Smpte170M">Smpte170M</a>.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_GenericFilm"><code>GenericFilm = 8</code></dt>
   
-  <dd><p>Generic film (colour filters using Illuminant C).</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Bt2020"><code>Bt2020 = 9</code></dt>
   
-  <dd><p>Rec. ITU-R BT.2020-2 and Rec. ITU-R BT.2100-2. (Wide gamut; D65 white point.)</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Smpte428"><code>Smpte428 = 10</code></dt>
   
-  <dd><p>SMPTE ST 428-1 (CIE 1931 XYZ). (Equal-energy &quot;E&quot; white point.)</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Smpte431"><code>Smpte431 = 11</code></dt>
   
-  <dd><p>SMPTE RP 431-2 (DCI P3, theater). (DCI white point.)</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Smpte432"><code>Smpte432 = 12</code></dt>
   
-  <dd><p>SMPTE EG 432-1 (Display P3). (D65 white point.)</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Imaging_CicpColorPrimaries_Ebu3213"><code>Ebu3213 = 22</code></dt>
   
-  <dd><p>EBU Tech. 3213-E (historical); JEDEC P22 phosphors.</p>
-</dd>
+  <dd></dd>
   </dl>
 
 
-  <h2 id="PaintDotNet_Imaging_CicpColorPrimaries_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>The underlying type is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> to match the 8-bit code point in the cICP chunk.
-Only the values defined by H.273 are named here; reserved and unassigned values (0, 3,
-13–21, and 23–255) are intentionally not enumerated, but still round-trip
-faithfully because the storage type is a raw byte.</p>
-</div>
 
 </article>
 

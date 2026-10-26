@@ -11232,13 +11232,13 @@ references:
   fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmap
   nameWithType: DeviceContextExtensions.CreateBitmap
 - uid: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceBitmap,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.InterpolationMode,System.Single,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)
-  name: CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
+  name: CreateBitmapBrush(IDeviceContext, IDeviceBitmap?, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
   href: api/PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBitmapBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceBitmap_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___
   commentId: M:PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceBitmap,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.InterpolationMode,System.Single,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)
   name.vb: CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, Single, Matrix3x2Float?)
-  fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceBitmap, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, float, in PaintDotNet.Rendering.Matrix3x2Float?)
+  fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceBitmap?, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, float, in PaintDotNet.Rendering.Matrix3x2Float?)
   fullName.vb: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceBitmap, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, Single, PaintDotNet.Rendering.Matrix3x2Float?)
-  nameWithType: DeviceContextExtensions.CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
+  nameWithType: DeviceContextExtensions.CreateBitmapBrush(IDeviceContext, IDeviceBitmap?, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
   nameWithType.vb: DeviceContextExtensions.CreateBitmapBrush(IDeviceContext, IDeviceBitmap, ExtendMode, ExtendMode, InterpolationMode, Single, Matrix3x2Float?)
 - uid: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateBitmapBrush*
   name: CreateBitmapBrush
@@ -11334,13 +11334,13 @@ references:
   fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateGradientStopCollection
   nameWithType: DeviceContextExtensions.CreateGradientStopCollection
 - uid: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Rendering.RectFloat,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.InterpolationMode,System.Single,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)
-  name: CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
+  name: CreateImageBrush(IDeviceContext, IDeviceImage?, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
   href: api/PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush.html#PaintDotNet_Direct2D1_DeviceContextExtensions_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Rendering_RectFloat_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_InterpolationMode_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___
   commentId: M:PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceContext,PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Rendering.RectFloat,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.ExtendMode,PaintDotNet.Direct2D1.InterpolationMode,System.Single,System.Nullable{PaintDotNet.Rendering.Matrix3x2Float}@)
   name.vb: CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, Single, Matrix3x2Float?)
-  fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceImage, PaintDotNet.Rendering.RectFloat, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, float, in PaintDotNet.Rendering.Matrix3x2Float?)
+  fullName: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceImage?, PaintDotNet.Rendering.RectFloat, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, float, in PaintDotNet.Rendering.Matrix3x2Float?)
   fullName.vb: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceContext, PaintDotNet.Direct2D1.IDeviceImage, PaintDotNet.Rendering.RectFloat, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.ExtendMode, PaintDotNet.Direct2D1.InterpolationMode, Single, PaintDotNet.Rendering.Matrix3x2Float?)
-  nameWithType: DeviceContextExtensions.CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
+  nameWithType: DeviceContextExtensions.CreateImageBrush(IDeviceContext, IDeviceImage?, RectFloat, ExtendMode, ExtendMode, InterpolationMode, float, in Matrix3x2Float?)
   nameWithType.vb: DeviceContextExtensions.CreateImageBrush(IDeviceContext, IDeviceImage, RectFloat, ExtendMode, ExtendMode, InterpolationMode, Single, Matrix3x2Float?)
 - uid: PaintDotNet.Direct2D1.DeviceContextExtensions.CreateImageBrush*
   name: CreateImageBrush
@@ -32435,6 +32435,54 @@ references:
   commentId: Overload:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.CreateImpl
   fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.CreateImpl
   nameWithType: PackFloat32Effect.Props.CreateImpl
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor
+  name: GetAuthor()
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor.html#PaintDotNet_Direct2D1_Effects_PackFloat32Effect_Props_GetAuthor
+  commentId: M:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor()
+  nameWithType: PackFloat32Effect.Props.GetAuthor()
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor*
+  name: GetAuthor
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetAuthor
+  nameWithType: PackFloat32Effect.Props.GetAuthor
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory
+  name: GetCategory()
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory.html#PaintDotNet_Direct2D1_Effects_PackFloat32Effect_Props_GetCategory
+  commentId: M:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory()
+  nameWithType: PackFloat32Effect.Props.GetCategory()
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory*
+  name: GetCategory
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetCategory
+  nameWithType: PackFloat32Effect.Props.GetCategory
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription
+  name: GetDescription()
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription.html#PaintDotNet_Direct2D1_Effects_PackFloat32Effect_Props_GetDescription
+  commentId: M:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription()
+  nameWithType: PackFloat32Effect.Props.GetDescription()
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription*
+  name: GetDescription
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDescription
+  nameWithType: PackFloat32Effect.Props.GetDescription
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName
+  name: GetDisplayName()
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName.html#PaintDotNet_Direct2D1_Effects_PackFloat32Effect_Props_GetDisplayName
+  commentId: M:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName()
+  nameWithType: PackFloat32Effect.Props.GetDisplayName()
+- uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName*
+  name: GetDisplayName
+  href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.GetDisplayName
+  nameWithType: PackFloat32Effect.Props.GetDisplayName
 - uid: PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.InputHigh
   name: InputHigh
   href: api/PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.InputHigh.html#PaintDotNet_Direct2D1_Effects_PackFloat32Effect_Props_InputHigh
@@ -37472,6 +37520,18 @@ references:
   commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.DestinationBlendAlpha
   fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.DestinationBlendAlpha
   nameWithType: PrimitiveBlendEffect.Props.DestinationBlendAlpha
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor
+  name: GetAuthor()
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetAuthor
+  commentId: M:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor()
+  nameWithType: PrimitiveBlendEffect.Props.GetAuthor()
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor*
+  name: GetAuthor
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetAuthor
+  nameWithType: PrimitiveBlendEffect.Props.GetAuthor
 - uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetBlendDescription
   name: GetBlendDescription()
   href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetBlendDescription.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetBlendDescription
@@ -37484,6 +37544,42 @@ references:
   commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetBlendDescription
   fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetBlendDescription
   nameWithType: PrimitiveBlendEffect.Props.GetBlendDescription
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory
+  name: GetCategory()
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetCategory
+  commentId: M:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory()
+  nameWithType: PrimitiveBlendEffect.Props.GetCategory()
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory*
+  name: GetCategory
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetCategory
+  nameWithType: PrimitiveBlendEffect.Props.GetCategory
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription
+  name: GetDescription()
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetDescription
+  commentId: M:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription()
+  nameWithType: PrimitiveBlendEffect.Props.GetDescription()
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription*
+  name: GetDescription
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDescription
+  nameWithType: PrimitiveBlendEffect.Props.GetDescription
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName
+  name: GetDisplayName()
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetDisplayName
+  commentId: M:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName()
+  nameWithType: PrimitiveBlendEffect.Props.GetDisplayName()
+- uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName*
+  name: GetDisplayName
+  href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetDisplayName
+  nameWithType: PrimitiveBlendEffect.Props.GetDisplayName
 - uid: PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetMaxInputs
   name: GetMaxInputs()
   href: api/PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.GetMaxInputs.html#PaintDotNet_Direct2D1_Effects_PrimitiveBlendEffect_Props_GetMaxInputs
@@ -41495,6 +41591,54 @@ references:
   commentId: Overload:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.CreateImpl
   fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.CreateImpl
   nameWithType: UnpackFloat16Effect.Props.CreateImpl
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor
+  name: GetAuthor()
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor.html#PaintDotNet_Direct2D1_Effects_UnpackFloat16Effect_Props_GetAuthor
+  commentId: M:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor()
+  nameWithType: UnpackFloat16Effect.Props.GetAuthor()
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor*
+  name: GetAuthor
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetAuthor
+  nameWithType: UnpackFloat16Effect.Props.GetAuthor
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory
+  name: GetCategory()
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory.html#PaintDotNet_Direct2D1_Effects_UnpackFloat16Effect_Props_GetCategory
+  commentId: M:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory()
+  nameWithType: UnpackFloat16Effect.Props.GetCategory()
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory*
+  name: GetCategory
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetCategory
+  nameWithType: UnpackFloat16Effect.Props.GetCategory
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription
+  name: GetDescription()
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription.html#PaintDotNet_Direct2D1_Effects_UnpackFloat16Effect_Props_GetDescription
+  commentId: M:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription()
+  nameWithType: UnpackFloat16Effect.Props.GetDescription()
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription*
+  name: GetDescription
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDescription
+  nameWithType: UnpackFloat16Effect.Props.GetDescription
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName
+  name: GetDisplayName()
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName.html#PaintDotNet_Direct2D1_Effects_UnpackFloat16Effect_Props_GetDisplayName
+  commentId: M:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName()
+  nameWithType: UnpackFloat16Effect.Props.GetDisplayName()
+- uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName*
+  name: GetDisplayName
+  href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName.html
+  commentId: Overload:PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName
+  fullName: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.GetDisplayName
+  nameWithType: UnpackFloat16Effect.Props.GetDisplayName
 - uid: PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.Input
   name: Input
   href: api/PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.Input.html#PaintDotNet_Direct2D1_Effects_UnpackFloat16Effect_Props_Input
@@ -43494,11 +43638,14 @@ references:
   fullName: PaintDotNet.Direct2D1.IBitmapBrush.InterpolationMode
   nameWithType: IBitmapBrush.InterpolationMode
 - uid: PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap(PaintDotNet.Direct2D1.IDeviceBitmap)
-  name: SetBitmap(IDeviceBitmap)
+  name: SetBitmap(IDeviceBitmap?)
   href: api/PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap.html#PaintDotNet_Direct2D1_IBitmapBrush_SetBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_
   commentId: M:PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap(PaintDotNet.Direct2D1.IDeviceBitmap)
-  fullName: PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap(PaintDotNet.Direct2D1.IDeviceBitmap)
-  nameWithType: IBitmapBrush.SetBitmap(IDeviceBitmap)
+  name.vb: SetBitmap(IDeviceBitmap)
+  fullName: PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap(PaintDotNet.Direct2D1.IDeviceBitmap?)
+  fullName.vb: PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap(PaintDotNet.Direct2D1.IDeviceBitmap)
+  nameWithType: IBitmapBrush.SetBitmap(IDeviceBitmap?)
+  nameWithType.vb: IBitmapBrush.SetBitmap(IDeviceBitmap)
 - uid: PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap*
   name: SetBitmap
   href: api/PaintDotNet.Direct2D1.IBitmapBrush.SetBitmap.html
@@ -44607,13 +44754,13 @@ references:
   fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmap
   nameWithType: IDeviceContext.CreateBitmap
 - uid: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceBitmap,System.Nullable{PaintDotNet.Direct2D1.BitmapBrushProperties}@,System.Nullable{PaintDotNet.Direct2D1.BrushProperties}@)
-  name: CreateBitmapBrush(IDeviceBitmap, in BitmapBrushProperties?, in BrushProperties?)
+  name: CreateBitmapBrush(IDeviceBitmap?, in BitmapBrushProperties?, in BrushProperties?)
   href: api/PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateBitmapBrush_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Direct2D1_BitmapBrushProperties___System_Nullable_PaintDotNet_Direct2D1_BrushProperties___
   commentId: M:PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceBitmap,System.Nullable{PaintDotNet.Direct2D1.BitmapBrushProperties}@,System.Nullable{PaintDotNet.Direct2D1.BrushProperties}@)
   name.vb: CreateBitmapBrush(IDeviceBitmap, BitmapBrushProperties?, BrushProperties?)
-  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceBitmap, in PaintDotNet.Direct2D1.BitmapBrushProperties?, in PaintDotNet.Direct2D1.BrushProperties?)
+  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceBitmap?, in PaintDotNet.Direct2D1.BitmapBrushProperties?, in PaintDotNet.Direct2D1.BrushProperties?)
   fullName.vb: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush(PaintDotNet.Direct2D1.IDeviceBitmap, PaintDotNet.Direct2D1.BitmapBrushProperties?, PaintDotNet.Direct2D1.BrushProperties?)
-  nameWithType: IDeviceContext.CreateBitmapBrush(IDeviceBitmap, in BitmapBrushProperties?, in BrushProperties?)
+  nameWithType: IDeviceContext.CreateBitmapBrush(IDeviceBitmap?, in BitmapBrushProperties?, in BrushProperties?)
   nameWithType.vb: IDeviceContext.CreateBitmapBrush(IDeviceBitmap, BitmapBrushProperties?, BrushProperties?)
 - uid: PaintDotNet.Direct2D1.IDeviceContext.CreateBitmapBrush*
   name: CreateBitmapBrush
@@ -44700,13 +44847,13 @@ references:
   fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateGradientStopCollection
   nameWithType: IDeviceContext.CreateGradientStopCollection
 - uid: PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Direct2D1.ImageBrushProperties@,System.Nullable{PaintDotNet.Direct2D1.BrushProperties}@)
-  name: CreateImageBrush(IDeviceImage, in ImageBrushProperties, in BrushProperties?)
+  name: CreateImageBrush(IDeviceImage?, in ImageBrushProperties, in BrushProperties?)
   href: api/PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush.html#PaintDotNet_Direct2D1_IDeviceContext_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_ImageBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties___
   commentId: M:PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceImage,PaintDotNet.Direct2D1.ImageBrushProperties@,System.Nullable{PaintDotNet.Direct2D1.BrushProperties}@)
   name.vb: CreateImageBrush(IDeviceImage, ImageBrushProperties, BrushProperties?)
-  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceImage, in PaintDotNet.Direct2D1.ImageBrushProperties, in PaintDotNet.Direct2D1.BrushProperties?)
+  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceImage?, in PaintDotNet.Direct2D1.ImageBrushProperties, in PaintDotNet.Direct2D1.BrushProperties?)
   fullName.vb: PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush(PaintDotNet.Direct2D1.IDeviceImage, PaintDotNet.Direct2D1.ImageBrushProperties, PaintDotNet.Direct2D1.BrushProperties?)
-  nameWithType: IDeviceContext.CreateImageBrush(IDeviceImage, in ImageBrushProperties, in BrushProperties?)
+  nameWithType: IDeviceContext.CreateImageBrush(IDeviceImage?, in ImageBrushProperties, in BrushProperties?)
   nameWithType.vb: IDeviceContext.CreateImageBrush(IDeviceImage, ImageBrushProperties, BrushProperties?)
 - uid: PaintDotNet.Direct2D1.IDeviceContext.CreateImageBrush*
   name: CreateImageBrush
@@ -44726,15 +44873,15 @@ references:
   commentId: Overload:PaintDotNet.Direct2D1.IDeviceContext.CreateInk
   fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateInk
   nameWithType: IDeviceContext.CreateInk
-- uid: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(PaintDotNet.Direct2D1.InkStyleProperties@)
-  name: CreateInkStyle(in InkStyleProperties)
-  href: api/PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle.html#PaintDotNet_Direct2D1_IDeviceContext_CreateInkStyle_PaintDotNet_Direct2D1_InkStyleProperties__
-  commentId: M:PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(PaintDotNet.Direct2D1.InkStyleProperties@)
-  name.vb: CreateInkStyle(InkStyleProperties)
-  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(in PaintDotNet.Direct2D1.InkStyleProperties)
-  fullName.vb: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(PaintDotNet.Direct2D1.InkStyleProperties)
-  nameWithType: IDeviceContext.CreateInkStyle(in InkStyleProperties)
-  nameWithType.vb: IDeviceContext.CreateInkStyle(InkStyleProperties)
+- uid: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(System.Nullable{PaintDotNet.Direct2D1.InkStyleProperties}@)
+  name: CreateInkStyle(in InkStyleProperties?)
+  href: api/PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle.html#PaintDotNet_Direct2D1_IDeviceContext_CreateInkStyle_System_Nullable_PaintDotNet_Direct2D1_InkStyleProperties___
+  commentId: M:PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(System.Nullable{PaintDotNet.Direct2D1.InkStyleProperties}@)
+  name.vb: CreateInkStyle(InkStyleProperties?)
+  fullName: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(in PaintDotNet.Direct2D1.InkStyleProperties?)
+  fullName.vb: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle(PaintDotNet.Direct2D1.InkStyleProperties?)
+  nameWithType: IDeviceContext.CreateInkStyle(in InkStyleProperties?)
+  nameWithType.vb: IDeviceContext.CreateInkStyle(InkStyleProperties?)
 - uid: PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle*
   name: CreateInkStyle
   href: api/PaintDotNet.Direct2D1.IDeviceContext.CreateInkStyle.html
@@ -48046,11 +48193,14 @@ references:
   fullName: PaintDotNet.Direct2D1.IImageBrush.InterpolationMode
   nameWithType: IImageBrush.InterpolationMode
 - uid: PaintDotNet.Direct2D1.IImageBrush.SetImage(PaintDotNet.Direct2D1.IDeviceImage)
-  name: SetImage(IDeviceImage)
+  name: SetImage(IDeviceImage?)
   href: api/PaintDotNet.Direct2D1.IImageBrush.SetImage.html#PaintDotNet_Direct2D1_IImageBrush_SetImage_PaintDotNet_Direct2D1_IDeviceImage_
   commentId: M:PaintDotNet.Direct2D1.IImageBrush.SetImage(PaintDotNet.Direct2D1.IDeviceImage)
-  fullName: PaintDotNet.Direct2D1.IImageBrush.SetImage(PaintDotNet.Direct2D1.IDeviceImage)
-  nameWithType: IImageBrush.SetImage(IDeviceImage)
+  name.vb: SetImage(IDeviceImage)
+  fullName: PaintDotNet.Direct2D1.IImageBrush.SetImage(PaintDotNet.Direct2D1.IDeviceImage?)
+  fullName.vb: PaintDotNet.Direct2D1.IImageBrush.SetImage(PaintDotNet.Direct2D1.IDeviceImage)
+  nameWithType: IImageBrush.SetImage(IDeviceImage?)
+  nameWithType.vb: IImageBrush.SetImage(IDeviceImage)
 - uid: PaintDotNet.Direct2D1.IImageBrush.SetImage*
   name: SetImage
   href: api/PaintDotNet.Direct2D1.IImageBrush.SetImage.html
@@ -91834,6 +91984,30 @@ references:
   commentId: Overload:PaintDotNet.Gdi.GdiLogFont.GetFaceName
   fullName: PaintDotNet.Gdi.GdiLogFont.GetFaceName
   nameWithType: GdiLogFont.GetFaceName
+- uid: PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan
+  name: GetFaceNameSpan()
+  href: api/PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan.html#PaintDotNet_Gdi_GdiLogFont_GetFaceNameSpan
+  commentId: M:PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan
+  fullName: PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan()
+  nameWithType: GdiLogFont.GetFaceNameSpan()
+- uid: PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan*
+  name: GetFaceNameSpan
+  href: api/PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan.html
+  commentId: Overload:PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan
+  fullName: PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan
+  nameWithType: GdiLogFont.GetFaceNameSpan
+- uid: PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan
+  name: GetFaceNameWithNullSpan()
+  href: api/PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan.html#PaintDotNet_Gdi_GdiLogFont_GetFaceNameWithNullSpan
+  commentId: M:PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan
+  fullName: PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan()
+  nameWithType: GdiLogFont.GetFaceNameWithNullSpan()
+- uid: PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan*
+  name: GetFaceNameWithNullSpan
+  href: api/PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan.html
+  commentId: Overload:PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan
+  fullName: PaintDotNet.Gdi.GdiLogFont.GetFaceNameWithNullSpan
+  nameWithType: GdiLogFont.GetFaceNameWithNullSpan
 - uid: PaintDotNet.Gdi.GdiLogFont.Height
   name: Height
   href: api/PaintDotNet.Gdi.GdiLogFont.Height.html#PaintDotNet_Gdi_GdiLogFont_Height
@@ -91864,6 +92038,12 @@ references:
   commentId: F:PaintDotNet.Gdi.GdiLogFont.MaxFaceNameLength
   fullName: PaintDotNet.Gdi.GdiLogFont.MaxFaceNameLength
   nameWithType: GdiLogFont.MaxFaceNameLength
+- uid: PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength
+  name: MaxFaceNameWithNullLength
+  href: api/PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength.html
+  commentId: F:PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength
+  fullName: PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength
+  nameWithType: GdiLogFont.MaxFaceNameWithNullLength
 - uid: PaintDotNet.Gdi.GdiLogFont.OutputPrecision
   name: OutputPrecision
   href: api/PaintDotNet.Gdi.GdiLogFont.OutputPrecision.html#PaintDotNet_Gdi_GdiLogFont_OutputPrecision
@@ -91972,6 +92152,33 @@ references:
   commentId: Overload:PaintDotNet.Gdi.GdiLogFont.Width
   fullName: PaintDotNet.Gdi.GdiLogFont.Width
   nameWithType: GdiLogFont.Width
+- uid: PaintDotNet.Gdi.GdiLogFont.op_Implicit(PaintDotNet.Gdi.GdiLogFont@)~System.Drawing.Interop.LOGFONT
+  name: implicit operator LOGFONT(in GdiLogFont)
+  href: api/PaintDotNet.Gdi.GdiLogFont.op_Implicit.html#PaintDotNet_Gdi_GdiLogFont_op_Implicit_PaintDotNet_Gdi_GdiLogFont___System_Drawing_Interop_LOGFONT
+  commentId: M:PaintDotNet.Gdi.GdiLogFont.op_Implicit(PaintDotNet.Gdi.GdiLogFont@)~System.Drawing.Interop.LOGFONT
+  name.vb: CType(GdiLogFont)
+  fullName: PaintDotNet.Gdi.GdiLogFont.implicit operator System.Drawing.Interop.LOGFONT(in PaintDotNet.Gdi.GdiLogFont)
+  fullName.vb: PaintDotNet.Gdi.GdiLogFont.CType(PaintDotNet.Gdi.GdiLogFont)
+  nameWithType: GdiLogFont.implicit operator LOGFONT(in GdiLogFont)
+  nameWithType.vb: GdiLogFont.CType(GdiLogFont)
+- uid: PaintDotNet.Gdi.GdiLogFont.op_Implicit(System.Drawing.Interop.LOGFONT@)~PaintDotNet.Gdi.GdiLogFont
+  name: implicit operator GdiLogFont(in LOGFONT)
+  href: api/PaintDotNet.Gdi.GdiLogFont.op_Implicit.html#PaintDotNet_Gdi_GdiLogFont_op_Implicit_System_Drawing_Interop_LOGFONT___PaintDotNet_Gdi_GdiLogFont
+  commentId: M:PaintDotNet.Gdi.GdiLogFont.op_Implicit(System.Drawing.Interop.LOGFONT@)~PaintDotNet.Gdi.GdiLogFont
+  name.vb: CType(LOGFONT)
+  fullName: PaintDotNet.Gdi.GdiLogFont.implicit operator PaintDotNet.Gdi.GdiLogFont(in System.Drawing.Interop.LOGFONT)
+  fullName.vb: PaintDotNet.Gdi.GdiLogFont.CType(System.Drawing.Interop.LOGFONT)
+  nameWithType: GdiLogFont.implicit operator GdiLogFont(in LOGFONT)
+  nameWithType.vb: GdiLogFont.CType(LOGFONT)
+- uid: PaintDotNet.Gdi.GdiLogFont.op_Implicit*
+  name: implicit operator
+  href: api/PaintDotNet.Gdi.GdiLogFont.op_Implicit.html
+  commentId: Overload:PaintDotNet.Gdi.GdiLogFont.op_Implicit
+  name.vb: CType
+  fullName: PaintDotNet.Gdi.GdiLogFont.implicit operator
+  fullName.vb: PaintDotNet.Gdi.GdiLogFont.CType
+  nameWithType: GdiLogFont.implicit operator
+  nameWithType.vb: GdiLogFont.CType
 - uid: PaintDotNet.Gdi.GdiMetafileRecordType
   name: GdiMetafileRecordType
   href: api/PaintDotNet.Gdi.GdiMetafileRecordType.html
@@ -93046,6 +93253,15 @@ references:
   fullName.vb: PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic(Integer, Integer)
   nameWithType: HashCodeUtil.CombineHashCodesDeterministic(int, int)
   nameWithType.vb: HashCodeUtil.CombineHashCodesDeterministic(Integer, Integer)
+- uid: PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic(System.ReadOnlySpan{System.Int32})
+  name: CombineHashCodesDeterministic(params ReadOnlySpan<int>)
+  href: api/PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic.html#PaintDotNet_HashCodeUtil_CombineHashCodesDeterministic_System_ReadOnlySpan_System_Int32__
+  commentId: M:PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic(System.ReadOnlySpan{System.Int32})
+  name.vb: CombineHashCodesDeterministic(ReadOnlySpan(Of Integer))
+  fullName: PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic(params System.ReadOnlySpan<int>)
+  fullName.vb: PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic(System.ReadOnlySpan(Of Integer))
+  nameWithType: HashCodeUtil.CombineHashCodesDeterministic(params ReadOnlySpan<int>)
+  nameWithType.vb: HashCodeUtil.CombineHashCodesDeterministic(ReadOnlySpan(Of Integer))
 - uid: PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic*
   name: CombineHashCodesDeterministic
   href: api/PaintDotNet.HashCodeUtil.CombineHashCodesDeterministic.html
@@ -116976,6 +117192,18 @@ references:
   commentId: Overload:PaintDotNet.Imaging.ExifPropertyKeys.Photo.GainControl
   fullName: PaintDotNet.Imaging.ExifPropertyKeys.Photo.GainControl
   nameWithType: ExifPropertyKeys.Photo.GainControl
+- uid: PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma
+  name: Gamma
+  href: api/PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma.html#PaintDotNet_Imaging_ExifPropertyKeys_Photo_Gamma
+  commentId: P:PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma
+  fullName: PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma
+  nameWithType: ExifPropertyKeys.Photo.Gamma
+- uid: PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma*
+  name: Gamma
+  href: api/PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma.html
+  commentId: Overload:PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma
+  fullName: PaintDotNet.Imaging.ExifPropertyKeys.Photo.Gamma
+  nameWithType: ExifPropertyKeys.Photo.Gamma
 - uid: PaintDotNet.Imaging.ExifPropertyKeys.Photo.ISOSpeed
   name: ISOSpeed
   href: api/PaintDotNet.Imaging.ExifPropertyKeys.Photo.ISOSpeed.html#PaintDotNet_Imaging_ExifPropertyKeys_Photo_ISOSpeed
@@ -118753,11 +118981,14 @@ references:
   fullName: PaintDotNet.Imaging.IBitmapFrameEncode.Commit
   nameWithType: IBitmapFrameEncode.Commit
 - uid: PaintDotNet.Imaging.IBitmapFrameEncode.Initialize(PaintDotNet.ComponentModel.IPropertyBag2)
-  name: Initialize(IPropertyBag2)
+  name: Initialize(IPropertyBag2?)
   href: api/PaintDotNet.Imaging.IBitmapFrameEncode.Initialize.html#PaintDotNet_Imaging_IBitmapFrameEncode_Initialize_PaintDotNet_ComponentModel_IPropertyBag2_
   commentId: M:PaintDotNet.Imaging.IBitmapFrameEncode.Initialize(PaintDotNet.ComponentModel.IPropertyBag2)
-  fullName: PaintDotNet.Imaging.IBitmapFrameEncode.Initialize(PaintDotNet.ComponentModel.IPropertyBag2)
-  nameWithType: IBitmapFrameEncode.Initialize(IPropertyBag2)
+  name.vb: Initialize(IPropertyBag2)
+  fullName: PaintDotNet.Imaging.IBitmapFrameEncode.Initialize(PaintDotNet.ComponentModel.IPropertyBag2?)
+  fullName.vb: PaintDotNet.Imaging.IBitmapFrameEncode.Initialize(PaintDotNet.ComponentModel.IPropertyBag2)
+  nameWithType: IBitmapFrameEncode.Initialize(IPropertyBag2?)
+  nameWithType.vb: IBitmapFrameEncode.Initialize(IPropertyBag2)
 - uid: PaintDotNet.Imaging.IBitmapFrameEncode.Initialize*
   name: Initialize
   href: api/PaintDotNet.Imaging.IBitmapFrameEncode.Initialize.html
@@ -120383,42 +120614,6 @@ references:
   commentId: Overload:PaintDotNet.Imaging.IMetadataItem.Value
   fullName: PaintDotNet.Imaging.IMetadataItem.Value
   nameWithType: IMetadataItem.Value
-- uid: PaintDotNet.Imaging.IMetadataPersistStream
-  name: IMetadataPersistStream
-  href: api/PaintDotNet.Imaging.IMetadataPersistStream.html
-  commentId: T:PaintDotNet.Imaging.IMetadataPersistStream
-  fullName: PaintDotNet.Imaging.IMetadataPersistStream
-  nameWithType: IMetadataPersistStream
-- uid: PaintDotNet.Imaging.IMetadataPersistStream.LoadEx(System.IO.Stream,System.Nullable{PaintDotNet.Imaging.VendorID}@,PaintDotNet.Imaging.MetadataPersistOptions)
-  name: LoadEx(Stream?, in VendorID?, MetadataPersistOptions)
-  href: api/PaintDotNet.Imaging.IMetadataPersistStream.LoadEx.html#PaintDotNet_Imaging_IMetadataPersistStream_LoadEx_System_IO_Stream_System_Nullable_PaintDotNet_Imaging_VendorID___PaintDotNet_Imaging_MetadataPersistOptions_
-  commentId: M:PaintDotNet.Imaging.IMetadataPersistStream.LoadEx(System.IO.Stream,System.Nullable{PaintDotNet.Imaging.VendorID}@,PaintDotNet.Imaging.MetadataPersistOptions)
-  name.vb: LoadEx(Stream, VendorID?, MetadataPersistOptions)
-  fullName: PaintDotNet.Imaging.IMetadataPersistStream.LoadEx(System.IO.Stream?, in PaintDotNet.Imaging.VendorID?, PaintDotNet.Imaging.MetadataPersistOptions)
-  fullName.vb: PaintDotNet.Imaging.IMetadataPersistStream.LoadEx(System.IO.Stream, PaintDotNet.Imaging.VendorID?, PaintDotNet.Imaging.MetadataPersistOptions)
-  nameWithType: IMetadataPersistStream.LoadEx(Stream?, in VendorID?, MetadataPersistOptions)
-  nameWithType.vb: IMetadataPersistStream.LoadEx(Stream, VendorID?, MetadataPersistOptions)
-- uid: PaintDotNet.Imaging.IMetadataPersistStream.LoadEx*
-  name: LoadEx
-  href: api/PaintDotNet.Imaging.IMetadataPersistStream.LoadEx.html
-  commentId: Overload:PaintDotNet.Imaging.IMetadataPersistStream.LoadEx
-  fullName: PaintDotNet.Imaging.IMetadataPersistStream.LoadEx
-  nameWithType: IMetadataPersistStream.LoadEx
-- uid: PaintDotNet.Imaging.IMetadataPersistStream.SaveEx(System.IO.Stream,PaintDotNet.Imaging.MetadataPersistOptions,System.Boolean)
-  name: SaveEx(Stream, MetadataPersistOptions, bool)
-  href: api/PaintDotNet.Imaging.IMetadataPersistStream.SaveEx.html#PaintDotNet_Imaging_IMetadataPersistStream_SaveEx_System_IO_Stream_PaintDotNet_Imaging_MetadataPersistOptions_System_Boolean_
-  commentId: M:PaintDotNet.Imaging.IMetadataPersistStream.SaveEx(System.IO.Stream,PaintDotNet.Imaging.MetadataPersistOptions,System.Boolean)
-  name.vb: SaveEx(Stream, MetadataPersistOptions, Boolean)
-  fullName: PaintDotNet.Imaging.IMetadataPersistStream.SaveEx(System.IO.Stream, PaintDotNet.Imaging.MetadataPersistOptions, bool)
-  fullName.vb: PaintDotNet.Imaging.IMetadataPersistStream.SaveEx(System.IO.Stream, PaintDotNet.Imaging.MetadataPersistOptions, Boolean)
-  nameWithType: IMetadataPersistStream.SaveEx(Stream, MetadataPersistOptions, bool)
-  nameWithType.vb: IMetadataPersistStream.SaveEx(Stream, MetadataPersistOptions, Boolean)
-- uid: PaintDotNet.Imaging.IMetadataPersistStream.SaveEx*
-  name: SaveEx
-  href: api/PaintDotNet.Imaging.IMetadataPersistStream.SaveEx.html
-  commentId: Overload:PaintDotNet.Imaging.IMetadataPersistStream.SaveEx
-  fullName: PaintDotNet.Imaging.IMetadataPersistStream.SaveEx
-  nameWithType: IMetadataPersistStream.SaveEx
 - uid: PaintDotNet.Imaging.IMetadataQueryReader
   name: IMetadataQueryReader
   href: api/PaintDotNet.Imaging.IMetadataQueryReader.html
@@ -122669,12 +122864,6 @@ references:
   commentId: M:PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataHandlerInfo)
   fullName: PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataHandlerInfo)
   nameWithType: ImagingObjectRefExtensions.CreateRef(IMetadataHandlerInfo)
-- uid: PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataPersistStream)
-  name: CreateRef(IMetadataPersistStream)
-  href: api/PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef.html#PaintDotNet_Imaging_ImagingObjectRefExtensions_CreateRef_PaintDotNet_Imaging_IMetadataPersistStream_
-  commentId: M:PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataPersistStream)
-  fullName: PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataPersistStream)
-  nameWithType: ImagingObjectRefExtensions.CreateRef(IMetadataPersistStream)
 - uid: PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef(PaintDotNet.Imaging.IMetadataQueryReader)
   name: CreateRef(IMetadataQueryReader)
   href: api/PaintDotNet.Imaging.ImagingObjectRefExtensions.CreateRef.html#PaintDotNet_Imaging_ImagingObjectRefExtensions_CreateRef_PaintDotNet_Imaging_IMetadataQueryReader_
@@ -138824,21 +139013,6 @@ references:
   commentId: T:PaintDotNet.Interop.SafeComObject
   fullName: PaintDotNet.Interop.SafeComObject
   nameWithType: SafeComObject
-- uid: PaintDotNet.Interop.SafeComObject.GetObject*
-  name: GetObject
-  href: api/PaintDotNet.Interop.SafeComObject.GetObject.html
-  commentId: Overload:PaintDotNet.Interop.SafeComObject.GetObject
-  fullName: PaintDotNet.Interop.SafeComObject.GetObject
-  nameWithType: SafeComObject.GetObject
-- uid: PaintDotNet.Interop.SafeComObject.GetObject``1(``0**)
-  name: GetObject<T>(T**)
-  href: api/PaintDotNet.Interop.SafeComObject.GetObject.html#PaintDotNet_Interop_SafeComObject_GetObject__1___0___
-  commentId: M:PaintDotNet.Interop.SafeComObject.GetObject``1(``0**)
-  name.vb: GetObject(Of T)(T**)
-  fullName: PaintDotNet.Interop.SafeComObject.GetObject<T>(T**)
-  fullName.vb: PaintDotNet.Interop.SafeComObject.GetObject(Of T)(T**)
-  nameWithType: SafeComObject.GetObject<T>(T**)
-  nameWithType.vb: SafeComObject.GetObject(Of T)(T**)
 - uid: PaintDotNet.Interop.SafeComObject.QueryInterface(System.Guid@,System.Void**)
   name: QueryInterface(in Guid, void**)
   href: api/PaintDotNet.Interop.SafeComObject.QueryInterface.html#PaintDotNet_Interop_SafeComObject_QueryInterface_System_Guid__System_Void___
@@ -157760,6 +157934,21 @@ references:
   commentId: Overload:PaintDotNet.Rendering.Matrix3x3Double.Prepend
   fullName: PaintDotNet.Rendering.Matrix3x3Double.Prepend
   nameWithType: Matrix3x3Double.Prepend
+- uid: PaintDotNet.Rendering.Matrix3x3Double.Scaling(PaintDotNet.Rendering.Vector3Double)
+  name: Scaling(Vector3Double)
+  href: api/PaintDotNet.Rendering.Matrix3x3Double.Scaling.html#PaintDotNet_Rendering_Matrix3x3Double_Scaling_PaintDotNet_Rendering_Vector3Double_
+  commentId: M:PaintDotNet.Rendering.Matrix3x3Double.Scaling(PaintDotNet.Rendering.Vector3Double)
+  fullName: PaintDotNet.Rendering.Matrix3x3Double.Scaling(PaintDotNet.Rendering.Vector3Double)
+  nameWithType: Matrix3x3Double.Scaling(Vector3Double)
+- uid: PaintDotNet.Rendering.Matrix3x3Double.Scaling(System.Double)
+  name: Scaling(double)
+  href: api/PaintDotNet.Rendering.Matrix3x3Double.Scaling.html#PaintDotNet_Rendering_Matrix3x3Double_Scaling_System_Double_
+  commentId: M:PaintDotNet.Rendering.Matrix3x3Double.Scaling(System.Double)
+  name.vb: Scaling(Double)
+  fullName: PaintDotNet.Rendering.Matrix3x3Double.Scaling(double)
+  fullName.vb: PaintDotNet.Rendering.Matrix3x3Double.Scaling(Double)
+  nameWithType: Matrix3x3Double.Scaling(double)
+  nameWithType.vb: Matrix3x3Double.Scaling(Double)
 - uid: PaintDotNet.Rendering.Matrix3x3Double.Scaling(System.Double,System.Double,System.Double)
   name: Scaling(double, double, double)
   href: api/PaintDotNet.Rendering.Matrix3x3Double.Scaling.html#PaintDotNet_Rendering_Matrix3x3Double_Scaling_System_Double_System_Double_System_Double_
@@ -158291,6 +158480,21 @@ references:
   commentId: Overload:PaintDotNet.Rendering.Matrix3x3Float.Prepend
   fullName: PaintDotNet.Rendering.Matrix3x3Float.Prepend
   nameWithType: Matrix3x3Float.Prepend
+- uid: PaintDotNet.Rendering.Matrix3x3Float.Scaling(PaintDotNet.Rendering.Vector3Float)
+  name: Scaling(Vector3Float)
+  href: api/PaintDotNet.Rendering.Matrix3x3Float.Scaling.html#PaintDotNet_Rendering_Matrix3x3Float_Scaling_PaintDotNet_Rendering_Vector3Float_
+  commentId: M:PaintDotNet.Rendering.Matrix3x3Float.Scaling(PaintDotNet.Rendering.Vector3Float)
+  fullName: PaintDotNet.Rendering.Matrix3x3Float.Scaling(PaintDotNet.Rendering.Vector3Float)
+  nameWithType: Matrix3x3Float.Scaling(Vector3Float)
+- uid: PaintDotNet.Rendering.Matrix3x3Float.Scaling(System.Single)
+  name: Scaling(float)
+  href: api/PaintDotNet.Rendering.Matrix3x3Float.Scaling.html#PaintDotNet_Rendering_Matrix3x3Float_Scaling_System_Single_
+  commentId: M:PaintDotNet.Rendering.Matrix3x3Float.Scaling(System.Single)
+  name.vb: Scaling(Single)
+  fullName: PaintDotNet.Rendering.Matrix3x3Float.Scaling(float)
+  fullName.vb: PaintDotNet.Rendering.Matrix3x3Float.Scaling(Single)
+  nameWithType: Matrix3x3Float.Scaling(float)
+  nameWithType.vb: Matrix3x3Float.Scaling(Single)
 - uid: PaintDotNet.Rendering.Matrix3x3Float.Scaling(System.Single,System.Single,System.Single)
   name: Scaling(float, float, float)
   href: api/PaintDotNet.Rendering.Matrix3x3Float.Scaling.html#PaintDotNet_Rendering_Matrix3x3Float_Scaling_System_Single_System_Single_System_Single_

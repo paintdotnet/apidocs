@@ -185,16 +185,11 @@ Class PdnHueSaturationLightnessEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnHueSaturationLightnessEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Specifies the alpha mode for the input image, for the the output.<br>
-The default value is Premultiplied.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.HueAngleDelta.html#PaintDotNet_Effects_Gpu_PdnHueSaturationLightnessEffect_Props_HueAngleDelta">HueAngleDelta</a></dt>
-    <dd><p>Specifies the change to each pixel's hue. Any finite value is acceptable, but the effective range is
-[-180.0f, +180.0f] due to wrapping.<br>
-The default values is 0, which will leave the hue unchanged.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnHueSaturationLightnessEffect_Props_Input">Input</a></dt>
@@ -202,25 +197,11 @@ The default values is 0, which will leave the hue unchanged.</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.LightnessDelta.html#PaintDotNet_Effects_Gpu_PdnHueSaturationLightnessEffect_Props_LightnessDelta">LightnessDelta</a></dt>
-    <dd><p>Specifies the amount to change each pixel's lightness by. The range for lightness is [0, 1], so the
-range of this property is [-1.0f, +1.0f]. This corresponds to the UI's range of [-100, +100].<br>
-A value of -1 will produce a completely black image, while a value of +1 will produce a completely white image.<br>
-Results will be clamped to a valid range.<br>
-The default value is 0.<br>
-Note that this &quot;lightness&quot; does not operate in exactly the same way as &quot;lightness&quot; in HSL does. It is a simple
-linear interpolation between black and white.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnHueSaturationLightnessEffect.Props.SaturationFactor.html#PaintDotNet_Effects_Gpu_PdnHueSaturationLightnessEffect_Props_SaturationFactor">SaturationFactor</a></dt>
-    <dd><p>Specifies a value for changing each pixel's saturation. A pixel's saturation ranges from 0 (unsaturated/grey) to 1 (fully saturated).<br>
-If the value is set to 1.0, saturation will be unchanged.<br>
-If the value is set to 0, the image will be completely desaturated.<br>
-For values less than 1.0, the saturation will be multiplied by the value.<br>
-For values greater than 1.0, the saturation will be multiplied by 1+((value-1)*3), which effectively amplifies the scaling by 3x.<br>
-The range of this value is [0, 2], which corresponds to the UI's range of [0, 200].<br>
-The default value is 1.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ISpriteBatch ">
       
-      <meta name="description" content="Represents a single group of sprites with their associated drawing properties. ID2D1SpriteBatch">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,9 +93,7 @@ Interface ISpriteBatch
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a single group of sprites with their associated drawing properties.<br>
-<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1spritebatch">ID2D1SpriteBatch</a></p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -144,21 +142,13 @@ Interface ISpriteBatch
 
 
 
-  <h2 id="PaintDotNet_Direct2D1_ISpriteBatch_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Sprites are a way for apps to draw a large number of images very efficiently. They are commonly used to render
-characters and backgrounds in 2D games, or to render particle systems such as smoke and flames. If your app has
-performance demands and needs to draw hundreds or thousands of images every frame, then consider taking
-advantage of sprite batches and the fine-grained control they offer, instead of the general-purpose DrawImage
-method.</p>
-</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.SpriteCount.html#PaintDotNet_Direct2D1_ISpriteBatch_SpriteCount">SpriteCount</a></dt>
-    <dd><p>Gets the number of sprites in this sprite batch.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -166,29 +156,19 @@ method.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.AddSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_AddSprites_System_Int32_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">AddSprites(int, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a></dt>
-    <dd><p>Adds the given sprites to the end of this sprite batch. You may use a 1-length span for any of the properties
-to use the same value for each sprite. You may use a 0-length span (using the C# <code>default</code> keyword, or
-ReadOnlySpan&lt;T&gt;.Empty) for sourceRectangles, colors, or transforms in order to use the default policy
-associated with that property. This can reduce memory usage and increase performance.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.Clear.html#PaintDotNet_Direct2D1_ISpriteBatch_Clear">Clear()</a></dt>
-    <dd><p>Removes all sprites from this sprite batch.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.GetSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_GetSprites_System_Int32_System_Span_PaintDotNet_Rendering_RectFloat__System_Span_PaintDotNet_Rendering_RectInt32__System_Span_PaintDotNet_Imaging_ColorRgba128Float__System_Span_PaintDotNet_Rendering_Matrix3x2Float__">GetSprites(int, Span&lt;RectFloat&gt;, Span&lt;RectInt32&gt;, Span&lt;ColorRgba128Float&gt;, Span&lt;Matrix3x2Float&gt;)</a></dt>
-    <dd><p>Retrieves the specified subset of sprites from this sprite batch. For the best performance, use an empty Span
-(using the C# default keyword, or Span&lt;T&gt;.Empty) for properties that you do not need to retrieve.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.SetSprites.html#PaintDotNet_Direct2D1_ISpriteBatch_SetSprites_System_Int32_System_Int32_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">SetSprites(int, int, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a></dt>
-    <dd><p>Updates the properties of the specified sprites in the sprite batch. Providing an empty span
-for any property will leave that property unmodified for the sprites. Providing a 1-length
-span for any property will use the same value for all of the sprites.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IGeometrySink ">
       
-      <meta name="description" content="Describes a geometric path that can contain lines, arcs, cubic Bezier curves, and quadratic Bezier curves. See ID2D1GeometrySink for more information.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,10 +93,7 @@ Interface IGeometrySink
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes a geometric path that can contain lines, arcs, cubic Bezier curves, and quadratic Bezier curves.<br>
-See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink">ID2D1GeometrySink</a>
-for more information.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -157,40 +154,29 @@ for more information.</p>
 
 
 
-  <h2 id="PaintDotNet_Direct2D1_IGeometrySink_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>An implementation of this interface is provided when using <a class="xref" href="PaintDotNet.Direct2D1.IPathGeometry.Open.html#PaintDotNet_Direct2D1_IPathGeometry_Open">Open()</a>.<br>
-<br>
-To implement this yourself, such as to capture the data provided from various methods on <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a>, create
-a class that derives from <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a> and that also derives from this interface.</p>
-</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddArc.html#PaintDotNet_Direct2D1_IGeometrySink_AddArc_PaintDotNet_Direct2D1_ArcSegment__">AddArc(in ArcSegment)</a></dt>
-    <dd><p>Adds a single arc to the path geometry.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddBezier.html#PaintDotNet_Direct2D1_IGeometrySink_AddBezier_PaintDotNet_Direct2D1_BezierSegment__">AddBezier(in BezierSegment)</a></dt>
-    <dd><p>Creates a cubic Bezier curve between the current point and the specified end point.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddLine.html#PaintDotNet_Direct2D1_IGeometrySink_AddLine_PaintDotNet_Rendering_Point2Float_">AddLine(Point2Float)</a></dt>
-    <dd><p>Creates a line segment between the current point and the specified end point and adds it to the geometry sink.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddQuadraticBezier.html#PaintDotNet_Direct2D1_IGeometrySink_AddQuadraticBezier_PaintDotNet_Direct2D1_QuadraticBezierSegment_">AddQuadraticBezier(QuadraticBezierSegment)</a></dt>
-    <dd><p>Creates a quadratic Bezier curve between the current point and the specified end point.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometrySink.AddQuadraticBeziers.html#PaintDotNet_Direct2D1_IGeometrySink_AddQuadraticBeziers_System_ReadOnlySpan_PaintDotNet_Direct2D1_QuadraticBezierSegment__">AddQuadraticBeziers(ReadOnlySpan&lt;QuadraticBezierSegment&gt;)</a></dt>
-    <dd><p>Adds a sequence of quadratic Bezier segments as an array in a single call.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

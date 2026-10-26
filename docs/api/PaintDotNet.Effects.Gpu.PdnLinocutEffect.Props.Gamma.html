@@ -120,9 +120,7 @@ Property Gamma
   
 </h3>
 
-<div class="markdown level1 summary"><p>Specifies the exponent applied to the ink demand. The range is [0.25, 4] and the default
-value is 1, which is an identity.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -142,13 +140,6 @@ value is 1, which is an identity.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnLinocutEffect_Props_Gamma_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The inked fraction of a line period is
-<code>saturate(0.5 + (1 - lightness - 0.5) * Contrast) ^ Gamma</code>, and the line's half width is
-half of that, in units of the period - so a fraction of 1 exactly closes the lattice into
-solid ink and a fraction of 0 leaves bare paper. Values above 1 thin the lines and open the
-midtones out; values below 1 fatten them.</p>
-</div>
 
 
 

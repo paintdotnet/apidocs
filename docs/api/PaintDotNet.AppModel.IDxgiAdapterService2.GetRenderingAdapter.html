@@ -120,10 +120,7 @@ Method GetRenderingAdapter
   
 </h3>
 
-<div class="markdown level1 summary"><p>Retrieves the <a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nn-dxgi-idxgiadapter">IDXGIAdapter</a>
-that Paint.NET uses for rendering effects, adjustments, and tools. This is the adapter that the user can select
-in the Graphics section in Settings.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -134,13 +131,7 @@ in the Graphics section in Settings.</p>
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Dxgi.SafeDxgiAdapter.html">SafeDxgiAdapter</a></dt>
-  <dd><p>A <a class="xref" href="PaintDotNet.Dxgi.SafeDxgiAdapter.html">SafeDxgiAdapter</a> that manages the COM object pointer.<br>
-<br>
-If the caller stores the COM object pointer after retrieving it from <a class="xref" href="PaintDotNet.Dxgi.SafeDxgiAdapter.html">SafeDxgiAdapter</a> with
-the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle.dangerousgethandle">DangerousGetHandle()</a> method, it should call <a href="https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nf-unknwn-iunknown-addref">IUnknown::AddRef()</a>
-on the pointer and then call <a href="https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nf-unknwn-iunknown-release">IUnknown::Release()</a>
-when it is finished with it (as per standard COM ref counting rules).</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -149,13 +140,6 @@ when it is finished with it (as per standard COM ref counting rules).</p>
 
 
 
-<h4 class="section" id="PaintDotNet_AppModel_IDxgiAdapterService2_GetRenderingAdapter_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This method may return an adapter for a hardware device or the WARP device, depending on the user's settings
-or other factors. The adapter will meet the minimum requirements for Paint.NET's use: Feature Level 11,
-compute shaders, and all required precisions and buffer formats (Alpha8, Bgra32, Rgba64, Rgba64Half, and
-Rgba128Float). It is up to the caller to evaluate the device's capabilities if their requirements go beyond
-that (e.g. Feature Level 12, double precision floating point).<br></p>
-</div>
 
 
 

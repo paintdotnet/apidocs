@@ -120,11 +120,7 @@ Method Gather
   
 </h3>
 
-<div class="markdown level1 summary"><p>Scans <code class="paramref">source</code> in a single pass to gather the luminance statistics needed to
-tone-map it. The image is measured in horizontal bands; the per-band measurement work is spread
-across threads, while reads from <code class="paramref">source</code> are governed by
-<code class="paramref">allowMultithreadedCopyPixels</code>.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -134,33 +130,19 @@ across threads, while reads from <code class="paramref">source</code> are govern
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>&gt;</dt>
-  <dd><p>The linear HDR source to analyze.</p>
-</dd>
+  <dd></dd>
   <dt><code>peakPercentile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd><p>The percentile of the per-pixel <code>max(r, g, b)</code> distribution to report as the peak. Using a
-high percentile rather than the absolute maximum keeps a few stray specular/hot pixels from
-forcing an overly aggressive roll-off. Defaults to the 99.99th percentile.</p>
-</dd>
+  <dd></dd>
   <dt><code>sceneReferredSdrWhiteLevelNits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>The luminance, in cd/m² (nits), that the source's linear <code>1.0</code> represents, used to express the
-results in nits. Defaults to the scRGB scene-referred SDR white level (80 nits).</p>
-</dd>
+  <dd></dd>
   <dt><code>allowMultithreadedCopyPixels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd><p>Whether it is safe to call <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.CopyPixels.html#PaintDotNet_Imaging_IBitmapSource_CopyPixels_System_Void__System_Int32_System_UInt32_System_Nullable_PaintDotNet_Rendering_RectInt32___">CopyPixels(void*, int, uint, in RectInt32?)</a> on <code class="paramref">source</code>
-concurrently and out of order. Pass <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> only when the source is known to support
-it — e.g. a materialized in-memory bitmap. When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> (the default), reads are
-serialized to one at a time and issued strictly top to bottom, which is required for sources that are
-neither thread-safe nor random-access (most notably a streaming <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameDecode.html">IBitmapFrameDecode</a>,
-where out-of-order reads force expensive re-decoding). The per-band measurement still runs in
-parallel in either case, since it touches only the already-copied band, never the source.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.html">HdrToneMapStatistics</a></dt>
-  <dd><p>The gathered statistics, in nits (cd/m²).</p>
-</dd>
+  <dd></dd>
 </dl>
 
 

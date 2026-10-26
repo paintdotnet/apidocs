@@ -120,10 +120,7 @@ Method GetCompositeBitmap
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets a bitmap that renders the document in the requested pixel format. This is the full composition
-of the document, including all of the layers with their rendering properties applied (blend mode,
-opacity, and visibility).</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,17 +130,13 @@ opacity, and visibility).</p>
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>pixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd><p>The requested pixel format for the bitmap. The native pixel format used by Paint.NET is currently
-<a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>. Specifying a different pixel format is valid, but will incur
-conversion overhead.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectInputBitmap.html">IEffectInputBitmap</a></dt>
-  <dd><p>The bitmap.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -152,12 +145,6 @@ conversion overhead.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_Effects_IEffectDocumentInfo_GetCompositeBitmap_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>When retrieving a bitmap in a floating-point pixel format, such as <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>,
-the bitmap will be converted to linear gamma. If the working space of the document
-(<a class="xref" href="PaintDotNet.Effects.IEffectDocumentInfo.ColorContext.html#PaintDotNet_Effects_IEffectDocumentInfo_ColorContext">ColorContext</a>) cannot be linearized, then scRGB (aka linearized sRGB)
-will be used instead.</p>
-</div>
 
 
 

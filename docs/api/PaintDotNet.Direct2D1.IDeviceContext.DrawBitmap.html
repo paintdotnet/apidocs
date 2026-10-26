@@ -120,8 +120,7 @@ Method DrawBitmap
   
 </h3>
 
-<div class="markdown level1 summary"><p>Draws a bitmap to the render target.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,23 +130,17 @@ Method DrawBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
-  <dd><p>The bitmap to draw.</p>
-</dd>
+  <dd></dd>
   <dt><code>dstRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
-  <dd><p>The destination rectangle. The default is the size of the bitmap and the location is the upper left corner of the render target.</p>
-</dd>
+  <dd></dd>
   <dt><code>opacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>The opacity of the bitmap.</p>
-</dd>
+  <dd></dd>
   <dt><code>interpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html">InterpolationMode</a></dt>
-  <dd><p>The interpolation mode to use if the bitmap is scaled or rotated by the drawing operation.</p>
-</dd>
+  <dd></dd>
   <dt><code>srcRect</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
-  <dd><p>An optional source rectangle.</p>
-</dd>
+  <dd></dd>
   <dt><code>perspectiveTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix4x4Float.html">Matrix4x4Float</a>?</dt>
-  <dd><p>An optional perspective transform.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -157,15 +150,6 @@ Method DrawBitmap
 
 
 
-<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float____remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The destinationRectangle parameter defines the rectangle in the target where the bitmap will appear (in device-independent pixels (DIPs)).
-This is affected by the currently set transform and the perspective transform, if set. If null is specified, then the destination rectangle
-is (left=0, top=0, right = width(sourceRectangle), bottom = height(sourceRectangle)).<br>
-The srcRect parameter defines the sub-rectangle of the source bitmap (in DIPs). DrawBitmap will clip this rectangle to the size of
-the source bitmap, thus making it impossible to sample outside of the bitmap. If null is specified, then the source rectangle is taken to
-be the size of the source bitmap.<br>
-If you specify perspectiveTransform it is applied to the rect in addition to the transform set on the render target.</p>
-</div>
 
 
 

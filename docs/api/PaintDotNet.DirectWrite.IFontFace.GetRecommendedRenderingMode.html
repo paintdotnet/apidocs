@@ -120,8 +120,7 @@ Method GetRecommendedRenderingMode
   
 </h3>
 
-<div class="markdown level1 summary"><p>Determines the recommended rendering mode for the font, using the specified size and rendering parameters.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,24 +130,19 @@ Method GetRecommendedRenderingMode
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>emSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>The logical size of the font in DIP units. A DIP (&quot;device-independent pixel&quot;) equals 1/96 inch.</p>
-</dd>
+  <dd></dd>
   <dt><code>pixelsPerDip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>The number of physical pixels per DIP. For example, if the DPI of the rendering surface is 96, this value is 1.0f. If the DPI is 120, this value is 120.0f/96.</p>
-</dd>
+  <dd></dd>
   <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
-  <dd><p>The measuring method that will be used for glyphs in the font. Renderer implementations may choose different rendering modes for different measuring methods, for example TextRenderingMode.Natural for TextMeasuringMode.Natural, TextRenderingMode.GdiClassic for TextMeasuringMode.GdiClassic, and TextRenderingMode.GdiNatural for TextMeasuringMode.GdiNatural.</p>
-</dd>
+  <dd></dd>
   <dt><code>renderingParameters</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextRenderingParameters.html">ITextRenderingParameters</a></dt>
-  <dd><p>An object that contains rendering settings such as gamma level, enhanced contrast, and ClearType level. This parameter is necessary in case the rendering parameters object overrides the rendering mode.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html">TextRenderingMode</a></dt>
-  <dd><p>A value that indicates the recommended rendering mode to use.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -168,8 +162,7 @@ Method GetRecommendedRenderingMode
   
 </h3>
 
-<div class="markdown level1 summary"><p>Determines the recommended text rendering and grid-fit mode to be used based on the font, size, world transform, and measuring mode.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -179,33 +172,25 @@ Method GetRecommendedRenderingMode
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>emSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd><p>Logical font size in DIPs.</p>
-</dd>
+  <dd></dd>
   <dt><code>dpi</code> <a class="xref" href="PaintDotNet.Rendering.Vector2Float.html">Vector2Float</a></dt>
-  <dd><p>Number of pixels per logical inch in the horizontal (X) and vertical (Y) directions.</p>
-</dd>
+  <dd></dd>
   <dt><code>transform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd><p>A matrix that describes the world transform, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for identity.</p>
-</dd>
+  <dd></dd>
   <dt><code>isSideways</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd><p>Specifies whether the font is sideways. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the font is sideways; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
-</dd>
+  <dd></dd>
   <dt><code>outlineThreshold</code> <a class="xref" href="PaintDotNet.DirectWrite.OutlineThreshold.html">OutlineThreshold</a></dt>
-  <dd><p>A value that specifies the quality of the graphics system's outline rendering, affects the size threshold above which outline rendering is used.</p>
-</dd>
+  <dd></dd>
   <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
-  <dd><p>A value that specifies the method used to measure during text layout. For proper glyph spacing, this method returns a rendering mode that is compatible with the specified measuring mode.</p>
-</dd>
+  <dd></dd>
   <dt><code>renderingParameters</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextRenderingParameters.html">ITextRenderingParameters</a></dt>
-  <dd><p>The rendering parameters object. This parameter is necessary in case the rendering parameters object overrides the rendering mode.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html">TextRenderingMode</a></dt>
-  <dd><p>The recommended rendering mode.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -214,12 +199,6 @@ Method GetRecommendedRenderingMode
 
 
 
-<h4 class="section" id="PaintDotNet_DirectWrite_IFontFace_GetRecommendedRenderingMode_System_Single_PaintDotNet_Rendering_Vector2Float_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Boolean_PaintDotNet_DirectWrite_OutlineThreshold_PaintDotNet_DirectWrite_TextMeasuringMode_PaintDotNet_DirectWrite_ITextRenderingParameters__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>Unlike the pixels-per-DIP overload, this one can return
-<a class="xref" href="PaintDotNet.DirectWrite.TextRenderingMode.html#PaintDotNet_DirectWrite_TextRenderingMode_NaturalSymmetricDownsampled">NaturalSymmetricDownsampled</a> (which DWrite recommends whenever the
-DPI scale is &gt;= ~1.8x, i.e. DPI &gt;= ~172.8), so reproducing native high-DPI rasterization
-requires resolving through this overload.</p>
-</div>
 
 
 

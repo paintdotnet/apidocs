@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IReadOnlyFileTypeHdrMetadata ">
       
-      <meta name="description" content="Provides read-only access to HDR metadata.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,8 +93,7 @@ Interface IReadOnlyFileTypeHdrMetadata
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides read-only access to HDR metadata.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -143,25 +142,15 @@ Interface IReadOnlyFileTypeHdrMetadata
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeHdrMetadata.ContentMaxLuminanceNits.html#PaintDotNet_FileTypes_IReadOnlyFileTypeHdrMetadata_ContentMaxLuminanceNits">ContentMaxLuminanceNits</a></dt>
-    <dd><p>The maximum content luminance of the image, in nits (cd/m²), if known — for example the MaxCLL
-value from an AVIF's <code>clli</code> box (CTA-861.3 content light level information). It is used as the
-roll-off knee when tone-mapping: content at this level maps to SDR white. When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>,
-the value is unknown and the image is scanned to measure it instead.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeHdrMetadata.IsHdrDocument.html#PaintDotNet_FileTypes_IReadOnlyFileTypeHdrMetadata_IsHdrDocument">IsHdrDocument</a></dt>
-    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> is HDR (<code>true</code>) or SDR (<code>false</code>).</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeHdrMetadata.SceneReferredSdrWhiteLevelNits.html#PaintDotNet_FileTypes_IReadOnlyFileTypeHdrMetadata_SceneReferredSdrWhiteLevelNits">SceneReferredSdrWhiteLevelNits</a></dt>
-    <dd><p>The luminance, in nits (cd/m²), that the source's linear <code>1.0</code> value represents — i.e. the
-scene-referred reference used to interpret the floating-point pixel values as absolute luminance.
-Defaults to the scRGB scene-referred SDR white level (<a class="xref" href="PaintDotNet.Direct2D1.DynamicRange.SceneReferredSdrWhiteLevel.html">SceneReferredSdrWhiteLevel</a>,
-80 nits), which is the convention produced by the PQ/HLG decode kernels, so most callers leave it at
-the default.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -169,8 +158,7 @@ the default.</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeHdrMetadata.Clone.html#PaintDotNet_FileTypes_IReadOnlyFileTypeHdrMetadata_Clone">Clone()</a></dt>
-    <dd><p>Creates a mutable copy of the HDR metadata.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

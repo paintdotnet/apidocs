@@ -120,8 +120,7 @@ Property IgnoreOverlap
   
 </h3>
 
-<div class="markdown level1 summary"><p>Specifies how the encoder handles tile boundaries during a compressed domain transcode.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -141,10 +140,6 @@ Property IgnoreOverlap
 
 
 
-<h4 class="section" id="PaintDotNet_Imaging_JpegXREncoderOptions_IgnoreOverlap_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This property is applied only if the <a class="xref" href="PaintDotNet.Imaging.JpegXREncoderOptions.CompressedDomainTranscode.html#PaintDotNet_Imaging_JpegXREncoderOptions_CompressedDomainTranscode">CompressedDomainTranscode</a> property is set to <code>true</code> and a sub-region transcode of exactly one or more tiles is performed.</p>
-<p>The default operation for a region transcode is to expand the requested region to include the surrounding pixels that are required for overlap decoding of the region edges. If this property is set to <code>true</code>, the codec ignores the surrounding pixels, and only the selected tile or tiles are extracted. If the source image is not tiled or if the requested region includes partial tiles, this parameter is ignored.</p>
-</div>
 
 
 

@@ -184,33 +184,15 @@ Class DirectionalBlurEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.Angle.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_Angle">Angle</a></dt>
-    <dd><p>The angle of the blur relative to the x-axis, in the counterclockwise direction. The units are
-specified in degrees. The blur kernel is first generated using the same process as for the Gaussian
-blur effect. The kernel values are then transformed according to the blur angle.<br>
-The default value is 0.0f.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd><p>The mode used to calculate the border of the image, soft or hard.<br>
-When set to BorderMode.Soft, the effect pads the image with transparent black pixels as it applies
-the blur kernel, resulting in a soft edge.<br>
-When set to BorderMode.Hard, the effect clamps the output to the size of the input image. When the
-effect applies the blur kernel, it extends the input image with a mirror-type border transform for
-samples outside of the input bounds.<br>
-The default value is BorderMode.Soft.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_ClassID">ClassID</a></dt>
-    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
-the effect and for binding to an IDeviceEffectProperties.<br>
-Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
-<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
-Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
-effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
-generic type arguments (e.g. PixelShaderEffect).</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_Input">Input</a></dt>
@@ -218,16 +200,11 @@ generic type arguments (e.g. PixelShaderEffect).</p>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.Optimization.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_Optimization">Optimization</a></dt>
-    <dd><p>The optimization mode. The default value is DirectionalBlurOptimization.Quality.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.StandardDeviation.html#PaintDotNet_Direct2D1_Effects_DirectionalBlurEffect_Props_StandardDeviation">StandardDeviation</a></dt>
-    <dd><p>The amount of blur to be applied to the image. You can compute the blur radius of the kernel by
-multiplying the standard deviation by 3. The units of both the standard deviation and blur
-radius are DIPs. A value of 0 DIPs disables this effect.<br>
-The default value is 3.0f.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

@@ -120,9 +120,7 @@ Method OnPrepareForRender
   
 </h3>
 
-<div class="markdown level1 summary"><p>Prepares an effect for the rendering process.<br>
-For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender">ID2D1Effect::PrepareForRender</a></p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -142,19 +140,6 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows/win3
 
 
 
-<h4 class="section" id="PaintDotNet_Direct2D1_Effects_CustomEffectImpl_OnPrepareForRender_PaintDotNet_Direct2D1_ChangeType__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>This method is called by the renderer when the effect is within an effect graph that is drawn.<br>
-The method will be called:<br></p>
-<ul>
-<li>If the effect has been initialized but has not previously been drawn.<br></li>
-<li>If an effect property has been set since the last draw call.<br></li>
-<li>If the context state has changed since the effect was last drawn.<br>
-The method will not otherwise be called. The transforms created by the effect will be called to handle their input
-and output rectangles for every draw call.<br>
-Most effects defer creating any resources or specifying a topology until this call is made.They store their properties
-and map them to a concrete set of rendering techniques when first drawn.</li>
-</ul>
-</div>
 
 
 

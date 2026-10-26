@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PdnOrderedDitherMatrix ">
       
-      <meta name="description" content="Specifies the threshold matrix that an ordered dither uses for tiling across the image.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,8 +94,7 @@ Enum PdnOrderedDitherMatrix
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies the threshold matrix that an ordered dither uses for tiling across the image.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -161,20 +160,6 @@ Enum PdnOrderedDitherMatrix
   </dl>
 
 
-  <h2 id="PaintDotNet_Effects_Gpu_PdnOrderedDitherMatrix_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>The Bayer matrices are <i>dispersed</i> dot: neighboring cells hold thresholds as far apart
-as the cell allows, so the pixels that are turned on will scatter into a fine crosshatch.</p>
-<p>The spiral matrices are <i>clustered</i> dot: thresholds grow outward from the middle of the
-cell, so the pixels that turn on will merge into a single blob, the way a printed halftone screen works.
-The dual variants hold two such dots per cell, diagonally offset, which puts the screen at 45
-degrees and makes it finer without enlarging the cell, at the cost of half the tone resolution.</p>
-<p>The noise matrices are aperiodic, so unlike the other two families they give the eye no pattern
-to lock onto at large cell sizes. Blue noise spreads its dots evenly and reads as smooth grain, while
-white noise is plain randomness, which clumps and reads as blotchy. The noise tiles have to be
-generated rather than looked up, and are the only ones affected by <a class="xref" href="PaintDotNet.Effects.Gpu.PdnOrderedDitherEffect.Props.Seed.html#PaintDotNet_Effects_Gpu_PdnOrderedDitherEffect_Props_Seed">Seed</a>.</p>
-<p>The Bayer and spiral matrices, except <a class="xref" href="PaintDotNet.Effects.Gpu.PdnOrderedDitherMatrix.html#PaintDotNet_Effects_Gpu_PdnOrderedDitherMatrix_Bayer2x2">Bayer2x2</a>, are the ones the corresponding
-<a class="xref" href="PaintDotNet.Imaging.BitmapDitherType.html">BitmapDitherType</a> uses.</p>
-</div>
 
 </article>
 

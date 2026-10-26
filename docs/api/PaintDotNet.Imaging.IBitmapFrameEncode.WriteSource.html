@@ -120,8 +120,7 @@ Method WriteSource
   
 </h3>
 
-<div class="markdown level1 summary"><p>Encodes a bitmap source.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -143,24 +142,6 @@ Method WriteSource
 
 
 
-<h4 class="section" id="PaintDotNet_Imaging_IBitmapFrameEncode_WriteSource_PaintDotNet_Imaging_IBitmapSource_System_Nullable_PaintDotNet_Rendering_RectInt32____remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>If <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetSize.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetSize_PaintDotNet_Rendering_SizeInt32_">SetSize(SizeInt32)</a> is not called prior to calling WriteSource, the size given in <code class="paramref">sourceRect</code>
-is used if not <code>null</code>. Otherwise, the size of the <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> given in <code class="paramref">bitmapSource</code>
-is used.</p>
-<p>If <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetPixelFormat.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetPixelFormat_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_PixelFormat__">SetPixelFormat(in PixelFormat, out PixelFormat)</a> is not called prior to calling WriteSource, the pixel format of the
-<a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> given in <code class="paramref">sourceRect</code> is used.</p>
-<p>If <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetResolution.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetResolution_PaintDotNet_Rendering_Vector2Double_">SetResolution(Vector2Double)</a> is not called prior to calling WriteSource, the pixel format of the
-<a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a> given in <code class="paramref">sourceRect</code> is used.</p>
-<p>When encoding a GIF image, if the global palette is set and the frame level palette is not set directly
-by the user or by a custom independent software vendor (ISV) GIF codec, WriteSource will use the global palette
-to encode the frame even when <code class="paramref">bitmapSource</code> has a frame level palette.</p>
-<p>Repeated WriteSource calls can be made as long as the total accumulated source rect height is the same
-as set through <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetSize.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetSize_PaintDotNet_Rendering_SizeInt32_">SetSize(SizeInt32)</a>.</p>
-<p>The source rect must be at least the dimensions set through <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetSize.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetSize_PaintDotNet_Rendering_SizeInt32_">SetSize(SizeInt32)</a>. If the source rect
-width exceeds the <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameEncode.SetSize.html#PaintDotNet_Imaging_IBitmapFrameEncode_SetSize_PaintDotNet_Rendering_SizeInt32_">SetSize(SizeInt32)</a> width, extra pixels on the right side are ignored. If the source rect
-height exceeds the remaining unfilled height, extra scan lines on the bottom are ignored.</p>
-<p>See also: <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicbitmapframeencode-writesource">https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nf-wincodec-iwicbitmapframeencode-writesource</a></p>
-</div>
 
 
 

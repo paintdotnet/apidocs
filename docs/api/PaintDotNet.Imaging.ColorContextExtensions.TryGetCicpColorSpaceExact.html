@@ -120,10 +120,7 @@ Method TryGetCicpColorSpaceExact
   
 </h3>
 
-<div class="markdown level1 summary"><p>Tries to determine the CICP color information for the given ICC color profile, but only when that
-CICP is an <em>exact</em> substitute for the profile — that is, either when the color profile has
-a <code>cicp</code> tag, or when synthesizing a profile back from the CICP reproduces the original exactly.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -141,8 +138,7 @@ a <code>cicp</code> tag, or when synthesizing a profile back from the CICP repro
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd><p><code>true</code> and the CICP color information if it exactly describes the profile; otherwise <code>false</code>.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -151,27 +147,6 @@ a <code>cicp</code> tag, or when synthesizing a profile back from the CICP repro
 
 
 
-<h4 class="section" id="PaintDotNet_Imaging_ColorContextExtensions_TryGetCicpColorSpaceExact_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_CicpColorSpace___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>
-This is the stricter counterpart of <a class="xref" href="PaintDotNet.Imaging.ColorContextExtensions.TryGetCicpColorSpace.html#PaintDotNet_Imaging_ColorContextExtensions_TryGetCicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_CicpColorSpace__">TryGetCicpColorSpace(IColorContext, out CicpColorSpace)</a>.
-That method respects the <code>cicp</code> tag, but if there is no <code>cicp</code> tag then it reports the CICP
-that <em>best</em> describes the profile, which may be an approximation (its primaries and transfer are
-matched to the nearest known code points). When the <code>cicp</code> tag is not present, this method
-additionally verifies the match by round-tripping the candidate CICP back to an ICC profile via
-<a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateColorContext.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_CicpColorSpace_">CreateColorContext(IImagingFactory, CicpColorSpace)</a> and comparing
-it to the original, succeeding only if the two are equal.
-</p>
-<p>
-Use this whenever the CICP may be honored in preference to, or instead of, the embedded ICC profile on
-load — for example when writing the AVIF <code>nclx</code> box or the PNG <code>cICP</code> chunk. (The exact
-precedence when both are present is format- and decoder-dependent; requiring an exact match sidesteps
-that entirely, since a CICP that reproduces the profile cannot conflict with it.) Emitting CICP that is
-only approximately right could then silently replace the profile with a slightly different one,
-potentially shifting color values and discarding anything the profile carried that CICP cannot express:
-a tone curve or primaries that are slightly off from a built-in or synthesized profile, extra metadata,
-the rendering intent, and so on. Requiring an exact match guarantees the substitution is lossless.
-</p>
-</div>
 
 
 

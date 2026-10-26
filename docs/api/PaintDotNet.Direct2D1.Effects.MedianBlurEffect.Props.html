@@ -185,26 +185,15 @@ Class MedianBlurEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd><p>Specifies the alpha mode for the input and output.<br>
-The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurAlphaMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurAlphaMode_Premultiplied">Premultiplied</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.DynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_DynamicRange">DynamicRange</a></dt>
-    <dd><p>Specifies how the dynamic range for each pixel is calculated. See <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html">MedianBlurDynamicRange</a>
-for more information.<br>
-The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurDynamicRange.html#PaintDotNet_Direct2D1_Effects_MedianBlurDynamicRange_Auto">Auto</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.EdgeMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_EdgeMode">EdgeMode</a></dt>
-    <dd><p>Specifies how sampling beyond the edge of the image should be performed.<br>
-If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEdgeMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEdgeMode_Transparent">Transparent</a>, the effect pads the image with transparent
-pixels as it applies the kernel, resulting in a soft edge. The output will be larger than the input by
-approximately the blur radius, in pixels.<br>
-If set to another edge mode, the effect clamps the output to the size of the input image.<br>
-The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEdgeMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEdgeMode_Transparent">Transparent</a>.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_Input">Input</a></dt>
@@ -212,33 +201,15 @@ The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianB
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.Percentile.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_Percentile">Percentile</a></dt>
-    <dd><p>Specifies the percentile to find when approximating the median. Lower values result in darkened/eroded results,
-while higher values result in brightened/dilated results.<br>
-The range is [0,1] which correspond's to the UI's range of [0, 100]. The default value is 0.5f.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.PrecisionBits.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_PrecisionBits">PrecisionBits</a></dt>
-    <dd><p>Specifies how many bits of precision are generated from the median approximation algorithm.<br>
-<br>
-Higher values will have lower performance. Execution time scales linearly with this property's value.<br>
-<br>
-The range is [1, 32]. The default value is 8 which produces 8-bits of precision and is suitable for source images
-that use 8 bits-per-component (e.g. BGRA32). Using a quality value of 9 in that case will take 12.5% more time to
-render and will only produce some pixels that are +/-1 delta from using quality=8 (e.g. R=191 instead of R=192, or
-G=67 instead of G=66).<br>
-<br>
-When precision is critical, this property should be set to the bit-depth of the source image, plus 1. However,
-larger values will cause the pixel shader to take longer to execute and could result in a TDR or crash on slower
-hardware.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.Radius.html#PaintDotNet_Direct2D1_Effects_MedianBlurEffect_Props_Radius">Radius</a></dt>
-    <dd><p>The radius of the effect. A value of 0 will disable the effect.<br>
-Performance scales with the square of this property value. Doubling the radius will quadruple the rendering time.<br>
-The range is [0, 100]. The default value is 10.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

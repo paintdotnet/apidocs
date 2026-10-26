@@ -120,10 +120,7 @@ Method GetYCbCrMatrixCoefficients
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets the Y'CbCr matrix coefficients whose luma weights match these primaries, for use when encoding
-to a chroma-subsampled (4:2:0 / 4:2:2) format -- which requires a non-identity matrix. Primaries that
-have no dedicated H.273 matrix (e.g. Display P3) fall back to <a class="xref" href="PaintDotNet.Imaging.CicpMatrixCoefficients.html#PaintDotNet_Imaging_CicpMatrixCoefficients_Bt709">Bt709</a>.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -148,12 +145,6 @@ have no dedicated H.273 matrix (e.g. Display P3) fall back to <a class="xref" hr
 
 
 
-<h4 class="section" id="PaintDotNet_Imaging_CicpColorPrimariesExtensions_GetYCbCrMatrixCoefficients_PaintDotNet_Imaging_CicpColorPrimaries__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The choice depends only on the primaries, which determine the luma coefficients; the transfer
-characteristics do not affect it. For a 4:4:4 (or lossless) encode, use
-<a class="xref" href="PaintDotNet.Imaging.CicpMatrixCoefficients.html#PaintDotNet_Imaging_CicpMatrixCoefficients_Identity">Identity</a> instead -- identity keeps the samples as RGB and is the
-only matrix valid without chroma subsampling.</p>
-</div>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FileTypeOptions ">
       
-      <meta name="description" content="Contains options and configuration settings for a  implementation. Instances of this class are created by  plugins and passed to the base constructor. This information is then available through the  property.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,10 +93,7 @@ Class FileTypeOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Contains options and configuration settings for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> implementation. Instances of
-this class are created by <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> plugins and passed to the base constructor. This
-information is then available through the <a class="xref" href="PaintDotNet.FileTypes.IFileType.Info.html#PaintDotNet_FileTypes_IFileType_Info">Info</a> property.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -180,28 +177,6 @@ information is then available through the <a class="xref" href="PaintDotNet.File
 
 
 
-  <h2 id="PaintDotNet_FileTypes_FileTypeOptions_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>
-Use the <code>FileTypeOptions.Create()</code> method and C# <code>with</code> syntax to create instances of this class.
-For example:
-</p>
-<pre><code class="lang-csharp">public sealed class MyFileType
-    : FileType
-{
-    public MyFileType(IFileTypeHost host)
-        : base(
-            host,
-            "My FileType Plugin",
-            FileTypeOptions.Create() with
-            {
-                SaveExtensions = [".myftp"],
-                LoadExtensions = [".myftp"],
-                IsSavingConfigurable = true
-            })
-    {
-    }
-}</code></pre>
-</div>
 
   <h2 class="section" id="properties">Properties
 </h2>

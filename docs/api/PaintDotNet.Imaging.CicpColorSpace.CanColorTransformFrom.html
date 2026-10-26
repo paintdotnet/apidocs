@@ -120,19 +120,7 @@ Property CanColorTransformFrom
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets whether a color transform can be performed from these code points (i.e. whether they can be
-used as the source of a color transform). This is true when the matrix coefficients are
-<a class="xref" href="PaintDotNet.Imaging.CicpMatrixCoefficients.html#PaintDotNet_Imaging_CicpMatrixCoefficients_Identity">Identity</a> and either the transfer is PQ
-(<a class="xref" href="PaintDotNet.Imaging.CicpTransferCharacteristics.html#PaintDotNet_Imaging_CicpTransferCharacteristics_SmpteSt2084PQ">SmpteSt2084PQ</a>) or HLG (<a class="xref" href="PaintDotNet.Imaging.CicpTransferCharacteristics.html#PaintDotNet_Imaging_CicpTransferCharacteristics_AribStdB67Hlg">AribStdB67Hlg</a>),
-which are decoded by a dedicated kernel, or the primaries and transfer characteristics are both
-representable as an ICC profile.</p>
-<p>Unlike <a class="xref" href="PaintDotNet.Imaging.CicpColorSpace.CanCreateColorContext.html#PaintDotNet_Imaging_CicpColorSpace_CanCreateColorContext">CanCreateColorContext</a>, the video full range flag does not matter here:
-narrow (<a class="xref" href="PaintDotNet.Imaging.CicpVideoFullRangeFlag.html#PaintDotNet_Imaging_CicpVideoFullRangeFlag_Narrow">Narrow</a>) range is expanded to full range as part of the
-transform.</p>
-<p>More specifically, when this is <code>true</code>, it is possible to use <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateColorTransformedBitmap.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorTransformedBitmap_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformedBitmap(IImagingFactory, IBitmapSource, CicpColorSpace, IColorContext, in PixelFormat)</a>
-and <a class="xref" href="PaintDotNet.Imaging.BitmapSourceExtensions.CreateColorTransformer.html#PaintDotNet_Imaging_BitmapSourceExtensions_CreateColorTransformer_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformer(IBitmapSource, CicpColorSpace, IColorContext, in PixelFormat)</a>,
-or one of the other overloads which take a <a class="xref" href="PaintDotNet.Imaging.CicpColorSpace.html">CicpColorSpace</a>.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

@@ -120,8 +120,7 @@ Method GetSection
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets a mutable metadata section by its <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a>.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,18 +130,15 @@ Method GetSection
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>metadata</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadata.html">IFileTypeMetadata</a></dt>
-  <dd><p>The metadata instance.</p>
-</dd>
+  <dd></dd>
   <dt><code>sectionKind</code> <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a></dt>
-  <dd><p>The kind of metadata section to get.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSection.html">IFileTypeMetadataSection</a></dt>
-  <dd><p>The metadata section.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -152,12 +148,6 @@ Method GetSection
 
 
 
-<h4 class="section">Exceptions</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
-  <dd><p>Thrown if <code class="paramref">metadata</code> does not contain a metadata section of the given kind.</p>
-</dd>
-</dl>
 
 
 
@@ -168,8 +158,7 @@ Method GetSection
   
 </h3>
 
-<div class="markdown level1 summary"><p>Gets a mutable metadata section by its <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a>.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -179,25 +168,21 @@ Method GetSection
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>metadata</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadata.html">IFileTypeMetadata</a></dt>
-  <dd><p>The metadata instance.</p>
-</dd>
+  <dd></dd>
   <dt><code>sectionKind</code> <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a></dt>
-  <dd><p>The kind of metadata section to get.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TSection</span></dt>
-  <dd><p>The metadata section.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TSection</code></dt>
-  <dd><p>The metadata section interface type.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -206,17 +191,6 @@ Method GetSection
 
 
 
-<h4 class="section">Exceptions</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
-  <dd><p>Thrown if <code class="paramref">metadata</code> does not contain a metadata section of the given kind.</p>
-</dd>
-  <dt><a class="xref" href="PaintDotNet.ComponentModel.InterfaceNotSupportedException.html">InterfaceNotSupportedException</a></dt>
-  <dd><p>Thrown if there's a mismatch between <code class="paramref">sectionKind</code> and <code class="typeparamref">TSection</code>.
-For example, if <code class="paramref">sectionKind</code> is <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html#PaintDotNet_FileTypes_FileTypeMetadataSectionKind_Exif">Exif</a> and
-<code class="typeparamref">TSection</code> is <code>typeof(</code><a class="xref" href="PaintDotNet.FileTypes.IFileTypeXmpMetadata.html">IFileTypeXmpMetadata</a><code>)</code>.</p>
-</dd>
-</dl>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IEffectRenderer ">
       
-      <meta name="description" content="The base interface used by an effect host to drive the rendering for an effect. These are created by calling .">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,9 +93,7 @@ Interface IEffectRenderer
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The base interface used by an effect host to drive the rendering for an effect.
-These are created by calling <a class="xref" href="PaintDotNet.Effects.IEffect.CreateRenderer.html#PaintDotNet_Effects_IEffect_CreateRenderer_System_Type_">CreateRenderer(Type)</a>.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -138,19 +136,15 @@ These are created by calling <a class="xref" href="PaintDotNet.Effects.IEffect.C
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectRenderer.CancellationToken.html#PaintDotNet_Effects_IEffectRenderer_CancellationToken">CancellationToken</a></dt>
-    <dd><p>Gets the cancellation token for the current rendering task. This should not be cached --
-it is recreated whenever rendering is started (e.g. when the token changes).</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectRenderer.Effect.html#PaintDotNet_Effects_IEffectRenderer_Effect">Effect</a></dt>
-    <dd><p>Gets a reference to the effect.</p>
-</dd>
+    <dd></dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectRenderer.IsCancelRequested.html#PaintDotNet_Effects_IEffectRenderer_IsCancelRequested">IsCancelRequested</a></dt>
-    <dd><p>Gets a flag indicating whether cancellation has been requested.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -158,12 +152,7 @@ it is recreated whenever rendering is started (e.g. when the token changes).</p>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IEffectRenderer.CancelRendering.html#PaintDotNet_Effects_IEffectRenderer_CancelRendering">CancelRendering()</a></dt>
-    <dd><p>Signals to the effect that it should cancel rendering. Threads that are currently rendering
-will either return early without completing rendering, or will throw an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a>.
-Calling this method does not guarantee that the effect will honor the cancellation
-request for threads that are currently rendering, but it will prevent new rendering calls
-from performing any work until the next token change (e.g. with <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.SetToken.html#PaintDotNet_Effects_IBitmapEffectRenderer_SetToken_PaintDotNet_Effects_EffectConfigToken_">SetToken(EffectConfigToken?)</a>).</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

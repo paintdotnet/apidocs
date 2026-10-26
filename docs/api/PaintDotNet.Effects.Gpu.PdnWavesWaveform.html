@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PdnWavesWaveform ">
       
-      <meta name="description" content="Specifies the shape of the wave that  uses to displace the image.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,8 +94,7 @@ Enum PdnWavesWaveform
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Specifies the shape of the wave that <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.html">PdnWavesEffect</a> uses to displace the image.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -115,48 +114,28 @@ Enum PdnWavesWaveform
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Sine"><code>Sine = 0</code></dt>
   
-  <dd><p>A smooth sine wave, which produces gentle rounded undulations.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Triangle"><code>Triangle = 1</code></dt>
   
-  <dd><p>A triangle wave, which produces sharp creases at the peaks and troughs. This gives
-the image a faceted, &quot;zig zag&quot; appearance.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Sawtooth"><code>Sawtooth = 2</code></dt>
   
-  <dd><p>A sawtooth wave, which ramps smoothly and then drops abruptly. This produces a series
-of hard steps in the image.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Square"><code>Square = 3</code></dt>
   
-  <dd><p>A square wave, which alternates between full positive and full negative displacement with
-nothing in between. This tears the image into hard offset strips rather than deforming it.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Semicircle"><code>Semicircle = 4</code></dt>
   
-  <dd><p>Alternating half-circles, which produce rounder, more scalloped crests than a sine wave.</p>
-</dd>
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_Harmonics"><code>Harmonics = 5</code></dt>
-  <dd><p>Three octaves of sine summed together at halving amplitudes. The result is less regular
-than a plain sine wave, which reads as a more natural water surface.</p>
-<p>The upper octaves make this the steepest of the smooth waveforms, so it is scaled down to
-bring its slope in line with a sine's. That keeps it from folding earlier than every other
-waveform at the same amplitude, at the cost of displacing about 58% as far.</p>
-</dd>
   
+  <dd></dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_SteppedSine"><code>SteppedSine = 6</code></dt>
   
-  <dd><p>A sine wave quantized to a fixed number of discrete levels, which displaces the image in
-visible bands instead of smoothly.</p>
-</dd>
+  <dd></dd>
   </dl>
 
 
-  <h2 id="PaintDotNet_Effects_Gpu_PdnWavesWaveform_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Every waveform is normalized to the range [-1, +1], which is what lets
-<span class="xref">PaintDotNet.Effects.Gpu.PdnWavesSampleMap.GetMaxSampleOffset(System.Single,PaintDotNet.Effects.Gpu.PdnWavesPattern,System.Single)</span> bound the displacement by the amplitude
-alone, regardless of which waveform is selected.</p>
-</div>
 
 </article>
 

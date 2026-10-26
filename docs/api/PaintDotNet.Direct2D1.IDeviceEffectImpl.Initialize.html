@@ -120,9 +120,7 @@ Method Initialize
   
 </h3>
 
-<div class="markdown level1 summary"><p>The effect can use this method to do one time initialization tasks.<br>
-<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize">ID2D1EffectImpl::Initialize</a></p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,11 +130,9 @@ Method Initialize
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>effectContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a></dt>
-  <dd><p>An internal context interface that creates and returns effect author–centric types.</p>
-</dd>
+  <dd></dd>
   <dt><code>transformGraph</code> <a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.html">ITransformGraph</a></dt>
-  <dd><p>The effect can populate the transform graph with a topology and can update it later.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -146,11 +142,6 @@ Method Initialize
 
 
 
-<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph__remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>If the effectContext or transformGraph are stored by the implementation of this interface, a new ref must be created
-with the CreateRef() extension method. The object &quot;refs&quot; passed to this method will be disposed once it
-returns, but creating a new ref extends the lifetime of the underlying object.</p>
-</div>
 
 
 

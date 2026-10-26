@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeDocument&lt;TPixel&gt; ">
       
-      <meta name="description" content="Represents a mutable document (image) that consists of metadata and layers.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,8 +93,7 @@ Interface IFileTypeDocument&lt;TPixel&gt;
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a mutable document (image) that consists of metadata and layers.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -175,27 +174,13 @@ Interface IFileTypeDocument&lt;TPixel&gt;
 
 
 
-  <h2 id="PaintDotNet_FileTypes_IFileTypeDocument_1_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>The <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument.html">IReadOnlyFileTypeDocument</a> and <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> interfaces support pixel format speciation.
-For example, if the pixel format is <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>, then you can use the <code>CreateRef</code>
-extension method to obtain a strongly-typed <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument-1.html">IReadOnlyFileTypeDocument&lt;TPixel&gt;</a> or
-<a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument-1.html">IFileTypeDocument&lt;TPixel&gt;</a> with <code>TPixel</code> set to <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>:</p>
-<pre><code class="lang-csharp">IReadOnlyFileTypeDocument document = GetDocument();
-if (document.PixelFormat == PixelFormats.Bgra32)
-{
-    IReadOnlyFileTypeDocument&lt;ColorBgra32&gt; docBgra32 = document.CreateRef&lt;IReadOnlyFileTypeDocument&lt;ColorBgra32&gt;&gt;();
-    ....
-}</code></pre>
-<p>This allows you to work with the pixel data in a type-safe manner.</p>
-</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument-1.Layers.html#PaintDotNet_FileTypes_IFileTypeDocument_1_Layers">Layers</a></dt>
-    <dd><p>Gets the top-level layers list of the document.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -203,9 +188,7 @@ if (document.PixelFormat == PixelFormats.Bgra32)
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument-1.CreateBitmapLayer.html#PaintDotNet_FileTypes_IFileTypeDocument_1_CreateBitmapLayer">CreateBitmapLayer()</a></dt>
-    <dd><p>Creates a new bitmap layer. The returned layer is not added to the document's layer list. You must
-call the <code>Add</code> method on the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.Layers.html#PaintDotNet_FileTypes_IFileTypeDocument_Layers">Layers</a> property to add the layer to the document.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

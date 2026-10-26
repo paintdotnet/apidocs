@@ -120,10 +120,7 @@ Property SupportsCancellationExceptions
   
 </h3>
 
-<div class="markdown level1 summary"><p>If true, then the Stream and/or <a class="xref" href="PaintDotNet.ProgressEventHandler.html">ProgressEventHandler</a> may throw an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a>
-so as to cancel the save/load operation. This is usually encountered when the user is working with the
-Save Options dialog, or if they press the Cancel button while loading.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -143,11 +140,6 @@ Save Options dialog, or if they press the Cancel button while loading.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_FileTypes_FileTypeOptions1_SupportsCancellationExceptions_remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>The default value for this property is true. This property should be set to false if the plugin uses native
-code that cannot be made to interoperate well with this behavior. For instance, if it is difficult or
-impossible to avoid things like crashes or memory leaks, then set this property to false.</p>
-</div>
 
 
 

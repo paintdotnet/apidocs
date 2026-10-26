@@ -120,8 +120,7 @@ Method Simplify
   
 </h3>
 
-<div class="markdown level1 summary"><p>Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ISimplifiedGeometrySink.</p>
-</div>
+<div class="markdown level1 summary"></div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,19 +130,13 @@ Method Simplify
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>geometrySink</code> <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.html">ISimplifiedGeometrySink</a></dt>
-  <dd><p>The ISimplifiedGeometrySink to which the simplified geometry is appended.</p>
-</dd>
+  <dd></dd>
   <dt><code>simplificationOption</code> <a class="xref" href="PaintDotNet.Direct2D1.GeometrySimplificationOption.html">GeometrySimplificationOption</a></dt>
-  <dd><p>A value that specifies whether the simplified geometry should contain curves.</p>
-</dd>
+  <dd></dd>
   <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd><p>The transform to apply to the simplified geometry, or null for no transform.</p>
-</dd>
+  <dd></dd>
   <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-  <dd><p>The maximum error allowed when constructing a polygonal approximation of the geometry, or null to use FlatteningTolerance.Default.
-No point in the polygonal representation will diverge from the original geometry by more than the flattening tolerance. Smaller
-values produce more accurate results but cause slower execution.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -153,9 +146,6 @@ values produce more accurate results but cause slower execution.</p>
 
 
 
-<h4 class="section" id="PaintDotNet_Direct2D1_IGeometry_Simplify_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_PaintDotNet_Direct2D1_GeometrySimplificationOption_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single___remarks">Remarks</h4>
-<div class="markdown level1 remarks"><p>Other graphics frameworks may call this &quot;flattening&quot; (e.g. Windows Presentation Foundation).</p>
-</div>
 
 
 

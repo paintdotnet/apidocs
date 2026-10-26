@@ -92,10 +92,7 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a></dt>
-      <dd><p>The base class for FileType plugins. To implement a FileType plugin, create a new class that
-derives from this class. Also make sure that in your assembly you have a class that implements
-<a class="xref" href="PaintDotNet.FileTypes.IFileTypeFactory.html">IFileTypeFactory</a> with a parameterless constructor.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeBitmapSinkExtensions.html">FileTypeBitmapSinkExtensions</a></dt>
@@ -119,9 +116,7 @@ derives from this class. Also make sure that in your assembly you have a class t
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.html">FileTypeLoader</a></dt>
-      <dd><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.html">IFileTypeLoader</a>s. These are created by a <span class="xref">PaintDotNet.FileTypes.FileTypeLoader.FileType</span> that supports
-loading, and are returned from their <a class="xref" href="PaintDotNet.FileTypes.FileType.OnCreateLoader.html#PaintDotNet_FileTypes_FileType_OnCreateLoader">OnCreateLoader()</a> implementation.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataExtensions.html">FileTypeMetadataExtensions</a></dt>
@@ -129,16 +124,11 @@ loading, and are returned from their <a class="xref" href="PaintDotNet.FileTypes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a></dt>
-      <dd><p>Contains options and configuration settings for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> implementation. Instances of
-this class are created by <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> plugins and passed to the base constructor. This
-information is then available through the <a class="xref" href="PaintDotNet.FileTypes.IFileType.Info.html#PaintDotNet_FileTypes_IFileType_Info">Info</a> property.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions1.html">FileTypeOptions1</a></dt>
-      <dd><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a>. This base class exists for versioning purposes
-and should generally not be used directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypePropertyBagEnumExtensions.html">FileTypePropertyBagEnumExtensions</a></dt>
@@ -150,29 +140,19 @@ and should generally not be used directly.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptions.html">FileTypeSaveOptions</a></dt>
-      <dd><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a> implementations. These are created by <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>s
-that support configurable saving, and are returned by their <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateDefaultSaveOptions.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateDefaultSaveOptions">OnCreateDefaultSaveOptions()</a>
-implementation.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.html">FileTypeSaveOptionsControl</a></dt>
-      <dd><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.html">IFileTypeSaveOptionsControl</a> implementations. These must be
-provided by <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>s that support configurable saving. Most <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>
-plugins will be <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileType.html">PropertyBasedFileType</a>s and will not need to implement this class.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl-1.html">FileTypeSaveOptionsControl&lt;TSaveOptions&gt;</a></dt>
-      <dd><p>This convenience class derives from <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.html">FileTypeSaveOptionsControl</a> and specializes the
-<a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl-1.Options.html#PaintDotNet_FileTypes_FileTypeSaveOptionsControl_1_Options">Options</a> property to be of type <code class="typeparamref">TSaveOptions</code>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.html">FileTypeSaver</a></dt>
-      <dd><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaver.html">IFileTypeSaver</a>s. These are created by a <span class="xref">PaintDotNet.FileTypes.FileTypeSaver.FileType</span> that supports
-saving, and are returned from their <a class="xref" href="PaintDotNet.FileTypes.FileType.OnCreateSaver.html#PaintDotNet_FileTypes_FileType_OnCreateSaver">OnCreateSaver()</a> implementation.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.html">FileTypesObjectRefExtensions</a></dt>
@@ -184,18 +164,15 @@ saving, and are returned from their <a class="xref" href="PaintDotNet.FileTypes.
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileType.html">PropertyBasedFileType</a></dt>
-      <dd><p>The base class for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> that makes use of IndirectUI.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeLoader.html">PropertyBasedFileTypeLoader</a></dt>
-      <dd><p>The base class for a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileType.html">PropertyBasedFileType</a>'s loader.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeSaver.html">PropertyBasedFileTypeSaver</a></dt>
-      <dd><p>The base class for a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileType.html">PropertyBasedFileType</a>'s saver.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.ReadOnlyFileTypeDocumentExtensions.html">ReadOnlyFileTypeDocumentExtensions</a></dt>
@@ -226,507 +203,378 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.ICreateSaveOptionsForDocumentContext.html">ICreateSaveOptionsForDocumentContext</a></dt>
-      <dd><p>Provides the context for an <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsForDocument_PaintDotNet_FileTypes_ICreateSaveOptionsForDocumentContext_">OnCreateSaveOptionsForDocument(ICreateSaveOptionsForDocumentContext)</a> operation.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.ICreateSaveOptionsForDocumentContext1.html">ICreateSaveOptionsForDocumentContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.ICreateSaveOptionsForDocumentContext.html">ICreateSaveOptionsForDocumentContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.ICreateSavePropertiesForDocumentContext.html">ICreateSavePropertiesForDocumentContext</a></dt>
-      <dd><p>Provides the context for a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeSaver.OnCreateSavePropertiesForDocument.html#PaintDotNet_FileTypes_PropertyBasedFileTypeSaver_OnCreateSavePropertiesForDocument_PaintDotNet_FileTypes_ICreateSavePropertiesForDocumentContext_">OnCreateSavePropertiesForDocument(ICreateSavePropertiesForDocumentContext)</a> operation.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.ICreateSavePropertiesForDocumentContext1.html">ICreateSavePropertiesForDocumentContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.ICreateSavePropertiesForDocumentContext.html">ICreateSavePropertiesForDocumentContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a></dt>
-      <dd><p>Represents a FileType that provides loading and saving capabilities for a specific image format.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLayer.html">IFileTypeBitmapLayer</a></dt>
-      <dd><p>Represents a mutable bitmap layer within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLayer-1.html">IFileTypeBitmapLayer&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a mutable bitmap layer within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLock.html">IFileTypeBitmapLock</a></dt>
-      <dd><p>Provides direct access to the bitmap data for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.html">IFileTypeBitmapSource</a> or <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSink.html">IFileTypeBitmapSink</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLock-1.html">IFileTypeBitmapLock&lt;TPixel&gt;</a></dt>
-      <dd><p>Provides direct access to the bitmap data for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.html">IFileTypeBitmapSource</a> or <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSink.html">IFileTypeBitmapSink</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSink.html">IFileTypeBitmapSink</a></dt>
-      <dd><p>Provides the ability to write pixel data into a bitmap used within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>,
-such as for an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLayer.html">IFileTypeBitmapLayer</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSink-1.html">IFileTypeBitmapSink&lt;TPixel&gt;</a></dt>
-      <dd><p>Provides the ability to write pixel data into a bitmap used within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>,
-such as for an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapLayer.html">IFileTypeBitmapLayer</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.html">IFileTypeBitmapSource</a></dt>
-      <dd><p>Represents a bitmap source provided by an object within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource-1.html">IFileTypeBitmapSource&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a bitmap source provided by an object within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCompositeBitmap.html">IFileTypeCompositeBitmap</a></dt>
-      <dd><p>Provides a bitmap source that renders the flattened (composite) image of a document, including
-all visible layers with their relevant properties taken into account.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCompositeBitmap-1.html">IFileTypeCompositeBitmap&lt;TPixel&gt;</a></dt>
-      <dd><p>Provides a bitmap source that renders the flattened (composite) image of a document, including
-all visible layers with their relevant properties taken into account.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a></dt>
-      <dd><p>Provides read/write access to custom metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction.html">IFileTypeCustomMetadataTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to the metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a></dt>
-      <dd><p>Represents a mutable document (image) that consists of metadata and layers.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentFactory.html">IFileTypeDocumentFactory</a></dt>
-      <dd><p>Provides methods and properties used for creating <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> instances and
-other related objects.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentFactory1.html">IFileTypeDocumentFactory1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentFactory.html">IFileTypeDocumentFactory</a>. This interface exists for versioning
-purposes and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentMetadata.html">IFileTypeDocumentMetadata</a></dt>
-      <dd><p>Provides mutable access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument-1.html">IFileTypeDocument&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a mutable document (image) that consists of metadata and layers.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadata.html">IFileTypeExifMetadata</a></dt>
-      <dd><p>Provides read/write access to EXIF metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.html">IFileTypeExifMetadataTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to the EXIF metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadata.html">IFileTypeExifMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeFactory.html">IFileTypeFactory</a></dt>
-      <dd><p>Implemented by a plugin containing <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> plugins. The assembly (DLL)
-must have a class that implements this interface in order to provide FileTypes to the
-plugin system. The class must have a public parameterless constructor.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeHdrMetadata.html">IFileTypeHdrMetadata</a></dt>
-      <dd><p>Provides read/write access to HDR metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeHdrMetadataTransaction.html">IFileTypeHdrMetadataTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to HDR metadata within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeHost.html">IFileTypeHost</a></dt>
-      <dd><p>An interface that is passed to the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeFactory.CreateFileTypes.html#PaintDotNet_FileTypes_IFileTypeFactory_CreateFileTypes_PaintDotNet_FileTypes_IFileTypeHost_">CreateFileTypes(IFileTypeHost)</a>
-method which provides context and services from the host.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeHost1.html">IFileTypeHost1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeHost.html">IFileTypeHost</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfo.html">IFileTypeInfo</a></dt>
-      <dd><p>Provides information and metadata about an <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a>, including its capabilities and
-file extensions, and the ability to create instances of it.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfo1.html">IFileTypeInfo1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfo.html">IFileTypeInfo</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfoOptionsCommon.html">IFileTypeInfoOptionsCommon</a></dt>
-      <dd><p>Defines common members shared between <a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfo.html">IFileTypeInfo</a> and <a class="xref" href="PaintDotNet.FileTypes.IFileTypeOptions.html">IFileTypeOptions</a>.
-Properties that are set on a <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a> during a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>'s constructor
-will be available via its <a class="xref" href="PaintDotNet.FileTypes.IFileType.Info.html#PaintDotNet_FileTypes_IFileType_Info">Info</a> property and via the <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService.html">IFileTypesService</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfoOptionsCommon1.html">IFileTypeInfoOptionsCommon1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeInfoOptionsCommon.html">IFileTypeInfoOptionsCommon</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeIptcMetadata.html">IFileTypeIptcMetadata</a></dt>
-      <dd><p>Provides read/write access to IPTC metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeIptcMetadataTransaction.html">IFileTypeIptcMetadataTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to the IPTC metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeIptcMetadata.html">IFileTypeIptcMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.html">IFileTypeLayer</a></dt>
-      <dd><p>Represents a mutable layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayerList.html">IFileTypeLayerList</a></dt>
-      <dd><p>Represents a mutable list of layers within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayerList-1.html">IFileTypeLayerList&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a mutable list of layers within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayerMetadata.html">IFileTypeLayerMetadata</a></dt>
-      <dd><p>Provides mutable access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.html">IFileTypeLayer</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer-1.html">IFileTypeLayer&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a mutable layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext.html">IFileTypeLoadContext</a></dt>
-      <dd><p>Provides the context for a load operation performed by an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.html">IFileTypeLoader</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext1.html">IFileTypeLoadContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext.html">IFileTypeLoadContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.html">IFileTypeLoader</a></dt>
-      <dd><p>Represents an object that can load an image from a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> into an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadata.html">IFileTypeMetadata</a></dt>
-      <dd><p>Provides mutable access to metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSection.html">IFileTypeMetadataSection</a></dt>
-      <dd><p>Represents a mutable section of metadata within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadata.html">IFileTypeMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.html">IFileTypeMetadataSectionTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSection.html">IFileTypeMetadataSection</a>. This is the
-base interface for the section-specific transaction interfaces, e.g. <a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.html">IFileTypeExifMetadataTransaction</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeOptions.html">IFileTypeOptions</a></dt>
-      <dd><p>Represents options and configuration settings for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> implementation.
-For more information, see <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeOptions1.html">IFileTypeOptions1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeOptions.html">IFileTypeOptions</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.html">IFileTypePropertyBag</a></dt>
-      <dd><p>A mutable key/value property bag, used by <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a> and <a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveContext.html">IFileTypeSaveContext</a></dt>
-      <dd><p>Provides the context for a save operation performed by an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaver.html">IFileTypeSaver</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveContext1.html">IFileTypeSaveContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveContext.html">IFileTypeSaveContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a></dt>
-      <dd><p>Represents the options used when saving with a <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.html">FileTypeSaver</a>. This interface is implemented
-by creating a class that derives from <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptions.html">FileTypeSaveOptions</a>, which is then returned by
-<a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateDefaultSaveOptions.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateDefaultSaveOptions">OnCreateDefaultSaveOptions()</a>. The <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a> must have also provided a
-<a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a> to its base constructor with <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions1.IsSavingConfigurable.html#PaintDotNet_FileTypes_FileTypeOptions1_IsSavingConfigurable">IsSavingConfigurable</a>
-set to <code>true</code>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.html">IFileTypeSaveOptionsControl</a></dt>
-      <dd><p>This interface is implemented by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.html">FileTypeSaveOptionsControl</a>, which is used to
-implement a custom Save Options UI for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>. The control is then
-returned by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsControl.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsControl">OnCreateSaveOptionsControl()</a>. The <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>
-must have also provided a <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a> to its base constructor with
-<a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions1.IsSavingConfigurable.html#PaintDotNet_FileTypes_FileTypeOptions1_IsSavingConfigurable">IsSavingConfigurable</a> set to <code>true</code>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaver.html">IFileTypeSaver</a></dt>
-      <dd><p>Represents an object that can save an <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument.html">IReadOnlyFileTypeDocument</a> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeServiceProvider.html">IFileTypeServiceProvider</a></dt>
-      <dd><p>Provides access to services for FileType plugins. These services include
-<a class="xref" href="PaintDotNet.Imaging.IImagingFactory.html">IImagingFactory</a>, <a class="xref" href="PaintDotNet.Direct2D1.IDirect2DFactory.html">IDirect2DFactory</a>, <a class="xref" href="PaintDotNet.DirectWrite.IDirectWriteFactory.html">IDirectWriteFactory</a>,
-<a class="xref" href="PaintDotNet.AppModel.IClipboardService.html">IClipboardService</a>, and <a class="xref" href="PaintDotNet.AppModel.IShellService.html">IShellService</a>, among others.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeServiceProvider1.html">IFileTypeServiceProvider1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeServiceProvider.html">IFileTypeServiceProvider</a>. This interface exists for versioning
-purposes and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.html">IFileTypeTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeXmpMetadata.html">IFileTypeXmpMetadata</a></dt>
-      <dd><p>Provides read/write access to XMP metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeXmpMetadataTransaction.html">IFileTypeXmpMetadataTransaction</a></dt>
-      <dd><p>Represents a transaction for making atomic changes to the XMP metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeXmpMetadata.html">IFileTypeXmpMetadata</a>..</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypesService.html">IFileTypesService</a></dt>
-      <dd><p>Provides a list of all available <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a>s, along with their metadata and methods for creating instances of them.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypesService1.html">IFileTypesService1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService.html">IFileTypesService</a>. This interface exists for versioning
-purposes and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IJpegFileType.html">IJpegFileType</a></dt>
-      <dd><p>Provides access to the built-in JPEG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IJpegFileTypeLoader.html">IJpegFileTypeLoader</a></dt>
-      <dd><p>Provides the ability to load JPEG images using the built-in JPEG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IJpegFileTypeSaveOptions.html">IJpegFileTypeSaveOptions</a></dt>
-      <dd><p>Defines the options available when saving a JPEG file with <a class="xref" href="PaintDotNet.FileTypes.IJpegFileType.html">IJpegFileType</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IJpegFileTypeSaver.html">IJpegFileTypeSaver</a></dt>
-      <dd><p>Provides the ability to save JPEG images using the built-in JPEG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileType.html">IPngFileType</a></dt>
-      <dd><p>Provides access to the built-in PNG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeLoader.html">IPngFileTypeLoader</a></dt>
-      <dd><p>Provides the ability to load PNG images using the built-in PNG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.html">IPngFileTypeSaveOptions</a></dt>
-      <dd><p>Defines the options available when saving a PNG file with <a class="xref" href="PaintDotNet.FileTypes.IPngFileType.html">IPngFileType</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaver.html">IPngFileTypeSaver</a></dt>
-      <dd><p>Provides the ability to save PNG images using the built-in PNG file type.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeLoadContext.html">IPropertyBasedFileTypeLoadContext</a></dt>
-      <dd><p>Provides the context for a load operation performed by a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeLoader.html">PropertyBasedFileTypeLoader</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeLoadContext1.html">IPropertyBasedFileTypeLoadContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeLoadContext.html">IPropertyBasedFileTypeLoadContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeSaveContext.html">IPropertyBasedFileTypeSaveContext</a></dt>
-      <dd><p>Provides the context for a save operation performed by a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeSaver.html">PropertyBasedFileTypeSaver</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeSaveContext1.html">IPropertyBasedFileTypeSaveContext1</a></dt>
-      <dd><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeSaveContext.html">IPropertyBasedFileTypeSaveContext</a>. This interface exists for versioning purposes
-and should generally not be referenced directly.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IPropertyBasedFileTypeSaveOptions.html">IPropertyBasedFileTypeSaveOptions</a></dt>
-      <dd><p>Represents the options used when saving with a <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileTypeSaver.html">PropertyBasedFileTypeSaver</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeBitmapLayer.html">IReadOnlyFileTypeBitmapLayer</a></dt>
-      <dd><p>Represents a read-only bitmap layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeBitmapLayer-1.html">IReadOnlyFileTypeBitmapLayer&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a read-only bitmap layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeCustomMetadata.html">IReadOnlyFileTypeCustomMetadata</a></dt>
-      <dd><p>Provides read-only access to custom metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument.html">IReadOnlyFileTypeDocument</a></dt>
-      <dd><p>Represents a read-only document (image) that consists of metadata and layers.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocumentMetadata.html">IReadOnlyFileTypeDocumentMetadata</a></dt>
-      <dd><p>Provides read-only access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeDocument-1.html">IReadOnlyFileTypeDocument&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a read-only document (image) that consists of metadata and layers.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.html">IReadOnlyFileTypeExifMetadata</a></dt>
-      <dd><p>Provides read-only access to EXIF metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeHdrMetadata.html">IReadOnlyFileTypeHdrMetadata</a></dt>
-      <dd><p>Provides read-only access to HDR metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeIptcMetadata.html">IReadOnlyFileTypeIptcMetadata</a></dt>
-      <dd><p>Provides read-only access to IPTC metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.html">IReadOnlyFileTypeLayer</a></dt>
-      <dd><p>Represents a read-only layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayerList.html">IReadOnlyFileTypeLayerList</a></dt>
-      <dd><p>Represents a read-only list of layers within a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayerList-1.html">IReadOnlyFileTypeLayerList&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a read-only list of layers within a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayerMetadata.html">IReadOnlyFileTypeLayerMetadata</a></dt>
-      <dd><p>Provides read-only access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.html">IFileTypeLayer</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer-1.html">IReadOnlyFileTypeLayer&lt;TPixel&gt;</a></dt>
-      <dd><p>Represents a read-only layer within a file type document.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.html">IReadOnlyFileTypeMetadata</a></dt>
-      <dd><p>Provides read-only access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> or <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.html">IFileTypeLayer</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.html">IReadOnlyFileTypeMetadataSection</a></dt>
-      <dd><p>Represents a read-only section of metadata within an <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.html">IReadOnlyFileTypeMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypePropertyBag.html">IReadOnlyFileTypePropertyBag</a></dt>
-      <dd><p>A read-only key/value property bag, used by <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a> and <a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a>.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeXmpMetadata.html">IReadOnlyFileTypeXmpMetadata</a></dt>
-      <dd><p>Provides read-only access to XMP metadata.</p>
-</dd>
+      <dd></dd>
     </dl>
     <h3 id="enums">
 Enums
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a></dt>
-      <dd><p>Identifies which kind of metadata an <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.html">IReadOnlyFileTypeMetadataSection</a> holds.</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html">PngPixelFormat</a></dt>
