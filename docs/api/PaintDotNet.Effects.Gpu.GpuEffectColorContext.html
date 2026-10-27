@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GpuEffectColorContext ">
       
-      
+      <meta name="description" content="Secifies the color space that a  performs its rendering in. Input images will be converted to this color space, and the output of the effect will then be converted back to the working space of the source image.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Class GpuEffectColorContext
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Secifies the color space that a <a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffect.html">GpuEffect</a> performs its rendering in.
+Input images will be converted to this color space, and the output of the effect
+will then be converted back to the working space of the source image.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -148,19 +151,27 @@ Class GpuEffectColorContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.ScRgb.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_ScRgb">ScRgb</a></dt>
-    <dd></dd>
+    <dd><p>Gets a color context that specifies the scRGB color space, which is the linear gamma, wide gamut
+expansion of sRGB.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.Srgb.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_Srgb">Srgb</a></dt>
-    <dd></dd>
+    <dd><p>Gets a color context that specifies the sRGB color space, which uses a gamma value of approximately 2.2.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpace.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpace">WorkingSpace</a></dt>
-    <dd></dd>
+    <dd><p>Gets a color context that matches the source image, which results in no color space conversion. Only
+precision and pixel format conversion will be performed. For example, Bgra32 will be converted to
+Rgba128Float by dividing each color component by 255.0f and swizzling from BGR to RGB order. Gamma
+is unchanged.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.GpuEffectColorContext.WorkingSpaceLinear.html#PaintDotNet_Effects_Gpu_GpuEffectColorContext_WorkingSpaceLinear">WorkingSpaceLinear</a></dt>
-    <dd></dd>
+    <dd><p>Gets a color context that matches the source image and which has been converted to use linear (1.0) gamma.</p>
+</dd>
   </dl>
 
 

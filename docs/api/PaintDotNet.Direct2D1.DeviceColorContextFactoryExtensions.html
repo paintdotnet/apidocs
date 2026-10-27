@@ -148,7 +148,8 @@ Class DeviceColorContextFactoryExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Imaging_ExifColorSpace_">CreateColorContext(IDeviceColorContextFactory, ExifColorSpace)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an sRGB or Adobe RGB color context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Imaging_KnownColorSpace_">CreateColorContext(IDeviceColorContextFactory, KnownColorSpace)</a></dt>
@@ -168,7 +169,10 @@ Class DeviceColorContextFactoryExtensions
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.CreateLinearizedColorContextOrScRgb.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_CreateLinearizedColorContextOrScRgb_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Direct2D1_IDeviceColorContext_">CreateLinearizedColorContextOrScRgb(IDeviceColorContextFactory, IDeviceColorContext)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a linearized version of the given color context, or creates an scRGB color context if
+the given one cannot be linearized. See <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.TryCreateLinearizedColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Direct2D1_IDeviceColorContext_">TryCreateLinearizedColorContext(IDeviceColorContextFactory, IDeviceColorContext)</a>
+for more information.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.TryCreateDefaultColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateDefaultColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Imaging_PixelFormat__">TryCreateDefaultColorContext(IDeviceColorContextFactory, in PixelFormat)</a></dt>
@@ -180,7 +184,11 @@ Class DeviceColorContextFactoryExtensions
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextFactoryExtensions.TryCreateLinearizedColorContext.html#PaintDotNet_Direct2D1_DeviceColorContextFactoryExtensions_TryCreateLinearizedColorContext_PaintDotNet_Direct2D1_IDeviceColorContextFactory_PaintDotNet_Direct2D1_IDeviceColorContext_">TryCreateLinearizedColorContext(IDeviceColorContextFactory, IDeviceColorContext)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a linearized version of the given color context. This removes the transfer curve (TRC)
+and enables the use of linear gamma with most color contexts. If the color context cannot be
+linearized then <code>null</code> will be returned. If the color context is already linearized then
+a copy will be made using the given factory.</p>
+</dd>
   </dl>
 
 

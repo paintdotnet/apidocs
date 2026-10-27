@@ -120,7 +120,9 @@ Method SetFillMode
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies the method used to determine which points are inside the geometry described by this geometry
+sink and which points are outside.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +132,8 @@ Method SetFillMode
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>fillMode</code> <a class="xref" href="PaintDotNet.Direct2D1.FillMode.html">FillMode</a></dt>
-  <dd></dd>
+  <dd><p>The method used to determine whether a given point is part of the geometry.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +143,11 @@ Method SetFillMode
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetFillMode_PaintDotNet_Direct2D1_FillMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The fill mode defaults to <a class="xref" href="PaintDotNet.Direct2D1.FillMode.html#PaintDotNet_Direct2D1_FillMode_Alternate">Alternate</a>. To set the fill mode, call <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.SetFillMode.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_SetFillMode_PaintDotNet_Direct2D1_FillMode_">SetFillMode(FillMode)</a>
+before the first call to <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a>. Not doing so will put the geometry sink into an error
+state.</p>
+</div>
 
 
 

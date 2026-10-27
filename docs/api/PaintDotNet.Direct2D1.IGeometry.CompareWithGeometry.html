@@ -120,7 +120,8 @@ Method CompareWithGeometry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Describes the intersection between this geometry and the specified geometry. The comparison is performed by using the specified flattening tolerance.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,17 +131,23 @@ Method CompareWithGeometry
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>inputGeometry</code> <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a></dt>
-  <dd></dd>
+  <dd><p>The geometry to test.</p>
+</dd>
   <dt><code>inputGeometryTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd></dd>
+  <dd><p>The transform to apply to inputGeometry, or null for no transform.</p>
+</dd>
   <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-  <dd></dd>
+  <dd><p>The maximum error allowed when constructing a polygonal approximation of the geometry, or null to use FlatteningTolerance.Default.
+No point in the polygonal representation will diverge from the original geometry by more than the flattening tolerance. Smaller
+values produce more accurate results but cause slower execution.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.GeometryRelation.html">GeometryRelation</a></dt>
-  <dd></dd>
+  <dd><p>A value describing how this geometry is related to inputGeometry.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +156,10 @@ Method CompareWithGeometry
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IGeometry_CompareWithGeometry_PaintDotNet_Direct2D1_IGeometry_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>When interpreting the returned relation value, it is important to remember that a result of GeometryRelation.IsContained
+means that this geometry is contained inside inputGeometry, not that this geometry contains inputGeometry.</p>
+</div>
 
 
 

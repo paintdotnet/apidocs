@@ -120,7 +120,8 @@ Method CopyFromBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Calls CopyFromBitmap(bitmap, true).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -156,7 +157,8 @@ Method CopyFromBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a new Surface and copies the pixels from a Bitmap to it.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,15 +168,29 @@ Method CopyFromBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
-  <dd></dd>
+  <dd><p>The Bitmap to duplicate.</p>
+</dd>
   <dt><code>detectDishonestAlpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>If the bitmap has a PixelFormat of PixelFormat.Format32bppRgb, and all alpha values are zero,
+then the alpha channel will be converted to opaque (all 255). If any alpha values are non-zero,
+then the alpha channel is retained as-is (the bitmap is treated as if PixelFormat were equal
+to PixelFormat.Format32bppArgb).
+The assumption is that an alpha channel that is all-zero or all-255 is &quot;honest&quot;, whereas
+varying alpha values are &quot;dishonest&quot; with respect to the PixelFormat. In the all-zero case,
+the the alpha channel must be converted to all-255. In the all-255 case, this conversion is
+unnecessary. With the varying alpha case, it must be assumed that the source of the pixel
+values was supposed to specify PixelFormat.Format32bppArgb but did not. This will not detect
+if PixelFormat.Format32bppPArgb should have been specified.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>A new Surface that is the same size as the given Bitmap and that has the same pixel values
+(subject to alpha channel interpretation if detectDishonestAlpha is true, or if the
+PixelFormat is PixelFormat.Format32bppPArgb).</p>
+</dd>
 </dl>
 
 
@@ -183,6 +199,10 @@ Method CopyFromBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopyFromBitmap_System_Drawing_Bitmap_System_Boolean__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If the bitmap has a PixelFormat of PixelFormat.Format32bppPArgb, then the color values will
+be converted from premultiplied alpha to straight alpha.</p>
+</div>
 
 
 

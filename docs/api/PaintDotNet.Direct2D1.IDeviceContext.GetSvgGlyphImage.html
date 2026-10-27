@@ -120,7 +120,10 @@ Method GetSvgGlyphImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieves an image of the SVG glyph from the color glyph cache. If the cache does not already contain the requested
+resource, it will be created. This method may be used to extend the lifetime of a glyph image even after it is
+evicted from the color glyph cache.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,31 +133,46 @@ Method GetSvgGlyphImage
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>glyphOrigin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>Origin of the glyph.</p>
+</dd>
   <dt><code>fontFace</code> <a class="xref" href="PaintDotNet.DirectWrite.IFontFace.html">IFontFace</a></dt>
-  <dd></dd>
+  <dd><p>Reference to a font face which contains font face type, appropriate file references, face identification data and
+various font data such as metrics, names and glyph outlines.</p>
+</dd>
   <dt><code>fontEmSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>The specified font size affects the output glyphTransform, causing it to properly scale the glyph.</p>
+</dd>
   <dt><code>glyphIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-  <dd></dd>
+  <dd><p>Index of the glyph to retrieve.</p>
+</dd>
   <dt><code>isSideways</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>If true, specifies that glyphs are rotated 90 degrees to the left and vertical metrics are used. Vertical writing is
+achieved by specifying isSideways as true and rotating the entire run 90 degrees to the right via a rotate transform.</p>
+</dd>
   <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd></dd>
+  <dd><p>The transform to apply to the image. If null, the identity matrix will be used.</p>
+</dd>
   <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>Describes how the area is painted.</p>
+</dd>
   <dt><code>svgGlyphStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgGlyphStyle.html">ISvgGlyphStyle</a></dt>
-  <dd></dd>
+  <dd><p>The values for context-fill, context-stroke, and context-value that are used when rendering SVG glyphs.</p>
+</dd>
   <dt><code>colorPaletteIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The index used to select a color palette within a color font. Note that this is not the same as the paletteIndex in
+the ColorGlyphRun struct, which is not relevant for SVG glyphs.</p>
+</dd>
   <dt><code>glyphTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a></dt>
-  <dd></dd>
+  <dd><p>Output transform, which transforms from the glyph's space to the same output space as the worldTransform. This includes
+the input glyphOrigin, the glyph's offset from the glyphOrigin, and any other required transformations.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a></dt>
-  <dd></dd>
+  <dd><p>The retrieved glyph image.</p>
+</dd>
 </dl>
 
 

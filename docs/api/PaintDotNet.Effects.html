@@ -92,11 +92,13 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.BitmapEffect.html">BitmapEffect</a></dt>
-      <dd></dd>
+      <dd><p>The base class for effects that run on the CPU.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.BitmapEffectInitializeInfo.html">BitmapEffectInitializeInfo</a></dt>
-      <dd></dd>
+      <dd><p>Allows the effect host to provide initialization information for an effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.BitmapEffectOptions.html">BitmapEffectOptions</a></dt>
@@ -124,7 +126,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Effect.html">Effect</a></dt>
-      <dd></dd>
+      <dd><p>The base class for &quot;classic&quot; effects.<br>
+<br>
+<b>NOTE:</b> The classic effect system is being deprecated. It is strongly recommended that you derive from <a class="xref" href="PaintDotNet.Effects.BitmapEffect.html">BitmapEffect</a> instead.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectBase.html">EffectBase</a></dt>
@@ -132,7 +137,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectCategoryAttribute.html">EffectCategoryAttribute</a></dt>
-      <dd></dd>
+      <dd><p>Allows you to categorize an Effect to place it in the appropriate menu
+within Paint.NET.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigDialog.html">EffectConfigDialog</a></dt>
@@ -196,7 +203,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.Effect-1.html">Effect&lt;TToken&gt;</a></dt>
-      <dd></dd>
+      <dd><p>The base class for &quot;classic&quot; effects with a strongly-typed <a class="xref" href="PaintDotNet.Effects.EffectConfigToken.html">EffectConfigToken</a>.<br>
+<br>
+<b>NOTE:</b> It is strongly recommended that you derive from <a class="xref" href="PaintDotNet.Effects.BitmapEffect-1.html">BitmapEffect&lt;TToken&gt;</a> instead.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectsObjectRefExtensions.html">EffectsObjectRefExtensions</a></dt>
@@ -208,7 +218,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.PropertyBasedEffect.html">PropertyBasedEffect</a></dt>
-      <dd></dd>
+      <dd><p>The base class for &quot;classic&quot; effects that use IndirectUI.<br>
+<br>
+<b>NOTE:</b> It is strongly recommended that you derive from <a class="xref" href="PaintDotNet.Effects.PropertyBasedBitmapEffect.html">PropertyBasedBitmapEffect</a> instead.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.PropertyBasedEffectConfigToken.html">PropertyBasedEffectConfigToken</a></dt>
@@ -247,7 +260,9 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderInfo.html">IBitmapEffectRenderInfo</a></dt>
-      <dd></dd>
+      <dd><p>Used by a <a class="xref" href="PaintDotNet.Effects.BitmapEffect.html">BitmapEffect</a>'s implementation of <a class="xref" href="PaintDotNet.Effects.BitmapEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_BitmapEffect_OnInitializeRenderInfo_PaintDotNet_Effects_IBitmapEffectRenderInfo_">OnInitializeRenderInfo(IBitmapEffectRenderInfo)</a>
+to configure its rendering.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderer.html">IBitmapEffectRenderer</a></dt>
@@ -279,11 +294,13 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
-      <dd></dd>
+      <dd><p>Contains environment information for an effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.html">IEffectEnvironment2</a></dt>
-      <dd></dd>
+      <dd><p>Contains environment information for an effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IEffectInfo.html">IEffectInfo</a></dt>
@@ -311,7 +328,9 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IEffectRenderer.html">IEffectRenderer</a></dt>
-      <dd></dd>
+      <dd><p>The base interface used by an effect host to drive the rendering for an effect.
+These are created by calling <a class="xref" href="PaintDotNet.Effects.IEffect.CreateRenderer.html#PaintDotNet_Effects_IEffect_CreateRenderer_System_Type_">CreateRenderer(Type)</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IEffectSelectionInfo.html">IEffectSelectionInfo</a></dt>
@@ -331,7 +350,8 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.IReadOnlyBitmapEffectRenderInfo.html">IReadOnlyBitmapEffectRenderInfo</a></dt>
-      <dd></dd>
+      <dd><p>Provides the rendering configuration information specified by the <a class="xref" href="PaintDotNet.Effects.BitmapEffect.html">BitmapEffect</a>.</p>
+</dd>
     </dl>
     <h3 id="enums">
 Enums
@@ -346,7 +366,9 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectCategory.html">EffectCategory</a></dt>
-      <dd></dd>
+      <dd><p>Categories for effects that determine their placement within
+Paint.NET's menu hierarchy.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Effects.EffectFlags.html">EffectFlags</a></dt>

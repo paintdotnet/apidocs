@@ -120,7 +120,8 @@ Method CreateDocumentMetadata
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an empty, mutable metadata container for use with an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,11 @@ Method CreateDocumentMetadata
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeDocumentFactory1_CreateDocumentMetadata_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method is useful when you need to create the document metadata before creating the document.
+You can use the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentMetadata.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeDocumentMetadata_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeDocumentMetadata_">ReplaceFrom(IReadOnlyFileTypeDocumentMetadata)</a>
+method to replace the data in a metadata container with the data from another metadata container.</p>
+</div>
 
 
 

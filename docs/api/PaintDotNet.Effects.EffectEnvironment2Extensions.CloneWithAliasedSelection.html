@@ -120,7 +120,10 @@ Method CloneWithAliasedSelection
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a copy of the environment for use with another effect instance, while switching the selection
+data to aliased mode. This permits an effect that is hosting another effect to specify antialiased
+selection quality, but to have the inner effect use aliased selection quality.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +133,15 @@ Method CloneWithAliasedSelection
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>environment</code> <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.html">IEffectEnvironment2</a></dt>
-  <dd></dd>
+  <dd><p>The environment.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectEnvironment2.html">IEffectEnvironment2</a></dt>
-  <dd></dd>
+  <dd><p>The new environment.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +150,9 @@ Method CloneWithAliasedSelection
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_EffectEnvironment2Extensions_CloneWithAliasedSelection_PaintDotNet_Effects_IEffectEnvironment2__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><inheritdoc cref="M:PaintDotNet.Effects.EffectEnvironment2Extensions.Clone(PaintDotNet.Effects.IEffectEnvironment2)"></inheritdoc></p>
+</div>
 
 
 

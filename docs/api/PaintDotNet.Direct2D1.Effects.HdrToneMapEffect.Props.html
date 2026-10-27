@@ -184,11 +184,19 @@ Class HdrToneMapEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_HdrToneMapEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.DisplayMode.html#PaintDotNet_Direct2D1_Effects_HdrToneMapEffect_Props_DisplayMode">DisplayMode</a></dt>
-    <dd></dd>
+    <dd><p>When set to <a class="xref" href="PaintDotNet.Direct2D1.HdrToneMapDisplayMode.html#PaintDotNet_Direct2D1_HdrToneMapDisplayMode_Hdr">Hdr</a>, the tone mapping curve is adjusted to better fit the fit the behavior of common HDR displays.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_HdrToneMapEffect_Props_Input">Input</a></dt>
@@ -196,11 +204,13 @@ Class HdrToneMapEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.InputMaxLuminance.html#PaintDotNet_Direct2D1_Effects_HdrToneMapEffect_Props_InputMaxLuminance">InputMaxLuminance</a></dt>
-    <dd></dd>
+    <dd><p>The maximum light level (or MaxCLL) of the image, in nits.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.OutputMaxLuminance.html#PaintDotNet_Direct2D1_Effects_HdrToneMapEffect_Props_OutputMaxLuminance">OutputMaxLuminance</a></dt>
-    <dd></dd>
+    <dd><p>The white level of the output image, in nits.</p>
+</dd>
   </dl>
 
 

@@ -185,11 +185,19 @@ Class PdnReduceNoiseEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the input and output.<br>
+The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseAlphaMode.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseAlphaMode_Premultiplied">Premultiplied</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.EdgeMode.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEffect_Props_EdgeMode">EdgeMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how sampling beyond the edge of the image should be performed.<br>
+If this value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEdgeMode.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEdgeMode_Transparent">Transparent</a>, the effect pads the image with transparent
+pixels as it applies the kernel, resulting in a soft edge. The output will be larger than the input by
+approximately the kernel radius, in pixels.<br>
+If set to another edge mode, the effect clamps the output to the size of the input image.<br>
+The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEdgeMode.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEdgeMode_Mirror">Mirror</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEffect_Props_Input">Input</a></dt>
@@ -197,11 +205,15 @@ Class PdnReduceNoiseEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.Radius.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEffect_Props_Radius">Radius</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the radius of the noise reduction filter.<br>
+The range is [0, 50], and the default value is 6.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnReduceNoiseEffect.Props.Strength.html#PaintDotNet_Effects_Gpu_PdnReduceNoiseEffect_Props_Strength">Strength</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the strength of the noise reduction.<br>
+The range is [0.01, 1], and the default is 0.4.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

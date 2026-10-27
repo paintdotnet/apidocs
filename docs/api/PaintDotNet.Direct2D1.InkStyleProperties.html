@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct InkStyleProperties ">
       
-      
+      <meta name="description" content="Defines the general pen tip shape and the transform used in an  object. D2D1_INK_STYLE_PROPERTIES">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Struct InkStyleProperties
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines the general pen tip shape and the transform used in an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceInkStyle.html">IDeviceInkStyle</a> object.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_3/ns-d2d1_3-d2d1_ink_style_properties">D2D1_INK_STYLE_PROPERTIES</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,11 +148,14 @@ Struct InkStyleProperties
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.InkStyleProperties.NibShape.html#PaintDotNet_Direct2D1_InkStyleProperties_NibShape">NibShape</a></dt>
-    <dd></dd>
+    <dd><p>The pre-transform shape of the nib (pen tip) used to draw a given ink object.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.InkStyleProperties.NibTransform.html#PaintDotNet_Direct2D1_InkStyleProperties_NibTransform">NibTransform</a></dt>
-    <dd></dd>
+    <dd><p>The transform applied to the nib. Note that the translation components of the
+transform matrix are ignored for the purposes of rendering.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

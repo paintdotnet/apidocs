@@ -1841,7 +1841,8 @@ Class EffectConfigForm
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the token that it passed to the effect to configure its rendering parameters.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.UseAppThemeColorsDefault.html#PaintDotNet_Effects_EffectConfigForm_UseAppThemeColorsDefault">UseAppThemeColorsDefault</a></dt>
@@ -1861,7 +1862,11 @@ Class EffectConfigForm
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnCreateInitialToken.html#PaintDotNet_Effects_EffectConfigForm_OnCreateInitialToken">OnCreateInitialToken()</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to create the initial token at construction time. The token
+is usually populated with the default values for the effect.<br>
+This method is called before the derived class's constructor, and before the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Effect.html#PaintDotNet_Effects_EffectConfigForm_Effect">Effect</a>
+property has been set.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnDispose.html#PaintDotNet_Effects_EffectConfigForm_OnDispose_System_Boolean_">OnDispose(bool)</a></dt>
@@ -1881,23 +1886,37 @@ Class EffectConfigForm
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnTokenChanged.html#PaintDotNet_Effects_EffectConfigForm_OnTokenChanged">OnTokenChanged()</a></dt>
-    <dd></dd>
+    <dd><p>Raises the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.TokenChanged.html">TokenChanged</a> event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnUpdateDialogFromToken.html#PaintDotNet_Effects_EffectConfigForm_OnUpdateDialogFromToken_PaintDotNet_Effects_EffectConfigToken_">OnUpdateDialogFromToken(EffectConfigToken)</a></dt>
-    <dd></dd>
+    <dd><p>This method must be overridden in derived classes. Use the data from the given token object
+to initialize or update the dialog's UI.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnUpdateTokenFromDialog.html#PaintDotNet_Effects_EffectConfigForm_OnUpdateTokenFromDialog_PaintDotNet_Effects_EffectConfigToken_">OnUpdateTokenFromDialog(EffectConfigToken)</a></dt>
-    <dd></dd>
+    <dd><p>Called when the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a> should be synchronized with the dialog's controls.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.UpdateDialogFromToken.html#PaintDotNet_Effects_EffectConfigForm_UpdateDialogFromToken">UpdateDialogFromToken()</a></dt>
-    <dd></dd>
+    <dd><p>Called by the derived class to indicate that the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a> has been modified,
+and the dialog should be synchronized with it.<br>
+It is not necessary to call this method if you set the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a> property;
+it is only necessary when modifying the token in-place.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.UpdateTokenFromDialog.html#PaintDotNet_Effects_EffectConfigForm_UpdateTokenFromDialog">UpdateTokenFromDialog()</a></dt>
-    <dd></dd>
+    <dd><p>Called by the derived class to indicate that the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a> should be updated,
+usually in response to changes the user has made to the dialog's controls (e.g. sliders,
+checkboxes, etc.).<br>
+This will result in a call to the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnUpdateTokenFromDialog.html#PaintDotNet_Effects_EffectConfigForm_OnUpdateTokenFromDialog_PaintDotNet_Effects_EffectConfigToken_">OnUpdateTokenFromDialog(EffectConfigToken)</a> method, followed by a
+call to <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.OnTokenChanged.html#PaintDotNet_Effects_EffectConfigForm_OnTokenChanged">OnTokenChanged()</a> which will raise the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.TokenChanged.html">TokenChanged</a>
+event.<br></p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -1905,7 +1924,8 @@ Class EffectConfigForm
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.EffectConfigForm.TokenChanged.html">TokenChanged</a></dt>
-    <dd></dd>
+    <dd><p>Occurs when the <a class="xref" href="PaintDotNet.Effects.EffectConfigForm.Token.html#PaintDotNet_Effects_EffectConfigForm_Token">Token</a> property is set or modified.</p>
+</dd>
   </dl>
 
 

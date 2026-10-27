@@ -185,19 +185,27 @@ Class PixelOp
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PixelOp.Apply.html#PaintDotNet_PixelOp_Apply_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Size_">Apply(Surface, Point, Surface, Point, Size)</a></dt>
-    <dd></dd>
+    <dd><p>This version of Apply has the liberty to decompose the rectangle of interest
+or do whatever types of optimizations it wants to with it. This is generally
+done to split the Apply operation into multiple threads.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PixelOp.Apply.html#PaintDotNet_PixelOp_Apply_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Int32_">Apply(Surface, Point, Surface, Point, int)</a></dt>
-    <dd></dd>
+    <dd><p>This version of Apply will perform on a scanline, not just a rectangle.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PixelOp.ApplyBase.html#PaintDotNet_PixelOp_ApplyBase_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Size_">ApplyBase(Surface, Point, Surface, Point, Size)</a></dt>
-    <dd></dd>
+    <dd><p>Provides a default implementation for performing dst = F(dst, src) or F(src) over some rectangle
+of interest. May be slightly faster than calling the other multi-parameter Apply method, as less
+variables are used in the implementation, thus inducing less register pressure.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PixelOp.ComputeAlpha.html#PaintDotNet_PixelOp_ComputeAlpha_System_Byte_System_Byte_">ComputeAlpha(byte, byte)</a></dt>
-    <dd></dd>
+    <dd><p>Computes alpha for r OVER l operation.</p>
+</dd>
   </dl>
 
 

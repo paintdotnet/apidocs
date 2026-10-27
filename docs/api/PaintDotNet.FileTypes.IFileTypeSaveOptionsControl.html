@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeSaveOptionsControl ">
       
-      
+      <meta name="description" content="This interface is implemented by , which is used to implement a custom Save Options UI for a . The control is then returned by . The  must have also provided a  to its base constructor with  set to true.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,12 @@ Interface IFileTypeSaveOptionsControl
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This interface is implemented by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.html">FileTypeSaveOptionsControl</a>, which is used to
+implement a custom Save Options UI for a <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>. The control is then
+returned by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsControl.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsControl">OnCreateSaveOptionsControl()</a>. The <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>
+must have also provided a <a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions.html">FileTypeOptions</a> to its base constructor with
+<a class="xref" href="PaintDotNet.FileTypes.FileTypeOptions1.IsSavingConfigurable.html#PaintDotNet_FileTypes_FileTypeOptions1_IsSavingConfigurable">IsSavingConfigurable</a> set to <code>true</code>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -126,7 +131,8 @@ Interface IFileTypeSaveOptionsControl
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_IFileTypeSaveOptionsControl_Options">Options</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the save options being edited by this control.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -134,7 +140,9 @@ Interface IFileTypeSaveOptionsControl
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.OptionsChanged.html">OptionsChanged</a></dt>
-    <dd></dd>
+    <dd><p>Occurs when the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_IFileTypeSaveOptionsControl_Options">Options</a> property has changed, either by setting the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_IFileTypeSaveOptionsControl_Options">Options</a>
+property or through user interaction with the control.</p>
+</dd>
   </dl>
 
 

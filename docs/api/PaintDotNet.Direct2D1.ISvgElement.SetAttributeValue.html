@@ -120,7 +120,8 @@ Method SetAttributeValue
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets an attribute of this element using a string.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,11 +131,14 @@ Method SetAttributeValue
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>Name of the attribute to set.</p>
+</dd>
   <dt><code>type</code> <a class="xref" href="PaintDotNet.Direct2D1.SvgAttributeStringType.html">SvgAttributeStringType</a></dt>
-  <dd></dd>
+  <dd><p>The type of the string.</p>
+</dd>
   <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The new value of the attribute.</p>
+</dd>
 </dl>
 
 
@@ -144,6 +148,10 @@ Method SetAttributeValue
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributeStringType_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Throws an exception if the attribute name is not valid on this element.<br>
+Throws an exception if the attribute cannot be expressed as the specified type.</p>
+</div>
 
 
 
@@ -155,7 +163,8 @@ Method SetAttributeValue
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets an attribute of this element using a POD (plain old date) type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -165,11 +174,14 @@ Method SetAttributeValue
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>Name of the attribute to set.</p>
+</dd>
   <dt><code>type</code> <a class="xref" href="PaintDotNet.Direct2D1.SvgAttributePodType.html">SvgAttributePodType</a></dt>
-  <dd></dd>
+  <dd><p>The POD type of the attribute.</p>
+</dd>
   <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A buffer with the new value of the attribute.</p>
+</dd>
 </dl>
 
 
@@ -179,6 +191,10 @@ Method SetAttributeValue
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributePodType_System_ReadOnlySpan_System_Byte___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Throws an exception if the attribute name is not valid on this element.<br>
+Throws an exception if the attribute cannot be expressed as the specified type.</p>
+</div>
 
 
 
@@ -190,7 +206,9 @@ Method SetAttributeValue
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets an attribute of this element using an object reference. A given attribute object may only set on one element in
+one attribute location at a time.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -200,9 +218,11 @@ Method SetAttributeValue
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>Name of the attribute to set.</p>
+</dd>
   <dt><code>value</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgAttribute.html">ISvgAttribute</a></dt>
-  <dd></dd>
+  <dd><p>The new value of the attribute.</p>
+</dd>
 </dl>
 
 
@@ -212,6 +232,11 @@ Method SetAttributeValue
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_SetAttributeValue_System_String_PaintDotNet_Direct2D1_ISvgAttribute__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Throws an exception if the attribute name is not valid on this element.<br>
+Throws an exception if the attribute cannot be expressed as the specified interface type.<br>
+Throws an exception if the attribute object is already set on an element.</p>
+</div>
 
 
 

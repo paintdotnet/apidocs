@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IGdiInteropDeviceContext ">
       
-      
+      <meta name="description" content="Provides access to a device context that can accept GDI drawing commands. See ID2D1GdiInteropRenderTarget for more information.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Interface IGdiInteropDeviceContext
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides access to a device context that can accept GDI drawing commands.<br>
+See <a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1gdiinteroprendertarget">ID2D1GdiInteropRenderTarget</a>
+for more information.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,17 +133,26 @@ Interface IGdiInteropDeviceContext
 
 
 
+  <h2 id="PaintDotNet_Direct2D1_IGdiInteropDeviceContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>To retrieve an instance of this interface, call <code>CreateRef&lt;IGdiInteropDeviceContext&gt;()</code> on
+any <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a>. The device context must be GDI-compatible.<br>
+<br>
+Note that the <code>CreateRef()</code> call will always succeed; if the device context doesn't support the
+interface, calling <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a> will fail.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the GDI device context associated with this Direct2D device context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.ReleaseDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_ReleaseDC_System_Nullable_PaintDotNet_Rendering_RectInt32___">ReleaseDC(in RectInt32?)</a></dt>
-    <dd></dd>
+    <dd><p>Indicates that drawing with the GDI device context retrieved using the <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a> method is finished.</p>
+</dd>
   </dl>
 
 

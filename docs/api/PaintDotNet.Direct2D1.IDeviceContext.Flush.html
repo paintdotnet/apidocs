@@ -120,7 +120,8 @@ Method Flush
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Executes all pending drawing commands.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -135,6 +136,10 @@ Method Flush
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_Flush_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This command does not flush the Direct3D device context that is associated with the render target.<br>
+Calling this method resets the error state of the device context.</p>
+</div>
 
 
 

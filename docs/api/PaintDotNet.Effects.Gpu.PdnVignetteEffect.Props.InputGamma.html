@@ -120,7 +120,11 @@ Property InputGamma
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Indicates the gamma of the input image, and for the output. The effect works in linear gamma space, so if the input image is
+known to be linear, the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteInputGamma.html#PaintDotNet_Effects_Gpu_PdnVignetteInputGamma_Linear">Linear</a> value should be used to prevent sRGB to linear conversions
+from being performed on the input, and linear to sRGB conversions being performed for the output.<br>
+The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteInputGamma.html#PaintDotNet_Effects_Gpu_PdnVignetteInputGamma_Srgb">Srgb</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

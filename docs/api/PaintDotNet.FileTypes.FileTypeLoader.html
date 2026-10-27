@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FileTypeLoader ">
       
-      
+      <meta name="description" content="The base class for s. These are created by a  that supports loading, and are returned from their  implementation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Class FileTypeLoader
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.html">IFileTypeLoader</a>s. These are created by a <span class="xref">PaintDotNet.FileTypes.FileTypeLoader.FileType</span> that supports
+loading, and are returned from their <a class="xref" href="PaintDotNet.FileTypes.FileType.OnCreateLoader.html#PaintDotNet_FileTypes_FileType_OnCreateLoader">OnCreateLoader()</a> implementation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -182,7 +184,8 @@ Class FileTypeLoader
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.-ctor.html#PaintDotNet_FileTypes_FileTypeLoader__ctor_PaintDotNet_FileTypes_IFileType_">FileTypeLoader(IFileType)</a></dt>
-    <dd></dd>
+    <dd><p>The base constructor for the <a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.html">FileTypeLoader</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -194,7 +197,9 @@ Class FileTypeLoader
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.Services.html#PaintDotNet_FileTypes_FileTypeLoader_Services">Services</a></dt>
-    <dd></dd>
+    <dd><p>Provides access to the services provided by the host application. This is the
+same services object that the <span class="xref">PaintDotNet.FileTypes.FileTypeLoader.FileType</span> has access to.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -206,11 +211,13 @@ Class FileTypeLoader
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.Load.html#PaintDotNet_FileTypes_FileTypeLoader_Load_System_IO_Stream_">Load(Stream)</a></dt>
-    <dd></dd>
+    <dd><p>Loads an image from the specified input stream and returns it as an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeLoader.OnLoad.html#PaintDotNet_FileTypes_FileTypeLoader_OnLoad_PaintDotNet_FileTypes_IFileTypeLoadContext_">OnLoad(IFileTypeLoadContext)</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to perform the actual loading operation.</p>
+</dd>
   </dl>
 
 

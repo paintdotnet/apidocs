@@ -120,7 +120,8 @@ Method DrawGdiMetafile
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draw a metafile to the device context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,9 +131,11 @@ Method DrawGdiMetafile
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>gdiMetafile</code> <a class="xref" href="PaintDotNet.Direct2D1.IGdiMetafile.html">IGdiMetafile</a></dt>
-  <dd></dd>
+  <dd><p>The metafile to draw.</p>
+</dd>
   <dt><code>targetOffset</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a>?</dt>
-  <dd></dd>
+  <dd><p>The offset from the upper left corner of the render target.</p>
+</dd>
 </dl>
 
 
@@ -153,7 +156,8 @@ Method DrawGdiMetafile
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a metafile to the device context using the given source and destination rectangles.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -163,11 +167,14 @@ Method DrawGdiMetafile
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>gdiMetafile</code> <a class="xref" href="PaintDotNet.Direct2D1.IGdiMetafile.html">IGdiMetafile</a></dt>
-  <dd></dd>
+  <dd><p>The metafile to draw.</p>
+</dd>
   <dt><code>destinationRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
-  <dd></dd>
+  <dd><p>The rectangle in the target where the metafile will be drawn, relative to the upper left corner (defined in DIPs) of the render target. If null is specified, the destination rectangle is {0, 0, w, h}, where w and h are the width and height of the metafile as reported by <a class="xref" href="PaintDotNet.Direct2D1.IGdiMetafile.Bounds.html#PaintDotNet_Direct2D1_IGdiMetafile_Bounds">Bounds</a>.</p>
+</dd>
   <dt><code>sourceRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
-  <dd></dd>
+  <dd><p>The rectangle of the source metafile that will be drawn, relative to the upper left corner (defined in DIPs) of the metafile. If null is specified, the source rectangle is the value returned by <a class="xref" href="PaintDotNet.Direct2D1.IGdiMetafile.SourceBounds.html#PaintDotNet_Direct2D1_IGdiMetafile_SourceBounds">SourceBounds</a>.</p>
+</dd>
 </dl>
 
 

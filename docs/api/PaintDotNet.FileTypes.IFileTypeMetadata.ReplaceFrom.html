@@ -120,7 +120,9 @@ Method ReplaceFrom
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Replaces the contents of every metadata section in this metadata container with the values from the
+corresponding section of another metadata container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +132,8 @@ Method ReplaceFrom
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.html">IReadOnlyFileTypeMetadata</a></dt>
-  <dd></dd>
+  <dd><p>The metadata container to copy from.</p>
+</dd>
 </dl>
 
 
@@ -140,7 +143,22 @@ Method ReplaceFrom
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeMetadata_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Each of this container's sections (per <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.SectionKinds.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata_SectionKinds">SectionKinds</a>) is replaced from the
+source's section of the same kind, so the source must have at least the sections that this container has; sections
+that exist only in <code class="paramref">source</code> are ignored. For example, calling
+<code>layerMetadata.ReplaceFrom(documentMetadata)</code> is legal because <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayerMetadata.html">IFileTypeLayerMetadata</a> only has
+the <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html#PaintDotNet_FileTypes_FileTypeMetadataSectionKind_Custom">Custom</a> section, which <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentMetadata.html">IFileTypeDocumentMetadata</a> also
+has. The reverse, <code>documentMetadata.ReplaceFrom(layerMetadata)</code>, throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>
+because the layer metadata does not have the Exif, Hdr, Iptc, or Xmp sections that the document metadata needs.</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+  <dd><p>Thrown if <code class="paramref">source</code> does not have all of the metadata sections that this metadata container has.</p>
+</dd>
+</dl>
 
 
 

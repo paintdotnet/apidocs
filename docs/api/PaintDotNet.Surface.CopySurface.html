@@ -120,7 +120,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left corner of this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,8 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,10 @@ Method CopySurface
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
 
 
 
@@ -248,7 +254,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to a location within this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -258,9 +265,11 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
   <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
-  <dd></dd>
+  <dd><p>The offset within this surface to start copying pixels to. This will map to (0,0) in the source.</p>
+</dd>
 </dl>
 
 
@@ -270,6 +279,10 @@ Method CopySurface
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
 
 
 
@@ -314,7 +327,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -324,9 +338,14 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
   <dt><code>sourceRoi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
-  <dd></dd>
+  <dd><p>The region of the source to copy from. The upper left of this rectangle
+will be mapped to (0,0) on this surface.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</dd>
 </dl>
 
 
@@ -347,7 +366,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies the contents of the given surface to the upper left of this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -357,9 +377,16 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Rendering.ISurface-1.html">ISurface</a>&lt;<a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a>&gt;</dt>
-  <dd></dd>
+  <dd><param name="source">The surface to copy pixels from.
+</dd>
   <dt><code>sourceRoi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
-  <dd></dd>
+  <dd><param name="sourceRoi">
+            The region of the source to copy from. The upper left of this rectangle
+            will be mapped to (0,0) on this surface.
+            The source surface does not need to have the same dimensions as this surface. Clipping
+            will be handled automatically. No resizing will be done.
+            
+</dd>
 </dl>
 
 
@@ -446,7 +473,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies a rectangular region of the given surface to a specific location on this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -456,11 +484,14 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
   <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
-  <dd></dd>
+  <dd><p>The location on this surface to start copying pixels to.</p>
+</dd>
   <dt><code>srcRect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
-  <dd></dd>
+  <dd><p>The region of the source surface to copy pixels from.</p>
+</dd>
 </dl>
 
 
@@ -470,6 +501,11 @@ Method CopySurface
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Rectangle__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>sourceRoi.Location will be mapped to dstOffset.Location.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
 
 
 
@@ -586,7 +622,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies a region of the given surface to this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -596,9 +633,11 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
   <dt><code>region</code> <a class="xref" href="PaintDotNet.PdnRegion.html">PdnRegion</a></dt>
-  <dd></dd>
+  <dd><p>The region to clip copying to.</p>
+</dd>
 </dl>
 
 
@@ -608,6 +647,12 @@ Method CopySurface
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_PaintDotNet_PdnRegion__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The upper left corner of the source surface will be mapped to the upper left of this
+surface, and only those pixels that are defined by the region will be copied.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
 
 
 
@@ -718,7 +763,8 @@ Method CopySurface
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies a region of the given surface to this surface.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -728,13 +774,17 @@ Method CopySurface
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The surface to copy pixels from.</p>
+</dd>
   <dt><code>region</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a>[]</dt>
-  <dd></dd>
+  <dd><p>The region to clip copying to.</p>
+</dd>
   <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The starting index within <code class="paramref">region</code>.</p>
+</dd>
   <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of elements to use from <code class="paramref">region</code>.</p>
+</dd>
 </dl>
 
 
@@ -744,6 +794,12 @@ Method CopySurface
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_CopySurface_PaintDotNet_Surface_System_Drawing_Rectangle___System_Int32_System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The upper left corner of the source surface will be mapped to the upper left of this
+surface, and only those pixels that are defined by the region will be copied.
+The source surface does not need to have the same dimensions as this surface. Clipping
+will be handled automatically. No resizing will be done.</p>
+</div>
 
 
 

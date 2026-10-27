@@ -120,7 +120,10 @@ Method CreateTransformNodeFromEffect
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Wraps an effect graph into a single transform node and then inserted into a transform graph. This allows an effect to
+aggregate other effects. This will typically be done in order to allow the effect properties to be re-expressed with a
+different contract, or to allow different components to integrate each-other’s effects.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

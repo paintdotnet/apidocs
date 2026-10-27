@@ -120,7 +120,8 @@ Method DrawColorBitmapGlyphRun
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a color bitmap glyph run using one of the bitmap formats.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,23 @@ Method DrawColorBitmapGlyphRun
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>glyphImageFormats</code> <a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html">GlyphImageFormats</a></dt>
-  <dd></dd>
+  <dd><p>Specifies the format of the glyph image. The supported formats are <a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html#PaintDotNet_DirectWrite_GlyphImageFormats_Png">Png</a>,
+<a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html#PaintDotNet_DirectWrite_GlyphImageFormats_Jpeg">Jpeg</a>, <a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html#PaintDotNet_DirectWrite_GlyphImageFormats_Tiff">Tiff</a>, or <a class="xref" href="PaintDotNet.DirectWrite.GlyphImageFormats.html#PaintDotNet_DirectWrite_GlyphImageFormats_PremultipliedBgra32">PremultipliedBgra32</a>.
+This method will result in an error if the color glyph run does not contain the requested format. Only one format can be specified
+at a time, combinations of flags are not valid input.</p>
+</dd>
   <dt><code>baselineOrigin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The origin of the baseline for the glyph run.</p>
+</dd>
   <dt><code>glyphRun</code> <a class="xref" href="PaintDotNet.DirectWrite.GlyphRun.html">GlyphRun</a></dt>
-  <dd></dd>
+  <dd><p>The glyphs to render.</p>
+</dd>
   <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
-  <dd></dd>
+  <dd><p>Indicates the measuring method.</p>
+</dd>
   <dt><code>bitmapSnapOption</code> <a class="xref" href="PaintDotNet.Direct2D1.ColorBitmapGlyphSnapOption.html">ColorBitmapGlyphSnapOption</a></dt>
-  <dd></dd>
+  <dd><p>Specifies the pixel snapping policy when rendering color bitmap glyphs.</p>
+</dd>
 </dl>
 
 

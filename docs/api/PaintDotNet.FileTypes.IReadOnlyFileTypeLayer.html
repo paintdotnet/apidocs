@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IReadOnlyFileTypeLayer ">
       
-      
+      <meta name="description" content="Represents a read-only layer within a file type document.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IReadOnlyFileTypeLayer
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a read-only layer within a file type document.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -136,31 +137,41 @@ Interface IReadOnlyFileTypeLayer
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.BlendMode.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_BlendMode">BlendMode</a></dt>
-    <dd></dd>
+    <dd><p>Gets the blend mode of the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.Metadata.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_Metadata">Metadata</a></dt>
-    <dd></dd>
+    <dd><p>Gets the metadata that is stored in the layer. This is distinct from the document-level metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.Name.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_Name">Name</a></dt>
-    <dd></dd>
+    <dd><p>Gets the name of the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.Opacity.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_Opacity">Opacity</a></dt>
-    <dd></dd>
+    <dd><p>Gets the opacity of the layer. The range is [0, 1], where 0 is fully transparent
+(effectively invisible) and 1 is fully opaque. This value is used to modulate
+the alpha values for pixels in the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.PixelFormat.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_PixelFormat">PixelFormat</a></dt>
-    <dd></dd>
+    <dd><p>Gets the pixel format of the layer. This will always be the same as the containing
+document's pixel format.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.Size.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_Size">Size</a></dt>
-    <dd></dd>
+    <dd><p>Gets the size, in pixels, of the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.Visible.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_Visible">Visible</a></dt>
-    <dd></dd>
+    <dd><p>Gets a flag indicating whether the layer is visible or not.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -168,7 +179,8 @@ Interface IReadOnlyFileTypeLayer
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeLayer.GetBitmap.html#PaintDotNet_FileTypes_IReadOnlyFileTypeLayer_GetBitmap">GetBitmap()</a></dt>
-    <dd></dd>
+    <dd><p>Gets a bitmap source that renders the layer.</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPngFileTypeSaveOptions ">
       
-      
+      <meta name="description" content="Defines the options available when saving a PNG file with .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IPngFileTypeSaveOptions
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines the options available when saving a PNG file with <a class="xref" href="PaintDotNet.FileTypes.IPngFileType.html">IPngFileType</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -129,23 +130,42 @@ Interface IPngFileTypeSaveOptions
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.AlphaThreshold.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_AlphaThreshold">AlphaThreshold</a></dt>
-    <dd></dd>
+    <dd><p>When <a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.PixelFormat.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_PixelFormat">PixelFormat</a> is set to <a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html#PaintDotNet_FileTypes_PngPixelFormat_Indexed8">Indexed8</a>, pixels with an alpha value below
+this value will be considered transparent.<br>
+<br>
+The default value is 128.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.DitherLevel.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_DitherLevel">DitherLevel</a></dt>
-    <dd></dd>
+    <dd><p>When <a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.PixelFormat.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_PixelFormat">PixelFormat</a> is set to an indexed pixel format (<a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html#PaintDotNet_FileTypes_PngPixelFormat_Indexed8">Indexed8</a> or lower),
+this configures the amount of dithering.<br>
+<br>
+The range of this property is [0, 8]. The default value is 7.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.Interlaced.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_Interlaced">Interlaced</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets whether the PNG should be saved with interlacing. This does not affect how the image
+appears once it has been loaded, but it may improve how it looks while it is loading on a slow
+network or Internet connection.<br>
+<br>
+The default value is <code>false</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.PixelFormat.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_PixelFormat">PixelFormat</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the pixel format and bit-depth to save the PNG at. The default value is <a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html#PaintDotNet_FileTypes_PngPixelFormat_AutoDetect">AutoDetect</a>,
+which chooses the <a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html">PngPixelFormat</a> that produces the smallest file size without losing any information.<br></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.QuantizationAlgorithm.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_QuantizationAlgorithm">QuantizationAlgorithm</a></dt>
-    <dd></dd>
+    <dd><p>When <a class="xref" href="PaintDotNet.FileTypes.IPngFileTypeSaveOptions.PixelFormat.html#PaintDotNet_FileTypes_IPngFileTypeSaveOptions_PixelFormat">PixelFormat</a> is set to an indexed pixel format (<a class="xref" href="PaintDotNet.FileTypes.PngPixelFormat.html#PaintDotNet_FileTypes_PngPixelFormat_Indexed8">Indexed8</a> or lower),
+this configures which quantization algorithm is used.<br>
+<br>
+The default value is <a class="xref" href="PaintDotNet.Imaging.ColorQuantizationAlgorithm.html#PaintDotNet_Imaging_ColorQuantizationAlgorithm_Octree">Octree</a>.</p>
+</dd>
   </dl>
 
 

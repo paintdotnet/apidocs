@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ITransform ">
       
-      
+      <meta name="description" content="Represents the base interface for all of the transforms implemented by the transform author. ID2D1Transform">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface ITransform
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents the base interface for all of the transforms implemented by the transform author.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform">ID2D1Transform</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -142,15 +144,19 @@ Interface ITransform
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransform.MapInputRectsToOutputRect.html#PaintDotNet_Direct2D1_ITransform_MapInputRectsToOutputRect_System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__PaintDotNet_Rendering_RectInt32__PaintDotNet_Rendering_RectInt32__">MapInputRectsToOutputRect(ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;RectInt32&gt;, out RectInt32, out RectInt32)</a></dt>
-    <dd></dd>
+    <dd><p>Performs the inverse mapping to MapOutputRectToInputRects.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransform.MapInvalidRect.html#PaintDotNet_Direct2D1_ITransform_MapInvalidRect_System_Int32_PaintDotNet_Rendering_RectInt32_PaintDotNet_Rendering_RectInt32__">MapInvalidRect(int, RectInt32, out RectInt32)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the input rectangles for this rendering pass into the transform.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransform.MapOutputRectToInputRects.html#PaintDotNet_Direct2D1_ITransform_MapOutputRectToInputRects_PaintDotNet_Rendering_RectInt32_System_Span_PaintDotNet_Rendering_RectInt32__">MapOutputRectToInputRects(RectInt32, Span&lt;RectInt32&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Allows a transform to state how it would map a rectangle requested on its output to a set of sample
+rectangles on its input.</p>
+</dd>
   </dl>
 
 

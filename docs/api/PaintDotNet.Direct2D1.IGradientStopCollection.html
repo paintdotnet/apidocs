@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IGradientStopCollection ">
       
-      
+      <meta name="description" content="Represents a collection of  objects for linear and radial gradient brushes. ID2D1GradientStopCollection ID2D1GradientStopCollection1">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Interface IGradientStopCollection
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a collection of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> objects for linear and radial gradient brushes.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection">ID2D1GradientStopCollection</a><br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1gradientstopcollection1">ID2D1GradientStopCollection1</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -142,35 +145,45 @@ Interface IGradientStopCollection
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.BufferPrecision.html#PaintDotNet_Direct2D1_IGradientStopCollection_BufferPrecision">BufferPrecision</a></dt>
-    <dd></dd>
+    <dd><p>Gets the precision of the gradient buffer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.ColorInterpolationGamma.html#PaintDotNet_Direct2D1_IGradientStopCollection_ColorInterpolationGamma">ColorInterpolationGamma</a></dt>
-    <dd></dd>
+    <dd><p>Indicates the gamma space in which the gradient stops are interpolated.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.ColorInterpolationMode.html#PaintDotNet_Direct2D1_IGradientStopCollection_ColorInterpolationMode">ColorInterpolationMode</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the color interpolation mode that the gradient stop collection uses.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.ExtendMode.html#PaintDotNet_Direct2D1_IGradientStopCollection_ExtendMode">ExtendMode</a></dt>
-    <dd></dd>
+    <dd><p>Indicates the behavior of the gradient outside the normalized gradient range.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.GammaTransformedGradientStops.html#PaintDotNet_Direct2D1_IGradientStopCollection_GammaTransformedGradientStops">GammaTransformedGradientStops</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the gradient stop values transformed into the color space specified by the ColorInterpolationGamma value.
+If the value is <a class="xref" href="PaintDotNet.Direct2D1.GradientStopGamma.html#PaintDotNet_Direct2D1_GradientStopGamma_Srgb">Srgb</a>, or if the CreateGradientStopCollection() overload which does not take a
+gamma parameter was used, then these will be the same as the values used when creating the collection.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.GradientStops.html#PaintDotNet_Direct2D1_IGradientStopCollection_GradientStops">GradientStops</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the original gradient stop values used when creating the collection.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.PostInterpolationSpace.html#PaintDotNet_Direct2D1_IGradientStopCollection_PostInterpolationSpace">PostInterpolationSpace</a></dt>
-    <dd></dd>
+    <dd><p>Gets the color space after interpolation has occurred.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.PreInterpolationSpace.html#PaintDotNet_Direct2D1_IGradientStopCollection_PreInterpolationSpace">PreInterpolationSpace</a></dt>
-    <dd></dd>
+    <dd><p>Gets the color space of the input colors as well as the space in which gradient stops are interpolated.</p>
+</dd>
   </dl>
 
 

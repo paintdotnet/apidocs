@@ -120,7 +120,10 @@ Property Opacity
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the opacity of the layer. The range is [0, 1], where 0 is fully transparent
+(effectively invisible) and 1 is fully opaque. This value is used to modulate
+the alpha values for pixels in the layer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,7 +143,16 @@ Property Opacity
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeLayer_Opacity_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>When setting this property, values outside the [0, 1] range will be clamped to that range.</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+  <dd><p>The value is either non-finite (e.g. infinity) or NaN.</p>
+</dd>
+</dl>
 
 
 

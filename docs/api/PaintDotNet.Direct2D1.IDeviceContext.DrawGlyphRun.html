@@ -120,7 +120,8 @@ Method DrawGlyphRun
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a series of glyphs to the device context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,20 @@ Method DrawGlyphRun
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>baselineOrigin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>Origin of first glyph in the series.</p>
+</dd>
   <dt><code>glyphRun</code> <a class="xref" href="PaintDotNet.DirectWrite.GlyphRun.html">GlyphRun</a></dt>
-  <dd></dd>
+  <dd><p>The glyphs to render.</p>
+</dd>
   <dt><code>glyphRunDescription</code> <a class="xref" href="PaintDotNet.DirectWrite.GlyphRunDescription.html">GlyphRunDescription</a></dt>
-  <dd></dd>
+  <dd><p>Supplementary glyph series information. Optional. Use the C# <code>default</code> keyword to omit this parameter.</p>
+</dd>
   <dt><code>foregroundBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>The brush that defines the text color.</p>
+</dd>
   <dt><code>measuringMode</code> <a class="xref" href="PaintDotNet.DirectWrite.TextMeasuringMode.html">TextMeasuringMode</a></dt>
-  <dd></dd>
+  <dd><p>The measuring mode of the glyph series, used to determine the advances and offsets.</p>
+</dd>
 </dl>
 
 
@@ -148,6 +154,10 @@ Method DrawGlyphRun
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_DrawGlyphRun_PaintDotNet_Rendering_Point2Float_PaintDotNet_DirectWrite_GlyphRun__PaintDotNet_DirectWrite_GlyphRunDescription__PaintDotNet_Direct2D1_IDeviceBrush_PaintDotNet_DirectWrite_TextMeasuringMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The glyphRunDescription is ignored when rendering, but can be useful for printing and serialization of rendering commands,
+such as to an XPS or SVG file.</p>
+</div>
 
 
 

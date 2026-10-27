@@ -120,7 +120,8 @@ Method TryGetKnownColorSpace
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Tries to identify the <a class="xref" href="PaintDotNet.Imaging.KnownColorSpace.html">KnownColorSpace</a> that this CICP color space exactly describes.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -136,7 +137,9 @@ Method TryGetKnownColorSpace
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p><code>true</code> and the known color space if this CICP color space exactly describes one; otherwise
+<code>false</code>.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,14 @@ Method TryGetKnownColorSpace
 
 
 
+<h4 class="section" id="PaintDotNet_Imaging_CicpColorSpace_TryGetKnownColorSpace_PaintDotNet_Imaging_KnownColorSpace___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Unlike <a class="xref" href="PaintDotNet.Imaging.CicpColorSpace.RecommendedColorSpace.html#PaintDotNet_Imaging_CicpColorSpace_RecommendedColorSpace">RecommendedColorSpace</a>, which maps any primaries to the best-fitting gamut, this
+is an exact identification: it succeeds only for full-range, identity-matrix code points whose
+primaries and transfer function are those of a known color space. Transfer code points that share
+the same function (e.g. <a class="xref" href="PaintDotNet.Imaging.CicpTransferCharacteristics.html#PaintDotNet_Imaging_CicpTransferCharacteristics_Bt2020TenBit">Bt2020TenBit</a> and
+<a class="xref" href="PaintDotNet.Imaging.CicpTransferCharacteristics.html#PaintDotNet_Imaging_CicpTransferCharacteristics_Bt709">Bt709</a>) are treated as equivalent. HDR transfers (PQ, HLG)
+never match, as no <a class="xref" href="PaintDotNet.Imaging.KnownColorSpace.html">KnownColorSpace</a> uses them.</p>
+</div>
 
 
 

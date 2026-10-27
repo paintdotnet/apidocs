@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DynamicMethodNames ">
       
-      
+      <meta name="description" content="This static class lists names and provides information about dynamic methods that IndirectUI objects (e.g. an Effect) may implement. A dynamic method is one that is available in one of 3 ways:  If the object implements PaintDotNet.Dynamic.IDynamicInvoke, then that will be used to dispatch the method call. This is a good way to find out which dynamic methods are being invoked, when they&#39;re called, etc. If the object implements a private method, object OnInvokeDynamicMethod(string name, object[] args), then that will be used to dispatch the method call. The Effect may also implement the dynamic method directly as a private method, in which case reflection will be used to call it.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,14 @@ Class DynamicMethodNames
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This static class lists names and provides information about dynamic methods that IndirectUI objects (e.g. an Effect) may implement.
+A dynamic method is one that is available in one of 3 ways:</p>
+<ol>
+<li>If the object implements PaintDotNet.Dynamic.IDynamicInvoke, then that will be used to dispatch the method call. This is a good way to find out which dynamic methods are being invoked, when they're called, etc.</li>
+<li>If the object implements a private method, object OnInvokeDynamicMethod(string name, object[] args), then that will be used to dispatch the method call.</li>
+<li>The Effect may also implement the dynamic method directly as a private method, in which case reflection will be used to call it.</li>
+</ol>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -148,7 +155,11 @@ Class DynamicMethodNames
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.IndirectUI.DynamicMethodNames.OnWindowHelpButtonClicked.html">OnWindowHelpButtonClicked</a></dt>
-    <dd></dd>
+    <dd><p>Called when the user clicks on the window's help button and WindowHelpContentType = CustomViaCallback.
+Must have this method name and signature: private void OnWindowHelpButtonClicked(System.Windows.Forms.IWin32Window owner, string helpContent);
+'owner' is the owning dialog and your UI must use it as its parent.
+'helpContent' is the value of the WindowHelpContent window property.</p>
+</dd>
   </dl>
 
 

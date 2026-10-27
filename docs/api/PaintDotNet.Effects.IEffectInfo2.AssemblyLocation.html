@@ -120,7 +120,9 @@ Property AssemblyLocation
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>The path to the assembly that contains the plugin. You should not use GetType().Assembly.Location
+from the plugin instance itself, as it may be different or blank due to shimming.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

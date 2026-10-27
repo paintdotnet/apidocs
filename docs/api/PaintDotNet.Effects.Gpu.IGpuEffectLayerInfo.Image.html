@@ -120,7 +120,8 @@ Property Image
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets an image that renders the layer's contents for use with Direct2D.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,13 @@ Property Image
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_Gpu_IGpuEffectLayerInfo_Image_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This image does not take <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Visible.html#PaintDotNet_Effects_IEffectLayerInfo_Visible">Visible</a> or <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.Opacity.html#PaintDotNet_Effects_IEffectLayerInfo_Opacity">Opacity</a>
+into account.<br>
+<br>
+You should only retrieve this image if it will actually be used for rendering, as it will
+consume GPU memory once initialized.</p>
+</div>
 
 
 

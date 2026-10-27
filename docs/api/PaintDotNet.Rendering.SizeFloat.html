@@ -163,7 +163,10 @@ public struct SizeFloat : IEquatable&lt;SizeFloat&gt;, IFormattable, IParsable&l
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeFloat.IsEmpty.html#PaintDotNet_Rendering_SizeFloat_IsEmpty">IsEmpty</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the size is the <a class="xref" href="PaintDotNet.Rendering.SizeFloat.Empty.html#PaintDotNet_Rendering_SizeFloat_Empty">Empty</a> size or equivalent (negative
+width or negative height). Use <a class="xref" href="PaintDotNet.Rendering.SizeFloat.HasArea.html#PaintDotNet_Rendering_SizeFloat_HasArea">HasArea</a> to test whether the size is
+non-empty and has a non-zero area.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeFloat.IsInteger.html#PaintDotNet_Rendering_SizeFloat_IsInteger">IsInteger</a></dt>
@@ -355,7 +358,9 @@ public struct SizeFloat : IEquatable&lt;SizeFloat&gt;, IFormattable, IParsable&l
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeFloat.Empty.html#PaintDotNet_Rendering_SizeFloat_Empty">Empty</a></dt>
-    <dd></dd>
+    <dd><p>Gets a special value that represents a size with no area. Note that this is not the same as a size
+value with zero area. See <a class="xref" href="PaintDotNet.Rendering.SizeFloat.IsEmpty.html#PaintDotNet_Rendering_SizeFloat_IsEmpty">IsEmpty</a> and <a class="xref" href="PaintDotNet.Rendering.SizeFloat.HasArea.html#PaintDotNet_Rendering_SizeFloat_HasArea">HasArea</a> for more details.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeFloat.Parse.html#PaintDotNet_Rendering_SizeFloat_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>

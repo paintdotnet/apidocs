@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct TextMetrics ">
       
-      
+      <meta name="description" content="Contains the metrics associated with text after layout. All coordinates are in device independent pixels (DIPs).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Struct TextMetrics
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains the metrics associated with text after layout. All coordinates are in device independent pixels (DIPs).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -138,19 +139,23 @@ Struct TextMetrics
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.Height.html#PaintDotNet_DirectWrite_TextMetrics_Height">Height</a></dt>
-    <dd></dd>
+    <dd><p>The height of the formatted text. The height of an empty string is set to the same value as that of the default font.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.HeightIncludingTrailingWhitespace.html#PaintDotNet_DirectWrite_TextMetrics_HeightIncludingTrailingWhitespace">HeightIncludingTrailingWhitespace</a></dt>
-    <dd></dd>
+    <dd><p>The height of the formatted text taking into account the trailing whitespace at the end of each line. This is pertinent for vertical text.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.HeightMax.html#PaintDotNet_DirectWrite_TextMetrics_HeightMax">HeightMax</a></dt>
-    <dd></dd>
+    <dd><p>Gets the maximum value of Height and HeightIncludingTrailingWhitespace.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.LayoutHeight.html#PaintDotNet_DirectWrite_TextMetrics_LayoutHeight">LayoutHeight</a></dt>
-    <dd></dd>
+    <dd><p>Initial height given to the layout. Depending on the length of the text, it may be larger or smaller than the text content height.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.LayoutSize.html#PaintDotNet_DirectWrite_TextMetrics_LayoutSize">LayoutSize</a></dt>
@@ -158,15 +163,18 @@ Struct TextMetrics
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.LayoutWidth.html#PaintDotNet_DirectWrite_TextMetrics_LayoutWidth">LayoutWidth</a></dt>
-    <dd></dd>
+    <dd><p>The initial width given to the layout. It can be either larger or smaller than the text content width, depending on whether the text was wrapped.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.Left.html#PaintDotNet_DirectWrite_TextMetrics_Left">Left</a></dt>
-    <dd></dd>
+    <dd><p>A value that indicates the left-most point of formatted text relative to the layout box, while excluding any glyph overhang.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.MaxBidiReorderingDepth.html#PaintDotNet_DirectWrite_TextMetrics_MaxBidiReorderingDepth">MaxBidiReorderingDepth</a></dt>
-    <dd></dd>
+    <dd><p>The maximum reordering count of any line of text, used to calculate the most number of hit-testing boxes needed. If the layout has no bidirectional text, or no text at all, the minimum level is 1.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.Size.html#PaintDotNet_DirectWrite_TextMetrics_Size">Size</a></dt>
@@ -178,19 +186,23 @@ Struct TextMetrics
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.Top.html#PaintDotNet_DirectWrite_TextMetrics_Top">Top</a></dt>
-    <dd></dd>
+    <dd><p>A value that indicates the top-most point of formatted text relative to the layout box, while excluding any glyph overhang.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.Width.html#PaintDotNet_DirectWrite_TextMetrics_Width">Width</a></dt>
-    <dd></dd>
+    <dd><p>A value that indicates the width of the formatted text, while ignoring trailing whitespace at the end of each line.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.WidthIncludingTrailingWhitespace.html#PaintDotNet_DirectWrite_TextMetrics_WidthIncludingTrailingWhitespace">WidthIncludingTrailingWhitespace</a></dt>
-    <dd></dd>
+    <dd><p>The width of the formatted text, taking into account the trailing whitespace at the end of each line.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TextMetrics.WidthMax.html#PaintDotNet_DirectWrite_TextMetrics_WidthMax">WidthMax</a></dt>
-    <dd></dd>
+    <dd><p>Gets the maximum value of Width and WidthIncludingTrailingWhitespace.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

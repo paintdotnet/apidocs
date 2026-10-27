@@ -120,7 +120,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method CreateColorContext
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>space</code> <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorSpace.html">DeviceColorSpace</a></dt>
-  <dd></dd>
+  <dd><p>The space of color context to create.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The new color context object.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,10 @@ Method CreateColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Direct2D1_DeviceColorSpace__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The new color context can be used in <a class="xref" href="PaintDotNet.Direct2D1.BitmapProperties.html">BitmapProperties</a> to initialize the color context of a created bitmap,
+or with the Color Management effect.<br></p>
+</div>
 
 
 
@@ -156,7 +163,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,13 +174,15 @@ Method CreateColorContext
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>customProfile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A buffer containing the ICC profile bytes used to initialize the color context.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The new color context object.</p>
+</dd>
 </dl>
 
 
@@ -181,6 +191,11 @@ Method CreateColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_System_ReadOnlySpan_System_Byte___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The new color context can be used in <a class="xref" href="PaintDotNet.Direct2D1.BitmapProperties.html">BitmapProperties</a> to initialize the color context of a created bitmap,
+or with the Color Management effect.<br>
+The model field of the profile header is inspected to determine if this profile is sRGB or scRGB and the color space is updated respectively. Otherwise the space remains custom.</p>
+</div>
 
 
 
@@ -192,7 +207,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context from an <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a>. The color space of the resulting context varies, see Remarks for more info.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -202,13 +218,15 @@ Method CreateColorContext
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>colorContext</code> <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> used to initialize the color context.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The new color context.</p>
+</dd>
 </dl>
 
 
@@ -217,6 +235,11 @@ Method CreateColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceColorContextFactory_CreateColorContext_PaintDotNet_Imaging_IColorContext__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The new color context can be used in <a class="xref" href="PaintDotNet.Direct2D1.BitmapProperties.html">BitmapProperties</a> to initialize the color context of a created bitmap,
+or with the Color Management effect.<br>
+The model field of the profile header is inspected to determine if this profile is sRGB or scRGB and the color space is updated respectively. Otherwise the space remains custom.</p>
+</div>
 
 
 
@@ -228,7 +251,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context from a DXGI color space type. It is only valid to use this with the Color Management Effect in 'Best' mode.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -238,13 +262,15 @@ Method CreateColorContext
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>colorSpace</code> <a class="xref" href="PaintDotNet.Dxgi.DxgiColorSpace.html">DxgiColorSpace</a></dt>
-  <dd></dd>
+  <dd><p>The color space to create the color context from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The created color context.</p>
+</dd>
 </dl>
 
 
@@ -264,7 +290,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context from a simple color profile. It is only valid to use this with the Color Management Effect in 'Best' mode.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -274,13 +301,15 @@ Method CreateColorContext
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>simpleProfile</code> <a class="xref" href="PaintDotNet.Direct2D1.SimpleColorProfile.html">SimpleColorProfile</a></dt>
-  <dd></dd>
+  <dd><p>The simple color profile to create the color context from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The created color context.</p>
+</dd>
 </dl>
 
 

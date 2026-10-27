@@ -120,7 +120,9 @@ Method DrawSpriteBatch
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Renders all sprites in the given sprite batch to the device context using the specified drawing options.<br>
+<b>NOTE:</b> The antialiasing mode must be set to <a class="xref" href="PaintDotNet.Direct2D1.AntialiasMode.html#PaintDotNet_Direct2D1_AntialiasMode_Aliased">Aliased</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,17 +132,23 @@ Method DrawSpriteBatch
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>spriteBatch</code> <a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.html">ISpriteBatch</a></dt>
-  <dd></dd>
+  <dd><p>The sprite batch to draw.</p>
+</dd>
   <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The index of the first sprite in the sprite batch to draw.</p>
+</dd>
   <dt><code>spriteCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of sprites to draw.</p>
+</dd>
   <dt><code>bitmap</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
-  <dd></dd>
+  <dd><p>The bitmap from which the sprites are to be sourced. Each sprite's source rectangle refers to a portion of this bitmap.</p>
+</dd>
   <dt><code>interpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html">InterpolationMode</a></dt>
-  <dd></dd>
+  <dd><p>The interpolation mode to use when drawing this sprite batch. This determines how Direct2D interpolates pixels within the drawn sprites if scaling is performed. This must be <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html#PaintDotNet_Direct2D1_InterpolationMode_NearestNeighbor">NearestNeighbor</a> or <a class="xref" href="PaintDotNet.Direct2D1.InterpolationMode.html#PaintDotNet_Direct2D1_InterpolationMode_Linear">Linear</a>./&gt;</p>
+</dd>
   <dt><code>spriteOptions</code> <a class="xref" href="PaintDotNet.Direct2D1.SpriteOptions.html">SpriteOptions</a></dt>
-  <dd></dd>
+  <dd><p>The additional drawing options, if any, to be used for the sprite batch.</p>
+</dd>
 </dl>
 
 

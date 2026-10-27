@@ -203,7 +203,10 @@ public struct RectDouble : IEquatable&lt;RectDouble&gt;, IFormattable, IParsable
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.RectDouble.IsEmpty.html#PaintDotNet_Rendering_RectDouble_IsEmpty">IsEmpty</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the rectangle is the <a class="xref" href="PaintDotNet.Rendering.RectDouble.Empty.html#PaintDotNet_Rendering_RectDouble_Empty">Empty</a> rectangle or equivalent
+(negative width or negative height). Use <a class="xref" href="PaintDotNet.Rendering.RectDouble.HasArea.html#PaintDotNet_Rendering_RectDouble_HasArea">HasArea</a> to test whether the
+rectangle is non-empty and has a non-zero area.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.RectDouble.IsFinite.html#PaintDotNet_Rendering_RectDouble_IsFinite">IsFinite</a></dt>
@@ -471,7 +474,8 @@ public struct RectDouble : IEquatable&lt;RectDouble&gt;, IFormattable, IParsable
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.RectDouble.Empty.html#PaintDotNet_Rendering_RectDouble_Empty">Empty</a></dt>
-    <dd></dd>
+    <dd><p>Gets a special value that represents a rectangle with no position or area.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.RectDouble.Parse.html#PaintDotNet_Rendering_RectDouble_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>

@@ -148,19 +148,27 @@ Class ColorContextExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorContextExtensions.TryGetCicpColorSpace.html#PaintDotNet_Imaging_ColorContextExtensions_TryGetCicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_CicpColorSpace__">TryGetCicpColorSpace(IColorContext, out CicpColorSpace)</a></dt>
-    <dd></dd>
+    <dd><p>Tries to determine the CICP color information that best describes the given ICC color profile.
+This is the inverse of <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateColorContext.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_CicpColorSpace_">CreateColorContext(IImagingFactory, CicpColorSpace)</a>:
+it derives the values for e.g. a PNG <code>cICP</code> chunk (or AVIF <code>nclx</code>) from a profile.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorContextExtensions.TryGetCicpColorSpaceExact.html#PaintDotNet_Imaging_ColorContextExtensions_TryGetCicpColorSpaceExact_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_CicpColorSpace__">TryGetCicpColorSpaceExact(IColorContext, out CicpColorSpace)</a></dt>
-    <dd></dd>
+    <dd><p>Tries to determine the CICP color information for the given ICC color profile, but only when that
+CICP is an <em>exact</em> substitute for the profile — that is, either when the color profile has
+a <code>cicp</code> tag, or when synthesizing a profile back from the CICP reproduces the original exactly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorContextExtensions.TryGetKnownColorSpace.html#PaintDotNet_Imaging_ColorContextExtensions_TryGetKnownColorSpace_PaintDotNet_Imaging_IColorContext_">TryGetKnownColorSpace(IColorContext)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to identify the color space of the given color profile.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ColorContextExtensions.TryGetKnownColorSpace.html#PaintDotNet_Imaging_ColorContextExtensions_TryGetKnownColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_KnownColorSpace__">TryGetKnownColorSpace(IColorContext, out KnownColorSpace)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to identify the color space of the given color profile.</p>
+</dd>
   </dl>
 
 

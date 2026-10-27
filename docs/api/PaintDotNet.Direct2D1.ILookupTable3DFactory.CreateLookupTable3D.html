@@ -120,7 +120,10 @@ Method CreateLookupTable3D
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a 3D lookup table for mapping a 3-channel input to a 3-channel output. The table data must be provided in 4-channel format.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createlookuptable3d">ID2D1DeviceContext2::CreateLookupTable3D()</a><br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor_1/nf-d2d1effectauthor_1-id2d1effectcontext1-createlookuptable3d">ID2D1EffectContext1::CreateLookupTable3D()</a></p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,19 +133,26 @@ Method CreateLookupTable3D
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>precision</code> <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html">BufferPrecision</a></dt>
-  <dd></dd>
+  <dd><p>Precision of the input lookup table data.</p>
+</dd>
   <dt><code>extentX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of elements in the X dimension, which corresponds to the blue channel.</p>
+</dd>
   <dt><code>extentY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of elements, or rows, in the Y dimension, which corresponds to the green channel.</p>
+</dd>
   <dt><code>extentZ</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of elements, or planes, in the Z dimension, which corresponds to the red channel.</p>
+</dd>
   <dt><code>data</code> <a class="xref" href="PaintDotNet.ExtentPtr-1.html">ExtentPtr</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Buffer holding the lookup table data. This total byte size of the data buffer must be appropriate for the given precision and extents.</p>
+</dd>
   <dt><code>rowStride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-  <dd></dd>
+  <dd><p>The number of bytes from one row (X dimension) of LUT data to the next.</p>
+</dd>
   <dt><code>planeStride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-  <dd></dd>
+  <dd><p>The number of bytes from one LUT data plane (X and Y dimensions) to the next.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -157,6 +167,10 @@ Method CreateLookupTable3D
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ILookupTable3DFactory_CreateLookupTable3D_PaintDotNet_Direct2D1_BufferPrecision_System_Int32_System_Int32_System_Int32_PaintDotNet_ExtentPtr_System_Byte__System_UInt32_System_UInt32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The maximum extent in any direction is 256, which means that a 256x256x256 table using 32-bits per component will consume 64MB.
+Because lookup uses linear interpolation, much smaller tables will usually give good results.<br></p>
+</div>
 
 
 

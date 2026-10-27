@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IDeviceEffectContext ">
       
-      
+      <meta name="description" content="Provides factory methods and other state management for effect and transform authors. ID2D1EffectContext2">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface IDeviceEffectContext
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides factory methods and other state management for effect and transform authors.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext">ID2D1EffectContext2</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -205,13 +207,22 @@ Interface IDeviceEffectContext
 
 
 
+  <h2 id="PaintDotNet_Direct2D1_IDeviceEffectContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface is passed to an effect implementation through the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a> method. In
+order to prevent applications casually gaining access to this interface, and to separate reference counts between the
+public and private interfaces, it is not possible to call CreateRef() between the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> and the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a>. Each call to <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a> will be provided a different
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a> object. This interface tracks resource allocations for the effect. When the effect is
+released, the corresponding allocations will also be released.</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.Dpi.html#PaintDotNet_Direct2D1_IDeviceEffectContext_Dpi">Dpi</a></dt>
-    <dd></dd>
+    <dd><p>Gets the unit mapping that an effect will use for properties that could be in either dots per inch (dpi) or pixels.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -219,55 +230,75 @@ Interface IDeviceEffectContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CheckFeatureSupport.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CheckFeatureSupport_PaintDotNet_Direct2D1_DeviceFeature_System_Span_System_Byte__">CheckFeatureSupport(DeviceFeature, Span&lt;byte&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Checks whether an optional capability is supported by the D3D device.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBlendTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBlendTransform_System_Int32_PaintDotNet_Direct2D1_BlendDescription__">CreateBlendTransform(int, in BlendDescription)</a></dt>
-    <dd></dd>
+    <dd><p>This creates a blend transform that can be inserted into a transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBorderTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBorderTransform_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ExtendMode_">CreateBorderTransform(ExtendMode, ExtendMode)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a transform that extends its input infinitely in every direction based on the passed in extend mode.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateBoundsAdjustmentTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateBoundsAdjustmentTransform_PaintDotNet_Rendering_RectInt32_">CreateBoundsAdjustmentTransform(RectInt32)</a></dt>
-    <dd></dd>
+    <dd><p>Creates and returns a bounds adjustment transform.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateOffsetTransform.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateOffsetTransform_PaintDotNet_Rendering_Point2Int32_">CreateOffsetTransform(Point2Int32)</a></dt>
-    <dd></dd>
+    <dd><p>Creates and returns an offset transform.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateResourceTexture_System_Nullable_System_Guid___PaintDotNet_Direct2D1_ResourceTextureProperties__PaintDotNet_ExtentPtr_System_Byte__System_Nullable_PaintDotNet_Direct2D1_ResourceTextureStrides__">CreateResourceTexture(in Guid?, in ResourceTextureProperties, ExtentPtr&lt;byte&gt;, ResourceTextureStrides?)</a></dt>
-    <dd></dd>
+    <dd><p>Creates or finds the given resource texture, depending on whether a resource ID is specified. It also optionally
+initializes the texture with the specified data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateTransformNodeFromEffect.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateTransformNodeFromEffect_PaintDotNet_Direct2D1_IDeviceEffect_">CreateTransformNodeFromEffect(IDeviceEffect)</a></dt>
-    <dd></dd>
+    <dd><p>Wraps an effect graph into a single transform node and then inserted into a transform graph. This allows an effect to
+aggregate other effects. This will typically be done in order to allow the effect properties to be re-expressed with a
+different contract, or to allow different components to integrate each-other’s effects.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.FindResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_FindResourceTexture_System_Guid__">FindResourceTexture(in Guid)</a></dt>
-    <dd></dd>
+    <dd><p>Finds the given resource texture if it has already been created with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.CreateResourceTexture.html#PaintDotNet_Direct2D1_IDeviceEffectContext_CreateResourceTexture_System_Nullable_System_Guid___PaintDotNet_Direct2D1_ResourceTextureProperties__PaintDotNet_ExtentPtr_System_Byte__System_Nullable_PaintDotNet_Direct2D1_ResourceTextureStrides__">CreateResourceTexture(in Guid?, in ResourceTextureProperties, ExtentPtr&lt;byte&gt;, ResourceTextureStrides?)</a> with
+the same <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.GetMaximumSupportedFeatureLevel.html#PaintDotNet_Direct2D1_IDeviceEffectContext_GetMaximumSupportedFeatureLevel_System_ReadOnlySpan_PaintDotNet_Direct3D_D3DFeatureLevel__">GetMaximumSupportedFeatureLevel(ReadOnlySpan&lt;D3DFeatureLevel&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the maximum feature level from the provided list which is supported by the device. If none of the provided levels
+are supported then this method returns null.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.IsBufferPrecisionSupported.html#PaintDotNet_Direct2D1_IDeviceEffectContext_IsBufferPrecisionSupported_PaintDotNet_Direct2D1_BufferPrecision_">IsBufferPrecisionSupported(BufferPrecision)</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the buffer precision is supported by the underlying Direct2D device.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.IsShaderLoaded.html#PaintDotNet_Direct2D1_IDeviceEffectContext_IsShaderLoaded_PaintDotNet_Direct2D1_ShaderID__">IsShaderLoaded(in ShaderID)</a></dt>
-    <dd></dd>
+    <dd><p>This tests to see if the given shader is loaded.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.LoadComputeShader.html#PaintDotNet_Direct2D1_IDeviceEffectContext_LoadComputeShader_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlySpan_System_Byte__">LoadComputeShader(in ShaderID, ReadOnlySpan&lt;byte&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Loads the given shader by its unique ID. Loading the shader multiple times is ignored. When the shader is loaded it is
+also handed to the driver to JIT, if it hasn't been already.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.LoadPixelShader.html#PaintDotNet_Direct2D1_IDeviceEffectContext_LoadPixelShader_PaintDotNet_Direct2D1_ShaderID__System_ReadOnlySpan_System_Byte__">LoadPixelShader(in ShaderID, ReadOnlySpan&lt;byte&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Loads the given shader by its unique ID. Loading the shader multiple times is ignored. When the shader is loaded it is
+also handed to the driver to JIT, if it hasn't been already.</p>
+</dd>
   </dl>
 
 

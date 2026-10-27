@@ -165,7 +165,8 @@ Method CreateBitmapClipper
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a clipped bitmap with a given extend mode. The clipping rect may extend outside of the source bounds.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -175,19 +176,27 @@ Method CreateBitmapClipper
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>factory</code> <a class="xref" href="PaintDotNet.Imaging.IImagingFactory.html">IImagingFactory</a></dt>
-  <dd></dd>
+  <dd><p>The factory.</p>
+</dd>
   <dt><code>source</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
-  <dd></dd>
+  <dd><p>The bitmap source to clip.</p>
+</dd>
   <dt><code>sourceRect</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a></dt>
-  <dd></dd>
+  <dd><p>A rectangle, in source coordinate space, that defines the size of the output bitmap. This rectangle
+may extend outside of the source bitmap's bounds (including negative coordinates). Pixels that are
+within the source bounds will be copied from the source, while pixels outside of the source bounds
+will be calculated based on the <code class="paramref">extendMode</code> parameter.</p>
+</dd>
   <dt><code>extendMode</code> <a class="xref" href="PaintDotNet.Imaging.BitmapExtendMode.html">BitmapExtendMode</a></dt>
-  <dd></dd>
+  <dd><p>Specifies how pixels outside of the source bitmap's bounds are calculated.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapSource-1.html">IBitmapSource</a>&lt;TPixel&gt;</dt>
-  <dd></dd>
+  <dd><p>The clipped bitmap.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>

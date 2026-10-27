@@ -120,7 +120,9 @@ Property Granularity
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies the number of histogram bins/buckets that are used when rendering the effect.<br>
+The range is [4, 256], the default is 51.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +142,12 @@ Property Granularity
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnOilPaintingEffect_Props_Granularity_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This corresponds to the &quot;legacy&quot; Oil Painting effect's &quot;Coarseness&quot; property, in which the
+number of histogram bins was equal to one plus Coarseness. Its range was [3, 255] with a
+default of 50, which is why this new implementation of the effect has a range of [4, 256]
+and a default value of 51.</p>
+</div>
 
 
 

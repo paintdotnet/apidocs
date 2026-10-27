@@ -100,7 +100,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.BinaryPixelOp.html">BinaryPixelOp</a></dt>
-      <dd></dd>
+      <dd><p>Defines a way to operate on a pixel, or a region of pixels, in a binary fashion.
+That is, it is a simple function F that takes two parameters and returns a
+result of the form: c = F(a, b)</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.BufferUtil.html">BufferUtil</a></dt>
@@ -120,7 +123,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Disposable.html">Disposable</a></dt>
-      <dd></dd>
+      <dd><p>Provides a standard implementation of IDisposable and IIsDisposed.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.DisposableExtensions.html">DisposableExtensions</a></dt>
@@ -148,7 +152,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ExceptionUtil.html">ExceptionUtil</a></dt>
-      <dd></dd>
+      <dd><p>The purposes of these methods is based on the fact that any method
+that throws an exception is not a candidate for inlining. Instead,
+you can call a method in this class which may then allow the calling
+method to be inlined.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ExtentPtr.html">ExtentPtr</a></dt>
@@ -164,7 +172,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileDialogFilterBuilder.html">FileDialogFilterBuilder</a></dt>
-      <dd></dd>
+      <dd><p>A helper class for creating a string to use for the FilterText property of an OpenFileDialog or SaveFileDialog.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.FileDialogFilterEntry.html">FileDialogFilterEntry</a></dt>
@@ -188,7 +197,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IndexEventArgs.html">IndexEventArgs</a></dt>
-      <dd></dd>
+      <dd><p>Declares an EventArgs type for an event that needs a single integer, interpreted
+as an index, as event information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Int32Extensions.html">Int32Extensions</a></dt>
@@ -220,7 +231,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.MemoryBlock.html">MemoryBlock</a></dt>
-      <dd></dd>
+      <dd><p>Manages an arbitrarily sized block of memory. You can also create child MemoryBlocks
+which reference a portion of the memory allocated by a parent MemoryBlock. If the parent
+is disposed, the children will not be valid.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.NotInitializedException.html">NotInitializedException</a></dt>
@@ -232,7 +246,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.PdnBaseForm.html">PdnBaseForm</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class for all Forms in Paint.NET.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.PdnGraphicsPath.html">PdnGraphicsPath</a></dt>
@@ -240,7 +255,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.PdnRegion.html">PdnRegion</a></dt>
-      <dd></dd>
+      <dd><p>Designed as a proxy to the GDI+ Region class, while allowing for a
+replacement that won't break code. The main reason for having this
+right now is to work around some bugs in System.Drawing.Region,
+especially the memory leak in GetRegionScans().</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.PixelOp.html">PixelOp</a></dt>
@@ -320,7 +339,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.RenderArgs.html">RenderArgs</a></dt>
-      <dd></dd>
+      <dd><p>Encapsulates the arguments passed to a Render function.
+This way we can do on-demand and once-only creation of Bitmap and Graphics
+objects from a given Surface object.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ServiceProviderExtensions.html">ServiceProviderExtensions</a></dt>
@@ -332,7 +354,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-      <dd></dd>
+      <dd><p>Implements a BGRA32 bitmap used by classic/legacy plugins.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.TypeExtensions.html">TypeExtensions</a></dt>
@@ -344,23 +367,31 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOp.html">UnaryPixelOp</a></dt>
-      <dd></dd>
+      <dd><p>Defines a way to operate on a pixel, or a region of pixels, in a unary fashion.
+That is, it is a simple function F that takes one parameter and returns a
+result of the form: d = F(c)</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.html">UnaryPixelOps</a></dt>
-      <dd></dd>
+      <dd><p>Provides a set of standard UnaryPixelOps.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.AverageChannels.html">UnaryPixelOps.AverageChannels</a></dt>
-      <dd></dd>
+      <dd><p>Averages the input color's red, green, and blue channels. The alpha component
+is unaffected.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.BlendConstant.html">UnaryPixelOps.BlendConstant</a></dt>
-      <dd></dd>
+      <dd><p>Blends pixels with the specified constant color.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.Constant.html">UnaryPixelOps.Constant</a></dt>
-      <dd></dd>
+      <dd><p>Always returns a constant color.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.Desaturate.html">UnaryPixelOps.Desaturate</a></dt>
@@ -372,27 +403,35 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.Identity.html">UnaryPixelOps.Identity</a></dt>
-      <dd></dd>
+      <dd><p>Passes through the given color value.
+result(color) = color</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.Invert.html">UnaryPixelOps.Invert</a></dt>
-      <dd></dd>
+      <dd><p>Inverts a pixel's color, and passes through the alpha component.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.InvertWithAlpha.html">UnaryPixelOps.InvertWithAlpha</a></dt>
-      <dd></dd>
+      <dd><p>Inverts a pixel's color and its alpha component.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.SetAlphaChannel.html">UnaryPixelOps.SetAlphaChannel</a></dt>
-      <dd></dd>
+      <dd><p>Specialization of SetChannel that sets the alpha channel.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.SetAlphaChannelTo255.html">UnaryPixelOps.SetAlphaChannelTo255</a></dt>
-      <dd></dd>
+      <dd><p>Specialization of SetAlphaChannel that always sets alpha to 255.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnaryPixelOps.SetChannel.html">UnaryPixelOps.SetChannel</a></dt>
-      <dd></dd>
+      <dd><p>Used to set a given channel of a pixel to a given, predefined color.
+Useful if you want to set only the alpha value of a given region.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UnsafeExtentPtr.html">UnsafeExtentPtr</a></dt>
@@ -424,7 +463,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.WaitCursorChanger.html">WaitCursorChanger</a></dt>
-      <dd></dd>
+      <dd><p>Simply sets a control's Cursor to the WaitCursor (hourglass) on creation,
+and sets it back to its original setting upon disposal.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.WrongStateException.html">WrongStateException</a></dt>
@@ -435,7 +476,9 @@ Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a></dt>
-      <dd></dd>
+      <dd><p>Defines a 32-bit BGRA color value. This is mostly used by legacy &quot;classic&quot; plugins, and is
+has been superceded by <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ExtentPtr-1.html">ExtentPtr&lt;T&gt;</a></dt>
@@ -447,7 +490,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Pair-2.html">Pair&lt;T1, T2&gt;</a></dt>
-      <dd></dd>
+      <dd><p>A struct containing two elements.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ReadOnlySpanChunkEnumerable-1.html">ReadOnlySpanChunkEnumerable&lt;T&gt;</a></dt>
@@ -455,7 +499,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ReadOnlySpanChunkEnumerator-1.html">ReadOnlySpanChunkEnumerator&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Affords the traversal of a large memory region (64-bit length) in terms of ReadOnlySpan.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.RegionPtrOffsetView-1.html">RegionPtrOffsetView&lt;T&gt;</a></dt>
@@ -519,7 +564,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.SpanChunkEnumerator-1.html">SpanChunkEnumerator&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Affords the traversal of a large memory region (64-bit length) in terms of Span.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a></dt>
@@ -530,7 +576,8 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IInternalImpl.html">IInternalImpl</a></dt>
-      <dd></dd>
+      <dd><p>Implemented by interfaces that may be consumed publicly but only implemented internally.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IIsDisposed.html">IIsDisposed</a></dt>
@@ -538,7 +585,10 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IPixelOp.html">IPixelOp</a></dt>
-      <dd></dd>
+      <dd><p>Provides an interface for the methods that UnaryPixelOp and BinaryPixelOp share.
+For UnaryPixelOp, this produces the function, &quot;dst = F(src)&quot;
+For BinaryPixelOp, this produces the function, &quot;dst = F(dst, src)&quot;</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IPluginSupportInfo.html">IPluginSupportInfo</a></dt>
@@ -561,7 +611,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.MeasurementUnit.html">MeasurementUnit</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the unit of measure for the given data.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ResamplingAlgorithm.html">ResamplingAlgorithm</a></dt>
@@ -572,7 +623,9 @@ Delegates
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.IndexEventHandler.html">IndexEventHandler</a></dt>
-      <dd></dd>
+      <dd><p>Declares a delegate type for an event that needs a single integer, interpreted
+as an index, as event information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.ProgressEventHandler.html">ProgressEventHandler</a></dt>

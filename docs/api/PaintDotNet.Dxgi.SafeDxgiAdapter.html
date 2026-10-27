@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SafeDxgiAdapter ">
       
-      
+      <meta name="description" content="Safely encapsulates a reference to an IDXGIAdapter COM object.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Class SafeDxgiAdapter
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Safely encapsulates a reference to an <a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nn-dxgi-idxgiadapter">IDXGIAdapter</a> COM object.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -179,7 +180,16 @@ Class SafeDxgiAdapter
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Dxgi.SafeDxgiAdapter.GetEnumAdapterIndex.html#PaintDotNet_Dxgi_SafeDxgiAdapter_GetEnumAdapterIndex_PaintDotNet_Dxgi_DxgiGpuPreference_">GetEnumAdapterIndex(DxgiGpuPreference)</a></dt>
-    <dd></dd>
+    <dd><p>Returns the index that can be used to retrieve the adapter when calling
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_6/nf-dxgi1_6-idxgifactory6-enumadapterbygpupreference">IDXGIFactory6::EnumAdapterByGpuPreference()</a>.<br>
+<br>
+If the <code class="paramref">gpuPreference</code> parameter equals <a class="xref" href="PaintDotNet.Dxgi.DxgiGpuPreference.html#PaintDotNet_Dxgi_DxgiGpuPreference_Unspecified">Unspecified</a>, then this is also
+the index that can be used to retrieve the adapter when calling
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgifactory-enumadapters">IDXGIFactory::EnumAdapters()</a>.<br>
+<br>
+This index can also be used as the device ID when initializing ONNX with
+<a href="https://onnxruntime.ai/docs/execution-providers/DirectML-ExecutionProvider.html#:~:text=The%20device%20ID%20corresponds%20to%20the%20enumeration%20order%20of%20hardware%20adapters%20as%20given%20by%20IDXGIFactory%3A%3AEnumAdapters.">SessionOptions.AppendExecutionProvider_DML()</a>.</p>
+</dd>
   </dl>
 
 

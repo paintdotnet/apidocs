@@ -120,7 +120,8 @@ Method DrawLine
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a line between the specified points using the specified stroke style.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,20 @@ Method DrawLine
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>point0</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The start point of the line, in device-independent pixels.</p>
+</dd>
   <dt><code>point1</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The end point of the line, in device-independent pixels.</p>
+</dd>
   <dt><code>brush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>The brush used to paint the line's stroke.</p>
+</dd>
   <dt><code>strokeWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>The width of the stroke, in device-independent pixels. The value must be greater than or equal to 0.0f. If this parameter isn't specified, it defaults to 1.0f. The stroke is centered on the line.</p>
+</dd>
   <dt><code>strokeStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a></dt>
-  <dd></dd>
+  <dd><p>The style of stroke to paint, or null to paint a solid line.</p>
+</dd>
 </dl>
 
 

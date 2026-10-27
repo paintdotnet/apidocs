@@ -120,7 +120,8 @@ Method DrawEllipse
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws the outline of the specified ellipse using the specified stroke style.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,17 @@ Method DrawEllipse
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>ellipse</code> <a class="xref" href="PaintDotNet.Direct2D1.Ellipse.html">Ellipse</a></dt>
-  <dd></dd>
+  <dd><p>The position and radius of the ellipse to draw, in device-independent pixels.</p>
+</dd>
   <dt><code>brush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>The brush used to paint the ellipse's outline.</p>
+</dd>
   <dt><code>strokeWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>The width of the stroke, in device-independent pixels. The value must be greater than or equal to 0.0f. If this parameter isn't specified, it defaults to 1.0f. The stroke is centered on the line.</p>
+</dd>
   <dt><code>strokeStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a></dt>
-  <dd></dd>
+  <dd><p>The style of stroke to apply to the ellipse's outline, or null to paint a solid stroke.</p>
+</dd>
 </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeLayer ">
       
-      
+      <meta name="description" content="Represents a mutable layer within a file type document.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IFileTypeLayer
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a mutable layer within a file type document.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -148,23 +149,30 @@ Interface IFileTypeLayer
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.BlendMode.html#PaintDotNet_FileTypes_IFileTypeLayer_BlendMode">BlendMode</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the blend mode of the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.Metadata.html#PaintDotNet_FileTypes_IFileTypeLayer_Metadata">Metadata</a></dt>
-    <dd></dd>
+    <dd><p>Gets access to the metadata that is stored in the layer. This is distinct from the document-level metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.Name.html#PaintDotNet_FileTypes_IFileTypeLayer_Name">Name</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the name of the layer. If not set, a default name will be assigned (e.g. &quot;Background&quot;, &quot;Layer 2&quot;, etc.).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.Opacity.html#PaintDotNet_FileTypes_IFileTypeLayer_Opacity">Opacity</a></dt>
-    <dd></dd>
+    <dd><p>Gets the opacity of the layer. The range is [0, 1], where 0 is fully transparent
+(effectively invisible) and 1 is fully opaque. This value is used to modulate
+the alpha values for pixels in the layer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.Visible.html#PaintDotNet_FileTypes_IFileTypeLayer_Visible">Visible</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets a flag indicating whether the layer is visible or not.</p>
+</dd>
   </dl>
 
 

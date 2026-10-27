@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ScenePositionFormat ">
       
-      
+      <meta name="description" content="Specifies the output format of the .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum ScenePositionFormat
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Specifies the output format of the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.html">ScenePositionEffect</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,13 +115,22 @@ Enum ScenePositionFormat
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_XY01"><code>XY01 = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The scene position will be provided as { X, Y, 0, 1 }. This can be used as the input value for a sample
+map effect or the SampleMapRenderer, in which case it is essentially the identity transform.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_Raw"><code>Raw = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The scene position will be the exact value returned from <span class="xref">ComputeSharp.D2D1.D2D.GetScenePosition()</span>.<br>
+See also <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d2dgetsceneposition">D2DGetScenePosition function</a>.<br>
+The Z and W components contain values used for calculating texture offsets and can be useful
+in very advanced scenarios for low-level pixel shaders.<br>
+These values may not be interpreted correctly if used in sample map effects, which expect values
+in the form {X, Y, *, A}.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_Effects_ScenePositionFormat_XY00"><code>XY00 = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The scene position will be provided as { X, Y, 0, 0 }.</p>
+</dd>
   </dl>
 
 

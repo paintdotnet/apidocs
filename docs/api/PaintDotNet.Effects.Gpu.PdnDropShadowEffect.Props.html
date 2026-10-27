@@ -185,23 +185,33 @@ Class PdnDropShadowEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Sets the alpha mode for the input and the output.<br>
+The default value is Premultiplied.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.Angle.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_Angle">Angle</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the angle, in degrees, of the offset for the drop shadow. The value value is -45.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.BlurRadius.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_BlurRadius">BlurRadius</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the amount of blur to be applied to the alpha channel of the image.<br>
+The blur is implemented using a gaussian filter.<br>
+The range for this value is [0, 300], and the default value is 10.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.Color.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_Color">Color</a></dt>
-    <dd></dd>
+    <dd><p>The color of the drop shadow. You must specify this color in straight alpha (not premultiplied).<br>
+The default value is { R=0, G=0, B=0, A=0.75 } (black at 75% opacity).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.Distance.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_Distance">Distance</a></dt>
-    <dd></dd>
+    <dd><p>The distance, in pixels, that the shadow is offset by.<br>
+The range for this value is unbounded, and the default value is 10.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_Input">Input</a></dt>
@@ -209,11 +219,14 @@ Class PdnDropShadowEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.Optimization.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_Optimization">Optimization</a></dt>
-    <dd></dd>
+    <dd><p>The level of performance optimization. The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowOptimization.html#PaintDotNet_Effects_Gpu_PdnDropShadowOptimization_Quality">Quality</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnDropShadowEffect.Props.ShadowOnly.html#PaintDotNet_Effects_Gpu_PdnDropShadowEffect_Props_ShadowOnly">ShadowOnly</a></dt>
-    <dd></dd>
+    <dd><p>Specifies whether to draw the shadow only, or to also include the input. The input will be composited on top of the drop shadow.<br>
+The default value is false.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

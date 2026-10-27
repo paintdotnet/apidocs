@@ -120,7 +120,8 @@ Method Clear
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Clears the drawing area to the specified color.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,8 @@ Method Clear
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>clearColor</code> <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>?</dt>
-  <dd></dd>
+  <dd><p>The color to which the drawing area is cleared. If null, the color will be transparent black.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,13 @@ Method Clear
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_Clear_System_Nullable_PaintDotNet_Imaging_ColorRgba128Float____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Direct2D interprets the clearColor as straight alpha (not premultiplied). If the render target's alpha mode is <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Ignore">Ignore</a>,
+the alpha channel of clearColor is ignored and replaced with 1.0f (fully opaque)<br>
+If the render target has an active clip (specified by PushAxisAlignedClip), the clear command is applied only to the area within the clip region.<br>
+If null is used for the clearColor, and the current target is an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>, the bounds as returned by <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetImageLocalBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetImageLocalBounds_PaintDotNet_Direct2D1_IDeviceImage_">GetImageLocalBounds(IDeviceImage)</a>
+and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetImageWorldBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetImageWorldBounds_PaintDotNet_Direct2D1_IDeviceImage_">GetImageWorldBounds(IDeviceImage)</a> will be an empty rectangle. Using non-null will result in the rectangle being infinite.</p>
+</div>
 
 
 

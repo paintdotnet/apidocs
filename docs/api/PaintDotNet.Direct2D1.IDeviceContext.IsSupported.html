@@ -120,7 +120,8 @@ Method IsSupported
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Indicates whether the device context supports the specified properties.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method IsSupported
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>deviceContextProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.html">DeviceContextProperties</a></dt>
-  <dd></dd>
+  <dd><p>The render target properties to test.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>true if the specified device context properties are supported by this device context.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,9 @@ Method IsSupported
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_IsSupported_PaintDotNet_Direct2D1_DeviceContextProperties___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method does not evaluate the DPI settings specified by the deviceContextProperties parameter.</p>
+</div>
 
 
 

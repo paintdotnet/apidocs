@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PixelGeometry ">
       
-      
+      <meta name="description" content="Represents the internal structure of a device pixel (that is, the physical arrangement of red, green, and blue color components) that is assumed for purposes of rendering text.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum PixelGeometry
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents the internal structure of a device pixel (that is, the physical arrangement of red, green, and blue color components) that is assumed for purposes of rendering text.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,13 +115,16 @@ Enum PixelGeometry
   <dl class="parameters">
     <dt id="PaintDotNet_DirectWrite_PixelGeometry_Flat"><code>Flat = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The red, green, and blue color components of each pixel are assumed to occupy the same point.</p>
+</dd>
     <dt id="PaintDotNet_DirectWrite_PixelGeometry_Rgb"><code>Rgb = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>Each pixel is composed of three vertical stripes, with red on the left, green in the center, and blue on the right. This is the most common pixel geometry for LCD monitors.</p>
+</dd>
     <dt id="PaintDotNet_DirectWrite_PixelGeometry_Bgr"><code>Bgr = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>Each pixel is composed of three vertical stripes, with blue on the left, green in the center, and red on the right.</p>
+</dd>
   </dl>
 
 

@@ -185,15 +185,24 @@ Class ReplaceChannelEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the inputs and the output.<br>
+If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelAlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelAlphaMode_Premultiplied">Premultiplied</a>, the inputs will be unpremultiplied, then the
+channel replacement will be performed, and then the result will be premultiplied.<br>
+If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelAlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelAlphaMode_Straight">Straight</a>, the channel replacement will be performed on the
+input images without any further processing.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelAlphaMode.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelAlphaMode_Premultiplied">Premultiplied</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.Props.Channel.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelEffect_Props_Channel">Channel</a></dt>
-    <dd></dd>
+    <dd><p>This selects which channel will be replaced in the Input image.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.ChannelSelector.html#PaintDotNet_Direct2D1_ChannelSelector_A">A</a>, which replaces the alpha channel.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.Props.ChannelSource.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelEffect_Props_ChannelSource">ChannelSource</a></dt>
-    <dd></dd>
+    <dd><p>The image that contains the channel that will be replaced in the Input image.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_ReplaceChannelEffect_Props_Input">Input</a></dt>

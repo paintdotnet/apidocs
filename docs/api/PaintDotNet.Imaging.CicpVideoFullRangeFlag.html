@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum CicpVideoFullRangeFlag ">
       
-      
+      <meta name="description" content="Indicates the black level and range of the luma and chroma signals. This is the &amp;quot;VideoFullRangeFlag&amp;quot; defined by ITU-T H.273 and used by the PNG cICP chunk.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,9 @@ Enum CicpVideoFullRangeFlag
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Indicates the black level and range of the luma and chroma signals. This is the
+&quot;VideoFullRangeFlag&quot; defined by ITU-T H.273 and used by the PNG cICP chunk.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,13 +116,22 @@ Enum CicpVideoFullRangeFlag
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_CicpVideoFullRangeFlag_Narrow"><code>Narrow = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>Narrow (&quot;limited&quot; or &quot;studio swing&quot;) range. The signal does not occupy the full numeric
+range of the encoding (e.g. 16–235 for 8-bit luma).</p>
+</dd>
     <dt id="PaintDotNet_Imaging_CicpVideoFullRangeFlag_Full"><code>Full = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>Full range. The signal occupies the full numeric range of the encoding. This is the only
+value permitted in a PNG cICP chunk.</p>
+</dd>
   </dl>
 
 
+  <h2 id="PaintDotNet_Imaging_CicpVideoFullRangeFlag_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The underlying type is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> to match the 8-bit code point in the cICP chunk.
+For PNG, the only valid value is <a class="xref" href="PaintDotNet.Imaging.CicpVideoFullRangeFlag.html#PaintDotNet_Imaging_CicpVideoFullRangeFlag_Full">Full</a>. The value is retained for faithful
+round-tripping and validation.</p>
+</div>
 
 </article>
 

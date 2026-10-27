@@ -148,11 +148,16 @@ Class SpriteBatchExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprite.html#PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprite_PaintDotNet_Direct2D1_ISpriteBatch_PaintDotNet_Rendering_RectFloat_System_Nullable_PaintDotNet_Rendering_RectInt32___System_Nullable_PaintDotNet_Imaging_ColorRgba128Float___System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">AddSprite(ISpriteBatch, RectFloat, in RectInt32?, in ColorRgba128Float?, in Matrix3x2Float?)</a></dt>
-    <dd></dd>
+    <dd><p>Adds a single sprite to the end of this sprite batch.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.SpriteBatchExtensions.AddSprites.html#PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprites_PaintDotNet_Direct2D1_ISpriteBatch_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float__">AddSprites(ISpriteBatch, ReadOnlySpan&lt;RectFloat&gt;, ReadOnlySpan&lt;RectInt32&gt;, ReadOnlySpan&lt;ColorRgba128Float&gt;, ReadOnlySpan&lt;Matrix3x2Float&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the given sprites to the end of this sprite batch. The number of sprites is governed by the length of the
+destinationRectangles parameter. You may use a 1-length span for the other spans to apply the same value for
+that property to each of the sprites. You may use a 0-length span for the other spans to use the default value
+associated with those properties, which can reduce memory usage and increase performance.</p>
+</dd>
   </dl>
 
 

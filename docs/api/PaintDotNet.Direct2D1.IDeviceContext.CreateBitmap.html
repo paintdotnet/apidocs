@@ -120,7 +120,9 @@ Method CreateBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a bitmap that can be used as a target surface, for reading back to the CPU, or as a source for the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawBitmap.html#PaintDotNet_Direct2D1_IDeviceContext_DrawBitmap_PaintDotNet_Direct2D1_IDeviceBitmap_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Single_PaintDotNet_Direct2D1_InterpolationMode_System_Nullable_PaintDotNet_Rendering_RectFloat___System_Nullable_PaintDotNet_Rendering_Matrix4x4Float___">DrawBitmap(IDeviceBitmap, in RectFloat?, float, InterpolationMode, in RectFloat?, in Matrix4x4Float?)</a>
+and <a class="xref" href="PaintDotNet.Direct2D1.IBitmapBrush.html">IBitmapBrush</a> APIs. In addition, color context information can be passed to the bitmap.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,19 +132,24 @@ Method CreateBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>size</code> <a class="xref" href="PaintDotNet.Rendering.SizeInt32.html">SizeInt32</a></dt>
-  <dd></dd>
+  <dd><p>The pixel size of the bitmap to be created.</p>
+</dd>
   <dt><code>pSrcData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
-  <dd></dd>
+  <dd><p>A pointer to the initial data that will be loaded into the bitmap. May be null.</p>
+</dd>
   <dt><code>stride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The stride of the source data, if specified.</p>
+</dd>
   <dt><code>bitmapProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.BitmapProperties.html">BitmapProperties</a></dt>
-  <dd></dd>
+  <dd><p>The properties of the bitmap to be created.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
-  <dd></dd>
+  <dd><p>The new bitmap object.</p>
+</dd>
 </dl>
 
 
@@ -151,6 +158,9 @@ Method CreateBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateBitmap_PaintDotNet_Rendering_SizeInt32_System_Void__System_Int32_PaintDotNet_Direct2D1_BitmapProperties___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The new bitmap can be used as a target for <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.SetTarget.html#PaintDotNet_Direct2D1_IDeviceContext_SetTarget_PaintDotNet_Direct2D1_IDeviceImage_">SetTarget(IDeviceImage?)</a> if it is created with <a class="xref" href="PaintDotNet.Direct2D1.BitmapOptions.html#PaintDotNet_Direct2D1_BitmapOptions_Target">Target</a>.</p>
+</div>
 
 
 
@@ -162,7 +172,8 @@ Method CreateBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a Direct2D bitmap by copying an <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -172,15 +183,20 @@ Method CreateBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>bitmapSource</code> <a class="xref" href="PaintDotNet.Imaging.IBitmapSource.html">IBitmapSource</a></dt>
-  <dd></dd>
+  <dd><p>The bitmap source to copy from.</p>
+</dd>
   <dt><code>bitmapProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.BitmapProperties.html">BitmapProperties</a>?</dt>
-  <dd></dd>
+  <dd><p>A bitmap properties structure that specifies bitmap creation options. The pixel format must match
+the pixel format of the bitmap source, or the method will fails. To prevent a mismatch, you can pass null. If both dpiX and dpiY
+are 0, the default DPI of 96 will be used. The DPI information embedded in the bitmap source is ignored.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a></dt>
-  <dd></dd>
+  <dd><p>The new bitmap object.</p>
+</dd>
 </dl>
 
 
@@ -189,6 +205,19 @@ Method CreateBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateBitmap_PaintDotNet_Imaging_IBitmapSource_System_Nullable_PaintDotNet_Direct2D1_BitmapProperties____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The <code class="paramref">bitmapProperties</code> parameter is optional. When it is not specified, the created bitmap inherits the
+pixel format and alpha mode from <code class="paramref">bitmapSource</code>. For a list of supported pixel formats and alpha modes,
+see <a href="https://docs.microsoft.com/en-us/windows/desktop/Direct2D/supported-pixel-formats-and-alpha-modes">Supported Pixel Formats and Alpha Modes</a>.<br>
+When the bitmapProperties parameter is specified, the value in <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html">DxgiFormat</a> must either be <a class="xref" href="PaintDotNet.Dxgi.DxgiFormat.html#PaintDotNet_Dxgi_DxgiFormat_Unknown">Unknown</a>
+or must match the pixel format of the <code class="paramref">bitmapSource</code>.<br>
+When the <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html">AlphaMode</a> is set to <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Unknown">Unknown</a>, the newly created bitmap inherits the alpha
+mode from <code class="paramref">bitmapSource</code>. When the <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html">AlphaMode</a> is set to <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Premultiplied">Premultiplied</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Straight">Straight</a>, or <a class="xref" href="PaintDotNet.Direct2D1.AlphaMode.html#PaintDotNet_Direct2D1_AlphaMode_Ignore">Ignore</a>, this forces the newly created bitmap to use the specified
+alpha mode.<br>
+Before Direct2D can load from a bitmap source, it must be converted to a supported pixel format and alpha mode. For a list of
+supported pixel formats and alpha modes, see <a href="https://docs.microsoft.com/en-us/windows/win32/Direct2D/supported-pixel-formats-and-alpha-modes">Supported Pixel Formats and Alpha Modes.</a></p>
+</div>
 
 
 

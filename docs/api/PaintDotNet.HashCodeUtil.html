@@ -252,7 +252,10 @@ Class HashCodeUtil
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.HashCodeUtil.CreateHashCodeDeterministic.html#PaintDotNet_HashCodeUtil_CreateHashCodeDeterministic_System_String_">CreateHashCodeDeterministic(string)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a hash code that does not change across different runs of the application, unlike
+string.GetHashCode() which is randomized by default. This is useful for scenarios like
+serialization where we want the hash code to be consistent across runs.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.HashCodeUtil.CreateHashCode.html#PaintDotNet_HashCodeUtil_CreateHashCode__1_System_Collections_Generic_IEnumerable___0__">CreateHashCode&lt;T&gt;(IEnumerable&lt;T&gt;)</a></dt>

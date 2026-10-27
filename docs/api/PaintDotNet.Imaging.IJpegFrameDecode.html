@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IJpegFrameDecode ">
       
-      
+      <meta name="description" content="Exposes methods for decoding JPEG images. Enables indexing for efficient random access. To access this interface, call  on the  object. For more information, see: IWICJpegFrameDecode">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,11 @@ Interface IJpegFrameDecode
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Exposes methods for decoding JPEG images. Enables indexing for efficient random access.<br>
+To access this interface, call <a class="xref" href="PaintDotNet.ComponentModel.ObjectRefExtensions.CreateRef.html#PaintDotNet_ComponentModel_ObjectRefExtensions_CreateRef__1_PaintDotNet_ComponentModel_IObjectRef_">CreateRef&lt;TInterface&gt;(IObjectRef)</a>
+on the <a class="xref" href="PaintDotNet.Imaging.IBitmapFrameDecode.html">IBitmapFrameDecode</a> object.<br>
+For more information, see: <a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/nn-wincodec-iwicjpegframedecode">IWICJpegFrameDecode</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -136,7 +140,8 @@ Interface IJpegFrameDecode
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IJpegFrameDecode.IsIndexingSupported.html#PaintDotNet_Imaging_IJpegFrameDecode_IsIndexingSupported">IsIndexingSupported</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves a value indicating whether this decoder supports indexing for efficient random access.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -144,11 +149,13 @@ Interface IJpegFrameDecode
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IJpegFrameDecode.ClearIndexing.html#PaintDotNet_Imaging_IJpegFrameDecode_ClearIndexing">ClearIndexing()</a></dt>
-    <dd></dd>
+    <dd><p>Removes the indexing from a JPEG that has been indexed using <a class="xref" href="PaintDotNet.Imaging.IJpegFrameDecode.SetIndexing.html#PaintDotNet_Imaging_IJpegFrameDecode_SetIndexing_PaintDotNet_Imaging_JpegIndexingOptions_System_Int32_">SetIndexing(JpegIndexingOptions, int)</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.IJpegFrameDecode.SetIndexing.html#PaintDotNet_Imaging_IJpegFrameDecode_SetIndexing_PaintDotNet_Imaging_JpegIndexingOptions_System_Int32_">SetIndexing(JpegIndexingOptions, int)</a></dt>
-    <dd></dd>
+    <dd><p>Enables indexing of the JPEG for efficient random access.</p>
+</dd>
   </dl>
 
 

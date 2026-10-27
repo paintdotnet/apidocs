@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Transform3DEffect ">
       
-      
+      <meta name="description" content="Use the 3D transform effect to apply an arbitrary 4x4 transform matrix to an image.  This effect applies the matrix (M) you provide to the corner vertices of the source:  image([ x y z 1 ]) using this calculation: [ xr yr zr 1 ] = [ x y z 1 ] * M         For more information, see &amp;lt;a href=&amp;quot;https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform&amp;quot;&amp;gt;3D transform effect&amp;lt;/a&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,16 @@ Class Transform3DEffect
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Use the 3D transform effect to apply an arbitrary 4x4 transform matrix to an image.<br>
+<br>
+This effect applies the matrix (M) you provide to the corner vertices of the source:<br>
+<br></p>
+<pre><code class="lang-csharp">image([ x y z 1 ])</code></pre>
+<p>using this calculation:</p>
+<pre><code class="lang-csharp">[ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
+<pre><code>        For more information, see &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform&quot;&gt;3D transform effect&lt;/a&gt;
+</code></pre>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">

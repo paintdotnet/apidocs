@@ -120,7 +120,13 @@ Property EdgeMode
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies how sampling beyond the edge of the image should be performed.<br>
+If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEdgeMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEdgeMode_Transparent">Transparent</a>, the effect pads the image with transparent
+pixels as it applies the kernel, resulting in a soft edge. The output will be larger than the input by
+approximately the blur radius, in pixels.<br>
+If set to another edge mode, the effect clamps the output to the size of the input image.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEdgeMode.html#PaintDotNet_Direct2D1_Effects_MedianBlurEdgeMode_Transparent">Transparent</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

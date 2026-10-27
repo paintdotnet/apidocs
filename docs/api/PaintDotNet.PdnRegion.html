@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PdnRegion ">
       
-      
+      <meta name="description" content="Designed as a proxy to the GDI+ Region class, while allowing for a replacement that won&#39;t break code. The main reason for having this right now is to work around some bugs in System.Drawing.Region, especially the memory leak in GetRegionScans().">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,11 @@ Class PdnRegion
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Designed as a proxy to the GDI+ Region class, while allowing for a
+replacement that won't break code. The main reason for having this
+right now is to work around some bugs in System.Drawing.Region,
+especially the memory leak in GetRegionScans().</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -348,7 +352,11 @@ Class PdnRegion
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PdnRegion.GetRegionScansReadOnly.html#PaintDotNet_PdnRegion_GetRegionScansReadOnly">GetRegionScansReadOnly()</a></dt>
-    <dd></dd>
+    <dd><p>This is an optimized version of GetRegionScans that returns a reference to the array
+that is used to cache the region scans. This mitigates performance when this array
+is requested many times on an unmodified PdnRegion.
+Thus, by using this method you are promising to not modify the array that is returned.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.PdnRegion.GetRegionScansReadOnlyInt.html#PaintDotNet_PdnRegion_GetRegionScansReadOnlyInt">GetRegionScansReadOnlyInt()</a></dt>

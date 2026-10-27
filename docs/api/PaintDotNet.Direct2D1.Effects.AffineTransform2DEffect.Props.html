@@ -184,11 +184,20 @@ Class AffineTransform2DEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd></dd>
+    <dd><p>The mode used to calculate the border of the image, soft or hard.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.BorderMode.html#PaintDotNet_Direct2D1_BorderMode_Soft">Soft</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_Input">Input</a></dt>
@@ -196,15 +205,22 @@ Class AffineTransform2DEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.InterpolationMode.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_InterpolationMode">InterpolationMode</a></dt>
-    <dd></dd>
+    <dd><p>The interpolation mode used to scale the image.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.AffineTransform2DInterpolationMode.html#PaintDotNet_Direct2D1_AffineTransform2DInterpolationMode_Linear">Linear</a></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.Sharpness.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_Sharpness">Sharpness</a></dt>
-    <dd></dd>
+    <dd><p>In the high quality cubic interpolation mode, the sharpness level of the scaling filter as a float between 0 and 1.<br>
+The values are unitless. You can use sharpness to adjust the quality of an image when you scale the image.<br>
+The sharpness factor affects the shape of the kernel. The higher the sharpness factor, the smaller the kernel.<br>
+The default value is 0.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.TransformMatrix.html#PaintDotNet_Direct2D1_Effects_AffineTransform2DEffect_Props_TransformMatrix">TransformMatrix</a></dt>
-    <dd></dd>
+    <dd><p>The 3x2 matrix to transform the image. The default value is the identity transform.</p>
+</dd>
   </dl>
 
 

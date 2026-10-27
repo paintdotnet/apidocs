@@ -120,7 +120,12 @@ Property Center
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>The origin of the wave pattern.<br>
+For the distance- and angle-based patterns this is the point that the wavefronts are
+arranged around. For the linear patterns it is the point at which the wave's phase is
+zero, so moving it slides them along their direction of travel.<br>
+The default value is (0, 0).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +145,12 @@ Property Center
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Every pattern reads this, but Paint.NET's own Waves dialog only offers it for the ones that
+arrange their wavefronts around it. For the linear patterns it would duplicate
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a>, which expresses the same shift in wavelengths rather than in pixels,
+so the dialog leaves it at the middle of the selection for those.</p>
+</div>
 
 
 

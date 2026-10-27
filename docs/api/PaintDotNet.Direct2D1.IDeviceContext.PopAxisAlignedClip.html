@@ -120,7 +120,8 @@ Method PopAxisAlignedClip
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Removes the last axis-aligned clip from the render target. After this method is called, the clip is no longer applied to subsequent drawing operations.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -135,6 +136,13 @@ Method PopAxisAlignedClip
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_PopAxisAlignedClip_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>A PushAxisAlignedClip/PopAxisAlignedClip pair can occur around or within a PushLayer/PopLayer pair, but may not overlap. For example,
+a PushAxisAlignedClip, PushLayer, PopLayer, PopAxisAlignedClip sequence is valid, but a PushAxisAlignedClip, PushLayer, PopAxisAlignedClip,
+PopLayer sequence is not.<br>
+PopAxisAlignedClip must be called once for every call to PushAxisAlignedClip.<br>
+For an example, see <a href="https://docs.microsoft.com/en-us/windows/win32/Direct2D/how-to-clip-with-axis-aligned-rects">How to Clip with an Axis-Aligned Clip Rectangle.</a><br></p>
+</div>
 
 
 

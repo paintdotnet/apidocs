@@ -139,27 +139,33 @@ Struct UIScaleFactor
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Current.html#PaintDotNet_UIScaleFactor_Current">Current</a></dt>
-    <dd></dd>
+    <dd><p>Gets the current UI scaling factor, which is based on the user's settings.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Dpi.html#PaintDotNet_UIScaleFactor_Dpi">Dpi</a></dt>
-    <dd></dd>
+    <dd><p>Gets the DPI (dots-per-inch) for the scaling factor. This will always equal <code>(int)Scale*96</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Legacy.html#PaintDotNet_UIScaleFactor_Legacy">Legacy</a></dt>
-    <dd></dd>
+    <dd><p>Gets the legacy UI scaling factor, which is always 96 DPI, 1.0 Scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Maximum.html#PaintDotNet_UIScaleFactor_Maximum">Maximum</a></dt>
-    <dd></dd>
+    <dd><p>Gets the maximum UI scaling factor representable by UIScaleFactor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Minimum.html#PaintDotNet_UIScaleFactor_Minimum">Minimum</a></dt>
-    <dd></dd>
+    <dd><p>Gets the minimum UI scaling factor representable by UIScaleFactor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Scale.html#PaintDotNet_UIScaleFactor_Scale">Scale</a></dt>
-    <dd></dd>
+    <dd><p>Gets the scale multiplier for the scaling factor. This will always equal <code>Dpi/96.0</code>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -171,91 +177,127 @@ Struct UIScaleFactor
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_PaintDotNet_Rendering_SizeDouble_">ConvertDipsToPixels(SizeDouble)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_PaintDotNet_Rendering_SizeFloat_">ConvertDipsToPixels(SizeFloat)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_System_Double_">ConvertDipsToPixels(double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_System_Double_System_Double_">ConvertDipsToPixels(double, double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_System_Single_">ConvertDipsToPixels(float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixels.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixels_System_Single_System_Single_">ConvertDipsToPixels(float, float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixelsInt.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixelsInt_PaintDotNet_Rendering_SizeInt32_">ConvertDipsToPixelsInt(SizeInt32)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixelsInt.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixelsInt_System_Int32_">ConvertDipsToPixelsInt(int)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertDipsToPixelsInt.html#PaintDotNet_UIScaleFactor_ConvertDipsToPixelsInt_System_Int32_System_Int32_">ConvertDipsToPixelsInt(int, int)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from DIPs (device-independent pixels) to pixels using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertFontPointsToDips.html#PaintDotNet_UIScaleFactor_ConvertFontPointsToDips_System_Double_">ConvertFontPointsToDips(double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a font size, expressed in points (1/72 inch), to DIPs (device-independent pixels).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertFontPointsToDips.html#PaintDotNet_UIScaleFactor_ConvertFontPointsToDips_System_Single_">ConvertFontPointsToDips(float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a font size, expressed in points (1/72 inch), to DIPs (device-independent pixels).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertFontPointsToPixels.html#PaintDotNet_UIScaleFactor_ConvertFontPointsToPixels_System_Double_">ConvertFontPointsToPixels(double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a font size, expressed in points (1/72 inch), to pixels. This is useful when
+converting GDI+ (System.Drawing) text rendering code to Direct2D/DirectWrite.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertFontPointsToPixels.html#PaintDotNet_UIScaleFactor_ConvertFontPointsToPixels_System_Single_">ConvertFontPointsToPixels(float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a font size, expressed in points (1/72 inch), to pixels. This is useful when
+converting GDI+ (System.Drawing) text rendering code to Direct2D/DirectWrite.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_PaintDotNet_Rendering_SizeDouble_">ConvertPixelsToDips(SizeDouble)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_PaintDotNet_Rendering_SizeFloat_">ConvertPixelsToDips(SizeFloat)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_System_Double_">ConvertPixelsToDips(double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_System_Double_System_Double_">ConvertPixelsToDips(double, double)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_System_Single_">ConvertPixelsToDips(float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDips.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDips_System_Single_System_Single_">ConvertPixelsToDips(float, float)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDipsInt.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDipsInt_PaintDotNet_Rendering_SizeInt32_">ConvertPixelsToDipsInt(SizeInt32)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDipsInt.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDipsInt_System_Int32_">ConvertPixelsToDipsInt(int)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.ConvertPixelsToDipsInt.html#PaintDotNet_UIScaleFactor_ConvertPixelsToDipsInt_System_Int32_System_Int32_">ConvertPixelsToDipsInt(int, int)</a></dt>
-    <dd></dd>
+    <dd><p>Converts a measurement from pixels to DIPs (device-independent pixels) using the current scaling factor.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.Equals.html#PaintDotNet_UIScaleFactor_Equals_PaintDotNet_UIScaleFactor_">Equals(UIScaleFactor)</a></dt>
@@ -267,11 +309,13 @@ Struct UIScaleFactor
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.FromDpi.html#PaintDotNet_UIScaleFactor_FromDpi_System_Int32_">FromDpi(int)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a> from the given DPI value.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.FromScale.html#PaintDotNet_UIScaleFactor_FromScale_System_Double_">FromScale(double)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a <a class="xref" href="PaintDotNet.UIScaleFactor.html">UIScaleFactor</a> from the given scaling factor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.GetHashCode.html#PaintDotNet_UIScaleFactor_GetHashCode">GetHashCode()</a></dt>
@@ -279,63 +323,84 @@ Struct UIScaleFactor
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_Point2Double_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(Point2Double, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_Point2Float_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(Point2Float, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_RectDouble_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(RectDouble, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_RectFloat_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(RectFloat, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_SizeDouble_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(SizeDouble, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_SizeFloat_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(SizeFloat, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_Vector2Double_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(Vector2Double, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_PaintDotNet_Rendering_Vector2Float_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(Vector2Float, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_System_Double_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(double, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_System_Double_System_Double_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(double, double, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_System_Single_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(float, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixels.html#PaintDotNet_UIScaleFactor_RescalePixels_System_Single_System_Single_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixels(float, float, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixelsInt.html#PaintDotNet_UIScaleFactor_RescalePixelsInt_PaintDotNet_Rendering_SizeInt32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixelsInt(SizeInt32, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixelsInt.html#PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixelsInt(int, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.UIScaleFactor.RescalePixelsInt.html#PaintDotNet_UIScaleFactor_RescalePixelsInt_System_Int32_System_Int32_PaintDotNet_UIScaleFactor_PaintDotNet_UIScaleFactor_">RescalePixelsInt(int, int, UIScaleFactor, UIScaleFactor)</a></dt>
-    <dd></dd>
+    <dd><p>Converts pixels to DIPs using the source scale, then converts from DIPs to pixels using the target scale.</p>
+<p>The result is rounded to the nearest whole integer. If the input is non-zero
+then the output is guaranteed to be non-zero.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="operators">Operators

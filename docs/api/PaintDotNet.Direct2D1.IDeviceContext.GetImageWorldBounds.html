@@ -120,7 +120,8 @@ Method GetImageWorldBounds
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the bounds of an image with the world transform of the context applied.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method GetImageWorldBounds
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>image</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
-  <dd></dd>
+  <dd><p>The image whose bounds will be calculated.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a></dt>
-  <dd></dd>
+  <dd><p>The bounds of the image in device-independent pixels (DIPs).</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,12 @@ Method GetImageWorldBounds
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_GetImageWorldBounds_PaintDotNet_Direct2D1_IDeviceImage__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The image bounds reflect the current DPI, unit mode, and world transform of the context. To get bounds which don't include the world
+transform, use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.GetImageLocalBounds.html#PaintDotNet_Direct2D1_IDeviceContext_GetImageLocalBounds_PaintDotNet_Direct2D1_IDeviceImage_">GetImageLocalBounds(IDeviceImage)</a>./<br>
+The returned bounds reflect which pixels would be impacted by calling <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a> with the same image and a target offset
+of (0,0). They do not reflect the current clip rectangle set on the device context or the extent of the context’s current target image.</p>
+</div>
 
 
 

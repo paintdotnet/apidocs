@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPixelOp ">
       
-      
+      <meta name="description" content="Provides an interface for the methods that UnaryPixelOp and BinaryPixelOp share. For UnaryPixelOp, this produces the function, &amp;quot;dst = F(src)&amp;quot; For BinaryPixelOp, this produces the function, &amp;quot;dst = F(dst, src)&amp;quot;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Interface IPixelOp
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides an interface for the methods that UnaryPixelOp and BinaryPixelOp share.
+For UnaryPixelOp, this produces the function, &quot;dst = F(src)&quot;
+For BinaryPixelOp, this produces the function, &quot;dst = F(dst, src)&quot;</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,15 +119,21 @@ Interface IPixelOp
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.IPixelOp.Apply.html#PaintDotNet_IPixelOp_Apply_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Size_">Apply(Surface, Point, Surface, Point, Size)</a></dt>
-    <dd></dd>
+    <dd><p>This version of Apply has the liberty to decompose the rectangle of interest
+or do whatever types of optimizations it wants to with it. This is generally
+done to split the Apply operation into multiple threads.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.IPixelOp.Apply.html#PaintDotNet_IPixelOp_Apply_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Int32_">Apply(Surface, Point, Surface, Point, int)</a></dt>
-    <dd></dd>
+    <dd><p>This version of Apply will perform on a scanline, not just a rectangle.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.IPixelOp.ApplyBase.html#PaintDotNet_IPixelOp_ApplyBase_PaintDotNet_Surface_System_Drawing_Point_PaintDotNet_Surface_System_Drawing_Point_System_Drawing_Size_">ApplyBase(Surface, Point, Surface, Point, Size)</a></dt>
-    <dd></dd>
+    <dd><p>This is the version of Apply that will always do exactly what you tell it do,
+without optimizations or otherwise.</p>
+</dd>
   </dl>
 
 

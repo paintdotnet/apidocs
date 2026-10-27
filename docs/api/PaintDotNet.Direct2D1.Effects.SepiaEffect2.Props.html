@@ -185,7 +185,11 @@ Class SepiaEffect2.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_SepiaEffect2_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode of the input and output. The default is Premultiplied.<br>
+To preserve color information for transparent pixels, make sure the input is in
+straight alpha format (not premultiplied) and set this property to Straight.<br>
+The default value is Premultiplied.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.Props.Input.html#PaintDotNet_Direct2D1_Effects_SepiaEffect2_Props_Input">Input</a></dt>
@@ -193,11 +197,17 @@ Class SepiaEffect2.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.Props.InputGamma.html#PaintDotNet_Direct2D1_Effects_SepiaEffect2_Props_InputGamma">InputGamma</a></dt>
-    <dd></dd>
+    <dd><p>Indicates the gamma of the input image, and for the output. If the input image is known to be linear, then the
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaInputGamma2.html#PaintDotNet_Direct2D1_Effects_SepiaInputGamma2_Linear">Linear</a> value should be used so that the correct calculations are used.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaInputGamma2.html#PaintDotNet_Direct2D1_Effects_SepiaInputGamma2_Srgb">Srgb</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.Props.Intensity.html#PaintDotNet_Direct2D1_Effects_SepiaEffect2_Props_Intensity">Intensity</a></dt>
-    <dd></dd>
+    <dd><p>The intensity of the effect. The range is [0, 1] and the default is 0.5.<br>
+If 0.5 is used, this effect produces the same output as the original, parameterless Paint.NET Sepia effect.<br>
+If 0 is used, this effect produces the same output as <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect2.html">GrayscaleEffect2</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

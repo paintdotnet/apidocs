@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum TextureFilter ">
       
-      
+      <meta name="description" content="Represents filtering modes that a transform may select to use on input textures. D2D1_FILTER">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,9 @@ Enum TextureFilter
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents filtering modes that a transform may select to use on input textures.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ne-d2d1effectauthor-d2d1_filter">D2D1_FILTER</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,34 +116,46 @@ Enum TextureFilter
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinMagMipPoint"><code>MinMagMipPoint = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>Use point sampling for minification, magnification, and mip-level sampling. This is equivalent to InterpolationMode.NearestNeighbor.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinMagPointMipLinear"><code>MinMagPointMipLinear = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>Use point sampling for minification and magnification; use linear interpolation for mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinPointMagLinearMipPoint"><code>MinPointMagLinearMipPoint = 4</code></dt>
   
-  <dd></dd>
+  <dd><p>Use point sampling for minification; use linear interpolation for magnification; use point sampling for mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinPointMagMipLinear"><code>MinPointMagMipLinear = 5</code></dt>
   
-  <dd></dd>
+  <dd><p>Use point sampling for minification; use linear interpolation for magnification and mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinLinearMagMipPoint"><code>MinLinearMagMipPoint = 16</code></dt>
   
-  <dd></dd>
+  <dd><p>Use linear interpolation for minification; use point sampling for magnification and mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinLinearMagPointMipLinear"><code>MinLinearMagPointMipLinear = 17</code></dt>
   
-  <dd></dd>
+  <dd><p>Use linear interpolation for minification; use point sampling for magnification; use linear interpolation for mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinMagLinearMipPoint"><code>MinMagLinearMipPoint = 20</code></dt>
   
-  <dd></dd>
+  <dd><p>Use linear interpolation for minification and magnification; use point sampling for mip-level sampling.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_MinMagMipLinear"><code>MinMagMipLinear = 21</code></dt>
   
-  <dd></dd>
+  <dd><p>Use linear interpolation for minification, magnification, and mip-level sampling. This is equivalent to InterpolationMode.Linear.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_TextureFilter_Anisotropic"><code>Anisotropic = 85</code></dt>
   
-  <dd></dd>
+  <dd><p>Use anisotropic interpolation for minification, magnification, and mip-level sampling.</p>
+</dd>
   </dl>
 
 
+  <h2 id="PaintDotNet_Direct2D1_TextureFilter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The most common choices are <a class="xref" href="PaintDotNet.Direct2D1.TextureFilter.html#PaintDotNet_Direct2D1_TextureFilter_MinMagMipPoint">MinMagMipPoint</a> (point / nearest neighbor) and <a class="xref" href="PaintDotNet.Direct2D1.TextureFilter.html#PaintDotNet_Direct2D1_TextureFilter_MinMagMipLinear">MinMagMipLinear</a> (linear / bilinear).</p>
+</div>
 
 </article>
 

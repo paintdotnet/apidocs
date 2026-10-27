@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PdnWavesEffect ">
       
-      
+      <meta name="description" content="Provides Paint.NET&#39;s Waves effect as a  that can be used for rendering with Direct2D.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Class PdnWavesEffect
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides Paint.NET's Waves effect as a <a class="xref" href="PaintDotNet.Direct2D1.DynamicEffect.html">DynamicEffect</a> that can be used
+for rendering with Direct2D.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -209,13 +211,50 @@ Class PdnWavesEffect
 
 
 
+  <h2 id="PaintDotNet_Effects_Gpu_PdnWavesEffect_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Which properties matter depends on the pattern. A property a pattern ignores is still stored and
+still forwarded to the shader; it simply has no part in the geometry that pattern builds.</p>
+<pre><code class="lang-csharp">                      Angle   Center   WaveLength   Lobes   Damping   Bounds
+Linear                 yes    phase       yes         -        -         -
+LongitudinalLinear     yes    phase       yes         -        -         -
+Crossed                yes    phase       yes         -        -         -
+Radial                  -      yes        yes         -       yes        -
+Tangential              -      yes        yes         -       yes        -
+SquareRings             -      yes        yes         -       yes        -
+DiamondRings            -      yes        yes         -       yes        -
+Angular                 -      yes         -         yes       -         -
+Spiral                  -      yes        yes        yes      yes        -
+FromEdges               -      yes        yes         -       yes       yes</code></pre>
+<p><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Pattern.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Pattern">Pattern</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Waveform.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Waveform">Waveform</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a> and
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a> are read by every pattern, as are the
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnDistortionEffect.html">PdnDistortionEffect</a> properties this inherits.<br>
+&quot;phase&quot; marks the patterns that read <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a> only as the point where the
+wave's phase is zero, rather than as something the wavefronts are arranged around. Moving it
+slides those patterns along their direction of travel, which is what
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Phase.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Phase">Phase</a> already does, so Paint.NET's own Waves dialog does not offer it for
+them.<br>
+<br>
+The waveform decides how much of <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Amplitude.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude">Amplitude</a> the displacement actually reaches,
+and how the result breaks down once the amplitude passes the fold threshold described there:</p>
+<pre><code class="lang-csharp">                Reaches      Past the fold threshold
+Sine             all         folds over itself
+Triangle         all         folds over itself, but not until a higher amplitude
+Sawtooth         all         tears along the line where the wave resets
+Square           all         tears along the line where the wave flips
+Semicircle       all         creases at any amplitude; its arcs meet at a vertical tangent
+Harmonics        about 58%   folds over itself
+SteppedSine      all         tears along each step</code></pre>
+<p>Harmonics reaches less because it is scaled to match a sine's steepest slope rather than a
+sine's peak, which is what lets one fold threshold cover every waveform.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.-ctor.html#PaintDotNet_Effects_Gpu_PdnWavesEffect__ctor_PaintDotNet_Direct2D1_IDeviceContext_">PdnWavesEffect(IDeviceContext)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of the distortion effect.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties

@@ -112,7 +112,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.PluginOptions.html">PluginOptions</a></dt>
-      <dd></dd>
+      <dd><p>The base class that plugins use the specify information about themselves to the plugin system.
+This class should not be used to house information for UI purposes, such as display names or
+icons.</p>
+</dd>
     </dl>
     <h3 id="structs">
 Structs
@@ -130,7 +133,13 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IArrayPoolService.html">IArrayPoolService</a></dt>
-      <dd></dd>
+      <dd><p>Provides access to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1">ArrayPool&lt;T&gt;</a>.<br>
+<br>
+This service was originally created during the days of .NET Framework when the
+array pool was only available as a nuget package, which made it difficult for
+plugins to use it. Nowadays, you should just use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1">ArrayPool&lt;T&gt;</a>
+directly.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.ICanvasVisualStyling.html">ICanvasVisualStyling</a></dt>
@@ -146,11 +155,18 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IDxgiAdapterService.html">IDxgiAdapterService</a></dt>
-      <dd></dd>
+      <dd><p>This interface provides access to the <a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nn-dxgi-idxgiadapter">IDXGIAdapter</a>
+that Paint.NET uses for rendering.
+<br>
+<br>
+You should use <a class="xref" href="PaintDotNet.AppModel.IDxgiAdapterService2.html">IDxgiAdapterService2</a> instead of this interface.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IDxgiAdapterService2.html">IDxgiAdapterService2</a></dt>
-      <dd></dd>
+      <dd><p>This interface provides access to the <a href="https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nn-dxgi-idxgiadapter">IDXGIAdapter</a>
+that Paint.NET uses for rendering.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IEnumLocalizer.html">IEnumLocalizer</a></dt>
@@ -174,7 +190,8 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IPalettesService.html">IPalettesService</a></dt>
-      <dd></dd>
+      <dd><p>Provides read-only access to palettes for plugins. This interface is superceded by <a class="xref" href="PaintDotNet.AppModel.IUserPalettesService.html">IUserPalettesService</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IPluginInfo.html">IPluginInfo</a></dt>
@@ -214,7 +231,8 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IUserPalettesService.html">IUserPalettesService</a></dt>
-      <dd></dd>
+      <dd><p>Provides read-only access to user palettes.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.AppModel.IVisualStylingService.html">IVisualStylingService</a></dt>

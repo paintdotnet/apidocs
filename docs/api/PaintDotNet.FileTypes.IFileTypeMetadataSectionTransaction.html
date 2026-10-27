@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeMetadataSectionTransaction ">
       
-      
+      <meta name="description" content="Represents a transaction for making atomic changes to an . This is the base interface for the section-specific transaction interfaces, e.g. .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface IFileTypeMetadataSectionTransaction
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes to an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSection.html">IFileTypeMetadataSection</a>. This is the
+base interface for the section-specific transaction interfaces, e.g. <a class="xref" href="PaintDotNet.FileTypes.IFileTypeExifMetadataTransaction.html">IFileTypeExifMetadataTransaction</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,11 +147,14 @@ Interface IFileTypeMetadataSectionTransaction
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.Clear.html#PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_Clear">Clear()</a></dt>
-    <dd></dd>
+    <dd><p>Removes all metadata entries, and/or resets all metadata to their default values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeMetadataSectionTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_">ReplaceFrom(IReadOnlyFileTypeMetadataSection)</a></dt>
-    <dd></dd>
+    <dd><p>Replaces the contents of the metadata section with the values from another metadata section of the same
+<a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.Kind.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_Kind">Kind</a>.</p>
+</dd>
   </dl>
 
 

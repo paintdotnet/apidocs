@@ -120,7 +120,8 @@ Method CreateGradientStopCollection
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a> from the specified array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,17 +133,21 @@ Method CreateGradientStopCollection
   <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
   <dd></dd>
   <dt><code>gradientStops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The array of <a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a> structures.</p>
+</dd>
   <dt><code>colorInterpolationGamma</code> <a class="xref" href="PaintDotNet.Direct2D1.GradientStopGamma.html">GradientStopGamma</a></dt>
-  <dd></dd>
+  <dd><p>The space in which color interpolation between the gradient stops is performed.</p>
+</dd>
   <dt><code>extendMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ExtendMode.html">ExtendMode</a></dt>
-  <dd></dd>
+  <dd><p>The behavior of the gradient outside the [0,1] normalized range.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a></dt>
-  <dd></dd>
+  <dd><p>The new gradient stop collection.</p>
+</dd>
 </dl>
 
 
@@ -162,7 +167,9 @@ Method CreateGradientStopCollection
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a gradient stop collection, enabling the gradient to contain color channels with values outside of [0,1]
+and also enabling rendering to a high-color render target with interpolation in sRGB space.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -174,23 +181,30 @@ Method CreateGradientStopCollection
   <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
   <dd></dd>
   <dt><code>straightAlphaGradientStops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.GradientStop.html">GradientStop</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>An array of color values and offsets.</p>
+</dd>
   <dt><code>preInterpolationSpace</code> <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorSpace.html">DeviceColorSpace</a></dt>
-  <dd></dd>
+  <dd><p>Specifies both the input color space and the space in which the color interpolation occurs.</p>
+</dd>
   <dt><code>postInterpolationSpace</code> <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorSpace.html">DeviceColorSpace</a></dt>
-  <dd></dd>
+  <dd><p>The color space that colors will be converted to after interpolation occurs.</p>
+</dd>
   <dt><code>bufferPrecision</code> <a class="xref" href="PaintDotNet.Direct2D1.BufferPrecision.html">BufferPrecision</a></dt>
-  <dd></dd>
+  <dd><p>The precision of the texture used to hold interpolated values.</p>
+</dd>
   <dt><code>extendMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ExtendMode.html">ExtendMode</a></dt>
-  <dd></dd>
+  <dd><p>Defines how colors outside of the range defined by the stop collection are determined.</p>
+</dd>
   <dt><code>colorInterpolationMode</code> <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html">ColorInterpolationMode</a></dt>
-  <dd></dd>
+  <dd><p>Defines how colors are interpolated. <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html#PaintDotNet_Direct2D1_ColorInterpolationMode_Premultiplied">Premultiplied</a> is the default, see Remarks for more info.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.html">IGradientStopCollection</a></dt>
-  <dd></dd>
+  <dd><p>The new gradient stop collection.</p>
+</dd>
 </dl>
 
 
@@ -199,6 +213,19 @@ Method CreateGradientStopCollection
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateGradientStopCollection_PaintDotNet_Direct2D1_IDeviceContext_System_Collections_Generic_IReadOnlyList_PaintDotNet_Direct2D1_GradientStop__PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_DeviceColorSpace_PaintDotNet_Direct2D1_BufferPrecision_PaintDotNet_Direct2D1_ExtendMode_PaintDotNet_Direct2D1_ColorInterpolationMode__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method linearly interpolates between the color stops. An optional color space conversion is applied post-interpolation.
+Whether and how this gamma conversion is applied is determined by the pre- and post-interpolation. This method will fail if
+the device context does not support the requested buffer precision.<br>
+In order to get the desired result, you need to ensure that the inputs are specified in the correct color space.<br>
+You must always specify colors in straight alpha, regardless of interpolation mode being premultiplied or straight. The
+interpolation mode only affects the interpolated values. Likewise, the stops returned by <a class="xref" href="PaintDotNet.Direct2D1.IGradientStopCollection.GradientStops.html#PaintDotNet_Direct2D1_IGradientStopCollection_GradientStops">GradientStops</a>
+will always have straight alpha.<br>
+If you specify <a class="xref" href="PaintDotNet.Direct2D1.ColorInterpolationMode.html#PaintDotNet_Direct2D1_ColorInterpolationMode_Premultiplied">Premultiplied</a>, then all stops are premultiplied before interpolation,
+and then un-premultiplied before color conversion.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-creategradientstopcollection">ID2D1DeviceContext::CreateGradientStopCollection method</a>
+for a table showing the interpolation behavior with respect to the color space options.</p>
+</div>
 
 
 

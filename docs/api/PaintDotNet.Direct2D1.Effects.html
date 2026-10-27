@@ -92,7 +92,14 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.html">AffineTransform2DEffect</a></dt>
-      <dd></dd>
+      <dd><p>The 2D affine transform effect applies a spatial transform to a image based on a 3x2 matrix
+using the Direct2D matrix transform and any of six interpolation modes. You can use this
+effect to rotate, scale, skew, or translate an image. Or, you can combine these operations.
+Affine transfers preserve parallel lines and the ratio of distances between any three points
+in an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/2d-affine-transform">2D affine transform effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AffineTransform2DEffect.Props.html">AffineTransform2DEffect.Props</a></dt>
@@ -100,7 +107,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.html">AlphaMaskEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect applies an alpha mask to an image. It has two inputs, named Destination and Mask.
+Color values in the Destination image are multiplied by the alpha channel of the Mask image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/alpha-mask-effect">Alpha mask effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.Props.html">AlphaMaskEffect.Props</a></dt>
@@ -108,7 +119,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect2.html">AlphaMaskEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.html">AlphaMaskEffect</a>, but also supports Straight alpha via configuring the AlphaMode property.<br>
+<br>
+This effect applies an alpha mask to an image. It has two inputs, named Destination and Mask.
+Color values in the Destination image are multiplied by the alpha channel of the Mask image.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect2.Props.html">AlphaMaskEffect2.Props</a></dt>
@@ -116,7 +131,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ArithmeticCompositeEffect.html">ArithmeticCompositeEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the arithmetic composite effect to combine 2 images using a weighted sum of pixels from the input images.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/arithmetic-composite">Arithmetic composite effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ArithmeticCompositeEffect.Props.html">ArithmeticCompositeEffect.Props</a></dt>
@@ -124,7 +142,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AtlasEffect.html">AtlasEffect</a></dt>
-      <dd></dd>
+      <dd><p>You can use this effect to output a portion of an image but retain the region outside of the
+portion for use in subsequent operations. The atlas effect is useful if you want to load a
+large image made up of many smaller images, such as various frames of a sprite.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/atlas">Atlas effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.AtlasEffect.Props.html">AtlasEffect.Props</a></dt>
@@ -132,7 +155,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the blend effect to combine 2 images. This effect has 26 blend modes.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/blend">Blend effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.Props.html">BlendEffect.Props</a></dt>
@@ -140,7 +166,20 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.html">BlendEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>, but with different blend modes. Includes the layer blend
+modes from Paint.NET that are not supported by <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>, such as Xor. Does not
+include the blend modes that are supported by <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>.<br>
+<br>
+The classic &quot;Normal&quot; blend mode from Paint.NET is equivalent to <a class="xref" href="PaintDotNet.Direct2D1.CompositeMode.html#PaintDotNet_Direct2D1_CompositeMode_SourceOver">SourceOver</a>
+or <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixMode.html#PaintDotNet_Direct2D1_Effects_MixMode_CompositeSourceOver">CompositeSourceOver</a>.<br>
+<br>
+The inputs are converted to straight alpha if the AlphaMode property is set to Premultiplied. The
+blend mode is applied, then the result is clamped to the range [0, 1] (unless the
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.Props.ClampOutput.html#PaintDotNet_Direct2D1_Effects_BlendEffect2_Props_ClampOutput">ClampOutput</a> property is set to false). Lastly, the output is premultiplied
+if the <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_BlendEffect2_Props_AlphaMode">AlphaMode</a> property is set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendAlphaMode2.html#PaintDotNet_Direct2D1_Effects_BlendAlphaMode2_Premultiplied">Premultiplied</a>.<br>
+<br>
+For a convenient way to use any blend or composite mode, see <a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.html">MixEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.Props.html">BlendEffect2.Props</a></dt>
@@ -148,7 +187,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurEffect.html">BokehBlurEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the Bokeh Blur effect to give an out-of-focus appearance to an image.<br>
+<br>
+See <a href="https://en.wikipedia.org/wiki/Bokeh">Bokeh (Wikipedia)</a> for more information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurEffect.Props.html">BokehBlurEffect.Props</a></dt>
@@ -156,7 +198,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.html">BokehBlurMapEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect simulates the ability to have a per-pixel value for the blur radius of a
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurEffect.html">BokehBlurEffect</a>. This is implemented as a linear interpolation across
+many copies of the image blurred at various radius levels.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BokehBlurMapEffect.Props.html">BokehBlurMapEffect.Props</a></dt>
@@ -164,7 +209,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect.html">BorderEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the border effect to extend an image from the edges. You can use this effect to repeat the pixels
+from the edges of the image, wrap the pixels from the opposite end of the image, or mirror the pixels
+across the bitmap border to extend the bitmap region.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/border">Border effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect.Props.html">BorderEffect.Props</a></dt>
@@ -172,7 +222,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect2.html">BorderEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect.html">BorderEffect</a>, but adds the Transparent edge mode. This can be used
+to extend an image's bounds to infinity while not affecting its appearance. Unlike
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect.html">BorderEffect</a>, the edge mode cannot be set separately for X and Y directions.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BorderEffect2.Props.html">BorderEffect2.Props</a></dt>
@@ -180,7 +233,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BrightnessEffect.html">BrightnessEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the brightness effect to control the brightness of the image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/brightness">Brightness effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.BrightnessEffect.Props.html">BrightnessEffect.Props</a></dt>
@@ -188,7 +244,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ChromaKeyEffect.html">ChromaKeyEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts a given color plus or minus a tolerance to alpha. For example, chroma-key can remove the
+background of an image for a green-screen overlay effect.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/chromakey-effect">Chroma-key effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ChromaKeyEffect.Props.html">ChromaKeyEffect.Props</a></dt>
@@ -196,7 +256,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampEffect.html">ClampEffect</a></dt>
-      <dd></dd>
+      <dd><p>Clamps the pixel values of the input image to valid values for standard dynamic range (SDR).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ClampEffect.Props.html">ClampEffect.Props</a></dt>
@@ -204,7 +265,17 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the color management effect to transform an image from one ICC (International Color Consortium)
+color profile to another. The effect transforms the image according to the ICC specification.<br>
+<br>
+Note that this effect is a wrapper around Direct2D's built-in Color Management effect. This wrapper
+has several workarounds for bugs or inconsistencies in Direct2D's implementation, and has improved
+quality. To create an instance of an un-wrapped Direct2D Color Management effect, use the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectFactory.CreateEffect.html#PaintDotNet_Direct2D1_IDeviceEffectFactory_CreateEffect_PaintDotNet_Direct2D1_DeviceEffectID__">CreateEffect(in DeviceEffectID)</a> method, which is available on
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a> and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectContext.html">IDeviceEffectContext</a>.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/color-management">Color management effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.Props.html">ColorManagementEffect.Props</a></dt>
@@ -212,7 +283,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorMatrixEffect.html">ColorMatrixEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the color matrix effect to alter the RGBA values of a bitmap.<br>
+<br>
+You can use this effect to:<br></p>
+<ul><li>Remove a color channel from an image.</li><li>Reduce the color in an image.</li><li>Swap color channels.</li><li>Combine color channels.</li></ul>
+<br>
+Many built-in effects are specializations of color matrix that are optimized for the intended use of the effects. Examples include saturation, hue rotate, sepia, and temperature and tint.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/color-matrix">Color matrix effect</a>.
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorMatrixEffect.Props.html">ColorMatrixEffect.Props</a></dt>
@@ -220,7 +299,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CompositeEffect.html">CompositeEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the composite effect to combine 2 or more images. This effect has 13 different composite modes.
+The composite effect accepts 2 or more inputs. When you specify 2 images, destination is the first
+input (index 0) and the source is the second input (index 1). If you specify more than 2 inputs the
+images are composited starting with the first input and the second and so on.<br>
+<br>
+This effect implements all of the modes using the blending unit of the graphics processing unit (GPU).<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/composite">Composite effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CompositeEffect.Props.html">CompositeEffect.Props</a></dt>
@@ -228,7 +315,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.html">ContrastEffect</a></dt>
-      <dd></dd>
+      <dd><p>Increases or decreases the contrast of an image.<br>
+<br>
+The contrast function modifies each color channel value using two piecewise quadratic polynomials that
+meet with slope continuity at the point (0.5, 0.5).<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/contrast-effect">Contrast effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.Props.html">ContrastEffect.Props</a></dt>
@@ -236,7 +329,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.html">ConvertAlphaEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect converts an input image from one alpha format to another. It uses the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a>
+or <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a> depending on the value of the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.Props.Mode.html#PaintDotNet_Direct2D1_Effects_ConvertAlphaEffect_Props_Mode">Mode</a>
+property.<br>
+<br>
+This effect may be more convenient than using <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a> or <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a>
+depending on the nature and configuration of the effect graph you are working with.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.Props.html">ConvertAlphaEffect.Props</a></dt>
@@ -244,7 +343,20 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertGammaEffect.html">ConvertGammaEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect is used to convert the gamma of an input image. Conversion can be done from sRGB to Linear,
+Linear to sRGB, or a custom exponent can be used.<br>
+<br>
+Conversion between sRGB and Linear uses the <a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a> or <a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.html">LinearToSrgbEffect</a>,
+which implements a gamma exponent approximately equal to 2.2. See
+<a href="https://medium.com/@tomforsyth/the-srgb-learning-curve-773b7f68cf7a">The sRGB Learning Curve</a>
+for more information.<br>
+<br>
+If a custom exponent is used, then <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.html">GammaTransferEffect2</a> is used.<br>
+<br>
+Images are usually encoded using sRGB, and most effects are implemented in the Linear gamma space. Therefore,
+it is more accurate to convert an image from sRGB to Linear before other effects are used for processing.
+The image should then be converted back from Linear to sRGB.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertGammaEffect.Props.html">ConvertGammaEffect.Props</a></dt>
@@ -252,7 +364,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvolveMatrixEffect.html">ConvolveMatrixEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the convolve matrix effect to apply an arbitrary 2D kernel to an image. You can use this effect to
+blur, detect edges, emboss, or sharpen an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/convolve-matrix">Convolve matrix effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvolveMatrixEffect.Props.html">ConvolveMatrixEffect.Props</a></dt>
@@ -260,7 +376,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CropEffect.html">CropEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the crop effect to output a specified region of an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/crop">Crop effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CropEffect.Props.html">CropEffect.Props</a></dt>
@@ -268,7 +387,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.html">CroppedFloodEffect</a></dt>
-      <dd></dd>
+      <dd><p>Combines <a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect2.html">FloodEffect2</a> and <a class="xref" href="PaintDotNet.Direct2D1.Effects.CropEffect.html">CropEffect</a> to create a cropped solid color fill effect.<br>
+<br>
+This effect also supports configuring the alpha mode for the color and the output.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CroppedFloodEffect.Props.html">CroppedFloodEffect.Props</a></dt>
@@ -276,7 +398,25 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.html">CrossFadeEffect</a></dt>
-      <dd></dd>
+      <dd><pre><code>        This effect combines two images by adding weighted pixels from the input images.&lt;br /&gt;
+        &lt;br /&gt;
+        It has two inputs, named Destination and Source.&lt;br /&gt;
+        &lt;br /&gt;
+        The cross fade formula is: 
+</code></pre>
+<pre><code class="lang-csharp">Output = SourceWeight * Source + (1 - SourceWeight) * Destination</code></pre><br>
+<pre><code>        &lt;br /&gt;
+        For more information, see &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/direct2d/cross-fade-effect&quot;&gt;Cross-fade effect&lt;/a&gt;.&lt;br /&gt;
+        &lt;br /&gt;
+        Please note that Direct2D's Weight property is reversed from what is implemented here; put another
+        way, the inputs have been renamed from Destination and Source to Source and Destination. This results
+        in a more natural mapping for the SourceWeight property.&lt;br /&gt;
+        &lt;br /&gt;
+        You can use the Direct2D meanings for the inputs and properties by creating the effect manually
+        with IDeviceContext.CreateEffect(DeviceEffectIDs.CrossFade), and then using SetValue(CrossFadeProperty.Weight)
+        to set the Weight property.
+</code></pre>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.Props.html">CrossFadeEffect.Props</a></dt>
@@ -284,7 +424,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeMaskEffect.html">CrossFadeMaskEffect</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeEffect.html">CrossFadeEffect</a>, but uses a mask image to do a per-pixel
+cross-fade between two images.<br>
+<br>
+A SourceMask alpha value of 0 will use the pixel from Destination, while a value of 1
+will use the pixel from Source, and 0.5 will take the average.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CrossFadeMaskEffect.Props.html">CrossFadeMaskEffect.Props</a></dt>
@@ -304,7 +449,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.CustomEffect-1.html">CustomEffect&lt;TProperties&gt;</a></dt>
-      <dd></dd>
+      <dd><p>The base class for implementing a custom effect in Direct2D. The custom effects system in PaintDotNet.Direct2D1
+handles many things automatically, such as just-in-time registration and auto-generation of the registration XML.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffect.html">DeviceEffect</a></dt>
@@ -320,7 +467,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.html">DirectionalBlurEffect</a></dt>
-      <dd></dd>
+      <dd><p>The directional blur effect is similar to Gaussian blur, except you can skew the blur in a particular
+direction. You can use this effect to make an image look as if it is in motion or to emphasize an
+animated image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/directional-blur">Directional blur effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DirectionalBlurEffect.Props.html">DirectionalBlurEffect.Props</a></dt>
@@ -328,7 +480,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DiscreteTransferEffect.html">DiscreteTransferEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the discrete transfer effect to map the color intensities of an image using a step transfer function
+created from a list of values you provide.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/discrete-transfer">Discrete transfer effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DiscreteTransferEffect.Props.html">DiscreteTransferEffect.Props</a></dt>
@@ -336,7 +492,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.html">DisplacementMapEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the displacement map effect to displace the pixels of the input image by the intensity values of a
+second input image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/displacement-map">Displacement map effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.html">DisplacementMapEffect.Props</a></dt>
@@ -344,7 +504,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DistantDiffuseEffect.html">DistantDiffuseEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the distant-diffuse lighting effect to create an image that appears to be a non-reflective surface with where
+the light source appears to be coming from a long distance (like the sun or overhead lights) and the light is
+scattered in all directions. This effect uses the alpha channel as a height map and lights the image with a distant
+light source.<br>
+<br>
+The color of the output bitmap is a result of light color, light position, and the surface geometry of the image.
+The alpha channel output for each pixel with diffuse lighting is always 1.0.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/distant-diffuse">Distant-diffuse lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DistantDiffuseEffect.Props.html">DistantDiffuseEffect.Props</a></dt>
@@ -352,7 +521,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DistantSpecularEffect.html">DistantSpecularEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the distant-specular lighting effect to create an image that appears to be a reflective surface
+where the light source appears to be coming from a long distance (like the sun or overhead lights).
+This effect uses the alpha channel as a height map and lights the image with a distant light source.
+The color of the output bitmap is a result of light color, light position, and the surface geometry.
+The alpha channel output for each pixel with specular lighting is the maximum of the red, green, and
+blue channel outputs for that pixel.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/distant-specular">Distant-specular lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DistantSpecularEffect.Props.html">DistantSpecularEffect.Props</a></dt>
@@ -360,7 +537,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DpiCompensationEffect.html">DpiCompensationEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the DPI compensation effect to automatically adjust an input bitmap to match the DPI of the context.
+This is useful for situations where a bitmap is created or loaded at a different DPI than the screen.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/dpi-compensation">DPI compensation effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DpiCompensationEffect.Props.html">DpiCompensationEffect.Props</a></dt>
@@ -368,7 +549,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EdgeDetectionEffect.html">EdgeDetectionEffect</a></dt>
-      <dd></dd>
+      <dd><p>Filters out the content of an image, leaving lines at the edges of contrasting sections of the image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/edge-detection-effect">Edge-detection effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EdgeDetectionEffect.Props.html">EdgeDetectionEffect.Props</a></dt>
@@ -384,7 +568,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EmbossEffect.html">EmbossEffect</a></dt>
-      <dd></dd>
+      <dd><p>Creates a grayscale version of the image that appears as though it has been stamped into paper.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/emboss-effect">Emboss effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EmbossEffect.Props.html">EmbossEffect.Props</a></dt>
@@ -392,7 +579,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EmptyEffect.html">EmptyEffect</a></dt>
-      <dd></dd>
+      <dd><p>An effect that produces no output.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.EmptyEffect.Props.html">EmptyEffect.Props</a></dt>
@@ -400,7 +588,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ExposureEffect.html">ExposureEffect</a></dt>
-      <dd></dd>
+      <dd><p>Increase or decreases the exposure of the image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/exposure-effect">Exposure effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ExposureEffect.Props.html">ExposureEffect.Props</a></dt>
@@ -408,7 +599,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect.html">FloodEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the flood effect to generate a bitmap based on the specified color and alpha value. You can use
+this effect when you want a specific color as an input for an effect, like a background color.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/flood">Flood effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect.Props.html">FloodEffect.Props</a></dt>
@@ -416,7 +611,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect2.html">FloodEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Use this effect to generate an image based on the specified color and alpha value.<br>
+<br>
+This effect is similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect.html">FloodEffect</a>, but uses a <a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a> instead of a
+<a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a> for specifying the color, along with the alpha mode. This effect will
+automatically premultiply the color value unless the alpha mode is set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodAlphaMode2.html#PaintDotNet_Direct2D1_Effects_FloodAlphaMode2_Straight">Straight</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect2.Props.html">FloodEffect2.Props</a></dt>
@@ -424,7 +624,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the gamma transfer effect to map the color intensities of an image using a gamma function created
+using an amplitude, exponent, and offset you provide for each channel.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/gamma-transfer">Gamma transfer effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.Props.html">GammaTransferEffect.Props</a></dt>
@@ -432,7 +636,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.html">GammaTransferEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a>, but allows specifying the alpha format of the
+input and output.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.Props.html">GammaTransferEffect2.Props</a></dt>
@@ -440,7 +646,21 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the Gaussian blur effect to create a blur based on the Gaussian function over the entire
+input image.<br>
+<br>
+You can use this effect to create glows and drop shadows and use the composite effect to apply
+the result to the original image. It is useful in photo processing for filters like highlights
+and shadows.<br>
+<br>
+You can use the output of this effect for input into lighting effects, like the
+Specular Lighting or Diffuse Lighting effects, because the alpha channel is blurred too, and
+lighting effects use the alpha channel to determine surface geometry as a height map.<br>
+<br>
+This effect is used by the built-in <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/gaussian-blur">Gaussian blur effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.html">GaussianBlurEffect.Props</a></dt>
@@ -448,7 +668,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect2.html">GaussianBlurEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Provides the same functionality as <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a>, but adds a HighQuality
+mode that does not apply any optimizations or shortcuts that reduce image quality. When using
+the HighQuality mode, rendering quality is greatly improved for images that are gamma corrected
+or that have a low dynamic range (such as when using a large gamma exponent), but performance
+is greatly reduced.<br>
+<br>
+<b>NOTE:</b> The maximum value for the StandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.html">GaussianBlurEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect2.Props.html">GaussianBlurEffect2.Props</a></dt>
@@ -456,7 +683,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.html">GaussianBlurMapEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect simulates the ability to have a per-pixel value for the blur radius (standard deviation)
+of a <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect2.html">GaussianBlurEffect2</a>. This is implemented as a linear interpolation across many
+copies of the image blurred at various radius levels.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.html">GaussianBlurMapEffect.Props</a></dt>
@@ -464,7 +694,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an image to monochromatic gray.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/grayscale-effect">Grayscale effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.Props.html">GrayscaleEffect.Props</a></dt>
@@ -472,7 +705,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect2.html">GrayscaleEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>, but can also be configured for sRGB or linear gamma. This
+also necessitates the specification of straight vs. premultiplied alpha.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect2.Props.html">GrayscaleEffect2.Props</a></dt>
@@ -480,7 +715,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.html">HdrToneMapEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect adjusts the dynamic range of an image to better suit its content to the capability of the output display.<br>
+<br>
+For more information, see <a href="https://learn.microsoft.com/en-us/windows/win32/direct2d/hdr-tone-map-effect">HDR tone map effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HdrToneMapEffect.Props.html">HdrToneMapEffect.Props</a></dt>
@@ -488,7 +726,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HighlightsAndShadowsEffect.html">HighlightsAndShadowsEffect</a></dt>
-      <dd></dd>
+      <dd><p>Adjusts the highlights and shadows of the image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/highlights-and-shadows-effect">Highlights and shadows effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HighlightsAndShadowsEffect.Props.html">HighlightsAndShadowsEffect.Props</a></dt>
@@ -496,7 +737,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.html">HistogramEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the histogram effect to generate a histogram for the input bitmap based on the specified number of bins.<br>
+<br>
+This effect does not produce an image output. Instead, its results are available through the <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_HistogramOutput">HistogramOutput</a>
+property after it has been drawn with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a>.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/histogram">Histogram effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.html">HistogramEffect.Props</a></dt>
@@ -504,7 +751,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.html">HistogramEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.html">HistogramEffect</a>, but processes all channels and outputs an array
+of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> counts instead of normalized <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> values. The alpha
+format of the input can also be specified as straight or premultiplied, and the maximum
+number of bins is 4096 instead of 1024.<br>
+<br>
+This effect does not produce an image output. Instead, its results are available through
+the <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_HistogramOutput">HistogramOutput</a> property after it has been drawn
+with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a>. You can also use the <code>RunAnalysisEffect</code>
+extension method.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.html">HistogramEffect2.Props</a></dt>
@@ -512,7 +768,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryFunctionEffect.html">HlslBinaryFunctionEffect</a></dt>
-      <dd></dd>
+      <dd><p>Executes an HLSL function that takes two parameters.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryFunctionEffect.Props.html">HlslBinaryFunctionEffect.Props</a></dt>
@@ -520,7 +777,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryOperatorEffect.html">HlslBinaryOperatorEffect</a></dt>
-      <dd></dd>
+      <dd><p>Combines two images or values using an HSL binary operator such as +, -, *, or /.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslBinaryOperatorEffect.Props.html">HlslBinaryOperatorEffect.Props</a></dt>
@@ -528,7 +786,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslTernaryFunctionEffect.html">HlslTernaryFunctionEffect</a></dt>
-      <dd></dd>
+      <dd><p>Executes an HLSL function that takes three parameters.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslTernaryFunctionEffect.Props.html">HlslTernaryFunctionEffect.Props</a></dt>
@@ -536,7 +795,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.html">HlslUnaryFunctionEffect</a></dt>
-      <dd></dd>
+      <dd><p>Applies an HLSL unary operator to every pixel in the input image.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.Props.html">HlslUnaryFunctionEffect.Props</a></dt>
@@ -552,7 +812,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HueRotationEffect.html">HueRotationEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the hue rotate effect to alter the hue of an image by applying a color matrix based on the rotation angle.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/hue-rotate">Hue rotatation effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HueRotationEffect.Props.html">HueRotationEffect.Props</a></dt>
@@ -560,7 +823,17 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HueToRgbEffect.html">HueToRgbEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an HSL (Hue, Saturation, Lightness) or HSV (Hue, Saturation, Value) image to the RGB color space.
+HSL and HSV are two different models for representing an RGB color in a cylindrical color space.
+They are useful because they allow you to reason about a color using more intuitive concepts like hue and
+intensity versus combining red, green and blue values.<br>
+<br>
+This effect passes through any input alpha values.<br>
+<br>
+To reverse the behavior of this effect, use <a class="xref" href="PaintDotNet.Direct2D1.Effects.RgbToHueEffect.html">RgbToHueEffect</a>.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/hue-to-rgb-effect">Hue-to-RGB effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HueToRgbEffect.Props.html">HueToRgbEffect.Props</a></dt>
@@ -568,7 +841,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InputSelectorEffect.html">InputSelectorEffect</a></dt>
-      <dd></dd>
+      <dd><p>An effect with variable number of inputs, and a property to select which input is used as the output.
+This effect can be useful for changing an effect graph without having to rebuild it.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InputSelectorEffect.Props.html">InputSelectorEffect.Props</a></dt>
@@ -576,7 +851,20 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InputSwizzleEffect.html">InputSwizzleEffect</a></dt>
-      <dd></dd>
+      <dd><p>Swizzles the channels from a variable number of inputs. You can specify the input index and channel that corresponds
+to each output channel.<br>
+<br>
+This effect supports any number of inputs, but only 4 can be used at once. Use <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.InputCount.html#PaintDotNet_Direct2D1_IDeviceEffect_InputCount">InputCount</a>
+to specify the number of inputs.<br>
+<br>
+If you are only swizzling from 1 input, it is recommended to use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a> instead.<br>
+<br></p>
+<pre><code class="lang-csharp">output = new Color(
+    Input[RedInputIndex][RedInputChannel],
+    Input[GreenInputIndex][GreenInputChannel],
+    Input[BlueInputIndex][BlueInputChannel],
+    Input[AlphaInputIndex][AlphaInputChannel]);</code></pre>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InputSwizzleEffect.Props.html">InputSwizzleEffect.Props</a></dt>
@@ -584,7 +872,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertAlphaEffect.html">InvertAlphaEffect</a></dt>
-      <dd></dd>
+      <dd><p>Inverts the alpha channel of an image.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertAlphaEffect.Props.html">InvertAlphaEffect.Props</a></dt>
@@ -592,7 +881,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect.html">InvertEffect</a></dt>
-      <dd></dd>
+      <dd><p>Inverts the colors of an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/invert-effect">Invert effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect.Props.html">InvertEffect.Props</a></dt>
@@ -600,7 +892,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect2.html">InvertEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect.html">InvertEffect</a>, but does not require a premultiplied input. This means
+that color information can be preserved for transparent pixels when the input is in straight alpha
+format and <a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect2.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_InvertEffect2_Props_AlphaMode">AlphaMode</a> is set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertAlphaMode2.html#PaintDotNet_Direct2D1_Effects_InvertAlphaMode2_Straight">Straight</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.InvertEffect2.Props.html">InvertEffect2.Props</a></dt>
@@ -608,7 +903,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.html">LinearToSrgbEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an image from linear scRGB (gamma 1.0) to companded sRGB (gamma ~2.2).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.Props.html">LinearToSrgbEffect.Props</a></dt>
@@ -616,7 +912,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearTransferEffect.html">LinearTransferEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the linear transfer effect to map the color intensities of an image using a linear function
+created from a list of values you provide for each channel.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/linear-transfer">Linear transfer effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearTransferEffect.Props.html">LinearTransferEffect.Props</a></dt>
@@ -624,7 +924,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LookupTable3DEffect.html">LookupTable3DEffect</a></dt>
-      <dd></dd>
+      <dd><p>A 3D look-up table is a general-purpose effect that is used to encapsulate any 1:1 imaging effect by
+pre-computing how the effect maps inputs to outputs for a subset of all input values.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-lookup-table-effect">3D lookup table effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LookupTable3DEffect.Props.html">LookupTable3DEffect.Props</a></dt>
@@ -632,7 +936,35 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminanceToAlphaEffect.html">LuminanceToAlphaEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the luminance to alpha effect to set the alpha channel to the luminance of the image and sets
+the color channels to 0. You can use the output of this effect to make a semitransparent overlay
+based on the brightness of the input image. Or you can use it to make an image mask.<br>
+This effect sets the alpha channel of the output to the luminance of the input image using this
+color matrix:</p>
+<pre><code class="lang-csharp">                                 R'  G'  B'      A'
+                              ┌                     ┐
+                              │   0   0   0  0.2125 │  R
+                              │   0   0   0  0.7154 │  G
+[R' G' B' A'] = [R G B A 1] * │   0   0   0  0.0721 │  B
+                              │   0   0   0       0 │  A
+                              │   0   0   0       0 │  1
+                              └                     ┘</code></pre>
+<br>
+This effect consumes and outputs premultiplied alpha images. The effect won't work on straight
+alpha images unless they are fully opaque.<br>
+<br>
+This effect calculates the <i>luminance</i> for the image's color values, which is different than
+<i>luma</i> which is calculated by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>.
+See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
+for more information.<br>
+<br>
+<b>NOTE:</b> Because images are stored in a gamma-compensated format, before you calculate the
+luminance for an image you should first perform inverse gamma correction to get the true color
+values for the image. Since images are normally stored at 2.2 gamma, you can use <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a>
+with an exponent of (1/2.2) and then use the output of that effect.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/luminance-to-alpha">Luminance to alpha effect</a>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminanceToAlphaEffect.Props.html">LuminanceToAlphaEffect.Props</a></dt>
@@ -640,7 +972,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminosityTableTransferEffect.html">LuminosityTableTransferEffect</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect.html">TableTransferEffect</a> and <a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect2.html">TableTransferEffect2</a>, but adjusts
+luminosity instead of RGBA. This is used by Paint.NET's Curves adjustment effect. Use the the
+<a class="xref" href="PaintDotNet.Rendering.FunctionInterpolator.html">FunctionInterpolator</a> class and the <a class="xref" href="PaintDotNet.Rendering.FunctionInterpolatorExtensions.CreateLookupTable.html#PaintDotNet_Rendering_FunctionInterpolatorExtensions_CreateLookupTable__1_PaintDotNet_Rendering_IFunctionInterpolator_System_Int32_System_Double_System_Double_">CreateLookupTable&lt;TResult&gt;(IFunctionInterpolator, int, double, double)</a>
+extension method to create a lookup table for a given transfer function.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.LuminosityTableTransferEffect.Props.html">LuminosityTableTransferEffect.Props</a></dt>
@@ -648,7 +984,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MakeOpaqueEffect.html">MakeOpaqueEffect</a></dt>
-      <dd></dd>
+      <dd><p>Forces the input image to be opaque. This is useful when working with an image source that is in the BGR32 pixel
+format, as the &quot;alpha&quot; channel may be zero or uninitialized.<br>
+<br>
+This effect is usually used with a <span class="xref">PaintDotNet.Direct2D1.Effects.BitmapSourceEffect2</span> as the input.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MakeOpaqueEffect.Props.html">MakeOpaqueEffect.Props</a></dt>
@@ -656,7 +996,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.html">MedianBlurEffect</a></dt>
-      <dd></dd>
+      <dd><p>Blurs the image by using a median approximation algorithm.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MedianBlurEffect.Props.html">MedianBlurEffect.Props</a></dt>
@@ -664,7 +1005,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.html">MixEffect</a></dt>
-      <dd></dd>
+      <dd><p>Provides composite modes, blend modes, and alpha masking in the same effect.<br>
+<br>
+This is the same as using the <a class="xref" href="PaintDotNet.Direct2D1.Effects.CompositeEffect.html">CompositeEffect</a>, <a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect.html">BlendEffect</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.BlendEffect2.html">BlendEffect2</a>, or <a class="xref" href="PaintDotNet.Direct2D1.Effects.AlphaMaskEffect.html">AlphaMaskEffect</a> depending on which mode you
+want to use. This effect provides all of those modes in one effect which can be more
+convenient. It also performs automatic alpha-mode conversion when necessary and as
+specified by the AlphaMode property.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MixEffect.Props.html">MixEffect.Props</a></dt>
@@ -680,7 +1028,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MorphologyEffect.html">MorphologyEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the morphology effect to thin or thicken edge boundaries in an image. This effect creates a kernel
+that is 2 times the Width and Height values you specify. This effect centers the kernel on the pixel
+it is calculating and returns the maximum value in the kernel (if dilating) or minimum value in the
+kernel (if eroding).<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/morphology">Morphology effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MorphologyEffect.Props.html">MorphologyEffect.Props</a></dt>
@@ -688,7 +1042,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityEffect.html">OpacityEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect adjusts the opacity of an image by multiplying the alpha channel of the input by the specified opacity value.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/opacity-effect">Opacity effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityEffect.Props.html">OpacityEffect.Props</a></dt>
@@ -696,7 +1053,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityMetadataEffect.html">OpacityMetadataEffect</a></dt>
-      <dd></dd>
+      <dd><p>You can use this effect to mark an area of an input image as opaque, so internal rendering optimizations
+to the graph are possible.<br>
+<br>
+<b>NOTE:</b> This effect doesn't modify the image itself to be opaque. It modifies data associated with the
+image so the renderer assumes the specified region is opaque. Use the MakeOpaqueEffect if you need the alpha
+channel to actually be opaque.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/opacity-metadata-effect">Opacity metadata effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.OpacityMetadataEffect.Props.html">OpacityMetadataEffect.Props</a></dt>
@@ -704,7 +1069,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PackFloat32Effect.html">PackFloat32Effect</a></dt>
-      <dd></dd>
+      <dd><p>Converts two images from float32 to float16 and packs them into one output image.
+The output image can be unpacked using <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.html">UnpackFloat16Effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PackFloat32Effect.Props.html">PackFloat32Effect.Props</a></dt>
@@ -716,7 +1083,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisEffect.html">PassthroughAnalysisEffect</a></dt>
-      <dd></dd>
+      <dd><p>A generic analysis effect that uses the input image's output as the analysis output which is
+stored in CPU-accessible memory. This provides a means to convert any non-analysis effect to
+an analysis effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisEffect.Props.html">PassthroughAnalysisEffect.Props</a></dt>
@@ -724,7 +1094,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughEffect.html">PassthroughEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect does not modify the input, serving instead as a passthrough node. This can be
+used to adjust caching, or simply as a way to wrap an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>
+(such as an <a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a> or <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>) as an effect.
+This permits providing an <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> to another component, while retaining
+the ability to change the image without communicating with the other component
+(<a class="xref" href="PaintDotNet.Direct2D1.ICommandList.html">ICommandList</a>s are immutable, and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBitmap.html">IDeviceBitmap</a>s cannot
+be resized or have their pixel format changed).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughEffect.Props.html">PassthroughEffect.Props</a></dt>
@@ -732,7 +1109,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PerspectiveTransform3DEffect.html">PerspectiveTransform3DEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the 3D perspective transform effect to rotate the image in 3 dimensions as if viewed from a distance.
+The 3D perspective transform is more convenient than the 3D transform effect, but only exposes a subset
+of the functionality. You can compute a full 3D transformation matrix and apply a more arbitrary transform
+matrix to an image using the Transform3DEffect.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-perspective-transform">3D perspective transform effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PerspectiveTransform3DEffect.Props.html">PerspectiveTransform3DEffect.Props</a></dt>
@@ -740,7 +1123,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.html">PixelSwizzleEffect</a></dt>
-      <dd></dd>
+      <dd><p>Swizzles the pixels of an input. This can be used to change the order of channels, or to to duplicate
+(broadcast) channels. For instance, to swap the red and green channels, set the Swizzle property to
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzle_GRBA">GRBA</a>. As another example, to broadcast the green channel to all output
+channels, use <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzle_GGGG">GGGG</a>.<br>
+<br>
+You may use either RGBA or XYZW notation for channel names. Using <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzle_RGBA">RGBA</a> is
+the same as <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzle_XYZW">XYZW</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.Props.html">PixelSwizzleEffect.Props</a></dt>
@@ -752,7 +1142,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PointDiffuseEffect.html">PointDiffuseEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the point-diffuse lighting effect to create an image that appears to be a non-reflective surface
+with light scattered in all directions. This effect uses the alpha channel as a height map and lights
+the image with a point light source.<br>
+<br>
+The color of the output bitmap is a result of light color, light position, and the surface geometry.<br>
+<br>
+The alpha channel output for each pixel with diffuse lighting is always 1.0.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/point-diffuse-lighting">Point-diffuse lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PointDiffuseEffect.Props.html">PointDiffuseEffect.Props</a></dt>
@@ -760,7 +1159,18 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PointSpecularEffect.html">PointSpecularEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the point-specular lighting effect to create an image that appears to be a reflective surface.
+The effect uses the alpha channel of the image as a height map and a point light source that you
+position, and calculates the reflection and light according to the specular portion of the Phong
+lighting model.<br>
+<br>
+The color of the output bitmap is a result of light color, light position, and the surface geometry.<br>
+<br>
+The alpha channel output for each pixel with specular lighting is the maximum of the red, green,
+and blue channel outputs for that pixel.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/point-specular">Point-specular lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PointSpecularEffect.Props.html">PointSpecularEffect.Props</a></dt>
@@ -768,7 +1178,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect.html">PosterizeEffect</a></dt>
-      <dd></dd>
+      <dd><p>The posterize effect reduces the number of unique colors in an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/posterize-effect">Posterize effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect.Props.html">PosterizeEffect.Props</a></dt>
@@ -776,7 +1189,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.html">PosterizeEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect.html">PosterizeEffect</a>, but permits up to 256 value counts instead of 16, supports posterizing
+the alpha channel, and can work on both straight and premultiplied inputs.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PosterizeEffect2.Props.html">PosterizeEffect2.Props</a></dt>
@@ -784,7 +1199,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PrecisionEffect.html">PrecisionEffect</a></dt>
-      <dd></dd>
+      <dd><p>Adjusts the precision of an image. Use the <code>Precision</code> property to modify an image's precision.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PrecisionEffect.Props.html">PrecisionEffect.Props</a></dt>
@@ -792,7 +1208,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use this effect to convert an image from unpremultiplied alpha to premultiplied alpha.<br>
+<br>
+The effect replaces each input pixel <code>P = { R, G, B, A }</code> with <code>P' = { R * A, G * A, B * A, A }</code> in the output.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/premultiply">Premultiply effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.Props.html">PremultiplyEffect.Props</a></dt>
@@ -800,7 +1221,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect2.html">PremultiplyEffect2</a></dt>
-      <dd></dd>
+      <dd><p>This effect produces the same output as <a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect.html">PremultiplyEffect</a>, but also has a property
+to enable or disable premultiplication. This simplifies creating transform or effect graphs that
+may or may not need to use premultiplication depending on their own configuration.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PremultiplyEffect2.Props.html">PremultiplyEffect2.Props</a></dt>
@@ -808,7 +1232,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.html">PrimitiveBlendEffect</a></dt>
-      <dd></dd>
+      <dd><p>An effect that wraps <a class="xref" href="PaintDotNet.Direct2D1.IBlendTransform.html">IBlendTransform</a>, which is normally only
+available for the internal transform graph of custom effects.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PrimitiveBlendEffect.Props.html">PrimitiveBlendEffect.Props</a></dt>
@@ -816,7 +1242,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.RandomNoiseEffect.html">RandomNoiseEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect generates random noise.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.RandomNoiseEffect.Props.html">RandomNoiseEffect.Props</a></dt>
@@ -824,7 +1251,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.html">ReplaceChannelEffect</a></dt>
-      <dd></dd>
+      <dd><p>Replaces one channel of the input image with that of another image.<br>
+<br></p>
+<pre><code class="lang-csharp">color = Input[x,y];
+color[Channel] = ChannelSource[x,y][Channel];
+return color;</code></pre>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ReplaceChannelEffect.Props.html">ReplaceChannelEffect.Props</a></dt>
@@ -832,7 +1264,18 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.RgbToHueEffect.html">RgbToHueEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an RGB image to either the HSL (Hue, Saturation, Lightness) or HSV (Hue, Saturation, Value) color spaces.
+HSL and HSV are two different models for representing an RGB color in a cylindrical color space. They are useful
+because they allow you to reason about a color using more intuitive concepts like hue and intensity versus
+combining red, green and blue values.<br>
+<br>
+This effect normalizes the output data (hue, saturation, value for HSV or hue, saturation, lightness for HSL) to
+the range [0, 1].<br>
+<br>
+To reverse the behavior of this effect, use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.HueToRgbEffect.html">HueToRgbEffect</a>.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/rgb-to-hue-effect">RGB-to-hue effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.RgbToHueEffect.Props.html">RgbToHueEffect.Props</a></dt>
@@ -840,7 +1283,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SaturationEffect.html">SaturationEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use this effect to alter the saturation of an image. The saturation effect is a specialization of the color matrix effect.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/saturation">Saturation effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SaturationEffect.Props.html">SaturationEffect.Props</a></dt>
@@ -848,7 +1294,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.html">ScaleEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use this effect to scale an image up or down. The effect has six scaling modes: nearest neighbor,
+linear, cubic, multi-sample linear, anisotropic, and high quality cubic.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/high-quality-scale">Scale effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScaleEffect.Props.html">ScaleEffect.Props</a></dt>
@@ -856,7 +1306,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.html">ScenePositionEffect</a></dt>
-      <dd></dd>
+      <dd><p>An effect whose output at each location is the scene position. This can be useful for sample map
+effects that take a sample map as input, and produce a sample map as an output. If this effect
+is plugged into the SampleMapRenderer as the SampleMap input, the output will be the same as
+the Input image.<br>
+<br>
+The scene position enumerates center-of-pixel offsets, such as <code>{ x = 0.5, y = 0.5 }</code>,
+instead of whole-integer offsets, such as <code>{ x = 0, y = 0 }</code>. If you prefer to have
+whole-integer offsets, pass the output of this effect to an <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunctionEffect.html">HlslUnaryFunctionEffect</a>
+with the <code>Function</code> property set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.HlslUnaryFunction.html#PaintDotNet_Direct2D1_Effects_HlslUnaryFunction_Floor">Floor</a>.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.Props.html">ScenePositionEffect.Props</a></dt>
@@ -864,7 +1323,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect.html">SepiaEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an image to sepia tones.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/sepia-effect">Sepia effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect.Props.html">SepiaEffect.Props</a></dt>
@@ -872,7 +1334,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.html">SepiaEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect.html">SepiaEffect</a>, but matches Paint.NET's original Sepia effect.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaEffect2.Props.html">SepiaEffect2.Props</a></dt>
@@ -880,7 +1343,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the shadow effect to generate a shadow from the alpha channel of an image. The shadow is more opaque
+for higher alpha values and more transparent for lower alpha values. You can set the amount of blur and
+the color of the shadow.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/drop-shadow">Shadow effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.html">ShadowEffect.Props</a></dt>
@@ -888,7 +1356,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect2.html">ShadowEffect2</a></dt>
-      <dd></dd>
+      <dd><p>Provides the same functionality as <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>, but adds a <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowOptimization2.html#PaintDotNet_Direct2D1_Effects_ShadowOptimization2_HighQuality">HighQuality</a>
+mode that does not apply any optimizations that reduce image quality. When using the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowOptimization2.html#PaintDotNet_Direct2D1_Effects_ShadowOptimization2_HighQuality">HighQuality</a>
+mode, rendering quality is greatly improved for certain types of images, but performance is
+also greatly reduced.<br>
+<br>
+<b>NOTE:</b> The maximum value for the BlurStandardDeviation property is much lower than for <a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.html">ShadowEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect2.Props.html">ShadowEffect2.Props</a></dt>
@@ -896,7 +1370,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SharpenEffect.html">SharpenEffect</a></dt>
-      <dd></dd>
+      <dd><p>Sharpens the image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/sharpen-effect">Sharpen effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SharpenEffect.Props.html">SharpenEffect.Props</a></dt>
@@ -904,7 +1381,17 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.html">SpotDiffuseEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the spot-diffuse lighting effect to create an image that appears to be a non-reflective surface with
+where the light source is limited to a directed cone of light and the light is scattered in all directions.<br>
+<br>
+This effect uses the alpha channel as a height map and lights the image with a spot light source.<br>
+<br>
+The color of the output bitmap is a result of light color, light position, and the surface geometry.<br>
+<br>
+The alpha channel output for each pixel with diffuse lighting is always 1.0.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/diffuse-lighting">Spot-diffuse lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotDiffuseEffect.Props.html">SpotDiffuseEffect.Props</a></dt>
@@ -912,7 +1399,18 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotSpecularEffect.html">SpotSpecularEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the spot-specular lighting effect to create an image that appears to be a reflective surface where the light
+source is limited to a directed cone of light. This effect uses the alpha channel as a height map and lights the
+image with a point light source.<br>
+<br>
+The color of the output bitmap is a result of light color, light position, the direction of the cone and the
+surface geometry according to the specular portion of the Phong lighting model.<br>
+<br>
+The alpha channel output for each pixel with specular lighting is the maximum of the red, green, and blue channel
+outputs for that pixel.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/specular-lighting">Spot-specular lighting effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SpotSpecularEffect.Props.html">SpotSpecularEffect.Props</a></dt>
@@ -920,7 +1418,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SquareBlurEffect.html">SquareBlurEffect</a></dt>
-      <dd></dd>
+      <dd><p>Blurs an image using a square-shaped kernel.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SquareBlurEffect.Props.html">SquareBlurEffect.Props</a></dt>
@@ -928,7 +1427,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a></dt>
-      <dd></dd>
+      <dd><p>Converts an image from companded sRGB (gamma ~2.2) to linear scRGB (gamma 1.0).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.Props.html">SrgbToLinearEffect.Props</a></dt>
@@ -940,7 +1440,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.StraightenEffect.html">StraightenEffect</a></dt>
-      <dd></dd>
+      <dd><p>Rotates and optionally scales an image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/straighten-effect">Straighten effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.StraightenEffect.Props.html">StraightenEffect.Props</a></dt>
@@ -948,7 +1451,11 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect.html">TableTransferEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the table transfer effect to map the color intensities of an image using a transfer function created from
+interpolating a list of values you provide.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/table-transfer">Table transfer effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect.Props.html">TableTransferEffect.Props</a></dt>
@@ -956,7 +1463,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect2.html">TableTransferEffect2</a></dt>
-      <dd></dd>
+      <dd><p>This provides the same functionality as <a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect.html">TableTransferEffect</a>, but with clarity on how
+the alpha channel is treated. The <a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect2.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_TableTransferEffect2_Props_AlphaMode">AlphaMode</a> property specifies
+whether the input is in straight or premultiplied alpha format, and also controls whether the output
+will be in straight or premultiplied alpha format. This permits operation on straight alpha images
+without the need for alpha conversion (premultiplication and unpremultiplication), and without losing
+color values for fully transparent pixels.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/table-transfer">Table transfer effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TableTransferEffect2.Props.html">TableTransferEffect2.Props</a></dt>
@@ -964,7 +1479,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TemperatureAndTintEffect.html">TemperatureAndTintEffect</a></dt>
-      <dd></dd>
+      <dd><p>Adjusts the temperature and tint of the input image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/temperature-and-tint-effect">Temperature and tint effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TemperatureAndTintEffect.Props.html">TemperatureAndTintEffect.Props</a></dt>
@@ -972,7 +1490,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TileEffect.html">TileEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the tile effect to repeat the specified region of the image.<br>
+<br>
+This effect generates a logically infinite sized bitmap.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/tile">Tile effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TileEffect.Props.html">TileEffect.Props</a></dt>
@@ -980,7 +1503,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TintEffect.html">TintEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect tints the source image by multiplying the source image by the specified color. It has a single input.<br>
+<br>
+For more information, see <a href="https://learn.microsoft.com/en-us/windows/win32/direct2d/tint-effect">Tint effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TintEffect.Props.html">TintEffect.Props</a></dt>
@@ -988,7 +1514,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.html">Transform3DEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the 3D transform effect to apply an arbitrary 4x4 transform matrix to an image.<br>
+<br>
+This effect applies the matrix (M) you provide to the corner vertices of the source:<br>
+<br></p>
+<pre><code class="lang-csharp">image([ x y z 1 ])</code></pre>
+<p>using this calculation:</p>
+<pre><code class="lang-csharp">[ xr yr zr 1 ] = [ x y z 1 ] * M</code></pre><br>
+<pre><code>        For more information, see &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/direct2d/3d-transform&quot;&gt;3D transform effect&lt;/a&gt;
+</code></pre>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.html">Transform3DEffect.Props</a></dt>
@@ -996,7 +1531,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.html">TurbulenceEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use the turbulence effect to generate a bitmap based on the Perlin noise function.<br>
+<br>
+The turbulence effect has no input image.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/turbulence">Turbulence effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.TurbulenceEffect.Props.html">TurbulenceEffect.Props</a></dt>
@@ -1004,7 +1544,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a></dt>
-      <dd></dd>
+      <dd><p>Use this effect to convert an image from premultiplied alpha to unpremultiplied alpha.<br>
+<br>
+The effect replaces each input pixel <code>P = { R, G, B, A }</code> with <code>P' = { R/A, G/A, B/A, A }</code> in the output.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/unpremultiply">Unpremultiply effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.Props.html">UnPremultiplyEffect.Props</a></dt>
@@ -1012,7 +1557,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect2.html">UnPremultiplyEffect2</a></dt>
-      <dd></dd>
+      <dd><p>This effect produces the same output as <a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect.html">UnPremultiplyEffect</a>, but also has a property
+to enable or disable unpremultiplication. This simplifies creating transform or effect graphs that
+may or may not need to use unpremultiplication depending on their own configuration.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnPremultiplyEffect2.Props.html">UnPremultiplyEffect2.Props</a></dt>
@@ -1020,7 +1568,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.html">UnpackFloat16Effect</a></dt>
-      <dd></dd>
+      <dd><p>Takes an image that is encoded to have two float16s per pixel, unpacks either the high or low
+value, and converts it to float32. This is the inverse of <a class="xref" href="PaintDotNet.Direct2D1.Effects.PackFloat32Effect.html">PackFloat32Effect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.UnpackFloat16Effect.Props.html">UnpackFloat16Effect.Props</a></dt>
@@ -1028,7 +1578,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.VignetteEffect.html">VignetteEffect</a></dt>
-      <dd></dd>
+      <dd><p>Fades the input image at the edges to a user-set color.<br>
+<br>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/vignette-effect">Vignette effect</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.VignetteEffect.Props.html">VignetteEffect.Props</a></dt>
@@ -1036,7 +1589,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.WhiteLevelAdjustmentEffect.html">WhiteLevelAdjustmentEffect</a></dt>
-      <dd></dd>
+      <dd><p>This effect allows the white level of an image to be linearly scaled. This is especially helpful when you
+convert between display-referred luminance space and scene-referred luminance space, or vice versa.<br>
+<br>
+For more information, see <a href="https://learn.microsoft.com/en-us/windows/win32/direct2d/white-level-adjustment-effect">White Level Adjustment effect</a>.
+<br>
+You can use the <a class="xref" href="PaintDotNet.Direct2D1.DynamicRange.SceneReferredSdrWhiteLevel.html">SceneReferredSdrWhiteLevel</a> constant for <code>InputWhiteLevel</code> or
+<code>OutputWhiteLevel</code> in some cases. See the table at <a href="https://learn.microsoft.com/en-us/windows/win32/direct2d/white-level-adjustment-effect">White Level Adjustment effect</a>
+for details.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.WhiteLevelAdjustmentEffect.Props.html">WhiteLevelAdjustmentEffect.Props</a></dt>
@@ -1070,11 +1631,15 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IAnalysisEffect.html">IAnalysisEffect</a></dt>
-      <dd></dd>
+      <dd><p>A marker interface implemented by analysis effect wrappers such as <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.html">HistogramEffect</a>.
+This is used for the <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextExtensions.RunAnalysisEffect.html#PaintDotNet_Direct2D1_DeviceContextExtensions_RunAnalysisEffect_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_Effects_IAnalysisEffect_">RunAnalysisEffect(IDeviceContext, IAnalysisEffect)</a>
+extension method.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.html">IHistogramData</a></dt>
-      <dd></dd>
+      <dd><p>Contains the output data for <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.html">HistogramEffect2</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.html">IPassthroughAnalysisData</a></dt>
@@ -1121,7 +1686,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaMode.html">ConvertAlphaMode</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the alpha mode for the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertAlphaEffect.html">ConvertAlphaEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertGammaAlphaMode.html">ConvertGammaAlphaMode</a></dt>
@@ -1137,7 +1703,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodAlphaMode2.html">FloodAlphaMode2</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the alpha mode for the <a class="xref" href="PaintDotNet.Direct2D1.Effects.FloodEffect2.html">FloodEffect2</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferAlphaMode2.html">GammaTransferAlphaMode2</a></dt>
@@ -1233,7 +1800,9 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.MixMode.html">MixMode</a></dt>
-      <dd></dd>
+      <dd><p>Provides composite modes, blend modes, and alpha masking. These modes are aggregated
+from CompositeMode, BlendMode, BlendMode2, and the AlphaMaskEffect.<br></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PackFloat32Mode.html">PackFloat32Mode</a></dt>
@@ -1261,7 +1830,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionFormat.html">ScenePositionFormat</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the output format of the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ScenePositionEffect.html">ScenePositionEffect</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.SepiaAlphaMode2.html">SepiaAlphaMode2</a></dt>

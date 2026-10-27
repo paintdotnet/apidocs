@@ -146,15 +146,23 @@ Struct TrimmingParameters
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TrimmingParameters.Delimiter.html#PaintDotNet_DirectWrite_TrimmingParameters_Delimiter">Delimiter</a></dt>
-    <dd></dd>
+    <dd><p>A character code used as the delimiter that signals the beginning of the portion of text to be preserved.
+Text starting from the Nth occurrence of the delimiter (where N equals delimiterCount) counting backwards
+from the end of the text block will be preserved. For example, given the text is a path like
+c:\A\B\C\D\file.txt and delimiter equal to '' and delimiterCount equal to 1, the file.txt portion of the
+text would be preserved.
+Specifying a delimiterCount of 2 would preserve D\file.txt.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TrimmingParameters.DelimiterCount.html#PaintDotNet_DirectWrite_TrimmingParameters_DelimiterCount">DelimiterCount</a></dt>
-    <dd></dd>
+    <dd><p>The delimiter count, counting from the end of the text, to preserve text from.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.TrimmingParameters.Granularity.html#PaintDotNet_DirectWrite_TrimmingParameters_Granularity">Granularity</a></dt>
-    <dd></dd>
+    <dd><p>A value that specifies the text granularity used to trim text overflowing the layout box.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

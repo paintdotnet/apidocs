@@ -120,7 +120,11 @@ Property SpecifiedAttributeCount
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Returns the number of specified attributes on this element. Attributes are only considered specified if
+they are explicitly set on the element or present within an inline style. Properties that receive their
+value through CSS inheritance are not considered specified. An attribute can become specified if it is
+set through a method call. It can become unspecified if it is removed via RemoveAttribute.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

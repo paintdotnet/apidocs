@@ -120,7 +120,8 @@ Method Lerp
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Linearly interpolates between two color values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,11 +131,14 @@ Method Lerp
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>from</code> <a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a></dt>
-  <dd></dd>
+  <dd><p>The color value that represents 0 on the lerp number line.</p>
+</dd>
   <dt><code>to</code> <a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a></dt>
-  <dd></dd>
+  <dd><p>The color value that represents 1 on the lerp number line.</p>
+</dd>
   <dt><code>frac</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>A value in the range [0, 1].</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -149,6 +153,10 @@ Method Lerp
 
 
 
+<h4 class="section" id="PaintDotNet_ColorBgra_Lerp_PaintDotNet_ColorBgra_PaintDotNet_ColorBgra_System_Single__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method does a simple lerp on each color value and on the alpha channel. It does
+not properly take into account the alpha channel's effect on color blending.</p>
+</div>
 
 
 
@@ -200,7 +208,8 @@ Method Lerp
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Linearly interpolates between two color values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -210,11 +219,14 @@ Method Lerp
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>from</code> <a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a></dt>
-  <dd></dd>
+  <dd><p>The color value that represents 0 on the lerp number line.</p>
+</dd>
   <dt><code>to</code> <a class="xref" href="PaintDotNet.ColorBgra.html">ColorBgra</a></dt>
-  <dd></dd>
+  <dd><p>The color value that represents 1 on the lerp number line.</p>
+</dd>
   <dt><code>frac</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-  <dd></dd>
+  <dd><p>A value in the range [0, 1].</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -229,6 +241,10 @@ Method Lerp
 
 
 
+<h4 class="section" id="PaintDotNet_ColorBgra_Lerp_PaintDotNet_ColorBgra_PaintDotNet_ColorBgra_System_Double__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method does a simple lerp on each color value and on the alpha channel. It does
+not properly take into account the alpha channel's effect on color blending.</p>
+</div>
 
 
 

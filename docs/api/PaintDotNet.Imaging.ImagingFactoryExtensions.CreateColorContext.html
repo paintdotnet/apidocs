@@ -238,7 +238,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context with the same color space as the given Direct2D color context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -266,6 +267,15 @@ Method CreateColorContext
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+  <dd><p>The color context has no profile bytes (e.g. a <a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextType.html#PaintDotNet_Direct2D1_DeviceColorContextType_Dxgi">Dxgi</a>
+color context for a color space without a profile), or it is a
+<a class="xref" href="PaintDotNet.Direct2D1.DeviceColorContextType.html#PaintDotNet_Direct2D1_DeviceColorContextType_Simple">Simple</a> color context whose
+<a class="xref" href="PaintDotNet.Direct2D1.SimpleColorProfile.html">SimpleColorProfile</a> contains invalid values.</p>
+</dd>
+</dl>
 
 
 
@@ -276,7 +286,9 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a color context from a simple (primaries-and-gamma) color profile by synthesizing the
+equivalent ICC profile.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -304,6 +316,14 @@ Method CreateColorContext
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+  <dd><p>The gamma is <a class="xref" href="PaintDotNet.Direct2D1.SimpleColorProfileGamma.html#PaintDotNet_Direct2D1_SimpleColorProfileGamma_G2084">G2084</a> (SMPTE ST.2084 PQ), which cannot be
+expressed as an ICC parametric curve; or a primary or white point value is not finite, a
+primary's y chromaticity is not positive, or the white point's X + 1 + Z sum is not positive.</p>
+</dd>
+</dl>
 
 
 
@@ -314,7 +334,9 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> describing the given CICP color information by synthesizing
+the corresponding <span class="xref">PaintDotNet.Imaging.IColorProfile</span> and returning its color context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -332,7 +354,8 @@ Method CreateColorContext
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The color context (owned by the caller).</p>
+</dd>
 </dl>
 
 
@@ -341,7 +364,19 @@ Method CreateColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorContext_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_CicpColorSpace__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Full range is required: a color context, like the profile it is created from, cannot describe the
+narrow-to-full range expansion. To color-transform a narrow-range source (where the range is
+expanded as part of the transform), use <a class="xref" href="PaintDotNet.Imaging.ImagingFactoryExtensions.CreateColorTransformedBitmap.html#PaintDotNet_Imaging_ImagingFactoryExtensions_CreateColorTransformedBitmap_PaintDotNet_Imaging_IImagingFactory_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_CicpColorSpace_PaintDotNet_Imaging_IColorContext_PaintDotNet_Imaging_PixelFormat__">CreateColorTransformedBitmap(IImagingFactory, IBitmapSource, CicpColorSpace, IColorContext, in PixelFormat)</a>.</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+  <dd><p>Thrown if a color context cannot be created from <code class="paramref">cicpColorSpace</code> — because a
+profile cannot be synthesized, or because the samples are not full range. The message describes why.</p>
+</dd>
+</dl>
 
 
 
@@ -352,7 +387,8 @@ Method CreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an sRGB or scRGB color context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

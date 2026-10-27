@@ -184,19 +184,33 @@ Class HistogramEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.Bins.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_Bins">Bins</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the number of bins used for the histogram. The range of intensity values that fall into a
+particular bins depend on the number of specified bins.<br>
+The valid range is [2, 1024]. The default value is 256.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.ChannelSelect.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_ChannelSelect">ChannelSelect</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the channel used to generate the histogram. This effect has a single data output
+corresponding to the specified channel.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_HistogramOutput">HistogramOutput</a></dt>
-    <dd></dd>
+    <dd><p>After the effect has been drawn to a render target (device context), this property contains the
+histogram data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_HistogramEffect_Props_Input">Input</a></dt>

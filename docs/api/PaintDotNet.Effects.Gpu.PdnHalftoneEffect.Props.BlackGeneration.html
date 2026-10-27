@@ -120,7 +120,15 @@ Property BlackGeneration
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies how much of the ink that could go into black actually does. At 1 every bit of
+neutral ink is carried by the black screen; at 0 it is built out of cyan, magenta and
+yellow together. The range is [0, 1], the default is 0.75. Ignored when <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneEffect.Props.ColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneEffect_Props_ColorMode">ColorMode</a>
+is set to <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftoneColorMode.html#PaintDotNet_Effects_Gpu_PdnHalftoneColorMode_Monochrome">Monochrome</a>. Tone-neutral by construction, but it
+decides whether the result reads as a rosette - at 1 the chromatic screens carry nothing
+neutral and there is none - and it costs accuracy in the deep shadows, where near-closed
+shapes leave a sliver at each cell corner whose rendered area depends on the screen's
+angle.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

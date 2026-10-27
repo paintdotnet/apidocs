@@ -120,7 +120,15 @@ Property AlphaMode
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies the alpha mode of the input and output.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Premultiplied">Premultiplied</a>, the input will be unpremultiplied, then swizzling
+will be performed, and then the output will be premultiplied.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Straight">Straight</a>, the input will be swizzled without unpremultiplication
+or premultiplication.<br>
+The effect may also skip the premultiplication/unpremultiplication steps if it is not necessary for the given
+swizzle (such as when the alpha channel is not modified).
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Premultiplied">Premultiplied</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

@@ -120,7 +120,9 @@ Method ReplaceChild
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Replaces the oldChild element with the newChild. This operation removes the oldChild from the tree. If the newChild element already has a parent,
+it is removed from this parent as part of the replace operation.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,9 +132,11 @@ Method ReplaceChild
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>newChild</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.html">ISvgElement</a></dt>
-  <dd></dd>
+  <dd><p>The element to be inserted.</p>
+</dd>
   <dt><code>oldChild</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.html">ISvgElement</a></dt>
-  <dd></dd>
+  <dd><p>The child element to be replaced. The oldChild element must be an immediate child of this element.</p>
+</dd>
 </dl>
 
 
@@ -142,6 +146,10 @@ Method ReplaceChild
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_ReplaceChild_PaintDotNet_Direct2D1_ISvgElement_PaintDotNet_Direct2D1_ISvgElement__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Throws an exception if this element cannot accept children of the type of newChild.<br>
+Throws an exception if the newChild is an ancestor of this element.</p>
+</div>
 
 
 

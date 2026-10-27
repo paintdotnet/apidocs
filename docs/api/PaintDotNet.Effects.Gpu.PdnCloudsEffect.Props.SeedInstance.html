@@ -120,7 +120,8 @@ Property SeedInstance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies a seed number to use for random number generation. The default value is auto-generated.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,11 @@ Property SeedInstance
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnCloudsEffect_Props_SeedInstance_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Typically the Seed property is user configurable with a &quot;Reseed&quot; button that just increments its value,
+while SeedInstance is generated once per effect instance. If two effect instances have the same
+value for both seed properties, rendering output will be identical for both.<br></p>
+</div>
 
 
 

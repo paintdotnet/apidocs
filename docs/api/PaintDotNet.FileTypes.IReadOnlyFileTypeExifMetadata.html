@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IReadOnlyFileTypeExifMetadata ">
       
-      
+      <meta name="description" content="Provides read-only access to EXIF metadata.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IReadOnlyFileTypeExifMetadata
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides read-only access to EXIF metadata.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -154,11 +155,13 @@ Interface IReadOnlyFileTypeExifMetadata
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Items.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Items">Items</a></dt>
-    <dd></dd>
+    <dd><p>Gets an unordered enumeration of all EXIF property items, including multiple items for paths that have more than one value.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Paths.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Paths">Paths</a></dt>
-    <dd></dd>
+    <dd><p>Gets the collection of EXIF property paths that have values in this metadata.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -166,19 +169,23 @@ Interface IReadOnlyFileTypeExifMetadata
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.Clone.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_Clone">Clone()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a mutable copy of the EXIF metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.ContainsPath.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_ContainsPath_PaintDotNet_Imaging_ExifPropertyPath_">ContainsPath(ExifPropertyPath)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the metadata contains a value for the specified EXIF property path.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.TryGetItems.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_TryGetItems_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyItem___">TryGetItems(ExifPropertyPath, out IEnumerable&lt;ExifPropertyItem&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to get the property items for the specified EXIF property path.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.TryGetValues.html#PaintDotNet_FileTypes_IReadOnlyFileTypeExifMetadata_TryGetValues_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue___">TryGetValues(ExifPropertyPath, out IEnumerable&lt;ExifValue&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to get the values for the specified EXIF property path.</p>
+</dd>
   </dl>
 
 

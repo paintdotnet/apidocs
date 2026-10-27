@@ -185,7 +185,15 @@ Class PixelSwizzleEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode of the input and output.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Premultiplied">Premultiplied</a>, the input will be unpremultiplied, then swizzling
+will be performed, and then the output will be premultiplied.<br>
+If set to <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Straight">Straight</a>, the input will be swizzled without unpremultiplication
+or premultiplication.<br>
+The effect may also skip the premultiplication/unpremultiplication steps if it is not necessary for the given
+swizzle (such as when the alpha channel is not modified).
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleAlphaMode.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleAlphaMode_Premultiplied">Premultiplied</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleEffect_Props_Input">Input</a></dt>
@@ -193,7 +201,9 @@ Class PixelSwizzleEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzleEffect.Props.Swizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzleEffect_Props_Swizzle">Swizzle</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the swizzling to be performed. The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.PixelSwizzle.html#PaintDotNet_Direct2D1_Effects_PixelSwizzle_RGBA">RGBA</a>,
+which effectively does no swizzling.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

@@ -185,35 +185,70 @@ Class GaussianBlurMapEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.AlphaMode.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the input and the output.<br>
+The default value is Premultiplied.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd></dd>
+    <dd><p>The mode used to calculate the border of the image.<br>
+When set to <a class="xref" href="PaintDotNet.Direct2D1.BorderMode.html#PaintDotNet_Direct2D1_BorderMode_Soft">Soft</a>, the effect pads the image with transparent black pixels as it
+applies the blur kernel, resulting in a soft edge. The output will be larger than the input
+by approximately StandardDeviation<em>3 pixels (the blur radius) when using the Speed, Balanced,
+or Quality optimizations. The output will be larger than the input by approximately
+StandardDeviation</em>6 pixels when using the HighQuality optimization.<br>
+When set to <a class="xref" href="PaintDotNet.Direct2D1.BorderMode.html#PaintDotNet_Direct2D1_BorderMode_Hard">Hard</a>, the effect clamps the output to the size of the input image.
+When the effect applies the blur kernel, it extends the input image with a mirror-type border
+transform for samples outside of the input bounds.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.BorderMode.html#PaintDotNet_Direct2D1_BorderMode_Soft">Soft</a>.<br></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_Input">Input</a></dt>
-    <dd></dd>
+    <dd><p>Provides the input image for the effect.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MapIsNormalized.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MapIsNormalized">MapIsNormalized</a></dt>
-    <dd></dd>
+    <dd><p>Specifies whether the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a> input image is normalized.<br>
+<br>
+If this value is true, the map's alpha values are expected to be in the range [0, 1]. The standard deviation
+at each pixel will be the map's alpha value multiplied by <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a>.
+<br>
+If this value is false, the map's alpha values are used directly.
+<br>
+The default value is <code>true</code>, which affords easily using the output of most effects as the map input for this effect.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the maximum blur radius (standard deviation) that is rendered. If the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a>
+contains pixels specifying a standard deviation larger than this value, then they will be clamped to this value.<br>
+<br>
+The range of this value is [0, 100]. The default value is 10.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.Optimization.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_Optimization">Optimization</a></dt>
-    <dd></dd>
+    <dd><p>The optimization mode. The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapOptimization.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapOptimization_Quality">Quality</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationLevels.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationLevels">StandardDeviationLevels</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the number of blur levels to be rendered. The image will be blurred this many times with
+an increasing blur radius based on the value of <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a>. Increasing this
+value will improve quality, but also reduce performance.<br>
+<br>
+The range of this value is [1, 30]. The default value is 10.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.StandardDeviationMap.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_StandardDeviationMap">StandardDeviationMap</a></dt>
-    <dd></dd>
+    <dd><p>Provides an image where each pixel's alpha component specifies the standard deviation
+for blurring at that location. Depending on the value of the <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MapIsNormalized.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MapIsNormalized">MapIsNormalized</a>
+property, this image should either have normalized values in the [0, 1] range, or
+non-normalized values that are in the [0, <a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurMapEffect.Props.MaxStandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurMapEffect_Props_MaxStandardDeviation">MaxStandardDeviation</a>] range.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

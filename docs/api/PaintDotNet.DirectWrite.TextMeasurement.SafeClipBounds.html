@@ -120,7 +120,8 @@ Property SafeClipBounds
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a safe clipping rectangle for this block of text useful for rendering purposes.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,11 @@ Property SafeClipBounds
 
 
 
+<h4 class="section" id="PaintDotNet_DirectWrite_TextMeasurement_SafeClipBounds_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This differs from the black box in a few ways. It ignores negative overhangs, and it also
+adds a small amount of padding around the text to ensure that things like pixel snapping,
+grid fitting, and hinting do not adversely affect clipping.</p>
+</div>
 
 
 

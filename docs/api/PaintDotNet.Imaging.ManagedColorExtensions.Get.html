@@ -120,7 +120,8 @@ Method Get
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieves the color in the requested color space.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,9 +131,11 @@ Method Get
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a></dt>
-  <dd></dd>
+  <dd><p>The managed color.</p>
+</dd>
   <dt><code>dstColorContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><param name="dstColorContext">The color context for the color space that the color is being requested in.
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -158,7 +161,8 @@ Method Get
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieves the color in the color space associated with the given <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -168,9 +172,13 @@ Method Get
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>color</code> <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a></dt>
-  <dd></dd>
+  <dd><p>The managed color list.</p>
+</dd>
   <dt><code>deviceContext</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a></dt>
-  <dd></dd>
+  <dd><p>The device context. If automatic color management is being used, then the device context's color
+context will be used. The color context is retrieved using the <code>GetColorContext</code> extension
+method.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ManagedColor ">
       
-      
+      <meta name="description" content="Encapsulates an RGBA color value and the color space that it is defined within, along with methods for retrieving the color while transforming it to a target color space. This removes color space ambiguity for color values, enabling them to maintain the correct visual color when moving through a larger system.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,11 @@ Class ManagedColor
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Encapsulates an RGBA color value and the color space that it is defined within, along
+with methods for retrieving the color while transforming it to a target color space.
+This removes color space ambiguity for color values, enabling them to maintain the
+correct visual color when moving through a larger system.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -164,7 +168,9 @@ Class ManagedColor
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.ColorContext.html#PaintDotNet_Imaging_ManagedColor_ColorContext">ColorContext</a></dt>
-    <dd></dd>
+    <dd><p>Gets the color context for the color, which specifies the color space that the
+color is defined within.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -172,23 +178,32 @@ Class ManagedColor
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.Create.html#PaintDotNet_Imaging_ManagedColor_Create_PaintDotNet_Imaging_ColorRgba128Float_PaintDotNet_Imaging_IColorContext_">Create(ColorRgba128Float, IColorContext)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> with a specific color value and color context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.Create.html#PaintDotNet_Imaging_ManagedColor_Create_PaintDotNet_Imaging_SrgbColorA_">Create(SrgbColorA)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> with a specific sRGB color.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.Equals.html#PaintDotNet_Imaging_ManagedColor_Equals_PaintDotNet_Imaging_ManagedColor_">Equals(ManagedColor?)</a></dt>
-    <dd></dd>
+    <dd><p>Compares two <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a>s for equality. <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> instances
+are considered to be equal if they have the same raw color value and are using the same
+<a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.Equals.html#PaintDotNet_Imaging_ManagedColor_Equals_System_Object_">Equals(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Compares two <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a>s for equality. <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> instances
+are considered to be equal if they have the same raw color value and are using the same
+<a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.Get.html#PaintDotNet_Imaging_ManagedColor_Get_PaintDotNet_Imaging_IColorContext_">Get(IColorContext)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the color in the requested color space.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.GetHashCode.html#PaintDotNet_Imaging_ManagedColor_GetHashCode">GetHashCode()</a></dt>
@@ -200,11 +215,17 @@ Class ManagedColor
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.op_Equality.html#PaintDotNet_Imaging_ManagedColor_op_Equality_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Imaging_ManagedColor_">operator ==(ManagedColor?, ManagedColor?)</a></dt>
-    <dd></dd>
+    <dd><p>Compares two <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a>s for equality. <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> instances
+are considered to be equal if they have the same raw color value and are using the same
+<a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.ManagedColor.op_Inequality.html#PaintDotNet_Imaging_ManagedColor_op_Inequality_PaintDotNet_Imaging_ManagedColor_PaintDotNet_Imaging_ManagedColor_">operator !=(ManagedColor?, ManagedColor?)</a></dt>
-    <dd></dd>
+    <dd><p>Compares two <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a>s for equality. <a class="xref" href="PaintDotNet.Imaging.ManagedColor.html">ManagedColor</a> instances
+are considered to be equal if they have the same raw color value and are using the same
+<a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a>.</p>
+</dd>
   </dl>
 
 

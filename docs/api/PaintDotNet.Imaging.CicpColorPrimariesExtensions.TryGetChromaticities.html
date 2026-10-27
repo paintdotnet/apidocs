@@ -120,7 +120,8 @@ Method TryGetChromaticities
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the CIE 1931 (x, y) chromaticities for the given color primaries, per ITU-T H.273 Table 2.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -138,7 +139,10 @@ Method TryGetChromaticities
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p><code>true</code> and the chromaticities if the primaries have a representable definition;
+otherwise <code>false</code> (e.g. for <a class="xref" href="PaintDotNet.Imaging.CicpColorPrimaries.html#PaintDotNet_Imaging_CicpColorPrimaries_Unspecified">Unspecified</a>,
+<a class="xref" href="PaintDotNet.Imaging.CicpColorPrimaries.html#PaintDotNet_Imaging_CicpColorPrimaries_Smpte428">Smpte428</a>, or any reserved value).</p>
+</dd>
 </dl>
 
 

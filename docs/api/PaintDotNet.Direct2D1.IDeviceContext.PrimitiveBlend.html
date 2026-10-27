@@ -120,7 +120,8 @@ Property PrimitiveBlend
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets or sets the primitive blend used by the device context. The default is <a class="xref" href="PaintDotNet.Direct2D1.PrimitiveBlend.html#PaintDotNet_Direct2D1_PrimitiveBlend_SourceOver">SourceOver</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,15 @@ Property PrimitiveBlend
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_PrimitiveBlend_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The primitive blend will apply to all of the primitive drawn on the context, unless this is overridden with the compositeMode
+parameter on the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawImage.html#PaintDotNet_Direct2D1_IDeviceContext_DrawImage_PaintDotNet_Direct2D1_IDeviceImage_System_Nullable_PaintDotNet_Rendering_Point2Float__System_Nullable_PaintDotNet_Rendering_RectFloat___PaintDotNet_Direct2D1_InterpolationMode_PaintDotNet_Direct2D1_CompositeMode_">DrawImage(IDeviceImage, Point2Float?, in RectFloat?, InterpolationMode, CompositeMode)</a> method.<br>
+The primitive blend applies to the interior of any primitives drawn on the context. In the case of DrawImage, this will be
+implied by the image rectangle, offset and world transform.<br>
+If the primitive blend is anything other than <a class="xref" href="PaintDotNet.Direct2D1.PrimitiveBlend.html#PaintDotNet_Direct2D1_PrimitiveBlend_SourceOver">SourceOver</a> then ClearType rendering will be turned
+off. If the application explicitly forces ClearType rendering in these modes, the drawing context will be placed in an error
+state. The <a class="xref" href="PaintDotNet.WrongStateException.html">WrongStateException</a> will be thrown by either <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> or <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Flush.html#PaintDotNet_Direct2D1_IDeviceContext_Flush">Flush()</a>.</p>
+</div>
 
 
 

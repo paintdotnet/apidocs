@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct BlendDescription ">
       
-      
+      <meta name="description" content="Defines a blend description to be used in a particular blend transform. D2D1_BLEND_DESCRIPTION">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Struct BlendDescription
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines a blend description to be used in a particular blend transform.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_blend_description">D2D1_BLEND_DESCRIPTION</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -132,6 +134,10 @@ Struct BlendDescription
 
 
 
+  <h2 id="PaintDotNet_Direct2D1_BlendDescription_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This description closely matches the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/d3d11/ns-d3d11-d3d11_blend_desc">D3D11_BLEND_DESC</a>
+struct with some omissions and the addition of the blend factor in the description.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -146,31 +152,38 @@ Struct BlendDescription
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.BlendFactor.html#PaintDotNet_Direct2D1_BlendDescription_BlendFactor">BlendFactor</a></dt>
-    <dd></dd>
+    <dd><p>Parameters to the blend operations. The blend must use <a class="xref" href="PaintDotNet.Direct2D1.BlendOption.html#PaintDotNet_Direct2D1_BlendOption_BlendFactor">BlendFactor</a> for this to be used.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.BlendOperation.html#PaintDotNet_Direct2D1_BlendDescription_BlendOperation">BlendOperation</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how to combine the RGB data sources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.BlendOperationAlpha.html#PaintDotNet_Direct2D1_BlendDescription_BlendOperationAlpha">BlendOperationAlpha</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how to combine the alpha data sources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.DestinationBlend.html#PaintDotNet_Direct2D1_BlendDescription_DestinationBlend">DestinationBlend</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the second RGB data source and includes an optional preblend operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.DestinationBlendAlpha.html#PaintDotNet_Direct2D1_BlendDescription_DestinationBlendAlpha">DestinationBlendAlpha</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the second alpha data source and includes an optional preblend operation. Blend options that end in Color are not allowed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.SourceBlend.html#PaintDotNet_Direct2D1_BlendDescription_SourceBlend">SourceBlend</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the first RGB data source and includes an optional preblend operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.BlendDescription.SourceBlendAlpha.html#PaintDotNet_Direct2D1_BlendDescription_SourceBlendAlpha">SourceBlendAlpha</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the first alpha data source and includes an optional preblend operation. Blend options that end in Color are not allowed.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

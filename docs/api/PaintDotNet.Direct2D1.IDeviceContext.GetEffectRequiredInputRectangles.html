@@ -120,7 +120,8 @@ Method GetEffectRequiredInputRectangles
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Returns the input rectangles that are required to be supplied by the caller to produce the given output rectangle.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,17 +131,21 @@ Method GetEffectRequiredInputRectangles
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>renderEffect</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></dt>
-  <dd></dd>
+  <dd><p>The effect whose output is being rendered.</p>
+</dd>
   <dt><code>renderImageRectangle</code> <a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>?</dt>
-  <dd></dd>
+  <dd><p>The portion of the output image whose inputs are being inspected.</p>
+</dd>
   <dt><code>inputDescriptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.EffectInputDescription.html">EffectInputDescription</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A list of the inputs whose rectangles are being queried.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The input rectangles.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +154,11 @@ Method GetEffectRequiredInputRectangles
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_GetEffectRequiredInputRectangles_PaintDotNet_Direct2D1_IDeviceEffect_System_Nullable_PaintDotNet_Rendering_RectFloat___System_ReadOnlySpan_PaintDotNet_Direct2D1_EffectInputDescription___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The caller should be very careful not to place a reliance on the required input rectangles returned. Small changes for
+correctness to an effect's behavior can result in different rectangles being returned. In addition, different kinds of
+optimization applied inside the render can also influence the result.</p>
+</div>
 
 
 

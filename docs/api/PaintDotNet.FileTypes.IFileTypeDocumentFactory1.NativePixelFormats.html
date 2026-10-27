@@ -120,7 +120,11 @@ Property NativePixelFormats
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the list of <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a>s supported natively by Paint.NET. A document
+created in one of these pixel formats will not need to be converted after being returned
+from <code>Load</code>. This improves performance, reduces temporary memory usage, and
+ensures preservation of exact color values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +144,16 @@ Property NativePixelFormats
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeDocumentFactory1_NativePixelFormats_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>All pixel formats in this list will also be present in <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentFactory1.SupportedPixelFormats.html#PaintDotNet_FileTypes_IFileTypeDocumentFactory1_SupportedPixelFormats">SupportedPixelFormats</a>.</p>
+<p>This is the current list of native pixel formats:<br></p>
+<ul><li><a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a></li></ul>
+<p>Pixel formats will only ever be added to this list in future versions; they will never be
+removed. You can rely on the fact that if a pixel format is in this list in version X, it will
+be there in version X+1.</p>
+<p>In general, you should use the pixel format that is most natural for loading the image data,
+without worrying about whether it is a "native" pixel format.</p>
+</div>
 
 
 

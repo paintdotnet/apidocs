@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PdnHalftonePattern ">
       
-      
+      <meta name="description" content="Specifies the shape that the Halftone effect lays down in each cell of its screen. Every pattern is amplitude modulated: the cells are always the same size and sit on the same grid, and it is the amount of the cell that gets inked which carries the tone.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,10 @@ Enum PdnHalftonePattern
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Specifies the shape that the Halftone effect lays down in each cell of its screen. Every pattern
+is amplitude modulated: the cells are always the same size and sit on the same grid, and it is
+the amount of the cell that gets inked which carries the tone.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,22 +117,40 @@ Enum PdnHalftonePattern
   <dl class="parameters">
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Dots"><code>Dots = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>A circular dot at the centre of each cell, growing outward as the cell's ink coverage rises.
+The classic amplitude-modulated screen used for print and comics.</p>
+</dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Diamond"><code>Diamond = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The Euclidean spot, known to PostScript as PSSquare: a disc in the highlights that swells into
+a diamond at the midtone and then recedes as a disc of white in the shadows. The diamond is
+reached at exactly fifty percent, where the inked and uninked areas are congruent, and the
+second half of the range is the first half inverted, so tone moves through the midtone at a
+constant rate - where <a class="xref" href="PaintDotNet.Effects.Gpu.PdnHalftonePattern.html#PaintDotNet_Effects_Gpu_PdnHalftonePattern_Dots">Dots</a> stays circular, so its corners of white close
+abruptly once the dots touch at a coverage of pi/4.</p>
+</dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Ellipse"><code>Ellipse = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>An elliptical dot, elongated along the screen's own axis; the workhorse of commercial offset
+printing. Where a round dot meets all four neighbours at once, an ellipse meets them along its
+long axis first and its short axis later, splitting the single abrupt join into two smaller
+ones - between which the dots visibly chain into lines.</p>
+</dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Square"><code>Square = 3</code></dt>
   
-  <dd></dd>
+  <dd><p>A square dot, growing until it fills its cell exactly. The only shape here whose inked area is
+exact at every tone rather than fitted, because a square inside a square cell is never clipped.</p>
+</dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Crosshatch"><code>Crosshatch = 4</code></dt>
   
-  <dd></dd>
+  <dd><p>Two line screens at right angles to each other, each thinned so that their union still
+reproduces the requested tone rather than doubling it.</p>
+</dd>
     <dt id="PaintDotNet_Effects_Gpu_PdnHalftonePattern_Lines"><code>Lines = 5</code></dt>
   
-  <dd></dd>
+  <dd><p>A single straight line through each cell, growing thicker as the cell's ink coverage rises.
+Cells along the line are inked independently, so it swells and narrows along its length.</p>
+</dd>
   </dl>
 
 

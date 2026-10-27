@@ -120,7 +120,9 @@ Property MetadataForSaveOptions
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>A metadata container that can be used by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsForDocument_PaintDotNet_FileTypes_ICreateSaveOptionsForDocumentContext_">OnCreateSaveOptionsForDocument(ICreateSaveOptionsForDocumentContext)</a>
+to create a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a> that is customized for the document returned by <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.Load.html#PaintDotNet_FileTypes_IFileTypeLoader_Load_System_IO_Stream_">Load(Stream)</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +142,13 @@ Property MetadataForSaveOptions
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeLoadContext1_MetadataForSaveOptions_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This is generally used to store information about the loaded file that may be useful when saving the file back out,
+such as the original file format version, or other metadata that should not be preserved in the document itself.
+An example of where this is used is in the DDS FileType, which stores the DXT format that the original file was stored
+in so that it can be used to customize the default save options that the user is presented with when saving the file.
+This data is discarded on the next successful save of this document with this FileType.</p>
+</div>
 
 
 

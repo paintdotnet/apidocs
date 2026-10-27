@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ISvgDocument ">
       
-      
+      <meta name="description" content="Represents an SVG document. ID2D1SvgDocument">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface ISvgDocument
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents an SVG document.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgdocument">ID2D1SvgDocument</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -142,7 +144,8 @@ Interface ISvgDocument
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.ViewportSize.html#PaintDotNet_Direct2D1_ISvgDocument_ViewportSize">ViewportSize</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the size of the initial viewport.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -150,39 +153,50 @@ Interface ISvgDocument
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePaint.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePaint_PaintDotNet_Direct2D1_SvgPaintType_PaintDotNet_Imaging_ColorRgba128Float_System_String_">CreatePaint(SvgPaintType, ColorRgba128Float, string?)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a paint object which can be used to set the 'fill' or 'stroke' properties.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePathData.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePathData_System_ReadOnlySpan_System_Single__System_ReadOnlySpan_PaintDotNet_Direct2D1_SvgPathCommand__">CreatePathData(ReadOnlySpan&lt;float&gt;, ReadOnlySpan&lt;SvgPathCommand&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a path data object which can be used to set a 'd' attribute on a 'path' element.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreatePointCollection.html#PaintDotNet_Direct2D1_ISvgDocument_CreatePointCollection_System_ReadOnlySpan_PaintDotNet_Rendering_Point2Float__">CreatePointCollection(ReadOnlySpan&lt;Point2Float&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a points object which can be used to set a points attribute on a polygon or polyline element.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.CreateStrokeDashArray.html#PaintDotNet_Direct2D1_ISvgDocument_CreateStrokeDashArray_System_ReadOnlySpan_PaintDotNet_Direct2D1_SvgLength__">CreateStrokeDashArray(ReadOnlySpan&lt;SvgLength&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a dash array object which can be used to set the stroke-dasharray property.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.Deserialize.html#PaintDotNet_Direct2D1_ISvgDocument_Deserialize_System_IO_Stream_">Deserialize(Stream)</a></dt>
-    <dd></dd>
+    <dd><p>Deserializes a subtree from the stream. The stream must have only one root element, but that root element need not be an 'svg'
+element. The output element is not inserted into this document tree.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.FindElementByID.html#PaintDotNet_Direct2D1_ISvgDocument_FindElementByID_System_String_">FindElementByID(string)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the SVG element with the specified ID.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.GetRoot.html#PaintDotNet_Direct2D1_ISvgDocument_GetRoot">GetRoot()</a></dt>
-    <dd></dd>
+    <dd><p>Gets the root element of the document, or null if the document is empty.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.Serialize.html#PaintDotNet_Direct2D1_ISvgDocument_Serialize_System_IO_Stream_PaintDotNet_Direct2D1_ISvgElement_">Serialize(Stream, ISvgElement?)</a></dt>
-    <dd></dd>
+    <dd><p>Serializes an element and its subtree to XML. The output XML is encoded as UTF-8.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgDocument.SetRoot.html#PaintDotNet_Direct2D1_ISvgDocument_SetRoot_PaintDotNet_Direct2D1_ISvgElement_">SetRoot(ISvgElement?)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the root element of the document. The root element must be an svg element. If the element already exists within an svg
+tree, it is first removed.</p>
+</dd>
   </dl>
 
 

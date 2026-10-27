@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeCustomMetadataTransaction ">
       
-      
+      <meta name="description" content="Represents a transaction for making atomic changes to the metadata stored within an .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IFileTypeCustomMetadataTransaction
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes to the metadata stored within an <a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.html">IFileTypeCustomMetadata</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -253,17 +254,23 @@ Interface IFileTypeCustomMetadataTransaction
 
 
 
+  <h2 id="PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Custom metadata is stored as key-value pairs through the <a class="xref" href="PaintDotNet.FileTypes.IFileTypePropertyBag.html">IFileTypePropertyBag</a> interface. You can use the
+extension methods to make it easy to read and write values of any type that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iparsable-1">IParsable&lt;TSelf&gt;</a>.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction.Clear.html#PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_Clear">Clear()</a></dt>
-    <dd></dd>
+    <dd><p>Removes all metadata entries, and/or resets all metadata to their default values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadataTransaction.ReplaceFrom.html#PaintDotNet_FileTypes_IFileTypeCustomMetadataTransaction_ReplaceFrom_PaintDotNet_FileTypes_IReadOnlyFileTypeCustomMetadata_">ReplaceFrom(IReadOnlyFileTypeCustomMetadata)</a></dt>
-    <dd></dd>
+    <dd><p>Replaces all of the custom metadata with the values from another custom metadata section.</p>
+</dd>
   </dl>
 
 

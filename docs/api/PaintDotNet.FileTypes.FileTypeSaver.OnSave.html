@@ -120,7 +120,8 @@ Method OnSave
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Implemented by the derived class to perform the actual saving operation.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,10 @@ Method OnSave
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveContext.html">IFileTypeSaveContext</a></dt>
-  <dd></dd>
+  <dd><p>The save context providing the output stream, input document, options, and progress callback.</p>
+<p>The input document will consist of a single layer unless the <span class="xref">PaintDotNet.FileTypes.FileTypeSaver.FileType</span> set its <code>FileTypeOptions.SupportsLayers</code> to <code>true</code>.</p>
+<p>The options are defined by the <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.CreateDefaultSaveOptions.html#PaintDotNet_FileTypes_FileTypeSaver_CreateDefaultSaveOptions">CreateDefaultSaveOptions()</a> method. If the <span class="xref">PaintDotNet.FileTypes.FileTypeSaver.FileType</span> does not support configurable saving then the options must be ignored.</p>
+</dd>
 </dl>
 
 

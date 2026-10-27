@@ -120,7 +120,10 @@ Method ApplyBase
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Provides a default implementation for performing dst = F(dst, src) or F(src) over some rectangle
+of interest. May be slightly faster than calling the other multi-parameter Apply method, as less
+variables are used in the implementation, thus inducing less register pressure.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +133,20 @@ Method ApplyBase
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>dst</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The Surface to write pixels to, and from which pixels are read and used as the lhs parameter for calling the method <b>ColorBgra Apply(ColorBgra, ColorBgra)</b>.</p>
+</dd>
   <dt><code>dstOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
-  <dd></dd>
+  <dd><p>The pixel offset that defines the upper-left of the rectangle-of-interest for the dst Surface.</p>
+</dd>
   <dt><code>src</code> <a class="xref" href="PaintDotNet.Surface.html">Surface</a></dt>
-  <dd></dd>
+  <dd><p>The Surface to read pixels from for the rhs parameter given to the method <b>ColorBgra Apply(ColorBgra, ColorBgra)</b>.</p>
+</dd>
   <dt><code>srcOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
-  <dd></dd>
+  <dd><p>The pixel offset that defines the upper-left of the rectangle-of-interest for the src Surface.</p>
+</dd>
   <dt><code>roiSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
-  <dd></dd>
+  <dd><p>The size of the rectangles-of-interest for all Surfaces.</p>
+</dd>
 </dl>
 
 

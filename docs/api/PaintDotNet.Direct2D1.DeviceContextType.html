@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum DeviceContextType ">
       
-      
+      <meta name="description" content="Describes whether a device context uses hardware or software rendering, or if Direct2D should select the rendering mode. D2D1_RENDER_TARGET_TYPE">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,9 @@ Enum DeviceContextType
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Describes whether a device context uses hardware or software rendering, or if Direct2D should select the rendering mode.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ne-d2d1-d2d1_render_target_type">D2D1_RENDER_TARGET_TYPE</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,16 +116,23 @@ Enum DeviceContextType
   <dl class="parameters">
     <dt id="PaintDotNet_Direct2D1_DeviceContextType_Default"><code>Default = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The device context uses hardware rendering, if available; otherwise, it uses software rendering.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_DeviceContextType_Software"><code>Software = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The device context uses software rendering only.</p>
+</dd>
     <dt id="PaintDotNet_Direct2D1_DeviceContextType_Hardware"><code>Hardware = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The device context uses hardware rendering only.</p>
+</dd>
   </dl>
 
 
+  <h2 id="PaintDotNet_Direct2D1_DeviceContextType_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Not every render target supports hardware rendering. For more information, see the
+<a href="https://learn.microsoft.com/en-us/windows/win32/Direct2D/render-targets-overview">Render Targets Overview</a>.</p>
+</div>
 
 </article>
 

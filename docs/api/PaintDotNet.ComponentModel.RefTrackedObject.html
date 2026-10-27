@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RefTrackedObject ">
       
-      
+      <meta name="description" content="Provides the base implementation for .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Class RefTrackedObject
   <dl><dt>Assembly</dt><dd>PaintDotNet.ComponentModel.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides the base implementation for <a class="xref" href="PaintDotNet.ComponentModel.IObjectRef.html">IObjectRef</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,6 +190,14 @@ Class RefTrackedObject
 
 
 
+  <h2 id="PaintDotNet_ComponentModel_RefTrackedObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>References are divided into two categories: primary, and secondary.
+Secondary references are those which are retrieved via TryCreateRef.
+The primary reference is the object instance itself. Calling Dispose() will
+only decrement the reference count the first time it's called.
+Both reference types are counted in the ref count, and are treated
+equally when deciding when to finally execute the inner Dispose() method.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -223,7 +232,11 @@ Class RefTrackedObject
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.TryCreateRef.html#PaintDotNet_ComponentModel_RefTrackedObject_TryCreateRef_System_Type_PaintDotNet_ComponentModel_IObjectRef__">TryCreateRef(Type, out IObjectRef?)</a></dt>
-    <dd></dd>
+    <dd><p>Checks to see if the given interface is supported by this object, and if so creates that wrapper
+and provides it to you. This adds 1 to the reference count of the underlying object. To decrement
+the reference count, dispose the wrapper provided by this method or permit it to be garbage
+collected. When the reference count reaches 0, the object will be disposed.</p>
+</dd>
   </dl>
 
 

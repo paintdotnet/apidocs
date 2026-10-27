@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct GdiLogFont ">
       
-      
+      <meta name="description" content="A logical font description.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Struct GdiLogFont
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A logical font description.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -132,17 +133,28 @@ Struct GdiLogFont
 
 
 
+  <h2 id="PaintDotNet_Gdi_GdiLogFont_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><pre><code>        This is a projection of Win32's &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-logfontw&quot;&gt;LOGFONTW&lt;/a&gt;
+        struct. It has the same size and layout, and the two are &quot;reinterpret-cast&quot; compatible (such as with
+        &lt;code&gt;(LOGFONTW*)&amp;gdiLogFont&lt;/code&gt; or &lt;code&gt;(GdiLogFont*)&amp;logFontW&lt;/code&gt;, or with &lt;xref href=&quot;System.Runtime.CompilerServices.Unsafe.BitCast%60%602(%60%600)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;).
+</code></pre>
+<p></p>
+<pre><code>        This struct is also compatible with &lt;xref href=&quot;System.Drawing.Interop.LOGFONT&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;.
+</code></pre>
+</div>
 
   <h2 class="section" id="fields">Fields
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameLength.html">MaxFaceNameLength</a></dt>
-    <dd></dd>
+    <dd><p>The number of characters you need for the face name string, without the null terminator.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength.html">MaxFaceNameWithNullLength</a></dt>
-    <dd></dd>
+    <dd><p>The number of characters you need for the face name string, with the null terminator.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -202,11 +214,13 @@ Struct GdiLogFont
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceName.html#PaintDotNet_Gdi_GdiLogFont_GetFaceName">GetFaceName()</a></dt>
-    <dd></dd>
+    <dd><p>Gets the face name of the logical font.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceName.html#PaintDotNet_Gdi_GdiLogFont_GetFaceName_System_Span_System_Char__">GetFaceName(Span&lt;char&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Copies the logical font's face name to the provided buffer.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Gdi.GdiLogFont.GetFaceNameSpan.html#PaintDotNet_Gdi_GdiLogFont_GetFaceNameSpan">GetFaceNameSpan()</a></dt>

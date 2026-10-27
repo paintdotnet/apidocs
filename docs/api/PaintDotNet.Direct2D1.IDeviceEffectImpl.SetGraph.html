@@ -120,7 +120,14 @@ Method SetGraph
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>The renderer calls this method to provide the effect implementation with a way to specify its transform graph and transform graph changes.<br>
+The renderer calls this method when:<br></p>
+<ul>
+<li>When the effect is first initialized.<br></li>
+<li>If the number of inputs to the effect changes.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph">ID2D1EffectImpl::SetGraph</a></li>
+</ul>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +137,8 @@ Method SetGraph
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>transformGraph</code> <a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.html">ITransformGraph</a></dt>
-  <dd></dd>
+  <dd><p>The graph to which the effect describes its transform topology.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +148,13 @@ Method SetGraph
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceEffectImpl_SetGraph_PaintDotNet_Direct2D1_ITransformGraph__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>You usually don't need to implement this method. Instead, perform one-time initialization tasks in <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.Initialize.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_Initialize_PaintDotNet_Direct2D1_IDeviceEffectContext_PaintDotNet_Direct2D1_ITransformGraph_">Initialize(IDeviceEffectContext, ITransformGraph)</a>,
+and then update or create the effect graph in <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectImpl.PrepareForRender.html#PaintDotNet_Direct2D1_IDeviceEffectImpl_PrepareForRender_PaintDotNet_Direct2D1_ChangeType_">PrepareForRender(ChangeType)</a>.<br>
+If the transformGraph is stored by the implementation of this interface, a new ref must be created with the
+CreateRef() extension method. The object &quot;refs&quot; passed to this method will be disposed once it
+returns, but creating a new ref extends the lifetime of the underlying object.</p>
+</div>
 
 
 

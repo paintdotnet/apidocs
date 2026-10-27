@@ -114,13 +114,25 @@ Enum ValueValidationFailureResult
   <dl class="parameters">
     <dt id="PaintDotNet_PropertySystem_ValueValidationFailureResult_Ignore"><code>Ignore = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>If an invalid value is set through a property's Value property, then it will be ignored
+and the current value will be retained. A ValueChanged event will then be raised with
+the property's retained value.</p>
+</dd>
     <dt id="PaintDotNet_PropertySystem_ValueValidationFailureResult_Clamp"><code>Clamp = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>If an invalid value is set through a property's Value property, then it will either be
+clamped to within the valid range of the property, or it will be ignored. Clamping
+behavior is property value type specific; for example, an integer will be clamped to
+a certain range, whereas a string will be truncated past a certain length.
+If the invalid value cannot be clamped, then the property's Value will not change.
+A ValueChanged event will then be raised with the property's value, regardless of
+whether the value was changed or not.</p>
+</dd>
     <dt id="PaintDotNet_PropertySystem_ValueValidationFailureResult_ThrowException"><code>ThrowException = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>If an invalid value is set through a property's Value property, then an exception will
+be raised.</p>
+</dd>
   </dl>
 
 

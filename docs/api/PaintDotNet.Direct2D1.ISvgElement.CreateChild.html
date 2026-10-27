@@ -120,7 +120,8 @@ Method CreateChild
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an element from a tag name. The element is appended to the list of children.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method CreateChild
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The tag name of the new child. An empty string is interpreted to be a text content element.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgElement.html">ISvgElement</a></dt>
-  <dd></dd>
+  <dd><p>The new child element.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,9 @@ Method CreateChild
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_CreateChild_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Throws an exception if this element cannot accept children of the specified type.</p>
+</div>
 
 
 

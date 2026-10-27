@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FileTypeSaver ">
       
-      
+      <meta name="description" content="The base class for s. These are created by a  that supports saving, and are returned from their  implementation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Class FileTypeSaver
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaver.html">IFileTypeSaver</a>s. These are created by a <span class="xref">PaintDotNet.FileTypes.FileTypeSaver.FileType</span> that supports
+saving, and are returned from their <a class="xref" href="PaintDotNet.FileTypes.FileType.OnCreateSaver.html#PaintDotNet_FileTypes_FileType_OnCreateSaver">OnCreateSaver()</a> implementation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -182,7 +184,8 @@ Class FileTypeSaver
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.-ctor.html#PaintDotNet_FileTypes_FileTypeSaver__ctor_PaintDotNet_FileTypes_IFileType_">FileTypeSaver(IFileType)</a></dt>
-    <dd></dd>
+    <dd><p>The base constructor for the <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.html">FileTypeSaver</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -194,7 +197,9 @@ Class FileTypeSaver
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.Services.html#PaintDotNet_FileTypes_FileTypeSaver_Services">Services</a></dt>
-    <dd></dd>
+    <dd><p>Provides access to the services provided by the host application. This is the
+same services object that the <span class="xref">PaintDotNet.FileTypes.FileTypeSaver.FileType</span> has access to.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -202,15 +207,20 @@ Class FileTypeSaver
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.CreateDefaultSaveOptions.html#PaintDotNet_FileTypes_FileTypeSaver_CreateDefaultSaveOptions">CreateDefaultSaveOptions()</a></dt>
-    <dd></dd>
+    <dd><p>Creates the default save options for this file type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.CreateSaveOptionsControl.html#PaintDotNet_FileTypes_FileTypeSaver_CreateSaveOptionsControl">CreateSaveOptionsControl()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a control that allows the user to configure the save options.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.CreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_CreateSaveOptionsForDocument_PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_PaintDotNet_FileTypes_IFileTypeSaveOptions_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_">CreateSaveOptionsForDocument(IReadOnlyFileTypeDocument, IFileTypeSaveOptions, IReadOnlyFileTypePropertyBag)</a></dt>
-    <dd></dd>
+    <dd><p>Customizes the proposed save options for the given document. This allows the FileType to inspect
+the document and adjust the options accordingly. This is typically used with special metadata that
+was provided at load time by the same FileType.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.Dispose.html#PaintDotNet_FileTypes_FileTypeSaver_Dispose_System_Boolean_">Dispose(bool)</a></dt>
@@ -226,15 +236,20 @@ Class FileTypeSaver
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsForDocument_PaintDotNet_FileTypes_ICreateSaveOptionsForDocumentContext_">OnCreateSaveOptionsForDocument(ICreateSaveOptionsForDocumentContext)</a></dt>
-    <dd></dd>
+    <dd><p>A FileType plugin should implement this if it wants to customize the save options using metadata
+it provided at load time. See <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.CreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_CreateSaveOptionsForDocument_PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_PaintDotNet_FileTypes_IFileTypeSaveOptions_PaintDotNet_FileTypes_IReadOnlyFileTypePropertyBag_">CreateSaveOptionsForDocument(IReadOnlyFileTypeDocument, IFileTypeSaveOptions, IReadOnlyFileTypePropertyBag)</a>
+for more information.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnSave.html#PaintDotNet_FileTypes_FileTypeSaver_OnSave_PaintDotNet_FileTypes_IFileTypeSaveContext_">OnSave(IFileTypeSaveContext)</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to perform the actual saving operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.Save.html#PaintDotNet_FileTypes_FileTypeSaver_Save_System_IO_Stream_PaintDotNet_FileTypes_IReadOnlyFileTypeDocument_PaintDotNet_FileTypes_IFileTypeSaveOptions_PaintDotNet_ProgressEventHandler_">Save(Stream, IReadOnlyFileTypeDocument, IFileTypeSaveOptions, ProgressEventHandler?)</a></dt>
-    <dd></dd>
+    <dd><p>Saves the specified document to the output stream.</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeLoadContext1 ">
       
-      
+      <meta name="description" content="The base interface for . This interface exists for versioning purposes and should generally not be referenced directly.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface IFileTypeLoadContext1
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The base interface for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext.html">IFileTypeLoadContext</a>. This interface exists for versioning purposes
+and should generally not be referenced directly.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,15 +118,19 @@ Interface IFileTypeLoadContext1
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext1.Factory.html#PaintDotNet_FileTypes_IFileTypeLoadContext1_Factory">Factory</a></dt>
-    <dd></dd>
+    <dd><p>Gets the factory that can be used to create the document or other related objects.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext1.Input.html#PaintDotNet_FileTypes_IFileTypeLoadContext1_Input">Input</a></dt>
-    <dd></dd>
+    <dd><p>Gets the stream containing the image data to load.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoadContext1.MetadataForSaveOptions.html#PaintDotNet_FileTypes_IFileTypeLoadContext1_MetadataForSaveOptions">MetadataForSaveOptions</a></dt>
-    <dd></dd>
+    <dd><p>A metadata container that can be used by <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaver.OnCreateSaveOptionsForDocument.html#PaintDotNet_FileTypes_FileTypeSaver_OnCreateSaveOptionsForDocument_PaintDotNet_FileTypes_ICreateSaveOptionsForDocumentContext_">OnCreateSaveOptionsForDocument(ICreateSaveOptionsForDocumentContext)</a>
+to create a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptions.html">IFileTypeSaveOptions</a> that is customized for the document returned by <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLoader.Load.html#PaintDotNet_FileTypes_IFileTypeLoader_Load_System_IO_Stream_">Load(Stream)</a>.</p>
+</dd>
   </dl>
 
 

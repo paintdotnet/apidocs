@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeCustomMetadata ">
       
-      
+      <meta name="description" content="Provides read/write access to custom metadata.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IFileTypeCustomMetadata
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides read/write access to custom metadata.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -181,13 +182,22 @@ Interface IFileTypeCustomMetadata
 
 
 
+  <h2 id="PaintDotNet_FileTypes_IFileTypeCustomMetadata_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Custom or non-standard metadata is generally used by a FileType plugin to store private information that is not
+understood by other plugins or external systems.</p>
+<p>Custom metadata will not be preserved when saving to standard file types such as PNG or JPEG, but will
+always be preserved when saving with Paint.NET's native .PDN format. It is up to each FileType plugin as to
+whether it will preserve custom metadata when saving and loading.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeCustomMetadata.CreateTransaction.html#PaintDotNet_FileTypes_IFileTypeCustomMetadata_CreateTransaction">CreateTransaction()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a transaction for making atomic changes to the custom metadata. The <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">Commit()</a>
+or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> method must be called to apply the changes made within the transaction.</p>
+</dd>
   </dl>
 
 

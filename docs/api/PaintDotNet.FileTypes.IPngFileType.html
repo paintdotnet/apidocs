@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPngFileType ">
       
-      
+      <meta name="description" content="Provides access to the built-in PNG file type.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IPngFileType
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides access to the built-in PNG file type.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -136,17 +137,24 @@ Interface IPngFileType
 
 
 
+  <h2 id="PaintDotNet_FileTypes_IPngFileType_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>You can create an instance of this by first retrieving the <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService.html">IFileTypesService</a> from your
+plugin's local <code>Services</code> property, then use the <a class="xref" href="PaintDotNet.FileTypes.FileTypesService1Extensions.CreatePngFileType.html#PaintDotNet_FileTypes_FileTypesService1Extensions_CreatePngFileType_PaintDotNet_FileTypes_IFileTypesService1_">CreatePngFileType(IFileTypesService1)</a>
+extension method.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileType.CreateLoader.html#PaintDotNet_FileTypes_IPngFileType_CreateLoader">CreateLoader()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a new instance of the PNG loader.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IPngFileType.CreateSaver.html#PaintDotNet_FileTypes_IPngFileType_CreateSaver">CreateSaver()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a new instance of the PNG saver.</p>
+</dd>
   </dl>
 
 

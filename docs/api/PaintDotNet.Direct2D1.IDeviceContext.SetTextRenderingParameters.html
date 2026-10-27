@@ -120,7 +120,8 @@ Method SetTextRenderingParameters
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies text rendering options to be applied to all subsequent text and glyph drawing operations.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,8 @@ Method SetTextRenderingParameters
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>parameters</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextRenderingParameters.html">ITextRenderingParameters</a></dt>
-  <dd></dd>
+  <dd><p>The text rendering options to be applied to all subsequent text and glyph drawing operations; null to clear current text rendering options.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,11 @@ Method SetTextRenderingParameters
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_SetTextRenderingParameters_PaintDotNet_DirectWrite_ITextRenderingParameters__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If the settings specified by textRenderingParams are incompatible with the render target's text antialiasing mode (specified by
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.TextAntialiasMode.html#PaintDotNet_Direct2D1_IDeviceContext_TextAntialiasMode">TextAntialiasMode</a> ), subsequent text and glyph drawing operations will fail and put the device context into an
+error state.</p>
+</div>
 
 
 

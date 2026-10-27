@@ -120,7 +120,9 @@ Method SetImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -142,6 +144,13 @@ Method SetImage
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>For each clipboard format the bitmap will be converted to a compatible pixel format
+if that clipboard format does not support the bitmap's pixel format. For example, if
+the bitmap is in the RGBA64 pixel format, copying as a PNG will not require conversion
+but copying as DIBv5 will convert to BGRA32. For DIBv5, bitmaps using RGB ordering
+will be converted to BGR.</p>
+</div>
 
 
 
@@ -153,7 +162,12 @@ Method SetImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+<p>This overload also allows including a color profile for the clipboard types that support it, such
+as PNG. For formats that do not support an embedded color profile, such as DIB/DIBv5, the image
+will not be converted to any particular color space and the color profile will not be included.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -177,6 +191,13 @@ Method SetImage
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_IColorContext__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>For each clipboard format the bitmap will be converted to a compatible pixel format
+if that clipboard format does not support the bitmap's pixel format. For example, if
+the bitmap is in the RGBA64 pixel format, copying as a PNG will not require conversion
+but copying as DIBv5 will convert to BGRA32. For DIBv5, bitmaps using RGB ordering
+will be converted to BGR.</p>
+</div>
 
 
 
@@ -188,7 +209,9 @@ Method SetImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -210,6 +233,13 @@ Method SetImage
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_System_Drawing_Image__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>For each clipboard format the bitmap will be converted to a compatible pixel format
+if that clipboard format does not support the bitmap's pixel format. For example, if
+the bitmap is in the RGBA64 pixel format, copying as a PNG will not require conversion
+but copying as DIBv5 will convert to BGRA32. For DIBv5, bitmaps using RGB ordering
+will be converted to BGR.</p>
+</div>
 
 
 
@@ -221,7 +251,9 @@ Method SetImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -243,6 +275,13 @@ Method SetImage
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_System_Drawing_Bitmap__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>For each clipboard format the bitmap will be converted to a compatible pixel format
+if that clipboard format does not support the bitmap's pixel format. For example, if
+the bitmap is in the RGBA64 pixel format, copying as a PNG will not require conversion
+but copying as DIBv5 will convert to BGRA32. For DIBv5, bitmaps using RGB ordering
+will be converted to BGR.</p>
+</div>
 
 
 
@@ -254,7 +293,9 @@ Method SetImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Takes the bitmap and puts it onto the clipboard in a few standard formats.
+The clipboard is first emptied.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

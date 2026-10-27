@@ -120,7 +120,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -154,6 +159,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_IntPtr_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 
@@ -165,7 +180,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -199,6 +219,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_Windows_Forms_IWin32Window_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 
@@ -210,7 +240,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -242,6 +277,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry__1_PaintDotNet_Clipboard_IClipboard_System_Func_PaintDotNet_Clipboard_IClipboardTransaction___0___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 
@@ -253,7 +298,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -277,6 +327,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_IntPtr_System_Action_PaintDotNet_Clipboard_IClipboardTransaction___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 
@@ -288,7 +348,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -312,6 +377,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_Windows_Forms_IWin32Window_System_Action_PaintDotNet_Clipboard_IClipboardTransaction___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 
@@ -323,7 +398,12 @@ Method OpenAndUseWithRetry
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Opens a clipboard transaction, passes it to the given callback, and then closes the clipboard
+transaction. If there is an exception while opening the clipboard or calling the callback, this
+process is repeated after a short delay. After too many failed attempts, this method will either
+throw the first exception that was caught (if they are all the same) or an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.aggregateexception">AggregateException</a>
+(if they are different).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -345,6 +425,16 @@ Method OpenAndUseWithRetry
 
 
 
+<h4 class="section" id="PaintDotNet_Clipboard_ClipboardExtensions_OpenAndUseWithRetry_PaintDotNet_Clipboard_IClipboard_System_Action_PaintDotNet_Clipboard_IClipboardTransaction___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The Windows clipboard often returns errors for various reasons, usually because other programs are
+accessing it briefly. Because of this it is necessary to retry several times to access it
+successfully. This method implements that retry logic for you.<br>
+<br>
+Note that the other clipboard extension methods, such as <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.SetImage.html#PaintDotNet_Clipboard_ClipboardExtensions_SetImage_PaintDotNet_Clipboard_IClipboard_PaintDotNet_Imaging_IBitmapSource_">SetImage(IClipboard, IBitmapSource)</a>
+and <a class="xref" href="PaintDotNet.Clipboard.ClipboardExtensions.TryGetText.html#PaintDotNet_Clipboard_ClipboardExtensions_TryGetText_PaintDotNet_Clipboard_IClipboard_">TryGetText(IClipboard)</a>, already implement a retry loop, and do not need to be
+used along with this method. You only need to use this method if you want to use the methods on
+<a class="xref" href="PaintDotNet.Clipboard.IClipboardTransaction.html">IClipboardTransaction</a> directly.</p>
+</div>
 
 
 

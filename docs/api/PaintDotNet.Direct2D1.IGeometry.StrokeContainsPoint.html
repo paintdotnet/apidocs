@@ -120,7 +120,8 @@ Method StrokeContainsPoint
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Determines whether the geometry's stroke contains the specified point given the specified stroke thickness, style, and transform.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,21 +131,29 @@ Method StrokeContainsPoint
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>point</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The point to test for containment.</p>
+</dd>
   <dt><code>strokeWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-  <dd></dd>
+  <dd><p>The thickness of the stroke to apply.</p>
+</dd>
   <dt><code>strokeStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.IStrokeStyle.html">IStrokeStyle</a></dt>
-  <dd></dd>
+  <dd><p>The style of stroke to apply. May be null.</p>
+</dd>
   <dt><code>worldTransform</code> <a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>?</dt>
-  <dd></dd>
+  <dd><p>The transform to apply to the stroked geometry, or null for no transform.</p>
+</dd>
   <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-  <dd></dd>
+  <dd><p>The numeric accuracy with which the precise geometric path and path intersection is calculated. Points missing the fill by less than the
+tolerance are still considered inside. Smaller values produce more accurate results but cause slower execution. If this value is null,
+FlatteningTolerance.Default will be used.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>true if the geometry's stroke contains the specified point; otherwise, false.</p>
+</dd>
 </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ISvgStrokeDashArray ">
       
-      
+      <meta name="description" content="Interface describing an SVG stroke-dasharray value. ID2D1SvgStrokeDashArray">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface ISvgStrokeDashArray
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Interface describing an SVG stroke-dasharray value.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1svg/nn-d2d1svg-id2d1svgstrokedasharray">ID2D1SvgStrokeDashArray</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -148,7 +150,8 @@ Interface ISvgStrokeDashArray
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.DashesCount.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_DashesCount">DashesCount</a></dt>
-    <dd></dd>
+    <dd><p>Gets the number of the dashes in the array.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -156,27 +159,35 @@ Interface ISvgStrokeDashArray
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.Clone.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_Clone">Clone()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a clone of this attribute value. On creation, the cloned attribute is not set on any element.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.GetDashes.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_GetDashes_System_Span_PaintDotNet_Direct2D1_SvgLength__System_Int32_">GetDashes(Span&lt;SvgLength&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Gets dashes from the array.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.GetDashes.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_GetDashes_System_Span_System_Single__System_Int32_">GetDashes(Span&lt;float&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Gets dashes from the array.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.RemoveDashesAtEnd.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_RemoveDashesAtEnd_System_Int32_">RemoveDashesAtEnd(int)</a></dt>
-    <dd></dd>
+    <dd><p>Removes dashes from the end of the array.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.UpdateDashes.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_UpdateDashes_System_ReadOnlySpan_PaintDotNet_Direct2D1_SvgLength__System_Int32_">UpdateDashes(ReadOnlySpan&lt;SvgLength&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Updates the array. Existing dashes not updated by this method are preserved.
+The array is resized larger if necessary to accommodate the new dashes.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ISvgStrokeDashArray.UpdateDashes.html#PaintDotNet_Direct2D1_ISvgStrokeDashArray_UpdateDashes_System_ReadOnlySpan_System_Single__System_Int32_">UpdateDashes(ReadOnlySpan&lt;float&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Updates the array. Existing dashes not updated by this method are preserved.
+The array is resized larger if necessary to accommodate the new dashes.</p>
+</dd>
   </dl>
 
 

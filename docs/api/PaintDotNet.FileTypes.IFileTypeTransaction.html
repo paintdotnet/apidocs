@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IFileTypeTransaction ">
       
-      
+      <meta name="description" content="Represents a transaction for making atomic changes.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IFileTypeTransaction
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,17 +131,24 @@ Interface IFileTypeTransaction
 
 
 
+  <h2 id="PaintDotNet_FileTypes_IFileTypeTransaction_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Changes are applied when the transaction is committed by calling <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">Commit()</a> or by disposing the transaction.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">Cancel()</a></dt>
-    <dd></dd>
+    <dd><p>Cancels the changes made in this transaction. After calling this method, the transaction should not be used again.
+This prevents the changes from being applied when the transaction is disposed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">Commit()</a></dt>
-    <dd></dd>
+    <dd><p>Commits the changes made in this transaction. This can also be accomplished by calling <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>,
+as long as <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">Cancel()</a> has not been called.</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Effect&lt;TToken&gt; ">
       
-      
+      <meta name="description" content="The base class for &amp;quot;classic&amp;quot; effects with a strongly-typed .  NOTE: It is strongly recommended that you derive from  instead.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Class Effect&lt;TToken&gt;
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The base class for &quot;classic&quot; effects with a strongly-typed <a class="xref" href="PaintDotNet.Effects.EffectConfigToken.html">EffectConfigToken</a>.<br>
+<br>
+<b>NOTE:</b> It is strongly recommended that you derive from <a class="xref" href="PaintDotNet.Effects.BitmapEffect-1.html">BitmapEffect&lt;TToken&gt;</a> instead.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -262,7 +265,11 @@ Class Effect&lt;TToken&gt;
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Effect-1.Render.html#PaintDotNet_Effects_Effect_1_Render_PaintDotNet_Effects_EffectConfigToken_PaintDotNet_RenderArgs_PaintDotNet_RenderArgs_System_Drawing_Rectangle___System_Int32_System_Int32_">Render(EffectConfigToken?, RenderArgs, RenderArgs, Rectangle[], int, int)</a></dt>
-    <dd></dd>
+    <dd><p>Performs the effect's rendering. The source is to be treated as read-only,
+and only the destination pixels within the given rectangle-of-interest are
+to be written to. However, in order to compute the destination pixels,
+any pixels from the source may be utilized.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Effect-1.Render.html#PaintDotNet_Effects_Effect_1_Render_System_Drawing_Rectangle___System_Int32_System_Int32_">Render(Rectangle[], int, int)</a></dt>

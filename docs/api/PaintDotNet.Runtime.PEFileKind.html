@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PEFileKind ">
       
-      
+      <meta name="description" content="Describes what kind of code a PE file contains, as determined from its PE/COFF and CLI (COR) headers.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum PEFileKind
   <dl><dt>Assembly</dt><dd>PaintDotNet.Base.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Describes what kind of code a PE file contains, as determined from its PE/COFF and CLI (COR) headers.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,16 +115,22 @@ Enum PEFileKind
   <dl class="parameters">
     <dt id="PaintDotNet_Runtime_PEFileKind_NotPortableExecutable"><code>NotPortableExecutable = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The file is missing, unreadable, or is not a PE/COFF file at all.</p>
+</dd>
     <dt id="PaintDotNet_Runtime_PEFileKind_Native"><code>Native = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>A purely native binary: no CLI header (a plain Win32 DLL/EXE, or a NativeAOT binary).</p>
+</dd>
     <dt id="PaintDotNet_Runtime_PEFileKind_Managed"><code>Managed = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>A pure IL assembly (ILONLY set): C#, VB, F#, or C++/CLI built with /clr:safe or /clr:pure.</p>
+</dd>
     <dt id="PaintDotNet_Runtime_PEFileKind_Mixed"><code>Mixed = 3</code></dt>
   
-  <dd></dd>
+  <dd><p>A PE file whose CLI header claims neither ILONLY nor IL_LIBRARY: a mixed-mode (IJW) C++/CLI
+assembly built with /clr, or a .NET Framework NGen'd binary. The managed code in these files
+cannot be recompiled by crossgen2.</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct DeviceContextProperties ">
       
-      
+      <meta name="description" content="Contains rendering options (hardware or software), pixel format, DPI information, remoting options, and Direct3D support requirements for a device context. D2D1_RENDER_TARGET_PROPERTIES">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Struct DeviceContextProperties
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains rendering options (hardware or software), pixel format, DPI information, remoting options, and Direct3D support requirements for a device context.<br>
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/d2d1/ns-d2d1-d2d1_render_target_properties">D2D1_RENDER_TARGET_PROPERTIES</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -154,23 +156,40 @@ Struct DeviceContextProperties
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.Dpi.html#PaintDotNet_Direct2D1_DeviceContextProperties_Dpi">Dpi</a></dt>
-    <dd></dd>
+    <dd><p>The DPI of the render target. To use the default DPI, set this to (0, 0).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.MinLevel.html#PaintDotNet_Direct2D1_DeviceContextProperties_MinLevel">MinLevel</a></dt>
-    <dd></dd>
+    <dd><p>A value that specifies the minimum Direct3D feature level required for hardware rendering. If the specified
+minimum level is not available, the device context uses software rendering if the type member is set to
+<a class="xref" href="PaintDotNet.Direct2D1.DeviceContextType.html#PaintDotNet_Direct2D1_DeviceContextType_Default">Default</a>; if type is set to <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextType.html#PaintDotNet_Direct2D1_DeviceContextType_Hardware">Hardware</a>, device
+context creation fails. A value of <a class="xref" href="PaintDotNet.Direct2D1.DeviceFeatureLevel.html#PaintDotNet_Direct2D1_DeviceFeatureLevel_Default">Default</a> indicates that Direct2D should
+determine whether the Direct3D feature level of the device is adequate. This field is used only when creating
+<a class="xref" href="PaintDotNet.Direct2D1.IHwndDeviceContext.html">IHwndDeviceContext</a> and <a class="xref" href="PaintDotNet.Direct2D1.IDCDeviceContext.html">IDCDeviceContext</a> objects.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.PixelFormat.html#PaintDotNet_Direct2D1_DeviceContextProperties_PixelFormat">PixelFormat</a></dt>
-    <dd></dd>
+    <dd><p>The pixel format and alpha mode of the render target. You can use <a class="xref" href="PaintDotNet.Direct2D1.DevicePixelFormats.Unknown.html#PaintDotNet_Direct2D1_DevicePixelFormats_Unknown">Unknown</a> to specify that Direct2D should
+select the pixel format and alpha mode for you.<br>
+For a list of pixel formats and alpha modes supported by each render target, see
+<a href="https://learn.microsoft.com/en-us/windows/win32/Direct2D/supported-pixel-formats-and-alpha-modes">Supported Pixel Formats and Alpha Modes</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.Type.html#PaintDotNet_Direct2D1_DeviceContextProperties_Type">Type</a></dt>
-    <dd></dd>
+    <dd><p>A value that specifies whether the render target should force hardware or software rendering. A value of <a class="xref" href="PaintDotNet.Direct2D1.DeviceContextType.html#PaintDotNet_Direct2D1_DeviceContextType_Default">Default</a>
+specifies that the render target should use hardware rendering if it is available; otherwise, it uses software rendering. Note that WIC bitmap
+render targets do not support hardware rendering.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.DeviceContextProperties.Usage.html#PaintDotNet_Direct2D1_DeviceContextProperties_Usage">Usage</a></dt>
-    <dd></dd>
+    <dd><p>A value that specifies how the device context is remoted and whether it should be GDI-compatible. Set to
+<a class="xref" href="PaintDotNet.Direct2D1.DeviceContextUsage.html#PaintDotNet_Direct2D1_DeviceContextUsage_None">None</a> to create a render target that is not compatible with GDI and uses
+Direct3D command-stream remoting if it is available.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

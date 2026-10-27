@@ -120,7 +120,13 @@ Property Amplitude
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>The furthest distance that a pixel will be displaced, in pixels. This is an upper bound
+rather than an exact figure: a waveform steep enough to fold earlier than a sine is scaled
+down to match it, and so does not reach the full amplitude. Negative values invert the
+wave, which is equivalent to shifting the phase by 180 degrees.<br>
+The default value is 100. There is no fixed ceiling: callers scale this to the image, and
+half the minor axis of a large one runs past any bound worth naming.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +146,28 @@ Property Amplitude
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Amplitude_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Whether there is a practical ceiling here depends on the pattern. Where displacement runs
+along the same axis as the wave's phase (<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Radial">Radial</a>,
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_LongitudinalLinear">LongitudinalLinear</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_SquareRings">SquareRings</a>,
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_DiamondRings">DiamondRings</a>, <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Spiral">Spiral</a>, and
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_FromEdges">FromEdges</a>), too much of it makes the image fold over itself.
+Staying below <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.WaveLength.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_WaveLength">WaveLength</a>/(2<em>pi) keeps the mapping one-to-one. That single
+bound covers every waveform, because each one is normalized so that its steepest slope is
+no greater than a sine's; the exception is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesWaveform.html#PaintDotNet_Effects_Gpu_PdnWavesWaveform_Semicircle">Semicircle</a>, whose
+slope is unbounded where its arcs meet, so it creases at any amplitude.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Crossed">Crossed</a> shares that bound even though each of its two
+components displaces across its own phase gradient, because composing two perpendicular
+shears gives a Jacobian determinant of 1 - A^2</em>f'*f'/WaveLength^2, which changes sign at
+the same ratio.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Linear">Linear</a> and <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Tangential">Tangential</a> have no
+limit at all: the first is a single shear, and the second rotates each circle around
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a> rigidly. Both are invertible at any amplitude.<br>
+<a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesPattern.html#PaintDotNet_Effects_Gpu_PdnWavesPattern_Angular">Angular</a> is its own case. It takes its phase from the angle,
+so <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.WaveLength.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_WaveLength">WaveLength</a> does not apply, and it always degenerates within a radius of
+roughly the amplitude around <a class="xref" href="PaintDotNet.Effects.Gpu.PdnWavesEffect.Props.Center.html#PaintDotNet_Effects_Gpu_PdnWavesEffect_Props_Center">Center</a>, where the displacement reaches back
+past the center.</p>
+</div>
 
 
 

@@ -120,7 +120,8 @@ Method CreateFilledGeometryRealization
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a device-dependent representation of the fill of the geometry that can be subsequently rendered.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,18 @@ Method CreateFilledGeometryRealization
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>geometry</code> <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.html">IGeometry</a></dt>
-  <dd></dd>
+  <dd><p>The geometry to realize.</p>
+</dd>
   <dt><code>flatteningTolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-  <dd></dd>
+  <dd><p>The flattening tolerance to use when converting Beziers to line segments. This parameter shares the same units as the coordinates of the geometry. If null, <a class="xref" href="PaintDotNet.Direct2D1.FlatteningTolerance.Default.html">Default</a> will be used.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometryRealization.html">IGeometryRealization</a></dt>
-  <dd></dd>
+  <dd><p>The new geometry realization object.</p>
+</dd>
 </dl>
 
 
@@ -147,6 +151,10 @@ Method CreateFilledGeometryRealization
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateFilledGeometryRealization_PaintDotNet_Direct2D1_IGeometry_System_Nullable_System_Single___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method is used in conjunction with <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.DrawGeometryRealization.html#PaintDotNet_Direct2D1_IDeviceContext_DrawGeometryRealization_PaintDotNet_Direct2D1_IGeometryRealization_PaintDotNet_Direct2D1_IDeviceBrush_">DrawGeometryRealization(IGeometryRealization, IDeviceBrush)</a>. The <a class="xref" href="PaintDotNet.Direct2D1.FlatteningTolerance.Compute.html#PaintDotNet_Direct2D1_FlatteningTolerance_Compute_PaintDotNet_Rendering_Matrix3x2Float__PaintDotNet_Rendering_Vector2Float_System_Single_">Compute(in Matrix3x2Float, Vector2Float, float)</a> helper API may be used to determine the proper flattening tolerance.<br>
+If the provided stroke style specifies a stroke transform type other than <a class="xref" href="PaintDotNet.Direct2D1.StrokeTransformType.html#PaintDotNet_Direct2D1_StrokeTransformType_Normal">Normal</a>, then the stroke will be realized assuming the identity transform and a DPI of 96.</p>
+</div>
 
 
 

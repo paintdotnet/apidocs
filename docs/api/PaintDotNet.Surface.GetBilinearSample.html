@@ -120,7 +120,8 @@ Method GetBilinearSample
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a bilinear sample from the image.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -147,6 +148,17 @@ Method GetBilinearSample
 
 
 
+<h4 class="section" id="PaintDotNet_Surface_GetBilinearSample_System_Single_System_Single__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Valid values for x are (-1.0, Width). Valid values for y are (-1.0, Height).
+Any samples in the range [-inf, 1.0] or [Width/Height, +inf] will return a
+transparent color value.
+The bilinear sample is taken using a 2x2 kernel such that sampling any integer
+coordinate will yield the same result as point sampling, i.e.
+GetBilinearSample((int)x, (int)y) == GetPoint((int)x, (int)y). This means that
+bilinear sampling is only defined with full weighting in the range [0, Width-1.0]
+for x and [0, Height-1.0] for y. For x in the range of (-1.0, 0.0), the color
+will be progressively less transparent (as blended with the point sample at 0.0).</p>
+</div>
 
 
 

@@ -120,7 +120,8 @@ Method GetSourceBitmapBgra32
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p><b>(Recommended)</b> Gets a bitmap that renders the source layer's contents in the native Bgra32 pixel format.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method GetSourceBitmapBgra32
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>environment</code> <a class="xref" href="PaintDotNet.Effects.IEffectEnvironment.html">IEffectEnvironment</a></dt>
-  <dd></dd>
+  <dd><p>The environment.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectInputBitmap-1.html">IEffectInputBitmap</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The bitmap.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,10 @@ Method GetSourceBitmapBgra32
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_EffectEnvironmentExtensions_GetSourceBitmapBgra32_PaintDotNet_Effects_IEffectEnvironment__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method is equivalent to calling:</p>
+<pre><code class="lang-csharp">this.Environment.Document.Layers[this.Environment.SourceLayerIndex].GetSourceBitmapBgra32()</code></pre>
+</div>
 
 
 

@@ -120,7 +120,8 @@ Method TryGetAttributeValue
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets an attribute of this element as a string.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,17 +131,21 @@ Method TryGetAttributeValue
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The name of the attribute.</p>
+</dd>
   <dt><code>type</code> <a class="xref" href="PaintDotNet.Direct2D1.SvgAttributeStringType.html">SvgAttributeStringType</a></dt>
-  <dd></dd>
+  <dd><p>The string type.</p>
+</dd>
   <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The attribute value.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>The value of the attribute.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +154,11 @@ Method TryGetAttributeValue
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_TryGetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributeStringType_System_String___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Returns false if the attribute name is not valid on this element.<br>
+Returns false if the attribute cannot be expressed as the specified string type.<br>
+Returns false if the attribute is not specified.</p>
+</div>
 
 
 
@@ -160,7 +170,8 @@ Method TryGetAttributeValue
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets an attribute of this element as a POD (plain old data) type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -170,11 +181,14 @@ Method TryGetAttributeValue
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The name of the attribute.</p>
+</dd>
   <dt><code>type</code> <a class="xref" href="PaintDotNet.Direct2D1.SvgAttributePodType.html">SvgAttributePodType</a></dt>
-  <dd></dd>
+  <dd><p>The POD type of the value.</p>
+</dd>
   <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The buffer to receive the value.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
@@ -189,6 +203,11 @@ Method TryGetAttributeValue
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_ISvgElement_TryGetAttributeValue_System_String_PaintDotNet_Direct2D1_SvgAttributePodType_System_Span_System_Byte___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Returns false if the attribute is not specified.<br>
+Returns false if the attribute name is not valid on this element.<br>
+Returns false if the attribute cannot be expressed as the specified POD type.</p>
+</div>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum RawCapabilities ">
       
-      
+      <meta name="description" content="Specifies the level of support for a particular raw image processing capability. For more information, see: WICRawCapabilities">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,10 @@ Enum RawCapabilities
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Specifies the level of support for a particular raw image processing capability.<br>
+For more information, see:
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/wincodec/ne-wincodec-wicrawcapabilities">WICRawCapabilities</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,13 +117,16 @@ Enum RawCapabilities
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_RawCapabilities_NotSupported"><code>NotSupported = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The capability is not supported.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_RawCapabilities_GetSupported"><code>GetSupported = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The capability is supported for getting (reading) only.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_RawCapabilities_FullySupported"><code>FullySupported = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The capability is fully supported for both getting (reading) and setting (writing).</p>
+</dd>
   </dl>
 
 

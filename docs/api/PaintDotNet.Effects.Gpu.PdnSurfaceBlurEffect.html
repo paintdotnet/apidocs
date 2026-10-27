@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PdnSurfaceBlurEffect ">
       
-      
+      <meta name="description" content="A Direct2D effect that renders Paint.NET&#39;s built-in Surface Blur effect.  Surface Blur is a bilateral filter that blurs the image while preserving sharp details and edges.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Class PdnSurfaceBlurEffect
   <dl><dt>Assembly</dt><dd>PaintDotNet.Effects.Gpu.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A Direct2D effect that renders Paint.NET's built-in Surface Blur effect.<br>
+<br>
+Surface Blur is a bilateral filter that blurs the image while preserving sharp details and edges.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -230,6 +233,15 @@ Class PdnSurfaceBlurEffect
 
 
 
+  <h2 id="PaintDotNet_Effects_Gpu_PdnSurfaceBlurEffect_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This effect tends to work best with compressed gamma (aka companded, non-linear).
+If your input image is in linear gamma space, or if the output of thise effect
+just looks bad or wrong, then it may be best to first adjust the gamma using
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect.html">GammaTransferEffect</a>, <a class="xref" href="PaintDotNet.Direct2D1.Effects.GammaTransferEffect2.html">GammaTransferEffect2</a>, or
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.ConvertGammaEffect.html">ConvertGammaEffect</a> with an exponent of 2.2. You can also use
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.LinearToSrgbEffect.html">LinearToSrgbEffect</a>. Then apply the inverse to the output of this
+effect (either apply an exponent of 1.0/2.2, or use <a class="xref" href="PaintDotNet.Direct2D1.Effects.SrgbToLinearEffect.html">SrgbToLinearEffect</a>).</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IReadOnlyFileTypeMetadata ">
       
-      
+      <meta name="description" content="Provides read-only access to metadata for a  or .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IReadOnlyFileTypeMetadata
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides read-only access to metadata for a <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocument.html">IFileTypeDocument</a> or <a class="xref" href="PaintDotNet.FileTypes.IFileTypeLayer.html">IFileTypeLayer</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +146,10 @@ Interface IReadOnlyFileTypeMetadata
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.SectionKinds.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata_SectionKinds">SectionKinds</a></dt>
-    <dd></dd>
+    <dd><p>Gets the kinds of metadata sections that this metadata contains, in a stable order. Pair this with
+<a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.TryGetSection.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata_TryGetSection_PaintDotNet_FileTypes_FileTypeMetadataSectionKind_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection__">TryGetSection(FileTypeMetadataSectionKind, out IReadOnlyFileTypeMetadataSection?)</a> to
+enumerate every section generically, without needing to know each section kind ahead of time.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -153,11 +157,13 @@ Interface IReadOnlyFileTypeMetadata
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.Clone.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata_Clone">Clone()</a></dt>
-    <dd></dd>
+    <dd><p>Creates a mutable copy of the metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.TryGetSection.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadata_TryGetSection_PaintDotNet_FileTypes_FileTypeMetadataSectionKind_PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection__">TryGetSection(FileTypeMetadataSectionKind, out IReadOnlyFileTypeMetadataSection?)</a></dt>
-    <dd></dd>
+    <dd><p>Gets access to a read-only metadata section by its <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a>.</p>
+</dd>
   </dl>
 
 

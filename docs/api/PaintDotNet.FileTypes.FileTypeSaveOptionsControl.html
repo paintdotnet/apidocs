@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FileTypeSaveOptionsControl ">
       
-      
+      <meta name="description" content="The base class for  implementations. These must be provided by s that support configurable saving. Most  plugins will be s and will not need to implement this class.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Class FileTypeSaveOptionsControl
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The base class for <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.html">IFileTypeSaveOptionsControl</a> implementations. These must be
+provided by <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>s that support configurable saving. Most <a class="xref" href="PaintDotNet.FileTypes.FileType.html">FileType</a>
+plugins will be <a class="xref" href="PaintDotNet.FileTypes.PropertyBasedFileType.html">PropertyBasedFileType</a>s and will not need to implement this class.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -1433,7 +1436,8 @@ Class FileTypeSaveOptionsControl
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_FileTypeSaveOptionsControl_Options">Options</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the save options being edited by this control.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -1441,7 +1445,8 @@ Class FileTypeSaveOptionsControl
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.OnOptionsChanged.html#PaintDotNet_FileTypes_FileTypeSaveOptionsControl_OnOptionsChanged">OnOptionsChanged()</a></dt>
-    <dd></dd>
+    <dd><p>Raises the <a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.OptionsChanged.html">OptionsChanged</a> event.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -1449,7 +1454,9 @@ Class FileTypeSaveOptionsControl
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.FileTypes.FileTypeSaveOptionsControl.OptionsChanged.html">OptionsChanged</a></dt>
-    <dd></dd>
+    <dd><p>Occurs when the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_IFileTypeSaveOptionsControl_Options">Options</a> property has changed, either by setting the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeSaveOptionsControl.Options.html#PaintDotNet_FileTypes_IFileTypeSaveOptionsControl_Options">Options</a>
+property or through user interaction with the control.</p>
+</dd>
   </dl>
 
 

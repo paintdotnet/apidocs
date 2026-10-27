@@ -120,7 +120,8 @@ Method SetFill
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Provides values to an SVG glyph for fill.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,11 @@ Method SetFill
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>brush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>Describes how the area is painted. A null brush will cause the context-fill value to come from the defaultFillBrush.
+If the defaultFillBrush is also null, the context-fill value will be 'none'. To set the ‘context-fill’ value, this
+method uses the provided brush with its opacity set to 1. To set the ‘context-fill-opacity’ value, this method uses
+the opacity of the provided brush.</p>
+</dd>
 </dl>
 
 

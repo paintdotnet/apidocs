@@ -120,7 +120,11 @@ Method AddSprites
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Adds the given sprites to the end of this sprite batch. The number of sprites is governed by the length of the
+destinationRectangles parameter. You may use a 1-length span for the other spans to apply the same value for
+that property to each of the sprites. You may use a 0-length span for the other spans to use the default value
+associated with those properties, which can reduce memory usage and increase performance.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +134,27 @@ Method AddSprites
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>spriteBatch</code> <a class="xref" href="PaintDotNet.Direct2D1.ISpriteBatch.html">ISpriteBatch</a></dt>
-  <dd></dd>
+  <dd><p>The sprite batch object.</p>
+</dd>
   <dt><code>destinationRectangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The destination rectangles specifying where to draw the sprites.</p>
+</dd>
   <dt><code>sourceRectangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The source rectangles specifying the regions of the source bitmap to draw as sprites. Direct2D will use the
+entire source bitmap for sprites that are assigned a null value or if RectInt32.LogicallyInfinite is used.
+If this span is empty, Direct2D will use the entire source bitmap for all of the added sprites.</p>
+</dd>
   <dt><code>colors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The colors to apply to each sprite. The output color is the result of component-wise multiplication of the
+source bitmap color and the provided color. The output color is not clamped. Direct2D will not change the
+color of sprites that are assigned a null value. If this span is empty, then Direct2D will not change the
+color of any of the added sprites.</p>
+</dd>
   <dt><code>transforms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The transforms to apply to each sprite's destination recangle. Direct2D will not transform the destination
+rectangle of any sprites that are assigned a null value. If this span is empty then Direct2D will not
+transform the destination rectangle of any of the added sprites.</p>
+</dd>
 </dl>
 
 
@@ -148,6 +164,15 @@ Method AddSprites
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_SpriteBatchExtensions_AddSprites_PaintDotNet_Direct2D1_ISpriteBatch_System_ReadOnlySpan_PaintDotNet_Rendering_RectFloat__System_ReadOnlySpan_PaintDotNet_Rendering_RectInt32__System_ReadOnlySpan_PaintDotNet_Imaging_ColorRgba128Float__System_ReadOnlySpan_PaintDotNet_Rendering_Matrix3x2Float___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Always use an empty span for properties you do not wish to use. This allows Direct2D to avoid storing values
+for those properties and to skip their handling entirely, which improves drawing speed. For example, suppose
+you have a batch of 500 sprites, and you do not wish to transform any of their destination rectangles. Rather
+than passing an array of identity matrices, simply omit the transforms parameter. This allows Direct2D to
+avoid storing any transforms and will yield the fastest drawing performance. On the other hand, if any sprite
+in the batch has any value set for a property, then internally Direct2D must allocate space for that property
+array and assign every sprite a value for that property (even if it’s just the default value).</p>
+</div>
 
 
 

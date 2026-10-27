@@ -120,7 +120,14 @@ Property LightnessDelta
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies the amount to change each pixel's lightness by. The range for lightness is [0, 1], so the
+range of this property is [-1.0f, +1.0f]. This corresponds to the UI's range of [-100, +100].<br>
+A value of -1 will produce a completely black image, while a value of +1 will produce a completely white image.<br>
+Results will be clamped to a valid range.<br>
+The default value is 0.<br>
+Note that this &quot;lightness&quot; does not operate in exactly the same way as &quot;lightness&quot; in HSL does. It is a simple
+linear interpolation between black and white.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

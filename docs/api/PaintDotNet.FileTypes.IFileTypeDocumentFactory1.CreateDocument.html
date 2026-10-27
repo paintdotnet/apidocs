@@ -120,7 +120,8 @@ Method CreateDocument
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a document of the given size and pixel format.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -147,6 +148,12 @@ Method CreateDocument
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeDocumentFactory1_CreateDocument_PaintDotNet_Rendering_SizeInt32_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>In general, you should use the pixel format that is most natural for loading the image data,
+without worrying about whether it is a &quot;native&quot; pixel format (as per <a class="xref" href="PaintDotNet.FileTypes.IFileTypeDocumentFactory1.NativePixelFormats.html#PaintDotNet_FileTypes_IFileTypeDocumentFactory1_NativePixelFormats">NativePixelFormats</a>.
+This allows Paint.NET to handle the conversion in the most efficient mannaer and with the
+highest possible quality.</p>
+</div>
 
 
 

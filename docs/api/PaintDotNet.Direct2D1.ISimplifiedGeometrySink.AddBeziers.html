@@ -120,7 +120,8 @@ Method AddBeziers
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a sequence of cubic Bezier curves and adds them to the geometry sink.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,12 @@ Method AddBeziers
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>beziers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Direct2D1.BezierSegment.html">BezierSegment</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A pointer to an array of Bezier segments that describes the Bezier curves to create. A curve is drawn
+from the geometry sink's current point (the end point of the last segment drawn or the location
+specified by <a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a>) to the end point of the first Bezier segment in the array. If
+the array contains additional Bezier segments, each subsequent Bezier segment uses the end point of
+the preceding Bezier segment as its start point.</p>
+</dd>
 </dl>
 
 

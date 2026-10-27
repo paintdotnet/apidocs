@@ -163,7 +163,10 @@ public struct SizeInt64 : IEquatable&lt;SizeInt64&gt;, IFormattable, IParsable&l
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeInt64.IsEmpty.html#PaintDotNet_Rendering_SizeInt64_IsEmpty">IsEmpty</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the size is the <a class="xref" href="PaintDotNet.Rendering.SizeInt64.Empty.html#PaintDotNet_Rendering_SizeInt64_Empty">Empty</a> size or equivalent (negative
+width or negative height). Use <a class="xref" href="PaintDotNet.Rendering.SizeInt64.HasArea.html#PaintDotNet_Rendering_SizeInt64_HasArea">HasArea</a> to test whether the size is
+non-empty and has a non-zero area.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeInt64.IsZero.html#PaintDotNet_Rendering_SizeInt64_IsZero">IsZero</a></dt>
@@ -327,7 +330,9 @@ public struct SizeInt64 : IEquatable&lt;SizeInt64&gt;, IFormattable, IParsable&l
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeInt64.Empty.html#PaintDotNet_Rendering_SizeInt64_Empty">Empty</a></dt>
-    <dd></dd>
+    <dd><p>Gets a special value that represents a size with no area. Note that this is not the same as a size
+value with zero area. See <a class="xref" href="PaintDotNet.Rendering.SizeInt64.IsEmpty.html#PaintDotNet_Rendering_SizeInt64_IsEmpty">IsEmpty</a> and <a class="xref" href="PaintDotNet.Rendering.SizeInt64.HasArea.html#PaintDotNet_Rendering_SizeInt64_HasArea">HasArea</a> for more details.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Rendering.SizeInt64.Parse.html#PaintDotNet_Rendering_SizeInt64_Parse_System_String_System_IFormatProvider_">Parse(string, IFormatProvider?)</a></dt>

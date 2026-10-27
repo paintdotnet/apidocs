@@ -120,7 +120,9 @@ Method DrawTextLayout
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a text layout object. If the layout is not subsequently changed, this can be more efficient than
+DrawText when drawing the same layout repeatedly.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +132,20 @@ Method DrawTextLayout
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>origin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The point, described in device-independent pixels, at which the upper-left corner of the text described by
+textLayout is drawn.</p>
+</dd>
   <dt><code>textLayout</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.html">ITextLayout</a></dt>
-  <dd></dd>
+  <dd><p>The formatted text to draw. Any drawing effects that do not inherit from ID2D1Resource are ignored. If
+there are drawing effects that inherit from ID2D1Resource that are not brushes, this method fails and the
+device context is put in an error state.</p>
+</dd>
   <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>The brush used to paint the text.</p>
+</dd>
   <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.DrawTextOptions.html">DrawTextOptions</a></dt>
-  <dd></dd>
+  <dd><p>A value that indicates whether the text should be snapped to pixel boundaries and whether the text should be clipped to the layout rectangle.</p>
+</dd>
 </dl>
 
 
@@ -157,7 +166,9 @@ Method DrawTextLayout
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Draws a text layout object. If the layout is not subsequently changed, this can be more efficient than
+DrawText when drawing the same layout repeatedly.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -167,17 +178,26 @@ Method DrawTextLayout
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>origin</code> <a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a></dt>
-  <dd></dd>
+  <dd><p>The point, described in device-independent pixels, at which the upper-left corner of the text described by
+textLayout is drawn.</p>
+</dd>
   <dt><code>textLayout</code> <a class="xref" href="PaintDotNet.DirectWrite.ITextLayout.html">ITextLayout</a></dt>
-  <dd></dd>
+  <dd><p>The formatted text to draw. Any drawing effects that do not inherit from ID2D1Resource are ignored. If
+there are drawing effects that inherit from ID2D1Resource that are not brushes, this method fails and the
+device context is put in an error state.</p>
+</dd>
   <dt><code>defaultFillBrush</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceBrush.html">IDeviceBrush</a></dt>
-  <dd></dd>
+  <dd><p>The brush used to paint the text.</p>
+</dd>
   <dt><code>svgGlyphStyle</code> <a class="xref" href="PaintDotNet.Direct2D1.ISvgGlyphStyle.html">ISvgGlyphStyle</a></dt>
-  <dd></dd>
+  <dd><p>The values for context-fill, context-stroke, and context-value that are used when rendering SVG glyphs.</p>
+</dd>
   <dt><code>colorPaletteIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The index used to select a color palette within a color font.</p>
+</dd>
   <dt><code>options</code> <a class="xref" href="PaintDotNet.Direct2D1.DrawTextOptions.html">DrawTextOptions</a></dt>
-  <dd></dd>
+  <dd><p>A value that indicates whether the text should be snapped to pixel boundaries and whether the text should be clipped to the layout rectangle.</p>
+</dd>
 </dl>
 
 

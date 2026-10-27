@@ -120,7 +120,9 @@ Method ReplaceFrom
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Replaces the contents of the metadata section with the values from another metadata section of the same
+<a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.Kind.html#PaintDotNet_FileTypes_IReadOnlyFileTypeMetadataSection_Kind">Kind</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +132,9 @@ Method ReplaceFrom
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>source</code> <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadataSection.html">IReadOnlyFileTypeMetadataSection</a></dt>
-  <dd></dd>
+  <dd><p>The metadata section to copy from. Its kind must match the kind of the metadata section
+that this transaction was created from.</p>
+</dd>
 </dl>
 
 
@@ -141,6 +145,13 @@ Method ReplaceFrom
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.ComponentModel.InterfaceNotSupportedException.html">InterfaceNotSupportedException</a></dt>
+  <dd><p>Thrown if <code class="paramref">source</code> is not the same kind of metadata section as the one that this transaction
+was created from.</p>
+</dd>
+</dl>
 
 
 

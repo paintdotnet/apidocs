@@ -120,7 +120,8 @@ Method ProcessRecord
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Provides access to metafile records, including their type, data, and flags.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,11 +131,17 @@ Method ProcessRecord
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>recordType</code> <a class="xref" href="PaintDotNet.Gdi.GdiMetafileRecordType.html">GdiMetafileRecordType</a></dt>
-  <dd></dd>
+  <dd><p>The type of metafile record being processed.
+Please see See <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emf/91c257d7-c39d-4a36-9b1f-63e3f73d30ca">MS-EMF</a>
+and <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emfplus/5f92c789-64f2-46b5-9ed4-15a9bb0946c6">MS_EMFPLUS</a>
+for a list of record types.</p>
+</dd>
   <dt><code>recordData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The data contained in this record.</p>
+</dd>
   <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-  <dd></dd>
+  <dd><p>The set of flags set for this record.</p>
+</dd>
 </dl>
 
 
@@ -144,6 +151,11 @@ Method ProcessRecord
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IGdiMetafileSink_ProcessRecord_PaintDotNet_Gdi_GdiMetafileRecordType_System_ReadOnlySpan_System_Byte__System_UInt32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>For details on the EMF and EMF+ formats, please see Microsoft technical documents
+<a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emf/91c257d7-c39d-4a36-9b1f-63e3f73d30ca">MS-EMF</a>
+and <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-emfplus/5f92c789-64f2-46b5-9ed4-15a9bb0946c6">MS-EMFPLUS</a></p>
+</div>
 
 
 

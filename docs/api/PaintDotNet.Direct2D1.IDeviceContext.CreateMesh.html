@@ -120,7 +120,8 @@ Method CreateMesh
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Create a mesh that uses triangles to describe a shape.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,7 +132,8 @@ Method CreateMesh
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceMesh.html">IDeviceMesh</a></dt>
-  <dd></dd>
+  <dd><p>The new mesh object.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,11 @@ Method CreateMesh
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateMesh_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>To populate a mesh, use the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceMesh.Open.html#PaintDotNet_Direct2D1_IDeviceMesh_Open">Open()</a> method to obtain an <a class="xref" href="PaintDotNet.Direct2D1.ITessellationSink.html">ITessellationSink</a>. The sink
+may be filled with triangles manually, or by using the <a class="xref" href="PaintDotNet.Direct2D1.IGeometry.Tessellate.html#PaintDotNet_Direct2D1_IGeometry_Tessellate_PaintDotNet_Direct2D1_ITessellationSink_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">Tessellate(ITessellationSink, in Matrix3x2Float?, float?)</a> method.<br>
+To draw the mesh, use the device context's <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.FillMesh.html#PaintDotNet_Direct2D1_IDeviceContext_FillMesh_PaintDotNet_Direct2D1_IDeviceMesh_PaintDotNet_Direct2D1_IDeviceBrush_">FillMesh(IDeviceMesh, IDeviceBrush)</a> method.</p>
+</div>
 
 
 

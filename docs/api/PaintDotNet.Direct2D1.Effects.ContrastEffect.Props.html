@@ -184,15 +184,26 @@ Class ContrastEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.Props.ClampInput.html#PaintDotNet_Direct2D1_Effects_ContrastEffect_Props_ClampInput">ClampInput</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether or not to clamp the input to [0.0, 1.0]. The default value is false.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_ContrastEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.Props.Contrast.html#PaintDotNet_Direct2D1_Effects_ContrastEffect_Props_Contrast">Contrast</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the amount by which to adjust the contrast of the image. Negative values reduce
+contrast, while positive values increase contrast.<br>
+The range of this value is [ -1.0f, +1.0f ], and the default value is 0.0f.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ContrastEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_ContrastEffect_Props_Input">Input</a></dt>

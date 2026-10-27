@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum BitmapInterpolationMode2 ">
       
-      
+      <meta name="description" content="This enum provides additional resampling options.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum BitmapInterpolationMode2
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This enum provides additional resampling options.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -126,19 +127,25 @@ Enum BitmapInterpolationMode2
   <dd></dd>
     <dt id="PaintDotNet_Imaging_BitmapInterpolationMode2_HighQualityCubic"><code>HighQualityCubic = 4</code></dt>
   
-  <dd></dd>
+  <dd><p>A high-quality cubic resampling algorithm. This is also called &quot;Catmull-Rom&quot; (b=0, c=1/2).</p>
+</dd>
     <dt id="PaintDotNet_Imaging_BitmapInterpolationMode2_HighQualityLinear"><code>HighQualityLinear = 5</code></dt>
   
-  <dd></dd>
+  <dd><p>A bilinear interpolation algorithm. This produces significantly higher quality
+results than <a class="xref" href="PaintDotNet.Imaging.BitmapInterpolationMode2.html#PaintDotNet_Imaging_BitmapInterpolationMode2_Linear">Linear</a>.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_BitmapInterpolationMode2_Lanczos3"><code>Lanczos3 = 6</code></dt>
   
-  <dd></dd>
+  <dd><p>A Lanczos resampling algorithm with 3 lobes.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_BitmapInterpolationMode2_CubicSmooth"><code>CubicSmooth = 7</code></dt>
   
-  <dd></dd>
+  <dd><p>A smooth cubic resampling algorithm that produces no ringing artifacts. This is also called &quot;Hermite&quot; (b=0, c=0).</p>
+</dd>
     <dt id="PaintDotNet_Imaging_BitmapInterpolationMode2_HighQualityAdaptiveSharp"><code>HighQualityAdaptiveSharp = 8</code></dt>
   
-  <dd></dd>
+  <dd><p>Uses an adaptive high-quality algorithm based on the size of the input and output image, with a preference for sharper results.</p>
+</dd>
   </dl>
 
 

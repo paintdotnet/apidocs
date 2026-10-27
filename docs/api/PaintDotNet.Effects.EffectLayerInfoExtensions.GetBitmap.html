@@ -120,7 +120,8 @@ Method GetBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a bitmap that renders the layer's contents in the requested pixel format.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,19 +131,25 @@ Method GetBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>layer</code> <a class="xref" href="PaintDotNet.Effects.IEffectLayerInfo.html">IEffectLayerInfo</a></dt>
-  <dd></dd>
+  <dd><p>The layer.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Effects.IEffectInputBitmap-1.html">IEffectInputBitmap</a>&lt;TPixel&gt;</dt>
-  <dd></dd>
+  <dd><p>The bitmap.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TPixel</code></dt>
-  <dd></dd>
+  <dd><p>The requested pixel struct for the bitmap. The native pixel struct used by Paint.NET is
+currently <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>, which corresponds to the <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>
+pixel format. Specifying a different pixel struct/format is valid, but will incur conversion
+overhead.</p>
+</dd>
 </dl>
 
 

@@ -126,11 +126,15 @@ Interface IBitmapEffectOutput
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Bounds.html#PaintDotNet_Effects_IBitmapEffectOutput_Bounds">Bounds</a></dt>
-    <dd></dd>
+    <dd><p>Gets the region that needs to be rendered. The buffer returned from the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a>
+method will have the same size as this rectangle.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.PixelFormat.html#PaintDotNet_Effects_IBitmapEffectOutput_PixelFormat">PixelFormat</a></dt>
-    <dd></dd>
+    <dd><p>Gets the pixel format of the output buffer. This must match the pixel format when calling
+the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a> method.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -138,7 +142,9 @@ Interface IBitmapEffectOutput
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Lock.html#PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat__">Lock(in PixelFormat)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the buffer for writing the effect's output to. The origin of the buffer (that is, x=0 y=0)
+corresponds to the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Bounds.html#PaintDotNet_Effects_IBitmapEffectOutput_Bounds">Bounds</a>'s <a class="xref" href="PaintDotNet.Rendering.RectInt32.Location.html#PaintDotNet_Rendering_RectInt32_Location">Location</a> property.</p>
+</dd>
   </dl>
 
 

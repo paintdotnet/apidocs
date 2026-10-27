@@ -120,7 +120,8 @@ Method IsInputSet
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Allows you to check if an input is set (non-null) without allocating a ref to it.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -145,6 +146,11 @@ Method IsInputSet
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceEffect_IsInputSet_System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>GetInput(), like all methods returning IObjectRef &quot;refs&quot;, must provide a new &quot;ref&quot; for reference
+counting purposes. Using this method allows you to avoid that allocation.<br>
+This method returns false if the index is out of range.</p>
+</div>
 
 
 

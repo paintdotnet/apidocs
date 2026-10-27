@@ -120,7 +120,9 @@ Method GetSprites
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieves the specified subset of sprites from this sprite batch. For the best performance, use an empty Span
+(using the C# default keyword, or Span&lt;T&gt;.Empty) for properties that you do not need to retrieve.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +132,23 @@ Method GetSprites
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The index of the first sprite in this sprite batch to retrieve.</p>
+</dd>
   <dt><code>destinationRectangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>When this method returns, contains the destination rectangles for the retrieved sprites.</p>
+</dd>
   <dt><code>sourceRectangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>When this method returns, contains the source rectangles for the retrieved sprites. RectInt32.LogicallyInfinite
+is returned for any sprites that were not assigned a source rectangle.</p>
+</dd>
   <dt><code>colors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ColorRgba128Float.html">ColorRgba128Float</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>When this method returns, contains the colors to be applied to the retrieved sprites.
+The color { 1, 1, 1, 1 } (opaque white) is returned for any sprites that were not assigned a color.</p>
+</dd>
   <dt><code>transforms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Matrix3x2Float.html">Matrix3x2Float</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>When this method returns, contains the transforms to be applied to the retrived sprites.
+The identity matrix is returned for any sprites that were not assigned a transform.</p>
+</dd>
 </dl>
 
 

@@ -120,7 +120,8 @@ Method SetItems
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets multiple EXIF property items from path-value pairs.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,8 @@ Method SetItems
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ExifPropertyPath.html">ExifPropertyPath</a>, <a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The path-value pairs that define the property items to set.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,11 @@ Method SetItems
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyPath_PaintDotNet_Imaging_ExifValue____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If a property item already exists for any of the given paths, they will be overwritten.
+If the same path is encountered multiple times in the list of path-value pairs, every value will
+be used when writing out the corresponding metadata.</p>
+</div>
 
 
 
@@ -151,7 +158,8 @@ Method SetItems
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets multiple EXIF property items from path-values pairs.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -161,7 +169,8 @@ Method SetItems
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ExifPropertyPath.html">ExifPropertyPath</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a>&gt;&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The path-values pairs that define the property items to set.</p>
+</dd>
 </dl>
 
 
@@ -171,6 +180,11 @@ Method SetItems
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_PaintDotNet_Imaging_ExifPropertyPath_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifValue_____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If a property item already exists for any of the given paths, they will be overwritten.
+If the same path is encountered multiple times in the list of path-values pairs, every value will
+be used when writing out the corresponding metadata.</p>
+</div>
 
 
 
@@ -182,7 +196,8 @@ Method SetItems
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets multiple EXIF property items from a list of <a class="xref" href="PaintDotNet.Imaging.ExifPropertyItem.html">ExifPropertyItem</a>s.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -192,7 +207,8 @@ Method SetItems
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ExifPropertyItem.html">ExifPropertyItem</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The property items to set.</p>
+</dd>
 </dl>
 
 
@@ -202,6 +218,11 @@ Method SetItems
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_IFileTypeExifMetadataTransaction_SetItems_System_Collections_Generic_IEnumerable_PaintDotNet_Imaging_ExifPropertyItem___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If a property item already exists for any of the given paths, they will be overwritten.
+If the same path is encountered multiple times in the list of property items, every value will
+be used when writing out the corresponding metadata.</p>
+</div>
 
 
 

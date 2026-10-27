@@ -120,7 +120,8 @@ Method ReleaseDC
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Indicates that drawing with the GDI device context retrieved using the <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a> method is finished.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,8 @@ Method ReleaseDC
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>update</code> <a class="xref" href="PaintDotNet.Rendering.RectInt32.html">RectInt32</a>?</dt>
-  <dd></dd>
+  <dd><p>The modified region of the GDI device context, or <code>null</code> to specify the entire Direct2D device context.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,9 @@ Method ReleaseDC
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IGdiInteropDeviceContext_ReleaseDC_System_Nullable_PaintDotNet_Rendering_RectInt32____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.ReleaseDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_ReleaseDC_System_Nullable_PaintDotNet_Rendering_RectInt32___">ReleaseDC(in RectInt32?)</a> must be called once for each call to <a class="xref" href="PaintDotNet.Direct2D1.IGdiInteropDeviceContext.GetDC.html#PaintDotNet_Direct2D1_IGdiInteropDeviceContext_GetDC_PaintDotNet_Direct2D1_DCInitializeMode_">GetDC(DCInitializeMode)</a>.</p>
+</div>
 
 
 

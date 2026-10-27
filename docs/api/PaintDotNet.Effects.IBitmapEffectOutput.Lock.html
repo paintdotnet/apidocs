@@ -120,7 +120,9 @@ Method Lock
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the buffer for writing the effect's output to. The origin of the buffer (that is, x=0 y=0)
+corresponds to the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.Bounds.html#PaintDotNet_Effects_IBitmapEffectOutput_Bounds">Bounds</a>'s <a class="xref" href="PaintDotNet.Rendering.RectInt32.Location.html#PaintDotNet_Rendering_RectInt32_Location">Location</a> property.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +132,16 @@ Method Lock
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>pixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd></dd>
+  <dd><p>The pixel format for the buffer. This must be the same pixel format
+specified for the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectOutput.PixelFormat.html#PaintDotNet_Effects_IBitmapEffectOutput_PixelFormat">PixelFormat</a> property.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Imaging.IBitmapLock.html">IBitmapLock</a></dt>
-  <dd></dd>
+  <dd><p>The buffer for the effect's output. This buffer is only valid during the effect's render method.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +150,18 @@ Method Lock
 
 
 
+<h4 class="section" id="PaintDotNet_Effects_IBitmapEffectOutput_Lock_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The pixel format for the output buffer is established by setting the <a class="xref" href="PaintDotNet.Effects.IBitmapEffectRenderInfo.OutputPixelFormat.html#PaintDotNet_Effects_IBitmapEffectRenderInfo_OutputPixelFormat">OutputPixelFormat</a>
+property during the <a class="xref" href="PaintDotNet.Effects.BitmapEffect.OnInitializeRenderInfo.html#PaintDotNet_Effects_BitmapEffect_OnInitializeRenderInfo_PaintDotNet_Effects_IBitmapEffectRenderInfo_">OnInitializeRenderInfo(IBitmapEffectRenderInfo)</a> method.
+If the property is not set then the pixel format defaults to <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Bgra32.html#PaintDotNet_Imaging_PixelFormats_Bgra32">Bgra32</a>.
+<br>
+<br>
+It is recommended that you use the <a class="xref" href="PaintDotNet.Effects.BitmapEffectOutputExtensions.Lock.html#PaintDotNet_Effects_BitmapEffectOutputExtensions_Lock__1_PaintDotNet_Effects_IBitmapEffectOutput_">Lock&lt;TPixel&gt;(IBitmapEffectOutput)</a>
+or <a class="xref" href="PaintDotNet.Effects.BitmapEffectOutputExtensions.LockBgra32.html#PaintDotNet_Effects_BitmapEffectOutputExtensions_LockBgra32_PaintDotNet_Effects_IBitmapEffectOutput_">LockBgra32(IBitmapEffectOutput)</a> extension methods
+in order to get a strongly-typed <a class="xref" href="PaintDotNet.Imaging.IBitmapLock-1.html">IBitmapLock&lt;TPixel&gt;</a>. You can then use the
+<a class="xref" href="PaintDotNet.Imaging.BitmapLockExtensions.AsRegionPtr.html#PaintDotNet_Imaging_BitmapLockExtensions_AsRegionPtr__1_PaintDotNet_Imaging_IBitmapLock___0__">AsRegionPtr&lt;TPixel&gt;(IBitmapLock&lt;TPixel&gt;)</a> extension method to
+simplify access to the output buffer.</p>
+</div>
 
 
 

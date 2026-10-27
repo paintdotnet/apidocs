@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RenderArgs ">
       
-      
+      <meta name="description" content="Encapsulates the arguments passed to a Render function. This way we can do on-demand and once-only creation of Bitmap and Graphics objects from a given Surface object.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Class RenderArgs
   <dl><dt>Assembly</dt><dd>PaintDotNet.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Encapsulates the arguments passed to a Render function.
+This way we can do on-demand and once-only creation of Bitmap and Graphics
+objects from a given Surface object.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -153,13 +156,25 @@ Class RenderArgs
 
 
 
+  <h2 id="PaintDotNet_RenderArgs_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Use of the Bitmap and Graphics objects is not thread safe because of how GDI+ works.
+You must wrap use of these objects with a critical section, like so:
+object lockObject = new object();
+lock (lockObject)
+{
+Graphics g = ra.Graphics;
+g.DrawRectangle(...);
+// etc.
+}</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.-ctor.html#PaintDotNet_RenderArgs__ctor_PaintDotNet_Surface_">RenderArgs(Surface)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an instance of the RenderArgs class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -167,31 +182,38 @@ Class RenderArgs
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Bitmap.html#PaintDotNet_RenderArgs_Bitmap">Bitmap</a></dt>
-    <dd></dd>
+    <dd><p>Gets a Bitmap reference that aliases the Surface.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Bounds.html#PaintDotNet_RenderArgs_Bounds">Bounds</a></dt>
-    <dd></dd>
+    <dd><p>Gets the size of the associated Surface object.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Graphics.html#PaintDotNet_RenderArgs_Graphics">Graphics</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves a Graphics instance that can be used to draw on to the Surface.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Height.html#PaintDotNet_RenderArgs_Height">Height</a></dt>
-    <dd></dd>
+    <dd><p>Gets the height of the associated Surface object.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Size.html#PaintDotNet_RenderArgs_Size">Size</a></dt>
-    <dd></dd>
+    <dd><p>Gets the size of the associated Surface object.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Surface.html#PaintDotNet_RenderArgs_Surface">Surface</a></dt>
-    <dd></dd>
+    <dd><p>Gets the Surface that has been associated with this instance of RenderArgs.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.RenderArgs.Width.html#PaintDotNet_RenderArgs_Width">Width</a></dt>
-    <dd></dd>
+    <dd><p>Gets the width of the associated Surface object.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

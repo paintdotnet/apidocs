@@ -120,7 +120,9 @@ Method GetColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a> associated with this <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.html">IDeviceContext</a>.
+This defines the working space for the device context when color management is enabled.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -136,7 +138,9 @@ Method GetColorContext
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IDeviceColorContext.html">IDeviceColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The color context for the device context if there is one, or <code>null</code> if color management
+is not being automatically performed.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +149,11 @@ Method GetColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_GetColorContext_PaintDotNet_Direct2D1_IDeviceContext__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Images should typically be converted from their color space to this color space so that they are
+displayed correctly. You can use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.ColorManagementEffect.html">ColorManagementEffect</a> for this. Effect
+plugins will be provided with images that have already been converted to this color context.</p>
+</div>
 
 
 

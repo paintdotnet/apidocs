@@ -138,15 +138,22 @@ Struct HitTestPointResult
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.HitTestPointResult.IsInside.html#PaintDotNet_DirectWrite_HitTestPointResult_IsInside">IsInside</a></dt>
-    <dd></dd>
+    <dd><p>An output flag that indicates whether the hit-test location is inside the text string.
+When FALSE, the position nearest the text's edge is returned.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.HitTestPointResult.IsTrailingHit.html#PaintDotNet_DirectWrite_HitTestPointResult_IsTrailingHit">IsTrailingHit</a></dt>
-    <dd></dd>
+    <dd><p>A flag that indicates whether the hit-test location is at the leading or the trailing side of the character.
+When the IsInside value is set to FALSE, this value is set according to the output Metrics.TextPosition
+value to represent the edge closest to the hit-test location.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.DirectWrite.HitTestPointResult.Metrics.html#PaintDotNet_DirectWrite_HitTestPointResult_Metrics">Metrics</a></dt>
-    <dd></dd>
+    <dd><p>The output geometry fully enclosing the hit-test location. When the output IsInside value is set to FALSE,
+this structure represents the geometry enclosing the edge closest to the hit-test location.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

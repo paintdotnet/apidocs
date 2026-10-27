@@ -120,7 +120,8 @@ Method Free
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Disposes the given object reference if it is non-null. If the reference is non-null, it will then be set to null.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -156,7 +157,9 @@ Method Free
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Disposes the given object reference if it is non-null. If the reference is non-null,
+it will then be set to null.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,9 +169,16 @@ Method Free
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>disposeMe</code> <span class="xref">T</span></dt>
-  <dd></dd>
+  <dd><p>The object to dispose, if non-null, and set to null afterward.</p>
+</dd>
   <dt><code>callerIsNotFinalizing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>Whether or not the caller is in their finalizer. Pass in the value of 'disposing'
+from your Dispose(bool disposing) implementation. In all other contexts you should
+use the other overload of Free().<br>
+If this value is false (which will be the case when Dispose(bool) is called from a
+finalizer), then Dispose() will not be called on disposeMe, and it will not be set
+to null.</p>
+</dd>
 </dl>
 
 
@@ -183,6 +193,10 @@ Method Free
 
 
 
+<h4 class="section" id="PaintDotNet_DisposableUtil_Free__1___0__System_Boolean__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This overload of Free() should only be used from a Dispose(bool) method. It is generally
+not safe to call Dispose() on objects from finalizers, and this method helps manage that.</p>
+</div>
 
 
 

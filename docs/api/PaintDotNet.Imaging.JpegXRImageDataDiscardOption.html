@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum JpegXRImageDataDiscardOption ">
       
-      
+      <meta name="description" content="Sets the amount of image frequency data to discard during a compressed domain transcode.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum JpegXRImageDataDiscardOption
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Sets the amount of image frequency data to discard during a compressed domain transcode.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,16 +115,28 @@ Enum JpegXRImageDataDiscardOption
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_JpegXRImageDataDiscardOption_None"><code>None = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>No image frequency data is discarded.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRImageDataDiscardOption_FlexBits"><code>FlexBits = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The flexbits are discarded. This arbitrarily reduces the quality of the transcoded image without changing the effective
+resolution of the image. The exact reduction in file size and quality depends on numerous factors and cannot be exactly
+specified. This value returns an error specified for an interleaved alpha channel.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRImageDataDiscardOption_HighPass"><code>HighPass = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The high-pass frequency data band is discarded, including the flexbits. This reduces the resolution of the transcoded
+image by a factor of 4 in both dimensions. The actual dimensions of the transcoded image remain the same, but the image
+loses all detail in each 4x4 block of pixels. Therefore, the transcoded image should be downsampled accordingly whenever
+it is decoded.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRImageDataDiscardOption_HighPassAndFlexBits"><code>HighPassAndFlexBits = 3</code></dt>
   
-  <dd></dd>
+  <dd><p>Both the high-pass and low-pass frequency data bands are discarded, including the flexbits. This reduces the resolution
+of the transcoded image by a factor of 16 in both dimensions. The actual dimensions of the transcoded image remain the
+same, but the image loses all detail in each 16x16 macroblock of pixels. Therefore, the transcoded image should be
+downsampled accordingly whenever it is decoded.</p>
+</dd>
   </dl>
 
 

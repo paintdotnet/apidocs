@@ -120,7 +120,11 @@ Method PushLayer
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Push a layer onto the clip and layer stack of the device context. The layer will receive all subequent drawing operations
+until <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.PopLayer.html#PaintDotNet_Direct2D1_IDeviceContext_PopLayer">PopLayer()</a> is called.<br>
+See <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/direct2d-layers-overview">Direct2D Layers Overview</a>
+for more information.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,9 +134,11 @@ Method PushLayer
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>layerParameters</code> <a class="xref" href="PaintDotNet.Direct2D1.LayerParameters.html">LayerParameters</a></dt>
-  <dd></dd>
+  <dd><p>The parameters that defines the layer.</p>
+</dd>
   <dt><code>layer</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceLayer.html">IDeviceLayer</a></dt>
-  <dd></dd>
+  <dd><p>The layer that receives subsequent drawing operations. It is recommended that you pass null.</p>
+</dd>
 </dl>
 
 
@@ -142,6 +148,13 @@ Method PushLayer
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_PushLayer_PaintDotNet_Direct2D1_LayerParameters__PaintDotNet_Direct2D1_IDeviceLayer__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The PushLayer method allows a caller to begin redirecting rendering to a layer. All rendering operations are valid in a layer.
+The location of the layer is affected by the world transform set on the device context.<br>
+Each PushLayer must have a matching PopLayer call. If there are more PopLayer calls than PushLayer calls, the device context is
+placed into an error state. If Flush is called before all outstanding layers are popped, the render target is placed into an
+error state, and an exception is thrown. The error state can be cleared by a call to EndDraw.<br></p>
+</div>
 
 
 

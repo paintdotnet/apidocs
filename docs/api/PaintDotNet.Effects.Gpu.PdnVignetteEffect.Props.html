@@ -185,7 +185,8 @@ Class PdnVignetteEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the effect's input and output. The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteAlphaMode.html#PaintDotNet_Effects_Gpu_PdnVignetteAlphaMode_Premultiplied">Premultiplied</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_Input">Input</a></dt>
@@ -193,19 +194,32 @@ Class PdnVignetteEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.InputGamma.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_InputGamma">InputGamma</a></dt>
-    <dd></dd>
+    <dd><p>Indicates the gamma of the input image, and for the output. The effect works in linear gamma space, so if the input image is
+known to be linear, the <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteInputGamma.html#PaintDotNet_Effects_Gpu_PdnVignetteInputGamma_Linear">Linear</a> value should be used to prevent sRGB to linear conversions
+from being performed on the input, and linear to sRGB conversions being performed for the output.<br>
+The default value is <a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteInputGamma.html#PaintDotNet_Effects_Gpu_PdnVignetteInputGamma_Srgb">Srgb</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.Offset.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_Offset">Offset</a></dt>
-    <dd></dd>
+    <dd><p>The offset of the vignette from the center. This is specified in coordinates that are
+normalized to half of the image coordinate space.<br>
+[0, 0] draws the vignette from the center of the image, while [-1, -1] draws the vignette
+between the top left of the image and the center, and [+1, +1] draws the between the center
+and the bottom right of the image.<br>
+The range of this property is [-2, -2] to [+2, +2]. The default value is [0, 0].</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.Radius.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_Radius">Radius</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the normalized ratio of the vignette's radius. The range is 0.1 to 4.0, and the
+default is 0.5.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnVignetteEffect.Props.Strength.html#PaintDotNet_Effects_Gpu_PdnVignetteEffect_Props_Strength">Strength</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how strong the vignette effect is. The range is 0 to 1, and the default is 1.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

@@ -120,7 +120,8 @@ Method GetValues
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the values for the specified path. If no property items exist for the path, an empty list is returned.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,18 @@ Method GetValues
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>metadata</code> <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeExifMetadata.html">IReadOnlyFileTypeExifMetadata</a></dt>
-  <dd></dd>
+  <dd><p>The EXIF metadata container.</p>
+</dd>
   <dt><code>path</code> <a class="xref" href="PaintDotNet.Imaging.ExifPropertyPath.html">ExifPropertyPath</a></dt>
-  <dd></dd>
+  <dd><p>The EXIF property path.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="PaintDotNet.Imaging.ExifValue.html">ExifValue</a>s associated with the given path, or an empty list.</p>
+</dd>
 </dl>
 
 

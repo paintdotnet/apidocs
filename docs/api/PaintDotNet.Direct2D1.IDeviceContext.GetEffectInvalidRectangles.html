@@ -120,7 +120,8 @@ Method GetEffectInvalidRectangles
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the invalid rectangles that have accumulated since the last time the effect was drawn and <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.EndDraw.html#PaintDotNet_Direct2D1_IDeviceContext_EndDraw">EndDraw()</a> was then called on the device context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,15 @@ Method GetEffectInvalidRectangles
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>effect</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffect.html">IDeviceEffect</a></dt>
-  <dd></dd>
+  <dd><p>The effect to get the invalid rectangles from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PaintDotNet.Rendering.RectFloat.html">RectFloat</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The invalid rectangles for the effect.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,10 @@ Method GetEffectInvalidRectangles
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_GetEffectInvalidRectangles_PaintDotNet_Direct2D1_IDeviceEffect__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><b>Note:</b> Direct2D does not automatically use these invalid rectangles to reduce the region of an effect that is rendered.<br>
+You can use the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.InvalidateEffectInputRectangle.html#PaintDotNet_Direct2D1_IDeviceContext_InvalidateEffectInputRectangle_PaintDotNet_Direct2D1_IDeviceEffect_System_Int32_PaintDotNet_Rendering_RectFloat_">InvalidateEffectInputRectangle(IDeviceEffect, int, RectFloat)</a> method to specify invalidated rectangles for Direct2D to propagate through an effect graph.<br></p>
+</div>
 
 
 

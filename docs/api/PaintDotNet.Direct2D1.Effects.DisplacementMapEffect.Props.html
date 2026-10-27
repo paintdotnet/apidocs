@@ -184,7 +184,14 @@ Class DisplacementMapEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_DisplacementMapEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.Displacement.html#PaintDotNet_Direct2D1_Effects_DisplacementMapEffect_Props_Displacement">Displacement</a></dt>
@@ -196,15 +203,22 @@ Class DisplacementMapEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.Scale.html#PaintDotNet_Direct2D1_Effects_DisplacementMapEffect_Props_Scale">Scale</a></dt>
-    <dd></dd>
+    <dd><p>Multiplies the intensity of the selected channel from the displacement image. The higher you set
+this property, the more the effect displaces the pixels.<br>
+The default value is 0.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.XChannelSelect.html#PaintDotNet_Direct2D1_Effects_DisplacementMapEffect_Props_XChannelSelect">XChannelSelect</a></dt>
-    <dd></dd>
+    <dd><p>The effect extracts the intensity from this color channel and uses it to spatially displace the image in the X direction.<br>
+The default value is ChannelSelector.A.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.DisplacementMapEffect.Props.YChannelSelect.html#PaintDotNet_Direct2D1_Effects_DisplacementMapEffect_Props_YChannelSelect">YChannelSelect</a></dt>
-    <dd></dd>
+    <dd><p>The effect extracts the intensity from this color channel and uses it to spatially displace the image in the Y direction.<br>
+The default value is ChannelSelector.A.</p>
+</dd>
   </dl>
 
 

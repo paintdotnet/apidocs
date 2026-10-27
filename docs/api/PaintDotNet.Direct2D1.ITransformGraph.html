@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ITransformGraph ">
       
-      
+      <meta name="description" content="Represents a graph of transform nodes. ID2D1TransformGraph">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface ITransformGraph
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a graph of transform nodes.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transformgraph">ID2D1TransformGraph</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,13 +132,17 @@ Interface ITransformGraph
 
 
 
+  <h2 id="PaintDotNet_Direct2D1_ITransformGraph_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>To implement this, create a class that derives from <a class="xref" href="PaintDotNet.ComponentModel.RefTrackedObject.html">RefTrackedObject</a> and this interface.</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.InputCount.html#PaintDotNet_Direct2D1_ITransformGraph_InputCount">InputCount</a></dt>
-    <dd></dd>
+    <dd><p>Returns the number of inputs to the transform graph.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -144,35 +150,45 @@ Interface ITransformGraph
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.AddNode.html#PaintDotNet_Direct2D1_ITransformGraph_AddNode_PaintDotNet_Direct2D1_ITransformNode_">AddNode(ITransformNode)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the provided node to the transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.Clear.html#PaintDotNet_Direct2D1_ITransformGraph_Clear">Clear()</a></dt>
-    <dd></dd>
+    <dd><p>Clears the transform nodes and all connections from the transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.ConnectNode.html#PaintDotNet_Direct2D1_ITransformGraph_ConnectNode_PaintDotNet_Direct2D1_ITransformNode_PaintDotNet_Direct2D1_ITransformNode_System_Int32_">ConnectNode(ITransformNode, ITransformNode, int)</a></dt>
-    <dd></dd>
+    <dd><p>Connects two nodes inside the transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.ConnectToEffectInput.html#PaintDotNet_Direct2D1_ITransformGraph_ConnectToEffectInput_System_Int32_PaintDotNet_Direct2D1_ITransformNode_System_Int32_">ConnectToEffectInput(int, ITransformNode, int)</a></dt>
-    <dd></dd>
+    <dd><p>Connects a transform node inside the graph to the corresponding effect input of the encapsulating effect.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.RemoveNode.html#PaintDotNet_Direct2D1_ITransformGraph_RemoveNode_PaintDotNet_Direct2D1_ITransformNode_">RemoveNode(ITransformNode)</a></dt>
-    <dd></dd>
+    <dd><p>Removes the provided node from the transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.SetOutputNode.html#PaintDotNet_Direct2D1_ITransformGraph_SetOutputNode_PaintDotNet_Direct2D1_ITransformNode_">SetOutputNode(ITransformNode)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the output node for the transform graph.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.SetPassthroughGraph.html#PaintDotNet_Direct2D1_ITransformGraph_SetPassthroughGraph_System_Int32_">SetPassthroughGraph(int)</a></dt>
-    <dd></dd>
+    <dd><p>Uses the specified input as the effect output.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.ITransformGraph.SetSingleTransformNode.html#PaintDotNet_Direct2D1_ITransformGraph_SetSingleTransformNode_PaintDotNet_Direct2D1_ITransformNode_">SetSingleTransformNode(ITransformNode)</a></dt>
-    <dd></dd>
+    <dd><p>Sets a single transform node as being equivalent to the whole graph.<br>
+This is equivalent to calling Clear(), adding a single node, connecting all of the node inputs
+to the effect inputs in order, and setting the transform node as the graph output.</p>
+</dd>
   </dl>
 
 

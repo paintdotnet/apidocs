@@ -120,7 +120,8 @@ Method LoadFileAsBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Loads the image from the given file path. If necessary, the image is converted to an appropriate BGRA/RGBA format and color space.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,15 +131,19 @@ Method LoadFileAsBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>service</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService1.html">IFileTypesService1</a></dt>
-  <dd></dd>
+  <dd><p>The service to use for finding and creating <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a> instances.</p>
+</dd>
   <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The path of the file to load from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.html">IFileTypeBitmapSource</a></dt>
-  <dd></dd>
+  <dd><p>The bitmap source. Use the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.Lock.html#PaintDotNet_FileTypes_IFileTypeBitmapSource_Lock">Lock()</a> to access the pixel data directly, or
+the <code>ToBitmap()</code> extension method to convert it to an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</p>
+</dd>
 </dl>
 
 
@@ -147,7 +152,15 @@ Method LoadFileAsBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_FileTypesService1Extensions_LoadFileAsBitmap_PaintDotNet_FileTypes_IFileTypesService1_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method will only return bitmaps in a BGRA or RGBA pixel format at 32-, 64-, or 128-bits per pixel.</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Imaging.UnsupportedPixelFormatException.html">UnsupportedPixelFormatException</a></dt>
+  <dd></dd>
+</dl>
 
 
 
@@ -158,7 +171,8 @@ Method LoadFileAsBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Loads the image from the given file path, then converts it to the given <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a> while optionally using a specific <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> for the conversion.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -168,19 +182,25 @@ Method LoadFileAsBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>service</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService1.html">IFileTypesService1</a></dt>
-  <dd></dd>
+  <dd><p>The service to use for finding and creating <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a> instances.</p>
+</dd>
   <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The path of the file to load from.</p>
+</dd>
   <dt><code>targetPixelFormat</code> <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a></dt>
-  <dd></dd>
+  <dd><p>The target pixel format.</p>
+</dd>
   <dt><code>targetColorContext</code> <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The target color context. If <code>null</code> then the default color context for <code class="paramref">targetPixelFormat</code> will be used (usually sRGB).</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.html">IFileTypeBitmapSource</a></dt>
-  <dd></dd>
+  <dd><p>The bitmap source. Use the <a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource.Lock.html#PaintDotNet_FileTypes_IFileTypeBitmapSource_Lock">Lock()</a> to access the pixel data directly, or
+the <code>ToBitmap()</code> extension method to convert it to an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</p>
+</dd>
 </dl>
 
 
@@ -189,6 +209,10 @@ Method LoadFileAsBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_FileTypes_FileTypesService1Extensions_LoadFileAsBitmap_PaintDotNet_FileTypes_IFileTypesService1_System_String_PaintDotNet_Imaging_PixelFormat__PaintDotNet_Imaging_IColorContext__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If you are using the bitmap to render to another bitmap, then in general you should specify the color context and pixel format
+that matches that bitmap. This information is available for both Effect and FileType plugins.</p>
+</div>
 
 
 
@@ -200,7 +224,8 @@ Method LoadFileAsBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Loads the image from the given file path, then converts it to the given <a class="xref" href="PaintDotNet.Imaging.PixelFormat.html">PixelFormat</a> while optionally using a specific <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> for the conversion.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -210,23 +235,28 @@ Method LoadFileAsBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>service</code> <a class="xref" href="PaintDotNet.FileTypes.IFileTypesService1.html">IFileTypesService1</a></dt>
-  <dd></dd>
+  <dd><p>The service to use for finding and creating <a class="xref" href="PaintDotNet.FileTypes.IFileType.html">IFileType</a> instances.</p>
+</dd>
   <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The path of the file to load from.</p>
+</dd>
   <dt><code>targetColorContext</code> <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a></dt>
-  <dd></dd>
+  <dd><p>The target color context. If <code>null</code> then the default color context for <code class="typeparamref">TPixel</code> will be used (usually sRGB).</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeBitmapSource-1.html">IFileTypeBitmapSource</a>&lt;TPixel&gt;</dt>
-  <dd></dd>
+  <dd><p>The bitmap source. Use the <code>ToBitmap()</code> extension method to convert to an <a class="xref" href="PaintDotNet.Imaging.IBitmap.html">IBitmap</a>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TPixel</code></dt>
-  <dd></dd>
+  <dd><p>The color struct for the pixel format to use, e.g. <a class="xref" href="PaintDotNet.Imaging.ColorBgra32.html">ColorBgra32</a>.</p>
+</dd>
 </dl>
 
 

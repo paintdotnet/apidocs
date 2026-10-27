@@ -120,7 +120,8 @@ Method CreateAliasedBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Helper function. Same as calling CreateAliasedBounds(Bounds).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,7 +132,8 @@ Method CreateAliasedBitmap
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
-  <dd></dd>
+  <dd><p>A GDI+ Bitmap that aliases the entire Surface.</p>
+</dd>
 </dl>
 
 
@@ -151,7 +153,8 @@ Method CreateAliasedBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Helper function. Same as calling CreateAliasedBounds(bounds, true).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -167,7 +170,8 @@ Method CreateAliasedBitmap
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
-  <dd></dd>
+  <dd><p>A GDI+ Bitmap that aliases the entire Surface.</p>
+</dd>
 </dl>
 
 
@@ -259,7 +263,14 @@ Method CreateAliasedBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a GDI+ Bitmap object that aliases the same memory that this Surface does.
+Then you can use GDI+ to draw on to this surface.
+Note: Since the Bitmap does not hold a reference to this Surface object, nor to
+the MemoryBlock that it contains, you must hold a reference to the Surface object
+for as long as you wish to use the aliased Bitmap. Otherwise the memory may be
+freed and the Bitmap will look corrupt or cause other errors. You may use the
+RenderArgs class to help manage this lifetime instead.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -269,15 +280,19 @@ Method CreateAliasedBitmap
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>bounds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
-  <dd></dd>
+  <dd><p>The rectangle of interest within this Surface that you wish to alias.</p>
+</dd>
   <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p>If true, the returned bitmap will use PixelFormat.Format32bppArgb.
+If false, the returned bitmap will use PixelFormat.Format32bppRgb.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
-  <dd></dd>
+  <dd><p>A GDI+ Bitmap that aliases the requested portion of the Surface.</p>
+</dd>
 </dl>
 
 
@@ -287,6 +302,15 @@ Method CreateAliasedBitmap
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+  <dd><p><b>bounds</b> was not entirely within the boundaries of the Surface</p>
+</dd>
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+  <dd><p>This Surface instance is already disposed.</p>
+</dd>
+</dl>
 
 
 

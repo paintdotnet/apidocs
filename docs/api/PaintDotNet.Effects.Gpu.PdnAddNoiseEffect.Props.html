@@ -185,11 +185,18 @@ Class PdnAddNoiseEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.AlphaMode.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_AlphaMode">AlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the input and output.<br>
+If set to Premultiplied, the input will be unpremultiplied, noise will be added, and then the result will be premultiplied.<br>
+If set to Straight, noise will be added without any alpha space conversion.<br>
+The default is Premultiplied.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Coverage.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_Coverage">Coverage</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the coverage of the noise.<br>
+The range is [0, 1] which corresponds to the UI's range of [0, 100].<br>
+The default is 1.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Input.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_Input">Input</a></dt>
@@ -197,19 +204,28 @@ Class PdnAddNoiseEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Intensity.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_Intensity">Intensity</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the intensity of the noise.<br>
+The range is [0, 1] which corresponds to the UI's range of [0, 100].<br>
+The default is 0.64.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Saturation.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_Saturation">Saturation</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the saturation of the noise.<br>
+The range is [0, 4] which corresponds to the UI's range of [0, 400].&gt;br/&gt;
+The default is 1.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.Seed.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_Seed">Seed</a></dt>
-    <dd></dd>
+    <dd><p>Specifies a seed number to use for random number generation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Effects.Gpu.PdnAddNoiseEffect.Props.SeedInstance.html#PaintDotNet_Effects_Gpu_PdnAddNoiseEffect_Props_SeedInstance">SeedInstance</a></dt>
-    <dd></dd>
+    <dd><p>Specifies a seed number to use for random number generation.
+The default value is automatically generated.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

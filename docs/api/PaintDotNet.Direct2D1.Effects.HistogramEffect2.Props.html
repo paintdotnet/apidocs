@@ -185,11 +185,16 @@ Class HistogramEffect2.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.Bins.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_Bins">Bins</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the number of bins used for the histogram. The range of intensity values that fall into a
+particular bins depend on the number of specified bins.<br>
+The valid range is [2, 4096]. The default value is 256.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.HistogramOutput.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_HistogramOutput">HistogramOutput</a></dt>
-    <dd></dd>
+    <dd><p>After the effect has been drawn to a render target (device context), this property contains the
+histogram data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.Input.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_Input">Input</a></dt>
@@ -197,7 +202,10 @@ Class HistogramEffect2.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.Props.InputAlphaMode.html#PaintDotNet_Direct2D1_Effects_HistogramEffect2_Props_InputAlphaMode">InputAlphaMode</a></dt>
-    <dd></dd>
+    <dd><p>Specifies the alpha mode for the input. If this value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramAlphaMode2.html#PaintDotNet_Direct2D1_Effects_HistogramAlphaMode2_Premultiplied">Premultiplied</a>,
+the input pixels will be unpremultiplied before the histogram is calculated.<br>
+The default value is <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramAlphaMode2.html#PaintDotNet_Direct2D1_Effects_HistogramAlphaMode2_Premultiplied">Premultiplied</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods

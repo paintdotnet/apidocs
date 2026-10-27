@@ -120,7 +120,8 @@ Method CreateImageBrush
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an image brush. The input image can be any type of image, including a bitmap, effect, or a command list.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,17 +131,21 @@ Method CreateImageBrush
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>image</code> <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a></dt>
-  <dd></dd>
+  <dd><p>The image to be used as a source for the image brush, or null for a brush with no image. Drawing with a brush that has no image fails with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>.</p>
+</dd>
   <dt><code>imageBrushProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.ImageBrushProperties.html">ImageBrushProperties</a></dt>
-  <dd></dd>
+  <dd><p>The properties specific to an image brush.</p>
+</dd>
   <dt><code>brushProperties</code> <a class="xref" href="PaintDotNet.Direct2D1.BrushProperties.html">BrushProperties</a>?</dt>
-  <dd></dd>
+  <dd><p>Properties common to all brushes.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="PaintDotNet.Direct2D1.IImageBrush.html">IImageBrush</a></dt>
-  <dd></dd>
+  <dd><p>The new image brush.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +154,9 @@ Method CreateImageBrush
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_CreateImageBrush_PaintDotNet_Direct2D1_IDeviceImage_PaintDotNet_Direct2D1_ImageBrushProperties__System_Nullable_PaintDotNet_Direct2D1_BrushProperties____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The image brush can be used to fill an arbitrary geometry, an opacity mask, or text.</p>
+</div>
 
 
 

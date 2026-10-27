@@ -120,7 +120,8 @@ Method AddLines
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a sequence of lines using the specified points and adds them to the geometry sink.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,7 +131,12 @@ Method AddLines
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="PaintDotNet.Rendering.Point2Float.html">Point2Float</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A pointer to an array of one or more points that describe the lines to draw. A line is drawn from the
+geometry sink's current point (the end point of the last segment drawn or the location specified by
+<a class="xref" href="PaintDotNet.Direct2D1.ISimplifiedGeometrySink.BeginFigure.html#PaintDotNet_Direct2D1_ISimplifiedGeometrySink_BeginFigure_PaintDotNet_Rendering_Point2Float_PaintDotNet_Direct2D1_FigureBegin_">BeginFigure(Point2Float, FigureBegin)</a>) to the first point in the array. if the array contains additional points,
+a line is drawn from the first point to the second point in the array, from the second point to the
+third point, and so on.</p>
+</dd>
 </dl>
 
 

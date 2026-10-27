@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IGeometry ">
       
-      
+      <meta name="description" content="Represents a geometry resource and defines a set of helper methods for manipulating and measuring geometric shapes. Interfaces that inherit from IGeometry define specific shapes. ID2D1Geometry">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface IGeometry
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a geometry resource and defines a set of helper methods for manipulating and measuring geometric shapes. Interfaces that inherit from IGeometry define specific shapes.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1/nn-d2d1-id2d1geometry">ID2D1Geometry</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -160,55 +162,70 @@ Interface IGeometry
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.CombineWithGeometry.html#PaintDotNet_Direct2D1_IGeometry_CombineWithGeometry_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_PaintDotNet_Direct2D1_IGeometry_PaintDotNet_Rendering_GeometryCombineMode_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">CombineWithGeometry(ISimplifiedGeometrySink, IGeometry, GeometryCombineMode, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Combines this geometry with the specified geometry and writes the result to an ISimplifiedGeometrySink.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.CompareWithGeometry.html#PaintDotNet_Direct2D1_IGeometry_CompareWithGeometry_PaintDotNet_Direct2D1_IGeometry_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">CompareWithGeometry(IGeometry, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Describes the intersection between this geometry and the specified geometry. The comparison is performed by using the specified flattening tolerance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.ComputeArea.html#PaintDotNet_Direct2D1_IGeometry_ComputeArea_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">ComputeArea(in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Computes the area of the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.ComputeLength.html#PaintDotNet_Direct2D1_IGeometry_ComputeLength_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">ComputeLength(in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Calculates the length of the geometry as though each segment were unrolled into a line.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.ComputePointAtLength.html#PaintDotNet_Direct2D1_IGeometry_ComputePointAtLength_System_Single_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__PaintDotNet_Rendering_Vector2Float__">ComputePointAtLength(float, in Matrix3x2Float?, float?, out Vector2Float)</a></dt>
-    <dd></dd>
+    <dd><p>Calculates the point and tangent vector at the specified distance along the geometry after it has been transformed by the
+specified matrix and flattened using the specified tolerance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.FillContainsPoint.html#PaintDotNet_Direct2D1_IGeometry_FillContainsPoint_PaintDotNet_Rendering_Point2Float_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">FillContainsPoint(Point2Float, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the area filled by the geometry would contain the specified point given the specified flattening tolerance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.GetBounds.html#PaintDotNet_Direct2D1_IGeometry_GetBounds_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___">GetBounds(in Matrix3x2Float?)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the bounds of the geometry.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.GetWidenedBounds.html#PaintDotNet_Direct2D1_IGeometry_GetWidenedBounds_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">GetWidenedBounds(float, IStrokeStyle?, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the bounds of the geometry after it has been widened by the specified stroke width and style and transformed by the specified matrix.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.Outline.html#PaintDotNet_Direct2D1_IGeometry_Outline_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">Outline(ISimplifiedGeometrySink, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Computes the outline of the geometry and writes the result to an ISimplifiedGeometrySink.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.Simplify.html#PaintDotNet_Direct2D1_IGeometry_Simplify_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_PaintDotNet_Direct2D1_GeometrySimplificationOption_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">Simplify(ISimplifiedGeometrySink, GeometrySimplificationOption, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ISimplifiedGeometrySink.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.StrokeContainsPoint.html#PaintDotNet_Direct2D1_IGeometry_StrokeContainsPoint_PaintDotNet_Rendering_Point2Float_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">StrokeContainsPoint(Point2Float, float, IStrokeStyle?, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the geometry's stroke contains the specified point given the specified stroke thickness, style, and transform.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.Tessellate.html#PaintDotNet_Direct2D1_IGeometry_Tessellate_PaintDotNet_Direct2D1_ITessellationSink_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">Tessellate(ITessellationSink, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a set of clockwise-wound triangles that cover the geometry after it has been transformed using the specified matrix and flattened using the specified tolerance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IGeometry.Widen.html#PaintDotNet_Direct2D1_IGeometry_Widen_PaintDotNet_Direct2D1_ISimplifiedGeometrySink_System_Single_PaintDotNet_Direct2D1_IStrokeStyle_System_Nullable_PaintDotNet_Rendering_Matrix3x2Float___System_Nullable_System_Single__">Widen(ISimplifiedGeometrySink, float, IStrokeStyle?, in Matrix3x2Float?, float?)</a></dt>
-    <dd></dd>
+    <dd><p>Widens the geometry by the specified stroke and writes the result to an ISimplifiedGeometrySink after it has been transformed by
+the specified matrix and flattened using the specified tolerance.</p>
+</dd>
   </dl>
 
 

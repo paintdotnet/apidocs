@@ -184,15 +184,30 @@ Class ShadowEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.BlurStandardDeviation.html#PaintDotNet_Direct2D1_Effects_ShadowEffect_Props_BlurStandardDeviation">BlurStandardDeviation</a></dt>
-    <dd></dd>
+    <dd><p>The amount of blur to be applied to the alpha channel of the image. You can compute the blur radius of
+the kernel by multiplying the standard deviation by 3. The units of both the standard deviation and
+blur radius are DIPs.<br>
+This property is the same as the Gaussian Blur standard deviation property.<br>
+The range of this value is [0, 250], which corresponds to a blur radius of [0, 750].<br>
+The default value is 3.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_ShadowEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.Color.html#PaintDotNet_Direct2D1_Effects_ShadowEffect_Props_Color">Color</a></dt>
-    <dd></dd>
+    <dd><p>The color of the drop shadow. You must specify this color in straight alpha (not premultiplied).<br>
+The default value is { 0, 0, 0, 1 } (opaque black).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_ShadowEffect_Props_Input">Input</a></dt>
@@ -200,7 +215,8 @@ Class ShadowEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.ShadowEffect.Props.Optimization.html#PaintDotNet_Direct2D1_Effects_ShadowEffect_Props_Optimization">Optimization</a></dt>
-    <dd></dd>
+    <dd><p>The level of performance optimization. The default value is ShadowOptimization.Quality.</p>
+</dd>
   </dl>
 
 

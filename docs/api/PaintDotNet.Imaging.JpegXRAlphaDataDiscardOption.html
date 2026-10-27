@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum JpegXRAlphaDataDiscardOption ">
       
-      
+      <meta name="description" content="Sets the amount of alpha frequency data to discard during a compressed domain transcode.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum JpegXRAlphaDataDiscardOption
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Sets the amount of alpha frequency data to discard during a compressed domain transcode.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,19 +115,35 @@ Enum JpegXRAlphaDataDiscardOption
   <dl class="parameters">
     <dt id="PaintDotNet_Imaging_JpegXRAlphaDataDiscardOption_None"><code>None = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>No image frequency data is discarded.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRAlphaDataDiscardOption_FlexBits"><code>FlexBits = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The FlexBits are discarded, making an arbitrary reduction of the quality of the planar alpha channel for the transcoded
+image without changing the effective resolution. The exact file size reduction or the specific quality reduction depends
+on numerous factors and cannot be specified or predicted.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRAlphaDataDiscardOption_HighPass"><code>HighPass = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The HighPass frequency data band is discarded (which also includes the FlexBits), effectively reducing the resolution of
+the transcoded image planar alpha channel by a factor of 4 in both dimensions. The actual dimensions of the transcoded
+image remain the same, but the image loses all planar alpha channel detail in each 4x4 block of pixels. Therefore, the
+transcoded image should be down-sampled accordingly whenever it is decoded. Typically, you should set this value only when
+you set the ImageDataDiscard propertyto the same value.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRAlphaDataDiscardOption_HighPassAndFlexBits"><code>HighPassAndFlexBits = 3</code></dt>
   
-  <dd></dd>
+  <dd><p>Both the HighPass and LowPass frequency data bands are discarded (which also includes the FlexBits), effectively reducing
+the resolution of the transcoded image by a factor of 16 in both dimensions. The actual dimensions of the transcoded image
+remain the same, but the image loses all detail in each 16x16 macroblock of pixels. Therefore, the transcoded image should
+be down-sampled accordingly whenever it is decoded. Typically, you should set this value only when you set the
+ImageDataDiscard property to the same value.</p>
+</dd>
     <dt id="PaintDotNet_Imaging_JpegXRAlphaDataDiscardOption_All"><code>All = 4</code></dt>
   
-  <dd></dd>
+  <dd><p>The Alpha channel is completely discarded. The pixel format of the transcoded image is changed to reflect the removal of
+the alpha channel.</p>
+</dd>
   </dl>
 
 

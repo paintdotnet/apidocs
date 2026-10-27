@@ -184,11 +184,25 @@ Class GaussianBlurEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_GaussianBlurEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd></dd>
+    <dd><p>The mode used to calculate the border of the image.<br>
+When set to BorderMode.Soft, the effect pads the image with transparent black pixels as it
+applies the blur kernel, resulting in a soft edge.<br>
+When set to BorderMode.Hard, the effect clamps the output to the size of the input image.
+When the effect applies the blur kernel, it extends the input image with a mirror-type border
+transform for samples outside of the input bounds.<br>
+The default value is BorderMode.Soft.<br></p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_GaussianBlurEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_GaussianBlurEffect_Props_Input">Input</a></dt>
@@ -196,11 +210,20 @@ Class GaussianBlurEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.Optimization.html#PaintDotNet_Direct2D1_Effects_GaussianBlurEffect_Props_Optimization">Optimization</a></dt>
-    <dd></dd>
+    <dd><p>The optimization mode. The default value is GaussianBlurOptimization.Quality.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.GaussianBlurEffect.Props.StandardDeviation.html#PaintDotNet_Direct2D1_Effects_GaussianBlurEffect_Props_StandardDeviation">StandardDeviation</a></dt>
-    <dd></dd>
+    <dd><p>The amount of blur to be applied to the image. You can compute the blur radius of the
+kernel by multiplying the standard deviation by 3. You can compute the standard deviation
+by dividing the blur radius by 3. The units of both the standard deviation and blur radius
+are DIPs. A value of zero disables this effect entirely.<br>
+You can use the <a class="xref" href="PaintDotNet.Direct2D1.Effects.StandardDeviation.html">StandardDeviation</a> class to
+simplify conversion between standard deviation and radius.<br>
+The range of this value is [0, 250], which corresponds to a blur radius of [0, 750].
+The default value is 3.</p>
+</dd>
   </dl>
 
 

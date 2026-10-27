@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IDrawInfo ">
       
-      
+      <meta name="description" content="This interface is used to describe a GPU rendering pass on a vertex or pixel shader. It is passed to . ID2D1DrawInfo">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Interface IDrawInfo
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This interface is used to describe a GPU rendering pass on a vertex or pixel shader. It is passed to <a class="xref" href="PaintDotNet.Direct2D1.IDrawTransform.html">IDrawTransform</a>.<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo">ID2D1DrawInfo</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -157,15 +159,18 @@ Interface IDrawInfo
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDrawInfo.SetPixelShader.html#PaintDotNet_Direct2D1_IDrawInfo_SetPixelShader_PaintDotNet_Direct2D1_ShaderID__PaintDotNet_Direct2D1_PixelOptions_">SetPixelShader(in ShaderID, PixelOptions)</a></dt>
-    <dd></dd>
+    <dd><p>Set the shader instructions for this transform.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDrawInfo.SetPixelShaderConstantBuffer.html#PaintDotNet_Direct2D1_IDrawInfo_SetPixelShaderConstantBuffer_System_ReadOnlySpan_System_Byte__">SetPixelShaderConstantBuffer(ReadOnlySpan&lt;byte&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the constant buffer for this transform's pixel shader.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.IDrawInfo.SetResourceTexture.html#PaintDotNet_Direct2D1_IDrawInfo_SetResourceTexture_System_Int32_PaintDotNet_Direct2D1_IResourceTexture_">SetResourceTexture(int, IResourceTexture)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the resource texture corresponding to the given shader texture index.</p>
+</dd>
   </dl>
 
 

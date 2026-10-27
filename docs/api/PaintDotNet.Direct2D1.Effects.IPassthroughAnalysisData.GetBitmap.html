@@ -120,7 +120,11 @@ Method GetBitmap
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the input image's output as a bitmap in the specified pixel format. The pixel format
+must be either <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Prgba128Float.html#PaintDotNet_Imaging_PixelFormats_Prgba128Float">Prgba128Float</a> or <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>.
+The origin (x=0, y=0) of this bitmap corresponds to the top-left of the output region
+as defined by <a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.Location.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_Location">Location</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -145,6 +149,13 @@ Method GetBitmap
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_GetBitmap_PaintDotNet_Imaging_PixelFormat___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>You can use one of the extension methods,
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisDataExtensions.GetBitmap.html#PaintDotNet_Direct2D1_Effects_PassthroughAnalysisDataExtensions_GetBitmap__1_PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_">GetBitmap&lt;TPixel&gt;(IPassthroughAnalysisData)</a>,
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisDataExtensions.GetBitmapPrgba128Float.html#PaintDotNet_Direct2D1_Effects_PassthroughAnalysisDataExtensions_GetBitmapPrgba128Float_PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_">GetBitmapPrgba128Float(IPassthroughAnalysisData)</a>, or
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.PassthroughAnalysisDataExtensions.GetBitmapRgba128Float.html#PaintDotNet_Direct2D1_Effects_PassthroughAnalysisDataExtensions_GetBitmapRgba128Float_PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_">GetBitmapRgba128Float(IPassthroughAnalysisData)</a>,
+to retrieve the bitmap with the appropriate generic interface already included.</p>
+</div>
 
 
 

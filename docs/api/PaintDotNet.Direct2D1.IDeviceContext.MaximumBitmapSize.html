@@ -120,7 +120,8 @@ Property MaximumBitmapSize
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the maximum pixel size of any one bitmap dimension supported by the render target.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +141,10 @@ Property MaximumBitmapSize
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_IDeviceContext_MaximumBitmapSize_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method returns the maximum texture size of the Direct3D device.
+<b>Note:</b> The software renderer and WARP devices return the value of 16 megapixels (16<em>1024</em>1024). You can create a Direct2D texture that is this size, but not a Direct3D texture that is this size.</p>
+</div>
 
 
 

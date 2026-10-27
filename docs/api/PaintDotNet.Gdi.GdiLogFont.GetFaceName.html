@@ -120,7 +120,8 @@ Method GetFaceName
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the face name of the logical font.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -131,7 +132,8 @@ Method GetFaceName
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>A new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> with a copy of the face name.</p>
+</dd>
 </dl>
 
 
@@ -140,6 +142,11 @@ Method GetFaceName
 
 
 
+<h4 class="section" id="PaintDotNet_Gdi_GdiLogFont_GetFaceName_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method allocates and returns a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> every time it is called.
+It is recommended that you cache the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> instead of calling this
+method repeatedly.</p>
+</div>
 
 
 
@@ -151,7 +158,8 @@ Method GetFaceName
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Copies the logical font's face name to the provided buffer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -161,13 +169,18 @@ Method GetFaceName
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The span to copy the face name string into. The entire span is cleared with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1.clear">Clear()</a>
+before the string is copied into it.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The <code class="paramref">buffer</code> sliced to the length needed to hold the face name. The
+null terminator is not included in the sliced length, but does exist in the un-sliced
+<code class="paramref">buffer</code> as long as its length is at least <a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameWithNullLength.html">MaxFaceNameWithNullLength</a>.</p>
+</dd>
 </dl>
 
 
@@ -177,6 +190,12 @@ Method GetFaceName
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.Interop.InsufficientBufferException.html">InsufficientBufferException</a></dt>
+  <dd><p>If <code class="paramref">buffer</code>'s Length is less than <a class="xref" href="PaintDotNet.Gdi.GdiLogFont.MaxFaceNameLength.html">MaxFaceNameLength</a>.</p>
+</dd>
+</dl>
 
 
 

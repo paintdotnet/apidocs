@@ -120,7 +120,8 @@ Method TryGetSection
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Tries to get a read-only metadata section by its <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,23 +131,28 @@ Method TryGetSection
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>metadata</code> <a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeMetadata.html">IReadOnlyFileTypeMetadata</a></dt>
-  <dd></dd>
+  <dd><p>The metadata instance.</p>
+</dd>
   <dt><code>sectionKind</code> <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html">FileTypeMetadataSectionKind</a></dt>
-  <dd></dd>
+  <dd><p>The kind of metadata section to get.</p>
+</dd>
   <dt><code>section</code> <span class="xref">TSection</span></dt>
-  <dd></dd>
+  <dd><p>When this method returns, contains the metadata section if found; otherwise, <code>null</code>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dd><p><code>true</code> if a matching section was found; otherwise, <code>false</code>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TSection</code></dt>
-  <dd></dd>
+  <dd><p>The metadata section interface type.</p>
+</dd>
 </dl>
 
 
@@ -155,6 +161,14 @@ Method TryGetSection
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="PaintDotNet.ComponentModel.InterfaceNotSupportedException.html">InterfaceNotSupportedException</a></dt>
+  <dd><p>Thrown if there's a mismatch between <code class="paramref">sectionKind</code> and <code class="typeparamref">TSection</code>.
+For example, if <code class="paramref">sectionKind</code> is <a class="xref" href="PaintDotNet.FileTypes.FileTypeMetadataSectionKind.html#PaintDotNet_FileTypes_FileTypeMetadataSectionKind_Exif">Exif</a> and
+<code class="typeparamref">TSection</code> is <code>typeof(</code><a class="xref" href="PaintDotNet.FileTypes.IReadOnlyFileTypeXmpMetadata.html">IReadOnlyFileTypeXmpMetadata</a><code>)</code>.</p>
+</dd>
+</dl>
 
 
 

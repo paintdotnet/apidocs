@@ -120,7 +120,11 @@ Property CanCreateColorContext
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets whether an <a class="xref" href="PaintDotNet.Imaging.IColorContext.html">IColorContext</a> (an ICC color profile) can be created for these code
+points: the matrix coefficients must be <a class="xref" href="PaintDotNet.Imaging.CicpMatrixCoefficients.html#PaintDotNet_Imaging_CicpMatrixCoefficients_Identity">Identity</a>, the video
+full range flag must be <a class="xref" href="PaintDotNet.Imaging.CicpVideoFullRangeFlag.html#PaintDotNet_Imaging_CicpVideoFullRangeFlag_Full">Full</a>, and the primaries and transfer
+characteristics must both be representable as an ICC profile.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -140,6 +144,12 @@ Property CanCreateColorContext
 
 
 
+<h4 class="section" id="PaintDotNet_Imaging_CicpColorSpace_CanCreateColorContext_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Full range is required because an ICC profile cannot describe the narrow-to-full range expansion;
+a profile created for narrow-range samples would silently misinterpret them. A narrow-range
+encoding can still be the source of a color transform — see <a class="xref" href="PaintDotNet.Imaging.CicpColorSpace.CanColorTransformFrom.html#PaintDotNet_Imaging_CicpColorSpace_CanColorTransformFrom">CanColorTransformFrom</a> —
+because the transform path expands it to full range before applying the profile.</p>
+</div>
 
 
 

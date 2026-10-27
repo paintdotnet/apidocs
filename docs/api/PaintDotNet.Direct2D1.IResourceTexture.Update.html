@@ -120,7 +120,8 @@ Method Update
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Updates the specific resource texture inside the specific range or box using the supplied data.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -130,13 +131,17 @@ Method Update
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>dimensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The number of dimensions in the resource texture. This must match the number used to load the texture.</p>
+</dd>
   <dt><code>extents</code> <a class="xref" href="PaintDotNet.Direct2D1.ResourceTextureExtents.html">ResourceTextureExtents</a>?</dt>
-  <dd></dd>
+  <dd><p>The extents of the data to be updated, or null to update the whole texture.</p>
+</dd>
   <dt><code>data</code> <a class="xref" href="PaintDotNet.ExtentPtr-1.html">ExtentPtr</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The data to be placed into the resource texture.</p>
+</dd>
   <dt><code>dataStrides</code> <a class="xref" href="PaintDotNet.Direct2D1.ResourceTextureStrides.html">ResourceTextureStrides</a></dt>
-  <dd></dd>
+  <dd><p>The number of bytes between the start of rows (for 2D textures) and planes (for 3D textures).</p>
+</dd>
 </dl>
 
 

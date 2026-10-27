@@ -120,7 +120,10 @@ Method CreateBufferedImage
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a buffered version of the given image. This can be used to work around limitations in Direct2D's
+effect rendering system that can result in an <a class="xref" href="PaintDotNet.Direct2D1.InvalidGraphConfigurationException.html">InvalidGraphConfigurationException</a> when an
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> is used both in an effect graph and in a command list.<br></p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -147,6 +150,37 @@ Method CreateBufferedImage
 
 
 
+<h4 class="section" id="PaintDotNet_Direct2D1_DeviceContextExtensions_CreateBufferedImage_PaintDotNet_Direct2D1_IDeviceContext_PaintDotNet_Direct2D1_IDeviceImage__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If you get an <a class="xref" href="PaintDotNet.Direct2D1.InvalidGraphConfigurationException.html">InvalidGraphConfigurationException</a> for an effect graph that otherwise looks
+correct, use this method to wrap any <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a>s that are used by command lists which are
+part of the effect graph that is causing the error. The command list(s) at fault may not be yours; they are
+often contained within <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>s, for instance. The <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> may still be
+set as the input for the <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, but the other nodes in the effect graph should use the
+wrapper created by this method.<br>
+<br>
+When the Direct2D debug layer and Visual Studio's mixed-mode debugging (&quot;Enable debugging for managed and
+native code together&quot;) are both enabled, you would see the following error:<br></p>
+<pre><code class="lang-csharp">A command list cannot reference effects which are part of effect graphs that consume the command list.</code></pre>
+<p>See also: <a href="https://docs.microsoft.com/en-us/windows/win32/direct2d/d1159">D1159: Invalid Command List topology</a><br>
+<br>
+An example of an effect graph that can cause this error:</p>
+<pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
+         |         |    
+         |         |    
+         v         v
+       CompositeEffect</code></pre>
+<p>In this example, the <a class="xref" href="PaintDotNet.Direct2D1.IDeviceImage.html">IDeviceImage</a> is used as an input for both a SampleMapRenderer and a
+<a class="xref" href="PaintDotNet.Direct2D1.Effects.CompositeEffect.html">CompositeEffect</a>. The SampleMapRenderer, which implements <a class="xref" href="PaintDotNet.Direct2D1.DynamicImage.html">DynamicImage</a>, internally
+uses several effects and command lists to produce its output. In this case, the SampleMapRenderer should
+still be given the original IDeviceImage, while the CompositeEffect should use the buffered image:</p>
+<pre><code class="lang-csharp">IDeviceImage --&gt; SampleMapRenderer
+         |         |
+         v         |
+  IBufferedImage   |
+         |         |
+         v         v
+       CompositeEffect</code></pre>
+</div>
 
 
 

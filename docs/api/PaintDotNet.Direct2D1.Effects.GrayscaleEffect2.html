@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GrayscaleEffect2 ">
       
-      
+      <meta name="description" content="Similar to , but can also be configured for sRGB or linear gamma. This also necessitates the specification of straight vs. premultiplied alpha.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,9 @@ Class GrayscaleEffect2
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Similar to <a class="xref" href="PaintDotNet.Direct2D1.Effects.GrayscaleEffect.html">GrayscaleEffect</a>, but can also be configured for sRGB or linear gamma. This
+also necessitates the specification of straight vs. premultiplied alpha.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -230,6 +232,11 @@ Class GrayscaleEffect2
 
 
 
+  <h2 id="PaintDotNet_Direct2D1_Effects_GrayscaleEffect2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Note that this effect calculates the luma for the image's color values, which is different than
+luminance. See <a href="https://www.geeksforgeeks.org/difference-between-luma-and-luminance/">Difference between Luma and Luminance</a>
+for more information.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>

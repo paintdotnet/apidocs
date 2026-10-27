@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum FontSimulations ">
       
-      
+      <meta name="description" content="Specifies algorithmic style simulations to be applied to the font face. Bold and oblique simulations can be combined via bitwise OR operation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -94,7 +94,8 @@ Enum FontSimulations
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Specifies algorithmic style simulations to be applied to the font face. Bold and oblique simulations can be combined via bitwise OR operation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -115,13 +116,16 @@ public enum FontSimulations</code></pre>
   <dl class="parameters">
     <dt id="PaintDotNet_DirectWrite_FontSimulations_None"><code>None = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>Indicates that no simulations are applied to the font face.</p>
+</dd>
     <dt id="PaintDotNet_DirectWrite_FontSimulations_Bold"><code>Bold = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>Indicates that algorithmic emboldening is applied to the font face. Increases weight by applying a widening algorithm to the glyph outline. This may be used to simulate a bold weight where no designed bold weight is available.</p>
+</dd>
     <dt id="PaintDotNet_DirectWrite_FontSimulations_Oblique"><code>Oblique = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>Indicates that algorithmic italicization is applied to the font face. Applies obliquing (shear) to the glyph outline. This may be used to simulate an oblique/italic style where no designed oblique/italic style is available.</p>
+</dd>
   </dl>
 
 

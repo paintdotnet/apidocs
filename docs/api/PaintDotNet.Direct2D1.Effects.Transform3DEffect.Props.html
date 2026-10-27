@@ -184,11 +184,22 @@ Class Transform3DEffect.Props
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.BorderMode.html#PaintDotNet_Direct2D1_Effects_Transform3DEffect_Props_BorderMode">BorderMode</a></dt>
-    <dd></dd>
+    <dd><p>The mode used to calculate the border of the image, soft or hard.<br>
+When set to BorderMode.Soft, the effect pads the image with transparent black pixels as it interpolates, resulting in a soft edge.<br>
+When set to BorderMode.Hard, the effect clamps the output to the size of the input image.<br>
+The default value is BorderMode.Soft.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.ClassID.html#PaintDotNet_Direct2D1_Effects_Transform3DEffect_Props_ClassID">ClassID</a></dt>
-    <dd></dd>
+    <dd><p>Implemented by the derived class to specify the effect's class ID (CLSID) when registering and creating
+the effect and for binding to an IDeviceEffectProperties.<br>
+Note that this is different than the <a class="xref" href="PaintDotNet.Direct2D1.Effects.DeviceEffectProperties.ID.html#PaintDotNet_Direct2D1_Effects_DeviceEffectProperties_ID">ID</a> property accessor, which queries the
+<a class="xref" href="PaintDotNet.Direct2D1.IDeviceEffectProperties.html">IDeviceEffectProperties</a> for the actual runtime effect class ID.<br>
+Overriding this property is only necessary in advanced scenarios, such as when wrapping an existing
+effect (e.g. built-in Direct2D effects), or when working with CustomEffects that have their own
+generic type arguments (e.g. PixelShaderEffect).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.Input.html#PaintDotNet_Direct2D1_Effects_Transform3DEffect_Props_Input">Input</a></dt>
@@ -196,11 +207,15 @@ Class Transform3DEffect.Props
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.InterpolationMode.html#PaintDotNet_Direct2D1_Effects_Transform3DEffect_Props_InterpolationMode">InterpolationMode</a></dt>
-    <dd></dd>
+    <dd><p>The interpolation mode the effect uses on the image. There are 5 scale modes that range in quality and speed.<br>
+The default value is Transform3DInterpolationMode.Linear.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.Transform3DEffect.Props.TransformMatrix.html#PaintDotNet_Direct2D1_Effects_Transform3DEffect_Props_TransformMatrix">TransformMatrix</a></dt>
-    <dd></dd>
+    <dd><p>A 4x4 transform matrix applied to the projection plane. The individual matrix elements are not bounded and are unitless.<br>
+The default value is { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 } (identity matrix).</p>
+</dd>
   </dl>
 
 

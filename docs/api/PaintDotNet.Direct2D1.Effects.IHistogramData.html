@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IHistogramData ">
       
-      
+      <meta name="description" content="Contains the output data for .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,8 @@ Interface IHistogramData
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Framework.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains the output data for <a class="xref" href="PaintDotNet.Direct2D1.Effects.HistogramEffect2.html">HistogramEffect2</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -140,15 +141,18 @@ Interface IHistogramData
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.MaxBinValue.html#PaintDotNet_Direct2D1_Effects_IHistogramData_MaxBinValue">MaxBinValue</a></dt>
-    <dd></dd>
+    <dd><p>For each channel, gets the the maximum value in the histogram.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.MeanColor.html#PaintDotNet_Direct2D1_Effects_IHistogramData_MeanColor">MeanColor</a></dt>
-    <dd></dd>
+    <dd><p>Gets the average of the binned colors, weighted by count.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.SumBinValues.html#PaintDotNet_Direct2D1_Effects_IHistogramData_SumBinValues">SumBinValues</a></dt>
-    <dd></dd>
+    <dd><p>The per-channel sum of all elements in the <a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.Bins.html#PaintDotNet_Direct2D1_Effects_IHistogramData_Bins">Bins</a> array.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -156,11 +160,16 @@ Interface IHistogramData
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.GetBinIntensity.html#PaintDotNet_Direct2D1_Effects_IHistogramData_GetBinIntensity_System_Int32_">GetBinIntensity(int)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the intensity of the bin. This is equal to (bin / Bins.Count - 1).
+The first bin (bin=0) has intensity 0, while the last bin (bin=Bins.Count-1) has intensity 1.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IHistogramData.GetPercentileColor.html#PaintDotNet_Direct2D1_Effects_IHistogramData_GetPercentileColor_System_Single_">GetPercentileColor(float)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the color at the specified percentile of the histogram.
+For each channel independently, finds the intensity bin at which the cumulative
+sum of histogram values first exceeds the given fraction of the total sum.</p>
+</dd>
   </dl>
 
 

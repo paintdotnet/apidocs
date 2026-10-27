@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct HdrToneMapStatistics ">
       
-      
+      <meta name="description" content="The luminance statistics of a linear HDR image needed to tone-map it, in nits (cd/m&#178;). Produced by , which measures the pixels, or by  from known metadata such as a MaxCLL value.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,10 @@ Struct HdrToneMapStatistics
   <dl><dt>Assembly</dt><dd>PaintDotNet.Windows.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The luminance statistics of a linear HDR image needed to tone-map it, in nits (cd/m²). Produced by
+<a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.Gather.html#PaintDotNet_Imaging_HdrToneMapStatistics_Gather_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_ColorRgba128Float__System_Double_System_Single_System_Boolean_">Gather(IBitmapSource&lt;ColorRgba128Float&gt;, double, float, bool)</a>, which measures the pixels,
+or by <a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.FromNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_FromNits_System_Single_">FromNits(float)</a> from known metadata such as a MaxCLL value.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,11 +149,15 @@ Struct HdrToneMapStatistics
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.MaximumNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_MaximumNits">MaximumNits</a></dt>
-    <dd></dd>
+    <dd><p>The absolute maximum per-pixel <code>max(r, g, b)</code> value across the image, in nits (cd/m²).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.PeakNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_PeakNits">PeakNits</a></dt>
-    <dd></dd>
+    <dd><p>The peak (high-percentile) per-pixel <code>max(r, g, b)</code> value, in nits (cd/m²). This is the
+content peak used as the roll-off knee: content at this level maps to SDR white, and the small
+fraction of pixels above it is clipped.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -158,11 +165,17 @@ Struct HdrToneMapStatistics
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.FromNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_FromNits_System_Single_">FromNits(float)</a></dt>
-    <dd></dd>
+    <dd><p>Creates statistics from a content maximum luminance expressed in nits, such as the MaxCLL value
+from an image's HDR metadata. Both <a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.PeakNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_PeakNits">PeakNits</a> and <a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.MaximumNits.html#PaintDotNet_Imaging_HdrToneMapStatistics_MaximumNits">MaximumNits</a> are set to it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Imaging.HdrToneMapStatistics.Gather.html#PaintDotNet_Imaging_HdrToneMapStatistics_Gather_PaintDotNet_Imaging_IBitmapSource_PaintDotNet_Imaging_ColorRgba128Float__System_Double_System_Single_System_Boolean_">Gather(IBitmapSource&lt;ColorRgba128Float&gt;, double, float, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Scans <code class="paramref">source</code> in a single pass to gather the luminance statistics needed to
+tone-map it. The image is measured in horizontal bands; the per-band measurement work is spread
+across threads, while reads from <code class="paramref">source</code> are governed by
+<code class="paramref">allowMultithreadedCopyPixels</code>.</p>
+</dd>
   </dl>
 
 

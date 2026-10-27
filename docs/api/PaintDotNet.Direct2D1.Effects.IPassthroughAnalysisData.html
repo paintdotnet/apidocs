@@ -145,7 +145,9 @@ Interface IPassthroughAnalysisData
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.Location.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_Location">Location</a></dt>
-    <dd></dd>
+    <dd><p>Gets the pixel coordinate for the top-left corner of the input image's local bounds
+without the world transform (<a class="xref" href="PaintDotNet.Direct2D1.IDeviceContext.Transform.html#PaintDotNet_Direct2D1_IDeviceContext_Transform">Transform</a>) applied.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -153,11 +155,18 @@ Interface IPassthroughAnalysisData
 
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.AsRegionPtr.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_AsRegionPtr">AsRegionPtr()</a></dt>
-    <dd></dd>
+    <dd><p>Provides access to the input image's output as a region of <a class="xref" href="PaintDotNet.Rendering.Vector4Float.html">Vector4Float</a>s.
+The origin (x=0, y=0) of this region corresponds to the top-left of the output region
+as defined by <a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.Location.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_Location">Location</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.GetBitmap.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_GetBitmap_PaintDotNet_Imaging_PixelFormat__">GetBitmap(in PixelFormat)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the input image's output as a bitmap in the specified pixel format. The pixel format
+must be either <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Prgba128Float.html#PaintDotNet_Imaging_PixelFormats_Prgba128Float">Prgba128Float</a> or <a class="xref" href="PaintDotNet.Imaging.PixelFormats.Rgba128Float.html#PaintDotNet_Imaging_PixelFormats_Rgba128Float">Rgba128Float</a>.
+The origin (x=0, y=0) of this bitmap corresponds to the top-left of the output region
+as defined by <a class="xref" href="PaintDotNet.Direct2D1.Effects.IPassthroughAnalysisData.Location.html#PaintDotNet_Direct2D1_Effects_IPassthroughAnalysisData_Location">Location</a>.</p>
+</dd>
   </dl>
 
 

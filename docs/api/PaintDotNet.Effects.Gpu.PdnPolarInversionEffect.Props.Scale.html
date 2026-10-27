@@ -120,7 +120,15 @@ Property Scale
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets or sets the scale of the polar inversion effect.<br>
+If a clipping region is used (e.g. the active selection), this should be set to the
+the user's scaling choice multiplied by the ratio of the clipping region's diameter
+to the InputRect's diameter (e.g. userScale * min(clipRect.Width, clipRect.Height) /
+min(inputRect.Width, inputRect.Height)).<br>
+The range for the user's scaling value is usually [-8, +8], but this property has no
+minimum or maximum.<br>
+The default value is 1.0.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
