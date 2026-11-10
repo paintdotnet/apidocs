@@ -79,6 +79,24 @@ references:
   commentId: N:PaintDotNet.AppModel
   fullName: PaintDotNet.AppModel
   nameWithType: PaintDotNet.AppModel
+- uid: PaintDotNet.AppModel.AppInfoServiceExtensions
+  name: AppInfoServiceExtensions
+  href: api/PaintDotNet.AppModel.AppInfoServiceExtensions.html
+  commentId: T:PaintDotNet.AppModel.AppInfoServiceExtensions
+  fullName: PaintDotNet.AppModel.AppInfoServiceExtensions
+  nameWithType: AppInfoServiceExtensions
+- uid: PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion(PaintDotNet.AppModel.IAppInfoService)
+  name: get_IsStableVersion(IAppInfoService)
+  href: api/PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion.html#PaintDotNet_AppModel_AppInfoServiceExtensions_get_IsStableVersion_PaintDotNet_AppModel_IAppInfoService_
+  commentId: M:PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion(PaintDotNet.AppModel.IAppInfoService)
+  fullName: PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion(PaintDotNet.AppModel.IAppInfoService)
+  nameWithType: AppInfoServiceExtensions.get_IsStableVersion(IAppInfoService)
+- uid: PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion*
+  name: get_IsStableVersion
+  href: api/PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion.html
+  commentId: Overload:PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion
+  fullName: PaintDotNet.AppModel.AppInfoServiceExtensions.get_IsStableVersion
+  nameWithType: AppInfoServiceExtensions.get_IsStableVersion
 - uid: PaintDotNet.AppModel.AppInstallType
   name: AppInstallType
   href: api/PaintDotNet.AppModel.AppInstallType.html
@@ -265,6 +283,18 @@ references:
   commentId: Overload:PaintDotNet.AppModel.IAppInfoService.AppVersion
   fullName: PaintDotNet.AppModel.IAppInfoService.AppVersion
   nameWithType: IAppInfoService.AppVersion
+- uid: PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic
+  name: AppVersionSemantic
+  href: api/PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic.html#PaintDotNet_AppModel_IAppInfoService_AppVersionSemantic
+  commentId: P:PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic
+  fullName: PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic
+  nameWithType: IAppInfoService.AppVersionSemantic
+- uid: PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic*
+  name: AppVersionSemantic
+  href: api/PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic.html
+  commentId: Overload:PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic
+  fullName: PaintDotNet.AppModel.IAppInfoService.AppVersionSemantic
+  nameWithType: IAppInfoService.AppVersionSemantic
 - uid: PaintDotNet.AppModel.IAppInfoService.InstallDirectory
   name: InstallDirectory
   href: api/PaintDotNet.AppModel.IAppInfoService.InstallDirectory.html#PaintDotNet_AppModel_IAppInfoService_InstallDirectory
