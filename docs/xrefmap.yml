@@ -87405,18 +87405,18 @@ references:
   commentId: M:PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction)
   fullName: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction)
   nameWithType: FileTypesObjectRefExtensions.CreateRef(IFileTypeMetadataSectionTransaction)
+- uid: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeMetadataTransaction)
+  name: CreateRef(IFileTypeMetadataTransaction)
+  href: api/PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeMetadataTransaction_
+  commentId: M:PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeMetadataTransaction)
+  fullName: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeMetadataTransaction)
+  nameWithType: FileTypesObjectRefExtensions.CreateRef(IFileTypeMetadataTransaction)
 - uid: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeSaver)
   name: CreateRef(IFileTypeSaver)
   href: api/PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeSaver_
   commentId: M:PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeSaver)
   fullName: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeSaver)
   nameWithType: FileTypesObjectRefExtensions.CreateRef(IFileTypeSaver)
-- uid: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeTransaction)
-  name: CreateRef(IFileTypeTransaction)
-  href: api/PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeTransaction_
-  commentId: M:PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeTransaction)
-  fullName: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeTransaction)
-  nameWithType: FileTypesObjectRefExtensions.CreateRef(IFileTypeTransaction)
 - uid: PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef(PaintDotNet.FileTypes.IFileTypeXmpMetadata)
   name: CreateRef(IFileTypeXmpMetadata)
   href: api/PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeXmpMetadata_
@@ -89213,6 +89213,36 @@ references:
   commentId: Overload:PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.ReplaceFrom
   fullName: PaintDotNet.FileTypes.IFileTypeMetadataSectionTransaction.ReplaceFrom
   nameWithType: IFileTypeMetadataSectionTransaction.ReplaceFrom
+- uid: PaintDotNet.FileTypes.IFileTypeMetadataTransaction
+  name: IFileTypeMetadataTransaction
+  href: api/PaintDotNet.FileTypes.IFileTypeMetadataTransaction.html
+  commentId: T:PaintDotNet.FileTypes.IFileTypeMetadataTransaction
+  fullName: PaintDotNet.FileTypes.IFileTypeMetadataTransaction
+  nameWithType: IFileTypeMetadataTransaction
+- uid: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel
+  name: Cancel()
+  href: api/PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Cancel
+  commentId: M:PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel
+  fullName: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel()
+  nameWithType: IFileTypeMetadataTransaction.Cancel()
+- uid: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel*
+  name: Cancel
+  href: api/PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel.html
+  commentId: Overload:PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel
+  fullName: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel
+  nameWithType: IFileTypeMetadataTransaction.Cancel
+- uid: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit
+  name: Commit()
+  href: api/PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Commit
+  commentId: M:PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit
+  fullName: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit()
+  nameWithType: IFileTypeMetadataTransaction.Commit()
+- uid: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit*
+  name: Commit
+  href: api/PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit.html
+  commentId: Overload:PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit
+  fullName: PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit
+  nameWithType: IFileTypeMetadataTransaction.Commit
 - uid: PaintDotNet.FileTypes.IFileTypeOptions
   name: IFileTypeOptions
   href: api/PaintDotNet.FileTypes.IFileTypeOptions.html
@@ -89546,36 +89576,6 @@ references:
   commentId: Overload:PaintDotNet.FileTypes.IFileTypeServiceProvider1.ImagingFactory
   fullName: PaintDotNet.FileTypes.IFileTypeServiceProvider1.ImagingFactory
   nameWithType: IFileTypeServiceProvider1.ImagingFactory
-- uid: PaintDotNet.FileTypes.IFileTypeTransaction
-  name: IFileTypeTransaction
-  href: api/PaintDotNet.FileTypes.IFileTypeTransaction.html
-  commentId: T:PaintDotNet.FileTypes.IFileTypeTransaction
-  fullName: PaintDotNet.FileTypes.IFileTypeTransaction
-  nameWithType: IFileTypeTransaction
-- uid: PaintDotNet.FileTypes.IFileTypeTransaction.Cancel
-  name: Cancel()
-  href: api/PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel
-  commentId: M:PaintDotNet.FileTypes.IFileTypeTransaction.Cancel
-  fullName: PaintDotNet.FileTypes.IFileTypeTransaction.Cancel()
-  nameWithType: IFileTypeTransaction.Cancel()
-- uid: PaintDotNet.FileTypes.IFileTypeTransaction.Cancel*
-  name: Cancel
-  href: api/PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html
-  commentId: Overload:PaintDotNet.FileTypes.IFileTypeTransaction.Cancel
-  fullName: PaintDotNet.FileTypes.IFileTypeTransaction.Cancel
-  nameWithType: IFileTypeTransaction.Cancel
-- uid: PaintDotNet.FileTypes.IFileTypeTransaction.Commit
-  name: Commit()
-  href: api/PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit
-  commentId: M:PaintDotNet.FileTypes.IFileTypeTransaction.Commit
-  fullName: PaintDotNet.FileTypes.IFileTypeTransaction.Commit()
-  nameWithType: IFileTypeTransaction.Commit()
-- uid: PaintDotNet.FileTypes.IFileTypeTransaction.Commit*
-  name: Commit
-  href: api/PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html
-  commentId: Overload:PaintDotNet.FileTypes.IFileTypeTransaction.Commit
-  fullName: PaintDotNet.FileTypes.IFileTypeTransaction.Commit
-  nameWithType: IFileTypeTransaction.Commit
 - uid: PaintDotNet.FileTypes.IFileTypeXmpMetadata
   name: IFileTypeXmpMetadata
   href: api/PaintDotNet.FileTypes.IFileTypeXmpMetadata.html

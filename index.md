@@ -14,13 +14,14 @@ Here are some useful links to get started with plugin development:
 - [Plugin Developer's Central](https://forums.paint.net/forum/17-plugin-developers-central/) section of the Paint.NET Forum, for information, discussion, and questions about plugin development
 - PdnV5SampleEffects
   - This will show you the right way to set up a Visual Studio project (look at the .csproj!), and how to write either a [`BitmapEffect`](xref:PaintDotNet.Effects.BitmapEffect) or a [`GpuEffect`](xref:PaintDotNet.Effects.Gpu.GpuEffect).
-  - GitHub source code: https://github.com/paintdotnet/PdnV5EffectSamples
+  - GitHub repository: https://github.com/paintdotnet/PdnV5EffectSamples
 - PdnSampleFileTypes
-  - This will show you the right way to set up a Visual Studio project, and how to write a simple [`FileType`](xref:PaintDotNet.FileTypes.FileType) with a loader and a saver.
+  - This will show you the right way to set up a Visual Studio project, and how to write a simple [`FileType`](xref:PaintDotNet.FileTypes.FileType) with a loader and a saver
+  - GitHub repository: https://github.com/paintdotnet/PdnFileTypeSamples
 - CodeLab, by BoltBait
   - This is a good and (very!) popular way to write an effect plugin. Works for both BitmapEffect (CPU) and GpuEffect (GPU).
   - Website: https://boltbait.com/pdn/codelab/
-  - Forum page with discussion: https://forums.paint.net/topic/121344-codelab-v68-for-paintnet-50-updated-january-22-2023/
+  - Forum page with discussion: https://forums.paint.net/topic/121344-codelab-v613-for-paintnet-51-updated-november-17-2024/
   - GitHub source code: https://github.com/BoltBait/CodeLab
 - Plugin Dev channel on the Paint.NET Discord Server
   - Invitation link: https://discord.gg/6V3Ace9SBg

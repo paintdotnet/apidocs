@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IFileTypeTransaction </title>
+      <title>Interface IFileTypeMetadataTransaction </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IFileTypeTransaction ">
+      <meta name="title" content="Interface IFileTypeMetadataTransaction ">
       
-      <meta name="description" content="Represents a transaction for making atomic changes.">
+      <meta name="description" content="Represents a transaction for making atomic changes to metadata.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="PaintDotNet.FileTypes.IFileTypeTransaction">
+        <article data-uid="PaintDotNet.FileTypes.IFileTypeMetadataTransaction">
 
 
 
-  <h1 id="PaintDotNet_FileTypes_IFileTypeTransaction" data-uid="PaintDotNet.FileTypes.IFileTypeTransaction" class="text-break">
-Interface IFileTypeTransaction  
+  <h1 id="PaintDotNet_FileTypes_IFileTypeMetadataTransaction" data-uid="PaintDotNet.FileTypes.IFileTypeMetadataTransaction" class="text-break">
+Interface IFileTypeMetadataTransaction  
   </h1>
 
   <div class="facts text-secondary">
@@ -93,12 +93,12 @@ Interface IFileTypeTransaction
   <dl><dt>Assembly</dt><dd>PaintDotNet.FileTypes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a transaction for making atomic changes.</p>
+  <div class="markdown summary"><p>Represents a transaction for making atomic changes to metadata.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IFileTypeTransaction : IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IFileTypeMetadataTransaction : IObjectRef, IIsDisposed, IDisposable, IInternalImpl</code></pre>
   </div>
 
 
@@ -125,29 +125,29 @@ Interface IFileTypeTransaction
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeTransaction)</a>
+      <a class="xref" href="PaintDotNet.FileTypes.FileTypesObjectRefExtensions.CreateRef.html#PaintDotNet_FileTypes_FileTypesObjectRefExtensions_CreateRef_PaintDotNet_FileTypes_IFileTypeMetadataTransaction_">FileTypesObjectRefExtensions.CreateRef(IFileTypeMetadataTransaction)</a>
   </div>
   </dd></dl>
 
 
 
-  <h2 id="PaintDotNet_FileTypes_IFileTypeTransaction_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Changes are applied when the transaction is committed by calling <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">Commit()</a> or by disposing the transaction.</p>
+  <h2 id="PaintDotNet_FileTypes_IFileTypeMetadataTransaction_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Changes are applied when the transaction is committed by calling <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Commit">Commit()</a> or by disposing the transaction.</p>
 </div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">Cancel()</a></dt>
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Cancel">Cancel()</a></dt>
     <dd><p>Cancels the changes made in this transaction. After calling this method, the transaction should not be used again.
 This prevents the changes from being applied when the transaction is disposed.</p>
 </dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeTransaction_Commit">Commit()</a></dt>
+    <dt><a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Commit.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Commit">Commit()</a></dt>
     <dd><p>Commits the changes made in this transaction. This can also be accomplished by calling <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>,
-as long as <a class="xref" href="PaintDotNet.FileTypes.IFileTypeTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeTransaction_Cancel">Cancel()</a> has not been called.</p>
+as long as <a class="xref" href="PaintDotNet.FileTypes.IFileTypeMetadataTransaction.Cancel.html#PaintDotNet_FileTypes_IFileTypeMetadataTransaction_Cancel">Cancel()</a> has not been called.</p>
 </dd>
   </dl>
 
